@@ -1,7 +1,19 @@
 import type { Region } from './types';
 
 /** Sonidos ambientales (assets/sonidos/*.mp3). Ver herramientas/sonidos/generar_sonidos.py. */
-export type SoundId = 'viento' | 'lluvia' | 'rio' | 'olas' | 'pasos' | 'aleteo' | 'fuego' | 'selva' | 'noche';
+export type SoundId =
+  | 'viento'
+  | 'lluvia'
+  | 'rio'
+  | 'olas'
+  | 'pasos'
+  | 'aleteo'
+  | 'fuego'
+  | 'selva'
+  | 'noche'
+  | 'golpes'
+  | 'lechuza'
+  | 'fiesta';
 
 export const SOUND_FILES: Record<SoundId, number> = {
   viento: require('../../assets/sonidos/viento.mp3'),
@@ -13,11 +25,14 @@ export const SOUND_FILES: Record<SoundId, number> = {
   fuego: require('../../assets/sonidos/fuego.mp3'),
   selva: require('../../assets/sonidos/selva.mp3'),
   noche: require('../../assets/sonidos/noche.mp3'),
+  golpes: require('../../assets/sonidos/golpes.mp3'),
+  lechuza: require('../../assets/sonidos/lechuza.mp3'),
+  fiesta: require('../../assets/sonidos/fiesta.mp3'),
 };
 
 /** Volumen relativo de cada capa (la voz siempre va por encima). */
-export const BED_VOLUME = 0.22;
-export const FX_VOLUME = 0.3;
+export const BED_VOLUME = 0.38;
+export const FX_VOLUME = 0.5;
 
 /** Qué suena durante un párrafo: un fondo continuo (viento, lluvia…) y un efecto (pasos, aleteo). */
 export interface Cue {
@@ -33,20 +48,21 @@ export interface AmbienceOverride {
   fx?: SoundId | null;
 }
 
-const BED_RULES: { id: SoundId; re: RegExp }[] = [
-  { id: 'lluvia', re: /\b(llov|lluvia|tormenta|aguacero|diluvio|chaparron)/ },
-  { id: 'fuego', re: /\b(fuego|llamas|hoguera|fogata|incendi|ardiendo|ardia|arde)\b/ },
-  { id: 'olas', re: /\b(lago|mar|oceano|playa|balsa|balsas|olas|costa del)\b/ },
-  { id: 'rio', re: /\b(rio|rios|cocha|cochas|laguna|arroyo|quebrada|orilla|navegab|nadar)\b/ },
-  { id: 'noche', re: /\b(noche|luna|estrellas|oscuridad|anochec|medianoche|madrugada)/ },
-  { id: 'viento', re: /\b(viento|ventarr|brisa|puna|cumbre|cerro|cerros|montana|montanas|altiplano|nevado|condor)/ },
-  { id: 'selva', re: /\b(selva|monte|bosque|jungla|aguaje|arboles|amazon)/ },
+const BED_RULES: { id: SoundId; re: RegExp; hold: number }[] = [
+  { id: 'lluvia', re: /\b(llov|lluvia|tormenta|aguacero|diluvio|chaparron)/, hold: 5 },
+  { id: 'fuego', re: /\b(fuego|llamas|hoguera|fogata|incendi|ardiendo|ardia|arde)\b/, hold: 4 },
+  { id: 'fiesta', re: /\b(baile|bailar|bailaban|bailaron|fiesta|banquete|festej|celebr|musica|charango|zampona|quena)/, hold: 1 },
+  { id: 'olas', re: /\b(lago|mar|oceano|playa|balsa|balsas|olas|costa del)\b/, hold: 3 },
+  { id: 'rio', re: /\b(rio|rios|cocha|cochas|laguna|arroyo|quebrada|orilla|navegab|nadar)\b/, hold: 3 },
+  { id: 'noche', re: /\b(noche|luna|estrellas|oscuridad|anochec|medianoche|madrugada)/, hold: 6 },
+  { id: 'viento', re: /\b(viento|ventarr|brisa|puna|cumbre|cerro|cerros|montana|montanas|altiplano|nevado|condor)/, hold: 3 },
+  { id: 'selva', re: /\b(selva|monte|bosque|jungla|aguaje|arboles|amazon)/, hold: 3 },
 ];
-/** Cuántos párrafos se mantiene un fondo sin que el texto lo vuelva a mencionar. */
-const BED_HOLD = 3;
 const DAWN = /\b(amanec|amaneci|al dia siguiente|a la manana|salio el sol|mediodia)/;
 
 const FX_RULES: { id: SoundId; re: RegExp }[] = [
+  { id: 'golpes', re: /\b(tan\s*-?\s*tan|toc\s*-?\s*toc|golpe|golpea|golpeab|golpeo|golpearon|llamar a la puerta|llamo a la puerta|tocaron la puerta)/ },
+  { id: 'lechuza', re: /\b(lechuza|buho|tecolote|mochuelo)/ },
   { id: 'aleteo', re: /\b(volar|volaba|volaban|volo|volaron|vuela|vuelan|alas|aleteo|aleteaba|batio)/ },
   { id: 'pasos', re: /\b(camin|pasos|marcha|corri|corre|corrio|anduv|huy|persegu|subia|subio|trepo|trepaba)/ },
 ];
@@ -67,15 +83,15 @@ const DEFAULT_BED: Record<Region, SoundId | null> = { sierra: 'viento', selva: '
 export function cuesFor(paragraphs: string[], region: Region, overrides: AmbienceOverride[] = []): Cue[] {
   let bed: SoundId | null = DEFAULT_BED[region];
   const base = DEFAULT_BED[region];
-  let quiet = 0; // párrafos seguidos sin palabras que justifiquen el fondo actual
+  let holdLeft = 0; // cuántos párrafos más se mantiene el fondo actual sin que el texto lo vuelva a mencionar
   return paragraphs.map((p, i) => {
     const text = normalize(p);
     if (DAWN.test(text)) bed = base;
     const found = BED_RULES.find((r) => r.re.test(text));
     if (found) {
       bed = found.id;
-      quiet = 0;
-    } else if (++quiet > BED_HOLD) bed = base;
+      holdLeft = found.hold;
+    } else if (--holdLeft < 0) bed = base;
     const fx = FX_RULES.find((r) => r.re.test(text))?.id ?? null;
     const cue: Cue = { bed, fx };
     for (const o of overrides) {

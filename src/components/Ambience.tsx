@@ -1,10 +1,11 @@
 import { useAudioPlayer } from 'expo-audio';
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { BED_VOLUME, FX_VOLUME, SOUND_FILES, type Cue, type SoundId } from '@/content/ambience';
 
 /** Una capa de sonido en bucle: entra y sale con un desvanecido suave. */
-function Track({ id, active, volume }: { id: SoundId; active: boolean; volume: number }) {
+function Track({ id, active, volume, fast }: { id: SoundId; active: boolean; volume: number; fast?: boolean }) {
   const player = useAudioPlayer(SOUND_FILES[id]);
+  const wasActive = useRef(false);
 
   useEffect(() => {
     try {
@@ -15,12 +16,26 @@ function Track({ id, active, volume }: { id: SoundId; active: boolean; volume: n
     }
   }, [player]);
 
+  // Al entrar, el sonido arranca desde el principio (así el "tan, tan" cae justo en su párrafo).
+  useEffect(() => {
+    if (active && !wasActive.current) {
+      try {
+        void player.seekTo(0);
+      } catch {
+        /* ignorar */
+      }
+    }
+    wasActive.current = active;
+  }, [active, player]);
+
   useEffect(() => {
     const target = active ? volume : 0;
+    // Los efectos puntuales (golpes, aleteo) entran rápido; los fondos, suavemente.
+    const step = fast ? 0.25 : 0.04;
     const timer = setInterval(() => {
       try {
         const cur = player.volume ?? 0;
-        const next = cur < target ? Math.min(target, cur + 0.03) : Math.max(target, cur - 0.03);
+        const next = cur < target ? Math.min(target, cur + step) : Math.max(target, cur - step);
         player.volume = next;
         if (next > 0 && !player.playing) player.play();
         if (next === 0 && target === 0) {
@@ -59,7 +74,7 @@ export function Ambience({ cues, index, playing, enabled }: { cues: Cue[]; index
         <Track key={`bed-${id}`} id={id} volume={BED_VOLUME} active={on && cue?.bed === id} />
       ))}
       {used.fx.map((id) => (
-        <Track key={`fx-${id}`} id={id} volume={FX_VOLUME} active={on && cue?.fx === id} />
+        <Track key={`fx-${id}`} id={id} volume={FX_VOLUME} fast active={on && cue?.fx === id} />
       ))}
     </>
   );

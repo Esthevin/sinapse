@@ -13,7 +13,8 @@
     "build:apk": "eas build --platform android --profile preview",
     "voces:generar": "node scripts/generar-voces-peruanas.mjs",
     "audio:importar": "node scripts/importar-audios.mjs",
-    "catalogo:generar": "node scripts/generar-catalogo.mjs"
+    "catalogo:generar": "node scripts/generar-catalogo.mjs",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.1",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "@types/react": "~18.3.12",
+    "patch-package": "^8.0.1",
     "typescript": "~5.3.3"
   },
   "private": true
