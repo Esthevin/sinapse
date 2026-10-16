@@ -1,0 +1,153 @@
+{
+  "id": "alacran-fray-gomez",
+  "titulo": "El alacrán de fray Gómez",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [
+      {
+        "id": "voz-sin-nombre",
+        "name": "voz sin nombre",
+        "gender": "n",
+        "lines": 3,
+        "chars": 0
+      }
+    ],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "En la Lima de los virreyes vivió un fraile franciscano llamado fray Gómez, famoso por su bondad y por los milagros que, según la gente, hacía sin darse importancia. Hasta hoy, de algo muy valioso se dice: “vale lo que un alacrán de fray Gómez”."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Un día llegó a su celda un buhonero, un vendedor ambulante llamado Jeromo, muy preocupado. —Padre, soy un hombre honrado, pero estoy en la ruina. Necesito quinientos duros para salvar mi negocio, y nadie quiere prestarme."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Fray Gómez miró a su alrededor. Su celda era pobre: no tenía dinero, solo una cama, una mesa y unos libros. En ese momento, un alacrán caminaba por la pared. El fraile lo tomó con cuidado, lo envolvió en un papel y, al abrirlo, el alacrán se había convertido en una joya de oro y piedras preciosas."
+        }
+      ],
+      [
+        {
+          "speaker": "voz-sin-nombre",
+          "text": "Lleva esta joya y empéñala"
+        },
+        {
+          "speaker": "narrador",
+          "text": "le dijo"
+        },
+        {
+          "speaker": "voz-sin-nombre",
+          "text": "Pero en seis meses debes devolvérmela."
+        },
+        {
+          "speaker": "narrador",
+          "text": "Jeromo empeñó la joya, trabajó con honradez y su negocio volvió a prosperar."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Antes de que se cumpliera el plazo, Jeromo recuperó la joya y se la devolvió a fray Gómez, muy agradecido. El fraile la puso en la ventana y dijo:"
+        },
+        {
+          "speaker": "voz-sin-nombre",
+          "text": "Animalito de Dios, sigue tu camino."
+        },
+        {
+          "speaker": "narrador",
+          "text": "Y la joya volvió a ser alacrán, y se fue caminando tranquilamente por la pared."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-CamilaNeural",
+      "pitch": 1,
+      "rate": 1
+    },
+    "voz-sin-nombre": {
+      "voice": "es-PE-AlexNeural",
+      "pitch": 1,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    },
+    "voz-sin-nombre": {
+      "referencias": [
+        "voz-sin-nombre",
+        "hombre_1",
+        "mujer_1",
+        "narrador"
+      ],
+      "exaggeration": 0.55,
+      "cfg_weight": 0.3,
+      "semilla": 101
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "En la Lima de los virreyes vivió un fraile franciscano llamado fray Gómez, famoso por su bondad y por los milagros que, según la gente, hacía sin darse importancia. Hasta hoy, de algo muy valioso se dice: “vale lo que un alacrán de fray Gómez”."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Un día llegó a su celda un buhonero, un vendedor ambulante llamado Jeromo, muy preocupado. —Padre, soy un hombre honrado, pero estoy en la ruina. Necesito quinientos duros para salvar mi negocio, y nadie quiere prestarme."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Fray Gómez miró a su alrededor. Su celda era pobre: no tenía dinero, solo una cama, una mesa y unos libros. En ese momento, un alacrán caminaba por la pared. El fraile lo tomó con cuidado, lo envolvió en un papel y, al abrirlo, el alacrán se había convertido en una joya de oro y piedras preciosas."
+      }
+    ],
+    [
+      {
+        "speaker": "voz-sin-nombre",
+        "text": "Lleva esta joya y empéñala"
+      },
+      {
+        "speaker": "narrador",
+        "text": "le dijo"
+      },
+      {
+        "speaker": "voz-sin-nombre",
+        "text": "Pero en seis meses debes devolvérmela."
+      },
+      {
+        "speaker": "narrador",
+        "text": "Jeromo empeñó la joya, trabajó con honradez y su negocio volvió a prosperar."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Antes de que se cumpliera el plazo, Jeromo recuperó la joya y se la devolvió a fray Gómez, muy agradecido. El fraile la puso en la ventana y dijo:"
+      },
+      {
+        "speaker": "voz-sin-nombre",
+        "text": "Animalito de Dios, sigue tu camino."
+      },
+      {
+        "speaker": "narrador",
+        "text": "Y la joya volvió a ser alacrán, y se fue caminando tranquilamente por la pared."
+      }
+    ]
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "chullachaqui",
+  "titulo": "El Chullachaqui, guardián del bosque",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [
+      {
+        "id": "abuela",
+        "name": "su abuela",
+        "gender": "f",
+        "lines": 1,
+        "chars": 48,
+        "trait": "anciano"
+      },
+      {
+        "id": "voz-sin-nombre",
+        "name": "voz sin nombre",
+        "gender": "n",
+        "lines": 1,
+        "chars": 0
+      }
+    ],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "En la selva de Loreto y Ucayali, los abuelos cuentan que el bosque tiene un guardián: el Chullachaqui. Es un ser pequeño que vive en lo más profundo del monte, cerca de los árboles gigantes llamados lupunas."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Su nombre viene del quechua amazónico: chulla, que significa “desigual” o “uno solo”, y chaki, que significa “pie”. Y es que el Chullachaqui tiene un pie humano y el otro torcido, como de animal."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "El Chullachaqui puede tomar la forma de cualquier persona: un amigo, un hermano, incluso la mamá o el papá. Así engaña a quienes caminan solos por el bosque y los lleva cada vez más adentro, hasta que se pierden."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Un día, un joven llamado Tito salió a buscar frutos de aguaje. De pronto vio a su primo, que lo llamaba entre los árboles:"
+        },
+        {
+          "speaker": "voz-sin-nombre",
+          "text": "¡Ven, por aquí hay más!"
+        },
+        {
+          "speaker": "narrador",
+          "text": "Tito lo siguió un buen rato, hasta que notó algo extraño: su primo siempre escondía un pie detrás de los arbustos."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Tito recordó lo que le había dicho su abuela:"
+        },
+        {
+          "speaker": "abuela",
+          "text": "Si alguien te llama en el monte, mírale los pies"
+        },
+        {
+          "speaker": "narrador",
+          "text": "Al ver el pie torcido, supo la verdad. No siguió caminando: se quedó quieto, respiró hondo y buscó el sonido del río para orientarse."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Siguiendo el río, llegó a su comunidad al anochecer. Desde entonces Tito respeta el bosque: nunca entra solo, avisa a dónde va y solo toma lo que necesita. Dicen que el Chullachaqui no hace daño a quien cuida la selva."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-CamilaNeural",
+      "pitch": 1,
+      "rate": 1
+    },
+    "abuela": {
+      "voice": "es-CO-SalomeNeural",
+      "pitch": 0.8200000000000001,
+      "rate": 0.92
+    },
+    "voz-sin-nombre": {
+      "voice": "es-PE-AlexNeural",
+      "pitch": 1,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    },
+    "abuela": {
+      "referencias": [
+        "abuela",
+        "anciana",
+        "mujer_1",
+        "mujer_2",
+        "mujer_3",
+        "narrador"
+      ],
+      "exaggeration": 0.55,
+      "cfg_weight": 0.3,
+      "semilla": 101
+    },
+    "voz-sin-nombre": {
+      "referencias": [
+        "voz-sin-nombre",
+        "hombre_1",
+        "mujer_1",
+        "narrador"
+      ],
+      "exaggeration": 0.55,
+      "cfg_weight": 0.3,
+      "semilla": 118
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "En la selva de Loreto y Ucayali, los abuelos cuentan que el bosque tiene un guardián: el Chullachaqui. Es un ser pequeño que vive en lo más profundo del monte, cerca de los árboles gigantes llamados lupunas."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Su nombre viene del quechua amazónico: chulla, que significa “desigual” o “uno solo”, y chaki, que significa “pie”. Y es que el Chullachaqui tiene un pie humano y el otro torcido, como de animal."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "El Chullachaqui puede tomar la forma de cualquier persona: un amigo, un hermano, incluso la mamá o el papá. Así engaña a quienes caminan solos por el bosque y los lleva cada vez más adentro, hasta que se pierden."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Un día, un joven llamado Tito salió a buscar frutos de aguaje. De pronto vio a su primo, que lo llamaba entre los árboles:"
+      },
+      {
+        "speaker": "voz-sin-nombre",
+        "text": "¡Ven, por aquí hay más!"
+      },
+      {
+        "speaker": "narrador",
+        "text": "Tito lo siguió un buen rato, hasta que notó algo extraño: su primo siempre escondía un pie detrás de los arbustos."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Tito recordó lo que le había dicho su abuela:"
+      },
+      {
+        "speaker": "abuela",
+        "text": "Si alguien te llama en el monte, mírale los pies"
+      },
+      {
+        "speaker": "narrador",
+        "text": "Al ver el pie torcido, supo la verdad. No siguió caminando: se quedó quieto, respiró hondo y buscó el sonido del río para orientarse."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Siguiendo el río, llegó a su comunidad al anochecer. Desde entonces Tito respeta el bosque: nunca entra solo, avisa a dónde va y solo toma lo que necesita. Dicen que el Chullachaqui no hace daño a quien cuida la selva."
+      }
+    ]
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "hermanos-ayar",
+  "titulo": "Los hermanos Ayar",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "Cerca de Pacaritambo hay un cerro llamado Tambo Tocco, que tiene tres ventanas. Según la leyenda, de la ventana del centro salieron cuatro hermanos y cuatro hermanas: los Ayar. Buscaban una tierra buena donde vivir."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Los hermanos se llamaban Ayar Manco, Ayar Cachi, Ayar Uchu y Ayar Auca. Ayar Cachi era el más fuerte de todos: con su honda lanzaba piedras tan lejos que partía los cerros y abría quebradas."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Sus hermanos sintieron miedo de tanto poder. Con una excusa, le pidieron que regresara a la cueva a buscar unos objetos sagrados que habían olvidado. Cuando Ayar Cachi entró, taparon la entrada con grandes piedras y él quedó encerrado para siempre."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "El grupo siguió su camino. En el cerro Huanacauri, Ayar Uchu se convirtió en piedra. Desde entonces ese lugar fue sagrado: una huaca a la que la gente iba a mostrar su respeto."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Más adelante, Ayar Auca recibió alas y voló hacia el valle del Cusco. Al posarse en la tierra también se volvió piedra, como señal de que ese lugar sería su hogar."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Solo quedó Ayar Manco, que llegó al valle junto a sus hermanas. Allí fundó la ciudad del Cusco y tomó el nombre de Manco Cápac. Así, según esta leyenda, comenzó la historia de los incas."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-AlexNeural",
+      "pitch": 1,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "Cerca de Pacaritambo hay un cerro llamado Tambo Tocco, que tiene tres ventanas. Según la leyenda, de la ventana del centro salieron cuatro hermanos y cuatro hermanas: los Ayar. Buscaban una tierra buena donde vivir."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Los hermanos se llamaban Ayar Manco, Ayar Cachi, Ayar Uchu y Ayar Auca. Ayar Cachi era el más fuerte de todos: con su honda lanzaba piedras tan lejos que partía los cerros y abría quebradas."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Sus hermanos sintieron miedo de tanto poder. Con una excusa, le pidieron que regresara a la cueva a buscar unos objetos sagrados que habían olvidado. Cuando Ayar Cachi entró, taparon la entrada con grandes piedras y él quedó encerrado para siempre."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "El grupo siguió su camino. En el cerro Huanacauri, Ayar Uchu se convirtió en piedra. Desde entonces ese lugar fue sagrado: una huaca a la que la gente iba a mostrar su respeto."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Más adelante, Ayar Auca recibió alas y voló hacia el valle del Cusco. Al posarse en la tierra también se volvió piedra, como señal de que ese lugar sería su hogar."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Solo quedó Ayar Manco, que llegó al valle junto a sus hermanas. Allí fundó la ciudad del Cusco y tomó el nombre de Manco Cápac. Así, según esta leyenda, comenzó la historia de los incas."
+      }
+    ]
+  ]
+}

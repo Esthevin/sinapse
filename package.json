@@ -15,8 +15,10 @@
     "audio:importar": "node scripts/importar-audios.mjs",
     "catalogo:generar": "node scripts/generar-catalogo.mjs",
     "postinstall": "patch-package",
+    "reparto": "node scripts/analizar-reparto.mjs",
     "pdf:audiolibro": "node --experimental-strip-types --no-warnings scripts/pdf-a-audiolibro.mjs",
-    "audio:alinear": "node scripts/alinear-audio.mjs"
+    "audio:alinear": "node scripts/alinear-audio.mjs",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.1",
@@ -45,6 +47,8 @@
   },
   "devDependencies": {
     "@types/react": "~18.3.12",
+    "eslint": "^8.57.0",
+    "eslint-config-expo": "~8.0.1",
     "patch-package": "^8.0.1",
     "pdfjs-dist": "^3.11.174",
     "typescript": "~5.3.3"

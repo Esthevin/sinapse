@@ -1,0 +1,89 @@
+{
+  "id": "yacumama",
+  "titulo": "La Yacumama, madre del agua",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "En los ríos y cochas de la Amazonía vive, según los pueblos de la selva, una serpiente enorme: la Yacumama, la madre del agua. Su nombre une dos palabras del quechua: yaku, que significa “agua”, y mama, que significa “madre”."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "La Yacumama es tan grande que, cuando duerme en el fondo del río, parece un tronco gigante. Cuando respira, el agua forma remolinos, y cuando se mueve, cambia el camino de los ríos."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Ella cuida a los peces, a los delfines rosados y a todos los animales del agua. Por eso los pescadores antiguos le pedían permiso antes de pescar y nunca sacaban más de lo que su familia necesitaba."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Una vez llegaron unos hombres en canoa que querían pescar con veneno, para sacar muchos peces de una sola vez y venderlos. Esa noche, el agua de la cocha empezó a girar con fuerza. Un remolino enorme se tragó sus redes y su canoa, y los hombres apenas alcanzaron a nadar hasta la orilla."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Asustados, entendieron el mensaje: la cocha no era solo de ellos. Desde entonces, en la comunidad se cuenta esta historia a los niños, para que cuiden los ríos, no los ensucien y respeten a los animales del agua."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-AlexNeural",
+      "pitch": 1,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "En los ríos y cochas de la Amazonía vive, según los pueblos de la selva, una serpiente enorme: la Yacumama, la madre del agua. Su nombre une dos palabras del quechua: yaku, que significa “agua”, y mama, que significa “madre”."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "La Yacumama es tan grande que, cuando duerme en el fondo del río, parece un tronco gigante. Cuando respira, el agua forma remolinos, y cuando se mueve, cambia el camino de los ríos."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Ella cuida a los peces, a los delfines rosados y a todos los animales del agua. Por eso los pescadores antiguos le pedían permiso antes de pescar y nunca sacaban más de lo que su familia necesitaba."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Una vez llegaron unos hombres en canoa que querían pescar con veneno, para sacar muchos peces de una sola vez y venderlos. Esa noche, el agua de la cocha empezó a girar con fuerza. Un remolino enorme se tragó sus redes y su canoa, y los hombres apenas alcanzaron a nadar hasta la orilla."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Asustados, entendieron el mensaje: la cocha no era solo de ellos. Desde entonces, en la comunidad se cuenta esta historia a los niños, para que cuiden los ríos, no los ensucien y respeten a los animales del agua."
+      }
+    ]
+  ]
+}

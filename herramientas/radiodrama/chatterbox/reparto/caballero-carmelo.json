@@ -1,0 +1,101 @@
+{
+  "id": "caballero-carmelo",
+  "titulo": "El Caballero Carmelo",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "En una casa de Pisco, junto al mar, vivía una familia con muchos hijos. Un día el padre volvió de viaje con un regalo: un gallo de plumas brillantes y paso elegante. Los niños lo llamaron el Caballero Carmelo."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Carmelo se volvió parte de la familia. Cantaba al amanecer, paseaba por el corral como un señor y los niños lo cuidaban con cariño. Para ellos no era solo un ave: era un amigo."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Pero llegaron las fiestas de San Andrés, y en el pueblo se organizaban peleas de gallos. El padre aceptó un desafío: Carmelo debía enfrentarse al Ajiseco, un gallo joven y famoso. Los niños sintieron miedo, porque Carmelo ya estaba viejo."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "El día de la pelea, Carmelo luchó con valentía. El Ajiseco era fuerte y rápido, pero Carmelo no retrocedió. Al final, el Ajiseco cayó vencido y la gente aplaudió al viejo gallo."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Sin embargo, Carmelo había quedado muy herido. Los niños lo llevaron a casa y lo cuidaron día y noche. Poco después, el Caballero Carmelo murió tranquilo, rodeado de quienes lo querían."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "El narrador, ya adulto, recuerda aquella tarde con tristeza. La historia nos habla del cariño a los animales, de la nobleza y del paso del tiempo, y también nos invita a preguntarnos si está bien hacer pelear a un ser que amamos."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-AlexNeural",
+      "pitch": 1,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "En una casa de Pisco, junto al mar, vivía una familia con muchos hijos. Un día el padre volvió de viaje con un regalo: un gallo de plumas brillantes y paso elegante. Los niños lo llamaron el Caballero Carmelo."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Carmelo se volvió parte de la familia. Cantaba al amanecer, paseaba por el corral como un señor y los niños lo cuidaban con cariño. Para ellos no era solo un ave: era un amigo."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Pero llegaron las fiestas de San Andrés, y en el pueblo se organizaban peleas de gallos. El padre aceptó un desafío: Carmelo debía enfrentarse al Ajiseco, un gallo joven y famoso. Los niños sintieron miedo, porque Carmelo ya estaba viejo."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "El día de la pelea, Carmelo luchó con valentía. El Ajiseco era fuerte y rápido, pero Carmelo no retrocedió. Al final, el Ajiseco cayó vencido y la gente aplaudió al viejo gallo."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Sin embargo, Carmelo había quedado muy herido. Los niños lo llevaron a casa y lo cuidaron día y noche. Poco después, el Caballero Carmelo murió tranquilo, rodeado de quienes lo querían."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "El narrador, ya adulto, recuerda aquella tarde con tristeza. La historia nos habla del cariño a los animales, de la nobleza y del paso del tiempo, y también nos invita a preguntarnos si está bien hacer pelear a un ser que amamos."
+      }
+    ]
+  ]
+}

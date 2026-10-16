@@ -1,0 +1,101 @@
+{
+  "id": "manco-capac",
+  "titulo": "Manco Cápac y Mama Ocllo",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "Hace mucho tiempo, cuando las personas de los Andes vivían dispersas, sin casas firmes ni campos cultivados, el Sol, al que llamaban Inti, miró la tierra desde lo alto y sintió pena por ellas."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Entonces el Sol envió a dos de sus hijos, Manco Cápac y Mama Ocllo. Los dos aparecieron sobre las aguas del gran lago Titicaca, brillantes como la luz de la mañana."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "El Sol les entregó una vara de oro y les dio una tarea: caminar hacia el norte y, en cada lugar donde descansaran, hundir la vara en el suelo. Allí donde la vara se hundiera por completo, debían fundar una ciudad."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Manco Cápac y Mama Ocllo caminaron muchos días, cruzando ríos, punas y quebradas. Probaban la tierra una y otra vez, pero la vara no entraba del todo."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Un día llegaron a un valle verde rodeado de montañas. Manco Cápac hundió la vara y esta desapareció en la tierra, suave y fértil. Así supieron que habían llegado al lugar elegido: el Cusco."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Manco Cápac enseñó a los hombres a cultivar el maíz, a construir canales y a levantar casas. Mama Ocllo enseñó a las mujeres a hilar y a tejer la lana. Con el trabajo compartido nació un pueblo grande y organizado."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-AlexNeural",
+      "pitch": 1,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "Hace mucho tiempo, cuando las personas de los Andes vivían dispersas, sin casas firmes ni campos cultivados, el Sol, al que llamaban Inti, miró la tierra desde lo alto y sintió pena por ellas."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Entonces el Sol envió a dos de sus hijos, Manco Cápac y Mama Ocllo. Los dos aparecieron sobre las aguas del gran lago Titicaca, brillantes como la luz de la mañana."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "El Sol les entregó una vara de oro y les dio una tarea: caminar hacia el norte y, en cada lugar donde descansaran, hundir la vara en el suelo. Allí donde la vara se hundiera por completo, debían fundar una ciudad."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Manco Cápac y Mama Ocllo caminaron muchos días, cruzando ríos, punas y quebradas. Probaban la tierra una y otra vez, pero la vara no entraba del todo."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Un día llegaron a un valle verde rodeado de montañas. Manco Cápac hundió la vara y esta desapareció en la tierra, suave y fértil. Así supieron que habían llegado al lugar elegido: el Cusco."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Manco Cápac enseñó a los hombres a cultivar el maíz, a construir canales y a levantar casas. Mama Ocllo enseñó a las mujeres a hilar y a tejer la lana. Con el trabajo compartido nació un pueblo grande y organizado."
+      }
+    ]
+  ]
+}
