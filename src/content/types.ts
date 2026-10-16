@@ -1,4 +1,5 @@
 import type { LanguageCode } from '@/i18n/translations';
+import type { AmbienceOverride } from './ambience';
 
 export type Region = 'costa' | 'sierra' | 'selva';
 export type AgeGroup = 'ninos' | 'jovenes' | 'adultos';
@@ -110,6 +111,8 @@ export interface Story {
   summary: Localized<string>;
   paragraphs: Localized<string[]>;
   audio: NarratorTrack[];
+  /** Ajustes manuales del diseño sonoro automático (opcional). */
+  ambience?: AmbienceOverride[];
   glossary: GlossaryEntry[];
   quiz: QuizQuestion[];
 }

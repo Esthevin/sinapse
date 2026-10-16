@@ -104,6 +104,7 @@ const es = {
   next: 'Siguiente',
   paragraphOf: 'Parte {n} de {total}',
   speed: 'Velocidad',
+  sounds: 'Sonidos',
   voiceDevice: 'Voz del teléfono',
   voiceNarrator: 'Narrador',
   narratedBy: 'Narra: {name}',

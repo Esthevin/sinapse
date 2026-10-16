@@ -1,7 +1,9 @@
 import { router, Stack, useLocalSearchParams } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Ambience } from '@/components/Ambience';
+import { cuesFor } from '@/content/ambience';
 import { Button, Card, Chip, Cover, Glyph, label as caps, ProgressBar, SectionTitle, Text } from '@/components/ui';
 import { estimateMinutes, getStory } from '@/content';
 import {
@@ -96,6 +98,7 @@ function StoryPlayer({
 
   const isTts = resolved.source.kind === 'tts';
   const paragraphs = resolved.source.paragraphs;
+  const cues = useMemo(() => cuesFor(story.paragraphs.es, story.region, story.ambience), [story]);
 
   useEffect(() => {
     if (isTts) hasSpanishVoice().then((ok) => setNoVoice(!ok));
@@ -264,6 +267,7 @@ function StoryPlayer({
         </Text>
       </ScrollView>
 
+      <Ambience cues={cues} index={narration.index} playing={narration.playing} enabled={settings.ambience} />
       {/* Controles fijos abajo */}
       <View style={[styles.controls, { paddingBottom: insets.bottom + spacing.sm }]}>
         <View style={styles.controlsInner}>
@@ -299,6 +303,7 @@ function StoryPlayer({
             {SPEEDS.map((sp) => (
               <Chip key={sp} label={`${sp}x`} active={settings.speechRate === sp} onPress={() => updateSettings({ speechRate: sp })} />
             ))}
+            <Chip label={t(lang, 'sounds')} active={settings.ambience} onPress={() => updateSettings({ ambience: !settings.ambience })} />
           </View>
         </View>
       </View>
@@ -363,5 +368,5 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, u
       alignItems: 'center',
       justifyContent: 'center',
     },
-    speedRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, marginTop: spacing.xs },
+    speedRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, marginTop: spacing.xs },
   });

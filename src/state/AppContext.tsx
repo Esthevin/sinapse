@@ -12,6 +12,8 @@ export interface Settings {
   onboarded: boolean;
   /** Muestra herramientas internas del equipo (sincronizar párrafos). */
   teamTools: boolean;
+  /** Sonidos de ambiente durante la narración (viento, pasos, lluvia…). */
+  ambience: boolean;
 }
 
 export interface StoryProgress {
@@ -53,7 +55,7 @@ const PROFILE_TEXT_SCALE: Record<AgeGroup, number> = { ninos: 1.08, jovenes: 1, 
 const STORAGE_KEY = 'sinapse.state.v1';
 
 const INITIAL: PersistedState = {
-  settings: { lang: 'es', profile: null, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false },
+  settings: { lang: 'es', profile: null, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false, ambience: true },
   progress: {},
   quizzes: {},
   recordings: {},
