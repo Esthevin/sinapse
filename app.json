@@ -41,6 +41,9 @@
     ],
     "extra": {
       "catalogUrl": "https://esthevin.github.io/sinapse/catalogo/catalogo.json"
+    },
+    "experiments": {
+      "baseUrl": "/sinapse"
     }
   }
 }
