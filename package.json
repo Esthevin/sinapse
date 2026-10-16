@@ -15,7 +15,8 @@
     "audio:importar": "node scripts/importar-audios.mjs",
     "catalogo:generar": "node scripts/generar-catalogo.mjs",
     "postinstall": "patch-package",
-    "pdf:audiolibro": "node --experimental-strip-types --no-warnings scripts/pdf-a-audiolibro.mjs"
+    "pdf:audiolibro": "node --experimental-strip-types --no-warnings scripts/pdf-a-audiolibro.mjs",
+    "audio:alinear": "node scripts/alinear-audio.mjs"
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.1",

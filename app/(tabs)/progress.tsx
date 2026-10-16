@@ -25,7 +25,7 @@ export default function ProgressScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      {th.id === 'adultos' ? (
+      {!th.playful ? (
         <View>
           {tiles.map((tile) => (
             <View key={tile.label} style={styles.statRow}>
@@ -46,7 +46,7 @@ export default function ProgressScreen() {
       )}
 
       <View style={{ marginTop: spacing.md }}>
-        <ProgressBar value={stats.completed / stats.totalStories} color={colors.success} height={th.id === 'ninos' ? 18 : 6} />
+        <ProgressBar value={stats.completed / stats.totalStories} color={colors.success} height={th.playful ? 18 : 6} />
       </View>
 
       <SectionTitle>{t(lang, 'badges')}</SectionTitle>
@@ -95,12 +95,12 @@ export default function ProgressScreen() {
   );
 }
 
-const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs }: Theme) =>
+const makeStyles = ({ playful, colors, spacing, radius, fontSize, font, stroke, fs }: Theme) =>
   StyleSheet.create({
     content: { padding: spacing.md, paddingBottom: spacing.xl * 2, width: '100%', maxWidth: 760, alignSelf: 'center' },
     grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
     tile: { flexBasis: '46%', flexGrow: 1, paddingVertical: spacing.lg },
-    tileValue: { fontFamily: font.heading, fontWeight: '900', color: id === 'jovenes' ? colors.accent : colors.text, fontSize: fs(id === 'ninos' ? 42 : 36) },
+    tileValue: { fontFamily: font.heading, fontWeight: '900', color: colors.text, fontSize: fs(playful ? 42 : 36) },
     tileLabel: { color: colors.textMuted, fontWeight: '700', fontSize: fs(13), marginTop: 2 },
     statRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', paddingVertical: spacing.md, borderBottomWidth: 1, borderBottomColor: colors.border },
     statLabel: { color: colors.textMuted, fontSize: fs(fontSize.body), fontStyle: 'italic' },

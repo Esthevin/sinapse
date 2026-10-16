@@ -23,6 +23,8 @@ export interface ResolvedNarration {
   voice: VoiceInfo;
   /** true si se pidió una lengua sin narración y se usa el castellano. */
   fallback: boolean;
+  /** Lengua del texto que se muestra (puede ser distinta de la de la voz cuando hay traducción). */
+  textLang: LanguageCode;
   /** Clave estable para reiniciar el reproductor al cambiar de fuente. */
   key: string;
 }
@@ -63,7 +65,15 @@ function fromPublished(t: NarratorTrack): Track | null {
 /** La mejor narración disponible en una lengua: grabación local > humana > archivo > IA autorizada > sintética. */
 function bestTrack(story: Story, lang: LanguageCode, recordings: Recordings): Track | null {
   const local = recordings?.[lang];
-  if (local) return { uri: local.uri, voice: { kind: 'audio', name: local.narratorName, source: 'local' } };
+  if (local) {
+    const d = local.durationSec;
+    return {
+      uri: local.uri,
+      voice: { kind: 'audio', name: local.narratorName, source: 'local' },
+      // Marcas del propio narrador, como fracción del audio (igual que las de los audios publicados).
+      paragraphStarts: d && local.paragraphStarts ? local.paragraphStarts.map((sec) => Math.min(0.999, sec / d)) : undefined,
+    };
+  }
 
   const candidates = story.audio
     .filter((a) => a.lang === lang)
@@ -107,7 +117,7 @@ export function narratedLanguages(story: Story, recordings: Recordings): Languag
   return [...codes].filter((c) => hasHumanNarration(story, c, recordings));
 }
 
-function toResolved(track: Track, lang: LanguageCode, paragraphs: string[], fallback: boolean): ResolvedNarration {
+function toResolved(track: Track, lang: LanguageCode, paragraphs: string[], fallback: boolean, textLang: LanguageCode = lang): ResolvedNarration {
   return {
     source: {
       kind: 'audio',
@@ -121,7 +131,8 @@ function toResolved(track: Track, lang: LanguageCode, paragraphs: string[], fall
     lang,
     voice: track.voice,
     fallback,
-    key: `${lang}:${track.uri}`,
+    textLang,
+    key: `${lang}:${track.uri}:${textLang}`,
   };
 }
 
@@ -136,13 +147,34 @@ export function resolveNarration(story: Story, lang: LanguageCode, recordings: R
 
   const fallback = lang !== 'es';
   const spanish = bestTrack(story, 'es', recordings);
-  if (spanish) return toResolved(spanish, 'es', story.paragraphs.es, fallback);
+  if (spanish) {
+    // Si el cuento está traducido a esa lengua con los mismos párrafos, se muestra el texto traducido
+    // y se usa la voz disponible: cada párrafo se resalta cuando suena su equivalente.
+    const translated = fallback ? translatedParagraphs(story, lang) : null;
+    return toResolved(spanish, 'es', translated?.paragraphs ?? story.paragraphs.es, fallback, translated?.lang ?? 'es');
+  }
 
   return {
     source: { kind: 'tts', paragraphs: story.paragraphs.es },
     lang: 'es',
     voice: { kind: 'tts' },
     fallback,
+    textLang: 'es',
     key: 'es:tts',
   };
+}
+
+/** Texto traducido (o de la lengua general de una variante) con tantos párrafos como el original. */
+function translatedParagraphs(story: Story, lang: LanguageCode): { paragraphs: string[]; lang: LanguageCode } | null {
+  for (const c of fallbackChain(lang)) {
+    if (c === 'es') break;
+    const p = story.paragraphs[c];
+    if (p && p.length === story.paragraphs.es.length) return { paragraphs: p, lang: c };
+  }
+  return null;
+}
+
+/** Lenguas en las que el cuento tiene el texto traducido completo (mismos párrafos que el original). */
+export function translatedLanguages(story: Story): LanguageCode[] {
+  return (Object.keys(story.paragraphs) as LanguageCode[]).filter((c) => c !== 'es' && story.paragraphs[c]?.length === story.paragraphs.es.length);
 }

@@ -68,7 +68,7 @@ export default function QuizScreen() {
         contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + spacing.xl }]}
       >
         <View style={styles.bigStars}>
-          <Stars count={stars} size={th.id === 'ninos' ? 34 : 24} />
+          <Stars count={stars} size={th.playful ? 34 : 24} />
         </View>
         <Text style={styles.resultTitle}>
           {t(lang, 'yourScore', { n: correct, total: questions.length })}
@@ -180,21 +180,21 @@ export default function QuizScreen() {
   );
 }
 
-const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, uppercaseLabels }: Theme) =>
+const makeStyles = ({ playful, colors, spacing, radius, fontSize, font, stroke, fs }: Theme) =>
   StyleSheet.create({
     content: { padding: spacing.lg, width: '100%', maxWidth: 680, alignSelf: 'center' },
     topRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: spacing.md },
     counter: { color: colors.textMuted, fontWeight: '700', fontSize: fs(fontSize.caption) },
     levelPill: { borderRadius: radius.pill, paddingHorizontal: spacing.md, paddingVertical: 4 },
-    levelPillText: { color: colors.background, fontWeight: '800', fontSize: fs(13), letterSpacing: uppercaseLabels ? 1 : 0 },
+    levelPillText: { color: colors.background, fontWeight: '800', fontSize: fs(13) },
     question: {
       fontFamily: font.heading,
-      fontWeight: id === 'adultos' ? '700' : '900',
+      fontWeight: playful ? '900' : '700',
       color: colors.text,
       marginTop: spacing.lg,
       marginBottom: spacing.lg,
-      fontSize: fs(id === 'ninos' ? 30 : fontSize.title - 3),
-      lineHeight: fs(id === 'ninos' ? 38 : 32),
+      fontSize: fs(playful ? 30 : fontSize.title - 3),
+      lineHeight: fs(playful ? 38 : 32),
     },
     option: {
       flexDirection: 'row',
@@ -203,7 +203,7 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, u
       borderWidth: stroke,
       borderColor: colors.border,
       borderRadius: radius.md,
-      padding: id === 'ninos' ? spacing.md + 4 : spacing.md,
+      padding: playful ? spacing.md + 4 : spacing.md,
       marginBottom: spacing.sm + 2,
       backgroundColor: colors.card,
     },
@@ -212,7 +212,7 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, u
     optionLetter: {
       width: 34,
       height: 34,
-      borderRadius: id === 'ninos' ? 17 : radius.sm,
+      borderRadius: playful ? 17 : radius.sm,
       backgroundColor: colors.surface,
       textAlign: 'center',
       lineHeight: 34,
@@ -221,7 +221,7 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, u
       overflow: 'hidden',
       fontFamily: font.heading,
     },
-    optionText: { flex: 1, color: colors.text, fontSize: fs(id === 'ninos' ? fontSize.body + 2 : fontSize.body) },
+    optionText: { flex: 1, color: colors.text, fontSize: fs(playful ? fontSize.body + 2 : fontSize.body) },
     mark: { fontSize: fs(18), fontWeight: '900' },
     feedback: { marginTop: spacing.md },
     feedbackTitle: { fontFamily: font.heading, fontWeight: '900', color: colors.text, fontSize: fs(fontSize.subtitle) },

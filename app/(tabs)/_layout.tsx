@@ -22,15 +22,14 @@ export default function TabsLayout() {
         <View style={{ alignItems: 'center', paddingTop: 10 }}>
           <Text
             style={{
-              fontSize: th.fs(th.id === 'ninos' ? 16 : 13),
+              fontSize: th.fs(th.playful ? 16 : 13),
               fontWeight: focused ? '900' : '600',
               color: focused ? colors.text : colors.textMuted,
-              letterSpacing: th.uppercaseLabels ? 1 : 0,
             }}
           >
-            {th.uppercaseLabels ? text.toUpperCase() : text}
+            {text}
           </Text>
-          <View style={{ marginTop: 6, height: th.id === 'ninos' ? 5 : 3, width: 28, borderRadius: 3, backgroundColor: focused ? colors.accent : 'transparent' }} />
+          <View style={{ marginTop: 6, height: th.playful ? 5 : 3, width: 28, borderRadius: 3, backgroundColor: focused ? colors.accent : 'transparent' }} />
         </View>
       );
     };
@@ -41,7 +40,7 @@ export default function TabsLayout() {
         headerStyle: { backgroundColor: colors.background, shadowOpacity: 0, elevation: 0, borderBottomWidth: th.stroke, borderBottomColor: colors.border },
         headerTintColor: colors.text,
         headerTitleAlign: 'left',
-        headerTitleStyle: { fontFamily: th.font.heading, fontWeight: '900', fontSize: th.fs(th.fontSize.subtitle + (th.id === 'ninos' ? 2 : 0)), color: colors.text },
+        headerTitleStyle: { fontFamily: th.font.heading, fontWeight: '900', fontSize: th.fs(th.fontSize.subtitle + (th.playful ? 2 : 0)), color: colors.text },
         tabBarShowLabel: true,
         tabBarIcon: () => null,
         tabBarIconStyle: { display: 'none' },
@@ -49,7 +48,7 @@ export default function TabsLayout() {
           backgroundColor: colors.card,
           borderTopWidth: th.stroke,
           borderTopColor: colors.border,
-          height: (th.id === 'ninos' ? 74 : 64) + insets.bottom,
+          height: (th.playful ? 74 : 64) + insets.bottom,
           paddingBottom: insets.bottom,
           ...(Platform.OS === 'web' ? {} : { elevation: 0 }),
         },

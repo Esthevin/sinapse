@@ -49,7 +49,7 @@ export function LanguagePicker({ value, onChange }: { value: LanguageCode; onCha
   );
 }
 
-const makeStyles = ({ colors, spacing, radius, fontSize, stroke, uppercaseLabels, fs }: Theme) =>
+const makeStyles = ({ colors, spacing, radius, fontSize, stroke, fs }: Theme) =>
   StyleSheet.create({
     family: {
       color: colors.textMuted,
@@ -57,8 +57,6 @@ const makeStyles = ({ colors, spacing, radius, fontSize, stroke, uppercaseLabels
       fontSize: fs(13),
       marginBottom: spacing.xs,
       marginTop: spacing.xs,
-      letterSpacing: uppercaseLabels ? 1.2 : 0,
-      textTransform: uppercaseLabels ? 'uppercase' : 'none',
     },
     grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
     option: {

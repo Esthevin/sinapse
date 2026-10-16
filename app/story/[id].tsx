@@ -4,13 +4,14 @@ import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 're
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ambience } from '@/components/Ambience';
 import { cuesFor } from '@/content/ambience';
-import { Button, Card, Chip, Cover, Glyph, label as caps, ProgressBar, SectionTitle, Text } from '@/components/ui';
+import { Button, Card, Chip, Cover, Glyph, ProgressBar, SectionTitle, Text } from '@/components/ui';
 import { estimateMinutes, getStory, isUserBook } from '@/content';
 import { deleteBook } from '@/services/books';
 import { confirmAction } from '@/utils/confirm';
 import {
   isRemoteAudio,
   narratedLanguages,
+  translatedLanguages,
   resolveNarration,
   type ResolvedNarration,
   type VoiceInfo,
@@ -115,33 +116,36 @@ function StoryPlayer({
   }, [narration.index, narration.playing]);
 
   const voice = resolved.voice;
-  const textIsReference = resolved.lang !== 'es' && !story.paragraphs[resolved.lang];
+  // El texto que se ve está en castellano aunque se pidió otra lengua (todavía no hay traducción).
+  const textIsReference = viewLang !== 'es' && resolved.textLang === 'es';
+  // Hay traducción, pero la voz sigue en castellano.
+  const translatedOnly = viewLang !== 'es' && resolved.textLang !== 'es' && resolved.lang === 'es';
 
   // Lenguas visibles: castellano, las que tienen narración, y la del usuario.
   // El resto se despliega con “Otras lenguas” (el Perú tiene 48 lenguas originarias).
   const [showAllLangs, setShowAllLangs] = useState(false);
-  const featured = new Set<LanguageCode>(['es', ...narratedLanguages(story, recordings[story.id]), settings.lang, viewLang]);
+  const featured = new Set<LanguageCode>(['es', ...narratedLanguages(story, recordings[story.id]), ...translatedLanguages(story), settings.lang, viewLang]);
   const visibleLangs = showAllLangs ? LANGUAGES : LANGUAGES.filter((l) => featured.has(l.code));
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView ref={scrollRef} contentContainerStyle={styles.content}>
         {/* Cabecera */}
-        <View style={[styles.header, th.id === 'ninos' && { flexDirection: 'column', alignItems: 'center' }]}>
+        <View style={[styles.header, th.playful && { flexDirection: 'column', alignItems: 'center' }]}>
           <Cover
             story={story}
-            size={th.id === 'ninos' ? Math.min(Math.min(screenWidth, MAX_WIDTH) - spacing.md * 2 - th.shadowOffset, 300) : th.id === 'jovenes' ? 96 : 76}
+            size={th.playful ? Math.min(Math.min(screenWidth, MAX_WIDTH) - spacing.md * 2 - th.shadowOffset, 300) : 76}
             title={pickLocalized(story.title, lang)}
           />
           <View style={{ flex: 1 }}>
             <Text style={styles.title}>{pickLocalized(story.title, lang)}</Text>
             <Text style={styles.meta}>
               {story.author}
-              {story.collection && th.id !== 'ninos' ? ` · ${story.collection}` : ''}
+              {story.collection && !th.playful ? ` · ${story.collection}` : ''}
             </Text>
-            {story.original && th.id !== 'ninos' && <Text style={[styles.meta, { color: colors.accent, fontWeight: '700' }]}>{t(lang, 'originalText')}</Text>}
+            {story.original && !th.playful && <Text style={[styles.meta, { color: colors.accent, fontWeight: '700' }]}>{t(lang, 'originalText')}</Text>}
             <Text style={styles.meta}>
-              {caps(th, isUserBook(story) ? 'Audiolibro' : t(lang, story.region))} · {estimateMinutes(story)} {t(lang, 'minutes')}
+              {isUserBook(story) ? 'Audiolibro' : t(lang, story.region)} · {estimateMinutes(story)} {t(lang, 'minutes')}
             </Text>
           </View>
         </View>
@@ -191,8 +195,8 @@ function StoryPlayer({
                 </Text>
               </View>
             </View>
-            {th.id !== 'ninos' && voice.narrator?.bio ? <Text style={styles.narratorBio}>{voice.narrator.bio}</Text> : null}
-            {th.id !== 'ninos' && (
+            {!th.playful && voice.narrator?.bio ? <Text style={styles.narratorBio}>{voice.narrator.bio}</Text> : null}
+            {!th.playful && (
               <Text style={styles.narratorCredit}>{voice.source === 'local' ? t(lang, 'recordedOnPhone') : voice.narrator?.credit}</Text>
             )}
             {isRemoteAudio(resolved.source) && <Text style={styles.narratorCredit}>{t(lang, 'needsInternet')}</Text>}
@@ -207,6 +211,15 @@ function StoryPlayer({
           </Card>
         )}
 
+        {(isTts || (voice.kind === 'audio' && voice.source === 'sintetica')) && (
+          <Button
+            label="Ponle tu voz: grabar esta historia"
+            variant="secondary"
+            onPress={() => router.push({ pathname: '/record/[id]', params: { id: story.id, lang: 'es' } })}
+            style={{ marginTop: spacing.md }}
+          />
+        )}
+
         {isTts && noVoice && (
           <Card style={styles.notice}>
             <Text style={styles.noticeText}>{t(lang, 'noSpanishVoice')}</Text>
@@ -216,6 +229,7 @@ function StoryPlayer({
         {/* Texto sincronizado */}
         <Text style={styles.hint}>{t(lang, 'tapToJump')}</Text>
         {textIsReference && <Text style={styles.hint}>Texto de referencia en castellano</Text>}
+        {translatedOnly && <Text style={styles.hint}>{`Texto en ${languageName(resolved.textLang)}. La voz sigue en castellano: cada párrafo se resalta cuando suena su equivalente.`}</Text>}
         <View onLayout={(e) => (textTop.current = e.nativeEvent.layout.y)}>
           {paragraphs.map((p, i) => {
             const active = i === narration.index && (narration.playing || narration.index > 0);
@@ -311,7 +325,7 @@ function StoryPlayer({
               {narration.loading ? (
                 <Text style={{ color: colors.onAccent, fontSize: 28, fontWeight: '900' }}>…</Text>
               ) : (
-                <Glyph name={narration.playing ? 'pause' : 'play'} size={th.id === 'ninos' ? 38 : 30} color={colors.onAccent} />
+                <Glyph name={narration.playing ? 'pause' : 'play'} size={th.playful ? 38 : 30} color={colors.onAccent} />
               )}
             </Pressable>
             <Pressable onPress={narration.next} style={styles.sideButton} accessibilityRole="button" accessibilityLabel={t(lang, 'next')}>
@@ -331,14 +345,14 @@ function StoryPlayer({
   );
 }
 
-const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, uppercaseLabels }: Theme) =>
+const makeStyles = ({ playful, colors, spacing, radius, fontSize, font, stroke, fs }: Theme) =>
   StyleSheet.create({
     center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
     content: { padding: spacing.md, paddingBottom: spacing.xl * 2, width: '100%', maxWidth: MAX_WIDTH, alignSelf: 'center' },
     header: { flexDirection: 'row', gap: spacing.md, alignItems: 'center' },
-    title: { fontFamily: font.heading, fontWeight: id === 'adultos' ? '700' : '900', color: colors.text, fontSize: fs(id === 'ninos' ? 30 : fontSize.title - 2) },
-    meta: { color: colors.textMuted, marginTop: 3, fontSize: fs(fontSize.caption), letterSpacing: uppercaseLabels ? 0.6 : 0 },
-    summary: { color: colors.text, marginTop: spacing.md, lineHeight: fs(26), fontSize: fs(fontSize.body), fontStyle: id === 'adultos' ? 'italic' : 'normal' },
+    title: { fontFamily: font.heading, fontWeight: playful ? '900' : '700', color: colors.text, fontSize: fs(playful ? 30 : fontSize.title - 2) },
+    meta: { color: colors.textMuted, marginTop: 3, fontSize: fs(fontSize.caption) },
+    summary: { color: colors.text, marginTop: spacing.md, lineHeight: fs(26), fontSize: fs(fontSize.body), fontStyle: 'normal' },
     chips: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, marginTop: spacing.md },
     notice: { marginTop: spacing.md, backgroundColor: colors.accentSoft },
     noticeText: { color: colors.text, lineHeight: fs(24), fontSize: fs(fontSize.body) },
@@ -349,12 +363,12 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, u
     narratorAvatar: {
       width: 46,
       height: 46,
-      borderRadius: id === 'ninos' ? 23 : radius.sm,
-      backgroundColor: id === 'jovenes' ? colors.accent : colors.primary,
+      borderRadius: playful ? 23 : radius.sm,
+      backgroundColor: colors.primary,
       alignItems: 'center',
       justifyContent: 'center',
     },
-    narratorInitial: { color: id === 'jovenes' ? colors.onAccent : colors.onPrimary, fontSize: 22, fontWeight: '900', fontFamily: font.heading },
+    narratorInitial: { color: colors.onPrimary, fontSize: 22, fontWeight: '900', fontFamily: font.heading },
     narratorName: { fontWeight: '900', color: colors.text, fontSize: fs(fontSize.body + 1) },
     narratorRole: { color: colors.accent, fontWeight: '700', marginTop: 2, fontSize: fs(13) },
     narratorBio: { color: colors.text, marginTop: spacing.sm, lineHeight: fs(22), fontSize: fs(fontSize.caption + 1) },
@@ -364,8 +378,8 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, u
     paragraphText: {
       color: colors.text,
       fontFamily: font.body,
-      fontSize: fs(id === 'ninos' ? fontSize.body + 4 : id === 'adultos' ? fontSize.body + 3 : fontSize.body + 1),
-      lineHeight: fs(id === 'ninos' ? 34 : id === 'adultos' ? 33 : 29),
+      fontSize: fs(playful ? fontSize.body + 4 : fontSize.body + 2),
+      lineHeight: fs(playful ? 34 : 31),
     },
     glossaryRow: { borderBottomWidth: 1, borderBottomColor: colors.border, paddingVertical: spacing.md },
     glossaryWord: { fontFamily: font.heading, fontWeight: '800', color: colors.text, fontSize: fs(fontSize.body + 1) },
@@ -379,11 +393,11 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, u
     buttonsRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.xl, marginTop: spacing.xs },
     sideButton: { padding: spacing.md },
     playButton: {
-      width: id === 'ninos' ? 84 : 68,
-      height: id === 'ninos' ? 84 : 68,
-      borderRadius: id === 'ninos' ? 42 : id === 'jovenes' ? radius.md : 34,
+      width: playful ? 84 : 68,
+      height: playful ? 84 : 68,
+      borderRadius: playful ? 42 : 34,
       backgroundColor: colors.accent,
-      borderWidth: id === 'ninos' ? stroke : 0,
+      borderWidth: playful ? stroke : 0,
       borderColor: colors.border,
       alignItems: 'center',
       justifyContent: 'center',

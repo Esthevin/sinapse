@@ -55,6 +55,9 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
   const [consent, setConsent] = useState(false);
   const [tempUri, setTempUri] = useState<string | null>(null);
   const [durationSec, setDurationSec] = useState(0);
+  /** Segundos en que se tocó «Siguiente párrafo» (el primero empieza en 0). */
+  const [marks, setMarks] = useState<number[]>([]);
+  const [finalMarks, setFinalMarks] = useState<number[] | undefined>(undefined);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
@@ -87,6 +90,8 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
     await setAudioModeAsync({ allowsRecording: true, playsInSilentMode: true });
     await recorder.prepareToRecordAsync();
     recorder.record();
+    setMarks([0]);
+    setFinalMarks(undefined);
     setPhase('recording');
   };
 
@@ -96,6 +101,8 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
     await setAudioModeAsync({ allowsRecording: false, playsInSilentMode: true });
     setTempUri(recorder.uri);
     setDurationSec(seconds);
+    // Solo sirven las marcas si se marcaron TODOS los párrafos; si no, el resaltado se estima.
+    setFinalMarks(marks.length === paragraphs.length ? marks : undefined);
     setPhase('review');
   };
 
@@ -105,7 +112,7 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
     try {
       const uri = await persistRecording(tempUri, story.id, lang);
       if (existing) await deleteRecordingFile(existing.uri);
-      saveRecording(story.id, lang, { uri, narratorName: narratorName.trim(), consent: true, durationSec, date: Date.now() });
+      saveRecording(story.id, lang, { uri, narratorName: narratorName.trim(), consent: true, durationSec, date: Date.now(), paragraphStarts: finalMarks });
       setPhase('saved');
     } catch (e) {
       setError('No se pudo guardar la grabación. Intenta de nuevo.');
@@ -194,6 +201,11 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
             <Text style={styles.tip}>
               Busca un lugar silencioso. {lang === 'es' ? 'Lee el texto con calma.' : `Puedes leer el texto o contar la historia con tus propias palabras en ${langName}.`}
             </Text>
+            {phase === 'ready' && (
+              <Text style={styles.tip}>
+                Mientras lees, toca «Siguiente párrafo» cada vez que empieces uno nuevo. Así la app resalta el texto justo cuando lo dices.
+              </Text>
+            )}
             <View style={styles.recordRow}>
               <Pressable
                 onPress={phase === 'recording' ? stop : start}
@@ -210,14 +222,26 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
                 </Text>
               </View>
             </View>
+            {phase === 'recording' && (
+              <Button
+                label={marks.length < paragraphs.length ? `Siguiente párrafo (${marks.length} de ${paragraphs.length})` : 'Último párrafo marcado'}
+                variant="secondary"
+                disabled={marks.length >= paragraphs.length}
+                onPress={() => setMarks((m) => (m.length < paragraphs.length ? [...m, recState.durationMillis / 1000] : m))}
+                style={{ marginTop: spacing.md }}
+              />
+            )}
           </Card>
 
-          {/* Texto guía (teleprompter) */}
-          {paragraphs.map((p, i) => (
-            <Text key={i} style={styles.prompter}>
-              {p}
-            </Text>
-          ))}
+          {/* Texto guía (teleprompter): el párrafo que toca leer va resaltado */}
+          {paragraphs.map((p, i) => {
+            const current = phase === 'recording' && i === marks.length - 1;
+            return (
+              <Text key={i} style={[styles.prompter, current && styles.prompterCurrent, phase === 'recording' && !current && { opacity: 0.45 }]}>
+                {p}
+              </Text>
+            );
+          })}
         </>
       )}
 
@@ -225,6 +249,9 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
       {phase === 'review' && (
         <Card style={styles.notice}>
           <Text style={styles.stepTitle}>3. Escucha tu grabación</Text>
+          <Text style={styles.tip}>
+            {finalMarks ? 'Marcaste todos los párrafos: el texto se resaltará justo cuando lo dices.' : 'No marcaste todos los párrafos: el resaltado será aproximado.'}
+          </Text>
           <Button
             label={playerStatus.playing ? 'Pausar' : `Escuchar (${formatTime(durationSec)})`}
             variant="secondary"
@@ -280,7 +307,7 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
   );
 }
 
-const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs }: Theme) =>
+const makeStyles = ({ playful, colors, spacing, radius, fontSize, font, stroke, fs }: Theme) =>
   StyleSheet.create({
     center: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: spacing.xl, backgroundColor: colors.background },
     centerText: { textAlign: 'center', color: colors.text, fontWeight: '700', fontSize: fs(fontSize.subtitle) },
@@ -304,7 +331,7 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs }:
     checkbox: {
       width: 28,
       height: 28,
-      borderRadius: id === 'ninos' ? 8 : 3,
+      borderRadius: playful ? 8 : 3,
       borderWidth: 2,
       borderColor: colors.text,
       alignItems: 'center',
@@ -324,5 +351,6 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs }:
     },
     recordButtonActive: { backgroundColor: colors.text },
     timer: { fontWeight: '900', color: colors.text, fontVariant: ['tabular-nums'], fontSize: fs(fontSize.display) },
+    prompterCurrent: { backgroundColor: colors.highlight, borderLeftWidth: 4, borderLeftColor: colors.highlightBar, paddingVertical: spacing.sm, paddingLeft: spacing.sm, borderRadius: radius.sm },
     prompter: { color: colors.text, marginTop: spacing.md, paddingHorizontal: spacing.xs, fontFamily: font.body, fontSize: fs(fontSize.subtitle), lineHeight: fs(32) },
   });

@@ -2,12 +2,13 @@ import { loadBooks } from '@/services/books';
 import { downloadCatalog, loadCachedCatalog } from '@/services/catalog';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
-import type { AgeGroup } from '@/content/types';
+import { DEFAULT_APPEARANCE, sanitizeAppearance, type Appearance } from '@/theme/appearance';
 import { isLanguageCode, type LanguageCode } from '@/i18n/translations';
 
 export interface Settings {
   lang: LanguageCode;
-  profile: AgeGroup | null;
+  /** Colores, letra y formas (Ajustes → Apariencia). Por defecto, el diseño juguetón. */
+  appearance: Appearance;
   fontScale: number; // 0.9 – 1.4
   speechRate: number; // 0.75 – 1.25
   onboarded: boolean;
@@ -42,6 +43,8 @@ export interface Recording {
   consent: true;
   durationSec: number;
   date: number;
+  /** Segundo en que empieza cada párrafo (el narrador los marca al grabar): resaltado exacto. */
+  paragraphStarts?: number[];
 }
 
 interface PersistedState {
@@ -52,13 +55,10 @@ interface PersistedState {
   activeDays: string[]; // 'YYYY-MM-DD', para calcular la racha
 }
 
-/** Los niños leen con letra algo más grande. */
-const PROFILE_TEXT_SCALE: Record<AgeGroup, number> = { ninos: 1.08, jovenes: 1, adultos: 1 };
-
 const STORAGE_KEY = 'sinapse.state.v1';
 
 const INITIAL: PersistedState = {
-  settings: { lang: 'es', profile: null, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false, ambience: true, voiceId: null },
+  settings: { lang: 'es', appearance: DEFAULT_APPEARANCE, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false, ambience: true, voiceId: null },
   progress: {},
   quizzes: {},
   recordings: {},
@@ -118,7 +118,18 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         const settings = { ...INITIAL.settings, ...saved.settings };
         // Datos guardados dañados o de versiones antiguas no deben tumbar la app (pantalla en blanco).
         if (!isLanguageCode(settings.lang)) settings.lang = 'es';
-        if (settings.profile !== null && !(settings.profile in PROFILE_TEXT_SCALE)) settings.profile = null;
+        // Versiones anteriores guardaban un perfil (niños, jóvenes, adultos): se conserva su aspecto como apariencia.
+        const legacy = (saved.settings as { profile?: string } | undefined)?.profile;
+        const fromLegacy: Partial<Appearance> | undefined =
+          !(saved.settings as { appearance?: unknown } | undefined)?.appearance && legacy
+            ? legacy === 'jovenes'
+              ? { palette: 'noche', style: 'limpio', library: 'lista' }
+              : legacy === 'adultos'
+                ? { palette: 'papel', font: 'serif', style: 'limpio', library: 'lista' }
+                : undefined
+            : undefined;
+        settings.appearance = sanitizeAppearance(fromLegacy ?? settings.appearance);
+        delete (settings as { profile?: unknown }).profile;
         if (typeof settings.fontScale !== 'number' || !(settings.fontScale >= 0.5 && settings.fontScale <= 2)) settings.fontScale = 1;
         if (typeof settings.speechRate !== 'number' || !(settings.speechRate > 0)) settings.speechRate = 1;
         const obj = <T,>(v: unknown, fallback: T): T => (v && typeof v === 'object' && !Array.isArray(v) ? (v as T) : fallback);
@@ -246,10 +257,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     []
   );
 
-  const profileScale = PROFILE_TEXT_SCALE[state.settings.profile ?? 'adultos'];
   const booksChanged = useCallback(() => setCatalogVersion((v) => v + 1), []);
 
-  const fs = useCallback((size: number) => Math.round(size * state.settings.fontScale * profileScale), [state.settings.fontScale, profileScale]);
+  const fs = useCallback((size: number) => Math.round(size * state.settings.fontScale), [state.settings.fontScale]);
 
   const value = useMemo<AppState>(
     () => ({
