@@ -105,7 +105,8 @@ export interface Story {
   region: Region;
   ages: AgeGroup[];
   coverColor: string;
-  emoji: string;
+  /** Ya no se muestra en la app (las portadas se dibujan); se conserva por compatibilidad. */
+  emoji?: string;
   summary: Localized<string>;
   paragraphs: Localized<string[]>;
   audio: NarratorTrack[];

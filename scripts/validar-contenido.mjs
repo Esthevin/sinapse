@@ -101,7 +101,6 @@ for (const file of files) {
   if (!Array.isArray(s.ages) || !s.ages.length || s.ages.some((a) => !AGES.includes(a)))
     error(file, `"ages" debe ser una lista con: ${AGES.join(', ')}`);
   if (!/^#[0-9a-fA-F]{6}$/.test(s.coverColor ?? '')) error(file, '"coverColor" debe ser un color #RRGGBB');
-  if (!isNonEmptyString(s.emoji)) error(file, 'falta "emoji"');
   if (!isNonEmptyString(s.summary?.es)) error(file, 'falta "summary.es"');
 
   // Texto

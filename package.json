@@ -12,6 +12,7 @@
     "audio:generar": "node scripts/generar-audios-voicestudio.mjs",
     "build:apk": "eas build --platform android --profile preview",
     "voces:generar": "node scripts/generar-voces-peruanas.mjs",
+    "audio:importar": "node scripts/importar-audios.mjs",
     "catalogo:generar": "node scripts/generar-catalogo.mjs"
   },
   "dependencies": {

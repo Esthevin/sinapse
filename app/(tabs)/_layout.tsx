@@ -1,68 +1,65 @@
 import { Redirect, Tabs } from 'expo-router';
-import { Text } from 'react-native';
+import { Platform, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Text } from '@/components/ui';
 import { t } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
-import { colors, fontSize } from '@/theme/theme';
-
-function TabIcon({ emoji, focused }: { emoji: string; focused: boolean }) {
-  // lineHeight fijo: el emoji no debe exceder la caja de 24 px del ícono, o aplasta la etiqueta.
-  return <Text style={{ fontSize: 20, lineHeight: 24, opacity: focused ? 1 : 0.55 }}>{emoji}</Text>;
-}
+import { useTheme } from '@/theme/theme';
 
 export default function TabsLayout() {
   const { settings } = useApp();
+  const th = useTheme();
   const insets = useSafeAreaInsets();
+  const { colors } = th;
   const { lang } = settings;
 
   if (!settings.onboarded) return <Redirect href="/onboarding" />;
 
+  // Solo etiquetas (sin íconos): la pestaña activa se marca con una barra del color de acción.
+  const tabLabel = (text: string) =>
+    function TabLabel({ focused }: { focused: boolean }) {
+      return (
+        <View style={{ alignItems: 'center', paddingTop: 10 }}>
+          <Text
+            style={{
+              fontSize: th.fs(th.id === 'ninos' ? 16 : 13),
+              fontWeight: focused ? '900' : '600',
+              color: focused ? colors.text : colors.textMuted,
+              letterSpacing: th.uppercaseLabels ? 1 : 0,
+            }}
+          >
+            {th.uppercaseLabels ? text.toUpperCase() : text}
+          </Text>
+          <View style={{ marginTop: 6, height: th.id === 'ninos' ? 5 : 3, width: 28, borderRadius: 3, backgroundColor: focused ? colors.accent : 'transparent' }} />
+        </View>
+      );
+    };
+
   return (
     <Tabs
       screenOptions={{
-        headerStyle: { backgroundColor: colors.primary },
-        headerTintColor: colors.white,
-        headerTitleStyle: { fontWeight: '800', fontSize: fontSize.subtitle },
-        tabBarActiveTintColor: colors.accent,
-        tabBarInactiveTintColor: colors.textMuted,
-        tabBarLabelStyle: { fontSize: 12, lineHeight: 16, fontWeight: '700' },
-        // Más alta que la barra por defecto (49 px) para dedos y etiquetas grandes,
-        // sumando el área segura inferior del teléfono.
-        tabBarStyle: { height: 70 + insets.bottom, paddingTop: 6, paddingBottom: insets.bottom + 6 },
+        headerStyle: { backgroundColor: colors.background, shadowOpacity: 0, elevation: 0, borderBottomWidth: th.stroke, borderBottomColor: colors.border },
+        headerTintColor: colors.text,
+        headerTitleAlign: 'left',
+        headerTitleStyle: { fontFamily: th.font.heading, fontWeight: '900', fontSize: th.fs(th.fontSize.subtitle + (th.id === 'ninos' ? 2 : 0)), color: colors.text },
+        tabBarShowLabel: true,
+        tabBarIcon: () => null,
+        tabBarIconStyle: { display: 'none' },
+        tabBarStyle: {
+          backgroundColor: colors.card,
+          borderTopWidth: th.stroke,
+          borderTopColor: colors.border,
+          height: (th.id === 'ninos' ? 74 : 64) + insets.bottom,
+          paddingBottom: insets.bottom,
+          ...(Platform.OS === 'web' ? {} : { elevation: 0 }),
+        },
+        tabBarItemStyle: { justifyContent: 'center' },
       }}
     >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Sinapse',
-          tabBarLabel: t(lang, 'tabLibrary'),
-          tabBarIcon: ({ focused }) => <TabIcon emoji="📚" focused={focused} />,
-        }}
-      />
-      <Tabs.Screen
-        name="progress"
-        options={{
-          title: t(lang, 'progressTitle'),
-          tabBarLabel: t(lang, 'tabProgress'),
-          tabBarIcon: ({ focused }) => <TabIcon emoji="🏆" focused={focused} />,
-        }}
-      />
-      <Tabs.Screen
-        name="studio"
-        options={{
-          title: t(lang, 'studioTitle'),
-          tabBarLabel: t(lang, 'tabStudio'),
-          tabBarIcon: ({ focused }) => <TabIcon emoji="🎙️" focused={focused} />,
-        }}
-      />
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: t(lang, 'settingsTitle'),
-          tabBarLabel: t(lang, 'tabSettings'),
-          tabBarIcon: ({ focused }) => <TabIcon emoji="⚙️" focused={focused} />,
-        }}
-      />
+      <Tabs.Screen name="index" options={{ title: 'Sinapse', tabBarLabel: tabLabel(t(lang, 'tabLibrary')) }} />
+      <Tabs.Screen name="progress" options={{ title: t(lang, 'progressTitle'), tabBarLabel: tabLabel(t(lang, 'tabProgress')) }} />
+      <Tabs.Screen name="studio" options={{ title: t(lang, 'studioTitle'), tabBarLabel: tabLabel(t(lang, 'tabStudio')) }} />
+      <Tabs.Screen name="settings" options={{ title: t(lang, 'settingsTitle'), tabBarLabel: tabLabel(t(lang, 'tabSettings')) }} />
     </Tabs>
   );
 }

@@ -95,8 +95,3 @@ export function estimateMinutes(story: Story): number {
   return Math.max(1, Math.round(words / 120));
 }
 
-export const REGION_LABEL: Record<Story['region'], { label: string; emoji: string }> = {
-  costa: { label: 'Costa', emoji: '🏖️' },
-  sierra: { label: 'Sierra', emoji: '⛰️' },
-  selva: { label: 'Selva', emoji: '🌴' },
-};

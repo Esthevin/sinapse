@@ -1,20 +1,20 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
+import { Text } from '@/components/ui';
 import { FAMILY_LABEL, hasUiTranslation, LANGUAGES, t, type Language, type LanguageCode } from '@/i18n/translations';
-import { useApp } from '@/state/AppContext';
-import { colors, fontSize, radius, spacing } from '@/theme/theme';
+import { useThemed, type Theme } from '@/theme/theme';
 
 const FAMILIES: Language['family'][] = ['castellano', 'andina', 'amazonica'];
 
 /** Selector de lengua agrupado por familia (castellano, andinas, amazónicas). */
 export function LanguagePicker({ value, onChange }: { value: LanguageCode; onChange: (code: LanguageCode) => void }) {
-  const { fs } = useApp();
+  const { styles, spacing } = useThemed(makeStyles);
   const current = LANGUAGES.find((l) => l.code === value);
 
   return (
     <View>
       {FAMILIES.map((family) => (
         <View key={family} style={{ marginBottom: spacing.sm }}>
-          {family !== 'castellano' && <Text style={[styles.family, { fontSize: fs(13) }]}>{FAMILY_LABEL[family]}</Text>}
+          {family !== 'castellano' && <Text style={styles.family}>{FAMILY_LABEL[family]}</Text>}
           <View style={styles.grid}>
             {LANGUAGES.filter((l) => l.family === family).map((l) => {
               const active = l.code === value;
@@ -27,12 +27,11 @@ export function LanguagePicker({ value, onChange }: { value: LanguageCode; onCha
                   accessibilityState={{ selected: active }}
                   accessibilityLabel={l.label}
                 >
-                  <Text style={[styles.native, { fontSize: fs(fontSize.body + 1) }]} numberOfLines={2}>
-                    {active ? '✓ ' : ''}
+                  <Text style={styles.native} numberOfLines={2}>
                     {l.native}
                   </Text>
                   {l.native !== l.label && (
-                    <Text style={[styles.label, { fontSize: fs(12) }]} numberOfLines={1}>
+                    <Text style={styles.label} numberOfLines={1}>
                       {l.label}
                     </Text>
                   )}
@@ -44,27 +43,36 @@ export function LanguagePicker({ value, onChange }: { value: LanguageCode; onCha
       ))}
 
       {current && !hasUiTranslation(current.code) && (
-        <Text style={[styles.note, { fontSize: fs(13) }]}>ℹ️ {t('es', 'uiFallbackNote', { lang: current.native })}</Text>
+        <Text style={styles.note}>{t('es', 'uiFallbackNote', { lang: current.native })}</Text>
       )}
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  family: { color: colors.textMuted, fontWeight: '800', marginBottom: spacing.xs, marginTop: spacing.xs },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
-  option: {
-    flexBasis: '47%',
-    flexGrow: 1,
-    borderWidth: 2,
-    borderColor: colors.border,
-    borderRadius: radius.md,
-    paddingVertical: spacing.sm,
-    paddingHorizontal: spacing.md,
-    backgroundColor: colors.white,
-  },
-  optionActive: { borderColor: colors.accent, backgroundColor: colors.accentSoft },
-  native: { fontWeight: '800', color: colors.text },
-  label: { color: colors.textMuted, marginTop: 2 },
-  note: { color: colors.text, backgroundColor: colors.highlight, padding: spacing.sm, borderRadius: radius.sm, lineHeight: 20 },
-});
+const makeStyles = ({ colors, spacing, radius, fontSize, stroke, uppercaseLabels, fs }: Theme) =>
+  StyleSheet.create({
+    family: {
+      color: colors.textMuted,
+      fontWeight: '800',
+      fontSize: fs(13),
+      marginBottom: spacing.xs,
+      marginTop: spacing.xs,
+      letterSpacing: uppercaseLabels ? 1.2 : 0,
+      textTransform: uppercaseLabels ? 'uppercase' : 'none',
+    },
+    grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+    option: {
+      flexBasis: '47%',
+      flexGrow: 1,
+      borderWidth: stroke,
+      borderColor: colors.border,
+      borderRadius: radius.md,
+      paddingVertical: spacing.sm + 2,
+      paddingHorizontal: spacing.md,
+      backgroundColor: colors.card,
+    },
+    optionActive: { borderColor: colors.accent, backgroundColor: colors.accentSoft, borderWidth: Math.max(2, stroke) },
+    native: { fontWeight: '800', color: colors.text, fontSize: fs(fontSize.body + 1) },
+    label: { color: colors.textMuted, marginTop: 2, fontSize: fs(12) },
+    note: { color: colors.text, backgroundColor: colors.highlight, padding: spacing.sm, borderRadius: radius.sm, lineHeight: 20, fontSize: fs(13) },
+  });

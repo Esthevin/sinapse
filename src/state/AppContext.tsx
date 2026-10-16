@@ -10,6 +10,8 @@ export interface Settings {
   fontScale: number; // 0.9 – 1.4
   speechRate: number; // 0.75 – 1.25
   onboarded: boolean;
+  /** Muestra herramientas internas del equipo (sincronizar párrafos). */
+  teamTools: boolean;
 }
 
 export interface StoryProgress {
@@ -45,10 +47,13 @@ interface PersistedState {
   activeDays: string[]; // 'YYYY-MM-DD', para calcular la racha
 }
 
+/** Los niños leen con letra algo más grande. */
+const PROFILE_TEXT_SCALE: Record<AgeGroup, number> = { ninos: 1.08, jovenes: 1, adultos: 1 };
+
 const STORAGE_KEY = 'sinapse.state.v1';
 
 const INITIAL: PersistedState = {
-  settings: { lang: 'es', profile: null, fontScale: 1, speechRate: 1, onboarded: false },
+  settings: { lang: 'es', profile: null, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false },
   progress: {},
   quizzes: {},
   recordings: {},
@@ -221,7 +226,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     []
   );
 
-  const fs = useCallback((size: number) => Math.round(size * state.settings.fontScale), [state.settings.fontScale]);
+  const profileScale = PROFILE_TEXT_SCALE[state.settings.profile ?? 'adultos'];
+  const fs = useCallback((size: number) => Math.round(size * state.settings.fontScale * profileScale), [state.settings.fontScale, profileScale]);
 
   const value = useMemo<AppState>(
     () => ({
