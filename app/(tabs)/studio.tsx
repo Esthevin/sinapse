@@ -68,11 +68,11 @@ export default function StudioScreen() {
   );
 }
 
-const makeStyles = ({ colors, spacing, fontSize, fs, uppercaseLabels }: Theme) =>
+const makeStyles = ({ colors, spacing, fontSize, fs }: Theme) =>
   StyleSheet.create({
     content: { padding: spacing.md, paddingBottom: spacing.xl * 2, width: '100%', maxWidth: 760, alignSelf: 'center' },
     introText: { color: colors.text, lineHeight: fs(24), fontSize: fs(fontSize.body) },
-    familyLabel: { color: colors.textMuted, fontWeight: '800', marginBottom: spacing.xs, fontSize: fs(13), textTransform: uppercaseLabels ? 'uppercase' : 'none' },
+    familyLabel: { color: colors.textMuted, fontWeight: '800', marginBottom: spacing.xs, fontSize: fs(13) },
     chips: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
     storyRow: {
       flexDirection: 'row',

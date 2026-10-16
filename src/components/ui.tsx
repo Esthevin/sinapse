@@ -20,11 +20,6 @@ export function Text({ style, ...rest }: TextProps) {
   return <RNText {...rest} style={[{ fontFamily: th.font.body, color: th.colors.text }, style]} />;
 }
 
-/** Aplica mayúsculas en los perfiles que las usan para etiquetas. */
-export function label(th: Theme, s: string): string {
-  return th.uppercaseLabels ? s.toUpperCase() : s;
-}
-
 /** Separa los márgenes del estilo recibido: van afuera de la sombra dura. */
 function splitMargin(style: StyleProp<ViewStyle>): { outer: ViewStyle; inner: ViewStyle } {
   const flat = StyleSheet.flatten(style) ?? {};
@@ -63,8 +58,8 @@ export function Chip({
   const { fs } = useApp();
   const th = useTheme();
   const { colors, radius, spacing, fontSize } = th;
-  const onBg = th.id === 'jovenes' ? colors.accent : colors.primary;
-  const onFg = th.id === 'jovenes' ? colors.onAccent : colors.onPrimary;
+  const onBg = colors.primary;
+  const onFg = colors.onPrimary;
   return (
     <Pressable
       onPress={onPress}
@@ -73,8 +68,8 @@ export function Chip({
       accessibilityLabel={accessibilityLabel ?? text}
       style={{
         borderRadius: radius.pill,
-        paddingHorizontal: th.id === 'ninos' ? spacing.md + 4 : spacing.md,
-        paddingVertical: th.id === 'ninos' ? spacing.sm + 4 : spacing.sm,
+        paddingHorizontal: th.playful ? spacing.md + 4 : spacing.md,
+        paddingVertical: th.playful ? spacing.sm + 4 : spacing.sm,
         backgroundColor: active ? onBg : colors.card,
         borderWidth: th.stroke,
         borderColor: active ? onBg : colors.border,
@@ -85,10 +80,9 @@ export function Chip({
           fontSize: fs(fontSize.caption),
           fontWeight: '700',
           color: active ? onFg : colors.text,
-          letterSpacing: th.uppercaseLabels ? 0.8 : 0,
         }}
       >
-        {label(th, text)}
+        {text}
       </Text>
     </Pressable>
   );
@@ -113,7 +107,7 @@ export function Button({
   const bg = variant === 'primary' ? colors.accent : variant === 'danger' ? colors.dangerSoft : colors.card;
   const fg = variant === 'primary' ? colors.onAccent : variant === 'danger' ? colors.danger : colors.text;
   const { outer, inner } = splitMargin(style);
-  const bordered = variant !== 'primary' || th.id === 'ninos';
+  const bordered = variant !== 'primary' || th.playful;
   return (
     <HardShadow radius={radius.md} style={outer}>
       <Pressable
@@ -125,8 +119,8 @@ export function Button({
           {
             alignItems: 'center',
             justifyContent: 'center',
-            minHeight: th.id === 'ninos' ? 64 : 54,
-            borderRadius: th.id === 'ninos' ? radius.pill : radius.md,
+            minHeight: th.playful ? 64 : 54,
+            borderRadius: th.playful ? radius.pill : radius.md,
             paddingHorizontal: spacing.lg,
             paddingVertical: spacing.md,
             backgroundColor: bg,
@@ -142,11 +136,10 @@ export function Button({
             color: fg,
             fontSize: fs(fontSize.body),
             fontWeight: '800',
-            letterSpacing: th.uppercaseLabels ? 0.8 : 0,
-            textAlign: 'center',
+              textAlign: 'center',
           }}
         >
-          {label(th, text)}
+          {text}
         </Text>
       </Pressable>
     </HardShadow>
@@ -156,7 +149,7 @@ export function Button({
 export function ProgressBar({ value, height, color }: { value: number; height?: number; color?: string }) {
   const th = useTheme();
   const pct = Math.max(0, Math.min(1, value)) * 100;
-  const h = height ?? (th.id === 'ninos' ? 14 : th.id === 'jovenes' ? 4 : 3);
+  const h = height ?? (th.playful ? 14 : 4);
   return (
     <View
       accessibilityRole="progressbar"
@@ -165,9 +158,9 @@ export function ProgressBar({ value, height, color }: { value: number; height?: 
         height: h,
         width: '100%',
         backgroundColor: th.colors.surface,
-        borderRadius: th.id === 'ninos' ? 999 : th.radius.sm,
+        borderRadius: th.playful ? 999 : th.radius.sm,
         overflow: 'hidden',
-        borderWidth: th.id === 'ninos' ? 2 : 0,
+        borderWidth: th.playful ? 2 : 0,
         borderColor: th.colors.border,
       }}
     >
@@ -180,21 +173,19 @@ export function SectionTitle({ children }: { children: string }) {
   const { fs } = useApp();
   const th = useTheme();
   const { colors, spacing, fontSize } = th;
-  const small = th.id === 'jovenes';
   return (
     <View style={{ marginTop: spacing.lg + 4, marginBottom: spacing.md }}>
       <Text
         style={{
           fontFamily: th.font.heading,
-          fontWeight: th.id === 'adultos' ? '700' : '900',
-          fontSize: fs(small ? fontSize.caption : th.id === 'ninos' ? fontSize.title - 2 : fontSize.subtitle + 2),
-          color: small ? colors.textMuted : colors.text,
-          letterSpacing: small ? 1.6 : 0,
+          fontWeight: th.playful ? '900' : '700',
+          fontSize: fs(th.playful ? fontSize.title - 2 : fontSize.subtitle + 2),
+          color: colors.text,
         }}
       >
-        {label(th, children)}
+        {children}
       </Text>
-      {th.id === 'adultos' && <View style={{ height: 1, backgroundColor: colors.border, marginTop: spacing.sm }} />}
+      {!th.playful && <View style={{ height: 1, backgroundColor: colors.border, marginTop: spacing.sm }} />}
     </View>
   );
 }
@@ -202,7 +193,7 @@ export function SectionTitle({ children }: { children: string }) {
 export function Card({ children, style }: { children: ReactNode; style?: StyleProp<ViewStyle> }) {
   const th = useTheme();
   const { outer, inner } = splitMargin(style);
-  const flat = th.id === 'adultos';
+  const flat = !th.playful;
   return (
     <HardShadow radius={th.radius.md} style={outer}>
       <View
@@ -322,7 +313,7 @@ export function Stars({ count, total = 3, size = 14 }: { count: number; total?: 
 export function Cover({ story, size, title }: { story: Story; size: number; title?: string }) {
   const th = useTheme();
   const { bg, fg } = th.colors.region[story.region];
-  const ninos = th.id === 'ninos';
+  const ninos = th.playful;
   const art = PORTADAS[story.id];
   const initial = (title ?? story.title.es).replace(/^[^\p{L}]+/u, '').charAt(0).toUpperCase();
   const u = size / 10;
@@ -359,8 +350,8 @@ export function Cover({ story, size, title }: { story: Story; size: number; titl
           height: size,
           backgroundColor: bg,
           borderRadius: ninos ? th.radius.md : th.radius.sm,
-          borderWidth: ninos ? th.stroke : th.id === 'jovenes' ? 1 : 0,
-          borderColor: th.id === 'jovenes' ? fg : th.colors.border,
+          borderWidth: ninos ? th.stroke : 0,
+          borderColor: th.colors.border,
           overflow: 'hidden',
         }}
         accessibilityElementsHidden

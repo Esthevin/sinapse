@@ -5,13 +5,12 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { LanguagePicker } from '@/components/LanguagePicker';
 import { Button, Card, Chip, Glyph, SectionTitle, Text } from '@/components/ui';
 import { listSpanishVoices, voiceLabel } from '@/services/speech';
-import type { AgeGroup } from '@/content/types';
 import { t } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
-import { useThemed, type Theme } from '@/theme/theme';
+import { ACCENTS, ACCENT_CHOICES, DEFAULT_APPEARANCE, PALETTES, PALETTE_LABELS, useThemed, type Appearance, type PaletteId, type Theme } from '@/theme/theme';
 import { confirmAction } from '@/utils/confirm';
 
-const PROFILES: AgeGroup[] = ['ninos', 'jovenes', 'adultos'];
+const PALETTE_IDS: PaletteId[] = ['calido', 'papel', 'noche', 'contraste'];
 const FONT_SCALES = [
   { value: 0.9, label: 'A-' },
   { value: 1, label: 'A' },
@@ -40,17 +39,75 @@ export default function SettingsScreen() {
     });
   };
 
+  const setAppearance = (patch: Partial<Appearance>) => updateSettings({ appearance: { ...settings.appearance, ...patch } });
+
   const reset = async () => {
     if (await confirmAction(t(lang, 'resetConfirm'), t(lang, 'confirm'), t(lang, 'cancel'))) resetProgress();
   };
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <SectionTitle>{t(lang, 'whoListens')}</SectionTitle>
-      <View style={styles.row}>
-        {PROFILES.map((id) => (
-          <Chip key={id} label={t(lang, id)} active={settings.profile === id} onPress={() => updateSettings({ profile: id })} />
+      <SectionTitle>Apariencia</SectionTitle>
+      <Text style={styles.note}>Elige colores, letra y formas a tu gusto. Los cambios se ven al instante.</Text>
+
+      <Text style={styles.subLabel}>Colores</Text>
+      <View style={styles.paletteRow}>
+        {PALETTE_IDS.map((id) => {
+          const p = PALETTES[id];
+          const on = settings.appearance.palette === id;
+          return (
+            <Pressable
+              key={id}
+              onPress={() => setAppearance({ palette: id })}
+              accessibilityRole="radio"
+              accessibilityState={{ selected: on }}
+              accessibilityLabel={PALETTE_LABELS[id]}
+              style={[styles.paletteTile, { backgroundColor: p.background, borderColor: on ? colors.accent : colors.border, borderWidth: on ? 4 : 2 }]}
+            >
+              <View style={[styles.paletteCard, { backgroundColor: p.card, borderColor: p.hairline }]}>
+                <View style={{ height: 6, width: '70%', borderRadius: 3, backgroundColor: p.text }} />
+                <View style={{ height: 6, width: '45%', borderRadius: 3, backgroundColor: p.textMuted, marginTop: 5 }} />
+                <View style={{ height: 14, width: 34, borderRadius: 7, backgroundColor: p.accent, marginTop: 8 }} />
+              </View>
+              <Text style={[styles.paletteName, { color: p.text }]}>{PALETTE_LABELS[id]}</Text>
+            </Pressable>
+          );
+        })}
+      </View>
+
+      <Text style={styles.subLabel}>Color de acento (botones y resaltados)</Text>
+      <View style={styles.swatchRow}>
+        <Chip label="Automático" active={settings.appearance.accent === null} onPress={() => setAppearance({ accent: null })} />
+        {ACCENT_CHOICES.map((id) => (
+          <Pressable
+            key={id}
+            onPress={() => setAppearance({ accent: id })}
+            accessibilityRole="radio"
+            accessibilityState={{ selected: settings.appearance.accent === id }}
+            accessibilityLabel={ACCENTS[id].label}
+            style={[styles.swatch, { backgroundColor: ACCENTS[id].color, borderColor: colors.border, borderWidth: settings.appearance.accent === id ? 4 : 1 }]}
+          >
+            {settings.appearance.accent === id && <Glyph name="check" size={16} color={ACCENTS[id].on} />}
+          </Pressable>
         ))}
+      </View>
+
+      <Text style={styles.subLabel}>Letra</Text>
+      <View style={styles.row}>
+        <Chip label="Redonda" active={settings.appearance.font === 'sans'} onPress={() => setAppearance({ font: 'sans' })} />
+        <Chip label="Con serifa" active={settings.appearance.font === 'serif'} onPress={() => setAppearance({ font: 'serif' })} />
+      </View>
+
+      <Text style={styles.subLabel}>Estilo</Text>
+      <View style={styles.row}>
+        <Chip label="Juguetón" active={settings.appearance.style === 'jugueton'} onPress={() => setAppearance({ style: 'jugueton' })} />
+        <Chip label="Limpio" active={settings.appearance.style === 'limpio'} onPress={() => setAppearance({ style: 'limpio' })} />
+      </View>
+
+      <Text style={styles.subLabel}>Biblioteca</Text>
+      <View style={styles.row}>
+        <Chip label="Cuadrícula" active={settings.appearance.library === 'cuadricula'} onPress={() => setAppearance({ library: 'cuadricula' })} />
+        <Chip label="Lista" active={settings.appearance.library === 'lista'} onPress={() => setAppearance({ library: 'lista' })} />
       </View>
 
       <SectionTitle>{t(lang, 'language')}</SectionTitle>
@@ -64,6 +121,9 @@ export default function SettingsScreen() {
         ))}
       </View>
       <Text style={styles.preview}>Había una vez, en lo alto de la puna…</Text>
+      <View style={[styles.row, { marginTop: spacing.md }]}>
+        <Chip label="Restablecer apariencia" onPress={() => updateSettings({ appearance: DEFAULT_APPEARANCE, fontScale: 1 })} />
+      </View>
 
       <SectionTitle>{t(lang, 'readingSpeed')}</SectionTitle>
       <View style={styles.row}>
@@ -143,6 +203,13 @@ const makeStyles = ({ colors, spacing, fontSize, font, fs }: Theme) =>
   StyleSheet.create({
     content: { padding: spacing.md, paddingBottom: spacing.xl * 2, width: '100%', maxWidth: 760, alignSelf: 'center' },
     note: { color: colors.textMuted, marginTop: spacing.xs, fontSize: fs(13), lineHeight: fs(20) },
+    subLabel: { color: colors.textMuted, fontWeight: '800', fontSize: fs(13), marginTop: spacing.md, marginBottom: spacing.sm },
+    paletteRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+    paletteTile: { width: '47%', flexGrow: 1, borderRadius: 14, padding: 10 },
+    paletteCard: { borderRadius: 8, borderWidth: 1, padding: 10 },
+    paletteName: { fontWeight: '800', fontSize: fs(14), marginTop: 8, textAlign: 'center' },
+    swatchRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, alignItems: 'center' },
+    swatch: { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center' },
     voiceRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md, paddingVertical: spacing.md, borderBottomWidth: 1, borderBottomColor: colors.border },
     radio: { width: 24, height: 24, borderRadius: 12, borderWidth: 2, borderColor: colors.text, alignItems: 'center', justifyContent: 'center' },
     radioOn: { backgroundColor: colors.primary, borderColor: colors.primary },

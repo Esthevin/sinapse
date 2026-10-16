@@ -93,6 +93,7 @@ Requiere una cuenta gratuita de Expo.
 | `npm run audio:generar` | Generar borradores de audio con VoiceStudio |
 | `npm run voces:generar` | Narrar con voces IA peruanas (Camila/Alex) las historias sin voz humana |
 | `npm run catalogo:generar` | Generar el catálogo descargable |
+| `npm run audio:alinear -- audio.mp3 --historia id` | Marcar sola dónde empieza cada párrafo en una narración grabada |
 | `npm run pdf:audiolibro -- libro.pdf` | Convertir los cuentos de un PDF en historias con voz Camila/Alex |
 | `npm run build:apk` | Compilar el APK |
 
@@ -157,6 +158,7 @@ local. Ver [docs/GUIA_NARRADORES.md](docs/GUIA_NARRADORES.md).
 - [docs/GUIA_NARRADORES.md](docs/GUIA_NARRADORES.md) — cómo grabar y publicar narraciones.
 - [docs/DERECHOS_Y_ETICA.md](docs/DERECHOS_Y_ETICA.md) — derechos de autor, voces y consentimiento.
 - [docs/PDF_A_AUDIOLIBRO.md](docs/PDF_A_AUDIOLIBRO.md) — **PDF a audiolibro**: cómo separa la información inicial y los cuentos, y cómo narrarlos con Camila o Alex.
+- [docs/NARRACION_HUMANA.md](docs/NARRACION_HUMANA.md) — **voces humanas**: grabar dentro de la app con marcas de párrafo, importar audios y alinearlos solos.
 - [docs/SONIDOS.md](docs/SONIDOS.md) — **sonidos ambientales**: dónde están, qué palabras los activan y cómo ajustarlos por historia.
 - [docs/VOCES.md](docs/VOCES.md) — **cómo quitar las voces robóticas**: voces IA peruanas, alternativas y lenguas originarias.
 - [docs/PLAN_NARRADORES.md](docs/PLAN_NARRADORES.md) — **cómo conseguir narradores peruanos**: voces ilustres, autores, locutores y comunidades.
