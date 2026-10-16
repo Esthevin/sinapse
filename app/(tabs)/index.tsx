@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { FlatList, Pressable, StyleSheet, TextInput, useWindowDimensions, View } from 'react-native';
 import { StoryCard } from '@/components/StoryCard';
-import { Card, Chip, Cover, label, ProgressBar, Text } from '@/components/ui';
+import { Button, Card, Chip, Cover, label, ProgressBar, Text } from '@/components/ui';
 import { STORIES } from '@/content';
 import { narratedLanguages } from '@/content/narration';
 import type { Region } from '@/content/types';
@@ -21,7 +21,7 @@ const normalize = (s: string) =>
     .toLowerCase();
 
 export default function LibraryScreen() {
-  const { settings, progress, recordings } = useApp();
+  const { settings, progress, recordings, catalogVersion } = useApp();
   const { th, styles, colors, spacing } = useThemed(makeStyles);
   const { width: screenWidth } = useWindowDimensions();
   const { lang, profile } = settings;
@@ -39,7 +39,7 @@ export default function LibraryScreen() {
       if (q && !normalize(`${s.title.es} ${s.author} ${s.collection ?? ''} ${s.summary.es}`).includes(q)) return false;
       return true;
     });
-  }, [query, region, onlyMine, onlyHuman, profile, recordings]);
+  }, [query, region, onlyMine, onlyHuman, profile, recordings, catalogVersion]);
 
   // La historia abierta más recientemente que aún no se termina.
   const resume = useMemo(
@@ -47,7 +47,7 @@ export default function LibraryScreen() {
       STORIES.filter((s) => progress[s.id] && !progress[s.id].completed && progress[s.id].lastOpened > 0).sort(
         (a, b) => progress[b.id].lastOpened - progress[a.id].lastOpened
       )[0],
-    [progress]
+    [progress, catalogVersion]
   );
 
   const ninos = th.id === 'ninos';
@@ -121,6 +121,10 @@ export default function LibraryScreen() {
         ))}
         {!ninos && <Chip label={t(lang, 'humanVoice')} active={onlyHuman} onPress={() => setOnlyHuman((v) => !v)} />}
         {!ninos && profile && <Chip label={t(lang, 'forMe')} active={onlyMine} onPress={() => setOnlyMine((v) => !v)} />}
+      </View>
+
+      <View style={{ marginTop: spacing.md }}>
+        <Button label="Convertir un PDF en audiolibro" variant="secondary" onPress={() => router.push('/pdf')} />
       </View>
 
       {!ninos && (

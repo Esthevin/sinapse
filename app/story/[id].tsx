@@ -5,7 +5,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ambience } from '@/components/Ambience';
 import { cuesFor } from '@/content/ambience';
 import { Button, Card, Chip, Cover, Glyph, label as caps, ProgressBar, SectionTitle, Text } from '@/components/ui';
-import { estimateMinutes, getStory } from '@/content';
+import { estimateMinutes, getStory, isUserBook } from '@/content';
+import { deleteBook } from '@/services/books';
+import { confirmAction } from '@/utils/confirm';
 import {
   isRemoteAudio,
   narratedLanguages,
@@ -73,7 +75,7 @@ function StoryPlayer({
   viewLang: LanguageCode;
   setViewLang: (l: LanguageCode) => void;
 }) {
-  const { settings, progress, recordings, updateSettings, savePosition, addListening, markCompleted } = useApp();
+  const { settings, progress, recordings, updateSettings, savePosition, addListening, markCompleted, booksChanged } = useApp();
   const { th, styles, colors, spacing } = useThemed(makeStyles);
   const insets = useSafeAreaInsets();
   const { width: screenWidth } = useWindowDimensions();
@@ -138,7 +140,7 @@ function StoryPlayer({
             </Text>
             {story.original && th.id !== 'ninos' && <Text style={[styles.meta, { color: colors.accent, fontWeight: '700' }]}>{t(lang, 'originalText')}</Text>}
             <Text style={styles.meta}>
-              {caps(th, t(lang, story.region))} · {estimateMinutes(story)} {t(lang, 'minutes')}
+              {caps(th, isUserBook(story) ? 'Audiolibro' : t(lang, story.region))} · {estimateMinutes(story)} {t(lang, 'minutes')}
             </Text>
           </View>
         </View>
@@ -237,6 +239,7 @@ function StoryPlayer({
           </Card>
         )}
 
+        {story.quiz.length > 0 && (
         <Button
           label={t(lang, 'answerQuestions')}
           onPress={() => {
@@ -245,9 +248,10 @@ function StoryPlayer({
           }}
           style={{ marginTop: spacing.lg }}
         />
+        )}
 
         {/* Glosario */}
-        <SectionTitle>{t(lang, 'newWords')}</SectionTitle>
+        {story.glossary.length > 0 && <SectionTitle>{t(lang, 'newWords')}</SectionTitle>}
         {story.glossary.map((g) => (
           <View key={g.word} style={styles.glossaryRow}>
             <Text style={styles.glossaryWord}>{g.word}</Text>
@@ -265,6 +269,21 @@ function StoryPlayer({
         <Text style={styles.source}>
           {t(lang, 'source')}: {story.source}
         </Text>
+
+        {isUserBook(story) && (
+          <Button
+            label="Eliminar este audiolibro"
+            variant="danger"
+            onPress={async () => {
+              if (!(await confirmAction('¿Eliminar este audiolibro del dispositivo?', t(lang, 'confirm'), t(lang, 'cancel')))) return;
+              narration.pause();
+              await deleteBook(story.id);
+              booksChanged();
+              router.dismissTo('/');
+            }}
+            style={{ marginTop: spacing.lg }}
+          />
+        )}
       </ScrollView>
 
       <Ambience cues={cues} index={narration.index} playing={narration.playing} enabled={settings.ambience} />

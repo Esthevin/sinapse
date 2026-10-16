@@ -1,4 +1,4 @@
-import { STORIES } from '@/content';
+import { isUserBook, STORIES } from '@/content';
 import { todayKey, type QuizResult, type Recording, type StoryProgress } from './AppContext';
 
 /** Días consecutivos con actividad, terminando hoy o ayer. */
@@ -31,7 +31,9 @@ export function computeStats(
   recordings: Record<string, Partial<Record<string, Recording>>>,
   activeDays: string[]
 ): Stats {
-  const done = STORIES.filter((s) => progress[s.id]?.completed);
+  // Los audiolibros de PDF del usuario no cuentan para los logros de la colección.
+  const catalog = STORIES.filter((s) => !isUserBook(s));
+  const done = catalog.filter((s) => progress[s.id]?.completed);
   const totalSec = Object.values(progress).reduce((acc, p) => acc + p.listenedSec, 0);
   const results = Object.values(quizzes);
   const quizAverage = results.length
@@ -40,7 +42,7 @@ export function computeStats(
 
   return {
     completed: done.length,
-    totalStories: STORIES.length,
+    totalStories: catalog.length,
     minutes: Math.round(totalSec / 60),
     streak: computeStreak(activeDays),
     quizAverage,

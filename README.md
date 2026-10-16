@@ -9,7 +9,7 @@ narradas por **voces peruanas** que se **escuchan y leen al mismo tiempo**,
 seguidas de preguntas de comprensión. Pensada para niños, jóvenes y adultos de
 la costa, la sierra y la selva, en **castellano y lenguas originarias**.
 
-**Versión 2.0.0**
+**Versión 2.1.0**
 
 ---
 
@@ -31,6 +31,17 @@ la costa, la sierra y la selva, en **castellano y lenguas originarias**.
 | 📴 **Sin internet** | Todo el contenido viene dentro de la app; el avance se guarda en el teléfono. |
 
 ---
+
+### Novedades de la versión 2.1
+
+- **Diseño por perfil:** niños, jóvenes y adultos tienen colores, formas, tipografía y disposición propios (`src/theme/theme.ts`). Sin emojis: portadas ilustradas, íconos dibujados con formas.
+- **Logo:** una S formada por una conexión entre dos nodos (sinapsis). Fuentes SVG en `assets/marca`.
+- **Portadas ilustradas** de las 19 historias (`assets/portadas`, `node scripts/generar-portadas.mjs`). Se pueden reemplazar por ilustraciones profesionales con el mismo nombre de archivo.
+- **Sonidos ambientales** durante la narración (viento, pasos, lluvia, río, olas, fuego, selva, noche, aleteo): diseño sonoro automático según el texto (`src/content/ambience.ts`), ajustable por historia con el campo `ambience`, y botón «Sonidos» en el reproductor. Sonidos propios generados con `herramientas/sonidos/generar_sonidos.py`.
+- **Audiolibro desde PDF:** en la biblioteca, «Convertir un PDF en audiolibro». El texto se lee dentro del dispositivo con pdf.js (`assets/pdfjs`, Apache-2.0) y se narra con la voz del teléfono; los libros largos se parten en partes. Solo PDF con texto (los escaneos necesitan OCR). Probado en la web; el camino de Android/iPhone (WebView) aún no se probó en un teléfono.
+- **Nueva historia:** «El zorro y el cóndor» (piloto de radiodrama con voces sintéticas Kokoro). Herramientas en `herramientas/radiodrama`.
+- **Importador de audios** (`npm run audio:importar`, ver `docs/CARGAR_AUDIOS_QUECHUA.md`).
+- Red de seguridad contra pantallas en blanco (`ErrorBoundary`, estado guardado a prueba de datos dañados y recarga automática en la web si queda una página vieja en caché).
 
 ### Novedades de la versión 2
 

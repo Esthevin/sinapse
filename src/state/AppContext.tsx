@@ -1,3 +1,4 @@
+import { loadBooks } from '@/services/books';
 import { downloadCatalog, loadCachedCatalog } from '@/services/catalog';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
@@ -83,6 +84,8 @@ interface AppState extends PersistedState {
   catalogVersion: number;
   /** Descarga historias nuevas. Devuelve cuántas se agregaron o actualizaron, o null si no hubo conexión. */
   refreshCatalog: () => Promise<number | null>;
+  /** Avisa que se agregaron o quitaron libros del usuario, para redibujar la biblioteca. */
+  booksChanged: () => void;
   /** Escala un tamaño de letra según la preferencia del usuario. */
   fs: (size: number) => number;
   updateSettings: (patch: Partial<Settings>) => void;
@@ -143,6 +146,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!ready) return;
     loadCachedCatalog().then((n) => {
+      if (n > 0) setCatalogVersion((v) => v + 1);
+    });
+    loadBooks().then((n) => {
       if (n > 0) setCatalogVersion((v) => v + 1);
     });
     refreshCatalog();
@@ -239,6 +245,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   );
 
   const profileScale = PROFILE_TEXT_SCALE[state.settings.profile ?? 'adultos'];
+  const booksChanged = useCallback(() => setCatalogVersion((v) => v + 1), []);
+
   const fs = useCallback((size: number) => Math.round(size * state.settings.fontScale * profileScale), [state.settings.fontScale, profileScale]);
 
   const value = useMemo<AppState>(
@@ -247,6 +255,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       ready,
       catalogVersion,
       refreshCatalog,
+      booksChanged,
       fs,
       updateSettings,
       openStory,
@@ -258,7 +267,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       removeRecording,
       resetProgress,
     }),
-    [state, ready, catalogVersion, refreshCatalog, fs, updateSettings, openStory, savePosition, addListening, markCompleted, saveQuiz, saveRecording, removeRecording, resetProgress]
+    [state, ready, catalogVersion, refreshCatalog, booksChanged, fs, updateSettings, openStory, savePosition, addListening, markCompleted, saveQuiz, saveRecording, removeRecording, resetProgress]
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

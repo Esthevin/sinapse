@@ -78,6 +78,21 @@ export function applyRemoteCatalog(stories: Story[], narrators: Narrator[]): num
   return changed;
 }
 
+/** Audiolibros que la persona crea a partir de sus PDF (ver src/services/books.ts). */
+export const isUserBook = (story: Pick<Story, 'id'>) => story.id.startsWith('pdf-');
+
+/** Agrega (o reemplaza) un libro del usuario al principio de la biblioteca. */
+export function registerBook(story: Story): void {
+  const i = STORIES.findIndex((x) => x.id === story.id);
+  if (i === -1) STORIES.unshift(story);
+  else STORIES[i] = story;
+}
+
+export function unregisterBook(id: string): void {
+  const i = STORIES.findIndex((x) => x.id === id);
+  if (i !== -1) STORIES.splice(i, 1);
+}
+
 export function getNarrator(id: string): Narrator | undefined {
   return NARRATORS.find((n) => n.id === id);
 }
