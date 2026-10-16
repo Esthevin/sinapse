@@ -1,8 +1,10 @@
 import Constants from 'expo-constants';
-import { useState } from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import * as Speech from 'expo-speech';
+import { useEffect, useState } from 'react';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { LanguagePicker } from '@/components/LanguagePicker';
-import { Button, Card, Chip, SectionTitle, Text } from '@/components/ui';
+import { Button, Card, Chip, Glyph, SectionTitle, Text } from '@/components/ui';
+import { listSpanishVoices, voiceLabel } from '@/services/speech';
 import type { AgeGroup } from '@/content/types';
 import { t } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
@@ -24,6 +26,19 @@ export default function SettingsScreen() {
   const { lang } = settings;
   const [checking, setChecking] = useState(false);
   const [catalogMsg, setCatalogMsg] = useState('');
+  const [voices, setVoices] = useState<Speech.Voice[]>([]);
+  useEffect(() => {
+    listSpanishVoices().then(setVoices);
+  }, []);
+
+  const tryVoice = (id: string | null) => {
+    Speech.stop();
+    Speech.speak('Había una vez, en lo alto de la puna, un zorro que soñaba con volar.', {
+      language: 'es-PE',
+      voice: id ?? undefined,
+      rate: settings.speechRate,
+    });
+  };
 
   const reset = async () => {
     if (await confirmAction(t(lang, 'resetConfirm'), t(lang, 'confirm'), t(lang, 'cancel'))) resetProgress();
@@ -56,6 +71,40 @@ export default function SettingsScreen() {
           <Chip key={s} label={`${s}x`} active={settings.speechRate === s} onPress={() => updateSettings({ speechRate: s })} />
         ))}
       </View>
+
+      <SectionTitle>Voz para leer</SectionTitle>
+      <Text style={styles.note}>
+        Es la voz del teléfono: se usa en los audiolibros de PDF y en las historias que no tienen narrador. Si suena robótica, elige otra de la lista.
+      </Text>
+      <View style={[styles.row, { marginTop: spacing.sm }]}>
+        <Chip label="Automática" active={settings.voiceId === null} onPress={() => { updateSettings({ voiceId: null }); tryVoice(null); }} />
+      </View>
+      {voices.map((v, i) => {
+        const on = settings.voiceId === v.identifier;
+        return (
+          <Pressable
+            key={v.identifier}
+            onPress={() => {
+              updateSettings({ voiceId: v.identifier });
+              tryVoice(v.identifier);
+            }}
+            accessibilityRole="radio"
+            accessibilityState={{ selected: on }}
+            style={styles.voiceRow}
+          >
+            <View style={[styles.radio, on && styles.radioOn]}>{on && <Glyph name="check" size={14} color={colors.onPrimary} />}</View>
+            <Text style={styles.voiceName}>{voiceLabel(v, i)}</Text>
+          </Pressable>
+        );
+      })}
+      <Card style={{ marginTop: spacing.md }}>
+        <Text style={styles.note}>
+          Para una voz más natural:{'\n'}
+          {'\u2022'} Android: Ajustes, Idioma y entrada, Texto a voz, Google, Instalar datos de voz, Español (elige una voz «en línea» o de alta calidad).{'\n'}
+          {'\u2022'} iPhone: Ajustes, Accesibilidad, Contenido hablado, Voces, Español, y descarga una voz «Mejorada» o «Premium».{'\n'}
+          Las historias del catálogo ya traen una voz mejor (Camila o Alex) cuando el equipo las genera con el script de voces.
+        </Text>
+      </Card>
 
       <SectionTitle>{t(lang, 'about')}</SectionTitle>
       <Card>
@@ -93,7 +142,11 @@ export default function SettingsScreen() {
 const makeStyles = ({ colors, spacing, fontSize, font, fs }: Theme) =>
   StyleSheet.create({
     content: { padding: spacing.md, paddingBottom: spacing.xl * 2, width: '100%', maxWidth: 760, alignSelf: 'center' },
-    note: { color: colors.textMuted, marginTop: spacing.xs, fontSize: fs(13) },
+    note: { color: colors.textMuted, marginTop: spacing.xs, fontSize: fs(13), lineHeight: fs(20) },
+    voiceRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md, paddingVertical: spacing.md, borderBottomWidth: 1, borderBottomColor: colors.border },
+    radio: { width: 24, height: 24, borderRadius: 12, borderWidth: 2, borderColor: colors.text, alignItems: 'center', justifyContent: 'center' },
+    radioOn: { backgroundColor: colors.primary, borderColor: colors.primary },
+    voiceName: { flex: 1, color: colors.text, fontSize: fs(fontSize.caption + 1) },
     row: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
     preview: { color: colors.text, marginTop: spacing.md, fontStyle: 'italic', fontFamily: font.body, fontSize: fs(fontSize.body + 2) },
     about: { color: colors.text, lineHeight: fs(24), fontSize: fs(fontSize.body) },

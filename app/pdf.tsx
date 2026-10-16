@@ -2,13 +2,14 @@ import * as DocumentPicker from 'expo-document-picker';
 import * as FileSystem from 'expo-file-system';
 import { router, Stack } from 'expo-router';
 import { useCallback, useEffect, useState } from 'react';
-import { ActivityIndicator, Platform, ScrollView, StyleSheet, TextInput, View } from 'react-native';
+import { ActivityIndicator, Platform, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { PdfRunner } from '@/components/PdfRunner';
-import { Button, Card, ProgressBar, Text } from '@/components/ui';
+import { Button, Card, Chip, Glyph, ProgressBar, Text } from '@/components/ui';
 import { buildPdfHtml, type PdfMessage } from '@/services/pdfHtml';
 import { loadPdfJs } from '@/services/pdfSources';
 import { prepareParagraphs, saveBook, wordCount } from '@/services/books';
+import { analyzePdf, previewOf, type Analysis, type Section } from '@/services/pdfAnalyze';
 import { useApp } from '@/state/AppContext';
 import { useThemed, type Theme } from '@/theme/theme';
 
@@ -19,7 +20,7 @@ const WORDS_PER_MINUTE = 150;
 type Phase =
   | { name: 'idle' }
   | { name: 'working'; label: string; progress: number }
-  | { name: 'preview'; fileName: string; pages: number; paragraphs: string[]; title: string }
+  | { name: 'preview'; analysis: Analysis; pages: number; selected: Record<string, boolean> }
   | { name: 'error'; message: string };
 
 const ERRORS: Record<string, string> = {
@@ -54,21 +55,20 @@ export default function PdfScreen() {
       if (m.type === 'progress') {
         setPhase({ name: 'working', label: `Leyendo página ${m.page} de ${m.total}`, progress: m.page / m.total });
       } else if (m.type === 'done') {
-        const paragraphs = prepareParagraphs(m.paragraphs);
-        const chars = paragraphs.join('').length;
         setJob(null);
-        if (chars < 80) {
+        const analysis = analyzePdf(m.pages, m.outline);
+        const readable = analysis.sections.reduce((n, sec) => n + sec.chars, 0);
+        if (readable < 80) {
           setPhase({
             name: 'error',
             message: 'No encontramos texto en este PDF. Si es un escaneo (fotos de páginas), todavía no podemos leerlo: hace falta reconocimiento de texto (OCR).',
           });
           return;
         }
-        // Los títulos internos de los PDF suelen ser basura ("about:blank", "Microsoft Word - ..."): se prefiere el nombre del archivo.
+        // El nombre del libro sale del archivo (los títulos internos de los PDF suelen ser basura).
         const fromFile = (job?.fileName ?? '').replace(/\.pdf$/i, '').replace(/[_]+/g, ' ').trim();
-        const base = fromFile || m.title.trim() || 'Mi libro';
-        setTitle(base);
-        setPhase({ name: 'preview', fileName: job?.fileName ?? '', pages: m.numPages, paragraphs, title: base });
+        setTitle(fromFile || m.title.trim() || 'Mi libro');
+        setPhase({ name: 'preview', analysis, pages: m.numPages, selected: Object.fromEntries(analysis.sections.map((sec) => [sec.id, sec.selected])) });
       } else if (m.type === 'error') {
         setJob(null);
         setPhase({ name: 'error', message: ERRORS[m.code] ?? `No se pudo leer el PDF (${m.message}).` });
@@ -107,14 +107,30 @@ export default function PdfScreen() {
 
   const create = async () => {
     if (phase.name !== 'preview') return;
+    const chosen = phase.analysis.sections.filter((sec) => phase.selected[sec.id]);
+    if (!chosen.length) return;
+    const name = title.trim() || 'Mi libro';
+    const single = phase.analysis.method === 'none';
+    const total = chosen.reduce((n, sec) => n + sec.chars, 0) || 1;
     try {
-      const ids = await saveBook(title.trim() || 'Mi libro', phase.paragraphs, phase.pages);
+      let firstId = '';
+      for (const sec of chosen) {
+        const paragraphs = prepareParagraphs(sec.paragraphs);
+        const pages = Math.max(1, Math.round((phase.pages * sec.chars) / total));
+        const ids = await saveBook(single ? name : sec.title, paragraphs, pages, single ? undefined : name);
+        firstId ||= ids[0];
+      }
       booksChanged();
-      router.replace({ pathname: '/story/[id]', params: { id: ids[0] } });
+      if (chosen.length === 1) router.replace({ pathname: '/story/[id]', params: { id: firstId } });
+      else router.replace('/');
     } catch {
-      setPhase({ name: 'error', message: 'No hay espacio para guardar este libro en el dispositivo. Borra algún audiolibro e inténtalo de nuevo.' });
+      setPhase({ name: 'error', message: 'No hay espacio para guardar estos libros en el dispositivo. Borra algún audiolibro e inténtalo de nuevo.' });
     }
   };
+
+  const toggle = (id: string) => phase.name === 'preview' && setPhase({ ...phase, selected: { ...phase.selected, [id]: !phase.selected[id] } });
+  const setAll = (value: boolean) =>
+    phase.name === 'preview' && setPhase({ ...phase, selected: Object.fromEntries(phase.analysis.sections.map((sec) => [sec.id, value])) });
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + spacing.xl }]} keyboardShouldPersistTaps="handled">
@@ -153,23 +169,58 @@ export default function PdfScreen() {
         </View>
       )}
 
-      {phase.name === 'preview' && (
-        <>
-          <Text style={styles.label}>Título</Text>
-          <TextInput value={title} onChangeText={setTitle} style={styles.input} accessibilityLabel="Título del audiolibro" />
-          <Card style={{ marginTop: spacing.lg }}>
-            <Text style={styles.noteTitle}>Esto es lo que encontramos</Text>
-            <Text style={styles.note}>
-              {phase.pages} páginas · {phase.paragraphs.length} párrafos · unos {Math.max(1, Math.round(wordCount(phase.paragraphs) / WORDS_PER_MINUTE))} minutos de audio
+      {phase.name === 'preview' && (() => {
+        const { analysis, selected } = phase;
+        const count = analysis.sections.filter((sec) => selected[sec.id]).length;
+        const stories = analysis.sections.filter((sec) => sec.kind === 'story').length;
+        const single = analysis.method === 'none';
+        const minutes = (sec: Section) => Math.max(1, Math.round(wordCount(sec.paragraphs) / WORDS_PER_MINUTE));
+        return (
+          <>
+            <Text style={styles.label}>{single ? 'Título' : 'Nombre del libro'}</Text>
+            <TextInput value={title} onChangeText={setTitle} style={styles.input} accessibilityLabel="Nombre del libro" />
+
+            <Text style={styles.heading}>
+              {single ? 'Esto es lo que encontramos' : `Encontramos ${stories} ${stories === 1 ? 'cuento' : 'cuentos'}`}
             </Text>
-            <Text style={[styles.note, { marginTop: spacing.sm, fontStyle: 'italic' }]} numberOfLines={5}>
-              {phase.paragraphs.slice(0, 2).join('\n\n')}
-            </Text>
-          </Card>
-          <Button label="Crear audiolibro" onPress={create} style={{ marginTop: spacing.lg }} />
-          <Button label="Elegir otro PDF" variant="secondary" onPress={() => setPhase({ name: 'idle' })} style={{ marginTop: spacing.sm }} />
-        </>
-      )}
+            {!single && <Text style={styles.note}>Marca los que quieras convertir en audiolibro. La información inicial (portada, créditos, índice, prólogo) viene sin marcar.</Text>}
+            {!single && (
+              <View style={styles.chips}>
+                <Chip label="Marcar todo" onPress={() => setAll(true)} />
+                <Chip label="Quitar todo" onPress={() => setAll(false)} />
+              </View>
+            )}
+
+            {analysis.sections.map((sec) => {
+              const on = !!selected[sec.id];
+              const tag = sec.kind === 'front' ? 'Información inicial' : sec.kind === 'back' ? 'Al final del libro' : '';
+              return (
+                <Pressable key={sec.id} onPress={() => toggle(sec.id)} accessibilityRole="checkbox" accessibilityState={{ checked: on }} style={styles.sectionRow}>
+                  <View style={[styles.checkbox, on && styles.checkboxOn]}>{on && <Glyph name="check" size={18} color={colors.onPrimary} />}</View>
+                  <View style={{ flex: 1 }}>
+                    {!!tag && <Text style={styles.tag}>{tag}</Text>}
+                    <Text style={styles.sectionTitle}>{single && sec.kind === 'story' ? title || sec.title : sec.title}</Text>
+                    <Text style={styles.sectionMeta}>
+                      {sec.paragraphs.length} párrafos · unos {minutes(sec)} min · desde la página {sec.startPage + 1}
+                    </Text>
+                    <Text style={styles.sectionPreview} numberOfLines={2}>
+                      {previewOf(sec)}
+                    </Text>
+                  </View>
+                </Pressable>
+              );
+            })}
+
+            <Button
+              label={count === 0 ? 'Marca al menos uno' : count === 1 ? 'Crear audiolibro' : `Crear ${count} audiolibros`}
+              onPress={create}
+              disabled={count === 0}
+              style={{ marginTop: spacing.lg }}
+            />
+            <Button label="Elegir otro PDF" variant="secondary" onPress={() => setPhase({ name: 'idle' })} style={{ marginTop: spacing.sm }} />
+          </>
+        );
+      })()}
     </ScrollView>
   );
 }
@@ -190,6 +241,15 @@ const makeStyles = ({ colors, spacing, radius, fontSize, font, stroke, fs }: The
       fontFamily: font.body,
       fontSize: fs(fontSize.body),
     },
+    heading: { fontFamily: font.heading, fontWeight: '800', color: colors.text, fontSize: fs(fontSize.subtitle), marginTop: spacing.lg },
+    chips: { flexDirection: 'row', gap: spacing.sm, marginTop: spacing.sm },
+    sectionRow: { flexDirection: 'row', gap: spacing.md, paddingVertical: spacing.md, borderBottomWidth: 1, borderBottomColor: colors.border, alignItems: 'flex-start' },
+    checkbox: { width: 28, height: 28, borderRadius: 4, borderWidth: 2, borderColor: colors.text, alignItems: 'center', justifyContent: 'center', marginTop: 2 },
+    checkboxOn: { backgroundColor: colors.primary, borderColor: colors.primary },
+    tag: { color: colors.accent, fontWeight: '800', fontSize: fs(12), marginBottom: 2 },
+    sectionTitle: { fontFamily: font.heading, fontWeight: '800', color: colors.text, fontSize: fs(fontSize.body) },
+    sectionMeta: { color: colors.textMuted, fontSize: fs(13), marginTop: 2 },
+    sectionPreview: { color: colors.text, fontSize: fs(fontSize.caption), marginTop: 4, fontStyle: 'italic' },
     noteTitle: { fontFamily: font.heading, fontWeight: '800', color: colors.text, fontSize: fs(fontSize.body), marginBottom: spacing.xs },
     note: { color: colors.text, fontSize: fs(fontSize.caption + 1), lineHeight: fs(22) },
   });

@@ -1,6 +1,9 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { registerBook, unregisterBook } from '@/content';
 import type { Story } from '@/content/types';
+import { prepareParagraphs, splitIntoParts, wordCount } from './pdfAnalyze';
+
+export { prepareParagraphs, wordCount };
 
 /**
  * Audiolibros creados por la persona a partir de sus PDF. Viven solo en este dispositivo
@@ -10,7 +13,6 @@ import type { Story } from '@/content/types';
 export const BOOK_PREFIX = 'pdf-';
 const KEY = 'sinapse.books.v1';
 const MAX_PARAGRAPHS_PER_PART = 110;
-const MAX_PARAGRAPH_CHARS = 650;
 
 export interface UserBook {
   id: string;
@@ -18,6 +20,8 @@ export interface UserBook {
   paragraphs: string[];
   pages: number;
   createdAt: number;
+  /** Libro o PDF del que salió (cuando un PDF trae varios cuentos). */
+  collection?: string;
 }
 
 function bookToStory(b: UserBook): Story {
@@ -25,7 +29,8 @@ function bookToStory(b: UserBook): Story {
   return {
     id: b.id,
     title: { es: b.title },
-    author: 'Mi PDF',
+    author: b.collection ?? 'Mi PDF',
+    collection: b.collection,
     source: 'PDF subido por la persona usuaria. Se lee con la voz del teléfono; el texto no sale de este dispositivo.',
     // Sin región propia: "costa" no agrega fondo sonoro por defecto, solo el que pida el texto.
     region: 'costa',
@@ -37,40 +42,6 @@ function bookToStory(b: UserBook): Story {
     glossary: [],
     quiz: [],
   };
-}
-
-/** Parte los párrafos largos en frases para que la voz y la pantalla los manejen bien. */
-export function prepareParagraphs(raw: string[]): string[] {
-  const out: string[] = [];
-  for (const p of raw) {
-    const text = p.replace(/\s+/g, ' ').trim();
-    if (!text) continue;
-    if (text.length <= MAX_PARAGRAPH_CHARS) {
-      out.push(text);
-      continue;
-    }
-    const sentences = text.match(/[^.!?…]+[.!?…]+["”»)]*\s*|[^.!?…]+$/g) ?? [text];
-    let buf = '';
-    for (const s of sentences) {
-      if (buf && buf.length + s.length > MAX_PARAGRAPH_CHARS) {
-        out.push(buf.trim());
-        buf = '';
-      }
-      buf += s;
-      // Una "frase" sin puntuación demasiado larga: cortar por espacios.
-      while (buf.length > MAX_PARAGRAPH_CHARS * 1.5) {
-        const cut = buf.lastIndexOf(' ', MAX_PARAGRAPH_CHARS);
-        out.push(buf.slice(0, cut > 0 ? cut : MAX_PARAGRAPH_CHARS).trim());
-        buf = buf.slice(cut > 0 ? cut : MAX_PARAGRAPH_CHARS);
-      }
-    }
-    if (buf.trim()) out.push(buf.trim());
-  }
-  return out;
-}
-
-export function wordCount(paragraphs: string[]): number {
-  return paragraphs.reduce((n, p) => n + p.split(/\s+/).filter(Boolean).length, 0);
 }
 
 async function readAll(): Promise<UserBook[]> {
@@ -94,21 +65,18 @@ export async function loadBooks(): Promise<number> {
 }
 
 /** Guarda un libro (partido en partes si es largo). Devuelve los ids creados; lanza si no hay espacio. */
-export async function saveBook(title: string, paragraphs: string[], pages: number): Promise<string[]> {
-  const parts: string[][] = [];
-  for (let i = 0; i < paragraphs.length; i += MAX_PARAGRAPHS_PER_PART) parts.push(paragraphs.slice(i, i + MAX_PARAGRAPHS_PER_PART));
-  // Evita una última parte minúscula.
-  if (parts.length > 1 && parts[parts.length - 1].length < MAX_PARAGRAPHS_PER_PART / 4) {
-    const tail = parts.pop() as string[];
-    parts[parts.length - 1].push(...tail);
-  }
-  const stamp = Date.now();
+let seq = 0;
+
+export async function saveBook(title: string, paragraphs: string[], pages: number, collection?: string): Promise<string[]> {
+  const parts = splitIntoParts(paragraphs, MAX_PARAGRAPHS_PER_PART);
+  const stamp = `${Date.now()}${(seq++).toString(36)}`;
   const created: UserBook[] = parts.map((p, i) => ({
     id: `${BOOK_PREFIX}${stamp}-${i + 1}`,
     title: parts.length > 1 ? `${title} (parte ${i + 1} de ${parts.length})` : title,
     paragraphs: p,
     pages: Math.max(1, Math.round((pages * p.length) / paragraphs.length)),
-    createdAt: stamp + i,
+    createdAt: Date.now() + i,
+    collection,
   }));
   const all = [...(await readAll()), ...created];
   await AsyncStorage.setItem(KEY, JSON.stringify(all)); // lanza si no hay espacio

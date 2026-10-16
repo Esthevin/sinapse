@@ -26,6 +26,8 @@ export type NarrationSource =
 interface Options {
   source: NarrationSource;
   rate: number;
+  /** Voz del teléfono elegida en Ajustes (solo para el modo TTS). */
+  voiceId?: string | null;
   startParagraph: number;
   onParagraph?: (index: number) => void;
   onComplete?: () => void;
@@ -40,7 +42,7 @@ const TICK_SEC = 5;
  * En modo audio no hay marcas de tiempo por párrafo, así que el párrafo
  * activo se estima por la proporción de texto (suficiente para leer a la par).
  */
-export function useNarration({ source, rate, startParagraph, onParagraph, onComplete, onListenTick }: Options) {
+export function useNarration({ source, rate, voiceId, startParagraph, onParagraph, onComplete, onListenTick }: Options) {
   const { paragraphs } = source;
   const isAudio = source.kind === 'audio';
 
@@ -106,7 +108,7 @@ export function useNarration({ source, rate, startParagraph, onParagraph, onComp
     async (start: number) => {
       const gen = ++generation.current;
       await Speech.stop();
-      const voice = await getSpanishVoice();
+      const voice = await getSpanishVoice(voiceId);
       if (gen !== generation.current) return;
       setTtsPlaying(true);
 
@@ -131,7 +133,7 @@ export function useNarration({ source, rate, startParagraph, onParagraph, onComp
       };
       speakOne(start);
     },
-    [paragraphs]
+    [paragraphs, voiceId]
   );
 
   // Restaurar posición guardada en modo audio cuando el archivo cargó.
