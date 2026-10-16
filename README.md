@@ -155,6 +155,7 @@ local. Ver [docs/GUIA_NARRADORES.md](docs/GUIA_NARRADORES.md).
 - [docs/GUIA_CONTENIDO.md](docs/GUIA_CONTENIDO.md) — cómo agregar una historia nueva.
 - [docs/GUIA_NARRADORES.md](docs/GUIA_NARRADORES.md) — cómo grabar y publicar narraciones.
 - [docs/DERECHOS_Y_ETICA.md](docs/DERECHOS_Y_ETICA.md) — derechos de autor, voces y consentimiento.
+- [docs/SONIDOS.md](docs/SONIDOS.md) — **sonidos ambientales**: dónde están, qué palabras los activan y cómo ajustarlos por historia.
 - [docs/VOCES.md](docs/VOCES.md) — **cómo quitar las voces robóticas**: voces IA peruanas, alternativas y lenguas originarias.
 - [docs/PLAN_NARRADORES.md](docs/PLAN_NARRADORES.md) — **cómo conseguir narradores peruanos**: voces ilustres, autores, locutores y comunidades.
 

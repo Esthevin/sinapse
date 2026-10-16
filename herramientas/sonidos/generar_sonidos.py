@@ -169,6 +169,68 @@ def noche():
     return sig
 
 
+def golpes():
+    """Dos golpes de nudillos en una puerta de madera ("tan, tan"), repetidos cada 2 s."""
+    sig = np.zeros(N)
+    for k in range(5):
+        for j, dt in enumerate((0.15, 0.42)):
+            t0 = k * 2.0 + dt
+            g = 1.0 if j == 0 else 0.85
+            n = int(0.22 * SR)
+            tt = np.arange(n) / SR
+            body = (np.sin(2 * np.pi * 190 * tt) * 0.8 + np.sin(2 * np.pi * 330 * tt) * 0.35) * np.exp(-24 * tt)
+            tap = band(rng(500 + k * 2 + j).standard_normal(n), 900, 3800) * np.exp(-90 * tt)
+            clip = (body + tap * 0.7) * g
+            i = int(t0 * SR)
+            sig[i:i + n] += clip[: N - i][: n]
+    return sig
+
+
+def lechuza():
+    """Ulular de lechuza ("hu, hú") con noche de fondo."""
+    sig = noise(30, 80, 400) * 0.05
+    for k in range(3):
+        t0 = 0.6 + k * 3.2
+        sig += chirp(t0, 0.55, 420, 380, amp=0.9, vib=6) * 0.8
+        sig += chirp(t0 + 0.75, 0.9, 390, 300, amp=1.0, vib=8)
+    return sig
+
+
+def _pluck(freq, dur=0.7, damp=0.996, seed=0):
+    n = int(dur * SR)
+    period = max(2, int(SR / freq))
+    buf = rng(seed).uniform(-1, 1, period)
+    out = np.zeros(n)
+    for i in range(n):
+        out[i] = buf[i % period]
+        buf[i % period] = damp * 0.5 * (buf[i % period] + buf[(i + 1) % period])
+    return out * np.exp(-3.0 * np.arange(n) / SR)
+
+
+def fiesta():
+    """Fiesta andina: melodía pentatónica punteada, bombo y murmullo de gente."""
+    base = 220.0
+    scale = [1, 6 / 5, 4 / 3, 3 / 2, 9 / 5, 2]  # pentatónica menor
+    melody = [0, 2, 3, 2, 4, 3, 2, 0, 1, 2, 3, 5, 4, 3, 2, 0]
+    beat = 0.3125  # 192 bpm en corcheas
+    sig = np.zeros(N)
+    for i, m in enumerate(melody * 2):
+        t0 = i * beat
+        if t0 >= DUR - 0.5:
+            break
+        note = _pluck(base * scale[m] * (2 if i % 8 >= 4 else 1), seed=i)
+        k = int(t0 * SR)
+        sig[k:k + len(note)] += note[: N - k][: len(note)] * 0.35
+    for t0 in np.arange(0, DUR - 0.4, beat * 4):
+        n = int(0.3 * SR)
+        tt = np.arange(n) / SR
+        thump = np.sin(2 * np.pi * (70 - 25 * tt / 0.3) * tt) * np.exp(-12 * tt)
+        k = int(t0 * SR)
+        sig[k:k + n] += thump[: N - k][: n] * 0.9
+    murmur = noise(31, 250, 1600) * (0.3 + 0.7 * slow(32, 0.5)) * 0.18
+    return sig + murmur
+
+
 SONIDOS = {
     "viento": (viento, 0.8),
     "lluvia": (lluvia, 0.8),
@@ -179,6 +241,9 @@ SONIDOS = {
     "fuego": (fuego, 0.8),
     "selva": (selva, 0.8),
     "noche": (noche, 0.7),
+    "golpes": (golpes, 0.9),
+    "lechuza": (lechuza, 0.8),
+    "fiesta": (fiesta, 0.8),
 }
 
 

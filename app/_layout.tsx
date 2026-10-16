@@ -1,5 +1,7 @@
+import { setAudioModeAsync } from 'expo-audio';
 import Constants from 'expo-constants';
 import { Stack, type ErrorBoundaryProps } from 'expo-router';
+import { useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ActivityIndicator, Platform, Pressable, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -72,6 +74,10 @@ function RootNavigator() {
 }
 
 export default function RootLayout() {
+  // Narración y sonidos ambientales deben sonar juntos y también con el interruptor de silencio del iPhone.
+  useEffect(() => {
+    setAudioModeAsync({ playsInSilentMode: true, interruptionMode: 'mixWithOthers', allowsRecording: false }).catch(() => {});
+  }, []);
   return (
     <SafeAreaProvider>
       <AppProvider>

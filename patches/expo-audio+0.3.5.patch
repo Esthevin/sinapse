@@ -1,0 +1,13 @@
+diff --git a/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioPlayer.kt b/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioPlayer.kt
+index ef9ec3c..f7ffe42 100644
+--- a/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioPlayer.kt
++++ b/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioPlayer.kt
+@@ -58,7 +58,7 @@ class AudioPlayer(
+   val duration get() = if (player.duration != C.TIME_UNSET) player.duration / 1000f else 0f
+ 
+   init {
+-    player.setAudioAttributes(AudioAttributes.DEFAULT, true)
++    player.setAudioAttributes(AudioAttributes.DEFAULT, false)
+     addPlayerListeners()
+     source?.let {
+       setMediaSource(source)
