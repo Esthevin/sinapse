@@ -21,20 +21,54 @@ export function loadEnvLocal(root) {
   }
 }
 
+/**
+ * Voces neuronales en español para repartir a los personajes (ver docs/REPARTO_DE_VOCES.md).
+ * Las dos peruanas (Camila y Alex) son las del narrador; los personajes usan las demás voces
+ * latinoamericanas, mujer u hombre según el personaje.
+ */
+export const VOICE_POOL = [
+  { id: 'es-PE-CamilaNeural', gender: 'f' },
+  { id: 'es-PE-AlexNeural', gender: 'm' },
+  { id: 'es-CO-SalomeNeural', gender: 'f' },
+  { id: 'es-CO-GonzaloNeural', gender: 'm' },
+  { id: 'es-MX-DaliaNeural', gender: 'f' },
+  { id: 'es-MX-JorgeNeural', gender: 'm' },
+  { id: 'es-AR-ElenaNeural', gender: 'f' },
+  { id: 'es-AR-TomasNeural', gender: 'm' },
+  { id: 'es-CL-CatalinaNeural', gender: 'f' },
+  { id: 'es-CL-LorenzoNeural', gender: 'm' },
+  { id: 'es-US-PalomaNeural', gender: 'f' },
+  { id: 'es-US-AlonsoNeural', gender: 'm' },
+];
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const xml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-/** Sintetiza un texto y devuelve un MP3 (Buffer). */
-export async function synthesize({ text, voiceId, key, region, rate = '-6%' }) {
+const percent = (mult) => `${mult >= 1 ? '+' : ''}${Math.round((mult - 1) * 100)}%`;
+
+/**
+ * Sintetiza un texto y devuelve un MP3 (Buffer).
+ * `parts` permite varias voces en el mismo pedido (un párrafo con narrador y personajes):
+ * [{ text, voiceId, pitch, rate }], con pitch y rate como multiplicadores (1 = normal).
+ */
+export async function synthesize({ text, voiceId, parts, key, region, rate = '-6%' }) {
+  const list = parts ?? [{ text, voiceId }];
   // Solo para pruebas del flujo (sin gastar Azure): audio mudo con la duración aproximada de la lectura.
   if (process.env.SINAPSE_TTS_FAKE === '1') {
-    const seconds = Math.max(1.5, text.split(/\s+/).length / 2.6);
+    const seconds = Math.max(1.5, list.map((p) => p.text).join(' ').split(/\s+/).length / 2.6);
     const r = spawnSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-f', 'lavfi', '-i', 'anullsrc=r=24000:cl=mono', '-t', String(seconds), '-b:a', '48k', '-f', 'mp3', 'pipe:1'], { maxBuffer: 1 << 26 });
     return r.stdout;
   }
-  const ssml =
-    `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="es-PE">` +
-    `<voice name="${voiceId}"><prosody rate="${rate}">${xml(text)}</prosody><break time="600ms"/></voice></speak>`;
+  const baseRate = Number.parseFloat(rate) / 100 || 0; // "-6%" -> -0.06
+  const voices = list
+    .map((p, i) => {
+      const r = Math.round(((1 + baseRate) * (p.rate ?? 1) - 1) * 100);
+      const pitch = p.pitch && p.pitch !== 1 ? ` pitch="${percent(p.pitch)}"` : '';
+      const pause = i < list.length - 1 ? '<break time="250ms"/>' : '<break time="600ms"/>';
+      return `<voice name="${p.voiceId ?? voiceId}"><prosody rate="${r >= 0 ? '+' : ''}${r}%"${pitch}>${xml(p.text)}</prosody>${pause}</voice>`;
+    })
+    .join('');
+  const ssml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="es-PE">${voices}</speak>`;
   for (let attempt = 1; ; attempt++) {
     const res = await fetch(`https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`, {
       method: 'POST',

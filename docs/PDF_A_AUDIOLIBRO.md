@@ -105,3 +105,7 @@ app: sirve para comprobar que el PDF se separa bien antes de narrar.
 Para que la app misma narre con Camila o Alex sin pasar por una computadora haría falta un servicio
 propio que guarde la clave de Azure y le pase el texto (por ejemplo una función en la nube con límites
 de uso). No está hecho: es otro costo y otra pieza que mantener.
+
+## Varias voces: un actor por personaje
+
+Tanto en la app (voz del teléfono) como en `npm run pdf:audiolibro` (Azure), si el cuento tiene diálogos el narrador y cada personaje se leen con voces distintas. Cómo se detectan, cómo corregirlos y cómo usar Chatterbox: [REPARTO_DE_VOCES.md](REPARTO_DE_VOCES.md). Opciones: `--sin-reparto` (una sola voz) y `--reparto <carpeta>` (reparto corregido a mano).

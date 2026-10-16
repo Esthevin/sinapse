@@ -1,0 +1,160 @@
+{
+  "id": "zorro-al-cielo",
+  "titulo": "El zorro que quiso ir al cielo",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [
+      {
+        "id": "zorro",
+        "name": "el zorro",
+        "gender": "m",
+        "lines": 3,
+        "chars": 86,
+        "trait": "animal"
+      }
+    ],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "En lo alto de la puna vivía un zorro llamado Atuq, muy curioso y algo presumido. Un día escuchó al cóndor contar que en el cielo habría una gran fiesta, con comida que nunca se acababa."
+        }
+      ],
+      [
+        {
+          "speaker": "zorro",
+          "text": "¡Llévame contigo, amigo cóndor!"
+        },
+        {
+          "speaker": "narrador",
+          "text": "rogó el zorro"
+        },
+        {
+          "speaker": "zorro",
+          "text": "Prometo portarme bien."
+        },
+        {
+          "speaker": "narrador",
+          "text": "El cóndor dudó, pero al final aceptó. El zorro subió a su espalda y juntos volaron por encima de las nubes."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "En la fiesta del cielo había papas, quinua, maíz y frutas de todos los colores. El zorro comió y comió sin parar, y se olvidó de agradecer. Cuando el cóndor quiso regresar, el zorro le dijo:"
+        },
+        {
+          "speaker": "zorro",
+          "text": "Vete tú, yo me quedo un rato más."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Al caer la tarde, el zorro quiso volver, pero el cóndor ya se había ido. Entonces tejió una larga soga y empezó a bajar despacio hacia la tierra."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "A medio camino pasaron volando unos loros. El zorro, orgulloso, se burló de ellos y los insultó. Los loros, molestos, picotearon la soga hasta romperla."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "El zorro cayó y cayó, y al chocar contra una gran piedra, su panza llena de semillas se reventó. Las semillas se esparcieron por todos lados. Dicen que desde entonces crecen en la tierra la quinua, la papa y el maíz."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-CamilaNeural",
+      "pitch": 1,
+      "rate": 1
+    },
+    "zorro": {
+      "voice": "es-PE-AlexNeural",
+      "pitch": 0.92,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    },
+    "zorro": {
+      "referencias": [
+        "zorro",
+        "animal",
+        "hombre_1",
+        "hombre_2",
+        "hombre_3",
+        "narrador"
+      ],
+      "exaggeration": 0.55,
+      "cfg_weight": 0.3,
+      "semilla": 101
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "En lo alto de la puna vivía un zorro llamado Atuq, muy curioso y algo presumido. Un día escuchó al cóndor contar que en el cielo habría una gran fiesta, con comida que nunca se acababa."
+      }
+    ],
+    [
+      {
+        "speaker": "zorro",
+        "text": "¡Llévame contigo, amigo cóndor!"
+      },
+      {
+        "speaker": "narrador",
+        "text": "rogó el zorro"
+      },
+      {
+        "speaker": "zorro",
+        "text": "Prometo portarme bien."
+      },
+      {
+        "speaker": "narrador",
+        "text": "El cóndor dudó, pero al final aceptó. El zorro subió a su espalda y juntos volaron por encima de las nubes."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "En la fiesta del cielo había papas, quinua, maíz y frutas de todos los colores. El zorro comió y comió sin parar, y se olvidó de agradecer. Cuando el cóndor quiso regresar, el zorro le dijo:"
+      },
+      {
+        "speaker": "zorro",
+        "text": "Vete tú, yo me quedo un rato más."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Al caer la tarde, el zorro quiso volver, pero el cóndor ya se había ido. Entonces tejió una larga soga y empezó a bajar despacio hacia la tierra."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "A medio camino pasaron volando unos loros. El zorro, orgulloso, se burló de ellos y los insultó. Los loros, molestos, picotearon la soga hasta romperla."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "El zorro cayó y cayó, y al chocar contra una gran piedra, su panza llena de semillas se reventó. Las semillas se esparcieron por todos lados. Dicen que desde entonces crecen en la tierra la quinua, la papa y el maíz."
+      }
+    ]
+  ]
+}

@@ -46,3 +46,7 @@ Marca `APROBADO` únicamente en las tomas que satisfagan estos criterios. Para u
 Después vuelve a ejecutar `producir_radiodrama.py` en cada escena y `unir_escenas.py` en `Sinapse_Chatterbox`, tal como hiciste con el zorro expresivo. **La música añadida en `Melodia` no aparece automáticamente** si faltan recursos en los guiones.
 
 El guion es una ficción piloto; no se ha verificado como adaptación de un relato tradicional concreto.
+
+## Narrar los cuentos del catálogo con varias voces
+
+`narrar_cuentos.py` narra los cuentos que aún no tienen audio con una voz de referencia por personaje y deja todo listo para `npm run audio:importar`. Guía completa: `docs/REPARTO_DE_VOCES.md`.

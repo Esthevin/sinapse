@@ -1,4 +1,5 @@
 import * as Speech from 'expo-speech';
+import { assignVoices, type Assignment, type Cast, type Gender, type VoiceSlot } from './reparto';
 
 /**
  * Voz sintética del propio teléfono (texto a voz del sistema).
@@ -77,4 +78,33 @@ export async function hasSpanishVoice(): Promise<boolean> {
   // Algunos Android no listan voces aunque sí puedan hablar: en ese caso asumimos que sí.
   if (!voices.length) return true;
   return voices.some((v) => v.language.toLowerCase().startsWith('es'));
+}
+
+// Nombres de voces de iOS/macOS cuyo género se conoce; en Android los identificadores no lo dicen.
+const FEMALE_NAMES = /\b(paulina|monica|mónica|marisol|angelica|angélica|soledad|francisca|luciana|valentina|catalina|isabela|laura|helena|sabina|carmen|esperanza)\b/i;
+const MALE_NAMES = /\b(juan|diego|jorge|carlos|pablo|jaime|rafael|andrés|andres|miguel|alonso|tomás|tomas)\b/i;
+
+function slotOf(v: Speech.Voice): VoiceSlot {
+  const label = `${v.name ?? ''} ${v.identifier}`;
+  const gender: Gender = FEMALE_NAMES.test(label) ? 'f' : MALE_NAMES.test(label) ? 'm' : 'n';
+  return { id: v.identifier, gender };
+}
+
+/**
+ * Voz (y tono) del teléfono para cada personaje de un cuento. El narrador usa `narrator` (la voz
+ * elegida en Ajustes); los personajes toman otras voces en español del dispositivo y, si no hay
+ * suficientes, se distinguen cambiando el tono. Si el teléfono solo tiene una voz, todo es por tono.
+ */
+export async function voicesForCast(cast: Cast, narrator: string | null): Promise<Record<string, Assignment>> {
+  const voices = await listSpanishVoices();
+  const pool = voices.map(slotOf);
+  const main = narrator ?? pool[0]?.id ?? '';
+  const result = assignVoices(cast, main, pool);
+  // Si no sabemos el género de la voz, el tono ayuda a distinguir mujeres de hombres.
+  for (const c of cast.characters) {
+    const a = result[c.id];
+    const slot = pool.find((p) => p.id === a?.voice);
+    if (a && slot?.gender === 'n') a.pitch = Math.max(0.6, Math.min(1.6, a.pitch + (c.gender === 'f' ? 0.12 : c.gender === 'm' ? -0.1 : 0)));
+  }
+  return result;
 }

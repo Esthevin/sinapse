@@ -1,0 +1,133 @@
+{
+  "id": "lago-titicaca",
+  "titulo": "La leyenda del lago Titicaca",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [
+      {
+        "id": "voz-sin-nombre",
+        "name": "voz sin nombre",
+        "gender": "n",
+        "lines": 1,
+        "chars": 0
+      }
+    ],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "Hace mucho tiempo, donde hoy está el lago Titicaca, había un valle fértil. Allí vivía un pueblo feliz, protegido por los Apus, los espíritus de las montañas. No conocían el hambre ni la tristeza."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Los Apus solo les pusieron una condición: nadie debía subir a la cumbre de la montaña donde ardía el fuego sagrado."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Pero un día, un espíritu envidioso sembró la duda entre la gente:"
+        },
+        {
+          "speaker": "voz-sin-nombre",
+          "text": "¿Por qué no pueden subir? Allá arriba deben esconder algo valioso. Llenos de curiosidad y ambición, los hombres subieron a la montaña."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Los Apus se enojaron y soltaron a los pumas, que bajaron de las cumbres contra los desobedientes. Al ver esto, Inti, el Sol, lloró durante cuarenta días. Sus lágrimas llenaron el valle hasta formar un lago inmenso."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Solo se salvó una pareja que no había desobedecido, navegando en una balsa de totora. Cuando el agua se calmó, vieron que los pumas se habían convertido en piedra."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Por eso llamaron al lago Titiqaqa, que según la tradición significa “puma de piedra”. Hoy el Titicaca es el lago navegable más alto del mundo y un lugar sagrado para los pueblos aimara y quechua."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-CamilaNeural",
+      "pitch": 1,
+      "rate": 1
+    },
+    "voz-sin-nombre": {
+      "voice": "es-PE-AlexNeural",
+      "pitch": 1,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    },
+    "voz-sin-nombre": {
+      "referencias": [
+        "voz-sin-nombre",
+        "hombre_1",
+        "mujer_1",
+        "narrador"
+      ],
+      "exaggeration": 0.55,
+      "cfg_weight": 0.3,
+      "semilla": 101
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "Hace mucho tiempo, donde hoy está el lago Titicaca, había un valle fértil. Allí vivía un pueblo feliz, protegido por los Apus, los espíritus de las montañas. No conocían el hambre ni la tristeza."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Los Apus solo les pusieron una condición: nadie debía subir a la cumbre de la montaña donde ardía el fuego sagrado."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Pero un día, un espíritu envidioso sembró la duda entre la gente:"
+      },
+      {
+        "speaker": "voz-sin-nombre",
+        "text": "¿Por qué no pueden subir? Allá arriba deben esconder algo valioso. Llenos de curiosidad y ambición, los hombres subieron a la montaña."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Los Apus se enojaron y soltaron a los pumas, que bajaron de las cumbres contra los desobedientes. Al ver esto, Inti, el Sol, lloró durante cuarenta días. Sus lágrimas llenaron el valle hasta formar un lago inmenso."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Solo se salvó una pareja que no había desobedecido, navegando en una balsa de totora. Cuando el agua se calmó, vieron que los pumas se habían convertido en piedra."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Por eso llamaron al lago Titiqaqa, que según la tradición significa “puma de piedra”. Hoy el Titicaca es el lago navegable más alto del mundo y un lugar sagrado para los pueblos aimara y quechua."
+      }
+    ]
+  ]
+}

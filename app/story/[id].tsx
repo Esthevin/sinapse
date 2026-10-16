@@ -91,6 +91,7 @@ function StoryPlayer({
     source: resolved.source,
     rate: settings.speechRate,
     voiceId: settings.voiceId,
+    multiVoice: settings.multiVoice,
     startParagraph: progress[story.id]?.paragraph ?? 0,
     onParagraph: (i) => savePosition(story.id, i),
     onComplete: () => {

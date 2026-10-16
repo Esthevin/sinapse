@@ -26,6 +26,8 @@
  *   --region sierra     costa | sierra | selva (por defecto sierra)
  *   --edades ninos,jovenes,adultos
  *   --voz camila|alex|auto   (auto alterna entre cuentos)
+ *   --sin-reparto       todo con una sola voz (por defecto, cada personaje tiene la suya; ver docs/REPARTO_DE_VOCES.md)
+ *   --reparto <dir>     usa los archivos <id>.json de esa carpeta (reparto corregido a mano) en vez del automático
  *   --ritmo -6%         velocidad de la voz
  *   --pausa 3100        ms entre pedidos a Azure (plan gratuito: unos 20 por minuto)
  *   --dry-run           muestra qué se haría y cuántos caracteres gastaría, sin llamar a Azure
@@ -37,7 +39,7 @@ import { createRequire } from 'node:module';
 import { basename, dirname, join } from 'node:path';
 import readline from 'node:readline/promises';
 import { fileURLToPath } from 'node:url';
-import { loadEnvLocal, mp3DurationSec, synthesize, VOICES } from './lib/azure.mjs';
+import { loadEnvLocal, mp3DurationSec, synthesize, VOICE_POOL, VOICES } from './lib/azure.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const storiesDir = join(root, 'src', 'content', 'historias');
@@ -63,6 +65,8 @@ if (!existsSync(file)) {
 }
 
 const SIMULATED = flag('simulado');
+const CAST_ON = !flag('sin-reparto');
+const CAST_DIR = option('reparto');
 const DRY = flag('dry-run');
 const RATE = option('ritmo', '-6%');
 const PAUSE_MS = Number(option('pausa', '3100'));
@@ -86,6 +90,7 @@ const htmlSrc = readFileSync(join(root, 'src', 'services', 'pdfHtml.ts'), 'utf8'
 const snippet = htmlSrc.slice(htmlSrc.indexOf('// <extract-low-level>'), htmlSrc.indexOf('// </extract-low-level>'));
 const { pageLines, outlineOf } = new Function(`${snippet}; return { pageLines, outlineOf };`)();
 const { analyzePdf, prepareParagraphs, splitIntoParts, wordCount } = await import('../src/services/pdfAnalyze.ts');
+const { analyzeCast, assignVoices } = await import('../src/services/reparto.ts');
 
 async function readPdf(path) {
   const data = new Uint8Array(readFileSync(path));
@@ -164,7 +169,20 @@ for (const sec of chosen) {
 
 const totalChars = jobs.reduce((n, j) => n + j.paragraphs.join(' ').length, 0);
 console.log(`A narrar: ${jobs.length} historia(s) · ${totalChars.toLocaleString('es-PE')} caracteres (el plan gratuito de Azure incluye 500 000 al mes)`);
-jobs.forEach((j, i) => console.log(`  → ${j.id}: ${j.paragraphs.length} párrafos · voz ${pickVoice(i).id}`));
+jobs.forEach((j, i) => {
+  console.log(`  → ${j.id}: ${j.paragraphs.length} párrafos · narrador ${pickVoice(i).id}`);
+  const plan = castPlan(j, i);
+  if (plan) for (const c of plan.cast.characters) console.log(`       ${c.name} (${c.lines} intervenciones) → ${plan.voices[c.id].voice}${plan.voices[c.id].pitch !== 1 ? ` tono ${plan.voices[c.id].pitch.toFixed(2)}` : ''}`);
+});
+/** Personajes del cuento y la voz de cada uno (o el reparto corregido a mano, si se pasó --reparto). */
+function castPlan(job, i) {
+  if (!CAST_ON) return null;
+  const manual = CAST_DIR && existsSync(join(CAST_DIR, `${job.id}.json`)) ? JSON.parse(readFileSync(join(CAST_DIR, `${job.id}.json`), 'utf8')) : null;
+  const cast = manual?.cast ?? analyzeCast(job.paragraphs);
+  if (!cast.characters.length) return null;
+  const voices = manual?.voices ?? assignVoices(cast, pickVoice(i).id, VOICE_POOL);
+  return { cast, voices };
+}
 function pickVoice(i) {
   if (VOICE_CHOICE === 'camila' || VOICE_CHOICE === 'alex') return VOICES[VOICE_CHOICE];
   return i % 2 === 0 ? VOICES.camila : VOICES.alex;
@@ -201,10 +219,19 @@ for (const [i, job] of jobs.entries()) {
   const parts = [];
   const starts = [];
   let t = 0;
+  const plan = castPlan(job, i);
   for (const [k, paragraph] of job.paragraphs.entries()) {
+    const segments = plan ? plan.cast.paragraphs[k] : null;
     const mp3 = SIMULATED
       ? silentMp3(Math.max(1.5, paragraph.split(/\s+/).length / 2.6))
-      : await synthesize({ text: paragraph, voiceId: voice.id, key: KEY, region: REGION, rate: RATE });
+      : await synthesize({
+          text: paragraph,
+          voiceId: voice.id,
+          parts: segments?.map((sg) => ({ text: sg.text, voiceId: plan.voices[sg.speaker]?.voice ?? voice.id, pitch: plan.voices[sg.speaker]?.pitch, rate: plan.voices[sg.speaker]?.rate })),
+          key: KEY,
+          region: REGION,
+          rate: RATE,
+        });
     starts.push(Number(t.toFixed(3)));
     t += mp3DurationSec(mp3);
     parts.push(mp3);
@@ -233,7 +260,7 @@ for (const [i, job] of jobs.entries()) {
         narratorId: voice.narratorId,
         voiceSource: 'sintetica',
         url: `bundle:${audioFile}`,
-        license: `Voz neuronal ${voice.id} de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.`,
+        license: `Voces neuronales ${plan ? [...new Set([voice.id, ...Object.values(plan.voices).map((v) => v.voice)])].join(', ') : voice.id} de Microsoft Azure AI Speech, usadas según los términos del servicio. Voces genéricas: no imitan a ninguna persona.`,
         durationSec: Number(t.toFixed(3)),
         paragraphStartsSec: starts,
       },

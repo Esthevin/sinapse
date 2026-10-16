@@ -18,6 +18,8 @@ export interface Settings {
   ambience: boolean;
   /** Voz del teléfono elegida para leer (null = la mejor disponible). */
   voiceId: string | null;
+  /** Voz distinta para cada personaje cuando lee la voz del teléfono. */
+  multiVoice: boolean;
 }
 
 export interface StoryProgress {
@@ -58,7 +60,7 @@ interface PersistedState {
 const STORAGE_KEY = 'sinapse.state.v1';
 
 const INITIAL: PersistedState = {
-  settings: { lang: 'es', appearance: DEFAULT_APPEARANCE, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false, ambience: true, voiceId: null },
+  settings: { lang: 'es', appearance: DEFAULT_APPEARANCE, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false, ambience: true, voiceId: null, multiVoice: true },
   progress: {},
   quizzes: {},
   recordings: {},

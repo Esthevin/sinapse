@@ -1,7 +1,8 @@
 import { useAudioPlayer, useAudioPlayerStatus } from 'expo-audio';
 import * as Speech from 'expo-speech';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { getSpanishVoice } from '@/services/speech';
+import { analyzeCast } from '@/services/reparto';
+import { getSpanishVoice, voicesForCast } from '@/services/speech';
 
 /**
  * De dónde sale la voz de una historia (estrategia de voz mixta):
@@ -28,6 +29,8 @@ interface Options {
   rate: number;
   /** Voz del teléfono elegida en Ajustes (solo para el modo TTS). */
   voiceId?: string | null;
+  /** Leer los diálogos con una voz distinta por personaje (solo voz del teléfono). */
+  multiVoice?: boolean;
   startParagraph: number;
   onParagraph?: (index: number) => void;
   onComplete?: () => void;
@@ -42,7 +45,7 @@ const TICK_SEC = 5;
  * En modo audio no hay marcas de tiempo por párrafo, así que el párrafo
  * activo se estima por la proporción de texto (suficiente para leer a la par).
  */
-export function useNarration({ source, rate, voiceId, startParagraph, onParagraph, onComplete, onListenTick }: Options) {
+export function useNarration({ source, rate, voiceId, multiVoice = true, startParagraph, onParagraph, onComplete, onListenTick }: Options) {
   const { paragraphs } = source;
   const isAudio = source.kind === 'audio';
 
@@ -82,6 +85,8 @@ export function useNarration({ source, rate, voiceId, startParagraph, onParagrap
   const [ttsPlaying, setTtsPlaying] = useState(false);
   const generation = useRef(0); // invalida callbacks de narraciones anteriores
   const rateRef = useRef(rate);
+  // Quién habla en cada párrafo (solo con voz del teléfono): permite una voz por personaje.
+  const cast = useMemo(() => (!isAudio && multiVoice ? analyzeCast(paragraphs) : null), [isAudio, multiVoice, paragraphs]);
 
   const audioIndex = useMemo(() => {
     if (!isAudio || !status.duration) return Math.min(startParagraph, paragraphs.length - 1);
@@ -109,6 +114,7 @@ export function useNarration({ source, rate, voiceId, startParagraph, onParagrap
       const gen = ++generation.current;
       await Speech.stop();
       const voice = await getSpanishVoice(voiceId);
+      const assignments = cast && cast.characters.length ? await voicesForCast(cast, voice).catch(() => null) : null;
       if (gen !== generation.current) return;
       setTtsPlaying(true);
 
@@ -121,19 +127,28 @@ export function useNarration({ source, rate, voiceId, startParagraph, onParagrap
           return;
         }
         setTtsIndex(i);
-        Speech.speak(paragraphs[i], {
-          language: 'es-PE',
-          voice: voice ?? undefined,
-          rate: rateRef.current,
-          onDone: () => speakOne(i + 1),
-          onError: () => {
-            if (gen === generation.current) setTtsPlaying(false);
-          },
-        });
+        // Un párrafo = varios trozos (narración y lo que dice cada personaje), uno tras otro.
+        const parts = assignments && cast ? cast.paragraphs[i] : [{ speaker: 'narrador', text: paragraphs[i] }];
+        const speakPart = (k: number) => {
+          if (gen !== generation.current) return;
+          if (k >= parts.length) return speakOne(i + 1);
+          const a = assignments?.[parts[k].speaker];
+          Speech.speak(parts[k].text, {
+            language: 'es-PE',
+            voice: a?.voice || voice || undefined,
+            pitch: a?.pitch,
+            rate: rateRef.current * (a?.rate ?? 1),
+            onDone: () => speakPart(k + 1),
+            onError: () => {
+              if (gen === generation.current) setTtsPlaying(false);
+            },
+          });
+        };
+        speakPart(0);
       };
       speakOne(start);
     },
-    [paragraphs, voiceId]
+    [paragraphs, voiceId, cast]
   );
 
   // Restaurar posición guardada en modo audio cuando el archivo cargó.

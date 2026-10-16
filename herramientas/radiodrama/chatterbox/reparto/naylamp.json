@@ -1,0 +1,89 @@
+{
+  "id": "naylamp",
+  "titulo": "La leyenda de Naylamp",
+  "nota": "Revisa quién dice cada frase. Puedes corregir \"speaker\" a mano, cambiar las voces (Azure) o las referencias (Chatterbox).",
+  "cast": {
+    "characters": [],
+    "paragraphs": [
+      [
+        {
+          "speaker": "narrador",
+          "text": "Hace muchos siglos, por el mar del norte del Perú, llegó una gran flota de balsas. Al frente venía un señor llamado Naylamp, acompañado de su esposa Ceterni y de muchos servidores."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Desembarcaron en las playas de lo que hoy es Lambayeque. Naylamp traía consigo un ídolo de piedra verde llamado Yampallec, que representaba su propia figura. Dicen que de ese nombre viene la palabra Lambayeque."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Naylamp y su gente construyeron un templo llamado Chot, donde colocaron el ídolo. Aprendieron a cultivar en el desierto aprovechando el agua de los ríos, y el pueblo creció."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Naylamp gobernó muchos años con sabiduría. Cuando sintió que su vida terminaba, pidió a sus servidores que lo enterraran en secreto, en la misma habitación donde había vivido."
+        }
+      ],
+      [
+        {
+          "speaker": "narrador",
+          "text": "Sus servidores, para que el pueblo no perdiera la esperanza, contaron que Naylamp no había muerto: que le habían crecido alas y había volado hacia el cielo. Hoy, el famoso tumi de oro de Lambayeque muestra a un personaje con alas que muchos relacionan con esta leyenda."
+        }
+      ]
+    ]
+  },
+  "voices": {
+    "narrador": {
+      "voice": "es-PE-CamilaNeural",
+      "pitch": 1,
+      "rate": 1
+    }
+  },
+  "chatterbox": {
+    "narrador": {
+      "referencias": [
+        "narrador"
+      ],
+      "exaggeration": 0.45,
+      "cfg_weight": 0.3,
+      "semilla": 11
+    }
+  },
+  "paragraphs": [
+    [
+      {
+        "speaker": "narrador",
+        "text": "Hace muchos siglos, por el mar del norte del Perú, llegó una gran flota de balsas. Al frente venía un señor llamado Naylamp, acompañado de su esposa Ceterni y de muchos servidores."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Desembarcaron en las playas de lo que hoy es Lambayeque. Naylamp traía consigo un ídolo de piedra verde llamado Yampallec, que representaba su propia figura. Dicen que de ese nombre viene la palabra Lambayeque."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Naylamp y su gente construyeron un templo llamado Chot, donde colocaron el ídolo. Aprendieron a cultivar en el desierto aprovechando el agua de los ríos, y el pueblo creció."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Naylamp gobernó muchos años con sabiduría. Cuando sintió que su vida terminaba, pidió a sus servidores que lo enterraran en secreto, en la misma habitación donde había vivido."
+      }
+    ],
+    [
+      {
+        "speaker": "narrador",
+        "text": "Sus servidores, para que el pueblo no perdiera la esperanza, contaron que Naylamp no había muerto: que le habían crecido alas y había volado hacia el cielo. Hoy, el famoso tumi de oro de Lambayeque muestra a un personaje con alas que muchos relacionan con esta leyenda."
+      }
+    ]
+  ]
+}

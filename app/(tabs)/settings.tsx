@@ -137,6 +137,7 @@ export default function SettingsScreen() {
         Es la voz del teléfono: se usa en los audiolibros de PDF y en las historias que no tienen narrador. Si suena robótica, elige otra de la lista.
       </Text>
       <View style={[styles.row, { marginTop: spacing.sm }]}>
+        <Chip label="Una voz por personaje" active={settings.multiVoice} onPress={() => updateSettings({ multiVoice: !settings.multiVoice })} />
         <Chip label="Automática" active={settings.voiceId === null} onPress={() => { updateSettings({ voiceId: null }); tryVoice(null); }} />
       </View>
       {voices.map((v, i) => {
