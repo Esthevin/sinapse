@@ -1,0 +1,178 @@
+[
+  {
+    "numero": 1,
+    "personaje": "narrador",
+    "inicio_seg": 0.0,
+    "fin_seg": 10.84,
+    "texto_esperado": "Hace mucho tiempo, entre las montañas de los Andes, vivía un pequeño zorro que soñaba con alcanzar el cielo. Cada mañana subía a la cima de un cerro y observaba el vuelo de las aves.",
+    "revisado": false
+  },
+  {
+    "numero": 2,
+    "personaje": "narrador",
+    "inicio_seg": 11.44,
+    "fin_seg": 22.92,
+    "texto_esperado": "Desde lo alto miraba los caminos, las chacras y los ríos que cruzaban el valle. Sin embargo, nada lo impresionaba tanto como un cóndor que planeaba entre las nubes sin mover apenas sus grandes alas.",
+    "revisado": false
+  },
+  {
+    "numero": 3,
+    "personaje": "zorro",
+    "inicio_seg": 23.52,
+    "fin_seg": 31.68,
+    "texto_esperado": "¡Qué maravilla! Si pudiera volar como él, conocería lugares que jamás he visto. Tal vez encontraría montañas más altas que todas estas.",
+    "revisado": false
+  },
+  {
+    "numero": 4,
+    "personaje": "narrador",
+    "inicio_seg": 32.28,
+    "fin_seg": 42.32,
+    "texto_esperado": "Una mañana, el cóndor descendió y se posó sobre una roca cercana. El zorro, sorprendido, retrocedió unos pasos, pero su curiosidad fue más fuerte que el miedo.",
+    "revisado": false
+  },
+  {
+    "numero": 5,
+    "personaje": "condor",
+    "inicio_seg": 42.82,
+    "fin_seg": 49.94,
+    "texto_esperado": "Buenos días, pequeño amigo. Te veo mirar al cielo desde hace varios días. ¿Hay algo que deseas preguntarme?",
+    "revisado": false
+  },
+  {
+    "numero": 6,
+    "personaje": "zorro",
+    "inicio_seg": 50.44,
+    "fin_seg": 57.28,
+    "texto_esperado": "¡Sí, amigo cóndor! Quiero saber cómo se siente volar sobre esas montañas. ¿Podrías llevarme contigo, aunque sea una sola vez?",
+    "revisado": false
+  },
+  {
+    "numero": 7,
+    "personaje": "condor",
+    "inicio_seg": 57.78,
+    "fin_seg": 69.5,
+    "texto_esperado": "El cielo es hermoso, pero también exige respeto. Arriba el viento cambia de dirección, el frío se siente más fuerte y una nube puede ocultar el camino.",
+    "revisado": false
+  },
+  {
+    "numero": 8,
+    "personaje": "narrador",
+    "inicio_seg": 70.1,
+    "fin_seg": 80.46,
+    "texto_esperado": "El zorro levantó las orejas. Hasta ese momento solo había imaginado la libertad del vuelo, sin pensar en los riesgos. Pero la emoción seguía brillando en sus ojos.",
+    "revisado": false
+  },
+  {
+    "numero": 9,
+    "personaje": "zorro",
+    "inicio_seg": 81.06,
+    "fin_seg": 89.5,
+    "texto_esperado": "Lo entiendo. No quiero meterme en problemas. Pero he esperado mucho tiempo para conocer el mundo desde arriba. ¡Prometo escucharte con atención!",
+    "revisado": false
+  },
+  {
+    "numero": 10,
+    "personaje": "condor",
+    "inicio_seg": 90.1,
+    "fin_seg": 101.74,
+    "texto_esperado": "Entonces empezaremos desde aquí. Antes de pensar en volar, aprende a observar. Mira cómo se mueven las nubes y escucha el viento cuando atraviesa las quebradas.",
+    "revisado": false
+  },
+  {
+    "numero": 11,
+    "personaje": "narrador",
+    "inicio_seg": 102.34,
+    "fin_seg": 113.22,
+    "texto_esperado": "El cóndor extendió lentamente sus alas. Una ráfaga levantó el polvo del camino y agitó los pastos de la montaña. El zorro tuvo que cerrar los ojos por un instante.",
+    "revisado": false
+  },
+  {
+    "numero": 12,
+    "personaje": "zorro",
+    "inicio_seg": 113.82,
+    "fin_seg": 120.02,
+    "texto_esperado": "¡Ahora comprendo! Desde abajo parece que vuelas sin esfuerzo, pero estás atento a todo lo que ocurre alrededor.",
+    "revisado": false
+  },
+  {
+    "numero": 13,
+    "personaje": "condor",
+    "inicio_seg": 120.52,
+    "fin_seg": 129.36,
+    "texto_esperado": "Exactamente. No basta con tener alas. También es necesario reconocer los cambios del tiempo y saber cuándo es mejor esperar.",
+    "revisado": false
+  },
+  {
+    "numero": 14,
+    "personaje": "narrador",
+    "inicio_seg": 129.96,
+    "fin_seg": 139.76,
+    "texto_esperado": "Durante un buen rato observaron juntos el valle. Una nube cubrió la cumbre más lejana, mientras el sol iluminaba un camino estrecho que descendía hacia el río.",
+    "revisado": false
+  },
+  {
+    "numero": 15,
+    "personaje": "zorro",
+    "inicio_seg": 140.36,
+    "fin_seg": 145.8,
+    "texto_esperado": "Yo creía que ser valiente significaba lanzarse sin pensarlo. Ahora veo que también hace falta paciencia.",
+    "revisado": false
+  },
+  {
+    "numero": 16,
+    "personaje": "condor",
+    "inicio_seg": 146.3,
+    "fin_seg": 155.62,
+    "texto_esperado": "La valentía y la prudencia pueden caminar juntas, pequeño zorro. Quien conoce sus límites también puede descubrir nuevos caminos.",
+    "revisado": false
+  },
+  {
+    "numero": 17,
+    "personaje": "narrador",
+    "inicio_seg": 156.22,
+    "fin_seg": 169.94,
+    "texto_esperado": "El zorro sonrió. Aunque todavía no había volado ni un instante, ya estaba aprendiendo a mirar las montañas de una manera diferente. Cada sonido y cada sombra parecían contarle una historia.",
+    "revisado": false
+  },
+  {
+    "numero": 18,
+    "personaje": "zorro",
+    "inicio_seg": 170.64,
+    "fin_seg": 177.52,
+    "texto_esperado": "¿Volverás mañana? Me gustaría seguir aprendiendo. Quizás algún día pueda acompañarte en una verdadera aventura.",
+    "revisado": false
+  },
+  {
+    "numero": 19,
+    "personaje": "condor",
+    "inicio_seg": 178.02,
+    "fin_seg": 185.7,
+    "texto_esperado": "Volveré cuando el sol ilumine la primera cumbre. Hasta entonces, observa el cielo y recuerda lo que conversamos hoy.",
+    "revisado": false
+  },
+  {
+    "numero": 20,
+    "personaje": "narrador",
+    "inicio_seg": 186.3,
+    "fin_seg": 196.38,
+    "texto_esperado": "El cóndor alzó el vuelo y comenzó a alejarse sobre el valle. El zorro lo siguió con la mirada hasta que su figura se convirtió en un pequeño punto oscuro entre las nubes.",
+    "revisado": false
+  },
+  {
+    "numero": 21,
+    "personaje": "narrador",
+    "inicio_seg": 196.98,
+    "fin_seg": 208.42,
+    "texto_esperado": "Al caer la tarde regresó a su refugio. Estaba cansado, pero feliz. Había descubierto que los grandes sueños no siempre comienzan con un salto: a veces comienzan con una pregunta y la disposición de aprender.",
+    "revisado": false
+  },
+  {
+    "numero": 22,
+    "personaje": "narrador",
+    "inicio_seg": 209.22,
+    "fin_seg": 220.3,
+    "texto_esperado": "Y así terminó su primer encuentro con el cóndor. Lo que sucedería al día siguiente todavía era un misterio, pero el zorro ya sabía que aquella amistad podía cambiar su vida.",
+    "revisado": false
+  }
+]

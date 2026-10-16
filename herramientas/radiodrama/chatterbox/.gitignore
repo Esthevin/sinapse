@@ -1,0 +1,4 @@
+# Audios y voces de referencia: no se suben a git
+*.wav
+*.mp3
+voces_referencia/

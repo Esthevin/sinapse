@@ -1,0 +1,23 @@
+﻿numero,personaje,inicio_seg,fin_seg,texto_esperado,revisado
+1,narrador,0.0,10.84,"Hace mucho tiempo, entre las montañas de los Andes, vivía un pequeño zorro que soñaba con alcanzar el cielo. Cada mañana subía a la cima de un cerro y observaba el vuelo de las aves.",False
+2,narrador,11.44,22.92,"Desde lo alto miraba los caminos, las chacras y los ríos que cruzaban el valle. Sin embargo, nada lo impresionaba tanto como un cóndor que planeaba entre las nubes sin mover apenas sus grandes alas.",False
+3,zorro,23.52,31.68,"¡Qué maravilla! Si pudiera volar como él, conocería lugares que jamás he visto. Tal vez encontraría montañas más altas que todas estas.",False
+4,narrador,32.28,42.32,"Una mañana, el cóndor descendió y se posó sobre una roca cercana. El zorro, sorprendido, retrocedió unos pasos, pero su curiosidad fue más fuerte que el miedo.",False
+5,condor,42.82,49.94,"Buenos días, pequeño amigo. Te veo mirar al cielo desde hace varios días. ¿Hay algo que deseas preguntarme?",False
+6,zorro,50.44,57.28,"¡Sí, amigo cóndor! Quiero saber cómo se siente volar sobre esas montañas. ¿Podrías llevarme contigo, aunque sea una sola vez?",False
+7,condor,57.78,69.5,"El cielo es hermoso, pero también exige respeto. Arriba el viento cambia de dirección, el frío se siente más fuerte y una nube puede ocultar el camino.",False
+8,narrador,70.1,80.46,"El zorro levantó las orejas. Hasta ese momento solo había imaginado la libertad del vuelo, sin pensar en los riesgos. Pero la emoción seguía brillando en sus ojos.",False
+9,zorro,81.06,89.5,Lo entiendo. No quiero meterme en problemas. Pero he esperado mucho tiempo para conocer el mundo desde arriba. ¡Prometo escucharte con atención!,False
+10,condor,90.1,101.74,"Entonces empezaremos desde aquí. Antes de pensar en volar, aprende a observar. Mira cómo se mueven las nubes y escucha el viento cuando atraviesa las quebradas.",False
+11,narrador,102.34,113.22,El cóndor extendió lentamente sus alas. Una ráfaga levantó el polvo del camino y agitó los pastos de la montaña. El zorro tuvo que cerrar los ojos por un instante.,False
+12,zorro,113.82,120.02,"¡Ahora comprendo! Desde abajo parece que vuelas sin esfuerzo, pero estás atento a todo lo que ocurre alrededor.",False
+13,condor,120.52,129.36,Exactamente. No basta con tener alas. También es necesario reconocer los cambios del tiempo y saber cuándo es mejor esperar.,False
+14,narrador,129.96,139.76,"Durante un buen rato observaron juntos el valle. Una nube cubrió la cumbre más lejana, mientras el sol iluminaba un camino estrecho que descendía hacia el río.",False
+15,zorro,140.36,145.8,Yo creía que ser valiente significaba lanzarse sin pensarlo. Ahora veo que también hace falta paciencia.,False
+16,condor,146.3,155.62,"La valentía y la prudencia pueden caminar juntas, pequeño zorro. Quien conoce sus límites también puede descubrir nuevos caminos.",False
+17,narrador,156.22,169.94,"El zorro sonrió. Aunque todavía no había volado ni un instante, ya estaba aprendiendo a mirar las montañas de una manera diferente. Cada sonido y cada sombra parecían contarle una historia.",False
+18,zorro,170.64,177.52,¿Volverás mañana? Me gustaría seguir aprendiendo. Quizás algún día pueda acompañarte en una verdadera aventura.,False
+19,condor,178.02,185.7,"Volveré cuando el sol ilumine la primera cumbre. Hasta entonces, observa el cielo y recuerda lo que conversamos hoy.",False
+20,narrador,186.3,196.38,El cóndor alzó el vuelo y comenzó a alejarse sobre el valle. El zorro lo siguió con la mirada hasta que su figura se convirtió en un pequeño punto oscuro entre las nubes.,False
+21,narrador,196.98,208.42,"Al caer la tarde regresó a su refugio. Estaba cansado, pero feliz. Había descubierto que los grandes sueños no siempre comienzan con un salto: a veces comienzan con una pregunta y la disposición de aprender.",False
+22,narrador,209.22,220.3,"Y así terminó su primer encuentro con el cóndor. Lo que sucedería al día siguiente todavía era un misterio, pero el zorro ya sabía que aquella amistad podía cambiar su vida.",False

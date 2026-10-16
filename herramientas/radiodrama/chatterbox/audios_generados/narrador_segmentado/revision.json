@@ -1,0 +1,50 @@
+[
+  {
+    "numero": 1,
+    "archivo": "oracion_01.wav",
+    "texto_esperado": "Hace mucho tiempo, entre las montañas de los Andes, vivía un pequeño zorro que soñaba con alcanzar el cielo.",
+    "revision": "pendiente"
+  },
+  {
+    "numero": 2,
+    "archivo": "oracion_02.wav",
+    "texto_esperado": "Cada mañana cruzaba los cerros, avanzaba entre las rocas y observaba cómo el sol iluminaba los valles.",
+    "revision": "pendiente"
+  },
+  {
+    "numero": 3,
+    "archivo": "oracion_03.wav",
+    "texto_esperado": "Cierto día, mientras descansaba cerca de un riachuelo, escuchó el sonido de unas enormes alas.",
+    "revision": "pendiente"
+  },
+  {
+    "numero": 4,
+    "archivo": "oracion_04.wav",
+    "texto_esperado": "Al levantar la cabeza, descubrió a un majestuoso cóndor que descendía lentamente desde las alturas.",
+    "revision": "pendiente"
+  },
+  {
+    "numero": 5,
+    "archivo": "oracion_05.wav",
+    "texto_esperado": "El zorro sintió una enorme emoción.",
+    "revision": "pendiente"
+  },
+  {
+    "numero": 6,
+    "archivo": "oracion_06.wav",
+    "texto_esperado": "Su corazón comenzó a latir con fuerza.",
+    "revision": "pendiente"
+  },
+  {
+    "numero": 7,
+    "archivo": "oracion_07.wav",
+    "texto_esperado": "Quizás aquel encuentro sería el comienzo de una aventura extraordinaria.",
+    "revision": "pendiente"
+  },
+  {
+    "numero": 8,
+    "archivo": "oracion_08.wav",
+    "texto_esperado": "Pero había algo que todavía desconocía: el cielo, aunque parecía tranquilo y hermoso, escondía grandes peligros.",
+    "revision": "pendiente"
+  }
+]

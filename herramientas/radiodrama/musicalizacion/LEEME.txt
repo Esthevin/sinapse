@@ -1,0 +1,32 @@
+SINAPSE — Musicalización de piloto (3+ minutos)
+
+1. Copia mezclar_piloto_3min.py A LA MISMA CARPETA que generar_episodio.py y episodio.json:
+   D:\GitHub_Proyectos\Sinapse_TTS\Sinapse_Chatterbox\Sinapse_Piloto_3min\
+
+2. Debes tener generado y revisado:
+   Sinapse_Piloto_3min\salida\episodio_piloto_voz.wav
+   Sinapse_Piloto_3min\salida\revision.json
+
+3. Usa los recursos existentes (sin copiar ni duplicar) en:
+   D:\GitHub_Proyectos\Sinapse_TTS\Sinapse_Radiodrama_Piloto\Melodia\
+       musica_andina.mp3
+       viento.mp3
+       aleteo.wav
+
+4. En PowerShell:
+   cd D:\GitHub_Proyectos\Sinapse_TTS\Sinapse_Chatterbox\Sinapse_Piloto_3min
+   conda activate sinapse_chatterbox
+   python -m pip install numpy soundfile
+   python mezclar_piloto_3min.py
+
+5. Archivos nuevos:
+   salida\episodio_piloto_musicalizado.wav
+   salida\episodio_piloto_musicalizado.mp3
+   salida\efectos_aplicados.json
+
+Notas:
+- No modifica las voces originales ni los archivos fuente de musica/efectos.
+- La posición de los efectos se calcula desde el tiempo de segmentos 4, 11 y 20, pero
+  sigue siendo editorial y debe revisarse escuchando la historia.
+- La licencia de cada recurso debe verificarse para su uso final en Sinapse.
+- El episodio es adaptación experimental, no versión tradicional verificada.

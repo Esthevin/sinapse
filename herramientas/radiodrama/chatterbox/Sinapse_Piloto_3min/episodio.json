@@ -1,0 +1,28 @@
+{
+  "titulo": "El zorro y el cóndor — piloto dramatizado",
+  "nota": "Guion original experimental inspirado en motivos andinos; no es una transcripción verificada del cuento tradicional.",
+  "intervenciones": [
+    {"personaje":"narrador","texto":"Hace mucho tiempo, entre las montañas de los Andes, vivía un pequeño zorro que soñaba con alcanzar el cielo. Cada mañana subía a la cima de un cerro y observaba el vuelo de las aves.","pausa":0.6},
+    {"personaje":"narrador","texto":"Desde lo alto miraba los caminos, las chacras y los ríos que cruzaban el valle. Sin embargo, nada lo impresionaba tanto como un cóndor que planeaba entre las nubes sin mover apenas sus grandes alas.","pausa":0.6},
+    {"personaje":"zorro","texto":"¡Qué maravilla! Si pudiera volar como él, conocería lugares que jamás he visto. Tal vez encontraría montañas más altas que todas estas.","pausa":0.6},
+    {"personaje":"narrador","texto":"Una mañana, el cóndor descendió y se posó sobre una roca cercana. El zorro, sorprendido, retrocedió unos pasos, pero su curiosidad fue más fuerte que el miedo.","pausa":0.5},
+    {"personaje":"condor","texto":"Buenos días, pequeño amigo. Te veo mirar al cielo desde hace varios días. ¿Hay algo que deseas preguntarme?","pausa":0.5},
+    {"personaje":"zorro","texto":"¡Sí, amigo cóndor! Quiero saber cómo se siente volar sobre esas montañas. ¿Podrías llevarme contigo, aunque sea una sola vez?","pausa":0.5},
+    {"personaje":"condor","texto":"El cielo es hermoso, pero también exige respeto. Arriba el viento cambia de dirección, el frío se siente más fuerte y una nube puede ocultar el camino.","pausa":0.6},
+    {"personaje":"narrador","texto":"El zorro levantó las orejas. Hasta ese momento solo había imaginado la libertad del vuelo, sin pensar en los riesgos. Pero la emoción seguía brillando en sus ojos.","pausa":0.6},
+    {"personaje":"zorro","texto":"Lo entiendo. No quiero meterme en problemas. Pero he esperado mucho tiempo para conocer el mundo desde arriba. ¡Prometo escucharte con atención!","pausa":0.6},
+    {"personaje":"condor","texto":"Entonces empezaremos desde aquí. Antes de pensar en volar, aprende a observar. Mira cómo se mueven las nubes y escucha el viento cuando atraviesa las quebradas.","pausa":0.6},
+    {"personaje":"narrador","texto":"El cóndor extendió lentamente sus alas. Una ráfaga levantó el polvo del camino y agitó los pastos de la montaña. El zorro tuvo que cerrar los ojos por un instante.","pausa":0.6},
+    {"personaje":"zorro","texto":"¡Ahora comprendo! Desde abajo parece que vuelas sin esfuerzo, pero estás atento a todo lo que ocurre alrededor.","pausa":0.5},
+    {"personaje":"condor","texto":"Exactamente. No basta con tener alas. También es necesario reconocer los cambios del tiempo y saber cuándo es mejor esperar.","pausa":0.6},
+    {"personaje":"narrador","texto":"Durante un buen rato observaron juntos el valle. Una nube cubrió la cumbre más lejana, mientras el sol iluminaba un camino estrecho que descendía hacia el río.","pausa":0.6},
+    {"personaje":"zorro","texto":"Yo creía que ser valiente significaba lanzarse sin pensarlo. Ahora veo que también hace falta paciencia.","pausa":0.5},
+    {"personaje":"condor","texto":"La valentía y la prudencia pueden caminar juntas, pequeño zorro. Quien conoce sus límites también puede descubrir nuevos caminos.","pausa":0.6},
+    {"personaje":"narrador","texto":"El zorro sonrió. Aunque todavía no había volado ni un instante, ya estaba aprendiendo a mirar las montañas de una manera diferente. Cada sonido y cada sombra parecían contarle una historia.","pausa":0.7},
+    {"personaje":"zorro","texto":"¿Volverás mañana? Me gustaría seguir aprendiendo. Quizás algún día pueda acompañarte en una verdadera aventura.","pausa":0.5},
+    {"personaje":"condor","texto":"Volveré cuando el sol ilumine la primera cumbre. Hasta entonces, observa el cielo y recuerda lo que conversamos hoy.","pausa":0.6},
+    {"personaje":"narrador","texto":"El cóndor alzó el vuelo y comenzó a alejarse sobre el valle. El zorro lo siguió con la mirada hasta que su figura se convirtió en un pequeño punto oscuro entre las nubes.","pausa":0.6},
+    {"personaje":"narrador","texto":"Al caer la tarde regresó a su refugio. Estaba cansado, pero feliz. Había descubierto que los grandes sueños no siempre comienzan con un salto: a veces comienzan con una pregunta y la disposición de aprender.","pausa":0.8},
+    {"personaje":"narrador","texto":"Y así terminó su primer encuentro con el cóndor. Lo que sucedería al día siguiente todavía era un misterio, pero el zorro ya sabía que aquella amistad podía cambiar su vida.","pausa":1.0}
+  ]
+}

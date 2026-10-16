@@ -1,0 +1,138 @@
+[
+  {
+    "id": "n01",
+    "personaje": "narrador",
+    "inicio_seg": 2.0,
+    "fin_seg": 12.3,
+    "texto": "Hace mucho tiempo, entre las montañas de los Andes, vivía un pequeño zorro que tenía un sueño muy especial. Cada mañana subía hasta la cima de un cerro y observaba el cielo.",
+    "escena": "escena_1"
+  },
+  {
+    "id": "n02",
+    "personaje": "narrador",
+    "inicio_seg": 12.75,
+    "fin_seg": 21.775,
+    "texto": "Allí, muy por encima de las nubes, un majestuoso cóndor extendía sus enormes alas y volaba libremente sobre los valles. El zorro lo miraba maravillado.",
+    "escena": "escena_1"
+  },
+  {
+    "id": "z01",
+    "personaje": "zorro",
+    "inicio_seg": 22.225,
+    "fin_seg": 27.025,
+    "texto": "¡Ah! ¡Qué maravilloso debe ser volar! ¡Poder mirar todas las montañas desde arriba!",
+    "escena": "escena_1"
+  },
+  {
+    "id": "n03",
+    "personaje": "narrador",
+    "inicio_seg": 27.475,
+    "fin_seg": 34.475,
+    "texto": "Pero aquel día, algo inesperado estaba por suceder. El gran cóndor descendió y se posó sobre una roca cerca de él.",
+    "escena": "escena_1"
+  },
+  {
+    "id": "c01",
+    "personaje": "condor",
+    "inicio_seg": 34.925,
+    "fin_seg": 40.95,
+    "texto": "Buenos días, pequeño zorro. Te he visto observar el cielo durante muchos días. ¿Qué es lo que buscas?",
+    "escena": "escena_1"
+  },
+  {
+    "id": "z02",
+    "personaje": "zorro",
+    "inicio_seg": 41.4,
+    "fin_seg": 46.0,
+    "texto": "¡Quiero volar como tú! Dime, amigo cóndor, ¿crees que algún día podría hacerlo?",
+    "escena": "escena_1"
+  },
+  {
+    "id": "c02",
+    "personaje": "condor",
+    "inicio_seg": 46.45,
+    "fin_seg": 53.425,
+    "texto": "Los sueños pueden llevarnos muy lejos, pequeño amigo. Pero debes comprender que el cielo también tiene sus peligros.",
+    "escena": "escena_1"
+  },
+  {
+    "id": "n04",
+    "personaje": "narrador",
+    "inicio_seg": 53.875,
+    "fin_seg": 61.825,
+    "texto": "El zorro guardó silencio. Sus ojos brillaban de emoción. Todavía no sabía que aquella conversación sería el comienzo de una aventura.",
+    "escena": "escena_1"
+  },
+  {
+    "id": "s2_n01",
+    "personaje": "narrador",
+    "inicio_seg": 66.775,
+    "fin_seg": 75.65,
+    "texto": "El zorro levantó la mirada hacia el cóndor. Por un momento, el viento pareció guardar silencio. Aquella advertencia no había apagado su deseo de volar.",
+    "escena": "escena_2"
+  },
+  {
+    "id": "s2_z01",
+    "personaje": "zorro",
+    "inicio_seg": 76.3,
+    "fin_seg": 82.02,
+    "texto": "¿Y si tengo cuidado? ¿Podrías enseñarme, amigo cóndor? Quisiera ver los ríos y los caminos desde el cielo.",
+    "escena": "escena_2"
+  },
+  {
+    "id": "s2_c01",
+    "personaje": "condor",
+    "inicio_seg": 82.67,
+    "fin_seg": 90.945,
+    "texto": "No basta con desearlo, pequeño amigo. Allá arriba el aire es frío y el viento puede cambiar de pronto. Hay que saber escuchar a la montaña.",
+    "escena": "escena_2"
+  },
+  {
+    "id": "s2_n02",
+    "personaje": "narrador",
+    "inicio_seg": 91.595,
+    "fin_seg": 100.57,
+    "texto": "El zorro bajó las orejas. Por primera vez, comprendió que volar no era solamente extender las alas. El cóndor observó su tristeza y acercó la cabeza.",
+    "escena": "escena_2"
+  },
+  {
+    "id": "s2_c02",
+    "personaje": "condor",
+    "inicio_seg": 101.22,
+    "fin_seg": 109.97,
+    "texto": "Puedo mostrarte el valle desde una altura segura. Pero debes prometerme algo: escucharás mis indicaciones y no intentarás nada por tu cuenta.",
+    "escena": "escena_2"
+  },
+  {
+    "id": "s2_z02",
+    "personaje": "zorro",
+    "inicio_seg": 110.62,
+    "fin_seg": 116.02,
+    "texto": "¡Te lo prometo! Escucharé cada palabra. ¡Hoy será un día que recordaré siempre!",
+    "escena": "escena_2"
+  },
+  {
+    "id": "s2_n03",
+    "personaje": "narrador",
+    "inicio_seg": 116.67,
+    "fin_seg": 125.045,
+    "texto": "El cóndor abrió lentamente sus enormes alas. Una corriente de aire cruzó las piedras. El zorro dio un paso atrás, asombrado por su tamaño.",
+    "escena": "escena_2"
+  },
+  {
+    "id": "s2_c03",
+    "personaje": "condor",
+    "inicio_seg": 125.695,
+    "fin_seg": 132.445,
+    "texto": "Entonces, pequeño zorro, comencemos por algo sencillo. Antes de mirar el cielo, aprende a sentir el viento.",
+    "escena": "escena_2"
+  },
+  {
+    "id": "s2_n04",
+    "personaje": "narrador",
+    "inicio_seg": 133.095,
+    "fin_seg": 143.095,
+    "texto": "El zorro cerró los ojos y dejó que la brisa rozara su rostro. Aquel era apenas el primer paso de su aventura. Y todavía ignoraba cuánto podía enseñarle la montaña.",
+    "escena": "escena_2"
+  }
+]
