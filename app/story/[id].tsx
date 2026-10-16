@@ -1,6 +1,6 @@
 import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Button, Card, Chip, Cover, Glyph, label as caps, ProgressBar, SectionTitle, Text } from '@/components/ui';
 import { estimateMinutes, getStory } from '@/content';
@@ -74,6 +74,7 @@ function StoryPlayer({
   const { settings, progress, recordings, updateSettings, savePosition, addListening, markCompleted } = useApp();
   const { th, styles, colors, spacing } = useThemed(makeStyles);
   const insets = useSafeAreaInsets();
+  const { width: screenWidth } = useWindowDimensions();
   const { lang } = settings;
   const [finished, setFinished] = useState(false);
   const [noVoice, setNoVoice] = useState(false);
@@ -120,8 +121,12 @@ function StoryPlayer({
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView ref={scrollRef} contentContainerStyle={styles.content}>
         {/* Cabecera */}
-        <View style={styles.header}>
-          <Cover story={story} size={th.id === 'ninos' ? 116 : th.id === 'jovenes' ? 96 : 76} title={pickLocalized(story.title, lang)} />
+        <View style={[styles.header, th.id === 'ninos' && { flexDirection: 'column', alignItems: 'center' }]}>
+          <Cover
+            story={story}
+            size={th.id === 'ninos' ? Math.min(Math.min(screenWidth, MAX_WIDTH) - spacing.md * 2 - th.shadowOffset, 300) : th.id === 'jovenes' ? 96 : 76}
+            title={pickLocalized(story.title, lang)}
+          />
           <View style={{ flex: 1 }}>
             <Text style={styles.title}>{pickLocalized(story.title, lang)}</Text>
             <Text style={styles.meta}>

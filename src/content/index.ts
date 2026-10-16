@@ -9,6 +9,7 @@ import mancoCapac from './historias/manco-capac.json';
 import naylamp from './historias/naylamp.json';
 import yacumama from './historias/yacumama.json';
 import zorroAlCielo from './historias/zorro-al-cielo.json';
+import zorroYCondor from './historias/zorro-y-condor.json';
 import almaDeFrayVenancio from './historias/alma-de-fray-venancio.json';
 import duendesDelCuzco from './historias/duendes-del-cuzco.json';
 import gamaCiega from './historias/gama-ciega.json';
@@ -38,6 +39,7 @@ export const STORIES: Story[] = [
   // Adaptaciones de Sinapse (voz del teléfono hasta tener narradores)
   mancoCapac,
   zorroAlCielo,
+  zorroYCondor,
   lagoTiticaca,
   hermanosAyar,
   naylamp,

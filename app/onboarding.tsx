@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LanguagePicker } from '@/components/LanguagePicker';
 import { Button, Text } from '@/components/ui';
@@ -28,6 +28,7 @@ export default function Onboarding() {
       style={{ flex: 1, backgroundColor: colors.background }}
       contentContainerStyle={[styles.container, { paddingTop: insets.top + spacing.xl, paddingBottom: insets.bottom + spacing.xl }]}
     >
+      <Image source={require('../assets/marca/logo-oscuro.png')} style={{ width: 72, height: 72, marginBottom: spacing.sm }} accessibilityLabel="Logo de Sinapse" />
       <Text style={styles.brand}>Sinapse</Text>
       <View style={styles.rule} />
       <Text style={styles.title}>{t(lang, 'onboardingWelcome')}</Text>

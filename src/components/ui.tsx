@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import {
+  Image,
   Pressable,
   StyleSheet,
   Text as RNText,
@@ -8,6 +9,7 @@ import {
   type TextProps,
   type ViewStyle,
 } from 'react-native';
+import { PORTADAS } from '@/content/portadas';
 import type { Story } from '@/content/types';
 import { useApp } from '@/state/AppContext';
 import { useTheme, type Theme } from '@/theme/theme';
@@ -321,6 +323,7 @@ export function Cover({ story, size, title }: { story: Story; size: number; titl
   const th = useTheme();
   const { bg, fg } = th.colors.region[story.region];
   const ninos = th.id === 'ninos';
+  const art = PORTADAS[story.id];
   const initial = (title ?? story.title.es).replace(/^[^\p{L}]+/u, '').charAt(0).toUpperCase();
   const u = size / 10;
   const motif = () => {
@@ -363,8 +366,12 @@ export function Cover({ story, size, title }: { story: Story; size: number; titl
         accessibilityElementsHidden
         importantForAccessibility="no-hide-descendants"
       >
-        {motif()}
-        <RNText
+        {art !== undefined ? (
+          <Image source={art} style={{ width: '100%', height: '100%' }} resizeMode="cover" />
+        ) : (
+          <>
+            {motif()}
+            <RNText
           style={{
             position: 'absolute',
             top: size * 0.06,
@@ -375,8 +382,10 @@ export function Cover({ story, size, title }: { story: Story; size: number; titl
             color: fg,
           }}
         >
-          {initial}
-        </RNText>
+              {initial}
+            </RNText>
+          </>
+        )}
       </View>
     </HardShadow>
   );

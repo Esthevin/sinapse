@@ -109,9 +109,19 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         if (!raw) return;
         const saved = JSON.parse(raw) as Partial<PersistedState>;
         const settings = { ...INITIAL.settings, ...saved.settings };
-        // Si la lengua guardada ya no está en el registro, volver al castellano.
+        // Datos guardados dañados o de versiones antiguas no deben tumbar la app (pantalla en blanco).
         if (!isLanguageCode(settings.lang)) settings.lang = 'es';
-        setState({ ...INITIAL, ...saved, settings });
+        if (settings.profile !== null && !(settings.profile in PROFILE_TEXT_SCALE)) settings.profile = null;
+        if (typeof settings.fontScale !== 'number' || !(settings.fontScale >= 0.5 && settings.fontScale <= 2)) settings.fontScale = 1;
+        if (typeof settings.speechRate !== 'number' || !(settings.speechRate > 0)) settings.speechRate = 1;
+        const obj = <T,>(v: unknown, fallback: T): T => (v && typeof v === 'object' && !Array.isArray(v) ? (v as T) : fallback);
+        setState({
+          settings,
+          progress: obj(saved.progress, INITIAL.progress),
+          quizzes: obj(saved.quizzes, INITIAL.quizzes),
+          recordings: obj(saved.recordings, INITIAL.recordings),
+          activeDays: Array.isArray(saved.activeDays) ? saved.activeDays.filter((d) => typeof d === 'string') : [],
+        });
       })
       .catch((e) => console.warn('No se pudo leer el avance guardado', e))
       .finally(() => {

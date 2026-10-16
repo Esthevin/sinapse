@@ -110,5 +110,15 @@
     ],
     "region": "costa",
     "credit": "Voz sintética de Microsoft Azure AI Speech. Se reemplaza por una voz humana en cuanto haya narrador."
+  },
+  {
+    "id": "kokoro-voces-sinteticas",
+    "name": "Voces sintéticas (Kokoro)",
+    "role": "voz_sintetica",
+    "bio": "Narrador, zorro y cóndor con voces de inteligencia artificial (Kokoro-82M: ef_dora, em_alex y em_santa). No son personas reales y no imitan a nadie.",
+    "languages": [
+      "es"
+    ],
+    "credit": "Voces generadas con IA (Kokoro-82M, licencia Apache-2.0). Guion experimental de Sinapse."
   }
 ]

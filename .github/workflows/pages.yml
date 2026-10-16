@@ -29,6 +29,7 @@ jobs:
       - run: npm ci
       - run: npm run validar
       - run: npx expo export --platform web --output-dir dist
+      - run: node scripts/parchar-web.mjs dist
       # El catálogo descargable se publica junto a la app (misma URL base).
       - run: cp -r docs/catalogo dist/catalogo
       - run: cp dist/index.html dist/404.html
