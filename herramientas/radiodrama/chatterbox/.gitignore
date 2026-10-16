@@ -1,4 +1,2 @@
-# Audios y voces de referencia: no se suben a git
-*.wav
-*.mp3
+# Las referencias de voz crudas no se suben a git
 voces_referencia/

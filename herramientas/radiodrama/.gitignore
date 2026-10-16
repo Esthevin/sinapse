@@ -1,2 +1,5 @@
 # Audios pesados: no se suben a git (el episodio final va en assets/audio como MP3)
 *.wav
+
+# Excepcion: los audios de las pruebas con Chatterbox si se suben
+!chatterbox/**/*.wav
