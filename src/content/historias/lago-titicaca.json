@@ -1,0 +1,114 @@
+{
+  "id": "lago-titicaca",
+  "title": {
+    "es": "La leyenda del lago Titicaca"
+  },
+  "author": "Tradición aimara",
+  "source": "Leyenda de la tradición oral aimara del altiplano. Adaptación libre para Sinapse.",
+  "region": "sierra",
+  "ages": [
+    "ninos",
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#2C6E9B",
+  "emoji": "🌊",
+  "summary": {
+    "es": "Un valle feliz desobedece a los Apus y las lágrimas del Sol forman el lago navegable más alto del mundo."
+  },
+  "paragraphs": {
+    "es": [
+      "Hace mucho tiempo, donde hoy está el lago Titicaca, había un valle fértil. Allí vivía un pueblo feliz, protegido por los Apus, los espíritus de las montañas. No conocían el hambre ni la tristeza.",
+      "Los Apus solo les pusieron una condición: nadie debía subir a la cumbre de la montaña donde ardía el fuego sagrado.",
+      "Pero un día, un espíritu envidioso sembró la duda entre la gente: —¿Por qué no pueden subir? Allá arriba deben esconder algo valioso. Llenos de curiosidad y ambición, los hombres subieron a la montaña.",
+      "Los Apus se enojaron y soltaron a los pumas, que bajaron de las cumbres contra los desobedientes. Al ver esto, Inti, el Sol, lloró durante cuarenta días. Sus lágrimas llenaron el valle hasta formar un lago inmenso.",
+      "Solo se salvó una pareja que no había desobedecido, navegando en una balsa de totora. Cuando el agua se calmó, vieron que los pumas se habían convertido en piedra.",
+      "Por eso llamaron al lago Titiqaqa, que según la tradición significa “puma de piedra”. Hoy el Titicaca es el lago navegable más alto del mundo y un lugar sagrado para los pueblos aimara y quechua."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Apu",
+      "meaning": "Espíritu protector de una montaña.",
+      "translations": {
+        "qu": "Apu",
+        "ay": "Achachila"
+      }
+    },
+    {
+      "word": "Puma",
+      "meaning": "Felino salvaje de los Andes.",
+      "translations": {
+        "qu": "Puma",
+        "ay": "Titi"
+      }
+    },
+    {
+      "word": "Totora",
+      "meaning": "Planta que crece en el lago; con ella se hacen balsas e islas."
+    },
+    {
+      "word": "Lago",
+      "meaning": "Gran extensión de agua rodeada de tierra.",
+      "translations": {
+        "qu": "Qucha",
+        "ay": "Quta"
+      }
+    },
+    {
+      "word": "Ambición",
+      "meaning": "Deseo muy fuerte de tener más."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Qué prohibieron los Apus?",
+      "options": [
+        "Pescar en el río",
+        "Subir a la cumbre del fuego sagrado",
+        "Cultivar el valle",
+        "Hablar con los pumas"
+      ],
+      "answer": 1,
+      "explanation": "La única condición era no subir a la cumbre donde ardía el fuego sagrado."
+    },
+    {
+      "level": "literal",
+      "question": "¿Cómo se formó el lago, según la leyenda?",
+      "options": [
+        "Con la lluvia de un año",
+        "Con el deshielo de un nevado",
+        "Con las lágrimas del Sol",
+        "Con el agua del mar"
+      ],
+      "answer": 2,
+      "explanation": "Inti lloró cuarenta días y sus lágrimas llenaron el valle."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué se salvó la pareja de la balsa?",
+      "options": [
+        "Porque sabía nadar",
+        "Porque no había desobedecido a los Apus",
+        "Porque era muy fuerte",
+        "Porque vivía lejos"
+      ],
+      "answer": 1,
+      "explanation": "El texto dice que se salvó la pareja que no había desobedecido."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué valor destaca esta leyenda?",
+      "options": [
+        "El respeto a la naturaleza y a los acuerdos",
+        "La importancia de ser el más rico",
+        "Que la curiosidad siempre es buena",
+        "Que hay que vivir en las montañas"
+      ],
+      "answer": 0,
+      "explanation": "El pueblo vivía bien mientras respetaba el acuerdo con los Apus; la ambición rompió ese equilibrio."
+    }
+  ]
+}

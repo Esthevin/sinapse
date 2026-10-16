@@ -1,0 +1,112 @@
+{
+  "id": "yacumama",
+  "title": {
+    "es": "La Yacumama, madre del agua"
+  },
+  "author": "Tradición amazónica",
+  "source": "Leyenda de la tradición oral de la Amazonía peruana. Adaptación libre para Sinapse.",
+  "region": "selva",
+  "ages": [
+    "ninos",
+    "jovenes"
+  ],
+  "coverColor": "#1F7A7A",
+  "emoji": "🐍",
+  "summary": {
+    "es": "Una serpiente gigante cuida los ríos y las cochas. ¿Qué pasará con quienes no respetan el agua?"
+  },
+  "paragraphs": {
+    "es": [
+      "En los ríos y cochas de la Amazonía vive, según los pueblos de la selva, una serpiente enorme: la Yacumama, la madre del agua. Su nombre une dos palabras del quechua: yaku, que significa “agua”, y mama, que significa “madre”.",
+      "La Yacumama es tan grande que, cuando duerme en el fondo del río, parece un tronco gigante. Cuando respira, el agua forma remolinos, y cuando se mueve, cambia el camino de los ríos.",
+      "Ella cuida a los peces, a los delfines rosados y a todos los animales del agua. Por eso los pescadores antiguos le pedían permiso antes de pescar y nunca sacaban más de lo que su familia necesitaba.",
+      "Una vez llegaron unos hombres en canoa que querían pescar con veneno, para sacar muchos peces de una sola vez y venderlos. Esa noche, el agua de la cocha empezó a girar con fuerza. Un remolino enorme se tragó sus redes y su canoa, y los hombres apenas alcanzaron a nadar hasta la orilla.",
+      "Asustados, entendieron el mensaje: la cocha no era solo de ellos. Desde entonces, en la comunidad se cuenta esta historia a los niños, para que cuiden los ríos, no los ensucien y respeten a los animales del agua."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Agua",
+      "meaning": "Líquido que necesitamos para vivir.",
+      "translations": {
+        "qu": "Yaku",
+        "ay": "Uma"
+      }
+    },
+    {
+      "word": "Madre",
+      "meaning": "Mamá.",
+      "translations": {
+        "qu": "Mama",
+        "ay": "Tayka"
+      }
+    },
+    {
+      "word": "Cocha",
+      "meaning": "Laguna. La palabra viene del quechua.",
+      "translations": {
+        "qu": "Qucha",
+        "ay": "Quta"
+      }
+    },
+    {
+      "word": "Remolino",
+      "meaning": "Agua que gira con fuerza en círculos."
+    },
+    {
+      "word": "Delfín rosado",
+      "meaning": "Delfín de río de la Amazonía, también llamado bufeo colorado."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Qué significa “Yacumama”?",
+      "options": [
+        "Serpiente grande",
+        "Madre del agua",
+        "Río profundo",
+        "Pez dorado"
+      ],
+      "answer": 1,
+      "explanation": "Yaku significa agua y mama significa madre."
+    },
+    {
+      "level": "literal",
+      "question": "¿Qué querían hacer los hombres de la canoa?",
+      "options": [
+        "Cruzar el río",
+        "Pescar con veneno",
+        "Buscar a la Yacumama",
+        "Construir una casa"
+      ],
+      "answer": 1,
+      "explanation": "Querían pescar con veneno para sacar muchos peces y venderlos."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué los pescadores antiguos pedían permiso antes de pescar?",
+      "options": [
+        "Porque era una ley del gobierno",
+        "Porque respetaban a la Yacumama y al río",
+        "Porque tenían miedo de los delfines",
+        "Porque no sabían pescar"
+      ],
+      "answer": 1,
+      "explanation": "Pedir permiso y no sacar de más era una forma de respeto al agua y a sus animales."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué podemos hacer hoy para cuidar los ríos?",
+      "options": [
+        "Botar la basura al agua para que se la lleve",
+        "No contaminar el agua y pescar solo lo necesario",
+        "Pescar con veneno para ahorrar tiempo",
+        "Alejarnos de los ríos para siempre"
+      ],
+      "answer": 1,
+      "explanation": "Igual que en la leyenda, cuidar el agua y no sacar de más ayuda a que el río siga dando vida."
+    }
+  ]
+}

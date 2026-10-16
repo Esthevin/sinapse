@@ -1,0 +1,101 @@
+{
+  "id": "caballero-carmelo",
+  "title": {
+    "es": "El Caballero Carmelo"
+  },
+  "author": "Abraham Valdelomar",
+  "source": "Cuento de Abraham Valdelomar (1918), de dominio público. Adaptación libre y resumida para Sinapse.",
+  "region": "costa",
+  "ages": [
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#B23A3A",
+  "emoji": "🐓",
+  "summary": {
+    "es": "En Pisco, una familia quiere a su gallo como a un amigo. Un día, Carmelo debe enfrentarse a un rival más joven."
+  },
+  "paragraphs": {
+    "es": [
+      "En una casa de Pisco, junto al mar, vivía una familia con muchos hijos. Un día el padre volvió de viaje con un regalo: un gallo de plumas brillantes y paso elegante. Los niños lo llamaron el Caballero Carmelo.",
+      "Carmelo se volvió parte de la familia. Cantaba al amanecer, paseaba por el corral como un señor y los niños lo cuidaban con cariño. Para ellos no era solo un ave: era un amigo.",
+      "Pero llegaron las fiestas de San Andrés, y en el pueblo se organizaban peleas de gallos. El padre aceptó un desafío: Carmelo debía enfrentarse al Ajiseco, un gallo joven y famoso. Los niños sintieron miedo, porque Carmelo ya estaba viejo.",
+      "El día de la pelea, Carmelo luchó con valentía. El Ajiseco era fuerte y rápido, pero Carmelo no retrocedió. Al final, el Ajiseco cayó vencido y la gente aplaudió al viejo gallo.",
+      "Sin embargo, Carmelo había quedado muy herido. Los niños lo llevaron a casa y lo cuidaron día y noche. Poco después, el Caballero Carmelo murió tranquilo, rodeado de quienes lo querían.",
+      "El narrador, ya adulto, recuerda aquella tarde con tristeza. La historia nos habla del cariño a los animales, de la nobleza y del paso del tiempo, y también nos invita a preguntarnos si está bien hacer pelear a un ser que amamos."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Corral",
+      "meaning": "Lugar cercado donde viven los animales de la casa."
+    },
+    {
+      "word": "Desafío",
+      "meaning": "Reto para competir con alguien."
+    },
+    {
+      "word": "Nobleza",
+      "meaning": "Forma de actuar con honor y buen corazón."
+    },
+    {
+      "word": "Retroceder",
+      "meaning": "Ir hacia atrás, rendirse."
+    },
+    {
+      "word": "Valentía",
+      "meaning": "Coraje para enfrentar algo difícil."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿En qué ciudad vivía la familia?",
+      "options": [
+        "Lima",
+        "Pisco",
+        "Cusco",
+        "Iquitos"
+      ],
+      "answer": 1,
+      "explanation": "La historia ocurre en una casa de Pisco, junto al mar."
+    },
+    {
+      "level": "literal",
+      "question": "¿Contra qué gallo peleó Carmelo?",
+      "options": [
+        "El Ajiseco",
+        "El Colorado",
+        "El Pisqueño",
+        "El Ajicito"
+      ],
+      "answer": 0,
+      "explanation": "Su rival era el Ajiseco, un gallo joven y famoso."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué los niños tenían miedo antes de la pelea?",
+      "options": [
+        "Porque Carmelo ya estaba viejo",
+        "Porque no les gustaban las fiestas",
+        "Porque su padre estaba enojado",
+        "Porque había mucha gente"
+      ],
+      "answer": 0,
+      "explanation": "Sabían que su amigo Carmelo era viejo y el Ajiseco era joven."
+    },
+    {
+      "level": "critico",
+      "question": "Según el cuento, ¿qué podemos pensar sobre las peleas de gallos?",
+      "options": [
+        "Que son una diversión sin consecuencias",
+        "Que causan sufrimiento incluso a un animal muy querido",
+        "Que los gallos viejos siempre ganan",
+        "Que hay que hacerlas más seguido"
+      ],
+      "answer": 1,
+      "explanation": "Carmelo gana, pero muere por las heridas. El cuento invita a pensar en el costo de esas peleas."
+    }
+  ]
+}

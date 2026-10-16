@@ -1,0 +1,141 @@
+{
+  "id": "oficiosidad-no-agradecida",
+  "title": {
+    "es": "Oficiosidad no agradecida"
+  },
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "original": true,
+  "source": "Texto original de Ricardo Palma (1833–1919), de dominio público, según la edición de Proyecto Gutenberg n.º 21282. Grabación de dominio público de LibriVox.",
+  "region": "costa",
+  "ages": [
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#7A3B3B",
+  "emoji": "🎩",
+  "summary": {
+    "es": "Un sacerdote tacaño anda con la ropa hecha jirones. El arzobispo de Lima encuentra una manera muy ingeniosa de vestirlo… con su propio dinero."
+  },
+  "paragraphs": {
+    "es": [
+      "Cuentan las crónicas, para probar que el arzobispo Loayza tenía sus ribetes de mozón, que en Lima había un clérigo extremadamente avaro, que usaba sotana, manteo, alzacuello y sombrero tan raídos, que hacía años pedían a grito herido inmediato reemplazo. En arca de avariento, el diablo está de asiento, como reza el refrán.",
+      "Su ilustrísima, que porfiaba por ver a su clero vestido con decencia, llamóle un día y le dijo:",
+      "—Padre Godoy, tengo una necesidad y querría que me prestase una barrita de plata.",
+      "El clérigo, que aspiraba a canonjía, contestó sin vacilar:",
+      "—Eso, y mucho más que su ilustrísima necesite, está a su disposición.",
+      "—Gracias. Por ahora me basta con la barrita, y Ribera, mi mayordomo, irá por ella esta tarde.",
+      "Despidióse el avaro contentísimo por haber prestado un servicio al señor Loayza, y viendo en el porvenir, por vía de réditos, la canonjía magistral cuando menos.",
+      "Ocho días después volvía Ribera a casa del padre Godoy, llevando un envoltorio bajo el brazo, y le dijo:",
+      "—De parte de su ilustrísima le traigo estas prendas.",
+      "El envoltorio contenía una sotana de chamalote de seda, un manteo de paño de Segovia, un par de zapatos con hebilla dorada, un alzacuello de crin y un sombrero de piel de vicuña.",
+      "El padre Godoy brincó de gusto, vistióse las flamantes prendas, y encaminóse al palacio arzobispal a dar las gracias a quien con tanta liberalidad lo aviaba, pues presumía que aquello era un agasajo o angulema del prelado agradecido al préstamo.",
+      "Nada tiene que agradecerme, padre Godoy—le dijo el arzobispo.—Véase con mi mayordomo para que le devuelva lo que haya sobrado de la barrita; pues como usted no cuidaba de su traje, sin duda porque no tenía tiempo para pensar en esa frivolidad, yo me he encargado de comprárselo con su propio dinero. Vaya con Dios y con mi bendición.",
+      "Retiróse mohino el padre, fuése donde Ribera, ajustó con él cuentas, y halló que el chamalote y el paño importaban un dineral, pues el mayordomo había pagado sin regatear.",
+      "Al otro día, y después de echar cuentas y cuentas para convencerse de que en el traje habrían podido economizarse dos o tres duros, volvió Godoy donde el arzobispo y le dijo:",
+      "—Vengo a pedir a su ilustrísima una gracia.",
+      "—Hable, padre, y será servido a pedir de boca.",
+      "—Pues bien, ilustrísimo señor. Ruégole que no vuelva a tomarse el trabajo de vestirme."
+    ]
+  },
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "librivox-misikis",
+      "voiceSource": "archivo",
+      "url": "https://archive.org/download/tradicionesperuanas_2101_librivox/tradicionesperuanas_17_palma_64kb.mp3",
+      "license": "Dominio público — LibriVox (https://librivox.org/tradiciones-peruanas-by-ricardo-palma/)",
+      "durationSec": 239,
+      "textStartSec": 18,
+      "textEndSec": 233
+    }
+  ],
+  "glossary": [
+    {
+      "word": "Avaro",
+      "meaning": "Que no quiere gastar su dinero; tacaño."
+    },
+    {
+      "word": "Raído",
+      "meaning": "Gastado por el uso."
+    },
+    {
+      "word": "Sotana",
+      "meaning": "Vestido largo que usan los sacerdotes."
+    },
+    {
+      "word": "Canonjía",
+      "meaning": "Cargo de la catedral, bien pagado y de prestigio."
+    },
+    {
+      "word": "Mayordomo",
+      "meaning": "Persona que administra la casa de alguien importante."
+    },
+    {
+      "word": "Oficiosidad",
+      "meaning": "Empeño en hacer favores que nadie ha pedido."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Qué le pidió el arzobispo al padre Godoy?",
+      "options": [
+        "Que celebrara una misa",
+        "Que le prestara una barrita de plata",
+        "Que cambiara de parroquia",
+        "Que le regalara su sombrero"
+      ],
+      "answer": 1,
+      "explanation": "“Tengo una necesidad y querría que me prestase una barrita de plata”."
+    },
+    {
+      "level": "literal",
+      "question": "¿Qué recibió Godoy ocho días después?",
+      "options": [
+        "La barrita de plata",
+        "Una canonjía",
+        "Ropa nueva: sotana, manteo, zapatos y sombrero",
+        "Una carta de agradecimiento"
+      ],
+      "answer": 2,
+      "explanation": "El mayordomo le llevó un envoltorio con ropa nueva y fina."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué Godoy aceptó prestar la plata sin dudar?",
+      "options": [
+        "Porque era muy generoso",
+        "Porque esperaba que el arzobispo lo premiara con una canonjía",
+        "Porque tenía miedo",
+        "Porque no sabía cuánto valía"
+      ],
+      "answer": 1,
+      "explanation": "El texto dice que aspiraba a una canonjía y veía en el préstamo un futuro premio."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Con qué dinero se compró la ropa nueva?",
+      "options": [
+        "Con dinero del arzobispo",
+        "Con limosnas",
+        "Con el dinero de la barrita de plata de Godoy",
+        "Con dinero del mayordomo"
+      ],
+      "answer": 2,
+      "explanation": "“Yo me he encargado de comprárselo con su propio dinero”, le dice el arzobispo."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué critica Palma con humor en esta tradición?",
+      "options": [
+        "Que la ropa nueva es cara",
+        "La tacañería y hacer favores esperando un premio",
+        "Que los arzobispos mandan mucho",
+        "Que no hay que prestar dinero"
+      ],
+      "answer": 1,
+      "explanation": "Godoy no presta por bondad sino por interés, y su avaricia queda en ridículo."
+    }
+  ]
+}

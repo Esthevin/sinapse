@@ -1,0 +1,114 @@
+[
+  {
+    "id": "librivox-epachuko",
+    "name": "Epachuko",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/12367",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-evafolch",
+    "name": "evafolch",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/15101",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-rquintero",
+    "name": "RQuintero",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/15102",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-misikis",
+    "name": "Misikis",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/14825",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-elguti",
+    "name": "elguti",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/14589",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-anabellec",
+    "name": "AnabelleC",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/7331",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-charbeli-ramos-chavez",
+    "name": "Charbelí Ramos Chávez",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/10206",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-luis-alberto-martin",
+    "name": "Luis Alberto Martín",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/10667",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-mongope",
+    "name": "Mongope",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo. Perfil: librivox.org/reader/10246",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "voz-camila-pe",
+    "name": "Camila",
+    "role": "voz_sintetica",
+    "bio": "Voz neuronal femenina con acento peruano (es-PE-CamilaNeural) de Microsoft Azure. Es una voz generada por inteligencia artificial: no pertenece ni imita a ninguna persona real.",
+    "languages": [
+      "es"
+    ],
+    "region": "costa",
+    "credit": "Voz sintética de Microsoft Azure AI Speech. Se reemplaza por una voz humana en cuanto haya narrador."
+  },
+  {
+    "id": "voz-alex-pe",
+    "name": "Alex",
+    "role": "voz_sintetica",
+    "bio": "Voz neuronal masculina con acento peruano (es-PE-AlexNeural) de Microsoft Azure. Es una voz generada por inteligencia artificial: no pertenece ni imita a ninguna persona real.",
+    "languages": [
+      "es"
+    ],
+    "region": "costa",
+    "credit": "Voz sintética de Microsoft Azure AI Speech. Se reemplaza por una voz humana en cuanto haya narrador."
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "id": "chullachaqui",
+  "title": {
+    "es": "El Chullachaqui, guardián del bosque"
+  },
+  "author": "Tradición amazónica",
+  "source": "Leyenda de la tradición oral de la Amazonía peruana. Adaptación libre para Sinapse.",
+  "region": "selva",
+  "ages": [
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#2E7D4F",
+  "emoji": "🌳",
+  "summary": {
+    "es": "Un joven sale a buscar aguaje y alguien conocido lo llama desde el monte. ¿Será quien parece ser?"
+  },
+  "paragraphs": {
+    "es": [
+      "En la selva de Loreto y Ucayali, los abuelos cuentan que el bosque tiene un guardián: el Chullachaqui. Es un ser pequeño que vive en lo más profundo del monte, cerca de los árboles gigantes llamados lupunas.",
+      "Su nombre viene del quechua amazónico: chulla, que significa “desigual” o “uno solo”, y chaki, que significa “pie”. Y es que el Chullachaqui tiene un pie humano y el otro torcido, como de animal.",
+      "El Chullachaqui puede tomar la forma de cualquier persona: un amigo, un hermano, incluso la mamá o el papá. Así engaña a quienes caminan solos por el bosque y los lleva cada vez más adentro, hasta que se pierden.",
+      "Un día, un joven llamado Tito salió a buscar frutos de aguaje. De pronto vio a su primo, que lo llamaba entre los árboles: —¡Ven, por aquí hay más! Tito lo siguió un buen rato, hasta que notó algo extraño: su primo siempre escondía un pie detrás de los arbustos.",
+      "Tito recordó lo que le había dicho su abuela: “Si alguien te llama en el monte, mírale los pies”. Al ver el pie torcido, supo la verdad. No siguió caminando: se quedó quieto, respiró hondo y buscó el sonido del río para orientarse.",
+      "Siguiendo el río, llegó a su comunidad al anochecer. Desde entonces Tito respeta el bosque: nunca entra solo, avisa a dónde va y solo toma lo que necesita. Dicen que el Chullachaqui no hace daño a quien cuida la selva."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Pie",
+      "meaning": "Parte del cuerpo con la que caminamos.",
+      "translations": {
+        "qu": "Chaki",
+        "ay": "Kayu"
+      }
+    },
+    {
+      "word": "Lupuna",
+      "meaning": "Árbol gigante de la Amazonía, de tronco muy ancho."
+    },
+    {
+      "word": "Aguaje",
+      "meaning": "Fruto de una palmera amazónica, de cáscara rojiza."
+    },
+    {
+      "word": "Monte",
+      "meaning": "En la selva, el bosque espeso.",
+      "translations": {
+        "qu": "Sacha"
+      }
+    },
+    {
+      "word": "Orientarse",
+      "meaning": "Saber en qué lugar estás y hacia dónde ir."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Qué significa la palabra “chaki”?",
+      "options": [
+        "Mano",
+        "Pie",
+        "Árbol",
+        "Río"
+      ],
+      "answer": 1,
+      "explanation": "El texto explica que chaki significa “pie”."
+    },
+    {
+      "level": "literal",
+      "question": "¿Cómo engaña el Chullachaqui a las personas?",
+      "options": [
+        "Imitando el canto de las aves",
+        "Tomando la forma de personas conocidas",
+        "Escondiendo los caminos",
+        "Apagando el sol"
+      ],
+      "answer": 1,
+      "explanation": "Puede tomar la forma de un amigo, un hermano o los padres."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Cómo descubrió Tito el engaño?",
+      "options": [
+        "Porque su primo hablaba raro",
+        "Porque se fijó en el pie torcido",
+        "Porque escuchó al río",
+        "Porque su abuela apareció"
+      ],
+      "answer": 1,
+      "explanation": "Su “primo” escondía un pie; al verlo torcido, Tito recordó el consejo de su abuela."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué Tito siguió el sonido del río?",
+      "options": [
+        "Para pescar",
+        "Para orientarse y volver a casa",
+        "Para bañarse",
+        "Para buscar al Chullachaqui"
+      ],
+      "answer": 1,
+      "explanation": "El río le sirvió de guía para regresar a su comunidad."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué consejo práctico deja la historia para quien entra al bosque?",
+      "options": [
+        "Entrar de noche para no ser visto",
+        "Ir solo para no hacer ruido",
+        "No ir solo, avisar a dónde vas y respetar el bosque",
+        "Llevar mucha comida"
+      ],
+      "answer": 2,
+      "explanation": "Es lo que Tito aprendió y lo que la leyenda enseña a quienes viven cerca del bosque."
+    }
+  ]
+}

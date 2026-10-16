@@ -1,0 +1,112 @@
+{
+  "id": "alacran-fray-gomez",
+  "title": {
+    "es": "El alacrán de fray Gómez"
+  },
+  "author": "Ricardo Palma",
+  "source": "De las Tradiciones peruanas de Ricardo Palma (siglo XIX), de dominio público. Adaptación libre y resumida para Sinapse.",
+  "region": "costa",
+  "ages": [
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#5B3A7A",
+  "emoji": "🦂",
+  "summary": {
+    "es": "Un vendedor honrado necesita un préstamo. Un fraile pobre lo ayuda de la forma más inesperada."
+  },
+  "paragraphs": {
+    "es": [
+      "En la Lima de los virreyes vivió un fraile franciscano llamado fray Gómez, famoso por su bondad y por los milagros que, según la gente, hacía sin darse importancia. Hasta hoy, de algo muy valioso se dice: “vale lo que un alacrán de fray Gómez”.",
+      "Un día llegó a su celda un buhonero, un vendedor ambulante llamado Jeromo, muy preocupado. —Padre, soy un hombre honrado, pero estoy en la ruina. Necesito quinientos duros para salvar mi negocio, y nadie quiere prestarme.",
+      "Fray Gómez miró a su alrededor. Su celda era pobre: no tenía dinero, solo una cama, una mesa y unos libros. En ese momento, un alacrán caminaba por la pared. El fraile lo tomó con cuidado, lo envolvió en un papel y, al abrirlo, el alacrán se había convertido en una joya de oro y piedras preciosas.",
+      "—Lleva esta joya y empéñala —le dijo—. Pero en seis meses debes devolvérmela. Jeromo empeñó la joya, trabajó con honradez y su negocio volvió a prosperar.",
+      "Antes de que se cumpliera el plazo, Jeromo recuperó la joya y se la devolvió a fray Gómez, muy agradecido. El fraile la puso en la ventana y dijo: —Animalito de Dios, sigue tu camino. Y la joya volvió a ser alacrán, y se fue caminando tranquilamente por la pared."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Buhonero",
+      "meaning": "Vendedor ambulante de objetos pequeños."
+    },
+    {
+      "word": "Empeñar",
+      "meaning": "Dejar un objeto a cambio de un préstamo, para recuperarlo después."
+    },
+    {
+      "word": "Duro",
+      "meaning": "Antigua moneda de plata."
+    },
+    {
+      "word": "Celda",
+      "meaning": "Habitación pequeña de un fraile en el convento."
+    },
+    {
+      "word": "Plazo",
+      "meaning": "Tiempo que se da para cumplir algo."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Cuánto dinero necesitaba Jeromo?",
+      "options": [
+        "Cien duros",
+        "Quinientos duros",
+        "Mil duros",
+        "Diez duros"
+      ],
+      "answer": 1,
+      "explanation": "Jeromo pidió quinientos duros para salvar su negocio."
+    },
+    {
+      "level": "literal",
+      "question": "¿En qué convirtió fray Gómez al alacrán?",
+      "options": [
+        "En monedas de oro",
+        "En una joya",
+        "En un libro",
+        "En una paloma"
+      ],
+      "answer": 1,
+      "explanation": "Al abrir el papel, el alacrán se había convertido en una joya de oro y piedras preciosas."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué fray Gómez no le prestó dinero directamente?",
+      "options": [
+        "Porque no confiaba en Jeromo",
+        "Porque era pobre y no tenía dinero",
+        "Porque no quería ayudarlo",
+        "Porque el dinero estaba en el banco"
+      ],
+      "answer": 1,
+      "explanation": "Su celda era pobre: solo tenía una cama, una mesa y unos libros."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Qué cualidad demostró Jeromo al final?",
+      "options": [
+        "Que era muy astuto",
+        "Que cumplía su palabra",
+        "Que era muy rico",
+        "Que le gustaban las joyas"
+      ],
+      "answer": 1,
+      "explanation": "Devolvió la joya antes de que se cumpliera el plazo, como había prometido."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué quiere decir “vale lo que un alacrán de fray Gómez”?",
+      "options": [
+        "Que algo es peligroso",
+        "Que algo es muy valioso",
+        "Que algo es muy pequeño",
+        "Que algo es falso"
+      ],
+      "answer": 1,
+      "explanation": "La frase nace de esta historia, en la que un alacrán se convierte en una joya valiosísima."
+    }
+  ]
+}

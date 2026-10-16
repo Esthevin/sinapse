@@ -1,0 +1,101 @@
+{
+  "id": "naylamp",
+  "title": {
+    "es": "La leyenda de Naylamp"
+  },
+  "author": "Tradición lambayecana",
+  "source": "Leyenda de la costa norte registrada por el cronista Miguel Cabello Valboa (1586). Adaptación libre para Sinapse.",
+  "region": "costa",
+  "ages": [
+    "ninos",
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#C9A227",
+  "emoji": "⛵",
+  "summary": {
+    "es": "Un señor llega por el mar en una flota de balsas y funda un pueblo en el norte del Perú. Cuando muere, nace una leyenda."
+  },
+  "paragraphs": {
+    "es": [
+      "Hace muchos siglos, por el mar del norte del Perú, llegó una gran flota de balsas. Al frente venía un señor llamado Naylamp, acompañado de su esposa Ceterni y de muchos servidores.",
+      "Desembarcaron en las playas de lo que hoy es Lambayeque. Naylamp traía consigo un ídolo de piedra verde llamado Yampallec, que representaba su propia figura. Dicen que de ese nombre viene la palabra Lambayeque.",
+      "Naylamp y su gente construyeron un templo llamado Chot, donde colocaron el ídolo. Aprendieron a cultivar en el desierto aprovechando el agua de los ríos, y el pueblo creció.",
+      "Naylamp gobernó muchos años con sabiduría. Cuando sintió que su vida terminaba, pidió a sus servidores que lo enterraran en secreto, en la misma habitación donde había vivido.",
+      "Sus servidores, para que el pueblo no perdiera la esperanza, contaron que Naylamp no había muerto: que le habían crecido alas y había volado hacia el cielo. Hoy, el famoso tumi de oro de Lambayeque muestra a un personaje con alas que muchos relacionan con esta leyenda."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Balsa",
+      "meaning": "Embarcación hecha de troncos o juncos atados."
+    },
+    {
+      "word": "Flota",
+      "meaning": "Grupo de embarcaciones que viajan juntas."
+    },
+    {
+      "word": "Ídolo",
+      "meaning": "Figura que representa a un ser sagrado."
+    },
+    {
+      "word": "Tumi",
+      "meaning": "Cuchillo ceremonial de forma semicircular, símbolo del Perú."
+    },
+    {
+      "word": "Sabiduría",
+      "meaning": "Conocimiento y buen juicio para decidir."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Cómo llegó Naylamp a Lambayeque?",
+      "options": [
+        "Caminando desde la sierra",
+        "En una flota de balsas por el mar",
+        "Volando",
+        "Por un río"
+      ],
+      "answer": 1,
+      "explanation": "Llegó por el mar al frente de una gran flota de balsas."
+    },
+    {
+      "level": "literal",
+      "question": "¿Cómo se llamaba el ídolo de piedra verde?",
+      "options": [
+        "Chot",
+        "Ceterni",
+        "Yampallec",
+        "Tumi"
+      ],
+      "answer": 2,
+      "explanation": "El ídolo se llamaba Yampallec; Chot era el templo y Ceterni, su esposa."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué los servidores dijeron que Naylamp había volado?",
+      "options": [
+        "Porque lo vieron volar",
+        "Para que el pueblo no perdiera la esperanza",
+        "Porque querían engañar a Ceterni",
+        "Porque Naylamp tenía alas"
+      ],
+      "answer": 1,
+      "explanation": "Lo enterraron en secreto y contaron esa historia para mantener la esperanza del pueblo."
+    },
+    {
+      "level": "critico",
+      "question": "¿Por qué crees que estas leyendas se siguen contando hoy?",
+      "options": [
+        "Porque son obligatorias en el colegio",
+        "Porque ayudan a conservar la historia y la identidad de un pueblo",
+        "Porque son todas verdaderas",
+        "Porque no hay otras historias"
+      ],
+      "answer": 1,
+      "explanation": "Las leyendas guardan la memoria de un pueblo y lo conectan con su pasado, como el tumi de Lambayeque."
+    }
+  ]
+}

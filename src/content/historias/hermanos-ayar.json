@@ -1,0 +1,123 @@
+{
+  "id": "hermanos-ayar",
+  "title": {
+    "es": "Los hermanos Ayar"
+  },
+  "author": "Tradición inca",
+  "source": "Leyenda registrada por cronistas como Juan de Betanzos (1551) y Pedro Sarmiento de Gamboa (1572). Adaptación libre para Sinapse.",
+  "region": "sierra",
+  "ages": [
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#7A4E2D",
+  "emoji": "⛰️",
+  "summary": {
+    "es": "Cuatro hermanos y cuatro hermanas salen de un cerro en busca de tierra buena. Solo uno llegará al valle del Cusco."
+  },
+  "paragraphs": {
+    "es": [
+      "Cerca de Pacaritambo hay un cerro llamado Tambo Tocco, que tiene tres ventanas. Según la leyenda, de la ventana del centro salieron cuatro hermanos y cuatro hermanas: los Ayar. Buscaban una tierra buena donde vivir.",
+      "Los hermanos se llamaban Ayar Manco, Ayar Cachi, Ayar Uchu y Ayar Auca. Ayar Cachi era el más fuerte de todos: con su honda lanzaba piedras tan lejos que partía los cerros y abría quebradas.",
+      "Sus hermanos sintieron miedo de tanto poder. Con una excusa, le pidieron que regresara a la cueva a buscar unos objetos sagrados que habían olvidado. Cuando Ayar Cachi entró, taparon la entrada con grandes piedras y él quedó encerrado para siempre.",
+      "El grupo siguió su camino. En el cerro Huanacauri, Ayar Uchu se convirtió en piedra. Desde entonces ese lugar fue sagrado: una huaca a la que la gente iba a mostrar su respeto.",
+      "Más adelante, Ayar Auca recibió alas y voló hacia el valle del Cusco. Al posarse en la tierra también se volvió piedra, como señal de que ese lugar sería su hogar.",
+      "Solo quedó Ayar Manco, que llegó al valle junto a sus hermanas. Allí fundó la ciudad del Cusco y tomó el nombre de Manco Cápac. Así, según esta leyenda, comenzó la historia de los incas."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Honda",
+      "meaning": "Tira de cuerda o lana que sirve para lanzar piedras.",
+      "translations": {
+        "qu": "Warak'a"
+      }
+    },
+    {
+      "word": "Huaca",
+      "meaning": "Lugar u objeto sagrado.",
+      "translations": {
+        "qu": "Waka"
+      }
+    },
+    {
+      "word": "Quebrada",
+      "meaning": "Paso estrecho entre montañas."
+    },
+    {
+      "word": "Sagrado",
+      "meaning": "Que merece un respeto muy especial."
+    },
+    {
+      "word": "Piedra",
+      "meaning": "Roca, material duro de la tierra.",
+      "translations": {
+        "qu": "Rumi",
+        "ay": "Qala"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿De dónde salieron los hermanos Ayar?",
+      "options": [
+        "De la ventana central del cerro Tambo Tocco",
+        "Del lago Titicaca",
+        "Del mar",
+        "De un río"
+      ],
+      "answer": 0,
+      "explanation": "El texto dice que salieron de la ventana del centro del cerro Tambo Tocco."
+    },
+    {
+      "level": "literal",
+      "question": "¿Cuál de los hermanos era el más fuerte?",
+      "options": [
+        "Ayar Manco",
+        "Ayar Uchu",
+        "Ayar Auca",
+        "Ayar Cachi"
+      ],
+      "answer": 3,
+      "explanation": "Ayar Cachi podía partir cerros con su honda."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué encerraron a Ayar Cachi en la cueva?",
+      "options": [
+        "Porque él quería quedarse allí",
+        "Porque sus hermanos temían su enorme poder",
+        "Porque estaba enfermo",
+        "Porque había perdido los objetos sagrados"
+      ],
+      "answer": 1,
+      "explanation": "El texto dice que sus hermanos sintieron miedo de tanto poder y usaron una excusa para encerrarlo."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Qué tienen en común Ayar Uchu y Ayar Auca?",
+      "options": [
+        "Los dos fundaron el Cusco",
+        "Los dos se convirtieron en piedra",
+        "Los dos volaron",
+        "Los dos se quedaron en la cueva"
+      ],
+      "answer": 1,
+      "explanation": "Ayar Uchu se volvió piedra en Huanacauri y Ayar Auca al posarse en el valle."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué enseñanza puede dejar lo que le pasó a Ayar Cachi?",
+      "options": [
+        "Que ser fuerte siempre es malo",
+        "Que las cuevas son peligrosas",
+        "Que el miedo puede llevarnos a tratar injustamente a los demás",
+        "Que hay que olvidar las cosas sagradas"
+      ],
+      "answer": 2,
+      "explanation": "Ayar Cachi no había hecho daño a sus hermanos: lo encerraron por miedo. Podemos reflexionar si eso fue justo."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "manco-capac",
+  "title": {
+    "es": "Manco Cápac y Mama Ocllo"
+  },
+  "author": "Tradición inca",
+  "source": "Leyenda recogida por el Inca Garcilaso de la Vega en los Comentarios Reales (1609). Adaptación libre para Sinapse.",
+  "region": "sierra",
+  "ages": [
+    "ninos",
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#C8902E",
+  "emoji": "☀️",
+  "summary": {
+    "es": "El Sol envía a sus hijos desde el lago Titicaca con una vara de oro para encontrar el lugar donde nacerá el Cusco."
+  },
+  "paragraphs": {
+    "es": [
+      "Hace mucho tiempo, cuando las personas de los Andes vivían dispersas, sin casas firmes ni campos cultivados, el Sol, al que llamaban Inti, miró la tierra desde lo alto y sintió pena por ellas.",
+      "Entonces el Sol envió a dos de sus hijos, Manco Cápac y Mama Ocllo. Los dos aparecieron sobre las aguas del gran lago Titicaca, brillantes como la luz de la mañana.",
+      "El Sol les entregó una vara de oro y les dio una tarea: caminar hacia el norte y, en cada lugar donde descansaran, hundir la vara en el suelo. Allí donde la vara se hundiera por completo, debían fundar una ciudad.",
+      "Manco Cápac y Mama Ocllo caminaron muchos días, cruzando ríos, punas y quebradas. Probaban la tierra una y otra vez, pero la vara no entraba del todo.",
+      "Un día llegaron a un valle verde rodeado de montañas. Manco Cápac hundió la vara y esta desapareció en la tierra, suave y fértil. Así supieron que habían llegado al lugar elegido: el Cusco.",
+      "Manco Cápac enseñó a los hombres a cultivar el maíz, a construir canales y a levantar casas. Mama Ocllo enseñó a las mujeres a hilar y a tejer la lana. Con el trabajo compartido nació un pueblo grande y organizado."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Inti",
+      "meaning": "El Sol, considerado un dios por los incas.",
+      "translations": {
+        "qu": "Inti",
+        "ay": "Inti"
+      }
+    },
+    {
+      "word": "Vara",
+      "meaning": "Palo largo y delgado."
+    },
+    {
+      "word": "Puna",
+      "meaning": "Tierra alta, fría y con poca vegetación de los Andes.",
+      "translations": {
+        "qu": "Puna"
+      }
+    },
+    {
+      "word": "Fértil",
+      "meaning": "Tierra buena, donde las plantas crecen bien."
+    },
+    {
+      "word": "Lago",
+      "meaning": "Gran extensión de agua rodeada de tierra.",
+      "translations": {
+        "qu": "Qucha",
+        "ay": "Quta"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Quién envió a Manco Cápac y Mama Ocllo?",
+      "options": [
+        "La Luna",
+        "El Sol (Inti)",
+        "Un Apu de la montaña",
+        "El rey de otro pueblo"
+      ],
+      "answer": 1,
+      "explanation": "El texto dice que el Sol sintió pena por las personas y envió a dos de sus hijos."
+    },
+    {
+      "level": "literal",
+      "question": "¿De dónde aparecieron Manco Cápac y Mama Ocllo?",
+      "options": [
+        "Del mar",
+        "De una cueva",
+        "Del lago Titicaca",
+        "Del río Amazonas"
+      ],
+      "answer": 2,
+      "explanation": "Aparecieron sobre las aguas del gran lago Titicaca."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Para qué servía la vara de oro?",
+      "options": [
+        "Para venderla y comprar comida",
+        "Para defenderse de los animales",
+        "Para saber dónde la tierra era buena para fundar la ciudad",
+        "Para medir la altura de las montañas"
+      ],
+      "answer": 2,
+      "explanation": "Donde la vara se hundiera por completo, la tierra era suave y fértil: buena para vivir y sembrar."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué mensaje transmite esta leyenda?",
+      "options": [
+        "Que es mejor vivir solo",
+        "Que el trabajo compartido y el conocimiento ayudan a un pueblo a crecer",
+        "Que el oro es lo más importante",
+        "Que no hay que viajar lejos de casa"
+      ],
+      "answer": 1,
+      "explanation": "Al final, gracias a lo que enseñaron y al trabajo de todos, nace un pueblo grande y organizado."
+    }
+  ]
+}

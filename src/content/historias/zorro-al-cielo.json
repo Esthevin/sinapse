@@ -1,0 +1,116 @@
+{
+  "id": "zorro-al-cielo",
+  "title": {
+    "es": "El zorro que quiso ir al cielo"
+  },
+  "author": "Cuento tradicional andino",
+  "source": "Relato de la tradición oral quechua y aimara, con muchas versiones en los Andes. Adaptación libre para Sinapse.",
+  "region": "sierra",
+  "ages": [
+    "ninos",
+    "jovenes"
+  ],
+  "coverColor": "#D9622B",
+  "emoji": "🦊",
+  "summary": {
+    "es": "Un zorro curioso viaja al cielo en la espalda del cóndor, pero su orgullo le juega una mala pasada."
+  },
+  "paragraphs": {
+    "es": [
+      "En lo alto de la puna vivía un zorro llamado Atuq, muy curioso y algo presumido. Un día escuchó al cóndor contar que en el cielo habría una gran fiesta, con comida que nunca se acababa.",
+      "—¡Llévame contigo, amigo cóndor! —rogó el zorro—. Prometo portarme bien. El cóndor dudó, pero al final aceptó. El zorro subió a su espalda y juntos volaron por encima de las nubes.",
+      "En la fiesta del cielo había papas, quinua, maíz y frutas de todos los colores. El zorro comió y comió sin parar, y se olvidó de agradecer. Cuando el cóndor quiso regresar, el zorro le dijo: —Vete tú, yo me quedo un rato más.",
+      "Al caer la tarde, el zorro quiso volver, pero el cóndor ya se había ido. Entonces tejió una larga soga y empezó a bajar despacio hacia la tierra.",
+      "A medio camino pasaron volando unos loros. El zorro, orgulloso, se burló de ellos y los insultó. Los loros, molestos, picotearon la soga hasta romperla.",
+      "El zorro cayó y cayó, y al chocar contra una gran piedra, su panza llena de semillas se reventó. Las semillas se esparcieron por todos lados. Dicen que desde entonces crecen en la tierra la quinua, la papa y el maíz."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Zorro",
+      "meaning": "Animal astuto de los Andes, de cola larga.",
+      "translations": {
+        "qu": "Atuq",
+        "ay": "Qamaqi"
+      }
+    },
+    {
+      "word": "Cóndor",
+      "meaning": "Ave muy grande que vuela alto en los Andes.",
+      "translations": {
+        "qu": "Kuntur",
+        "ay": "Kunturi"
+      }
+    },
+    {
+      "word": "Quinua",
+      "meaning": "Grano andino muy nutritivo.",
+      "translations": {
+        "qu": "Kinwa",
+        "ay": "Jupha"
+      }
+    },
+    {
+      "word": "Soga",
+      "meaning": "Cuerda gruesa.",
+      "translations": {
+        "qu": "Waska"
+      }
+    },
+    {
+      "word": "Presumido",
+      "meaning": "Que se cree mejor que los demás."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Quién llevó al zorro al cielo?",
+      "options": [
+        "Los loros",
+        "El cóndor",
+        "El viento",
+        "Una nube"
+      ],
+      "answer": 1,
+      "explanation": "El zorro subió a la espalda del cóndor y volaron juntos."
+    },
+    {
+      "level": "literal",
+      "question": "¿Qué hizo el zorro en la fiesta del cielo?",
+      "options": [
+        "Bailó toda la noche",
+        "Ayudó a cocinar",
+        "Comió sin parar y no agradeció",
+        "Se durmió temprano"
+      ],
+      "answer": 2,
+      "explanation": "El texto dice que comió y comió sin parar, y se olvidó de agradecer."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué los loros rompieron la soga?",
+      "options": [
+        "Porque tenían hambre",
+        "Porque el zorro se burló de ellos y los insultó",
+        "Por accidente",
+        "Porque el cóndor se lo pidió"
+      ],
+      "answer": 1,
+      "explanation": "Los loros se molestaron por los insultos del zorro."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué enseñanza nos deja este cuento?",
+      "options": [
+        "Que no hay que ir a las fiestas",
+        "Que el orgullo y la falta de gratitud traen problemas",
+        "Que los cóndores no son buenos amigos",
+        "Que es mejor no comer quinua"
+      ],
+      "answer": 1,
+      "explanation": "El zorro no agradeció y se burló de otros: por eso terminó mal."
+    }
+  ]
+}
