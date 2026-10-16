@@ -54,6 +54,28 @@ export const STORIES: Story[] = [
  */
 export const NARRATORS: Narrator[] = narradores as unknown as Narrator[];
 
+/**
+ * Aplica un catálogo descargado: agrega historias nuevas y reemplaza las que tienen
+ * una `revision` mayor. Modifica las listas en su lugar. Devuelve cuántas cambiaron.
+ */
+export function applyRemoteCatalog(stories: Story[], narrators: Narrator[]): number {
+  let changed = 0;
+  for (const n of narrators) {
+    if (!NARRATORS.some((x) => x.id === n.id)) NARRATORS.push(n);
+  }
+  for (const s of stories) {
+    const i = STORIES.findIndex((x) => x.id === s.id);
+    if (i === -1) {
+      STORIES.push(s);
+      changed++;
+    } else if ((s.revision ?? 1) > (STORIES[i].revision ?? 1)) {
+      STORIES[i] = s;
+      changed++;
+    }
+  }
+  return changed;
+}
+
 export function getNarrator(id: string): Narrator | undefined {
   return NARRATORS.find((n) => n.id === id);
 }

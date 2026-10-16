@@ -1,4 +1,5 @@
 import Constants from 'expo-constants';
+import { useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { LanguagePicker } from '@/components/LanguagePicker';
 import { Button, Card, Chip, SectionTitle } from '@/components/ui';
@@ -22,8 +23,10 @@ const FONT_SCALES = [
 const SPEEDS = [0.75, 1, 1.25];
 
 export default function SettingsScreen() {
-  const { settings, updateSettings, resetProgress, fs } = useApp();
+  const { settings, updateSettings, resetProgress, refreshCatalog, fs } = useApp();
   const { lang } = settings;
+  const [checking, setChecking] = useState(false);
+  const [catalogMsg, setCatalogMsg] = useState('');
 
   const reset = async () => {
     if (await confirmAction(t(lang, 'resetConfirm'), t(lang, 'confirm'), t(lang, 'cancel'))) resetProgress();
@@ -67,6 +70,21 @@ export default function SettingsScreen() {
         <Text style={[styles.about, { fontSize: fs(fontSize.body) }]}>{t(lang, 'aboutText')}</Text>
         <Text style={[styles.version, { fontSize: fs(12) }]}>Versión {Constants.expoConfig?.version ?? '1.0.0'}</Text>
       </Card>
+
+      <Button
+        label={checking ? '…' : t(lang, 'updateStories')}
+        icon="⬇️"
+        variant="secondary"
+        disabled={checking}
+        onPress={async () => {
+          setChecking(true);
+          const n = await refreshCatalog();
+          setChecking(false);
+          setCatalogMsg(n === null ? t(lang, 'storiesOffline') : n > 0 ? t(lang, 'storiesUpdated', { n }) : t(lang, 'storiesUpToDate'));
+        }}
+        style={{ marginTop: spacing.xl }}
+      />
+      {catalogMsg ? <Text style={[styles.version, { fontSize: fs(13) }]}>{catalogMsg}</Text> : null}
 
       <Button label={t(lang, 'resetProgress')} icon="🗑️" variant="danger" onPress={reset} style={{ marginTop: spacing.xl }} />
     </ScrollView>

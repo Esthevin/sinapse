@@ -9,7 +9,7 @@ narradas por **voces peruanas** que se **escuchan y leen al mismo tiempo**,
 seguidas de preguntas de comprensión. Pensada para niños, jóvenes y adultos de
 la costa, la sierra y la selva, en **castellano y lenguas originarias**.
 
-**Versión 1.3.0**
+**Versión 2.0.0**
 
 ---
 
@@ -29,6 +29,14 @@ la costa, la sierra y la selva, en **castellano y lenguas originarias**.
 | 🎙️ **Estudio de narradores** | Graba la historia desde el teléfono con texto guía, **registro de consentimiento**, revisión, y botón para compartir el audio con el equipo (WhatsApp, Drive…). |
 | ♿ **Accesibilidad** | Letra ajustable (A- a A++), botones grandes, iconos, alto contraste, etiquetas para lectores de pantalla. |
 | 📴 **Sin internet** | Todo el contenido viene dentro de la app; el avance se guarda en el teléfono. |
+
+---
+
+### Novedades de la versión 2
+
+- **Catálogo descargable:** Ajustes → “Buscar historias nuevas”. La app descarga historias nuevas o corregidas (campo `revision`) sin publicar una versión nueva, y las guarda para usarlas sin internet. Se genera con `npm run catalogo:generar` (crea `docs/catalogo/catalogo.json`) y se publica con GitHub Pages (Settings → Pages → rama `main`, carpeta `/docs`). La URL está en `app.json` → `extra.catalogUrl`.
+- **Resaltado exacto con voz humana:** en cada historia con voz humana, el botón “Sincronizar párrafos (equipo)” permite marcar cuándo empieza cada párrafo y compartir el resultado (`paragraphStartsSec`) para pegarlo en el JSON de la historia.
+- **Variantes del quechua:** Cusco-Collao (`quz`), Ayacucho-Chanka (`quy`) y Áncash-Huaylas (`qwh`) como lenguas propias. Heredan textos, interfaz y audios del quechua general (`qu`) hasta tener los suyos (campo `parent` en `languages.json`).
 
 ---
 
@@ -73,6 +81,7 @@ Requiere una cuenta gratuita de Expo.
 | `npm run audio:generar -- --dry-run` | Ver qué audios generaría VoiceStudio |
 | `npm run audio:generar` | Generar borradores de audio con VoiceStudio |
 | `npm run voces:generar` | Narrar con voces IA peruanas (Camila/Alex) las historias sin voz humana |
+| `npm run catalogo:generar` | Generar el catálogo descargable |
 | `npm run build:apk` | Compilar el APK |
 
 ---
@@ -150,11 +159,8 @@ local. Ver [docs/GUIA_NARRADORES.md](docs/GUIA_NARRADORES.md).
 - [ ] **Ícono y pantalla de inicio** con identidad gráfica propia.
 - [ ] **Revisión legal** de las fuentes y del formulario de consentimiento.
 
-## 9. Ideas para la versión 2
+## 9. Ideas para la versión 3
 
-- Catálogo descargable desde un servidor (sin publicar una versión nueva de la app).
-- Marcas de tiempo por párrafo para un resaltado exacto con voz humana.
 - Modo docente: aulas, seguimiento de estudiantes y reportes.
 - Textos completos en lenguas originarias (no solo narración), transcritos de las narraciones.
-- Variantes del quechua como lenguas separadas (Cusco `quz`, Ayacucho `quy`…).
-- Variantes regionales del quechua (Cusco-Collao, Áncash, Ayacucho-Chanka…).
+- Traducir los textos de las historias a las variantes del quechua (hoy heredan del quechua general o del castellano).

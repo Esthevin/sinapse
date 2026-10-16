@@ -1,3 +1,4 @@
+import { downloadCatalog, loadCachedCatalog } from '@/services/catalog';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import type { AgeGroup } from '@/content/types';
@@ -71,6 +72,10 @@ function emptyProgress(): StoryProgress {
 
 interface AppState extends PersistedState {
   ready: boolean;
+  /** Sube cada vez que el catálogo cambia, para que las pantallas se vuelvan a dibujar. */
+  catalogVersion: number;
+  /** Descarga historias nuevas. Devuelve cuántas se agregaron o actualizaron, o null si no hubo conexión. */
+  refreshCatalog: () => Promise<number | null>;
   /** Escala un tamaño de letra según la preferencia del usuario. */
   fs: (size: number) => number;
   updateSettings: (patch: Partial<Settings>) => void;
@@ -90,6 +95,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<PersistedState>(INITIAL);
   const [ready, setReady] = useState(false);
   const loaded = useRef(false);
+  const [catalogVersion, setCatalogVersion] = useState(0);
 
   // Carga inicial (todo vive en el teléfono: funciona sin internet).
   useEffect(() => {
@@ -108,6 +114,22 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setReady(true);
       });
   }, []);
+
+  // Catálogo descargable: primero lo guardado (sin internet), luego se busca en segundo plano.
+  const refreshCatalog = useCallback(async () => {
+    const result = await downloadCatalog();
+    if (result === null) return null;
+    if (result > 0) setCatalogVersion((v) => v + 1);
+    return result;
+  }, []);
+
+  useEffect(() => {
+    if (!ready) return;
+    loadCachedCatalog().then((n) => {
+      if (n > 0) setCatalogVersion((v) => v + 1);
+    });
+    refreshCatalog();
+  }, [ready, refreshCatalog]);
 
   // Persistir cada cambio una vez cargado.
   useEffect(() => {
@@ -205,6 +227,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     () => ({
       ...state,
       ready,
+      catalogVersion,
+      refreshCatalog,
       fs,
       updateSettings,
       openStory,
@@ -216,7 +240,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       removeRecording,
       resetProgress,
     }),
-    [state, ready, fs, updateSettings, openStory, savePosition, addListening, markCompleted, saveQuiz, saveRecording, removeRecording, resetProgress]
+    [state, ready, catalogVersion, refreshCatalog, fs, updateSettings, openStory, savePosition, addListening, markCompleted, saveQuiz, saveRecording, removeRecording, resetProgress]
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

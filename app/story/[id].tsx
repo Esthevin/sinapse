@@ -14,7 +14,7 @@ import {
 } from '@/content/narration';
 import type { Story } from '@/content/types';
 import { useNarration } from '@/hooks/useNarration';
-import { LANGUAGES, languageName, t, type LanguageCode } from '@/i18n/translations';
+import { LANGUAGES, languageName, t, type LanguageCode, pickLocalized } from '@/i18n/translations';
 import { hasSpanishVoice } from '@/services/speech';
 import { useApp } from '@/state/AppContext';
 import { colors, fontSize, radius, spacing } from '@/theme/theme';
@@ -52,7 +52,7 @@ export default function StoryScreen() {
 
   return (
     <>
-      <Stack.Screen options={{ title: story.title[settings.lang] ?? story.title.es }} />
+      <Stack.Screen options={{ title: pickLocalized(story.title, settings.lang) }} />
       {/* `key` reinicia el reproductor cuando cambia la fuente de voz. */}
       <StoryPlayer key={resolved.key} story={story} resolved={resolved} viewLang={viewLang} setViewLang={setViewLang} />
     </>
@@ -124,7 +124,7 @@ function StoryPlayer({
             <Text style={styles.coverEmoji}>{story.emoji}</Text>
           </View>
           <View style={{ flex: 1 }}>
-            <Text style={[styles.title, { fontSize: fs(fontSize.title - 2) }]}>{story.title[lang] ?? story.title.es}</Text>
+            <Text style={[styles.title, { fontSize: fs(fontSize.title - 2) }]}>{pickLocalized(story.title, lang)}</Text>
             <Text style={[styles.meta, { fontSize: fs(fontSize.caption) }]}>
               {story.author}
               {story.collection ? ` · ${story.collection}` : ''}
@@ -140,7 +140,7 @@ function StoryPlayer({
           </View>
         </View>
 
-        <Text style={[styles.summary, { fontSize: fs(fontSize.body) }]}>{story.summary[lang] ?? story.summary.es}</Text>
+        <Text style={[styles.summary, { fontSize: fs(fontSize.body) }]}>{pickLocalized(story.summary, lang)}</Text>
 
         {/* Idioma de escucha */}
         <View style={styles.chips}>
@@ -194,6 +194,15 @@ function StoryPlayer({
             </Text>
             {isRemoteAudio(resolved.source) && (
               <Text style={[styles.narratorCredit, { fontSize: fs(12) }]}>📶 {t(lang, 'needsInternet')}</Text>
+            )}
+            {voice.source !== 'sintetica' && (
+              <Button
+                label="Sincronizar párrafos (equipo)"
+                icon="⏱️"
+                variant="secondary"
+                onPress={() => router.push({ pathname: '/sync/[id]', params: { id: story.id, lang: resolved.lang } })}
+                style={{ marginTop: spacing.sm }}
+              />
             )}
           </Card>
         )}

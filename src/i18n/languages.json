@@ -1,6 +1,9 @@
 [
   { "code": "es", "name": "Castellano", "native": "Castellano", "short": "ES", "family": "castellano", "tts": true },
   { "code": "qu", "name": "Quechua", "native": "Runa Simi", "short": "QU", "family": "andina", "tts": false },
+  { "code": "quz", "name": "Quechua cusqueño (Cusco-Collao)", "native": "Qusqu Qullaw Runa Simi", "short": "QUZ", "family": "andina", "tts": false, "parent": "qu" },
+  { "code": "quy", "name": "Quechua ayacuchano (Chanka)", "native": "Ayakuchu Chanka Runa Simi", "short": "QUY", "family": "andina", "tts": false, "parent": "qu" },
+  { "code": "qwh", "name": "Quechua ancashino (Huaylas)", "native": "Waylas Qichwa", "short": "QWH", "family": "andina", "tts": false, "parent": "qu" },
   { "code": "ay", "name": "Aimara", "native": "Aymar Aru", "short": "AY", "family": "andina", "tts": false },
   { "code": "jqr", "name": "Jaqaru", "native": "Jaqaru", "short": "JQR", "family": "andina", "tts": false },
   { "code": "cni", "name": "Asháninka", "native": "Asháninka", "short": "ASH", "family": "amazonica", "tts": false },

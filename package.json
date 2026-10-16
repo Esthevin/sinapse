@@ -1,6 +1,6 @@
 {
   "name": "sinapse",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
@@ -11,7 +11,8 @@
     "validar": "node scripts/validar-contenido.mjs",
     "audio:generar": "node scripts/generar-audios-voicestudio.mjs",
     "build:apk": "eas build --platform android --profile preview",
-    "voces:generar": "node scripts/generar-voces-peruanas.mjs"
+    "voces:generar": "node scripts/generar-voces-peruanas.mjs",
+    "catalogo:generar": "node scripts/generar-catalogo.mjs"
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.1",

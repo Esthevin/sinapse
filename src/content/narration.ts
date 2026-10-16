@@ -1,5 +1,5 @@
 import type { NarrationSource } from '@/hooks/useNarration';
-import type { LanguageCode } from '@/i18n/translations';
+import { fallbackChain, pickLocalized, type LanguageCode } from '@/i18n/translations';
 import type { Recording } from '@/state/AppContext';
 import { BUNDLED_AUDIO } from './audio-local';
 import { getNarrator } from './index';
@@ -75,6 +75,16 @@ function bestTrack(story: Story, lang: LanguageCode, recordings: Recordings): Tr
   return null;
 }
 
+/** Como bestTrack, pero una variante (ej. quz) puede usar el audio de su lengua general (qu). */
+function bestTrackWithParents(story: Story, lang: LanguageCode, recordings: Recordings): { track: Track; lang: LanguageCode } | null {
+  for (const c of fallbackChain(lang)) {
+    if (c === 'es' && lang !== 'es') break; // el castellano se maneja aparte (con aviso de respaldo)
+    const track = bestTrack(story, c, recordings);
+    if (track) return { track, lang: c };
+  }
+  return null;
+}
+
 /** true si el audio se escucha por internet (no está guardado en el teléfono). */
 export function isRemoteAudio(source: NarrationSource): boolean {
   return source.kind === 'audio' && source.asset === undefined && /^https?:\/\//.test(source.uri);
@@ -121,8 +131,8 @@ function toResolved(track: Track, lang: LanguageCode, paragraphs: string[], fall
  * 3) voz sintética del teléfono en castellano (último recurso).
  */
 export function resolveNarration(story: Story, lang: LanguageCode, recordings: Recordings): ResolvedNarration {
-  const inLang = bestTrack(story, lang, recordings);
-  if (inLang) return toResolved(inLang, lang, story.paragraphs[lang] ?? story.paragraphs.es, false);
+  const inLang = bestTrackWithParents(story, lang, recordings);
+  if (inLang) return toResolved(inLang.track, inLang.lang, pickLocalized(story.paragraphs, inLang.lang), false);
 
   const fallback = lang !== 'es';
   const spanish = bestTrack(story, 'es', recordings);

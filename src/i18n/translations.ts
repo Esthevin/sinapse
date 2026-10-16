@@ -25,13 +25,40 @@ export interface Language {
   family: 'castellano' | 'andina' | 'amazonica';
   /** ¿Los teléfonos tienen voz sintética para esta lengua? */
   tts: boolean;
+  /** Si es una variante (ej. 'quz' → 'qu'), la lengua general de la que hereda textos y audios. */
+  parent?: LanguageCode;
 }
 
 export const LANGUAGES: Language[] = languagesData.map((l) => ({
   ...l,
   label: l.name,
   family: l.family as Language['family'],
+  parent: (l as { parent?: string }).parent,
 }));
+
+/**
+ * Orden en que se busca un texto o audio para una lengua: ella misma, su lengua
+ * general (si es variante) y por último el castellano. Ej.: quz → qu → es.
+ */
+export function fallbackChain(code: LanguageCode): LanguageCode[] {
+  const chain: LanguageCode[] = [code];
+  let parent = LANGUAGES.find((l) => l.code === code)?.parent;
+  while (parent && !chain.includes(parent)) {
+    chain.push(parent);
+    parent = LANGUAGES.find((l) => l.code === parent)?.parent;
+  }
+  if (!chain.includes('es')) chain.push('es');
+  return chain;
+}
+
+/** Elige el valor de un mapa por lengua siguiendo la cadena de respaldo (variante → general → castellano). */
+export function pickLocalized<T>(map: Partial<Record<LanguageCode, T>> & { es: T }, code: LanguageCode): T {
+  for (const c of fallbackChain(code)) {
+    const v = map[c];
+    if (v !== undefined) return v;
+  }
+  return map.es;
+}
 
 export const FAMILY_LABEL: Record<Language['family'], string> = {
   castellano: 'Castellano',
@@ -49,6 +76,10 @@ export function getLanguage(code: LanguageCode): Language | undefined {
 
 const es = {
   appTagline: 'Historias para escuchar, leer y aprender',
+  updateStories: 'Buscar historias nuevas',
+  storiesUpdated: '¡Listo! Se agregaron o actualizaron {n} historias.',
+  storiesUpToDate: 'Ya tienes todas las historias.',
+  storiesOffline: 'No hay conexión. Inténtalo más tarde.',
   tabLibrary: 'Historias',
   tabProgress: 'Mi avance',
   tabStudio: 'Grabar',
@@ -198,12 +229,19 @@ const dictionaries: Record<LanguageCode, Partial<Record<TKey, string>>> = { es, 
 
 /** ¿La interfaz tiene traducción propia en esta lengua? */
 export function hasUiTranslation(lang: LanguageCode): boolean {
-  return lang in dictionaries;
+  return fallbackChain(lang).some((c) => c !== 'es' && c in dictionaries);
 }
 
 /** Traduce una clave e interpola variables: t('es', 'paragraphOf', { n: 1, total: 5 }). */
 export function t(lang: LanguageCode, key: TKey, vars?: Record<string, string | number>): string {
-  let text = dictionaries[lang]?.[key] ?? es[key];
+  let text = es[key];
+  for (const c of fallbackChain(lang)) {
+    const found = dictionaries[c]?.[key];
+    if (found !== undefined) {
+      text = found;
+      break;
+    }
+  }
   if (vars) {
     for (const [k, v] of Object.entries(vars)) text = text.replaceAll(`{${k}}`, String(v));
   }

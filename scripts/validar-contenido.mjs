@@ -41,6 +41,7 @@ const LANGS = languages.map((l) => l.code);
     if (!/^[a-z]{2,3}$/.test(l.code ?? '')) error(f, `código inválido "${l.code}" (usa ISO 639-1 o 639-3)`);
     if (!l.name || !l.native || !l.short) error(f, `"${l.code}" necesita name, native y short`);
     if (!['castellano', 'andina', 'amazonica'].includes(l.family)) error(f, `"${l.code}": family inválida`);
+    if (l.parent !== undefined && (l.parent === l.code || !LANGS.includes(l.parent))) error(f, `"${l.code}": parent "${l.parent}" debe ser otra lengua registrada`);
   }
 }
 

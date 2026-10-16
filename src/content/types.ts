@@ -93,6 +93,8 @@ type Localized<T> = { es: T } & Partial<Record<LanguageCode, T>>;
 
 export interface Story {
   id: string;
+  /** Sube cada vez que se corrige o mejora la historia; el catálogo descargable solo reemplaza si es mayor. */
+  revision?: number;
   title: Localized<string>;
   author: string; // autor de la OBRA, nunca de la voz
   source: string; // procedencia y licencia del texto

@@ -3,7 +3,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { estimateMinutes, REGION_LABEL } from '@/content';
 import { hasAudioNarration, hasHumanNarration } from '@/content/narration';
 import type { Story } from '@/content/types';
-import { LANGUAGES, t } from '@/i18n/translations';
+import { LANGUAGES, t, pickLocalized } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
 import { colors, fontSize, radius, spacing } from '@/theme/theme';
 import { ProgressBar } from './ui';
@@ -11,7 +11,7 @@ import { ProgressBar } from './ui';
 export function StoryCard({ story }: { story: Story }) {
   const { settings, progress, quizzes, recordings, fs } = useApp();
   const { lang } = settings;
-  const title = story.title[lang] ?? story.title.es;
+  const title = pickLocalized(story.title, lang);
   const prog = progress[story.id];
   const quiz = quizzes[story.id];
   const region = REGION_LABEL[story.region];

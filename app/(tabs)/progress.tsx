@@ -3,7 +3,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { starsFor } from '@/components/StoryCard';
 import { Card, ProgressBar, SectionTitle } from '@/components/ui';
 import { STORIES } from '@/content';
-import { t } from '@/i18n/translations';
+import { t, pickLocalized } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
 import { computeBadges, computeStats } from '@/state/stats';
 import { colors, fontSize, radius, spacing } from '@/theme/theme';
@@ -69,7 +69,7 @@ export default function ProgressScreen() {
               <Text style={{ fontSize: 28 }}>{s.emoji}</Text>
               <View style={{ flex: 1 }}>
                 <Text style={[styles.resultTitle, { fontSize: fs(fontSize.body) }]} numberOfLines={1}>
-                  {s.title[lang] ?? s.title.es}
+                  {pickLocalized(s.title, lang)}
                 </Text>
                 <Text style={[styles.resultMeta, { fontSize: fs(13) }]}>
                   {r.best}/{r.total} · {r.attempts} {r.attempts === 1 ? 'intento' : 'intentos'}

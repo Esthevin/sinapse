@@ -31,6 +31,7 @@ function RootNavigator() {
       <Stack.Screen name="story/[id]" options={{ title: '' }} />
       <Stack.Screen name="quiz/[id]" options={{ title: t(settings.lang, 'quizTitle') }} />
       <Stack.Screen name="record/[id]" options={{ title: t(settings.lang, 'studioTitle') }} />
+      <Stack.Screen name="sync/[id]" options={{ title: '' }} />
     </Stack>
   );
 }

@@ -6,7 +6,7 @@ import { Chip, ProgressBar } from '@/components/ui';
 import { STORIES } from '@/content';
 import { narratedLanguages } from '@/content/narration';
 import type { Region } from '@/content/types';
-import { t } from '@/i18n/translations';
+import { t, pickLocalized } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
 import { colors, fontSize, radius, spacing } from '@/theme/theme';
 
@@ -70,7 +70,7 @@ export default function LibraryScreen() {
               <View style={{ flex: 1 }}>
                 <Text style={[styles.resumeLabel, { fontSize: fs(fontSize.caption) }]}>▶ {t(lang, 'continueListening')}</Text>
                 <Text style={[styles.resumeTitle, { fontSize: fs(fontSize.subtitle) }]} numberOfLines={1}>
-                  {resume.title[lang] ?? resume.title.es}
+                  {pickLocalized(resume.title, lang)}
                 </Text>
                 <View style={{ marginTop: spacing.sm }}>
                   <ProgressBar

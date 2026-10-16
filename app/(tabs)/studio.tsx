@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Card, Chip, SectionTitle } from '@/components/ui';
 import { STORIES } from '@/content';
-import { FAMILY_LABEL, LANGUAGES, languageName, t, type Language } from '@/i18n/translations';
+import { FAMILY_LABEL, LANGUAGES, languageName, t, type Language, pickLocalized } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
 import { colors, fontSize, radius, spacing } from '@/theme/theme';
 import { formatTime } from '@/utils/format';
@@ -57,7 +57,7 @@ export default function StudioScreen() {
             <Text style={{ fontSize: 28 }}>{story.emoji}</Text>
             <View style={{ flex: 1 }}>
               <Text style={[styles.storyTitle, { fontSize: fs(fontSize.body) }]} numberOfLines={2}>
-                {story.title[lang] ?? story.title.es}
+                {pickLocalized(story.title, lang)}
               </Text>
               {rec && (
                 <Text style={[styles.storyMeta, { fontSize: fs(12) }]}>
