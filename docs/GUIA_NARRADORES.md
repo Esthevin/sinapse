@@ -60,6 +60,9 @@ para generar voz en tu computadora. Sinapse la usa **solo como herramienta exter
 3. Crea el perfil del narrador en `src/content/narradores.json` y agrega el audio en el JSON de la historia con `narratorId`, `voiceSource` y la referencia `license`. Formato completo y ejemplos en [PLAN_NARRADORES.md](PLAN_NARRADORES.md#6-flujo-de-trabajo-de-la-grabación-a-la-app).
 4. `npm run validar` y publica una nueva versión de la app.
 
+Para cargar **varios audios de una vez** (por ejemplo las narraciones en quechua) hay un
+importador con manifiesto: ver [CARGAR_AUDIOS_QUECHUA.md](CARGAR_AUDIOS_QUECHUA.md).
+
 ## D. Grabaciones de dominio público (LibriVox)
 
 [LibriVox](https://librivox.org) reúne audiolibros leídos por **voluntarios** y

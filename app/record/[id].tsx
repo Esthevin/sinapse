@@ -9,15 +9,15 @@ import {
 } from 'expo-audio';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Platform, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Button, Card } from '@/components/ui';
+import { Button, Card, Glyph, Text } from '@/components/ui';
 import { getStory } from '@/content';
 import type { Story } from '@/content/types';
 import { isLanguageCode, languageName, t, type LanguageCode } from '@/i18n/translations';
 import { deleteRecordingFile, persistRecording, shareRecording } from '@/services/recordings';
 import { useApp } from '@/state/AppContext';
-import { colors, fontSize, radius, spacing } from '@/theme/theme';
+import { useThemed, type Theme } from '@/theme/theme';
 import { confirmAction } from '@/utils/confirm';
 import { formatTime } from '@/utils/format';
 
@@ -25,15 +25,15 @@ export default function RecordScreen() {
   const params = useLocalSearchParams<{ id: string; lang?: string }>();
   const story = getStory(params.id);
   const lang: LanguageCode = isLanguageCode(params.lang) ? params.lang : 'qu';
-  const { settings, fs } = useApp();
+  const { settings } = useApp();
+  const { styles } = useThemed(makeStyles);
 
   if (!story) return null;
 
   if (Platform.OS === 'web') {
     return (
       <View style={styles.center}>
-        <Text style={{ fontSize: 48 }}>📱</Text>
-        <Text style={[styles.centerText, { fontSize: fs(fontSize.subtitle) }]}>{t(settings.lang, 'webNotSupported')}</Text>
+        <Text style={styles.centerText}>{t(settings.lang, 'webNotSupported')}</Text>
       </View>
     );
   }
@@ -44,7 +44,8 @@ export default function RecordScreen() {
 type Phase = 'consent' | 'ready' | 'recording' | 'review' | 'saved';
 
 function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
-  const { settings, recordings, saveRecording, removeRecording, fs } = useApp();
+  const { settings, recordings, saveRecording, removeRecording } = useApp();
+  const { styles, colors, spacing } = useThemed(makeStyles);
   const insets = useSafeAreaInsets();
   const ui = settings.lang;
   const existing = recordings[story.id]?.[lang];
@@ -135,35 +136,34 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
   return (
     <ScrollView
       style={{ backgroundColor: colors.background }}
-      contentContainerStyle={{ padding: spacing.md, paddingBottom: insets.bottom + spacing.xl }}
+      contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + spacing.xl }]}
       keyboardShouldPersistTaps="handled"
     >
-      <Stack.Screen options={{ title: `🎙️ ${langName}` }} />
+      <Stack.Screen options={{ title: langName }} />
 
       <View style={styles.header}>
-        <Text style={{ fontSize: 40 }}>{story.emoji}</Text>
         <View style={{ flex: 1 }}>
-          <Text style={[styles.title, { fontSize: fs(fontSize.subtitle) }]}>{story.title.es}</Text>
-          <Text style={[styles.subtitle, { fontSize: fs(fontSize.caption) }]}>Narración en {langName}</Text>
+          <Text style={styles.title}>{story.title.es}</Text>
+          <Text style={styles.subtitle}>Narración en {langName}</Text>
         </View>
       </View>
 
       {error && (
         <Card style={[styles.notice, { backgroundColor: colors.dangerSoft, borderColor: colors.danger }]}>
-          <Text style={{ fontSize: fs(fontSize.body), color: colors.text }}>⚠️ {error}</Text>
+          <Text style={styles.tip}>{error}</Text>
         </Card>
       )}
 
       {/* 1. Consentimiento */}
       {phase === 'consent' && (
         <Card style={styles.notice}>
-          <Text style={[styles.stepTitle, { fontSize: fs(fontSize.subtitle) }]}>1. ¿Quién narra?</Text>
+          <Text style={styles.stepTitle}>1. ¿Quién narra?</Text>
           <TextInput
             value={narratorName}
             onChangeText={setNarratorName}
             placeholder="Nombre de la persona que narra"
             placeholderTextColor={colors.textMuted}
-            style={[styles.input, { fontSize: fs(fontSize.body) }]}
+            style={styles.input}
             accessibilityLabel="Nombre de la persona que narra"
           />
           <Pressable
@@ -172,8 +172,8 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
             accessibilityRole="checkbox"
             accessibilityState={{ checked: consent }}
           >
-            <View style={[styles.checkbox, consent && styles.checkboxOn]}>{consent && <Text style={styles.checkMark}>✓</Text>}</View>
-            <Text style={[styles.consentText, { fontSize: fs(fontSize.caption + 1) }]}>
+            <View style={[styles.checkbox, consent && styles.checkboxOn]}>{consent && <Glyph name="check" size={18} color={colors.onPrimary} />}</View>
+            <Text style={styles.consentText}>
               Doy mi consentimiento para que Sinapse use esta grabación de mi voz con fines educativos, y entiendo que puedo pedir que se retire en cualquier momento.
             </Text>
           </Pressable>
@@ -190,9 +190,9 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
       {(phase === 'ready' || phase === 'recording') && (
         <>
           <Card style={styles.notice}>
-            <Text style={[styles.stepTitle, { fontSize: fs(fontSize.subtitle) }]}>2. Grabar</Text>
-            <Text style={[styles.tip, { fontSize: fs(fontSize.caption + 1) }]}>
-              💡 Busca un lugar silencioso. {lang === 'es' ? 'Lee el texto con calma.' : `Puedes leer el texto o contar la historia con tus propias palabras en ${langName}.`}
+            <Text style={styles.stepTitle}>2. Grabar</Text>
+            <Text style={styles.tip}>
+              Busca un lugar silencioso. {lang === 'es' ? 'Lee el texto con calma.' : `Puedes leer el texto o contar la historia con tus propias palabras en ${langName}.`}
             </Text>
             <View style={styles.recordRow}>
               <Pressable
@@ -201,12 +201,12 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
                 accessibilityRole="button"
                 accessibilityLabel={phase === 'recording' ? 'Detener grabación' : 'Empezar a grabar'}
               >
-                <Text style={styles.recordIcon}>{phase === 'recording' ? '■' : '●'}</Text>
+                <Glyph name={phase === 'recording' ? 'stop' : 'record'} size={34} color="#FFFFFF" />
               </Pressable>
               <View>
-                <Text style={[styles.timer, { fontSize: fs(fontSize.display) }]}>{formatTime(recState.durationMillis / 1000)}</Text>
-                <Text style={[styles.subtitle, { fontSize: fs(fontSize.caption) }]}>
-                  {phase === 'recording' ? '🔴 Grabando… toca ■ para terminar' : 'Toca ● para empezar'}
+                <Text style={styles.timer}>{formatTime(recState.durationMillis / 1000)}</Text>
+                <Text style={styles.subtitle}>
+                  {phase === 'recording' ? 'Grabando. Toca el cuadro para terminar' : 'Toca el círculo para empezar'}
                 </Text>
               </View>
             </View>
@@ -214,7 +214,7 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
 
           {/* Texto guía (teleprompter) */}
           {paragraphs.map((p, i) => (
-            <Text key={i} style={[styles.prompter, { fontSize: fs(fontSize.subtitle), lineHeight: fs(32) }]}>
+            <Text key={i} style={styles.prompter}>
               {p}
             </Text>
           ))}
@@ -224,18 +224,17 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
       {/* 3. Revisar */}
       {phase === 'review' && (
         <Card style={styles.notice}>
-          <Text style={[styles.stepTitle, { fontSize: fs(fontSize.subtitle) }]}>3. Escucha tu grabación</Text>
+          <Text style={styles.stepTitle}>3. Escucha tu grabación</Text>
           <Button
             label={playerStatus.playing ? 'Pausar' : `Escuchar (${formatTime(durationSec)})`}
-            icon={playerStatus.playing ? '⏸' : '▶'}
             variant="secondary"
             onPress={togglePreview}
           />
           <View style={{ gap: spacing.sm, marginTop: spacing.md }}>
-            <Button label={busy ? 'Guardando…' : 'Guardar grabación'} icon="💾" onPress={save} disabled={busy} />
+            <Button label={busy ? 'Guardando…' : 'Guardar grabación'} onPress={save} disabled={busy} />
             <Button
               label="Grabar de nuevo"
-              icon="🔁"
+             
               variant="secondary"
               onPress={() => {
                 player.pause();
@@ -249,18 +248,18 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
       {/* Guardado */}
       {phase === 'saved' && existing && (
         <Card style={[styles.notice, { backgroundColor: colors.successSoft, borderColor: colors.success }]}>
-          <Text style={[styles.stepTitle, { fontSize: fs(fontSize.subtitle) }]}>✅ Grabación guardada</Text>
-          <Text style={[styles.tip, { fontSize: fs(fontSize.body) }]}>
+          <Text style={styles.stepTitle}>Grabación guardada</Text>
+          <Text style={styles.tip}>
             Narra: {existing.narratorName} · {formatTime(existing.durationSec)}
           </Text>
-          <Text style={[styles.tip, { fontSize: fs(fontSize.caption + 1) }]}>
+          <Text style={styles.tip}>
             Ya se escucha en este teléfono al elegir {langName} en la historia. Para publicarla para todos, compártela con el equipo de Sinapse.
           </Text>
           <View style={{ gap: spacing.sm, marginTop: spacing.md }}>
-            <Button label={playerStatus.playing ? 'Pausar' : 'Escuchar'} icon={playerStatus.playing ? '⏸' : '▶'} variant="secondary" onPress={togglePreview} />
+            <Button label={playerStatus.playing ? 'Pausar' : 'Escuchar'} variant="secondary" onPress={togglePreview} />
             <Button
               label="Compartir con el equipo"
-              icon="📤"
+             
               onPress={async () => {
                 const ok = await shareRecording(existing.uri, `${story.title.es} (${langName}) - ${existing.narratorName}`);
                 if (!ok) setError('Compartir no está disponible en este teléfono.');
@@ -268,12 +267,12 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
             />
             <Button
               label="Ir a la historia"
-              icon="🎧"
+             
               variant="secondary"
               onPress={() => router.replace({ pathname: '/story/[id]', params: { id: story.id } })}
             />
-            <Button label="Grabar de nuevo" icon="🔁" variant="secondary" onPress={() => setPhase('consent')} />
-            <Button label="Borrar grabación" icon="🗑️" variant="danger" onPress={remove} />
+            <Button label="Grabar de nuevo" variant="secondary" onPress={() => setPhase('consent')} />
+            <Button label="Borrar grabación" variant="danger" onPress={remove} />
           </View>
         </Card>
       )}
@@ -281,47 +280,49 @@ function Recorder({ story, lang }: { story: Story; lang: LanguageCode }) {
   );
 }
 
-const styles = StyleSheet.create({
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: spacing.xl, backgroundColor: colors.background },
-  centerText: { textAlign: 'center', color: colors.text, marginTop: spacing.md, fontWeight: '700' },
-  header: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
-  title: { fontWeight: '900', color: colors.text },
-  subtitle: { color: colors.textMuted },
-  notice: { marginTop: spacing.md },
-  stepTitle: { fontWeight: '900', color: colors.text, marginBottom: spacing.sm },
-  input: {
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: radius.sm,
-    padding: spacing.md,
-    color: colors.text,
-    backgroundColor: colors.surface,
-  },
-  consentRow: { flexDirection: 'row', gap: spacing.sm, marginTop: spacing.md, alignItems: 'flex-start' },
-  checkbox: {
-    width: 28,
-    height: 28,
-    borderRadius: 6,
-    borderWidth: 2,
-    borderColor: colors.primary,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  checkboxOn: { backgroundColor: colors.primary },
-  checkMark: { color: colors.white, fontWeight: '900' },
-  consentText: { flex: 1, color: colors.text, lineHeight: 22 },
-  tip: { color: colors.text, lineHeight: 22, marginTop: spacing.xs },
-  recordRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.lg, marginTop: spacing.md },
-  recordButton: {
-    width: 84,
-    height: 84,
-    borderRadius: 42,
-    backgroundColor: colors.danger,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  recordButtonActive: { backgroundColor: colors.primary },
-  recordIcon: { fontSize: 36, color: colors.white },
-  timer: { fontWeight: '900', color: colors.text, fontVariant: ['tabular-nums'] },
-  prompter: { color: colors.text, marginTop: spacing.md, paddingHorizontal: spacing.xs },
-});
+const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs }: Theme) =>
+  StyleSheet.create({
+    center: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: spacing.xl, backgroundColor: colors.background },
+    centerText: { textAlign: 'center', color: colors.text, fontWeight: '700', fontSize: fs(fontSize.subtitle) },
+    content: { padding: spacing.md, width: '100%', maxWidth: 680, alignSelf: 'center' },
+    header: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
+    title: { fontFamily: font.heading, fontWeight: '900', color: colors.text, fontSize: fs(fontSize.subtitle) },
+    subtitle: { color: colors.textMuted, fontSize: fs(fontSize.caption) },
+    notice: { marginTop: spacing.md },
+    stepTitle: { fontFamily: font.heading, fontWeight: '900', color: colors.text, marginBottom: spacing.sm, fontSize: fs(fontSize.subtitle) },
+    input: {
+      borderWidth: stroke,
+      borderColor: colors.border,
+      borderRadius: radius.sm,
+      padding: spacing.md,
+      color: colors.text,
+      backgroundColor: colors.surface,
+      fontFamily: font.body,
+      fontSize: fs(fontSize.body),
+    },
+    consentRow: { flexDirection: 'row', gap: spacing.sm, marginTop: spacing.md, alignItems: 'flex-start' },
+    checkbox: {
+      width: 28,
+      height: 28,
+      borderRadius: id === 'ninos' ? 8 : 3,
+      borderWidth: 2,
+      borderColor: colors.text,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    checkboxOn: { backgroundColor: colors.primary, borderColor: colors.primary },
+    consentText: { flex: 1, color: colors.text, lineHeight: 22, fontSize: fs(fontSize.caption + 1) },
+    tip: { color: colors.text, lineHeight: 22, marginTop: spacing.xs, fontSize: fs(fontSize.caption + 1) },
+    recordRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.lg, marginTop: spacing.md },
+    recordButton: {
+      width: 84,
+      height: 84,
+      borderRadius: 42,
+      backgroundColor: colors.danger,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    recordButtonActive: { backgroundColor: colors.text },
+    timer: { fontWeight: '900', color: colors.text, fontVariant: ['tabular-nums'], fontSize: fs(fontSize.display) },
+    prompter: { color: colors.text, marginTop: spacing.md, paddingHorizontal: spacing.xs, fontFamily: font.body, fontSize: fs(fontSize.subtitle), lineHeight: fs(32) },
+  });

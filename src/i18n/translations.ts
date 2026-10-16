@@ -181,7 +181,7 @@ const es = {
   aboutText:
     'Sinapse conecta a lectores de todo el Perú con historias de su tierra, narradas por voces peruanas en sus propias lenguas, para escuchar y leer al mismo tiempo. Cada voz humana se publica con el consentimiento de quien narra o de sus herederos. Las voces sintéticas genéricas no imitan a ninguna persona real.',
   translationNote: 'Las traducciones al quechua y aimara están en revisión por hablantes nativos.',
-  uiFallbackNote: 'La app se mostrará en castellano hasta tener la traducción a {lang}. Las historias narradas en {lang} aparecen con 🎙️.',
+  uiFallbackNote: 'La app se mostrará en castellano hasta tener la traducción a {lang}. Las historias narradas en {lang} aparecen como voz humana.',
   resetProgress: 'Borrar mi avance',
   resetConfirm: '¿Seguro que quieres borrar todo tu avance? Esto no se puede deshacer.',
   cancel: 'Cancelar',

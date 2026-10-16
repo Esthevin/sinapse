@@ -1,19 +1,15 @@
 import Constants from 'expo-constants';
 import { useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { LanguagePicker } from '@/components/LanguagePicker';
-import { Button, Card, Chip, SectionTitle } from '@/components/ui';
+import { Button, Card, Chip, SectionTitle, Text } from '@/components/ui';
 import type { AgeGroup } from '@/content/types';
 import { t } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
-import { colors, fontSize, spacing } from '@/theme/theme';
+import { useThemed, type Theme } from '@/theme/theme';
 import { confirmAction } from '@/utils/confirm';
 
-const PROFILES: { id: AgeGroup; emoji: string }[] = [
-  { id: 'ninos', emoji: '🧒' },
-  { id: 'jovenes', emoji: '🧑' },
-  { id: 'adultos', emoji: '🧓' },
-];
+const PROFILES: AgeGroup[] = ['ninos', 'jovenes', 'adultos'];
 const FONT_SCALES = [
   { value: 0.9, label: 'A-' },
   { value: 1, label: 'A' },
@@ -23,7 +19,8 @@ const FONT_SCALES = [
 const SPEEDS = [0.75, 1, 1.25];
 
 export default function SettingsScreen() {
-  const { settings, updateSettings, resetProgress, refreshCatalog, fs } = useApp();
+  const { settings, updateSettings, resetProgress, refreshCatalog } = useApp();
+  const { styles, colors, spacing } = useThemed(makeStyles);
   const { lang } = settings;
   const [checking, setChecking] = useState(false);
   const [catalogMsg, setCatalogMsg] = useState('');
@@ -33,47 +30,41 @@ export default function SettingsScreen() {
   };
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={{ padding: spacing.md, paddingBottom: spacing.xl }}>
-      <SectionTitle>🌐 {t(lang, 'language')}</SectionTitle>
-      <LanguagePicker value={lang} onChange={(code) => updateSettings({ lang: code })} />
-      <Text style={[styles.note, { fontSize: fs(13) }]}>{t(lang, 'translationNote')}</Text>
-
-      <SectionTitle>👂 {t(lang, 'whoListens')}</SectionTitle>
+    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+      <SectionTitle>{t(lang, 'whoListens')}</SectionTitle>
       <View style={styles.row}>
-        {PROFILES.map((p) => (
-          <Chip
-            key={p.id}
-            label={`${p.emoji} ${t(lang, p.id)}`}
-            active={settings.profile === p.id}
-            onPress={() => updateSettings({ profile: p.id })}
-          />
+        {PROFILES.map((id) => (
+          <Chip key={id} label={t(lang, id)} active={settings.profile === id} onPress={() => updateSettings({ profile: id })} />
         ))}
       </View>
 
-      <SectionTitle>🔠 {t(lang, 'textSize')}</SectionTitle>
+      <SectionTitle>{t(lang, 'language')}</SectionTitle>
+      <LanguagePicker value={lang} onChange={(code) => updateSettings({ lang: code })} />
+      <Text style={styles.note}>{t(lang, 'translationNote')}</Text>
+
+      <SectionTitle>{t(lang, 'textSize')}</SectionTitle>
       <View style={styles.row}>
         {FONT_SCALES.map((f) => (
           <Chip key={f.value} label={f.label} active={settings.fontScale === f.value} onPress={() => updateSettings({ fontScale: f.value })} />
         ))}
       </View>
-      <Text style={[styles.preview, { fontSize: fs(fontSize.body + 2) }]}>Había una vez, en lo alto de la puna…</Text>
+      <Text style={styles.preview}>Había una vez, en lo alto de la puna…</Text>
 
-      <SectionTitle>🐢 {t(lang, 'readingSpeed')}</SectionTitle>
+      <SectionTitle>{t(lang, 'readingSpeed')}</SectionTitle>
       <View style={styles.row}>
         {SPEEDS.map((s) => (
           <Chip key={s} label={`${s}x`} active={settings.speechRate === s} onPress={() => updateSettings({ speechRate: s })} />
         ))}
       </View>
 
-      <SectionTitle>💛 {t(lang, 'about')}</SectionTitle>
+      <SectionTitle>{t(lang, 'about')}</SectionTitle>
       <Card>
-        <Text style={[styles.about, { fontSize: fs(fontSize.body) }]}>{t(lang, 'aboutText')}</Text>
-        <Text style={[styles.version, { fontSize: fs(12) }]}>Versión {Constants.expoConfig?.version ?? '1.0.0'}</Text>
+        <Text style={styles.about}>{t(lang, 'aboutText')}</Text>
+        <Text style={styles.version}>Versión {Constants.expoConfig?.version ?? '1.0.0'}</Text>
       </Card>
 
       <Button
         label={checking ? '…' : t(lang, 'updateStories')}
-        icon="⬇️"
         variant="secondary"
         disabled={checking}
         onPress={async () => {
@@ -84,17 +75,27 @@ export default function SettingsScreen() {
         }}
         style={{ marginTop: spacing.xl }}
       />
-      {catalogMsg ? <Text style={[styles.version, { fontSize: fs(13) }]}>{catalogMsg}</Text> : null}
+      {catalogMsg ? <Text style={styles.version}>{catalogMsg}</Text> : null}
 
-      <Button label={t(lang, 'resetProgress')} icon="🗑️" variant="danger" onPress={reset} style={{ marginTop: spacing.xl }} />
+      <Button label={t(lang, 'resetProgress')} variant="danger" onPress={reset} style={{ marginTop: spacing.xl }} />
+
+      <View style={[styles.row, { marginTop: spacing.xl }]}>
+        <Chip
+          label={settings.teamTools ? 'Herramientas del equipo: activadas' : 'Herramientas del equipo'}
+          active={settings.teamTools}
+          onPress={() => updateSettings({ teamTools: !settings.teamTools })}
+        />
+      </View>
     </ScrollView>
   );
 }
 
-const styles = StyleSheet.create({
-  note: { color: colors.textMuted, marginTop: spacing.xs },
-  row: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
-  preview: { color: colors.text, marginTop: spacing.md, fontStyle: 'italic' },
-  about: { color: colors.text, lineHeight: 24 },
-  version: { color: colors.textMuted, marginTop: spacing.md },
-});
+const makeStyles = ({ colors, spacing, fontSize, font, fs }: Theme) =>
+  StyleSheet.create({
+    content: { padding: spacing.md, paddingBottom: spacing.xl * 2, width: '100%', maxWidth: 760, alignSelf: 'center' },
+    note: { color: colors.textMuted, marginTop: spacing.xs, fontSize: fs(13) },
+    row: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+    preview: { color: colors.text, marginTop: spacing.md, fontStyle: 'italic', fontFamily: font.body, fontSize: fs(fontSize.body + 2) },
+    about: { color: colors.text, lineHeight: fs(24), fontSize: fs(fontSize.body) },
+    version: { color: colors.textMuted, marginTop: spacing.md, fontSize: fs(13) },
+  });

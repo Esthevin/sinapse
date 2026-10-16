@@ -1,61 +1,72 @@
 import { router } from 'expo-router';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { starsFor } from '@/components/StoryCard';
-import { Card, ProgressBar, SectionTitle } from '@/components/ui';
+import { Card, Cover, ProgressBar, SectionTitle, Stars, Text } from '@/components/ui';
 import { STORIES } from '@/content';
 import { t, pickLocalized } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
 import { computeBadges, computeStats } from '@/state/stats';
-import { colors, fontSize, radius, spacing } from '@/theme/theme';
+import { useThemed, type Theme } from '@/theme/theme';
 
 export default function ProgressScreen() {
-  const { settings, progress, quizzes, recordings, activeDays, fs } = useApp();
+  const { settings, progress, quizzes, recordings, activeDays } = useApp();
+  const { th, styles, colors, spacing } = useThemed(makeStyles);
   const { lang } = settings;
   const stats = computeStats(progress, quizzes, recordings, activeDays);
   const badges = computeBadges(stats);
   const results = STORIES.filter((s) => quizzes[s.id]);
 
   const tiles = [
-    { emoji: '📖', value: `${stats.completed}/${stats.totalStories}`, label: t(lang, 'storiesDone') },
-    { emoji: '⏱️', value: String(stats.minutes), label: t(lang, 'minutesListened') },
-    { emoji: '🔥', value: String(stats.streak), label: t(lang, 'streakDays') },
-    { emoji: '🧠', value: stats.quizAverage === null ? '—' : `${stats.quizAverage}%`, label: t(lang, 'quizAverage') },
+    { value: `${stats.completed}/${stats.totalStories}`, label: t(lang, 'storiesDone') },
+    { value: String(stats.minutes), label: t(lang, 'minutesListened') },
+    { value: String(stats.streak), label: t(lang, 'streakDays') },
+    { value: stats.quizAverage === null ? '—' : `${stats.quizAverage}%`, label: t(lang, 'quizAverage') },
   ];
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={{ padding: spacing.md, paddingBottom: spacing.xl }}>
-      <View style={styles.grid}>
-        {tiles.map((tile) => (
-          <Card key={tile.label} style={styles.tile}>
-            <Text style={styles.tileEmoji}>{tile.emoji}</Text>
-            <Text style={[styles.tileValue, { fontSize: fs(fontSize.title) }]}>{tile.value}</Text>
-            <Text style={[styles.tileLabel, { fontSize: fs(13) }]}>{tile.label}</Text>
-          </Card>
-        ))}
-      </View>
+    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+      {th.id === 'adultos' ? (
+        <View>
+          {tiles.map((tile) => (
+            <View key={tile.label} style={styles.statRow}>
+              <Text style={styles.statLabel}>{tile.label}</Text>
+              <Text style={styles.statValue}>{tile.value}</Text>
+            </View>
+          ))}
+        </View>
+      ) : (
+        <View style={styles.grid}>
+          {tiles.map((tile) => (
+            <Card key={tile.label} style={styles.tile}>
+              <Text style={styles.tileValue}>{tile.value}</Text>
+              <Text style={styles.tileLabel}>{tile.label}</Text>
+            </Card>
+          ))}
+        </View>
+      )}
 
       <View style={{ marginTop: spacing.md }}>
-        <ProgressBar value={stats.completed / stats.totalStories} color={colors.success} height={10} />
+        <ProgressBar value={stats.completed / stats.totalStories} color={colors.success} height={th.id === 'ninos' ? 18 : 6} />
       </View>
 
-      <SectionTitle>🏅 {t(lang, 'badges')}</SectionTitle>
+      <SectionTitle>{t(lang, 'badges')}</SectionTitle>
       <View style={styles.badges}>
         {badges.map((b) => (
           <View key={b.id} style={[styles.badge, !b.earned && styles.badgeLocked]} accessibilityLabel={`${b.title}: ${b.description}`}>
-            <Text style={[styles.badgeEmoji, !b.earned && { opacity: 0.3 }]}>{b.earned ? b.emoji : '🔒'}</Text>
-            <Text style={[styles.badgeTitle, { fontSize: fs(13) }]} numberOfLines={2}>
+            <View style={[styles.mark, b.earned && styles.markOn]} />
+            <Text style={styles.badgeTitle} numberOfLines={2}>
               {b.title}
             </Text>
-            <Text style={[styles.badgeDesc, { fontSize: fs(11) }]} numberOfLines={3}>
+            <Text style={styles.badgeDesc} numberOfLines={3}>
               {b.description}
             </Text>
           </View>
         ))}
       </View>
 
-      <SectionTitle>✍️ {t(lang, 'quizResults')}</SectionTitle>
+      <SectionTitle>{t(lang, 'quizResults')}</SectionTitle>
       {results.length === 0 ? (
-        <Text style={[styles.empty, { fontSize: fs(fontSize.body) }]}>{t(lang, 'noActivity')}</Text>
+        <Text style={styles.empty}>{t(lang, 'noActivity')}</Text>
       ) : (
         results.map((s) => {
           const r = quizzes[s.id];
@@ -66,16 +77,16 @@ export default function ProgressScreen() {
               style={styles.resultRow}
               accessibilityRole="button"
             >
-              <Text style={{ fontSize: 28 }}>{s.emoji}</Text>
+              <Cover story={s} size={48} />
               <View style={{ flex: 1 }}>
-                <Text style={[styles.resultTitle, { fontSize: fs(fontSize.body) }]} numberOfLines={1}>
+                <Text style={styles.resultTitle} numberOfLines={1}>
                   {pickLocalized(s.title, lang)}
                 </Text>
-                <Text style={[styles.resultMeta, { fontSize: fs(13) }]}>
+                <Text style={styles.resultMeta}>
                   {r.best}/{r.total} · {r.attempts} {r.attempts === 1 ? 'intento' : 'intentos'}
                 </Text>
               </View>
-              <Text style={{ fontSize: fs(16) }}>{'⭐'.repeat(starsFor(r.best, r.total))}</Text>
+              <Stars count={starsFor(r.best, r.total)} />
             </Pressable>
           );
         })
@@ -84,39 +95,40 @@ export default function ProgressScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
-  tile: { flexBasis: '48%', flexGrow: 1, alignItems: 'center', paddingVertical: spacing.lg },
-  tileEmoji: { fontSize: 28 },
-  tileValue: { fontWeight: '900', color: colors.primary, marginTop: spacing.xs },
-  tileLabel: { color: colors.textMuted, textAlign: 'center', fontWeight: '600' },
-  badges: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
-  badge: {
-    width: '31%',
-    flexGrow: 1,
-    alignItems: 'center',
-    backgroundColor: colors.highlight,
-    borderRadius: radius.md,
-    padding: spacing.sm,
-    borderWidth: 1,
-    borderColor: colors.gold,
-  },
-  badgeLocked: { backgroundColor: colors.surface, borderColor: colors.border },
-  badgeEmoji: { fontSize: 32 },
-  badgeTitle: { fontWeight: '800', color: colors.text, textAlign: 'center', marginTop: 4 },
-  badgeDesc: { color: colors.textMuted, textAlign: 'center', marginTop: 2 },
-  empty: { color: colors.textMuted, textAlign: 'center', marginTop: spacing.sm },
-  resultRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.md,
-    backgroundColor: colors.white,
-    borderRadius: radius.md,
-    borderWidth: 1,
-    borderColor: colors.border,
-    padding: spacing.md,
-    marginBottom: spacing.sm,
-  },
-  resultTitle: { fontWeight: '800', color: colors.text },
-  resultMeta: { color: colors.textMuted, marginTop: 2 },
-});
+const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs }: Theme) =>
+  StyleSheet.create({
+    content: { padding: spacing.md, paddingBottom: spacing.xl * 2, width: '100%', maxWidth: 760, alignSelf: 'center' },
+    grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
+    tile: { flexBasis: '46%', flexGrow: 1, paddingVertical: spacing.lg },
+    tileValue: { fontFamily: font.heading, fontWeight: '900', color: id === 'jovenes' ? colors.accent : colors.text, fontSize: fs(id === 'ninos' ? 42 : 36) },
+    tileLabel: { color: colors.textMuted, fontWeight: '700', fontSize: fs(13), marginTop: 2 },
+    statRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', paddingVertical: spacing.md, borderBottomWidth: 1, borderBottomColor: colors.border },
+    statLabel: { color: colors.textMuted, fontSize: fs(fontSize.body), fontStyle: 'italic' },
+    statValue: { fontFamily: font.heading, fontWeight: '700', color: colors.text, fontSize: fs(fontSize.title) },
+    badges: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+    badge: {
+      width: '31%',
+      flexGrow: 1,
+      backgroundColor: colors.card,
+      borderRadius: radius.md,
+      padding: spacing.sm + 2,
+      borderWidth: stroke,
+      borderColor: colors.accent,
+    },
+    badgeLocked: { borderColor: colors.border, opacity: 0.6 },
+    mark: { width: 16, height: 16, borderWidth: 2, borderColor: colors.border, transform: [{ rotate: '45deg' }], marginBottom: spacing.sm, marginTop: 2 },
+    markOn: { backgroundColor: colors.accent, borderColor: colors.accent },
+    badgeTitle: { fontWeight: '800', color: colors.text, fontSize: fs(13) },
+    badgeDesc: { color: colors.textMuted, marginTop: 2, fontSize: fs(11) },
+    empty: { color: colors.textMuted, marginTop: spacing.sm, fontSize: fs(fontSize.body) },
+    resultRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.md,
+      paddingVertical: spacing.md,
+      borderBottomWidth: 1,
+      borderBottomColor: colors.border,
+    },
+    resultTitle: { fontWeight: '800', color: colors.text, fontSize: fs(fontSize.body) },
+    resultMeta: { color: colors.textMuted, marginTop: 2, fontSize: fs(13) },
+  });

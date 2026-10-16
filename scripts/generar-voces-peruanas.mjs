@@ -131,7 +131,7 @@ export function mp3DurationSec(buf) {
 
 // ---------- Mapa de audios incluidos en la app ----------
 function writeBundleMap() {
-  const files = existsSync(audioDir) ? readdirSync(audioDir).filter((f) => f.endsWith('.mp3')).sort() : [];
+  const files = existsSync(audioDir) ? readdirSync(audioDir).filter((f) => /\.(mp3|m4a)$/.test(f)).sort() : [];
   const lines = files.map((f) => `  '${f}': require('../../assets/audio/${f}'),`);
   writeFileSync(
     bundleMapFile,

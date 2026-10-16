@@ -52,7 +52,6 @@ export function computeStats(
 
 export interface Badge {
   id: string;
-  emoji: string;
   title: string;
   description: string;
   earned: boolean;
@@ -60,12 +59,12 @@ export interface Badge {
 
 export function computeBadges(st: Stats): Badge[] {
   return [
-    { id: 'primera', emoji: '📖', title: 'Primera historia', description: 'Termina tu primera historia', earned: st.completed >= 1 },
-    { id: 'gran-lector', emoji: '📚', title: 'Gran lector', description: 'Termina 5 historias', earned: st.completed >= 5 },
-    { id: 'explorador', emoji: '🧭', title: 'Explorador del Perú', description: 'Termina historias de costa, sierra y selva', earned: st.regionsCompleted >= 3 },
-    { id: 'mente-aguda', emoji: '🧠', title: 'Mente aguda', description: 'Responde todas las preguntas bien', earned: st.perfectQuiz },
-    { id: 'racha', emoji: '🔥', title: 'Constancia', description: 'Escucha 3 días seguidos', earned: st.streak >= 3 },
-    { id: 'una-hora', emoji: '⏱️', title: 'Una hora de historias', description: 'Escucha 60 minutos en total', earned: st.minutes >= 60 },
-    { id: 'voz', emoji: '🎙️', title: 'Voz de mi pueblo', description: 'Graba una historia con tu voz', earned: st.recordings >= 1 },
+    { id: 'primera', title: 'Primera historia', description: 'Termina tu primera historia', earned: st.completed >= 1 },
+    { id: 'gran-lector', title: 'Gran lector', description: 'Termina 5 historias', earned: st.completed >= 5 },
+    { id: 'explorador', title: 'Explorador del Perú', description: 'Termina historias de costa, sierra y selva', earned: st.regionsCompleted >= 3 },
+    { id: 'mente-aguda', title: 'Mente aguda', description: 'Responde todas las preguntas bien', earned: st.perfectQuiz },
+    { id: 'racha', title: 'Constancia', description: 'Escucha 3 días seguidos', earned: st.streak >= 3 },
+    { id: 'una-hora', title: 'Una hora de historias', description: 'Escucha 60 minutos en total', earned: st.minutes >= 60 },
+    { id: 'voz', title: 'Voz de mi pueblo', description: 'Graba una historia con tu voz', earned: st.recordings >= 1 },
   ];
 }
