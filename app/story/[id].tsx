@@ -1,9 +1,13 @@
 import { router, Stack, useLocalSearchParams } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Ambience } from '@/components/Ambience';
+import { cuesFor } from '@/content/ambience';
 import { Button, Card, Chip, Cover, Glyph, label as caps, ProgressBar, SectionTitle, Text } from '@/components/ui';
-import { estimateMinutes, getStory } from '@/content';
+import { estimateMinutes, getStory, isUserBook } from '@/content';
+import { deleteBook } from '@/services/books';
+import { confirmAction } from '@/utils/confirm';
 import {
   isRemoteAudio,
   narratedLanguages,
@@ -71,9 +75,10 @@ function StoryPlayer({
   viewLang: LanguageCode;
   setViewLang: (l: LanguageCode) => void;
 }) {
-  const { settings, progress, recordings, updateSettings, savePosition, addListening, markCompleted } = useApp();
+  const { settings, progress, recordings, updateSettings, savePosition, addListening, markCompleted, booksChanged } = useApp();
   const { th, styles, colors, spacing } = useThemed(makeStyles);
   const insets = useSafeAreaInsets();
+  const { width: screenWidth } = useWindowDimensions();
   const { lang } = settings;
   const [finished, setFinished] = useState(false);
   const [noVoice, setNoVoice] = useState(false);
@@ -95,6 +100,7 @@ function StoryPlayer({
 
   const isTts = resolved.source.kind === 'tts';
   const paragraphs = resolved.source.paragraphs;
+  const cues = useMemo(() => cuesFor(story.paragraphs.es, story.region, story.ambience), [story]);
 
   useEffect(() => {
     if (isTts) hasSpanishVoice().then((ok) => setNoVoice(!ok));
@@ -120,8 +126,12 @@ function StoryPlayer({
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <ScrollView ref={scrollRef} contentContainerStyle={styles.content}>
         {/* Cabecera */}
-        <View style={styles.header}>
-          <Cover story={story} size={th.id === 'ninos' ? 116 : th.id === 'jovenes' ? 96 : 76} title={pickLocalized(story.title, lang)} />
+        <View style={[styles.header, th.id === 'ninos' && { flexDirection: 'column', alignItems: 'center' }]}>
+          <Cover
+            story={story}
+            size={th.id === 'ninos' ? Math.min(Math.min(screenWidth, MAX_WIDTH) - spacing.md * 2 - th.shadowOffset, 300) : th.id === 'jovenes' ? 96 : 76}
+            title={pickLocalized(story.title, lang)}
+          />
           <View style={{ flex: 1 }}>
             <Text style={styles.title}>{pickLocalized(story.title, lang)}</Text>
             <Text style={styles.meta}>
@@ -130,7 +140,7 @@ function StoryPlayer({
             </Text>
             {story.original && th.id !== 'ninos' && <Text style={[styles.meta, { color: colors.accent, fontWeight: '700' }]}>{t(lang, 'originalText')}</Text>}
             <Text style={styles.meta}>
-              {caps(th, t(lang, story.region))} · {estimateMinutes(story)} {t(lang, 'minutes')}
+              {caps(th, isUserBook(story) ? 'Audiolibro' : t(lang, story.region))} · {estimateMinutes(story)} {t(lang, 'minutes')}
             </Text>
           </View>
         </View>
@@ -229,6 +239,7 @@ function StoryPlayer({
           </Card>
         )}
 
+        {story.quiz.length > 0 && (
         <Button
           label={t(lang, 'answerQuestions')}
           onPress={() => {
@@ -237,9 +248,10 @@ function StoryPlayer({
           }}
           style={{ marginTop: spacing.lg }}
         />
+        )}
 
         {/* Glosario */}
-        <SectionTitle>{t(lang, 'newWords')}</SectionTitle>
+        {story.glossary.length > 0 && <SectionTitle>{t(lang, 'newWords')}</SectionTitle>}
         {story.glossary.map((g) => (
           <View key={g.word} style={styles.glossaryRow}>
             <Text style={styles.glossaryWord}>{g.word}</Text>
@@ -257,8 +269,24 @@ function StoryPlayer({
         <Text style={styles.source}>
           {t(lang, 'source')}: {story.source}
         </Text>
+
+        {isUserBook(story) && (
+          <Button
+            label="Eliminar este audiolibro"
+            variant="danger"
+            onPress={async () => {
+              if (!(await confirmAction('¿Eliminar este audiolibro del dispositivo?', t(lang, 'confirm'), t(lang, 'cancel')))) return;
+              narration.pause();
+              await deleteBook(story.id);
+              booksChanged();
+              router.dismissTo('/');
+            }}
+            style={{ marginTop: spacing.lg }}
+          />
+        )}
       </ScrollView>
 
+      <Ambience cues={cues} index={narration.index} playing={narration.playing} enabled={settings.ambience} />
       {/* Controles fijos abajo */}
       <View style={[styles.controls, { paddingBottom: insets.bottom + spacing.sm }]}>
         <View style={styles.controlsInner}>
@@ -294,6 +322,7 @@ function StoryPlayer({
             {SPEEDS.map((sp) => (
               <Chip key={sp} label={`${sp}x`} active={settings.speechRate === sp} onPress={() => updateSettings({ speechRate: sp })} />
             ))}
+            <Chip label={t(lang, 'sounds')} active={settings.ambience} onPress={() => updateSettings({ ambience: !settings.ambience })} />
           </View>
         </View>
       </View>
@@ -358,5 +387,5 @@ const makeStyles = ({ id, colors, spacing, radius, fontSize, font, stroke, fs, u
       alignItems: 'center',
       justifyContent: 'center',
     },
-    speedRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, marginTop: spacing.xs },
+    speedRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, marginTop: spacing.xs },
   });

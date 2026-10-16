@@ -1,0 +1,3 @@
+pdf.js 3.11.174 (build legacy), Mozilla. Licencia Apache-2.0 (ver LICENSE.txt).
+Se usa para leer el texto de los PDF que sube la persona usuaria, dentro del telefono.
+Los archivos .txt son los .js originales con otra extension para que Metro los trate como recursos.

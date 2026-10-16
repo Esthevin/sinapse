@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
-import { estimateMinutes } from '@/content';
+import { estimateMinutes, isUserBook } from '@/content';
 import { hasAudioNarration, hasHumanNarration } from '@/content/narration';
 import type { Story } from '@/content/types';
 import { LANGUAGES, t, pickLocalized } from '@/i18n/translations';
@@ -30,7 +30,7 @@ export function StoryCard({ story, index, width }: { story: Story; index: number
   const stars = quiz ? starsFor(quiz.best, quiz.total) : 0;
   const inProgress = !!prog && !prog.completed && prog.paragraph > 0;
   const mins = `${estimateMinutes(story)} ${t(lang, 'minutes')}`;
-  const region = t(lang, story.region);
+  const region = isUserBook(story) ? 'Mi PDF' : t(lang, story.region);
   const human = hasHumanNarration(story, 'es', recordings[story.id]);
   const langs = LANGUAGES.filter((l) => l.code !== 'es' && (l.code === lang || hasAudioNarration(story, l.code, recordings[story.id])));
   const open = () => router.push({ pathname: '/story/[id]', params: { id: story.id } });

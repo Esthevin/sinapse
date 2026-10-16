@@ -156,5 +156,13 @@
       "answer": 1,
       "explanation": "Los prejuicios hicieron rechazar un remedio eficaz que venía del saber andino."
     }
-  ]
+  ],
+  "ambience": [
+    {
+      "from": 0,
+      "bed": null,
+      "fx": null
+    }
+  ],
+  "revision": 2
 }

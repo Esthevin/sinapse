@@ -1,0 +1,2 @@
+# Audios pesados: no se suben a git (el episodio final va en assets/audio como MP3)
+*.wav

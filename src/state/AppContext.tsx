@@ -1,3 +1,4 @@
+import { loadBooks } from '@/services/books';
 import { downloadCatalog, loadCachedCatalog } from '@/services/catalog';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
@@ -12,6 +13,8 @@ export interface Settings {
   onboarded: boolean;
   /** Muestra herramientas internas del equipo (sincronizar párrafos). */
   teamTools: boolean;
+  /** Sonidos de ambiente durante la narración (viento, pasos, lluvia…). */
+  ambience: boolean;
 }
 
 export interface StoryProgress {
@@ -53,7 +56,7 @@ const PROFILE_TEXT_SCALE: Record<AgeGroup, number> = { ninos: 1.08, jovenes: 1, 
 const STORAGE_KEY = 'sinapse.state.v1';
 
 const INITIAL: PersistedState = {
-  settings: { lang: 'es', profile: null, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false },
+  settings: { lang: 'es', profile: null, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false, ambience: true },
   progress: {},
   quizzes: {},
   recordings: {},
@@ -81,6 +84,8 @@ interface AppState extends PersistedState {
   catalogVersion: number;
   /** Descarga historias nuevas. Devuelve cuántas se agregaron o actualizaron, o null si no hubo conexión. */
   refreshCatalog: () => Promise<number | null>;
+  /** Avisa que se agregaron o quitaron libros del usuario, para redibujar la biblioteca. */
+  booksChanged: () => void;
   /** Escala un tamaño de letra según la preferencia del usuario. */
   fs: (size: number) => number;
   updateSettings: (patch: Partial<Settings>) => void;
@@ -109,9 +114,19 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         if (!raw) return;
         const saved = JSON.parse(raw) as Partial<PersistedState>;
         const settings = { ...INITIAL.settings, ...saved.settings };
-        // Si la lengua guardada ya no está en el registro, volver al castellano.
+        // Datos guardados dañados o de versiones antiguas no deben tumbar la app (pantalla en blanco).
         if (!isLanguageCode(settings.lang)) settings.lang = 'es';
-        setState({ ...INITIAL, ...saved, settings });
+        if (settings.profile !== null && !(settings.profile in PROFILE_TEXT_SCALE)) settings.profile = null;
+        if (typeof settings.fontScale !== 'number' || !(settings.fontScale >= 0.5 && settings.fontScale <= 2)) settings.fontScale = 1;
+        if (typeof settings.speechRate !== 'number' || !(settings.speechRate > 0)) settings.speechRate = 1;
+        const obj = <T,>(v: unknown, fallback: T): T => (v && typeof v === 'object' && !Array.isArray(v) ? (v as T) : fallback);
+        setState({
+          settings,
+          progress: obj(saved.progress, INITIAL.progress),
+          quizzes: obj(saved.quizzes, INITIAL.quizzes),
+          recordings: obj(saved.recordings, INITIAL.recordings),
+          activeDays: Array.isArray(saved.activeDays) ? saved.activeDays.filter((d) => typeof d === 'string') : [],
+        });
       })
       .catch((e) => console.warn('No se pudo leer el avance guardado', e))
       .finally(() => {
@@ -131,6 +146,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!ready) return;
     loadCachedCatalog().then((n) => {
+      if (n > 0) setCatalogVersion((v) => v + 1);
+    });
+    loadBooks().then((n) => {
       if (n > 0) setCatalogVersion((v) => v + 1);
     });
     refreshCatalog();
@@ -227,6 +245,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   );
 
   const profileScale = PROFILE_TEXT_SCALE[state.settings.profile ?? 'adultos'];
+  const booksChanged = useCallback(() => setCatalogVersion((v) => v + 1), []);
+
   const fs = useCallback((size: number) => Math.round(size * state.settings.fontScale * profileScale), [state.settings.fontScale, profileScale]);
 
   const value = useMemo<AppState>(
@@ -235,6 +255,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       ready,
       catalogVersion,
       refreshCatalog,
+      booksChanged,
       fs,
       updateSettings,
       openStory,
@@ -246,7 +267,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       removeRecording,
       resetProgress,
     }),
-    [state, ready, catalogVersion, refreshCatalog, fs, updateSettings, openStory, savePosition, addListening, markCompleted, saveQuiz, saveRecording, removeRecording, resetProgress]
+    [state, ready, catalogVersion, refreshCatalog, booksChanged, fs, updateSettings, openStory, savePosition, addListening, markCompleted, saveQuiz, saveRecording, removeRecording, resetProgress]
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

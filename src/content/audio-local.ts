@@ -4,4 +4,6 @@
  * ARCHIVO GENERADO por `npm run voces:generar`: no editar a mano.
  * Cada historia con `"url": "bundle:<archivo>"` se resuelve aquí.
  */
-export const BUNDLED_AUDIO: Record<string, number> = {};
+export const BUNDLED_AUDIO: Record<string, number> = {
+  'zorro-y-condor.es.mp3': require('../../assets/audio/zorro-y-condor.es.mp3'),
+};

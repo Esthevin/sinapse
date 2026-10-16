@@ -1,0 +1,24 @@
+{
+  "titulo": "El zorro y el cóndor — piloto experimental",
+  "idioma": "es",
+  "nota": "Guion original experimental; no representa una versión tradicional verificada.",
+  "sample_rate": 44100,
+  "pausa_entre_intervenciones": 0.45,
+  "intro_seg": 2.0,
+  "outro_seg": 2.5,
+  "musica": {"archivo": "recursos/musica/musica.wav", "ganancia": 0.10},
+  "ambiente": {"archivo": "recursos/ambientes/viento.wav", "ganancia": 0.04},
+  "efectos": [
+    {"despues_de": "n02", "archivo": "recursos/efectos/aleteo.wav", "ganancia": 0.18}
+  ],
+  "intervenciones": [
+    {"id":"n01","personaje":"narrador","emocion":"cálido y misterioso","texto":"Hace mucho tiempo, entre las montañas de los Andes, vivía un pequeño zorro que tenía un sueño muy especial. Cada mañana subía hasta la cima de un cerro y observaba el cielo."},
+    {"id":"n02","personaje":"narrador","emocion":"asombro","texto":"Allí, muy por encima de las nubes, un majestuoso cóndor extendía sus enormes alas y volaba libremente sobre los valles. El zorro lo miraba maravillado."},
+    {"id":"z01","personaje":"zorro","emocion":"entusiasmado","texto":"¡Ah! ¡Qué maravilloso debe ser volar! ¡Poder mirar todas las montañas desde arriba!"},
+    {"id":"n03","personaje":"narrador","emocion":"expectación","texto":"Pero aquel día, algo inesperado estaba por suceder. El gran cóndor descendió y se posó sobre una roca cerca de él."},
+    {"id":"c01","personaje":"condor","emocion":"sereno","texto":"Buenos días, pequeño zorro. Te he visto observar el cielo durante muchos días. ¿Qué es lo que buscas?"},
+    {"id":"z02","personaje":"zorro","emocion":"ilusionado","texto":"¡Quiero volar como tú! Dime, amigo cóndor, ¿crees que algún día podría hacerlo?"},
+    {"id":"c02","personaje":"condor","emocion":"reflexivo","texto":"Los sueños pueden llevarnos muy lejos, pequeño amigo. Pero debes comprender que el cielo también tiene sus peligros."},
+    {"id":"n04","personaje":"narrador","emocion":"suspenso suave","texto":"El zorro guardó silencio. Sus ojos brillaban de emoción. Todavía no sabía que aquella conversación sería el comienzo de una aventura."}
+  ]
+}

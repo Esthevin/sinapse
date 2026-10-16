@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { Card, Chip, Cover, Glyph, SectionTitle, Text } from '@/components/ui';
-import { STORIES } from '@/content';
+import { isUserBook, STORIES as ALL_STORIES } from '@/content';
 import { FAMILY_LABEL, LANGUAGES, languageName, t, type Language, pickLocalized } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
 import { useThemed, type Theme } from '@/theme/theme';
@@ -11,6 +11,7 @@ import { formatTime } from '@/utils/format';
 const FAMILIES: Language['family'][] = ['andina', 'amazonica', 'castellano'];
 
 export default function StudioScreen() {
+  const STORIES = ALL_STORIES.filter((s) => !isUserBook(s));
   const { settings, recordings } = useApp();
   const { styles, colors, spacing } = useThemed(makeStyles);
   const { lang } = settings;

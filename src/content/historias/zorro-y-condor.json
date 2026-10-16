@@ -1,0 +1,145 @@
+{
+  "id": "zorro-y-condor",
+  "revision": 1,
+  "title": {
+    "es": "El zorro y el cóndor"
+  },
+  "author": "Guion experimental de Sinapse",
+  "collection": "Radiodrama piloto",
+  "source": "Guion experimental propio del piloto de radiodrama de Sinapse (autoría por confirmar), inspirado en el ciclo andino del zorro y el cóndor, de tradición oral. No es una versión tradicional verificada. Voces sintéticas generadas con Kokoro-82M (licencia Apache-2.0); no imitan a ninguna persona.",
+  "region": "sierra",
+  "ages": [
+    "ninos",
+    "jovenes"
+  ],
+  "coverColor": "#D9622B",
+  "summary": {
+    "es": "Un pequeño zorro sueña con volar. Un día, el gran cóndor baja a hablar con él y le dice algo que no esperaba."
+  },
+  "paragraphs": {
+    "es": [
+      "Hace mucho tiempo, entre las montañas de los Andes, vivía un pequeño zorro que tenía un sueño muy especial. Cada mañana subía hasta la cima de un cerro y observaba el cielo.",
+      "Allí, muy por encima de las nubes, un majestuoso cóndor extendía sus enormes alas y volaba libremente sobre los valles. El zorro lo miraba maravillado.",
+      "¡Ah! ¡Qué maravilloso debe ser volar! ¡Poder mirar todas las montañas desde arriba!",
+      "Pero aquel día, algo inesperado estaba por suceder. El gran cóndor descendió y se posó sobre una roca cerca de él.",
+      "Buenos días, pequeño zorro. Te he visto observar el cielo durante muchos días. ¿Qué es lo que buscas?",
+      "¡Quiero volar como tú! Dime, amigo cóndor, ¿crees que algún día podría hacerlo?",
+      "Los sueños pueden llevarnos muy lejos, pequeño amigo. Pero debes comprender que el cielo también tiene sus peligros.",
+      "El zorro guardó silencio. Sus ojos brillaban de emoción. Todavía no sabía que aquella conversación sería el comienzo de una aventura."
+    ]
+  },
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "kokoro-voces-sinteticas",
+      "voiceSource": "sintetica",
+      "url": "bundle:zorro-y-condor.es.mp3",
+      "license": "Voces generadas con IA, Kokoro-82M (Apache-2.0). Guion experimental de Sinapse.",
+      "durationSec": 65.1,
+      "textStartSec": 2.0,
+      "textEndSec": 62.2,
+      "paragraphStartsSec": [
+        2.0,
+        12.75,
+        22.225,
+        27.475,
+        34.925,
+        41.4,
+        46.75,
+        54.175
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "word": "Cóndor",
+      "meaning": "Ave enorme de los Andes, una de las que vuelan más alto.",
+      "translations": {
+        "qu": "Kuntur",
+        "ay": "Kunturi"
+      }
+    },
+    {
+      "word": "Zorro",
+      "meaning": "Animal parecido a un perro pequeño, de cola larga y muy astuto.",
+      "translations": {
+        "qu": "Atuq",
+        "ay": "Qamaqi"
+      }
+    },
+    {
+      "word": "Cima",
+      "meaning": "La parte más alta de una montaña o un cerro."
+    },
+    {
+      "word": "Majestuoso",
+      "meaning": "Que impresiona por ser grande, elegante y poderoso."
+    },
+    {
+      "word": "Maravillado",
+      "meaning": "Con mucha admiración por algo que se ve."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Qué hacía el zorro cada mañana?",
+      "options": [
+        "Cazaba en el valle",
+        "Subía a un cerro y observaba el cielo",
+        "Dormía junto al río",
+        "Buscaba al cóndor en el pueblo"
+      ],
+      "answer": 1,
+      "explanation": "El texto dice que cada mañana subía hasta la cima de un cerro y observaba el cielo."
+    },
+    {
+      "level": "literal",
+      "question": "¿Qué sueño tenía el zorro?",
+      "options": [
+        "Ser más fuerte que el cóndor",
+        "Vivir en una cueva grande",
+        "Volar como el cóndor",
+        "Cruzar las montañas a pie"
+      ],
+      "answer": 2,
+      "explanation": "El zorro le dice al cóndor: «¡Quiero volar como tú!»."
+    },
+    {
+      "level": "literal",
+      "question": "¿Dónde se posó el cóndor cuando bajó?",
+      "options": [
+        "En la copa de un árbol",
+        "En el lomo del zorro",
+        "En una roca cerca del zorro",
+        "En la cima de la montaña más alta"
+      ],
+      "answer": 2,
+      "explanation": "El gran cóndor descendió y se posó sobre una roca cerca de él."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué el cóndor dice que «el cielo también tiene sus peligros»?",
+      "options": [
+        "Para asustar al zorro sin razón",
+        "Porque quiere cuidar al zorro y que sea prudente",
+        "Porque no quiere compartir el cielo",
+        "Porque ya se cayó muchas veces"
+      ],
+      "answer": 1,
+      "explanation": "El cóndor habla con cariño («pequeño amigo»): no le quita el sueño, le pide que piense en los riesgos."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué enseñanza deja la conversación entre el zorro y el cóndor?",
+      "options": [
+        "Que es mejor no soñar",
+        "Que los sueños valen, pero hay que conocer los riesgos",
+        "Que el cóndor es más importante que el zorro",
+        "Que los animales no deben hablar entre ellos"
+      ],
+      "answer": 1,
+      "explanation": "El cóndor reconoce que los sueños llevan lejos y a la vez advierte de los peligros: soñar y ser prudente van juntos."
+    }
+  ]
+}

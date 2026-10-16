@@ -2,14 +2,15 @@
   "expo": {
     "name": "Sinapse",
     "slug": "sinapse",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "orientation": "portrait",
     "scheme": "sinapse",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
+      "image": "./assets/splash-logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#1B3A5B"
+      "backgroundColor": "#1D1A16"
     },
     "ios": {
       "supportsTablet": true,
@@ -22,11 +23,20 @@
     },
     "android": {
       "package": "pe.sinapse.app",
-      "versionCode": 4
+      "versionCode": 5,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1D1A16"
+      }
     },
     "web": {
       "bundler": "metro",
-      "output": "single"
+      "output": "single",
+      "favicon": "./assets/favicon.png",
+      "name": "Sinapse",
+      "shortName": "Sinapse",
+      "backgroundColor": "#F6F1E7",
+      "themeColor": "#1D1A16"
     },
     "plugins": [
       "expo-router",
@@ -44,6 +54,7 @@
     },
     "experiments": {
       "baseUrl": "/sinapse"
-    }
+    },
+    "icon": "./assets/icon.png"
   }
 }
