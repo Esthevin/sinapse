@@ -111,6 +111,8 @@ export interface Story {
   summary: Localized<string>;
   paragraphs: Localized<string[]>;
   audio: NarratorTrack[];
+  /** true en los audiolibros que vienen de un PDF: no llevan preguntas ni glosario. */
+  sinPreguntas?: boolean;
   /** Ajustes manuales del diseño sonoro automático (opcional). */
   ambience?: AmbienceOverride[];
   glossary: GlossaryEntry[];

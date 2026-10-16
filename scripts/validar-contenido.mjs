@@ -153,7 +153,9 @@ for (const file of files) {
     });
 
   // Glosario
-  if (!Array.isArray(s.glossary) || s.glossary.length === 0) warn(file, 'sin glosario de palabras nuevas');
+  if (s.sinPreguntas) {
+    /* audiolibro de PDF: sin glosario */
+  } else if (!Array.isArray(s.glossary) || s.glossary.length === 0) warn(file, 'sin glosario de palabras nuevas');
   else
     s.glossary.forEach((g, i) => {
       if (!isNonEmptyString(g.word) || !isNonEmptyString(g.meaning)) error(file, `glossary[${i}] necesita "word" y "meaning"`);
@@ -162,7 +164,9 @@ for (const file of files) {
     });
 
   // Preguntas
-  if (!Array.isArray(s.quiz) || s.quiz.length < 3) error(file, '"quiz" debe tener al menos 3 preguntas');
+  if (s.sinPreguntas) {
+    if (!Array.isArray(s.quiz) || s.quiz.length) error(file, '"sinPreguntas" exige "quiz": []');
+  } else if (!Array.isArray(s.quiz) || s.quiz.length < 3) error(file, '"quiz" debe tener al menos 3 preguntas');
   else {
     s.quiz.forEach((q, i) => {
       const n = i + 1;

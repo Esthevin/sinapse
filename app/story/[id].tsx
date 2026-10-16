@@ -89,6 +89,7 @@ function StoryPlayer({
   const narration = useNarration({
     source: resolved.source,
     rate: settings.speechRate,
+    voiceId: settings.voiceId,
     startParagraph: progress[story.id]?.paragraph ?? 0,
     onParagraph: (i) => savePosition(story.id, i),
     onComplete: () => {
