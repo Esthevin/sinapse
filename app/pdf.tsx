@@ -1,14 +1,18 @@
 import * as DocumentPicker from 'expo-document-picker';
 import * as FileSystem from 'expo-file-system';
+import * as Speech from 'expo-speech';
 import { router, Stack } from 'expo-router';
 import { useCallback, useEffect, useState } from 'react';
 import { ActivityIndicator, Platform, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { PdfRunner } from '@/components/PdfRunner';
+import { isUserBook, STORIES } from '@/content';
+import { confirmAction } from '@/utils/confirm';
 import { Button, Card, Chip, Glyph, ProgressBar, Text } from '@/components/ui';
 import { buildPdfHtml, type PdfMessage } from '@/services/pdfHtml';
 import { loadPdfJs } from '@/services/pdfSources';
-import { prepareParagraphs, saveBook, wordCount } from '@/services/books';
+import { listSpanishVoices, voiceLabel } from '@/services/speech';
+import { deleteBook, prepareParagraphs, saveBook, wordCount } from '@/services/books';
 import { analyzePdf, previewOf, type Analysis, type Section } from '@/services/pdfAnalyze';
 import { useApp } from '@/state/AppContext';
 import { useThemed, type Theme } from '@/theme/theme';
@@ -43,7 +47,15 @@ function fileBase64(asset: DocumentPicker.DocumentPickerAsset): Promise<string> 
 }
 
 export default function PdfScreen() {
-  const { booksChanged } = useApp();
+  const { booksChanged, catalogVersion, settings, updateSettings } = useApp();
+  const [voices, setVoices] = useState<Speech.Voice[]>([]);
+  useEffect(() => {
+    listSpanishVoices().then(setVoices);
+  }, []);
+  const tryVoice = (id: string | null) => {
+    Speech.stop();
+    Speech.speak('Así sonará la lectura de tu libro.', { language: 'es-PE', voice: id ?? undefined, rate: settings.speechRate });
+  };
   const { styles, colors, spacing } = useThemed(makeStyles);
   const insets = useSafeAreaInsets();
   const [phase, setPhase] = useState<Phase>({ name: 'idle' });
@@ -128,6 +140,21 @@ export default function PdfScreen() {
     }
   };
 
+  // Audiolibros ya creados (catalogVersion hace que la lista se actualice al borrar).
+  const myBooks = catalogVersion >= 0 ? STORIES.filter(isUserBook) : [];
+
+  const removeBook = async (id: string, name: string) => {
+    if (!(await confirmAction(`¿Eliminar "${name}" del dispositivo?`, 'Eliminar', 'Cancelar'))) return;
+    await deleteBook(id);
+    booksChanged();
+  };
+
+  const removeAll = async () => {
+    if (!(await confirmAction(`¿Eliminar los ${myBooks.length} audiolibros del dispositivo?`, 'Eliminar todos', 'Cancelar'))) return;
+    for (const b of [...myBooks]) await deleteBook(b.id);
+    booksChanged();
+  };
+
   const toggle = (id: string) => phase.name === 'preview' && setPhase({ ...phase, selected: { ...phase.selected, [id]: !phase.selected[id] } });
   const setAll = (value: boolean) =>
     phase.name === 'preview' && setPhase({ ...phase, selected: Object.fromEntries(phase.analysis.sections.map((sec) => [sec.id, value])) });
@@ -156,6 +183,51 @@ export default function PdfScreen() {
               {'•'} Usa solo documentos que tengas derecho a usar.
             </Text>
           </Card>
+
+          <Text style={styles.heading}>Voz para leer tus libros</Text>
+          <Text style={styles.note}>Son voces del teléfono (no inteligencia artificial de Sinapse). Toca una para escucharla.</Text>
+          <View style={styles.chips}>
+            <Chip label="Una voz por personaje" active={settings.multiVoice} onPress={() => updateSettings({ multiVoice: !settings.multiVoice })} />
+            <Chip label="Automática" active={settings.voiceId === null} onPress={() => { updateSettings({ voiceId: null }); tryVoice(null); }} />
+          </View>
+          {voices.map((v, i) => {
+            const on = settings.voiceId === v.identifier;
+            return (
+              <Pressable
+                key={v.identifier}
+                onPress={() => {
+                  updateSettings({ voiceId: v.identifier });
+                  tryVoice(v.identifier);
+                }}
+                accessibilityRole="radio"
+                accessibilityState={{ selected: on }}
+                style={styles.sectionRow}
+              >
+                <View style={[styles.checkbox, on && styles.checkboxOn]}>{on && <Glyph name="check" size={18} color={colors.onPrimary} />}</View>
+                <Text style={[styles.sectionTitle, { flex: 1 }]}>{voiceLabel(v, i)}</Text>
+              </Pressable>
+            );
+          })}
+
+          {myBooks.length > 0 && (
+            <>
+              <Text style={styles.heading}>Mis audiolibros ({myBooks.length})</Text>
+              {myBooks.map((b) => (
+                <View key={b.id} style={styles.sectionRow}>
+                  <View style={{ flex: 1 }}>
+                    <Text style={styles.sectionTitle}>{b.title.es}</Text>
+                    <Text style={styles.sectionMeta}>
+                      {b.paragraphs.es.length} párrafos{b.collection ? ` · ${b.collection}` : ''}
+                    </Text>
+                  </View>
+                  <Button label="Eliminar" variant="danger" onPress={() => removeBook(b.id, b.title.es)} />
+                </View>
+              ))}
+              {myBooks.length > 1 && (
+                <Button label="Eliminar todos" variant="danger" onPress={removeAll} style={{ marginTop: spacing.md }} />
+              )}
+            </>
+          )}
         </>
       )}
 
