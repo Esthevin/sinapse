@@ -24,7 +24,23 @@
       "Asustados, entendieron el mensaje: la cocha no era solo de ellos. Desde entonces, en la comunidad se cuenta esta historia a los niños, para que cuiden los ríos, no los ensucien y respeten a los animales del agua."
     ]
   },
-  "audio": [],
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "voz-camila-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:yacumama.es.mp3",
+      "license": "Voz neuronal es-PE-CamilaNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
+      "durationSec": 70.344,
+      "paragraphStartsSec": [
+        0,
+        14.76,
+        27.024,
+        38.952,
+        56.592
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Agua",

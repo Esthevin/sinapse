@@ -24,7 +24,23 @@
       "Antes de que se cumpliera el plazo, Jeromo recuperó la joya y se la devolvió a fray Gómez, muy agradecido. El fraile la puso en la ventana y dijo: —Animalito de Dios, sigue tu camino. Y la joya volvió a ser alacrán, y se fue caminando tranquilamente por la pared."
     ]
   },
-  "audio": [],
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "voz-camila-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:alacran-fray-gomez.es.mp3",
+      "license": "Voz neuronal es-PE-CamilaNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
+      "durationSec": 79.128,
+      "paragraphStartsSec": [
+        0,
+        15.264,
+        29.976,
+        50.784,
+        62.016
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Buhonero",

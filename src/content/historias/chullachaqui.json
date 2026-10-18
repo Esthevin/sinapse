@@ -25,7 +25,24 @@
       "Siguiendo el río, llegó a su comunidad al anochecer. Desde entonces Tito respeta el bosque: nunca entra solo, avisa a dónde va y solo toma lo que necesita. Dicen que el Chullachaqui no hace daño a quien cuida la selva."
     ]
   },
-  "audio": [],
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "voz-camila-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:chullachaqui.es.mp3",
+      "license": "Voz neuronal es-PE-CamilaNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
+      "durationSec": 85.488,
+      "paragraphStartsSec": [
+        0,
+        12.552,
+        25.344,
+        38.184,
+        55.152,
+        70.8
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Pie",

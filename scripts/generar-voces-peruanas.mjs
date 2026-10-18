@@ -21,8 +21,14 @@
  *   npm run voces:generar -- --dry-run          # ver qué se generará y cuántos caracteres
  *   npm run voces:generar                       # generar lo que falte
  *   npm run voces:generar -- --story naylamp --voz alex --force
+ *
+ * Motor alternativo SIN cuenta de Azure (pruebas): --motor edge
+ *   Usa las mismas voces con la librería `edge-tts` (pip install edge-tts). NO es un servicio
+ *   oficial: sirve para probar; para publicar a largo plazo usa Azure (--motor azure, el predeterminado).
  */
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -58,7 +64,8 @@ const FORCE = flag('force');
 const ONLY = option('story');
 const VOICE_CHOICE = option('voz', 'auto'); // camila | alex | auto (alterna entre historias)
 const RATE = option('ritmo', '-6%'); // un poco más pausado que lo normal: mejor para comprender
-const PAUSE_MS = Number(option('pausa', '3100')); // el plan gratuito admite ~20 pedidos por minuto
+const ENGINE = option('motor', 'azure'); // azure | edge
+const PAUSE_MS = Number(option('pausa', ENGINE === 'edge' ? '300' : '3100')); // el plan gratuito de Azure admite ~20 pedidos por minuto
 const KEY = process.env.AZURE_SPEECH_KEY;
 const REGION = process.env.AZURE_SPEECH_REGION;
 const OUTPUT_FORMAT = 'audio-24khz-48kbitrate-mono-mp3';
@@ -90,6 +97,30 @@ async function synthesize(text, voiceId) {
     const detail = (await res.text()).slice(0, 300);
     if (res.status === 401) throw new Error('Azure rechazó la clave (401). Revisa AZURE_SPEECH_KEY y AZURE_SPEECH_REGION.');
     throw new Error(`Azure respondió ${res.status}: ${detail}`);
+  }
+}
+
+// ---------- edge-tts (alternativa sin cuenta de Azure; no oficial) ----------
+function synthesizeEdge(text, voiceId) {
+  const textFile = join(tmpdir(), `sinapse-edge-${process.pid}.txt`);
+  const outFile = join(tmpdir(), `sinapse-edge-${process.pid}.mp3`);
+  writeFileSync(textFile, text, 'utf8');
+  try {
+    for (let attempt = 1; ; attempt++) {
+      try {
+        execFileSync('python', ['-m', 'edge_tts', '--voice', voiceId, `--rate=${RATE}`, '--file', textFile, '--write-media', outFile], {
+          stdio: ['ignore', 'ignore', 'pipe'],
+        });
+        return readFileSync(outFile);
+      } catch (e) {
+        if (attempt >= 4) throw new Error(`edge-tts falló: ${String(e.stderr ?? e.message).slice(0, 300)} (¿pip install edge-tts?)`);
+        // reintentar tras una breve espera
+        Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, attempt * 2000);
+      }
+    }
+  } finally {
+    rmSync(textFile, { force: true });
+    rmSync(outFile, { force: true });
   }
 }
 
@@ -178,7 +209,7 @@ async function main() {
     return;
   }
 
-  if (!KEY || !REGION) {
+  if (ENGINE === 'azure' && (!KEY || !REGION)) {
     console.error('❌ Falta configurar AZURE_SPEECH_KEY y AZURE_SPEECH_REGION (en .env.local). Ver docs/VOCES.md.');
     process.exit(1);
   }
@@ -191,7 +222,7 @@ async function main() {
     const starts = [];
     let t = 0;
     for (const [k, paragraph] of story.paragraphs.es.entries()) {
-      const mp3 = await synthesize(paragraph, voice.id);
+      const mp3 = ENGINE === 'edge' ? synthesizeEdge(paragraph, voice.id) : await synthesize(paragraph, voice.id);
       starts.push(Number(t.toFixed(3)));
       t += mp3DurationSec(mp3);
       parts.push(mp3);
@@ -207,7 +238,10 @@ async function main() {
       narratorId: voice.narratorId,
       voiceSource: 'sintetica',
       url: `bundle:${audioFile}`,
-      license: `Voz neuronal ${voice.id} de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.`,
+      license:
+        ENGINE === 'edge'
+          ? `Voz neuronal ${voice.id} generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.`
+          : `Voz neuronal ${voice.id} de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.`,
       durationSec: Number(t.toFixed(3)),
       paragraphStartsSec: starts,
     });

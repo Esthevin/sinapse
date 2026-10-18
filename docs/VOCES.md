@@ -49,6 +49,17 @@ historias que faltan suman unos 10 400 caracteres: alrededor del **2 %** del pla
    ```
 6. Abre la app (`npx expo start`): las historias pasan de 🔊 a ✨.
 
+### Sin cuenta de Azure (provisional)
+
+Si Azure no te deja crear el recurso (por ejemplo, con una cuenta de estudiante con regiones restringidas), puedes generar las mismas voces con `edge-tts`:
+
+```bash
+pip install edge-tts
+npm run voces:generar -- --motor edge
+```
+
+**No es un servicio oficial** de Microsoft: sirve para probar y las historias quedan con una licencia marcada como PROVISIONAL. Antes de publicar en una tienda, regenera con Azure (`--force`).
+
 ### Qué hace el generador
 
 - Narra **solo las historias sin voz humana** (no toca LibriVox ni grabaciones).

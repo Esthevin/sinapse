@@ -26,7 +26,24 @@
       "Por eso llamaron al lago Titiqaqa, que según la tradición significa “puma de piedra”. Hoy el Titicaca es el lago navegable más alto del mundo y un lugar sagrado para los pueblos aimara y quechua."
     ]
   },
-  "audio": [],
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "voz-camila-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:lago-titicaca.es.mp3",
+      "license": "Voz neuronal es-PE-CamilaNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
+      "durationSec": 70.992,
+      "paragraphStartsSec": [
+        0,
+        14.112,
+        20.904,
+        34.224,
+        48.864,
+        59.088
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Apu",

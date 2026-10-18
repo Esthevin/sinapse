@@ -25,7 +25,24 @@
       "El zorro cayó y cayó, y al chocar contra una gran piedra, su panza llena de semillas se reventó. Las semillas se esparcieron por todos lados. Dicen que desde entonces crecen en la tierra la quinua, la papa y el maíz."
     ]
   },
-  "audio": [],
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "voz-alex-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:zorro-al-cielo.es.mp3",
+      "license": "Voz neuronal es-PE-AlexNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
+      "durationSec": 94.944,
+      "paragraphStartsSec": [
+        0,
+        14.16,
+        31.368,
+        50.472,
+        62.592,
+        77.256
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Zorro",

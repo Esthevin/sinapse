@@ -25,7 +25,24 @@
       "El narrador, ya adulto, recuerda aquella tarde con tristeza. La historia nos habla del cariño a los animales, de la nobleza y del paso del tiempo, y también nos invita a preguntarnos si está bien hacer pelear a un ser que amamos."
     ]
   },
-  "audio": [],
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "voz-alex-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:caballero-carmelo.es.mp3",
+      "license": "Voz neuronal es-PE-AlexNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
+      "durationSec": 100.392,
+      "paragraphStartsSec": [
+        0,
+        17.304,
+        32.208,
+        51.528,
+        67.464,
+        83.256
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Corral",

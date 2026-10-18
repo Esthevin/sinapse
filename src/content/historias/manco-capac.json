@@ -26,7 +26,24 @@
       "Manco Cápac enseñó a los hombres a cultivar el maíz, a construir canales y a levantar casas. Mama Ocllo enseñó a las mujeres a hilar y a tejer la lana. Con el trabajo compartido nació un pueblo grande y organizado."
     ]
   },
-  "audio": [],
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "voz-alex-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:manco-capac.es.mp3",
+      "license": "Voz neuronal es-PE-AlexNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
+      "durationSec": 89.568,
+      "paragraphStartsSec": [
+        0,
+        14.784,
+        27.792,
+        44.064,
+        56.712,
+        72.216
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Inti",

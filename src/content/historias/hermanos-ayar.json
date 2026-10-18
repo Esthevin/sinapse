@@ -25,7 +25,24 @@
       "Solo quedó Ayar Manco, que llegó al valle junto a sus hermanas. Allí fundó la ciudad del Cusco y tomó el nombre de Manco Cápac. Así, según esta leyenda, comenzó la historia de los incas."
     ]
   },
-  "audio": [],
+  "audio": [
+    {
+      "lang": "es",
+      "narratorId": "voz-alex-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:hermanos-ayar.es.mp3",
+      "license": "Voz neuronal es-PE-AlexNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
+      "durationSec": 95.232,
+      "paragraphStartsSec": [
+        0,
+        17.304,
+        32.808,
+        51.48,
+        66.408,
+        79.44
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Honda",
