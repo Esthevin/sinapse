@@ -1,9 +1,14 @@
 import { Pressable, StyleSheet, View } from 'react-native';
 import { Text } from '@/components/ui';
-import { FAMILY_LABEL, hasUiTranslation, LANGUAGES, t, type Language, type LanguageCode } from '@/i18n/translations';
+import { languageStatus, storiesIn, type LanguageStatus } from '@/content/languageStatus';
+import { hasUiTranslation, LANGUAGES, t, type LanguageCode } from '@/i18n/translations';
 import { useThemed, type Theme } from '@/theme/theme';
 
-const FAMILIES: Language['family'][] = ['castellano', 'andina', 'amazonica'];
+const GROUPS: { status: LanguageStatus; title: string; hint?: string }[] = [
+  { status: 'contenido', title: 'Con historias para escuchar y leer' },
+  { status: 'interfaz', title: 'Menús traducidos (historias en preparación)', hint: 'Las historias se escuchan en castellano mientras tanto.' },
+  { status: 'pronto', title: 'En preparación', hint: 'Aún no hay audios ni menús en estas lenguas. Puedes elegirlas para ayudar a grabarlas.' },
+];
 
 /** Selector de lengua agrupado por familia (castellano, andinas, amazónicas). */
 export function LanguagePicker({ value, onChange }: { value: LanguageCode; onChange: (code: LanguageCode) => void }) {
@@ -12,12 +17,17 @@ export function LanguagePicker({ value, onChange }: { value: LanguageCode; onCha
 
   return (
     <View>
-      {FAMILIES.map((family) => (
-        <View key={family} style={{ marginBottom: spacing.sm }}>
-          {family !== 'castellano' && <Text style={styles.family}>{FAMILY_LABEL[family]}</Text>}
+      {GROUPS.map((group) => {
+        const items = LANGUAGES.filter((l) => languageStatus(l.code) === group.status);
+        if (!items.length) return null;
+        return (
+        <View key={group.status} style={{ marginBottom: spacing.sm }}>
+          <Text style={styles.family}>{group.title}</Text>
+          {group.hint && <Text style={styles.hint}>{group.hint}</Text>}
           <View style={styles.grid}>
-            {LANGUAGES.filter((l) => l.family === family).map((l) => {
+            {items.map((l) => {
               const active = l.code === value;
+              const n = group.status === 'contenido' ? storiesIn(l.code) : 0;
               return (
                 <Pressable
                   key={l.code}
@@ -35,12 +45,14 @@ export function LanguagePicker({ value, onChange }: { value: LanguageCode; onCha
                       {l.label}
                     </Text>
                   )}
+                  {n > 0 && <Text style={styles.count}>{n} {n === 1 ? 'historia' : 'historias'}</Text>}
                 </Pressable>
               );
             })}
           </View>
         </View>
-      ))}
+        );
+      })}
 
       {current && !hasUiTranslation(current.code) && (
         <Text style={styles.note}>{t('es', 'uiFallbackNote', { lang: current.native })}</Text>
@@ -58,6 +70,8 @@ const makeStyles = ({ colors, spacing, radius, fontSize, stroke, fs }: Theme) =>
       marginBottom: spacing.xs,
       marginTop: spacing.xs,
     },
+    hint: { color: colors.textMuted, fontSize: fs(12), marginBottom: spacing.xs, lineHeight: 18 },
+    count: { color: colors.accent, fontWeight: '800', marginTop: 2, fontSize: fs(12) },
     grid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
     option: {
       flexBasis: '47%',

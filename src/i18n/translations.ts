@@ -230,6 +230,7 @@ const dictionaries: Record<LanguageCode, Partial<Record<TKey, string>>> = { es, 
 
 /** ¿La interfaz tiene traducción propia en esta lengua? */
 export function hasUiTranslation(lang: LanguageCode): boolean {
+  if (lang === 'es') return true;
   return fallbackChain(lang).some((c) => c !== 'es' && c in dictionaries);
 }
 
