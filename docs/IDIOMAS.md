@@ -43,3 +43,5 @@ Requiere `pip install torch transformers scipy soundfile numpy imageio-ffmpeg`.
 ## Traducción automática a quechua ayacuchano (`traducir_nllb.py`)
 
 `python herramientas/traducciones/traducir_nllb.py quy --historia id1,id2 --salida lote.json` traduce con Meta NLLB-200 (`quy_Latn`) y escribe el archivo que lee `node scripts/aplicar-traducciones.mjs quy lote.json`. Luego `python herramientas/voces/generar_mms.py quy --historia id1,id2` crea la voz. NLLB cubre quechua **ayacuchano**, no cusqueño: es un borrador y debe revisarlo un hablante. Licencia CC BY-NC (solo uso no comercial). Lo usa `npm run pdf:audiolibro -- ... --quechua`.
+
+Para entrenar voces con narradores nativos (todas las lenguas con modelo base) está el [cuaderno de Colab](COLAB_VOCES.md).
