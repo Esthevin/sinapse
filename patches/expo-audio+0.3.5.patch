@@ -1,3 +1,46 @@
+diff --git a/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioModule.kt b/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioModule.kt
+index 3badbf1..e99547b 100644
+--- a/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioModule.kt
++++ b/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioModule.kt
+@@ -371,22 +371,26 @@ class AudioModule : Module() {
+ 
+   private fun createMediaItem(source: AudioSource?): MediaSource? = source?.uri?.let { uri ->
+     val factory = createDataSourceFactory(source)
+-    val uri = if (Util.isLocalFileUri(Uri.parse(source.uri))) {
+-      Uri.fromFile(File(source.uri))
+-    } else {
+-      Uri.parse(source.uri)
+-    }
+-    val item = MediaItem.fromUri(uri)
++    val item = MediaItem.fromUri(resolveSourceUri(source.uri))
+     buildMediaSourceFactory(factory, item)
+   }
+ 
+-  private fun createDataSourceFactory(audioSource: AudioSource): DataSource.Factory {
+-    val uri = if (Util.isLocalFileUri(Uri.parse(audioSource.uri))) {
+-      Uri.fromFile(File(audioSource.uri))
+-    } else {
+-      Uri.parse(audioSource.uri)
++  // En un APK de release, un audio incluido con require() llega como nombre de recurso ("assets_audio_x"),
++  // sin esquema ni "/". Vive en res/raw: se lee con android.resource://.
++  private fun resolveSourceUri(raw: String): Uri {
++    val parsed = Uri.parse(raw)
++    if (parsed.scheme == null && !raw.contains('/')) {
++      val id = context.resources.getIdentifier(raw, "raw", context.packageName)
++      if (id != 0) {
++        return Uri.parse("android.resource://${context.packageName}/raw/$raw")
++      }
+     }
+-    val isLocal = Util.isLocalFileUri(uri)
++    return if (Util.isLocalFileUri(parsed)) Uri.fromFile(File(raw)) else parsed
++  }
++
++  private fun createDataSourceFactory(audioSource: AudioSource): DataSource.Factory {
++    val uri = resolveSourceUri(audioSource.uri)
++    val isLocal = Util.isLocalFileUri(uri) || uri.scheme == "android.resource"
+     return if (isLocal) {
+       DefaultDataSource.Factory(context)
+     } else {
 diff --git a/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioPlayer.kt b/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioPlayer.kt
 index ef9ec3c..f7ffe42 100644
 --- a/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioPlayer.kt
