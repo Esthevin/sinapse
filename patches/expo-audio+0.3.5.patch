@@ -1,8 +1,8 @@
 diff --git a/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioModule.kt b/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioModule.kt
-index 3badbf1..e99547b 100644
+index 3badbf1..127433d 100644
 --- a/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioModule.kt
 +++ b/node_modules/expo-audio/android/src/main/java/expo/modules/audio/AudioModule.kt
-@@ -371,22 +371,26 @@ class AudioModule : Module() {
+@@ -371,22 +371,27 @@ class AudioModule : Module() {
  
    private fun createMediaItem(source: AudioSource?): MediaSource? = source?.uri?.let { uri ->
      val factory = createDataSourceFactory(source)
@@ -23,7 +23,8 @@ index 3badbf1..e99547b 100644
 -      Uri.parse(audioSource.uri)
 +  // En un APK de release, un audio incluido con require() llega como nombre de recurso ("assets_audio_x"),
 +  // sin esquema ni "/". Vive en res/raw: se lee con android.resource://.
-+  private fun resolveSourceUri(raw: String): Uri {
++  private fun resolveSourceUri(rawUri: String?): Uri {
++    val raw = rawUri ?: return Uri.EMPTY
 +    val parsed = Uri.parse(raw)
 +    if (parsed.scheme == null && !raw.contains('/')) {
 +      val id = context.resources.getIdentifier(raw, "raw", context.packageName)
