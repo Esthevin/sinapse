@@ -28,6 +28,9 @@
  *   --voz camila|alex|auto   (auto alterna entre cuentos)
  *   --sin-reparto       todo con una sola voz (por defecto, cada personaje tiene la suya; ver docs/REPARTO_DE_VOCES.md)
  *   --reparto <dir>     usa los archivos <id>.json de esa carpeta (reparto corregido a mano) en vez del automático
+ *   --quechua           además traduce los cuentos al quechua ayacuchano (borrador automático, Meta NLLB) y crea su voz
+ *                       (Meta MMS-TTS); necesita Python con torch y transformers (ver docs/IDIOMAS.md)
+ *   --python <cmd>      programa de Python para --quechua (por defecto python en Windows, python3 en los demás)
  *   --ritmo -6%         velocidad de la voz
  *   --pausa 3100        ms entre pedidos a Azure (plan gratuito: unos 20 por minuto)
  *   --dry-run           muestra qué se haría y cuántos caracteres gastaría, sin llamar a Azure
@@ -275,6 +278,7 @@ for (const [i, job] of jobs.entries()) {
 }
 
 if (SIMULATED) {
+  if (flag('quechua')) console.log('\n--quechua no se prueba con --simulado (las historias simuladas no están en la app). Prueba la traducción sola con: python herramientas/traducciones/traducir_nllb.py quy --historia <id> --simulado');
   console.log(`\nSimulación lista en produccion/simulado (${created.length} historias). No se tocó la app.`);
   process.exit(0);
 }
@@ -292,6 +296,20 @@ for (const id of created) {
 writeFileSync(indexFile, index);
 
 spawnSync(process.execPath, [join(root, 'scripts', 'generar-voces-peruanas.mjs'), '--solo-mapa'], { stdio: 'inherit' });
+// ---------- quechua (opcional) ----------
+if (flag('quechua')) {
+  const python = option('python', process.platform === 'win32' ? 'python' : 'python3');
+  const ids = created.join(',');
+  const batch = join(root, 'produccion', 'traducciones', `pdf-${Date.now()}.json`);
+  const run = (cmd, cmdArgs) => spawnSync(cmd, cmdArgs, { stdio: 'inherit', cwd: root }).status === 0;
+  console.log('\nQuechua ayacuchano (borrador automático; pídele a un hablante que lo revise):');
+  const ok =
+    run(python, [join('herramientas', 'traducciones', 'traducir_nllb.py'), 'quy', '--historia', ids, '--salida', batch]) &&
+    run(process.execPath, [join('scripts', 'aplicar-traducciones.mjs'), 'quy', batch]) &&
+    run(python, [join('herramientas', 'voces', 'generar_mms.py'), 'quy', '--historia', ids]);
+  if (!ok) console.error('⚠ El quechua no se completó (¿falta pip install torch transformers sentencepiece scipy soundfile numpy imageio-ffmpeg?). Los cuentos en castellano ya están listos.');
+}
+
 const check = spawnSync(process.execPath, [join(root, 'scripts', 'validar-contenido.mjs')], { encoding: 'utf8' });
 console.log(check.stdout.split('\n').slice(-4).join('\n'));
 const mb = created.reduce((n, id) => n + readFileSync(join(audioDir, `${id}.es.mp3`)).length, 0) / 1e6;
