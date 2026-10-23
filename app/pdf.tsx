@@ -7,6 +7,7 @@ import { ActivityIndicator, Platform, Pressable, ScrollView, StyleSheet, TextInp
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { PdfRunner } from '@/components/PdfRunner';
 import { isUserBook, STORIES } from '@/content';
+import { FREE_PDFS_PER_MONTH } from '@/content/plan';
 import { confirmAction } from '@/utils/confirm';
 import { Button, Card, Chip, Glyph, ProgressBar, Text } from '@/components/ui';
 import { buildPdfHtml, type PdfMessage } from '@/services/pdfHtml';
@@ -14,7 +15,9 @@ import { loadPdfJs } from '@/services/pdfSources';
 import { listSpanishVoices, voiceLabel } from '@/services/speech';
 import { deleteBook, prepareParagraphs, saveBook, wordCount } from '@/services/books';
 import { analyzePdf, previewOf, type Analysis, type Section } from '@/services/pdfAnalyze';
+import { useAccount } from '@/state/AccountContext';
 import { useApp } from '@/state/AppContext';
+import { canConvertPdf, pdfsUsedThisMonth, registerPdf } from '@/services/limits';
 import { useThemed, type Theme } from '@/theme/theme';
 
 const MAX_BYTES = 25 * 1024 * 1024;
@@ -48,6 +51,12 @@ function fileBase64(asset: DocumentPicker.DocumentPickerAsset): Promise<string> 
 
 export default function PdfScreen() {
   const { booksChanged, catalogVersion, settings, updateSettings } = useApp();
+  const { plan } = useAccount();
+  const [limitHit, setLimitHit] = useState(false);
+  const [used, setUsed] = useState(0);
+  useEffect(() => {
+    pdfsUsedThisMonth().then(setUsed);
+  }, [catalogVersion, limitHit]);
   const [voices, setVoices] = useState<Speech.Voice[]>([]);
   useEffect(() => {
     listSpanishVoices().then(setVoices);
@@ -100,6 +109,12 @@ export default function PdfScreen() {
   }, [job]);
 
   const pick = async () => {
+    const gate = await canConvertPdf(plan);
+    if (!gate.allowed) {
+      setLimitHit(true);
+      return;
+    }
+    setLimitHit(false);
     try {
       const res = await DocumentPicker.getDocumentAsync({ type: 'application/pdf', copyToCacheDirectory: true });
       if (res.canceled || !res.assets?.[0]) return;
@@ -132,6 +147,7 @@ export default function PdfScreen() {
         const ids = await saveBook(single ? name : sec.title, paragraphs, pages, single ? undefined : name);
         firstId ||= ids[0];
       }
+      await registerPdf();
       booksChanged();
       if (chosen.length === 1) router.replace({ pathname: '/story/[id]', params: { id: firstId } });
       else router.replace('/');
@@ -171,6 +187,17 @@ export default function PdfScreen() {
           {phase.name === 'error' && (
             <Card style={{ marginTop: spacing.md, backgroundColor: colors.dangerSoft, borderColor: colors.danger }}>
               <Text style={styles.body}>{phase.message}</Text>
+            </Card>
+          )}
+          {plan === 'normal' && (
+            <Text style={[styles.note, { marginTop: spacing.md }]}>
+              {`Plan Normal: ${Math.min(used, FREE_PDFS_PER_MONTH)} de ${FREE_PDFS_PER_MONTH} PDF usados este mes.`}
+            </Text>
+          )}
+          {limitHit && (
+            <Card style={{ marginTop: spacing.md, backgroundColor: colors.accentSoft }}>
+              <Text style={styles.body}>Ya usaste tus {FREE_PDFS_PER_MONTH} PDF de este mes. Con Premium conviertes todos los que quieras.</Text>
+              <Button label="Ver Premium" onPress={() => router.push('/premium')} style={{ marginTop: spacing.md }} />
             </Card>
           )}
           <Button label="Elegir un PDF" onPress={pick} style={{ marginTop: spacing.lg }} />

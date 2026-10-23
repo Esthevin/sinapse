@@ -6,7 +6,9 @@ import { LanguagePicker } from '@/components/LanguagePicker';
 import { Button, Card, Chip, Glyph, SectionTitle, Text } from '@/components/ui';
 import { listSpanishVoices, voiceLabel } from '@/services/speech';
 import { t } from '@/i18n/translations';
+import { useAccount } from '@/state/AccountContext';
 import { useApp } from '@/state/AppContext';
+import { router } from 'expo-router';
 import { ACCENTS, ACCENT_CHOICES, DEFAULT_APPEARANCE, PALETTES, PALETTE_LABELS, useThemed, type Appearance, type PaletteId, type Theme } from '@/theme/theme';
 import { confirmAction } from '@/utils/confirm';
 
@@ -22,6 +24,7 @@ const SPEEDS = [0.75, 1, 1.25];
 export default function SettingsScreen() {
   const { settings, updateSettings, resetProgress, refreshCatalog } = useApp();
   const { styles, colors, spacing } = useThemed(makeStyles);
+  const { profile, plan } = useAccount();
   const { lang } = settings;
   const [checking, setChecking] = useState(false);
   const [catalogMsg, setCatalogMsg] = useState('');
@@ -47,6 +50,16 @@ export default function SettingsScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+      <SectionTitle>Cuenta y plan</SectionTitle>
+      <Card>
+        <Text style={{ fontWeight: '800' }}>{profile ? profile.email : 'Sin cuenta'}</Text>
+        <Text style={styles.note}>{plan === 'premium' ? 'Plan Premium' : 'Plan Normal'}. Con Premium: todo el catálogo, descargas sin internet y PDF sin límite.</Text>
+        <View style={[styles.row, { marginTop: spacing.md }]}>
+          <Button label={profile ? 'Mi cuenta' : 'Ingresar o crear cuenta'} variant="secondary" onPress={() => router.push('/cuenta')} />
+          {plan !== 'premium' && <Button label="Ver Premium" onPress={() => router.push('/premium')} />}
+        </View>
+      </Card>
+
       <SectionTitle>Apariencia</SectionTitle>
       <Text style={styles.note}>Elige colores, letra y formas a tu gusto. Los cambios se ven al instante.</Text>
 

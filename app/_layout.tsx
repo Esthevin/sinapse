@@ -6,7 +6,9 @@ import { StatusBar } from 'expo-status-bar';
 import { ActivityIndicator, Platform, Pressable, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { t } from '@/i18n/translations';
+import { AccountProvider } from '@/state/AccountContext';
 import { AppProvider, useApp } from '@/state/AppContext';
+import { DownloadsProvider } from '@/state/DownloadsContext';
 import { useTheme } from '@/theme/theme';
 
 /**
@@ -68,6 +70,8 @@ function RootNavigator() {
       <Stack.Screen name="record/[id]" options={{ title: t(settings.lang, 'studioTitle') }} />
       <Stack.Screen name="sync/[id]" options={{ title: '' }} />
       <Stack.Screen name="pdf" options={{ title: 'Audiolibro desde PDF' }} />
+      <Stack.Screen name="cuenta" options={{ title: 'Mi cuenta' }} />
+      <Stack.Screen name="premium" options={{ title: 'Premium' }} />
     </Stack>
     </>
   );
@@ -81,7 +85,11 @@ export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <AppProvider>
-        <RootNavigator />
+        <AccountProvider>
+          <DownloadsProvider>
+            <RootNavigator />
+          </DownloadsProvider>
+        </AccountProvider>
       </AppProvider>
     </SafeAreaProvider>
   );

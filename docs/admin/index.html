@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sinapse · Administración</title>
+<style>
+  :root {
+    --bg: #f6f1e7; --card: #fffdf8; --text: #1d1a16; --muted: #6a6256; --line: #ded5c3;
+    --accent: #7b2230; --on-accent: #fbf7ee; --ok: #2f6f3a; --warn: #a15d00; --bad: #a12d2d; --soft: #efe6d2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17140f; --card: #211d16; --text: #f1ebdd; --muted: #a79d8a; --line: #3a3427;
+      --accent: #d98a98; --on-accent: #17140f; --ok: #7cc58a; --warn: #e0a850; --bad: #e88b8b; --soft: #2c2619;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 14px 16px; border-bottom: 1px solid var(--line); background: var(--card); }
+  header h1 { margin: 0; font-size: 18px; flex: 1; }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+  .center { max-width: 420px; margin: 40px auto; }
+  label { display: block; font-weight: 600; font-size: 14px; margin: 12px 0 4px; }
+  input, select, textarea { width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 9px 10px; }
+  button { font: inherit; cursor: pointer; border-radius: 6px; border: 1px solid var(--line); background: var(--card); color: var(--text); padding: 7px 12px; }
+  button.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); font-weight: 700; }
+  button.danger { color: var(--bad); }
+  button:disabled { opacity: .5; cursor: default; }
+  button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
+  nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  nav button[aria-selected="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .stat b { display: block; font-size: 30px; line-height: 1.1; }
+  .stat span { color: var(--muted); font-size: 14px; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .toolbar input { flex: 1; min-width: 200px; width: auto; }
+  .toolbar select { width: auto; }
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--soft); font-size: 13px; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  .badge { display: inline-block; padding: 1px 9px; border-radius: 999px; font-size: 12px; font-weight: 700; background: var(--soft); }
+  .badge.premium { background: var(--accent); color: var(--on-accent); }
+  .badge.admin { background: var(--text); color: var(--bg); }
+  .muted { color: var(--muted); font-size: 13px; }
+  .actions { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .actions select { width: auto; padding: 6px 8px; }
+  .msg { margin: 12px 0; padding: 10px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--soft); }
+  .msg.bad { border-color: var(--bad); color: var(--bad); }
+  .msg.ok { border-color: var(--ok); color: var(--ok); }
+  .hidden { display: none !important; }
+  h2 { font-size: 18px; margin: 0 0 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Sinapse · Administración</h1>
+  <span id="who" class="muted"></span>
+  <button id="logout" class="hidden">Cerrar sesión</button>
+</header>
+<main>
+  <div id="msg" class="msg hidden" role="status"></div>
+
+  <section id="setup" class="card center hidden">
+    <h2>Conectar con tu servidor</h2>
+    <p class="muted">Pega los datos de Supabase (Project Settings → API). Se guardan solo en este navegador.</p>
+    <label for="cfgUrl">Project URL</label><input id="cfgUrl" placeholder="https://xxxx.supabase.co" autocomplete="off">
+    <label for="cfgKey">Clave pública (anon)</label><input id="cfgKey" autocomplete="off">
+    <p><button id="cfgSave" class="primary">Guardar</button></p>
+  </section>
+
+  <section id="login" class="card center hidden">
+    <h2>Ingresar</h2>
+    <p class="muted">Solo cuentas con rol de administrador.</p>
+    <form id="loginForm">
+      <label for="email">Correo</label><input id="email" type="email" autocomplete="username" required>
+      <label for="pass">Contraseña</label><input id="pass" type="password" autocomplete="current-password" required>
+      <p><button class="primary" type="submit">Ingresar</button></p>
+    </form>
+  </section>
+
+  <section id="app" class="hidden">
+    <nav role="tablist">
+      <button role="tab" data-tab="resumen" aria-selected="true">Resumen</button>
+      <button role="tab" data-tab="cuentas" aria-selected="false">Cuentas</button>
+      <button role="tab" data-tab="solicitudes" aria-selected="false">Solicitudes <span id="pendingCount" class="badge"></span></button>
+      <button role="tab" data-tab="bitacora" aria-selected="false">Bitácora</button>
+    </nav>
+
+    <div id="tab-resumen">
+      <div class="stats" id="stats"></div>
+      <p class="muted">«Activas» son cuentas que abrieron la app en los últimos 30 días.</p>
+    </div>
+
+    <div id="tab-cuentas" class="hidden">
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Buscar por correo o nombre" aria-label="Buscar">
+        <select id="planFilter" aria-label="Filtrar por plan">
+          <option value="">Todos los planes</option><option value="premium">Premium</option><option value="normal">Normal</option>
+        </select>
+        <button id="csv">Descargar CSV</button>
+      </div>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Cuenta</th><th>Plan</th><th>Creada</th><th>Último uso</th><th>Acciones</th></tr></thead>
+        <tbody id="users"></tbody>
+      </table></div>
+    </div>
+
+    <div id="tab-solicitudes" class="hidden">
+      <h2>Pendientes</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Cuenta</th><th>Mensaje</th><th>Fecha</th><th>Acción</th></tr></thead>
+        <tbody id="requests"></tbody>
+      </table></div>
+      <p class="muted" id="noRequests"></p>
+    </div>
+
+    <div id="tab-bitacora" class="hidden">
+      <div class="tablewrap"><table>
+        <thead><tr><th>Fecha</th><th>Administrador</th><th>Acción</th><th>Cuenta</th><th>Detalle</th></tr></thead>
+        <tbody id="log"></tbody>
+      </table></div>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, props, ...kids) => {
+    const n = document.createElement(tag);
+    Object.entries(props || {}).forEach(([k, v]) => (k === 'class' ? (n.className = v) : k === 'text' ? (n.textContent = v) : n.setAttribute(k, v)));
+    kids.flat().forEach((c) => c != null && n.append(c));
+    return n;
+  };
+  const fmt = (iso) => (iso ? new Date(iso).toLocaleDateString('es-PE', { day: 'numeric', month: 'short', year: 'numeric' }) : '—');
+  const fmtTime = (iso) => (iso ? new Date(iso).toLocaleString('es-PE', { dateStyle: 'short', timeStyle: 'short' }) : '—');
+  const ACTIONS = { dar_premium: 'Dio Premium', quitar_premium: 'Quitó Premium', cambiar_rol: 'Cambió el rol', rechazar_solicitud: 'Rechazó una solicitud' };
+
+  let db = null;
+  let me = null;
+  let users = [];
+  let requests = [];
+
+  function say(text, kind) {
+    const m = $('msg');
+    m.textContent = text || '';
+    m.className = 'msg ' + (kind || '') + (text ? '' : ' hidden');
+  }
+  function show(which) {
+    ['setup', 'login', 'app'].forEach((id) => $(id).classList.toggle('hidden', id !== which));
+    $('logout').classList.toggle('hidden', which !== 'app');
+  }
+  const premiumActive = (u) => u.plan === 'premium' && (!u.premium_until || new Date(u.premium_until) > new Date());
+
+  function config() {
+    const c = window.SINAPSE_ADMIN || {};
+    return { url: c.url || localStorage.getItem('sinapse.admin.url') || '', key: c.anonKey || localStorage.getItem('sinapse.admin.key') || '' };
+  }
+
+  async function start() {
+    const c = config();
+    if (!c.url || !c.key) return show('setup');
+    db = window.supabase.createClient(c.url, c.key, { auth: { persistSession: true, autoRefreshToken: true } });
+    const { data } = await db.auth.getSession();
+    if (data.session) await enter(); else show('login');
+  }
+
+  async function enter() {
+    const { data: s } = await db.auth.getSession();
+    const { data: profile, error } = await db.from('profiles').select('id,email,role').eq('id', s.session.user.id).maybeSingle();
+    if (error || !profile || profile.role !== 'admin') {
+      await db.auth.signOut();
+      show('login');
+      return say('Esta cuenta no es administradora.', 'bad');
+    }
+    me = profile;
+    $('who').textContent = profile.email;
+    say('');
+    show('app');
+    await loadAll();
+  }
+
+  async function loadAll() {
+    const [u, r] = await Promise.all([
+      db.from('profiles').select('id,email,display_name,plan,premium_until,role,created_at,last_seen').order('created_at', { ascending: false }),
+      db.from('premium_requests').select('id,user_id,message,status,created_at,resolved_at').order('created_at', { ascending: false }),
+    ]);
+    if (u.error || r.error) return say('No se pudieron cargar los datos: ' + (u.error || r.error).message, 'bad');
+    users = u.data;
+    requests = r.data;
+    renderStats(); renderUsers(); renderRequests();
+  }
+
+  function renderStats() {
+    const now = Date.now();
+    const active = users.filter((u) => u.last_seen && now - new Date(u.last_seen) < 30 * 864e5).length;
+    const fresh = users.filter((u) => now - new Date(u.created_at) < 7 * 864e5).length;
+    const pending = requests.filter((r) => r.status === 'pendiente').length;
+    const stats = [
+      ['Cuentas', users.length], ['Premium vigente', users.filter(premiumActive).length], ['Solicitudes pendientes', pending],
+      ['Nuevas (7 días)', fresh], ['Activas (30 días)', active],
+    ];
+    $('stats').replaceChildren(...stats.map(([label, n]) => el('div', { class: 'card stat' }, el('b', { text: String(n) }), el('span', { text: label }))));
+    $('pendingCount').textContent = pending ? String(pending) : '';
+  }
+
+  function untilSelect() {
+    const s = el('select', { 'aria-label': 'Duración' },
+      el('option', { value: '30', text: '30 días' }), el('option', { value: '90', text: '90 días' }),
+      el('option', { value: '365', text: '1 año' }), el('option', { value: '0', text: 'Sin vencimiento' }));
+    s.value = '30';
+    return s;
+  }
+  const untilFrom = (days) => (Number(days) ? new Date(Date.now() + Number(days) * 864e5).toISOString() : null);
+
+  async function rpc(name, args, okText) {
+    const { error } = await db.rpc(name, args);
+    if (error) return say(error.message, 'bad');
+    say(okText, 'ok');
+    await loadAll();
+    if (!$('tab-bitacora').classList.contains('hidden')) renderLog();
+  }
+
+  function renderUsers() {
+    const q = $('search').value.trim().toLowerCase();
+    const plan = $('planFilter').value;
+    const rows = users.filter((u) => (!plan || (plan === 'premium' ? premiumActive(u) : !premiumActive(u))) && (!q || (u.email + ' ' + (u.display_name || '')).toLowerCase().includes(q)));
+    $('users').replaceChildren(...rows.map((u) => {
+      const sel = untilSelect();
+      const isMe = u.id === me.id;
+      return el('tr', {},
+        el('td', {}, el('div', { text: u.email }), el('div', { class: 'muted', text: u.display_name || '' }), u.role === 'admin' ? el('span', { class: 'badge admin', text: 'administrador' }) : null),
+        el('td', {}, el('span', { class: 'badge' + (premiumActive(u) ? ' premium' : ''), text: premiumActive(u) ? 'Premium' : 'Normal' }),
+          el('div', { class: 'muted', text: premiumActive(u) ? (u.premium_until ? 'hasta ' + fmt(u.premium_until) : 'sin vencimiento') : u.plan === 'premium' ? 'venció ' + fmt(u.premium_until) : '' })),
+        el('td', { text: fmt(u.created_at) }),
+        el('td', { text: fmt(u.last_seen) }),
+        el('td', {}, el('div', { class: 'actions' },
+          sel,
+          el('button', { class: 'primary', text: premiumActive(u) ? 'Renovar' : 'Dar premium' }),
+          premiumActive(u) ? el('button', { class: 'danger', text: 'Quitar premium' }) : null,
+          u.role === 'admin' ? (isMe ? null : el('button', { text: 'Quitar admin' })) : el('button', { text: 'Hacer admin' }))));
+    }));
+    // Los botones se enlazan después de crearlos (no se usan atributos onclick).
+    [...$('users').children].forEach((tr, i) => {
+      const u = rows[i];
+      const [sel, give, ...rest] = tr.querySelector('.actions').children;
+      give.onclick = () => rpc('admin_set_plan', { target: u.id, new_plan: 'premium', until: untilFrom(sel.value) }, 'Premium activado para ' + u.email + '.');
+      rest.forEach((b) => {
+        if (b.textContent === 'Quitar premium') b.onclick = () => confirm('¿Quitar el Premium a ' + u.email + '?') && rpc('admin_set_plan', { target: u.id, new_plan: 'normal', until: null }, 'Premium quitado a ' + u.email + '.');
+        if (b.textContent === 'Hacer admin') b.onclick = () => confirm('¿Dar acceso de administrador a ' + u.email + '? Podrá cambiar planes y roles de todas las cuentas.') && rpc('admin_set_role', { target: u.id, new_role: 'admin' }, u.email + ' ahora es administradora.');
+        if (b.textContent === 'Quitar admin') b.onclick = () => confirm('¿Quitar el acceso de administrador a ' + u.email + '?') && rpc('admin_set_role', { target: u.id, new_role: 'user' }, u.email + ' ya no es administradora.');
+      });
+    });
+    if (!rows.length) $('users').replaceChildren(el('tr', {}, el('td', { colspan: '5', class: 'muted', text: 'No hay cuentas que coincidan.' })));
+  }
+
+  function renderRequests() {
+    const byId = Object.fromEntries(users.map((u) => [u.id, u]));
+    const pending = requests.filter((r) => r.status === 'pendiente');
+    $('noRequests').textContent = pending.length ? '' : 'No hay solicitudes pendientes.';
+    $('requests').replaceChildren(...pending.map((r) => {
+      const u = byId[r.user_id] || {};
+      const sel = untilSelect();
+      const ok = el('button', { class: 'primary', text: 'Aprobar' });
+      const no = el('button', { class: 'danger', text: 'Rechazar' });
+      ok.onclick = () => rpc('admin_resolve_request', { request_id: r.id, approve: true, until: untilFrom(sel.value) }, 'Solicitud aprobada.');
+      no.onclick = () => rpc('admin_resolve_request', { request_id: r.id, approve: false, until: null }, 'Solicitud rechazada.');
+      return el('tr', {}, el('td', { text: u.email || r.user_id }), el('td', { text: r.message || '—' }), el('td', { text: fmtTime(r.created_at) }),
+        el('td', {}, el('div', { class: 'actions' }, sel, ok, no)));
+    }));
+  }
+
+  async function renderLog() {
+    const { data, error } = await db.from('admin_log').select('id,admin_id,user_id,action,detail,created_at').order('created_at', { ascending: false }).limit(100);
+    if (error) return say(error.message, 'bad');
+    const byId = Object.fromEntries(users.map((u) => [u.id, u.email]));
+    $('log').replaceChildren(...data.map((l) => el('tr', {},
+      el('td', { text: fmtTime(l.created_at) }), el('td', { text: byId[l.admin_id] || '—' }), el('td', { text: ACTIONS[l.action] || l.action }),
+      el('td', { text: byId[l.user_id] || '(cuenta borrada)' }),
+      el('td', { class: 'muted', text: l.detail ? Object.entries(l.detail).map(([k, v]) => k + ': ' + (k === 'until' ? (v ? fmt(v) : 'sin vencimiento') : v)).join(' · ') : '' }))));
+  }
+
+  function csv() {
+    const esc = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+    const head = ['correo', 'nombre', 'plan', 'premium_hasta', 'rol', 'creada', 'ultimo_uso'];
+    const lines = [head.join(',')].concat(users.map((u) => [u.email, u.display_name, premiumActive(u) ? 'premium' : 'normal', u.premium_until, u.role, u.created_at, u.last_seen].map(esc).join(',')));
+    const a = el('a', { href: URL.createObjectURL(new Blob(['﻿' + lines.join('\n')], { type: 'text/csv;charset=utf-8' })), download: 'sinapse-cuentas.csv' });
+    a.click();
+  }
+
+  // ---------- eventos ----------
+  $('cfgSave').onclick = () => {
+    localStorage.setItem('sinapse.admin.url', $('cfgUrl').value.trim());
+    localStorage.setItem('sinapse.admin.key', $('cfgKey').value.trim());
+    start();
+  };
+  $('loginForm').onsubmit = async (e) => {
+    e.preventDefault();
+    say('');
+    const { error } = await db.auth.signInWithPassword({ email: $('email').value.trim(), password: $('pass').value });
+    if (error) return say('Correo o contraseña incorrectos.', 'bad');
+    $('pass').value = '';
+    enter();
+  };
+  $('logout').onclick = async () => { await db.auth.signOut(); users = []; requests = []; show('login'); say(''); };
+  $('search').oninput = renderUsers;
+  $('planFilter').onchange = renderUsers;
+  $('csv').onclick = csv;
+  document.querySelectorAll('nav [data-tab]').forEach((b) => (b.onclick = () => {
+    document.querySelectorAll('nav [data-tab]').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+    ['resumen', 'cuentas', 'solicitudes', 'bitacora'].forEach((t) => $('tab-' + t).classList.toggle('hidden', t !== b.dataset.tab));
+    if (b.dataset.tab === 'bitacora') renderLog();
+  }));
+
+  start().catch((e) => say('Error: ' + e.message, 'bad'));
+})();
+</script>
+</body>
+</html>

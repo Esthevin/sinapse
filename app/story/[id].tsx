@@ -20,7 +20,11 @@ import type { Story } from '@/content/types';
 import { useNarration } from '@/hooks/useNarration';
 import { LANGUAGES, languageName, t, type LanguageCode, pickLocalized } from '@/i18n/translations';
 import { hasSpanishVoice } from '@/services/speech';
+import { PremiumGate } from '@/components/PremiumGate';
+import { isFreeStory } from '@/content/plan';
+import { useAccount } from '@/state/AccountContext';
 import { useApp } from '@/state/AppContext';
+import { useDownloads } from '@/state/DownloadsContext';
 import { useThemed, type Theme } from '@/theme/theme';
 
 const SPEEDS = [0.75, 1, 1.25];
@@ -40,6 +44,7 @@ export default function StoryScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const story = getStory(id);
   const { settings, recordings, openStory } = useApp();
+  const { plan } = useAccount();
   const [viewLang, setViewLang] = useState<LanguageCode>(settings.lang);
   // Si el audio no carga (archivo que el teléfono no puede abrir), se lee con la voz del teléfono en vez de quedar cargando.
   const [failedKey, setFailedKey] = useState<string | null>(null);
@@ -53,6 +58,16 @@ export default function StoryScreen() {
       <View style={styles.center}>
         <Text style={styles.title}>Historia no encontrada</Text>
       </View>
+    );
+  }
+
+  // Historia Premium con plan Normal: se muestra la invitación en lugar del reproductor.
+  if (!isFreeStory(story.id) && plan !== 'premium') {
+    return (
+      <>
+        <Stack.Screen options={{ title: pickLocalized(story.title, settings.lang) }} />
+        <PremiumGate story={story} />
+      </>
     );
   }
 
@@ -100,6 +115,9 @@ function StoryPlayer({
   const { width: screenWidth } = useWindowDimensions();
   const { lang } = settings;
   const [finished, setFinished] = useState(false);
+  const downloads = useDownloads();
+  const { plan } = useAccount();
+  const [downloadError, setDownloadError] = useState(false);
   const [noVoice, setNoVoice] = useState(false);
   const scrollRef = useRef<ScrollView>(null);
   const paragraphY = useRef<number[]>([]);
@@ -236,6 +254,32 @@ function StoryPlayer({
               <Text style={styles.narratorCredit}>{voice.source === 'local' ? t(lang, 'recordedOnPhone') : voice.narrator?.credit}</Text>
             )}
             {isRemoteAudio(resolved.source) && <Text style={styles.narratorCredit}>{t(lang, 'needsInternet')}</Text>}
+            {resolved.remoteUrl && downloads.supported && (
+              resolved.downloaded ? (
+                <>
+                  <Text style={styles.narratorCredit}>Descargado: suena sin internet.</Text>
+                  <Button label="Quitar descarga" variant="secondary" onPress={() => downloads.remove(resolved.remoteUrl!)} style={{ marginTop: spacing.sm }} />
+                </>
+              ) : downloads.progress[resolved.remoteUrl] !== undefined ? (
+                <View style={{ marginTop: spacing.sm }}>
+                  <Text style={styles.narratorCredit}>{`Descargando… ${Math.round(downloads.progress[resolved.remoteUrl] * 100)} %`}</Text>
+                  <ProgressBar value={downloads.progress[resolved.remoteUrl]} />
+                </View>
+              ) : (
+                <>
+                  <Button
+                    label={plan === 'premium' ? 'Descargar para escuchar sin internet' : 'Descargar sin internet (Premium)'}
+                    variant="secondary"
+                    onPress={async () => {
+                      if (plan !== 'premium') return router.push('/premium');
+                      setDownloadError(!(await downloads.download(resolved.remoteUrl!, `${pickLocalized(story.title, lang)} · ${voice.name}`)));
+                    }}
+                    style={{ marginTop: spacing.sm }}
+                  />
+                  {downloadError && <Text style={styles.narratorCredit}>No se pudo descargar. Revisa tu internet e inténtalo de nuevo.</Text>}
+                </>
+              )
+            )}
             {voice.source !== 'sintetica' && settings.teamTools && (
               <Button
                 label="Sincronizar párrafos (equipo)"

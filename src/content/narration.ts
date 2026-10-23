@@ -27,12 +27,17 @@ export interface ResolvedNarration {
   textLang: LanguageCode;
   /** Clave estable para reiniciar el reproductor al cambiar de fuente. */
   key: string;
+  /** Dirección en internet del audio (si lo es), para poder descargarlo. */
+  remoteUrl?: string;
+  /** true si ese audio ya está descargado en el teléfono y suena sin internet. */
+  downloaded?: boolean;
 }
 
 type Recordings = Partial<Record<LanguageCode, Recording>> | undefined;
 
 interface Track {
   uri: string;
+  remoteUrl?: string;
   asset?: number;
   voice: Extract<VoiceInfo, { kind: 'audio' }>;
   textStart?: number;
@@ -40,9 +45,15 @@ interface Track {
   paragraphStarts?: number[];
 }
 
+/** Audios descargados en el teléfono (Premium): dirección en internet → archivo local. Lo mantiene DownloadsContext. */
+let downloaded: Record<string, string> = {};
+export function setDownloaded(map: Record<string, string>) {
+  downloaded = map;
+}
+
 /** Resuelve "bundle:<archivo>" a un audio incluido en la app; null si aún no se generó. */
-function resolveUrl(url: string): { uri: string; asset?: number } | null {
-  if (!url.startsWith('bundle:')) return { uri: url };
+function resolveUrl(url: string): { uri: string; asset?: number; remoteUrl?: string } | null {
+  if (!url.startsWith('bundle:')) return { uri: downloaded[url] ?? url, remoteUrl: /^https?:\/\//.test(url) ? url : undefined };
   const asset = BUNDLED_AUDIO[url.slice('bundle:'.length)];
   return asset === undefined ? null : { uri: url, asset };
 }
@@ -133,6 +144,8 @@ function toResolved(track: Track, lang: LanguageCode, paragraphs: string[], fall
     fallback,
     textLang,
     key: `${lang}:${track.uri}:${textLang}`,
+    remoteUrl: track.remoteUrl,
+    downloaded: track.remoteUrl !== undefined && track.uri !== track.remoteUrl,
   };
 }
 

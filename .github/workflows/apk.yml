@@ -33,6 +33,10 @@ jobs:
       # APK de instalación directa (firma de prueba): suficiente para demos y pilotos.
       - name: Compilar
         working-directory: android
+        env:
+          EXPO_PUBLIC_SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+          EXPO_PUBLIC_PREMIUM_CONTACT: ${{ vars.PREMIUM_CONTACT }}
         run: ./gradlew assembleRelease -PreactNativeArchitectures=arm64-v8a,armeabi-v7a --no-daemon
       - name: Renombrar APK
         run: cp android/app/build/outputs/apk/release/app-release.apk Sinapse.apk

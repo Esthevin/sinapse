@@ -4,6 +4,8 @@ import { estimateMinutes, isUserBook } from '@/content';
 import { hasHumanNarration } from '@/content/narration';
 import type { Story } from '@/content/types';
 import { t, pickLocalized } from '@/i18n/translations';
+import { isFreeStory } from '@/content/plan';
+import { useAccount } from '@/state/AccountContext';
 import { useApp } from '@/state/AppContext';
 import { useTheme } from '@/theme/theme';
 import { Card, Cover, ProgressBar, Stars, Text } from './ui';
@@ -21,6 +23,7 @@ export function starsFor(correct: number, total: number): number {
 export function StoryCard({ story, width }: { story: Story; width: number }) {
   const { settings, progress, quizzes, recordings, fs } = useApp();
   const th = useTheme();
+  const { plan } = useAccount();
   const { colors, spacing, fontSize } = th;
   const { lang } = settings;
   const title = pickLocalized(story.title, lang);
@@ -29,6 +32,7 @@ export function StoryCard({ story, width }: { story: Story; width: number }) {
   const stars = quiz ? starsFor(quiz.best, quiz.total) : 0;
   const inProgress = !!prog && !prog.completed && prog.paragraph > 0;
   const mins = `${estimateMinutes(story)} ${t(lang, 'minutes')}`;
+  const locked = !isFreeStory(story.id) && plan !== 'premium';
   const region = isUserBook(story) ? 'Mi PDF' : t(lang, story.region);
   const human = hasHumanNarration(story, 'es', recordings[story.id]);
   const open = () => router.push({ pathname: '/story/[id]', params: { id: story.id } });
@@ -44,7 +48,7 @@ export function StoryCard({ story, width }: { story: Story; width: number }) {
             {title}
           </Text>
           <Text style={{ fontSize: fs(fontSize.caption), color: colors.textMuted, fontWeight: '700', marginTop: 2 }}>
-            {region} · {mins}
+            {region} · {mins}{locked ? ' · Premium' : ''}
           </Text>
           <View style={{ marginTop: spacing.sm, minHeight: 18 }}>
             {prog?.completed ? <Stars count={stars || 1} /> : inProgress ? <ProgressBar value={prog.paragraph / story.paragraphs.es.length} /> : null}
@@ -54,7 +58,7 @@ export function StoryCard({ story, width }: { story: Story; width: number }) {
     );
   }
 
-  const meta = [region, mins, human ? t(lang, 'humanVoice') : null].filter(Boolean).join('  ·  ');
+  const meta = [region, mins, human ? t(lang, 'humanVoice') : null, locked ? 'Premium' : null].filter(Boolean).join('  ·  ');
   return (
     <Pressable
       onPress={open}
