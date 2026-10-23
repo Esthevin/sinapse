@@ -1,7 +1,8 @@
 {
   "id": "zorro-al-cielo",
   "title": {
-    "es": "El zorro que quiso ir al cielo"
+    "es": "El zorro que quiso ir al cielo",
+    "quz": "Hanaq pachaman riyta munaq atuq"
   },
   "author": "Cuento tradicional andino",
   "source": "Relato de la tradición oral quechua y aimara, con muchas versiones en los Andes. Adaptación libre para Sinapse.",
@@ -13,7 +14,8 @@
   "coverColor": "#D9622B",
   "emoji": "🦊",
   "summary": {
-    "es": "Un zorro curioso viaja al cielo en la espalda del cóndor, pero su orgullo le juega una mala pasada."
+    "es": "Un zorro curioso viaja al cielo en la espalda del cóndor, pero su orgullo le juega una mala pasada.",
+    "quz": "Yachayta munaq atuq kunturpa dorsanpi hanaq pachaman rin, ichaqa hatunchakuyninmi mana allinta ruwachin."
   },
   "paragraphs": {
     "es": [
@@ -23,6 +25,14 @@
       "Al caer la tarde, el zorro quiso volver, pero el cóndor ya se había ido. Entonces tejió una larga soga y empezó a bajar despacio hacia la tierra.",
       "A medio camino pasaron volando unos loros. El zorro, orgulloso, se burló de ellos y los insultó. Los loros, molestos, picotearon la soga hasta romperla.",
       "El zorro cayó y cayó, y al chocar contra una gran piedra, su panza llena de semillas se reventó. Las semillas se esparcieron por todos lados. Dicen que desde entonces crecen en la tierra la quinua, la papa y el maíz."
+    ],
+    "quz": [
+      "Puna hatunpi Atuq sutiyuq huk atuq kawsarqa, ancha yachayta munaq, hatunchakuq ima. Huk punchaw kunturta uyarirqa: hanaq pachapi hatun kusiy kanqa, mana tukuq mikhuykunawan.",
+      "—¡Apawayña, kuntur wawqiy! —mañakurqa atuq—. Allinta kasaq, nispa. Kuntur iskayrqa, ichaqa tukuypin arí nirqa. Atuq dorsanman wicharqa, hinaspa hukllawan phawarqaku puyukunapa hawanta.",
+      "Hanaq pacha kusikuypi papa, kinuwa, sara, tukuy imaymana q'umir, puka, q'illu rurukunapas karqa. Atuq mikhurqa mikhurqa, mana sayk'uspa, hinaspa añachiyta qonqarqa. Kuntur kutiyta munaqtin, atuqmi nirqa: «Qan ripuy, noqaqa pisi tiempota kutaykusaq.»",
+      "Tutayaqtin atuq kutiyta munarqa, ichaqa kuntur ñam rirqa. Chayqa atuq hatun waskhata awarqa, hinaspa mana utqayllapuni kay pachaman uraykurqa.",
+      "Chawpi ñanpi loroskuna phawaspa pasarqaku. Atuq hatunchakuspa paykunata asikurqa, k'amirqa. Lorokunaqa phiñakuspa waskhata kuchurqaku hinaspa p'itirqa.",
+      "Atuq urmarqa urmarqa, hatun rumiman takakuspa, hunt'a muhu wiksan p'akikurqa. Muhukuna tukuy lawman ch'ichurqa. Chaymanta pacha kay pachapi kinuwa, papa, sara wiñanku, ninku."
     ]
   },
   "audio": [
@@ -40,6 +50,22 @@
         50.472,
         62.592,
         77.256
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:zorro-al-cielo.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 87.352,
+      "paragraphStartsSec": [
+        0.0,
+        13.776,
+        31.768,
+        50.612,
+        61.176,
+        73.4
       ]
     }
   ],
@@ -129,5 +155,8 @@
       "answer": 1,
       "explanation": "El zorro no agradeció y se burló de otros: por eso terminó mal."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }

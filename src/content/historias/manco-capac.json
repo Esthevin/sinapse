@@ -1,7 +1,8 @@
 {
   "id": "manco-capac",
   "title": {
-    "es": "Manco Cápac y Mama Ocllo"
+    "es": "Manco Cápac y Mama Ocllo",
+    "quz": "Manco Qhapaq, Mama Ocllowan"
   },
   "author": "Tradición inca",
   "source": "Leyenda recogida por el Inca Garcilaso de la Vega en los Comentarios Reales (1609). Adaptación libre para Sinapse.",
@@ -14,7 +15,8 @@
   "coverColor": "#C8902E",
   "emoji": "☀️",
   "summary": {
-    "es": "El Sol envía a sus hijos desde el lago Titicaca con una vara de oro para encontrar el lugar donde nacerá el Cusco."
+    "es": "El Sol envía a sus hijos desde el lago Titicaca con una vara de oro para encontrar el lugar donde nacerá el Cusco.",
+    "quz": "Intiqa Titicaca qochamanta churinkunata qori t'ankawan kachan, Qusqu paqarinan kanqa chay maskanankupaq."
   },
   "paragraphs": {
     "es": [
@@ -24,6 +26,14 @@
       "Manco Cápac y Mama Ocllo caminaron muchos días, cruzando ríos, punas y quebradas. Probaban la tierra una y otra vez, pero la vara no entraba del todo.",
       "Un día llegaron a un valle verde rodeado de montañas. Manco Cápac hundió la vara y esta desapareció en la tierra, suave y fértil. Así supieron que habían llegado al lugar elegido: el Cusco.",
       "Manco Cápac enseñó a los hombres a cultivar el maíz, a construir canales y a levantar casas. Mama Ocllo enseñó a las mujeres a hilar y a tejer la lana. Con el trabajo compartido nació un pueblo grande y organizado."
+    ],
+    "quz": [
+      "Ancha ñawpaq pachapi, Antikunapi runakuna ch'iqisqa kawsaqtinku, mana sumaq wasiyuq, mana chakra tarpuyuq, Intiqa, hanaq pachamanta kay pachata qhawarispa, llakikurqa.",
+      "Chaymi Intiqa iskay churinkunata kacharqa: Manco Qhapaqta, Mama Ocllotawan. Paykunaqa Titicaca hatun qochapa yakunpi rikhurimurqaku, tutamanta k'anchay hina llimphi.",
+      "Intiqa paykunaman qori t'anka quykurqa, kamachikuytawan: chinchay lawman puriychis, mayqin tiyasqaykichispi samaspa, t'anka allpapi tuqyachiychis. Maypichus t'anka hunt'aykamun, chaypi llaqta tiyachinaykichis.",
+      "Manco Qhapaqwan Mama Ocllowan achka punchaw purirqaku, mayukunata, punakunata, qhirwakunatapas chimpaspa. Sapa kuti allpata probarqaku, ichaqa t'anka mana hunt'aykuchu.",
+      "Huk punchaw q'umir wayq'uman chayarqaku, orqokunawan muyusqa. Manco Qhapaq t'ankata tuqyachirqa, hinaspa chay allpa llamp'u, kawsaq, chaypi chinkarqa. Chaymi yacharqaku akllasqa kayninta: Qusqu.",
+      "Manco Qhapaq runakunata saratarpuyta, yaku pukyuta ruwayta, wasikunata sayarichiyta yachachirqa. Mama Ocllo warmikunata q'aytuyta, millma awayta yachachirqa. Hukllaman llank'ayninkuwan hatun, kamachisqa llaqta paqarirqa."
     ]
   },
   "audio": [
@@ -41,6 +51,22 @@
         44.064,
         56.712,
         72.216
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:manco-capac.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 88.568,
+      "paragraphStartsSec": [
+        0.0,
+        12.984,
+        25.544,
+        41.192,
+        55.228,
+        71.208
       ]
     }
   ],
@@ -126,5 +152,8 @@
       "answer": 1,
       "explanation": "Al final, gracias a lo que enseñaron y al trabajo de todos, nace un pueblo grande y organizado."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }

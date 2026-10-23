@@ -1,7 +1,8 @@
 {
   "id": "yacumama",
   "title": {
-    "es": "La Yacumama, madre del agua"
+    "es": "La Yacumama, madre del agua",
+    "quz": "Yakumama, yakupa mamanqa"
   },
   "author": "Tradición amazónica",
   "source": "Leyenda de la tradición oral de la Amazonía peruana. Adaptación libre para Sinapse.",
@@ -13,7 +14,8 @@
   "coverColor": "#1F7A7A",
   "emoji": "🐍",
   "summary": {
-    "es": "Una serpiente gigante cuida los ríos y las cochas. ¿Qué pasará con quienes no respetan el agua?"
+    "es": "Una serpiente gigante cuida los ríos y las cochas. ¿Qué pasará con quienes no respetan el agua?",
+    "quz": "Hatun katari mayukunata qochakunatapas waqaychan. ¿Imataq yakuta mana respetaqkunawan kanqa?"
   },
   "paragraphs": {
     "es": [
@@ -22,6 +24,13 @@
       "Ella cuida a los peces, a los delfines rosados y a todos los animales del agua. Por eso los pescadores antiguos le pedían permiso antes de pescar y nunca sacaban más de lo que su familia necesitaba.",
       "Una vez llegaron unos hombres en canoa que querían pescar con veneno, para sacar muchos peces de una sola vez y venderlos. Esa noche, el agua de la cocha empezó a girar con fuerza. Un remolino enorme se tragó sus redes y su canoa, y los hombres apenas alcanzaron a nadar hasta la orilla.",
       "Asustados, entendieron el mensaje: la cocha no era solo de ellos. Desde entonces, en la comunidad se cuenta esta historia a los niños, para que cuiden los ríos, no los ensucien y respeten a los animales del agua."
+    ],
+    "quz": [
+      "Amazoniapi mayukunapi qochakunapipas, sach'a runakunaq nisqanpi, hatun katari kawsan: Yakumama, yakupa mamanqa. Sutinqa quechua iskay simimanta hukllawan: yaku, «unu» ninanpaq, mama, «mama» ninanpaq.",
+      "Yakumamaqa ancha hatun, mayup ukhunpi puñuqtin hatun k'ullu hina rikch'akun. Samaqtin yakuqa muyuyun, kuyuqtinmi mayukunapa ñanninta tikran.",
+      "Paymi challwakunata, puka delfinkunata, yaku uywakunatapas waqaychan. Chayraykum ñawpa challwaq runakuna pay mañarqaku challwayta qallarinankupaq, manataq aswan hap'irqakuchu, ayllunku munasqallantapuni.",
+      "Huk kuti huk qhari canoapi chayamurqaku, venenowan challwayta munaspa, tukuy challwakunata huk kutillapi horqospa rantinanpaq. Chay tuta, qochapa yakunmi kallpawan muyuyta qallarirqa. Hatun muyuriyqa redninkunata canoantawan millp'urqa, qharikunaqa pisillamanta kantuman nadarqaku.",
+      "Manchakuspa, willayta entendirqaku: qochaqa manam paykunallapaqchu karqa. Chaymanta pacha, ayllupi kay willakuyta wawakunaman willanku, mayukunata cuidanankupaq, mana qhellichanankupaq, yaku uywakunatapas respetanankupaq."
     ]
   },
   "audio": [
@@ -38,6 +47,21 @@
         27.024,
         38.952,
         56.592
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:yacumama.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 85.06,
+      "paragraphStartsSec": [
+        0.0,
+        17.756,
+        29.12,
+        45.412,
+        66.644
       ]
     }
   ],
@@ -124,5 +148,8 @@
       "answer": 1,
       "explanation": "Igual que en la leyenda, cuidar el agua y no sacar de más ayuda a que el río siga dando vida."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }

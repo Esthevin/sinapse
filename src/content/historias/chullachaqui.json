@@ -1,7 +1,8 @@
 {
   "id": "chullachaqui",
   "title": {
-    "es": "El Chullachaqui, guardián del bosque"
+    "es": "El Chullachaqui, guardián del bosque",
+    "quz": "Chullachaqui, sach'ap waqaychaqnin"
   },
   "author": "Tradición amazónica",
   "source": "Leyenda de la tradición oral de la Amazonía peruana. Adaptación libre para Sinapse.",
@@ -13,7 +14,8 @@
   "coverColor": "#2E7D4F",
   "emoji": "🌳",
   "summary": {
-    "es": "Un joven sale a buscar aguaje y alguien conocido lo llama desde el monte. ¿Será quien parece ser?"
+    "es": "Un joven sale a buscar aguaje y alguien conocido lo llama desde el monte. ¿Será quien parece ser?",
+    "quz": "Huk waynaqa aguaje maskaq lluqsin, hinaspa riqsisqa runa sach'amanta waqyan. ¿Pichus kasqan hina?"
   },
   "paragraphs": {
     "es": [
@@ -23,6 +25,14 @@
       "Un día, un joven llamado Tito salió a buscar frutos de aguaje. De pronto vio a su primo, que lo llamaba entre los árboles: —¡Ven, por aquí hay más! Tito lo siguió un buen rato, hasta que notó algo extraño: su primo siempre escondía un pie detrás de los arbustos.",
       "Tito recordó lo que le había dicho su abuela: “Si alguien te llama en el monte, mírale los pies”. Al ver el pie torcido, supo la verdad. No siguió caminando: se quedó quieto, respiró hondo y buscó el sonido del río para orientarse.",
       "Siguiendo el río, llegó a su comunidad al anochecer. Desde entonces Tito respeta el bosque: nunca entra solo, avisa a dónde va y solo toma lo que necesita. Dicen que el Chullachaqui no hace daño a quien cuida la selva."
+    ],
+    "quz": [
+      "Loreto, Ucayali sach'apipi, awichukuna willanku sach'ap waqaychaqnin kasqanta: Chullachaqui. Huch'uy uywam, sach'a ukhupi tiyan, hatun lupuna sach'akuna qayllapi.",
+      "Sutinqa Amazonía quechuamanta hamun: chulla, «mana tupaq» icha «sapalla» ninanpaq, chaki, «chaki». Chullachaquiqa huk chakin runa hina, huknintaq k'umu hina.",
+      "Chullachaquiqa llapa runapa rikch'aynin hap'in: amigo, wawqe, mamapas taytapas. Chhaynata sach'api sapallan purikuqkunata q'otun, aswan ukhuman pusaspa, chinkanankama.",
+      "Huk punchaw Tito sutiyuq waynaqa aguaje rurukunata maskaq lluqsirqa. Hinaqtin primunta rikurqa, sach'a chawpimanta waqyaqta: «¡Hamuy, kaypi aswan kachkan!» Tito unaytam qatirqa, imallapas mana allinchu ñawinpi rikurqa: primunqa sapa kuti huk chakinta sach'akuna qhipanpi pakaq.",
+      "Tito awichan nisqanta yuparqa: «Pipas monteypi waqyasunki chayqa, chakinta qhaway.» K'umu chakita rikuspa, cheqaqta yacharqa. Manaña purirqachu: ch'inlla, ancha samarqa, mayup uyarinta maskarqa.",
+      "Mayuta qatispa, tutayaqtinña ayllunman chayarqa. Chaymanta pacha Titoqa sach'ata respetan: manam sapallanchu yaykun, maymanchus riyta willan, yuyaq lluqsiqllatam hap'in. Ninku Chullachaquiqa sach'ata waqaychaqta mana ima ruwanchu."
     ]
   },
   "audio": [
@@ -40,6 +50,22 @@
         38.184,
         55.152,
         70.8
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:chullachaqui.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 94.504,
+      "paragraphStartsSec": [
+        0.0,
+        12.912,
+        28.14,
+        40.604,
+        60.996,
+        75.948
       ]
     }
   ],
@@ -133,5 +159,8 @@
       "answer": 2,
       "explanation": "Es lo que Tito aprendió y lo que la leyenda enseña a quienes viven cerca del bosque."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }

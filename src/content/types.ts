@@ -110,6 +110,8 @@ export interface Story {
   emoji?: string;
   summary: Localized<string>;
   paragraphs: Localized<string[]>;
+  /** Lenguas cuyo texto es un BORRADOR automático, aún sin revisión de hablantes nativos (la app lo avisa). */
+  borrador?: LanguageCode[];
   audio: NarratorTrack[];
   /** true en los audiolibros que vienen de un PDF: no llevan preguntas ni glosario. */
   sinPreguntas?: boolean;

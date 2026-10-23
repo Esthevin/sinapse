@@ -168,6 +168,14 @@ function StoryPlayer({
           )}
         </View>
 
+        {(story.borrador ?? []).some((l) => l === resolved.textLang || l === resolved.lang) && (
+          <Card style={styles.notice}>
+            <Text style={styles.noticeText}>
+              Borrador: el texto en {languageName(resolved.textLang)} es una traducción automática y la voz es sintética (IA). Aún no la revisó un hablante nativo y puede tener errores. Ayúdanos a mejorarla.
+            </Text>
+          </Card>
+        )}
+
         {resolved.fallback && (
           <Card style={styles.notice}>
             <Text style={styles.noticeText}>

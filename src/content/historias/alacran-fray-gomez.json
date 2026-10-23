@@ -1,7 +1,8 @@
 {
   "id": "alacran-fray-gomez",
   "title": {
-    "es": "El alacrán de fray Gómez"
+    "es": "El alacrán de fray Gómez",
+    "quz": "Fray Gómezpa alacránnin"
   },
   "author": "Ricardo Palma",
   "source": "De las Tradiciones peruanas de Ricardo Palma (siglo XIX), de dominio público. Adaptación libre y resumida para Sinapse.",
@@ -13,7 +14,8 @@
   "coverColor": "#5B3A7A",
   "emoji": "🦂",
   "summary": {
-    "es": "Un vendedor honrado necesita un préstamo. Un fraile pobre lo ayuda de la forma más inesperada."
+    "es": "Un vendedor honrado necesita un préstamo. Un fraile pobre lo ayuda de la forma más inesperada.",
+    "quz": "Honrado rantikuq mañakuyta munan. Huk pobre frailemi mana yuyasqa ñanpi yanapan."
   },
   "paragraphs": {
     "es": [
@@ -22,6 +24,13 @@
       "Fray Gómez miró a su alrededor. Su celda era pobre: no tenía dinero, solo una cama, una mesa y unos libros. En ese momento, un alacrán caminaba por la pared. El fraile lo tomó con cuidado, lo envolvió en un papel y, al abrirlo, el alacrán se había convertido en una joya de oro y piedras preciosas.",
       "—Lleva esta joya y empéñala —le dijo—. Pero en seis meses debes devolvérmela. Jeromo empeñó la joya, trabajó con honradez y su negocio volvió a prosperar.",
       "Antes de que se cumpliera el plazo, Jeromo recuperó la joya y se la devolvió a fray Gómez, muy agradecido. El fraile la puso en la ventana y dijo: —Animalito de Dios, sigue tu camino. Y la joya volvió a ser alacrán, y se fue caminando tranquilamente por la pared."
+    ],
+    "quz": [
+      "Virreykuna Lima llaqtapi huk franciscano fray Gómez sutiyuq tiyarqa, sumaq sonqonwan milagrokunawanpas riqsisqa, mana ima hatunchakuspa. Kunankama ancha valorniyuq imamantapas ninku: «fray Gómezpa alacránninpa valorninhina.»",
+      "Huk punchaw, buhonero, puriq rantikuq Jeromo sutiyuq, ancha llakisqa, celdanman chayarqa. «Tayta, honrado runam kani, ichaqa chinkasqa kani. Phisqa pachak duro munani negociyuta qespichinaypaq, manataq pipas mañachiwanchu.»",
+      "Fray Gómezqa muyuriqninta qhawarqa. Celdanqa pobre karqa: manam qolqenchu karqa, huk puñuna, huk mesa, libros chayllam. Chay pachapi huk alacrán perqapi purisharqa. Fraileqa cuidadowan hap'irqa, papelpi qhawarqa, kicharqa, alacránqa qori, ch'aska rumiyuq joya tukusqa.",
+      "«Kay joyata apay, empeñaruy», nirqa. «Ichaqa soqta killapi kutichipuwanki.» Jeromoqa joyata empeñarqa, honradowan llank'arqa, negociyonpas kutiripurqa.",
+      "Plazo mana hunt'akuqtin, Jeromoqa joyata kutichirqa fray Gómezman, ancha agradecesqa. Fraileqa ventanapi churarqa, nirqa: «Diospa uywachanqa, ñanniykita puriy.» Joyaqa kutiripurqa alacrán, ch'inlla perqapi purirqa."
     ]
   },
   "audio": [
@@ -38,6 +47,21 @@
         29.976,
         50.784,
         62.016
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:alacran-fray-gomez.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 80.672,
+      "paragraphStartsSec": [
+        0.0,
+        16.992,
+        33.456,
+        53.336,
+        65.156
       ]
     }
   ],
@@ -124,5 +148,8 @@
       "answer": 1,
       "explanation": "La frase nace de esta historia, en la que un alacrán se convierte en una joya valiosísima."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }

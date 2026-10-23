@@ -1,7 +1,8 @@
 {
   "id": "hermanos-ayar",
   "title": {
-    "es": "Los hermanos Ayar"
+    "es": "Los hermanos Ayar",
+    "quz": "Ayar wawqe panakuna"
   },
   "author": "Tradición inca",
   "source": "Leyenda registrada por cronistas como Juan de Betanzos (1551) y Pedro Sarmiento de Gamboa (1572). Adaptación libre para Sinapse.",
@@ -13,7 +14,8 @@
   "coverColor": "#7A4E2D",
   "emoji": "⛰️",
   "summary": {
-    "es": "Cuatro hermanos y cuatro hermanas salen de un cerro en busca de tierra buena. Solo uno llegará al valle del Cusco."
+    "es": "Cuatro hermanos y cuatro hermanas salen de un cerro en busca de tierra buena. Solo uno llegará al valle del Cusco.",
+    "quz": "Tawa wawqe tawa panakunawan orqomanta lluqsiyku, sumaq allpata maskaspa. Qusqu wayq'uman huklla chayanqa."
   },
   "paragraphs": {
     "es": [
@@ -23,6 +25,14 @@
       "El grupo siguió su camino. En el cerro Huanacauri, Ayar Uchu se convirtió en piedra. Desde entonces ese lugar fue sagrado: una huaca a la que la gente iba a mostrar su respeto.",
       "Más adelante, Ayar Auca recibió alas y voló hacia el valle del Cusco. Al posarse en la tierra también se volvió piedra, como señal de que ese lugar sería su hogar.",
       "Solo quedó Ayar Manco, que llegó al valle junto a sus hermanas. Allí fundó la ciudad del Cusco y tomó el nombre de Manco Cápac. Así, según esta leyenda, comenzó la historia de los incas."
+    ],
+    "quz": [
+      "Pacaritambo qayllapi Tambo Tocco sutiyuq orqo kan, kimsa k'uchuyuq. Willakuypi, chawpi k'uchumanta tawa wawqe, tawa pana lluqsimurqaku: Ayarkuna. Sumaq allpata maskarqaku, chaypi tiyanankupaq.",
+      "Wawqekuna Ayar Manco, Ayar Cachi, Ayar Uchu, Ayar Auca sutiyuqkuna karqaku. Ayar Cachiqa llapanmanta aswan kallpayuq karqa: warak'awan rumikunata karuman ch'ipakuspa orqokunata rakirqa, wayq'ukunatapas kicharqa.",
+      "Wawqenkunaqa chay kallpayuq kayninmanta manchakurqaku. Imallapas ninkuwan, paymanta mañarqaku, machaypi qonqasqa willka kaqkunata maskaq kutimunanpaq. Ayar Cachi yaykuqtin, hatun rumikunawan punkuta wiñarqaku, paytaq wiñaypaq wisq'asqa qhipakurqa.",
+      "Huk kuti ñanninta qatiqaku. Huanacauri orqopi Ayar Uchuqa rumiman tukurqa. Chaymanta pacha chay tiyana willka karqa: wak'a, runa respetota rikuchinanpaq rin.",
+      "Aswan ñawpaqpi, Ayar Aucaqa raphrayuq tukuspa Qusqu wayq'uman phawarqa. Allpaman tiyaykuspa paypas rumiman tukurqa, chay tiyana wasin kanqa chaypa unanchan.",
+      "Ayar Manco llapallan qhipakurqa, panankunawan wayq'uman chayarqa. Chaypi Qusqu llaqtata tiyachirqa, hinaspa Manco Qhapaq sutiyuq karqa. Chhaynallataqmi, kay willakuywan, Inkakunap kawsayninkuna qallarirqa."
     ]
   },
   "audio": [
@@ -40,6 +50,22 @@
         51.48,
         66.408,
         79.44
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:hermanos-ayar.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 94.012,
+      "paragraphStartsSec": [
+        0.0,
+        15.548,
+        34.764,
+        53.18,
+        66.328,
+        78.668
       ]
     }
   ],
@@ -136,5 +162,8 @@
       "answer": 2,
       "explanation": "Ayar Cachi no había hecho daño a sus hermanos: lo encerraron por miedo. Podemos reflexionar si eso fue justo."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }

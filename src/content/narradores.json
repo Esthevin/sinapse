@@ -120,5 +120,16 @@
       "es"
     ],
     "credit": "Voces generadas con IA (Kokoro-82M, licencia Apache-2.0). Guion experimental de Sinapse."
+  },
+  {
+    "id": "voz-mms-quz",
+    "name": "Voz sintética MMS (Quechua cusqueño)",
+    "role": "voz_sintetica",
+    "bio": "Voz generada por inteligencia artificial (Meta MMS-TTS, facebook/mms-tts-quz). No es una persona: es un borrador mientras se consiguen narradores nativos.",
+    "languages": [
+      "quz"
+    ],
+    "region": "sierra",
+    "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
   }
 ]

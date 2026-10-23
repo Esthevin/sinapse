@@ -107,6 +107,14 @@ for (const file of files) {
   for (const lang of Object.keys(s.paragraphs ?? {})) {
     if (!LANGS.includes(lang)) error(file, `idioma desconocido en "paragraphs": ${lang}`);
   }
+  for (const lang of Object.keys(s.paragraphs ?? {})) {
+    if (lang !== 'es' && s.paragraphs[lang]?.length !== s.paragraphs?.es?.length)
+      error(file, `paragraphs.${lang} debe tener los mismos ${s.paragraphs?.es?.length} párrafos que el castellano`);
+  }
+  for (const lang of s.borrador ?? []) {
+    if (!LANGS.includes(lang)) error(file, `"borrador" menciona una lengua desconocida: ${lang}`);
+    else if (!s.paragraphs?.[lang]) warn(file, `"borrador" incluye ${lang}, pero no hay texto en esa lengua`);
+  }
   const es = s.paragraphs?.es;
   if (!Array.isArray(es) || es.length < 2 || !es.every(isNonEmptyString)) error(file, '"paragraphs.es" debe tener al menos 2 párrafos');
   else {

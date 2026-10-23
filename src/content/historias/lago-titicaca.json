@@ -1,7 +1,8 @@
 {
   "id": "lago-titicaca",
   "title": {
-    "es": "La leyenda del lago Titicaca"
+    "es": "La leyenda del lago Titicaca",
+    "quz": "Titicaca qochapa willakuynin"
   },
   "author": "Tradición aimara",
   "source": "Leyenda de la tradición oral aimara del altiplano. Adaptación libre para Sinapse.",
@@ -14,7 +15,8 @@
   "coverColor": "#2C6E9B",
   "emoji": "🌊",
   "summary": {
-    "es": "Un valle feliz desobedece a los Apus y las lágrimas del Sol forman el lago navegable más alto del mundo."
+    "es": "Un valle feliz desobedece a los Apus y las lágrimas del Sol forman el lago navegable más alto del mundo.",
+    "quz": "Kusisqa wayq'u Apukunata mana kasukuptin, Intipa wiqinmanta kay pachapi aswan hanaqpi puriy atiq qocha paqarin."
   },
   "paragraphs": {
     "es": [
@@ -24,6 +26,14 @@
       "Los Apus se enojaron y soltaron a los pumas, que bajaron de las cumbres contra los desobedientes. Al ver esto, Inti, el Sol, lloró durante cuarenta días. Sus lágrimas llenaron el valle hasta formar un lago inmenso.",
       "Solo se salvó una pareja que no había desobedecido, navegando en una balsa de totora. Cuando el agua se calmó, vieron que los pumas se habían convertido en piedra.",
       "Por eso llamaron al lago Titiqaqa, que según la tradición significa “puma de piedra”. Hoy el Titicaca es el lago navegable más alto del mundo y un lugar sagrado para los pueblos aimara y quechua."
+    ],
+    "quz": [
+      "Ancha ñawpaq pachapi, kunan Titicaca qocha kasqanpi, ch'ulla pukyuyuq wayq'u karqa. Chaypi kusisqa llaqta tiyarqa, Apukunap, orqokunap animankunap, waqaychasqan. Mana yarqay, mana llakiy riqsirqakuchu.",
+      "Apukunaqa hukllata nirqaku: mana pipas orqo puntaman wichanmanchu, chaypi willka nina ratarqan.",
+      "Ichaqa huk punchaw, envidiasqa animam runakunapa sonqonpi iskayta muhurqa: «¿Imanasqataq wichanmanchu? Chaypi valorniyuq imapas pakasqa kanan.» Munaywan hatun munaywan hunt'asqa, runakuna orqoman wicharqaku.",
+      "Apukuna phiñakurqaku, pumakunata kacharqaku, paykunam orqokunamanta mana kasukuq runakunaman uraykamurqa. Chayta rikuspa, Inti, tawa chunka punchaw waqarqa. Wiqinkunam wayq'uta huntaykurqa hatun qocha kanankama.",
+      "Huk qhari warmillam, mana kasukuspa, totora balsapi puririspa, qespirqaku. Yakuqa llamp'uyaqtin, pumakuna rumiman tukusqankuta rikurqaku.",
+      "Chayrayku qochata Titiqaqa nisqa sutiyuqta sutichirqaku, ñawpa yuyaypi «rumi puma» ninanpaq. Kunan Titicaca qochaqa kay pachapi aswan hanaqpi puriy atiq qocha, aymara quechua runakunapaq willka kay."
     ]
   },
   "audio": [
@@ -41,6 +51,22 @@
         34.224,
         48.864,
         59.088
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:lago-titicaca.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 82.512,
+      "paragraphStartsSec": [
+        0.0,
+        14.56,
+        22.692,
+        39.216,
+        54.896,
+        65.364
       ]
     }
   ],
@@ -127,5 +153,8 @@
       "answer": 0,
       "explanation": "El pueblo vivía bien mientras respetaba el acuerdo con los Apus; la ambición rompió ese equilibrio."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }

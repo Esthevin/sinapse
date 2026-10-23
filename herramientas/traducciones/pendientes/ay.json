@@ -1,0 +1,213 @@
+{
+  "_nota": "Hoja de traduccion a Aimara (ay). Escribe en cada campo vacio la traduccion; no cambies el numero de parrafos. Cuando este lista: node scripts/aplicar-traducciones.mjs ay herramientas/traducciones/pendientes/ay.json  (queda como BORRADOR hasta que otra persona hablante la revise). \"es\" es solo de referencia.",
+  "naylamp": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "La leyenda de Naylamp",
+      "summary": "Un señor llega por el mar en una flota de balsas y funda un pueblo en el norte del Perú. Cuando muere, nace una leyenda.",
+      "paragraphs": [
+        "Hace muchos siglos, por el mar del norte del Perú, llegó una gran flota de balsas. Al frente venía un señor llamado Naylamp, acompañado de su esposa Ceterni y de muchos servidores.",
+        "Desembarcaron en las playas de lo que hoy es Lambayeque. Naylamp traía consigo un ídolo de piedra verde llamado Yampallec, que representaba su propia figura. Dicen que de ese nombre viene la palabra Lambayeque.",
+        "Naylamp y su gente construyeron un templo llamado Chot, donde colocaron el ídolo. Aprendieron a cultivar en el desierto aprovechando el agua de los ríos, y el pueblo creció.",
+        "Naylamp gobernó muchos años con sabiduría. Cuando sintió que su vida terminaba, pidió a sus servidores que lo enterraran en secreto, en la misma habitación donde había vivido.",
+        "Sus servidores, para que el pueblo no perdiera la esperanza, contaron que Naylamp no había muerto: que le habían crecido alas y había volado hacia el cielo. Hoy, el famoso tumi de oro de Lambayeque muestra a un personaje con alas que muchos relacionan con esta leyenda."
+      ]
+    }
+  },
+  "zorro-al-cielo": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "El zorro que quiso ir al cielo",
+      "summary": "Un zorro curioso viaja al cielo en la espalda del cóndor, pero su orgullo le juega una mala pasada.",
+      "paragraphs": [
+        "En lo alto de la puna vivía un zorro llamado Atuq, muy curioso y algo presumido. Un día escuchó al cóndor contar que en el cielo habría una gran fiesta, con comida que nunca se acababa.",
+        "—¡Llévame contigo, amigo cóndor! —rogó el zorro—. Prometo portarme bien. El cóndor dudó, pero al final aceptó. El zorro subió a su espalda y juntos volaron por encima de las nubes.",
+        "En la fiesta del cielo había papas, quinua, maíz y frutas de todos los colores. El zorro comió y comió sin parar, y se olvidó de agradecer. Cuando el cóndor quiso regresar, el zorro le dijo: —Vete tú, yo me quedo un rato más.",
+        "Al caer la tarde, el zorro quiso volver, pero el cóndor ya se había ido. Entonces tejió una larga soga y empezó a bajar despacio hacia la tierra.",
+        "A medio camino pasaron volando unos loros. El zorro, orgulloso, se burló de ellos y los insultó. Los loros, molestos, picotearon la soga hasta romperla.",
+        "El zorro cayó y cayó, y al chocar contra una gran piedra, su panza llena de semillas se reventó. Las semillas se esparcieron por todos lados. Dicen que desde entonces crecen en la tierra la quinua, la papa y el maíz."
+      ]
+    }
+  },
+  "lago-titicaca": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "La leyenda del lago Titicaca",
+      "summary": "Un valle feliz desobedece a los Apus y las lágrimas del Sol forman el lago navegable más alto del mundo.",
+      "paragraphs": [
+        "Hace mucho tiempo, donde hoy está el lago Titicaca, había un valle fértil. Allí vivía un pueblo feliz, protegido por los Apus, los espíritus de las montañas. No conocían el hambre ni la tristeza.",
+        "Los Apus solo les pusieron una condición: nadie debía subir a la cumbre de la montaña donde ardía el fuego sagrado.",
+        "Pero un día, un espíritu envidioso sembró la duda entre la gente: —¿Por qué no pueden subir? Allá arriba deben esconder algo valioso. Llenos de curiosidad y ambición, los hombres subieron a la montaña.",
+        "Los Apus se enojaron y soltaron a los pumas, que bajaron de las cumbres contra los desobedientes. Al ver esto, Inti, el Sol, lloró durante cuarenta días. Sus lágrimas llenaron el valle hasta formar un lago inmenso.",
+        "Solo se salvó una pareja que no había desobedecido, navegando en una balsa de totora. Cuando el agua se calmó, vieron que los pumas se habían convertido en piedra.",
+        "Por eso llamaron al lago Titiqaqa, que según la tradición significa “puma de piedra”. Hoy el Titicaca es el lago navegable más alto del mundo y un lugar sagrado para los pueblos aimara y quechua."
+      ]
+    }
+  },
+  "manco-capac": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "Manco Cápac y Mama Ocllo",
+      "summary": "El Sol envía a sus hijos desde el lago Titicaca con una vara de oro para encontrar el lugar donde nacerá el Cusco.",
+      "paragraphs": [
+        "Hace mucho tiempo, cuando las personas de los Andes vivían dispersas, sin casas firmes ni campos cultivados, el Sol, al que llamaban Inti, miró la tierra desde lo alto y sintió pena por ellas.",
+        "Entonces el Sol envió a dos de sus hijos, Manco Cápac y Mama Ocllo. Los dos aparecieron sobre las aguas del gran lago Titicaca, brillantes como la luz de la mañana.",
+        "El Sol les entregó una vara de oro y les dio una tarea: caminar hacia el norte y, en cada lugar donde descansaran, hundir la vara en el suelo. Allí donde la vara se hundiera por completo, debían fundar una ciudad.",
+        "Manco Cápac y Mama Ocllo caminaron muchos días, cruzando ríos, punas y quebradas. Probaban la tierra una y otra vez, pero la vara no entraba del todo.",
+        "Un día llegaron a un valle verde rodeado de montañas. Manco Cápac hundió la vara y esta desapareció en la tierra, suave y fértil. Así supieron que habían llegado al lugar elegido: el Cusco.",
+        "Manco Cápac enseñó a los hombres a cultivar el maíz, a construir canales y a levantar casas. Mama Ocllo enseñó a las mujeres a hilar y a tejer la lana. Con el trabajo compartido nació un pueblo grande y organizado."
+      ]
+    }
+  },
+  "hermanos-ayar": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "Los hermanos Ayar",
+      "summary": "Cuatro hermanos y cuatro hermanas salen de un cerro en busca de tierra buena. Solo uno llegará al valle del Cusco.",
+      "paragraphs": [
+        "Cerca de Pacaritambo hay un cerro llamado Tambo Tocco, que tiene tres ventanas. Según la leyenda, de la ventana del centro salieron cuatro hermanos y cuatro hermanas: los Ayar. Buscaban una tierra buena donde vivir.",
+        "Los hermanos se llamaban Ayar Manco, Ayar Cachi, Ayar Uchu y Ayar Auca. Ayar Cachi era el más fuerte de todos: con su honda lanzaba piedras tan lejos que partía los cerros y abría quebradas.",
+        "Sus hermanos sintieron miedo de tanto poder. Con una excusa, le pidieron que regresara a la cueva a buscar unos objetos sagrados que habían olvidado. Cuando Ayar Cachi entró, taparon la entrada con grandes piedras y él quedó encerrado para siempre.",
+        "El grupo siguió su camino. En el cerro Huanacauri, Ayar Uchu se convirtió en piedra. Desde entonces ese lugar fue sagrado: una huaca a la que la gente iba a mostrar su respeto.",
+        "Más adelante, Ayar Auca recibió alas y voló hacia el valle del Cusco. Al posarse en la tierra también se volvió piedra, como señal de que ese lugar sería su hogar.",
+        "Solo quedó Ayar Manco, que llegó al valle junto a sus hermanas. Allí fundó la ciudad del Cusco y tomó el nombre de Manco Cápac. Así, según esta leyenda, comenzó la historia de los incas."
+      ]
+    }
+  },
+  "yacumama": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "La Yacumama, madre del agua",
+      "summary": "Una serpiente gigante cuida los ríos y las cochas. ¿Qué pasará con quienes no respetan el agua?",
+      "paragraphs": [
+        "En los ríos y cochas de la Amazonía vive, según los pueblos de la selva, una serpiente enorme: la Yacumama, la madre del agua. Su nombre une dos palabras del quechua: yaku, que significa “agua”, y mama, que significa “madre”.",
+        "La Yacumama es tan grande que, cuando duerme en el fondo del río, parece un tronco gigante. Cuando respira, el agua forma remolinos, y cuando se mueve, cambia el camino de los ríos.",
+        "Ella cuida a los peces, a los delfines rosados y a todos los animales del agua. Por eso los pescadores antiguos le pedían permiso antes de pescar y nunca sacaban más de lo que su familia necesitaba.",
+        "Una vez llegaron unos hombres en canoa que querían pescar con veneno, para sacar muchos peces de una sola vez y venderlos. Esa noche, el agua de la cocha empezó a girar con fuerza. Un remolino enorme se tragó sus redes y su canoa, y los hombres apenas alcanzaron a nadar hasta la orilla.",
+        "Asustados, entendieron el mensaje: la cocha no era solo de ellos. Desde entonces, en la comunidad se cuenta esta historia a los niños, para que cuiden los ríos, no los ensucien y respeten a los animales del agua."
+      ]
+    }
+  },
+  "chullachaqui": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "El Chullachaqui, guardián del bosque",
+      "summary": "Un joven sale a buscar aguaje y alguien conocido lo llama desde el monte. ¿Será quien parece ser?",
+      "paragraphs": [
+        "En la selva de Loreto y Ucayali, los abuelos cuentan que el bosque tiene un guardián: el Chullachaqui. Es un ser pequeño que vive en lo más profundo del monte, cerca de los árboles gigantes llamados lupunas.",
+        "Su nombre viene del quechua amazónico: chulla, que significa “desigual” o “uno solo”, y chaki, que significa “pie”. Y es que el Chullachaqui tiene un pie humano y el otro torcido, como de animal.",
+        "El Chullachaqui puede tomar la forma de cualquier persona: un amigo, un hermano, incluso la mamá o el papá. Así engaña a quienes caminan solos por el bosque y los lleva cada vez más adentro, hasta que se pierden.",
+        "Un día, un joven llamado Tito salió a buscar frutos de aguaje. De pronto vio a su primo, que lo llamaba entre los árboles: —¡Ven, por aquí hay más! Tito lo siguió un buen rato, hasta que notó algo extraño: su primo siempre escondía un pie detrás de los arbustos.",
+        "Tito recordó lo que le había dicho su abuela: “Si alguien te llama en el monte, mírale los pies”. Al ver el pie torcido, supo la verdad. No siguió caminando: se quedó quieto, respiró hondo y buscó el sonido del río para orientarse.",
+        "Siguiendo el río, llegó a su comunidad al anochecer. Desde entonces Tito respeta el bosque: nunca entra solo, avisa a dónde va y solo toma lo que necesita. Dicen que el Chullachaqui no hace daño a quien cuida la selva."
+      ]
+    }
+  },
+  "caballero-carmelo": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "El Caballero Carmelo",
+      "summary": "En Pisco, una familia quiere a su gallo como a un amigo. Un día, Carmelo debe enfrentarse a un rival más joven.",
+      "paragraphs": [
+        "En una casa de Pisco, junto al mar, vivía una familia con muchos hijos. Un día el padre volvió de viaje con un regalo: un gallo de plumas brillantes y paso elegante. Los niños lo llamaron el Caballero Carmelo.",
+        "Carmelo se volvió parte de la familia. Cantaba al amanecer, paseaba por el corral como un señor y los niños lo cuidaban con cariño. Para ellos no era solo un ave: era un amigo.",
+        "Pero llegaron las fiestas de San Andrés, y en el pueblo se organizaban peleas de gallos. El padre aceptó un desafío: Carmelo debía enfrentarse al Ajiseco, un gallo joven y famoso. Los niños sintieron miedo, porque Carmelo ya estaba viejo.",
+        "El día de la pelea, Carmelo luchó con valentía. El Ajiseco era fuerte y rápido, pero Carmelo no retrocedió. Al final, el Ajiseco cayó vencido y la gente aplaudió al viejo gallo.",
+        "Sin embargo, Carmelo había quedado muy herido. Los niños lo llevaron a casa y lo cuidaron día y noche. Poco después, el Caballero Carmelo murió tranquilo, rodeado de quienes lo querían.",
+        "El narrador, ya adulto, recuerda aquella tarde con tristeza. La historia nos habla del cariño a los animales, de la nobleza y del paso del tiempo, y también nos invita a preguntarnos si está bien hacer pelear a un ser que amamos."
+      ]
+    }
+  },
+  "alacran-fray-gomez": {
+    "title": "",
+    "summary": "",
+    "paragraphs": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "es": {
+      "title": "El alacrán de fray Gómez",
+      "summary": "Un vendedor honrado necesita un préstamo. Un fraile pobre lo ayuda de la forma más inesperada.",
+      "paragraphs": [
+        "En la Lima de los virreyes vivió un fraile franciscano llamado fray Gómez, famoso por su bondad y por los milagros que, según la gente, hacía sin darse importancia. Hasta hoy, de algo muy valioso se dice: “vale lo que un alacrán de fray Gómez”.",
+        "Un día llegó a su celda un buhonero, un vendedor ambulante llamado Jeromo, muy preocupado. —Padre, soy un hombre honrado, pero estoy en la ruina. Necesito quinientos duros para salvar mi negocio, y nadie quiere prestarme.",
+        "Fray Gómez miró a su alrededor. Su celda era pobre: no tenía dinero, solo una cama, una mesa y unos libros. En ese momento, un alacrán caminaba por la pared. El fraile lo tomó con cuidado, lo envolvió en un papel y, al abrirlo, el alacrán se había convertido en una joya de oro y piedras preciosas.",
+        "—Lleva esta joya y empéñala —le dijo—. Pero en seis meses debes devolvérmela. Jeromo empeñó la joya, trabajó con honradez y su negocio volvió a prosperar.",
+        "Antes de que se cumpliera el plazo, Jeromo recuperó la joya y se la devolvió a fray Gómez, muy agradecido. El fraile la puso en la ventana y dijo: —Animalito de Dios, sigue tu camino. Y la joya volvió a ser alacrán, y se fue caminando tranquilamente por la pared."
+      ]
+    }
+  }
+}

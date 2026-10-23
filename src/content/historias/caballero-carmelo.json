@@ -1,7 +1,8 @@
 {
   "id": "caballero-carmelo",
   "title": {
-    "es": "El Caballero Carmelo"
+    "es": "El Caballero Carmelo",
+    "quz": "Caballero Carmelo"
   },
   "author": "Abraham Valdelomar",
   "source": "Cuento de Abraham Valdelomar (1918), de dominio público. Adaptación libre y resumida para Sinapse.",
@@ -13,7 +14,8 @@
   "coverColor": "#B23A3A",
   "emoji": "🐓",
   "summary": {
-    "es": "En Pisco, una familia quiere a su gallo como a un amigo. Un día, Carmelo debe enfrentarse a un rival más joven."
+    "es": "En Pisco, una familia quiere a su gallo como a un amigo. Un día, Carmelo debe enfrentarse a un rival más joven.",
+    "quz": "Pisco llaqtapi ayllu atamanta amigo hina munan. Huk punchaw Carmeloqa aswan waynaq rivalwan hayk'aqkama."
   },
   "paragraphs": {
     "es": [
@@ -23,6 +25,14 @@
       "El día de la pelea, Carmelo luchó con valentía. El Ajiseco era fuerte y rápido, pero Carmelo no retrocedió. Al final, el Ajiseco cayó vencido y la gente aplaudió al viejo gallo.",
       "Sin embargo, Carmelo había quedado muy herido. Los niños lo llevaron a casa y lo cuidaron día y noche. Poco después, el Caballero Carmelo murió tranquilo, rodeado de quienes lo querían.",
       "El narrador, ya adulto, recuerda aquella tarde con tristeza. La historia nos habla del cariño a los animales, de la nobleza y del paso del tiempo, y también nos invita a preguntarnos si está bien hacer pelear a un ser que amamos."
+    ],
+    "quz": [
+      "Pisco llaqtapi, mama qocha ladopi, achka wawayuq ayllu tiyarqa. Huk punchaw tayta puriymanta kutimuspa, huk regalota apamurqa: llimphi phuru, sumaq purikuq atamata. Wawakuna Caballero Carmelo nirqaku.",
+      "Carmeloqa ayllup kaqnin tukurqa. Pacha paqariqtin takirqa, corralpi señor hina purikurqa, wawakunataq munakuywan qhawarqaku. Paykunapaqqa manam uywallachu karqa: amigon karqa.",
+      "Ichaqa San Andrés fiestakuna chayamurqa, llaqtapi atakunap maqanakuynin ruwakurqa. Taytaqa huk desafiota chaskirqa: Carmeloqa Ajisecowan maqanakunan karqa, waynaq riqsisqa atamawan. Wawakuna manchakurqaku, Carmelo machuña karqa.",
+      "Maqanakuy punchawpi Carmeloqa sinchi sonqowan maqarqa. Ajisecoqa kallpayuq utqaq karqa, ichaqa Carmeloqa mana qhipaman kutirqachu. Tukukuypi Ajisecoqa wañusqa hina urmarqa, runakunataq machu atamata ch'aqchurqaku.",
+      "Ichaqa Carmeloqa ancha k'iriyasqa qhipakurqa. Wawakuna wasiman apaspa tuta punchaw qhawarqaku. Mana unayta, Caballero Carmeloqa thak sonqowan wañurqa, munakuqninkunawan muyusqa.",
+      "Willaq, hatunña kaspa, chay ch'isiyaqta llakiywan yuparin. Kay willakuyqa uywakunata munakuymanta, sumaq sonqomanta, pachap pasayninmantawan willan; chaymanta tapukunanchispaqpas: ¿allinchu munasqanchis uywata maqanakunanpaq churay?"
     ]
   },
   "audio": [
@@ -40,6 +50,22 @@
         51.528,
         67.464,
         83.256
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:caballero-carmelo.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 94.256,
+      "paragraphStartsSec": [
+        0.0,
+        15.26,
+        29.64,
+        46.516,
+        62.804,
+        76.9
       ]
     }
   ],
@@ -114,5 +140,8 @@
       "answer": 1,
       "explanation": "Carmelo gana, pero muere por las heridas. El cuento invita a pensar en el costo de esas peleas."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }

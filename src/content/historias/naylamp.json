@@ -1,7 +1,8 @@
 {
   "id": "naylamp",
   "title": {
-    "es": "La leyenda de Naylamp"
+    "es": "La leyenda de Naylamp",
+    "quz": "Naylamp ñawpa willakuy"
   },
   "author": "Tradición lambayecana",
   "source": "Leyenda de la costa norte registrada por el cronista Miguel Cabello Valboa (1586). Adaptación libre para Sinapse.",
@@ -14,7 +15,8 @@
   "coverColor": "#C9A227",
   "emoji": "⛵",
   "summary": {
-    "es": "Un señor llega por el mar en una flota de balsas y funda un pueblo en el norte del Perú. Cuando muere, nace una leyenda."
+    "es": "Un señor llega por el mar en una flota de balsas y funda un pueblo en el norte del Perú. Cuando muere, nace una leyenda.",
+    "quz": "Huk apu mama quchamanta balsakunawan hamuspa Perú chinchay lawpi llaqtata tiyachin. Wañuqtin, hatun willakuy paqarin."
   },
   "paragraphs": {
     "es": [
@@ -23,6 +25,13 @@
       "Naylamp y su gente construyeron un templo llamado Chot, donde colocaron el ídolo. Aprendieron a cultivar en el desierto aprovechando el agua de los ríos, y el pueblo creció.",
       "Naylamp gobernó muchos años con sabiduría. Cuando sintió que su vida terminaba, pidió a sus servidores que lo enterraran en secreto, en la misma habitación donde había vivido.",
       "Sus servidores, para que el pueblo no perdiera la esperanza, contaron que Naylamp no había muerto: que le habían crecido alas y había volado hacia el cielo. Hoy, el famoso tumi de oro de Lambayeque muestra a un personaje con alas que muchos relacionan con esta leyenda."
+    ],
+    "quz": [
+      "Ancha ñawpaq pachapi, Perú chinchay lawpi mama quchamanta hatun balsakuna chayamurqa. Ñawpaqninpi Naylamp sutiyuq apu hamurqa, warmin Ceterniwan, achka kamachiqninkunawan.",
+      "Kunan Lambayeque nisqa llaqta kasqanpi pampaman samarqaku. Naylamp q'umir rumimanta rikch'ayta apamurqa, Yampallec sutiyuq; chaymi pay kikinpa rikch'ayninqa karqa. Chay sutimantam Lambayeque simi hamun, ninku.",
+      "Naylampwan runankuna Chot sutiyuq wasita ruwarqaku, chaypi rumi rikch'ayta churarqaku. Ch'aki pampapi mayu yakuwan tarpuyta yacharqaku, hinaspam llaqta wiñarqa.",
+      "Naylamp achka watata yachaywan kamachirqa. Kawsayninpa tukukunanta yuyarispa, kamachiqninkunata mañakurqa, pay tiyasqan wasipi pakallapi p'ampanankupaq.",
+      "Kamachiqninkuna, llaqta suyayninta ama chinkachinanpaq, willarqaku: Naylamp manam wañusqachu, raphrayuqmi tukuspa hanaq pachaman phawarqan, nispa. Kunan Lambayeque qori tumi huk raphrayuq runata rikuchin; achkakunam chay willakuywan tupachinku."
     ]
   },
   "audio": [
@@ -39,6 +48,21 @@
         25.896,
         36.624,
         47.424
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:naylamp.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 72.996,
+      "paragraphStartsSec": [
+        0.0,
+        13.988,
+        29.968,
+        42.58,
+        54.04
       ]
     }
   ],
@@ -113,5 +137,8 @@
       "answer": 1,
       "explanation": "Las leyendas guardan la memoria de un pueblo y lo conectan con su pasado, como el tumi de Lambayeque."
     }
+  ],
+  "borrador": [
+    "quz"
   ]
 }
