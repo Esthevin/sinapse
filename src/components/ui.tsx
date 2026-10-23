@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useMemo, type ReactNode } from 'react';
 import {
   Image,
   Pressable,
@@ -9,8 +9,10 @@ import {
   type TextProps,
   type ViewStyle,
 } from 'react-native';
+import { SvgXml } from 'react-native-svg';
 import { PORTADAS } from '@/content/portadas';
 import type { Story } from '@/content/types';
+import { sceneFor } from '@/services/ilustracion';
 import { useApp } from '@/state/AppContext';
 import { useTheme, type Theme } from '@/theme/theme';
 
@@ -315,6 +317,15 @@ export function Cover({ story, size, title }: { story: Story; size: number; titl
   const { bg, fg } = th.colors.region[story.region];
   const ninos = th.playful;
   const art = PORTADAS[story.id];
+  // Sin portada pintada (historia de un PDF o del catálogo descargable): escena dibujada a partir del texto.
+  const scene = useMemo(() => {
+    if (art !== undefined) return null;
+    try {
+      return sceneFor({ title: story.title.es, paragraphs: story.paragraphs.es, region: story.region });
+    } catch {
+      return null;
+    }
+  }, [art, story.id, story.title.es, story.paragraphs.es, story.region]);
   const initial = (title ?? story.title.es).replace(/^[^\p{L}]+/u, '').charAt(0).toUpperCase();
   const u = size / 10;
   const motif = () => {
@@ -359,6 +370,8 @@ export function Cover({ story, size, title }: { story: Story; size: number; titl
       >
         {art !== undefined ? (
           <Image source={art} style={{ width: '100%', height: '100%' }} resizeMode="cover" />
+        ) : scene ? (
+          <SvgXml xml={scene} width="100%" height="100%" />
         ) : (
           <>
             {motif()}

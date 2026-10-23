@@ -39,3 +39,7 @@ Requiere `pip install torch transformers scipy soundfile numpy imageio-ffmpeg`.
 - Que docentes o hablantes de quechua cusqueño **revisen** los 9 textos y sus audios.
 - Traductores para aimara y las demás lenguas; la IA no es fiable en ellas y no se publicó nada.
 - Narradores nativos: la app siempre prefiere su grabación sobre la voz IA.
+
+## Traducción automática a quechua ayacuchano (`traducir_nllb.py`)
+
+`python herramientas/traducciones/traducir_nllb.py quy --historia id1,id2 --salida lote.json` traduce con Meta NLLB-200 (`quy_Latn`) y escribe el archivo que lee `node scripts/aplicar-traducciones.mjs quy lote.json`. Luego `python herramientas/voces/generar_mms.py quy --historia id1,id2` crea la voz. NLLB cubre quechua **ayacuchano**, no cusqueño: es un borrador y debe revisarlo un hablante. Licencia CC BY-NC (solo uso no comercial). Lo usa `npm run pdf:audiolibro -- ... --quechua`.

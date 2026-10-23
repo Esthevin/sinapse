@@ -109,3 +109,17 @@ de uso). No está hecho: es otro costo y otra pieza que mantener.
 ## Varias voces: un actor por personaje
 
 Tanto en la app (voz del teléfono) como en `npm run pdf:audiolibro` (Azure), si el cuento tiene diálogos el narrador y cada personaje se leen con voces distintas. Cómo se detectan, cómo corregirlos y cómo usar Chatterbox: [REPARTO_DE_VOCES.md](REPARTO_DE_VOCES.md). Opciones: `--sin-reparto` (una sola voz) y `--reparto <carpeta>` (reparto corregido a mano).
+
+## Quechua para los cuentos de un PDF
+
+```bash
+npm run pdf:audiolibro -- libro.pdf --todos --fuente "..." --quechua
+```
+
+Después de crear los cuentos en castellano, el comando traduce cada uno al **quechua ayacuchano** (Meta NLLB-200) y le crea una voz (Meta MMS-TTS). Queda como **borrador**: la app avisa que no lo revisó un hablante nativo. Necesita Python con `pip install torch transformers sentencepiece scipy soundfile numpy imageio-ffmpeg` y descargar los modelos la primera vez (unos 2.5 GB). Detalles, límites y licencias (CC BY-NC, solo uso no comercial) en [IDIOMAS.md](IDIOMAS.md). Para traducir cuentos que ya están en la app: `python herramientas/traducciones/traducir_nllb.py quy --historia id1,id2`.
+
+En la app, los PDF propios del teléfono **no se traducen**: no hay un traductor de quechua que funcione sin internet y el texto no sale del dispositivo.
+
+## Imágenes
+
+Cada cuento de un PDF recibe una **portada ilustrada a partir de su texto**: la app lee el título y los primeros párrafos, detecta el lugar (montaña, selva, mar, lago, ciudad, mina), si es de día o de noche y los personajes (zorro, cóndor, loro, tortuga, gente…), y dibuja la escena con las mismas piezas de las portadas del catálogo (`src/services/ilustracion/`). Ocurre en el teléfono, sin internet. Es una escena sencilla, no una ilustración pintada: para una portada propia basta dejar un PNG con el id de la historia en `assets/portadas/` y registrarlo en `src/content/portadas.ts`.
