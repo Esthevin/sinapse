@@ -41,6 +41,8 @@ export default function StoryScreen() {
   const story = getStory(id);
   const { settings, recordings, openStory } = useApp();
   const [viewLang, setViewLang] = useState<LanguageCode>(settings.lang);
+  // Si el audio no carga (archivo que el teléfono no puede abrir), se lee con la voz del teléfono en vez de quedar cargando.
+  const [failedKey, setFailedKey] = useState<string | null>(null);
 
   useEffect(() => {
     if (story) openStory(story.id);
@@ -54,13 +56,25 @@ export default function StoryScreen() {
     );
   }
 
-  const resolved = resolveNarration(story, viewLang, recordings[story.id]);
+  const original = resolveNarration(story, viewLang, recordings[story.id]);
+  const audioFailed = failedKey === original.key;
+  const resolved: ResolvedNarration = audioFailed
+    ? { ...original, source: { kind: 'tts', paragraphs: original.source.paragraphs }, voice: { kind: 'tts' }, key: `${original.key}:tts` }
+    : original;
 
   return (
     <>
       <Stack.Screen options={{ title: pickLocalized(story.title, settings.lang) }} />
       {/* `key` reinicia el reproductor cuando cambia la fuente de voz. */}
-      <StoryPlayer key={resolved.key} story={story} resolved={resolved} viewLang={viewLang} setViewLang={setViewLang} />
+      <StoryPlayer
+        key={resolved.key}
+        story={story}
+        resolved={resolved}
+        viewLang={viewLang}
+        setViewLang={setViewLang}
+        audioFailed={audioFailed}
+        onAudioFailed={() => setFailedKey(original.key)}
+      />
     </>
   );
 }
@@ -70,11 +84,15 @@ function StoryPlayer({
   resolved,
   viewLang,
   setViewLang,
+  audioFailed,
+  onAudioFailed,
 }: {
   story: Story;
   resolved: ResolvedNarration;
   viewLang: LanguageCode;
   setViewLang: (l: LanguageCode) => void;
+  audioFailed: boolean;
+  onAudioFailed: () => void;
 }) {
   const { settings, progress, recordings, updateSettings, savePosition, addListening, markCompleted, booksChanged } = useApp();
   const { th, styles, colors, spacing } = useThemed(makeStyles);
@@ -100,6 +118,15 @@ function StoryPlayer({
     },
     onListenTick: (sec) => addListening(story.id, sec),
   });
+
+  // Si el audio sigue "cargando" tras 12 segundos, no se va a abrir: pasar a la voz del teléfono.
+  const failedRef = useRef(onAudioFailed);
+  failedRef.current = onAudioFailed;
+  useEffect(() => {
+    if (!narration.loading) return;
+    const timer = setTimeout(() => failedRef.current(), 12000);
+    return () => clearTimeout(timer);
+  }, [narration.loading]);
 
   const isTts = resolved.source.kind === 'tts';
   const paragraphs = resolved.source.paragraphs;
@@ -227,6 +254,12 @@ function StoryPlayer({
             onPress={() => router.push({ pathname: '/record/[id]', params: { id: story.id, lang: 'es' } })}
             style={{ marginTop: spacing.md }}
           />
+        )}
+
+        {audioFailed && (
+          <Card style={styles.notice}>
+            <Text style={styles.noticeText}>No se pudo abrir el audio de esta narración en este teléfono. Se leerá con la voz del teléfono.</Text>
+          </Card>
         )}
 
         {isTts && noVoice && (
