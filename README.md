@@ -40,6 +40,7 @@ la costa, la sierra y la selva, en **castellano y lenguas originarias**.
 - **Sonidos ambientales** durante la narración (viento, pasos, lluvia, río, olas, fuego, selva, noche, aleteo): diseño sonoro automático según el texto (`src/content/ambience.ts`), ajustable por historia con el campo `ambience`, y botón «Sonidos» en el reproductor. Sonidos propios generados con `herramientas/sonidos/generar_sonidos.py`.
 - **Audiolibro desde PDF:** en la biblioteca, «Convertir un PDF en audiolibro». El texto se lee dentro del dispositivo con pdf.js (`assets/pdfjs`, Apache-2.0), se separa la información inicial de los cuentos y se elige cuáles agregar; se narra con la voz del teléfono (elegible en Ajustes). Para narrar con **Camila o Alex** hay un comando del equipo: `npm run pdf:audiolibro` (ver [docs/PDF_A_AUDIOLIBRO.md](docs/PDF_A_AUDIOLIBRO.md)). Solo PDF con texto (los escaneos necesitan OCR). Probado en la web; el camino de Android/iPhone (WebView) aún no se probó en un teléfono.
 - **Nueva historia:** «El zorro y el cóndor» (piloto de radiodrama con voces sintéticas Kokoro). Herramientas en `herramientas/radiodrama`.
+- **Cuentas, plan Normal/Premium y panel de administración** (Supabase, descargas sin internet para Premium, panel web en `/admin/`): ver [docs/CUENTAS.md](docs/CUENTAS.md).
 - **Importador de audios** (`npm run audio:importar`, ver `docs/CARGAR_AUDIOS_QUECHUA.md`).
 - Red de seguridad contra pantallas en blanco (`ErrorBoundary`, estado guardado a prueba de datos dañados y recarga automática en la web si queda una página vieja en caché).
 

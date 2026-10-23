@@ -28,10 +28,23 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run validar
+      # Cuentas y planes (docs/CUENTAS.md): las variables se crean en GitHub → Settings → Secrets and variables → Actions → Variables.
       - run: npx expo export --platform web --output-dir dist
+        env:
+          EXPO_PUBLIC_SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+          EXPO_PUBLIC_PREMIUM_CONTACT: ${{ vars.PREMIUM_CONTACT }}
       - run: node scripts/parchar-web.mjs dist
       # El catálogo descargable se publica junto a la app (misma URL base).
       - run: cp -r docs/catalogo dist/catalogo
+      # Panel de administración de cuentas (https://<usuario>.github.io/sinapse/admin/). Solo entran cuentas con rol de administrador.
+      - run: cp -r docs/admin dist/admin
+      - name: Conectar el panel con el servidor de cuentas
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+        run: |
+          printf "window.SINAPSE_ADMIN = { url: '%s', anonKey: '%s' };\n" "$SUPABASE_URL" "$SUPABASE_ANON_KEY" > dist/admin/config.js
       - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
