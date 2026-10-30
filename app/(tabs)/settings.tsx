@@ -53,7 +53,7 @@ export default function SettingsScreen() {
       <SectionTitle>Cuenta y plan</SectionTitle>
       <Card>
         <Text style={{ fontWeight: '800' }}>{profile ? profile.email : 'Sin cuenta'}</Text>
-        <Text style={styles.note}>{plan === 'premium' ? 'Plan Premium' : 'Plan Normal'}. Con Premium: todo el catálogo, descargas sin internet y PDF sin límite.</Text>
+        <Text style={styles.note}>{plan === 'premium' ? 'Plan Premium' : 'Plan Normal'}. Con Premium: historias exclusivas, descargas sin internet y PDF sin límite.</Text>
         <View style={[styles.row, { marginTop: spacing.md }]}>
           <Button label={profile ? 'Mi cuenta' : 'Ingresar o crear cuenta'} variant="secondary" onPress={() => router.push('/cuenta')} />
           {plan !== 'premium' && <Button label="Ver Premium" onPress={() => router.push('/premium')} />}

@@ -1,12 +1,13 @@
 import { router } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { FlatList, Pressable, StyleSheet, TextInput, useWindowDimensions, View } from 'react-native';
+import { LanguagePicker } from '@/components/LanguagePicker';
 import { StoryCard } from '@/components/StoryCard';
 import { Button, Card, Chip, Cover, ProgressBar, Text } from '@/components/ui';
 import { STORIES } from '@/content';
 import { narratedLanguages } from '@/content/narration';
 import type { Region } from '@/content/types';
-import { t, pickLocalized } from '@/i18n/translations';
+import { LANGUAGES, t, pickLocalized } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
 import { useThemed, type Theme } from '@/theme/theme';
 
@@ -21,13 +22,15 @@ const normalize = (s: string) =>
     .toLowerCase();
 
 export default function LibraryScreen() {
-  const { settings, progress, recordings, catalogVersion } = useApp();
+  const { settings, progress, recordings, catalogVersion, updateSettings } = useApp();
   const { th, styles, colors, spacing } = useThemed(makeStyles);
   const { width: screenWidth } = useWindowDimensions();
   const { lang } = settings;
   const [query, setQuery] = useState('');
   const [region, setRegion] = useState<Region | null>(null);
   const [onlyHuman, setOnlyHuman] = useState(false);
+  const [pickingLang, setPickingLang] = useState(false);
+  const currentLang = LANGUAGES.find((l) => l.code === lang);
 
   const filtered = useMemo(() => {
     const q = normalize(query.trim());
@@ -56,6 +59,31 @@ export default function LibraryScreen() {
 
   const header = (
     <View>
+      {/* Idioma de la app: se puede cambiar desde el inicio, sin entrar a Ajustes. */}
+      <View style={styles.langRow}>
+        <Pressable
+          onPress={() => setPickingLang((v) => !v)}
+          accessibilityRole="button"
+          accessibilityState={{ expanded: pickingLang }}
+          accessibilityLabel={`${t(lang, 'chooseLanguage')}: ${currentLang?.native ?? lang}`}
+          style={styles.langButton}
+        >
+          <Text style={styles.langText}>{`${currentLang?.native ?? lang}  ${pickingLang ? '▴' : '▾'}`}</Text>
+        </Pressable>
+      </View>
+      {pickingLang && (
+        <Card style={{ marginBottom: spacing.md }}>
+          <Text style={styles.langTitle}>{t(lang, 'chooseLanguage')}</Text>
+          <LanguagePicker
+            value={lang}
+            onChange={(code) => {
+              updateSettings({ lang: code });
+              setPickingLang(false);
+            }}
+          />
+        </Card>
+      )}
+
       <Text style={styles.hello}>{t(lang, 'hello')}</Text>
       <Text style={styles.tagline}>{t(lang, 'appTagline')}</Text>
 
@@ -141,6 +169,10 @@ const makeStyles = ({ colors, spacing, radius, fontSize, font, stroke, playful, 
       borderColor: colors.border,
     },
     chips: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, marginTop: spacing.md },
+    langRow: { flexDirection: 'row', justifyContent: 'flex-end', marginTop: spacing.xs, marginBottom: spacing.xs },
+    langButton: { borderWidth: stroke, borderColor: colors.border, borderRadius: 999, paddingHorizontal: spacing.md, paddingVertical: spacing.xs + 2, backgroundColor: colors.card },
+    langText: { fontWeight: '800', fontSize: fs(fontSize.caption + 1), color: colors.text },
+    langTitle: { fontWeight: '800', fontSize: fs(fontSize.subtitle), marginBottom: spacing.sm, color: colors.text },
     count: { marginTop: spacing.lg, fontSize: fs(fontSize.caption), fontWeight: '800', color: colors.textMuted },
     empty: { textAlign: 'center', color: colors.textMuted, marginTop: spacing.xl, fontSize: fs(fontSize.body) },
   });

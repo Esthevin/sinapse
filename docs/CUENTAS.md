@@ -6,11 +6,11 @@ Sinapse funciona **sin cuenta** (como plan Normal). Con cuenta, una persona pued
 
 | | Normal | Premium |
 |---|---|---|
-| Historias | 10 historias cortas | Todo el catálogo, con voces humanas |
+| Historias | Casi todo el catálogo (15 de 19) | Todo, más 4 historias exclusivas |
 | Escuchar sin internet | Solo lo que viene dentro de la app | Descarga las narraciones |
 | PDF a audiolibro | 2 PDF al mes | Sin límite |
 
-Se configura en `src/content/plan.ts` (lista de historias gratis, límite de PDF y la tabla que ve la gente).
+Se configura en `src/content/plan.ts`: `PREMIUM_STORY_IDS` es la lista de historias exclusivas (las demás son gratis), y ahí también están el límite de PDF y la tabla que ve la gente.
 
 ## Cómo se activa (una sola vez, unos 15 minutos)
 

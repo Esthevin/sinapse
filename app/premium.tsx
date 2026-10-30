@@ -32,7 +32,7 @@ export default function PremiumScreen() {
           ? profile?.premium_until
             ? `Tu plan está activo hasta el ${formatDate(profile.premium_until)}.`
             : 'Tu plan está activo, sin fecha de vencimiento.'
-          : 'Todo el catálogo, descargas para escuchar sin internet y PDF sin límite.'}
+          : 'Historias exclusivas, descargas para escuchar sin internet y PDF sin límite.'}
       </Text>
 
       <Card style={{ marginTop: spacing.lg }}>
