@@ -24,7 +24,7 @@ export function PremiumGate({ story }: { story: Story }) {
       <Card style={{ marginTop: spacing.lg, width: '100%', maxWidth: 520 }}>
         <Text style={{ fontWeight: '800', fontSize: th.fs(fontSize.subtitle) }}>Historia Premium</Text>
         <Text style={{ color: colors.textMuted, marginTop: spacing.sm, lineHeight: th.fs(22) }}>
-          Esta historia es parte del plan Premium, que incluye todo el catálogo con voces humanas, descargas para escuchar sin internet y PDF sin límite.
+          Esta historia es exclusiva del plan Premium, que también incluye descargas para escuchar sin internet y PDF sin límite. El resto del catálogo es gratis.
         </Text>
         <Button label={profile ? 'Ver Premium' : 'Ingresar o crear cuenta'} onPress={() => router.push(profile ? '/premium' : '/cuenta')} style={{ marginTop: spacing.md }} />
         <Button label="Volver" variant="secondary" onPress={() => router.back()} style={{ marginTop: spacing.sm }} />
