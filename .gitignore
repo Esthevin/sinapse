@@ -35,3 +35,5 @@ produccion/
 
 # claude local
 .claude/settings.local.json
+herramientas/novelas/.cache/
+__pycache__/

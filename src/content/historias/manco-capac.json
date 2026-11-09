@@ -2,7 +2,8 @@
   "id": "manco-capac",
   "title": {
     "es": "Manco Cápac y Mama Ocllo",
-    "quz": "Manco Qhapaq, Mama Ocllowan"
+    "quz": "Manco Qhapaq, Mama Ocllowan",
+    "ay": "Manco Cápac Mama Ocllompi"
   },
   "author": "Tradición inca",
   "source": "Leyenda recogida por el Inca Garcilaso de la Vega en los Comentarios Reales (1609). Adaptación libre para Sinapse.",
@@ -16,7 +17,8 @@
   "emoji": "☀️",
   "summary": {
     "es": "El Sol envía a sus hijos desde el lago Titicaca con una vara de oro para encontrar el lugar donde nacerá el Cusco.",
-    "quz": "Intiqa Titicaca qochamanta churinkunata qori t'ankawan kachan, Qusqu paqarinan kanqa chay maskanankupaq."
+    "quz": "Intiqa Titicaca qochamanta churinkunata qori t'ankawan kachan, Qusqu paqarinan kanqa chay maskanankupaq.",
+    "ay": "Inti Titicaca qutat wawanakaparuw quri vara apayi, Cusco markax kawkin utt'asispa uk thaqañataki."
   },
   "paragraphs": {
     "es": [
@@ -34,6 +36,14 @@
       "Manco Qhapaqwan Mama Ocllowan achka punchaw purirqaku, mayukunata, punakunata, qhirwakunatapas chimpaspa. Sapa kuti allpata probarqaku, ichaqa t'anka mana hunt'aykuchu.",
       "Huk punchaw q'umir wayq'uman chayarqaku, orqokunawan muyusqa. Manco Qhapaq t'ankata tuqyachirqa, hinaspa chay allpa llamp'u, kawsaq, chaypi chinkarqa. Chaymi yacharqaku akllasqa kayninta: Qusqu.",
       "Manco Qhapaq runakunata saratarpuyta, yaku pukyuta ruwayta, wasikunata sayarichiyta yachachirqa. Mama Ocllo warmikunata q'aytuyta, millma awayta yachachirqa. Hukllaman llank'ayninkuwan hatun, kamachisqa llaqta paqarirqa."
+    ],
+    "ay": [
+      "Walja pachpachanakat nayrajj, Andes jaqinakajj jan utanïpkasa, jan yapunïpkasa, tukuy chiqanwa ch'iqt'ata jakasipkäna. Inti, jupar sapxänwa, alaxpachat uraqir uñtasajj khuyapt'ayasïna.",
+      "Ukatwa Intejj pä wawanakaparu Manco Cápac ukhamaraki Mama Ocllor apayäna. Jupanakajj jach'a Titicaca qutan umapan uñstapxäna, uru ch'amakat qhana ukhama.",
+      "Intejj jupanakaruw quri vara churäna, mä lurañampi: waljaw jupanakajj jalaqt'asa, kuna chiqanjj samarapxani ukanjja, vara uraqiru ch'ukuñapäna. Kawkin vara juk'ampi mayampi mayjt'äna, ukanwa mä marka utt'ayapxañapäna.",
+      "Manco Cápac Mama Ocllompi walja uruw sarnaqapxäna, jawiranaka, punanaka, ch'uwchuqanaka jaljtasa. Uraqir mayampi mayampiw jaytapxäna, ukampis vara janiw taqpach mantkänti.",
+      "Mä urutjja ch'uxña valleruw purt'apxäna, qullunakamp muyuntata. Manco Cápacajj vara ch'ukuyäna, ukat jupajj suma achu uraqiruw chhaqt'äna. Ukhamatwa yatipxäna, ajllit chiqaruw purt'apxi, Cusco.",
+      "Manco Cápacajj chachanakaruw ch'uqi, sara yapuchañ yatichäna, canalanak luraña, utanak luraña. Mama Ocllojj warminakaruw q'ipchaña, away t'ikharañ yatichäna. Mayachasa lurañampiw jach'a, wali amtata marka jilatäna."
     ]
   },
   "audio": [
@@ -61,7 +71,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 88.568,
       "paragraphStartsSec": [
-        0.0,
+        0,
         12.984,
         25.544,
         41.192,
@@ -154,6 +164,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

@@ -2,7 +2,8 @@
   "id": "caballero-carmelo",
   "title": {
     "es": "El Caballero Carmelo",
-    "quz": "Caballero Carmelo"
+    "quz": "Caballero Carmelo",
+    "ay": "Caballero Carmelo"
   },
   "author": "Abraham Valdelomar",
   "source": "Cuento de Abraham Valdelomar (1918), de dominio público. Adaptación libre y resumida para Sinapse.",
@@ -15,7 +16,8 @@
   "emoji": "🐓",
   "summary": {
     "es": "En Pisco, una familia quiere a su gallo como a un amigo. Un día, Carmelo debe enfrentarse a un rival más joven.",
-    "quz": "Pisco llaqtapi ayllu atamanta amigo hina munan. Huk punchaw Carmeloqa aswan waynaq rivalwan hayk'aqkama."
+    "quz": "Pisco llaqtapi ayllu atamanta amigo hina munan. Huk punchaw Carmeloqa aswan waynaq rivalwan hayk'aqkama.",
+    "ay": "Pisco markanx mä familiax wallpa apup mä amigor uñtat munasipxi. Mä urux Carmelox mä juk'ampi wayn awqasirir jikhaniñapawa."
   },
   "paragraphs": {
     "es": [
@@ -33,6 +35,14 @@
       "Maqanakuy punchawpi Carmeloqa sinchi sonqowan maqarqa. Ajisecoqa kallpayuq utqaq karqa, ichaqa Carmeloqa mana qhipaman kutirqachu. Tukukuypi Ajisecoqa wañusqa hina urmarqa, runakunataq machu atamata ch'aqchurqaku.",
       "Ichaqa Carmeloqa ancha k'iriyasqa qhipakurqa. Wawakuna wasiman apaspa tuta punchaw qhawarqaku. Mana unayta, Caballero Carmeloqa thak sonqowan wañurqa, munakuqninkunawan muyusqa.",
       "Willaq, hatunña kaspa, chay ch'isiyaqta llakiywan yuparin. Kay willakuyqa uywakunata munakuymanta, sumaq sonqomanta, pachap pasayninmantawan willan; chaymanta tapukunanchispaqpas: ¿allinchu munasqanchis uywata maqanakunanpaq churay?"
+    ],
+    "ay": [
+      "Pisco markan, quta jak'an mä utanx mä familiaw walja wawanimpi jakäna. Mä urux awkix sarañat kutinïna, mä regalompi: mä wallpa apu qhanapacha phuyunakani ukat suma sarnaqiri. Wawanakax jupar Caballero Carmelo satapxäna.",
+      "Carmelox familian mä chikapaw tukuna. Alwa qhantatiw achuñ qalltäna, corralan señor jama thuqt'asïna, ukat wawanakax jupar munasiñampiw uywapxäna. Jupanakataki janiw mä jamach'ikïnti: mä amigoruw uñtatäna.",
+      "Ukampis San Andrés fiestanakax purinïna, ukat markanx wallpa awqasiñanakaw luratäna. Awkix mä sata katuqäna: Carmelox Ajiseco, mä wayn ukat uñt'ata wallpa apur jikhaniñapänwa. Wawanakax axsarapxäna, kunatsa Carmelox chhaqtatäxänwa.",
+      "Awqasiñ urux Carmelox jaqichasiñampiw awqasïna. Ajiseco ch'amanïna ukat jank'akïna, ukampis Carmelox janiw qhipürkänti. Qhiparux Ajisecox atipjatäna ukat jaqinakax chhaqtat wallpa apur plawsipxäna.",
+      "Ukampis Carmelox wali usuchjatäxänwa. Wawanakax utar apxatapxäna ukat uru arumaw uywapxäna. Janïra jayat qhipa, Caballero Carmelox amukiw jiwäna, jupar munasirinakampi muyuntata.",
+      "Yatiyiri jaqix, jilïr jaqïxasax, uka jayp'ur llakisiñampiw amtasi. Aka willakuyax uywanakar munasiñat, suma chuymat ukat pacha sarañat parli, ukat jiwasar jisk'a jiwasan munat jakir awqasiyañax suma ukhamätapat jiskt'añatakiw jawsistu."
     ]
   },
   "audio": [
@@ -60,7 +70,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 94.256,
       "paragraphStartsSec": [
-        0.0,
+        0,
         15.26,
         29.64,
         46.516,
@@ -142,6 +152,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

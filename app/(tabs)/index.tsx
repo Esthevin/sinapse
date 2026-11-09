@@ -5,6 +5,7 @@ import { LanguagePicker } from '@/components/LanguagePicker';
 import { StoryCard } from '@/components/StoryCard';
 import { Button, Card, Chip, Cover, ProgressBar, Text } from '@/components/ui';
 import { STORIES } from '@/content';
+import { NOVELS, novelAsStory } from '@/content/novelas';
 import { narratedLanguages } from '@/content/narration';
 import type { Region } from '@/content/types';
 import { LANGUAGES, t, pickLocalized } from '@/i18n/translations';
@@ -30,6 +31,7 @@ export default function LibraryScreen() {
   const [region, setRegion] = useState<Region | null>(null);
   const [onlyHuman, setOnlyHuman] = useState(false);
   const [pickingLang, setPickingLang] = useState(false);
+  const [novelsOnly, setNovelsOnly] = useState(false);
   const currentLang = LANGUAGES.find((l) => l.code === lang);
 
   const filtered = useMemo(() => {
@@ -41,6 +43,11 @@ export default function LibraryScreen() {
       return true;
     });
   }, [query, region, onlyHuman, recordings, catalogVersion]);
+
+  const novels = useMemo(() => {
+    const q = normalize(query.trim());
+    return NOVELS.filter((n) => !q || normalize(`${n.title.es} ${n.author} ${n.summary.es}`).includes(q));
+  }, [query]);
 
   // La historia abierta más recientemente que aún no se termina.
   const resume = useMemo(
@@ -122,15 +129,47 @@ export default function LibraryScreen() {
           <Chip key={r} label={t(lang, r)} active={region === r} onPress={() => setRegion(region === r ? null : r)} />
         ))}
         <Chip label={t(lang, 'humanVoice')} active={onlyHuman} onPress={() => setOnlyHuman((v) => !v)} />
+        <Chip label="Novelas" active={novelsOnly} onPress={() => setNovelsOnly((v) => !v)} />
       </View>
 
       <View style={{ marginTop: spacing.md }}>
         <Button label="Convertir un PDF en audiolibro" variant="secondary" onPress={() => router.push('/pdf')} />
       </View>
 
-      <Text style={styles.count}>{`${t(lang, 'allStories')} (${filtered.length})`}</Text>
+      <Text style={styles.count}>{novelsOnly ? `Novelas (${novels.length})` : `${t(lang, 'allStories')} (${filtered.length})`}</Text>
     </View>
   );
+
+  if (novelsOnly) {
+    return (
+      <FlatList
+        key="novelas"
+        style={{ backgroundColor: colors.background }}
+        data={novels}
+        keyExtractor={(n) => n.id}
+        contentContainerStyle={styles.content}
+        keyboardShouldPersistTaps="handled"
+        ListHeaderComponent={header}
+        ListEmptyComponent={<Text style={styles.empty}>{t(lang, 'noResults')}</Text>}
+        renderItem={({ item }) => (
+          <Pressable
+            onPress={() => router.push({ pathname: '/novela/[id]', params: { id: item.id } })}
+            accessibilityRole="button"
+            accessibilityLabel={`${item.title.es}, ${item.author}`}
+            style={styles.novelRow}
+          >
+            <Cover story={novelAsStory(item)} size={88} />
+            <View style={{ flex: 1 }}>
+              <Text style={styles.novelTitle} numberOfLines={2}>{item.title.es}</Text>
+              <Text style={styles.novelMeta}>{`${item.author}${item.year ? ` · ${item.year}` : ''}`}</Text>
+              <Text style={styles.novelMeta}>{`${item.chapters} capítulos · ${Math.round(item.minutes / 60 * 10) / 10} h de audio · ${item.level === 'universidad' ? 'Universidad' : 'Secundaria'}`}</Text>
+              <Text style={styles.novelSummary} numberOfLines={3}>{item.summary.es}</Text>
+            </View>
+          </Pressable>
+        )}
+      />
+    );
+  }
 
   return (
     <FlatList
@@ -173,6 +212,10 @@ const makeStyles = ({ colors, spacing, radius, fontSize, font, stroke, playful, 
     langButton: { borderWidth: stroke, borderColor: colors.border, borderRadius: 999, paddingHorizontal: spacing.md, paddingVertical: spacing.xs + 2, backgroundColor: colors.card },
     langText: { fontWeight: '800', fontSize: fs(fontSize.caption + 1), color: colors.text },
     langTitle: { fontWeight: '800', fontSize: fs(fontSize.subtitle), marginBottom: spacing.sm, color: colors.text },
+    novelRow: { flexDirection: 'row', gap: spacing.md, paddingVertical: spacing.md, borderBottomWidth: 1, borderBottomColor: colors.border },
+    novelTitle: { fontFamily: font.heading, fontWeight: '800', fontSize: fs(fontSize.subtitle), color: colors.text },
+    novelMeta: { color: colors.textMuted, fontSize: fs(fontSize.caption + 1), marginTop: 2 },
+    novelSummary: { color: colors.text, fontSize: fs(fontSize.caption + 1), marginTop: spacing.xs, lineHeight: fs(19) },
     count: { marginTop: spacing.lg, fontSize: fs(fontSize.caption), fontWeight: '800', color: colors.textMuted },
     empty: { textAlign: 'center', color: colors.textMuted, marginTop: spacing.xl, fontSize: fs(fontSize.body) },
   });

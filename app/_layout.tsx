@@ -70,6 +70,7 @@ function RootNavigator() {
       <Stack.Screen name="record/[id]" options={{ title: t(settings.lang, 'studioTitle') }} />
       <Stack.Screen name="sync/[id]" options={{ title: '' }} />
       <Stack.Screen name="pdf" options={{ title: 'Audiolibro desde PDF' }} />
+      <Stack.Screen name="novela/[id]" options={{ title: '' }} />
       <Stack.Screen name="cuenta" options={{ title: 'Mi cuenta' }} />
       <Stack.Screen name="premium" options={{ title: 'Premium' }} />
     </Stack>

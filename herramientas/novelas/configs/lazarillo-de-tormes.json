@@ -1,0 +1,101 @@
+{
+ "id": "lazarillo-de-tormes",
+ "title": "La vida de Lazarillo de Tormes",
+ "author": "Anónimo (Burgos, 1554)",
+ "year": 1554,
+ "source": "Texto de dominio público (Project Gutenberg, eBook #320, edición de Burgos de 1554).",
+ "level": "secundaria",
+ "ages": [
+  "jovenes",
+  "adultos"
+ ],
+ "region": "costa",
+ "coverColor": "#6B4A2B",
+ "summary": "El pícaro más famoso de la literatura española cuenta cómo sirvió a un ciego, a un clérigo, a un escudero y a otros amos, y cómo aprendió a sobrevivir con ingenio. Una novela corta que inauguró la novela picaresca.",
+ "text": {
+  "kind": "gutenberg",
+  "url": "https://www.gutenberg.org/cache/epub/320/pg320.txt",
+  "sections": [
+   {
+    "key": "prologo",
+    "start": "^Prólogo\\s*$"
+   },
+   {
+    "key": "t1",
+    "start": "^Tratado Primero\\s*$"
+   },
+   {
+    "key": "t2",
+    "start": "^Tratado Segundo\\s*$"
+   },
+   {
+    "key": "t3",
+    "start": "^Tratado Tercero\\s*$"
+   },
+   {
+    "key": "t4",
+    "start": "^Tratado Cuarto\\s*$"
+   },
+   {
+    "key": "t5",
+    "start": "^Tratado Quinto\\s*$"
+   },
+   {
+    "key": "t6",
+    "start": "^Tratado Sexto\\s*$"
+   },
+   {
+    "key": "t7",
+    "start": "^Tratado Séptimo\\s*$"
+   }
+  ]
+ },
+ "audio": {
+  "archive": "lazarillo_0912_librivox",
+  "narrator": {
+   "id": "librivox-tux",
+   "name": "Tux"
+  },
+  "license": "Grabación de dominio público de LibriVox (lector: Tux). Texto de dominio público."
+ },
+ "chapters": [
+  {
+   "title": "Prólogo y Tratado primero: cuenta Lázaro su vida y de quién fue hijo",
+   "sections": [
+    "prologo",
+    "t1"
+   ],
+   "file": "Lazarillo_de_Tormes_1_anonimo_64kb.mp3"
+  },
+  {
+   "title": "Tratado segundo: cómo Lázaro se asentó con un clérigo",
+   "sections": [
+    "t2"
+   ],
+   "file": "Lazarillo_de_Tormes_2_anonimo_64kb.mp3"
+  },
+  {
+   "title": "Tratado tercero: cómo Lázaro se asentó con un escudero",
+   "sections": [
+    "t3"
+   ],
+   "file": "Lazarillo_de_Tormes_3_anonimo_64kb.mp3"
+  },
+  {
+   "title": "Tratados cuarto y quinto: el fraile de la Merced y el buldero",
+   "sections": [
+    "t4",
+    "t5"
+   ],
+   "file": "Lazarillo_de_Tormes_4_anonimo_64kb.mp3"
+  },
+  {
+   "title": "Tratados sexto y séptimo: el capellán y el alguacil",
+   "sections": [
+    "t6",
+    "t7"
+   ],
+   "file": "Lazarillo_de_Tormes_5_anonimo_64kb.mp3"
+  }
+ ]
+}

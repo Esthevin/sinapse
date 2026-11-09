@@ -1,0 +1,342 @@
+{
+ "id": "maria",
+ "title": "María",
+ "author": "Jorge Isaacs",
+ "year": 1867,
+ "source": "Texto de dominio público de Wikisource en español (María, Jorge Isaacs, 1867).",
+ "level": "secundaria",
+ "ages": [
+  "jovenes",
+  "adultos"
+ ],
+ "region": "costa",
+ "coverColor": "#8A3F2A",
+ "summary": "La novela romántica más famosa de América Latina: el amor entre Efraín y su prima María en el valle del Cauca, entre haciendas, ríos y montes, y las separaciones que lo ponen a prueba.",
+ "text": {
+  "kind": "wikisource",
+  "pages": {
+   "prologo": "María (Isaacs)/A los hermanos de Efraín",
+   "c1": "María (Isaacs)/I",
+   "c2": "María (Isaacs)/II",
+   "c3": "María (Isaacs)/III",
+   "c4": "María (Isaacs)/IV",
+   "c5": "María (Isaacs)/V",
+   "c6": "María (Isaacs)/VI",
+   "c7": "María (Isaacs)/VII",
+   "c8": "María (Isaacs)/VIII",
+   "c9": "María (Isaacs)/IX",
+   "c10": "María (Isaacs)/X",
+   "c11": "María (Isaacs)/XI",
+   "c12": "María (Isaacs)/XII",
+   "c13": "María (Isaacs)/XIII",
+   "c14": "María (Isaacs)/XIV",
+   "c15": "María (Isaacs)/XV",
+   "c16": "María (Isaacs)/XVI",
+   "c17": "María (Isaacs)/XVII",
+   "c18": "María (Isaacs)/XVIII",
+   "c19": "María (Isaacs)/XIX",
+   "c20": "María (Isaacs)/XX",
+   "c21": "María (Isaacs)/XXI",
+   "c22": "María (Isaacs)/XXII",
+   "c23": "María (Isaacs)/XXIII",
+   "c24": "María (Isaacs)/XXIV",
+   "c25": "María (Isaacs)/XXV",
+   "c26": "María (Isaacs)/XXVI",
+   "c27": "María (Isaacs)/XXVII",
+   "c28": "María (Isaacs)/XXVIII",
+   "c29": "María (Isaacs)/XXIX",
+   "c30": "María (Isaacs)/XXX",
+   "c31": "María (Isaacs)/XXXI",
+   "c32": "María (Isaacs)/XXXII",
+   "c33": "María (Isaacs)/XXXIII",
+   "c34": "María (Isaacs)/XXXIV",
+   "c35": "María (Isaacs)/XXXV",
+   "c36": "María (Isaacs)/XXXVI",
+   "c37": "María (Isaacs)/XXXVII",
+   "c38": "María (Isaacs)/XXXVIII",
+   "c39": "María (Isaacs)/XXXIX",
+   "c40": "María (Isaacs)/XL",
+   "c41": "María (Isaacs)/XLI",
+   "c42": "María (Isaacs)/XLII",
+   "c43": "María (Isaacs)/XLIII",
+   "c44": "María (Isaacs)/XLIV",
+   "c45": "María (Isaacs)/XLV",
+   "c46": "María (Isaacs)/XLVI",
+   "c47": "María (Isaacs)/XLVII",
+   "c48": "María (Isaacs)/XLVIII",
+   "c49": "María (Isaacs)/XLIX",
+   "c50": "María (Isaacs)/L",
+   "c51": "María (Isaacs)/LI",
+   "c52": "María (Isaacs)/LII",
+   "c53": "María (Isaacs)/LIII",
+   "c54": "María (Isaacs)/LIV",
+   "c55": "María (Isaacs)/LV",
+   "c56": "María (Isaacs)/LVI",
+   "c57": "María (Isaacs)/LVII",
+   "c58": "María (Isaacs)/LVIII",
+   "c59": "María (Isaacs)/LIX",
+   "c60": "María (Isaacs)/LX",
+   "c61": "María (Isaacs)/LXI",
+   "c62": "María (Isaacs)/LXII",
+   "c63": "María (Isaacs)/LXIII",
+   "c64": "María (Isaacs)/LXIV",
+   "c65": "María (Isaacs)/LXV"
+  }
+ },
+ "audio": {
+  "archive": "maria_2301_librivox",
+  "narrator": {
+   "id": "librivox-miltonfmh",
+   "name": "MiltonFMH"
+  },
+  "license": "Grabación de dominio público de LibriVox (lector: MiltonFMH). Texto de dominio público."
+ },
+ "chapters": [
+  {
+   "title": "Prólogo: A los hermanos de Efraín",
+   "sections": [
+    "prologo"
+   ],
+   "file": "maria_00_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos I a IV",
+   "sections": [
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+   ],
+   "file": "maria_01_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos V a VII",
+   "sections": [
+    "c5",
+    "c6",
+    "c7"
+   ],
+   "file": "maria_02_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos VIII a XI",
+   "sections": [
+    "c8",
+    "c9",
+    "c10",
+    "c11"
+   ],
+   "file": "maria_03_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XII a XV",
+   "sections": [
+    "c12",
+    "c13",
+    "c14",
+    "c15"
+   ],
+   "file": "maria_04_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XVI a XVII",
+   "sections": [
+    "c16",
+    "c17"
+   ],
+   "file": "maria_05_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XVIII a XIX",
+   "sections": [
+    "c18",
+    "c19"
+   ],
+   "file": "maria_06_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XX a XXI",
+   "sections": [
+    "c20",
+    "c21"
+   ],
+   "file": "maria_07_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XXII a XXIII",
+   "sections": [
+    "c22",
+    "c23"
+   ],
+   "file": "maria_08_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XXIV a XXV",
+   "sections": [
+    "c24",
+    "c25"
+   ],
+   "file": "maria_09_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XXVI a XXVII",
+   "sections": [
+    "c26",
+    "c27"
+   ],
+   "file": "maria_10_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XXVIII a XXIX",
+   "sections": [
+    "c28",
+    "c29"
+   ],
+   "file": "maria_11_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XXX a XXXI",
+   "sections": [
+    "c30",
+    "c31"
+   ],
+   "file": "maria_12_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XXXII a XXXIV",
+   "sections": [
+    "c32",
+    "c33",
+    "c34"
+   ],
+   "file": "maria_13_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXXV",
+   "sections": [
+    "c35"
+   ],
+   "file": "maria_14_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XXXVI a XXXVII",
+   "sections": [
+    "c36",
+    "c37"
+   ],
+   "file": "maria_15_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XXXVIII a XXXIX",
+   "sections": [
+    "c38",
+    "c39"
+   ],
+   "file": "maria_16_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XL a XLI",
+   "sections": [
+    "c40",
+    "c41"
+   ],
+   "file": "maria_17_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XLII a XLIII",
+   "sections": [
+    "c42",
+    "c43"
+   ],
+   "file": "maria_18_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XLIV a XLV",
+   "sections": [
+    "c44",
+    "c45"
+   ],
+   "file": "maria_19_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos XLVI a XLVII",
+   "sections": [
+    "c46",
+    "c47"
+   ],
+   "file": "maria_20_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XLVIII",
+   "sections": [
+    "c48"
+   ],
+   "file": "maria_21_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XLIX",
+   "sections": [
+    "c49"
+   ],
+   "file": "maria_22_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos L a LI",
+   "sections": [
+    "c50",
+    "c51"
+   ],
+   "file": "maria_23_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos LII a LIV",
+   "sections": [
+    "c52",
+    "c53",
+    "c54"
+   ],
+   "file": "maria_24_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos LV a LVI",
+   "sections": [
+    "c55",
+    "c56"
+   ],
+   "file": "maria_25_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulo LVII",
+   "sections": [
+    "c57"
+   ],
+   "file": "maria_26_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos LVIII a LIX",
+   "sections": [
+    "c58",
+    "c59"
+   ],
+   "file": "maria_27_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos LX a LXII",
+   "sections": [
+    "c60",
+    "c61",
+    "c62"
+   ],
+   "file": "maria_28_isaacs_64kb.mp3"
+  },
+  {
+   "title": "Capítulos LXIII a LXV",
+   "sections": [
+    "c63",
+    "c64",
+    "c65"
+   ],
+   "file": "maria_29_isaacs_64kb.mp3"
+  }
+ ]
+}

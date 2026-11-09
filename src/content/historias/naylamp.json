@@ -2,7 +2,8 @@
   "id": "naylamp",
   "title": {
     "es": "La leyenda de Naylamp",
-    "quz": "Naylamp ñawpa willakuy"
+    "quz": "Naylamp ñawpa willakuy",
+    "ay": "Naylamp ñawpa sarnaqäwi"
   },
   "author": "Tradición lambayecana",
   "source": "Leyenda de la costa norte registrada por el cronista Miguel Cabello Valboa (1586). Adaptación libre para Sinapse.",
@@ -16,7 +17,8 @@
   "emoji": "⛵",
   "summary": {
     "es": "Un señor llega por el mar en una flota de balsas y funda un pueblo en el norte del Perú. Cuando muere, nace una leyenda.",
-    "quz": "Huk apu mama quchamanta balsakunawan hamuspa Perú chinchay lawpi llaqtata tiyachin. Wañuqtin, hatun willakuy paqarin."
+    "quz": "Huk apu mama quchamanta balsakunawan hamuspa Perú chinchay lawpi llaqtata tiyachin. Wañuqtin, hatun willakuy paqarin.",
+    "ay": "Mä apu mama qutata balsanakampi purt'i, Perú chhijchi tuqina mä marka utt'ayi. Jiwatapata, jach'a sarnaqäwi nayrakipi."
   },
   "paragraphs": {
     "es": [
@@ -32,6 +34,13 @@
       "Naylampwan runankuna Chot sutiyuq wasita ruwarqaku, chaypi rumi rikch'ayta churarqaku. Ch'aki pampapi mayu yakuwan tarpuyta yacharqaku, hinaspam llaqta wiñarqa.",
       "Naylamp achka watata yachaywan kamachirqa. Kawsayninpa tukukunanta yuyarispa, kamachiqninkunata mañakurqa, pay tiyasqan wasipi pakallapi p'ampanankupaq.",
       "Kamachiqninkuna, llaqta suyayninta ama chinkachinanpaq, willarqaku: Naylamp manam wañusqachu, raphrayuqmi tukuspa hanaq pachaman phawarqan, nispa. Kunan Lambayeque qori tumi huk raphrayuq runata rikuchin; achkakunam chay willakuywan tupachinku."
+    ],
+    "ay": [
+      "Walja pachpachanakat nayrajj, Perú chhijchi tuqit mama qutatwa jach'a balsanaka purt'asïna. Nayraqatan Naylamp sutini apu jutïna, warmipa Ceterniampi walja luqtirinakapampi.",
+      "Jichhürunjja Lambayeque sat chiqanwa uraqiru purt'apxäna. Naylampajj ch'uxña rumit luratäki mä idolo apanïna, Yampallec sutini, ukajj jupa pachpa uñnaqapänwa. Uka sutit Lambayeque sat arojj juti, siw.",
+      "Naylamppi markapasti Chot sat uta luratapxäna, ukaruw idolo uskupxäna. Ch'aki pampanjja jawiranakan umapampiw yapuchañ yatiqapxäna, ukatwa markajj jiltäna.",
+      "Naylampajj walja maraw yatiñampi apnaqäna. Jakäwipajj tukusiñapa amuyasajja, luqtirinakaparuw mayïna, jupajj jakäna uka utan jamasat imt'apxañapataki.",
+      "Luqtirinakapajj, markajj suyt'äwip jan chhaqtayañapataki, akham siwa: Naylampajj janiw jiwkänti, ch'iwinakaw jilatäna, alaxpachar jachaqtäna, sasa. Jichhürunjja Lambayeque quri tumiw mä ch'iwini jaqit uñacht'ayi; walja jaqinakaw uka sarnaqäwimpi mayachapxi."
     ]
   },
   "audio": [
@@ -58,7 +67,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 72.996,
       "paragraphStartsSec": [
-        0.0,
+        0,
         13.988,
         29.968,
         42.58,
@@ -139,6 +148,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

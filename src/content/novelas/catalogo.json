@@ -1,0 +1,42 @@
+[
+ {
+  "id": "lazarillo-de-tormes",
+  "title": {
+   "es": "La vida de Lazarillo de Tormes"
+  },
+  "author": "Anónimo (Burgos, 1554)",
+  "year": 1554,
+  "level": "secundaria",
+  "ages": [
+   "jovenes",
+   "adultos"
+  ],
+  "region": "costa",
+  "coverColor": "#6B4A2B",
+  "summary": {
+   "es": "El pícaro más famoso de la literatura española cuenta cómo sirvió a un ciego, a un clérigo, a un escudero y a otros amos, y cómo aprendió a sobrevivir con ingenio. Una novela corta que inauguró la novela picaresca."
+  },
+  "chapters": 5,
+  "minutes": 117
+ },
+ {
+  "id": "maria",
+  "title": {
+   "es": "María"
+  },
+  "author": "Jorge Isaacs",
+  "year": 1867,
+  "level": "secundaria",
+  "ages": [
+   "jovenes",
+   "adultos"
+  ],
+  "region": "costa",
+  "coverColor": "#8A3F2A",
+  "summary": {
+   "es": "La novela romántica más famosa de América Latina: el amor entre Efraín y su prima María en el valle del Cauca, entre haciendas, ríos y montes, y las separaciones que lo ponen a prueba."
+  },
+  "chapters": 30,
+  "minutes": 736
+ }
+]

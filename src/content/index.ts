@@ -1,4 +1,5 @@
 import narradores from './narradores.json';
+import { getNovelChapter, isNovelChapter } from './novelas';
 import type { Narrator, Story } from './types';
 import alacranFrayGomez from './historias/alacran-fray-gomez.json';
 import caballeroCarmelo from './historias/caballero-carmelo.json';
@@ -98,7 +99,10 @@ export function getNarrator(id: string): Narrator | undefined {
 }
 
 export function getStory(id: string | undefined): Story | undefined {
-  return STORIES.find((s) => s.id === id);
+  const found = STORIES.find((s) => s.id === id);
+  if (found || !id) return found;
+  // Los capítulos de las novelas no están en la lista de la biblioteca: se cargan al abrirlos.
+  return isNovelChapter(id) ? getNovelChapter(id) : undefined;
 }
 
 /**

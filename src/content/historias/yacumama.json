@@ -2,7 +2,8 @@
   "id": "yacumama",
   "title": {
     "es": "La Yacumama, madre del agua",
-    "quz": "Yakumama, yakupa mamanqa"
+    "quz": "Yakumama, yakupa mamanqa",
+    "ay": "Yacumama, uman mamapa"
   },
   "author": "Tradición amazónica",
   "source": "Leyenda de la tradición oral de la Amazonía peruana. Adaptación libre para Sinapse.",
@@ -15,7 +16,8 @@
   "emoji": "🐍",
   "summary": {
     "es": "Una serpiente gigante cuida los ríos y las cochas. ¿Qué pasará con quienes no respetan el agua?",
-    "quz": "Hatun katari mayukunata qochakunatapas waqaychan. ¿Imataq yakuta mana respetaqkunawan kanqa?"
+    "quz": "Hatun katari mayukunata qochakunatapas waqaychan. ¿Imataq yakuta mana respetaqkunawan kanqa?",
+    "ay": "Mä jach'a mach'aqway jawiranaka ukat qutanakar uñjaski. ¿Kuntix umar jan respetasirinakar pasani?"
   },
   "paragraphs": {
     "es": [
@@ -31,6 +33,13 @@
       "Paymi challwakunata, puka delfinkunata, yaku uywakunatapas waqaychan. Chayraykum ñawpa challwaq runakuna pay mañarqaku challwayta qallarinankupaq, manataq aswan hap'irqakuchu, ayllunku munasqallantapuni.",
       "Huk kuti huk qhari canoapi chayamurqaku, venenowan challwayta munaspa, tukuy challwakunata huk kutillapi horqospa rantinanpaq. Chay tuta, qochapa yakunmi kallpawan muyuyta qallarirqa. Hatun muyuriyqa redninkunata canoantawan millp'urqa, qharikunaqa pisillamanta kantuman nadarqaku.",
       "Manchakuspa, willayta entendirqaku: qochaqa manam paykunallapaqchu karqa. Chaymanta pacha, ayllupi kay willakuyta wawakunaman willanku, mayukunata cuidanankupaq, mana qhellichanankupaq, yaku uywakunatapas respetanankupaq."
+    ],
+    "ay": [
+      "Amazonía jawiranakan ukat qutanakanxa, selva markanakan siwapxatapanxa, mä jach'a mach'aqway jakasi: Yacumama, uman mamapa. Sutipax paya quechua aruw mayacht'asi: yaku, ukax «uma» sañ muni, ukat mama, ukax «mama» sañ muni.",
+      "Yacumamax wali jach'awa, jawira manqhan ikiskäna ukhaxa mä jach'a lawa ukhamawa. Samañ pachax umax muyuntatawa, ukat sarnaqkäna ukhaxa jawiranakan thakipa mayjt'ayaraki.",
+      "Jupax jaqu, rosado delfinanaka ukat uman taqi uywanakar uñjaraki. Ukatwa nayra challwiripax challwiñ nayrax jupar mayipxäna, ukat janipuniw familiapar wakisiñat juk'amp apsupkänti.",
+      "Mä kutix yaqha chachanakax canoampiw purinipxäna, chuyma qullumpiw challwañ munapxäna, mä kutikiw walja challwa apsuñataki ukat alxañataki. Uka arumax qutan umapax ch'amampiw muyuntañ qalltäna. Mä jach'a muyu uma jupanakan redenaka ukat canoapar jawq'jäna, ukat chachanakax jaqunaka kut'añatakiw juk'a puriyapxäna.",
+      "Axsarapxatas amuyt'apxäna: quta janiw jupanakaruki. Uka urutpacha, comunidadanxa uka sawka wawanakar yatiyasi, jawiranakar uñjapxañapataki, jan ñanqhachapxañapataki ukat uman uywanakar respetapxañapataki."
     ]
   },
   "audio": [
@@ -57,7 +66,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 85.06,
       "paragraphStartsSec": [
-        0.0,
+        0,
         17.756,
         29.12,
         45.412,
@@ -150,6 +159,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

@@ -197,6 +197,30 @@ for (const file of files) {
   console.log(`  ✓ ${s.id} — ${s.paragraphs?.es?.length ?? 0} párrafos, ${s.quiz?.length ?? 0} preguntas${qa.length ? `, también en: ${qa.join(', ')}` : ''}`);
 }
 
+// Novelas por capítulos (src/content/novelas): texto, audio de LibriVox y narradores
+const novelsDir = join(root, 'src', 'content', 'novelas');
+if (existsSync(novelsDir)) {
+  for (const f of readdirSync(novelsDir).filter((x) => x.endsWith('.json') && x !== 'catalogo.json')) {
+    const file = `novelas/${f}`;
+    const n = JSON.parse(readFileSync(join(novelsDir, f), 'utf8'));
+    for (const k of ['id', 'author', 'source', 'coverColor']) if (!isNonEmptyString(n[k])) error(file, `falta "${k}"`);
+    if (!isNonEmptyString(n.title?.es)) error(file, 'falta title.es');
+    if (!Array.isArray(n.chapters) || n.chapters.length < 1) error(file, 'no tiene capítulos');
+    else
+      n.chapters.forEach((c, i) => {
+        const where = `capítulo ${i + 1}`;
+        if (c.id !== `nov-${n.id}-${String(i + 1).padStart(2, '0')}`) error(file, `${where}: id inesperado "${c.id}"`);
+        if (!Array.isArray(c.paragraphs?.es) || c.paragraphs.es.length < 1 || !c.paragraphs.es.every(isNonEmptyString)) error(file, `${where}: párrafos vacíos`);
+        for (const a of c.audio ?? []) {
+          if (!narrators.some((x) => x.id === a.narratorId)) error(file, `${where}: narrador "${a.narratorId}" no existe en narradores.json`);
+          if (!/^https:\/\//.test(a.url ?? '')) error(file, `${where}: el audio debe ser https`);
+          if (!isNonEmptyString(a.license)) error(file, `${where}: falta la licencia del audio`);
+        }
+      });
+    console.log(`  ✓ novela ${n.id} — ${n.chapters?.length ?? 0} capítulos, ${n.chapters?.reduce((t, c) => t + c.paragraphs.es.length, 0)} párrafos`);
+  }
+}
+
 // Historias importadas en index.ts cuyo archivo no existe
 for (const m of indexSource.matchAll(/historias\/([\w-]+)\.json/g)) {
   if (!ids.has(m[1])) error('index.ts', `importa "${m[1]}.json", que no existe`);

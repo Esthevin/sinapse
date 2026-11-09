@@ -2,7 +2,8 @@
   "id": "alacran-fray-gomez",
   "title": {
     "es": "El alacrán de fray Gómez",
-    "quz": "Fray Gómezpa alacránnin"
+    "quz": "Fray Gómezpa alacránnin",
+    "ay": "Fray Gómezan alakranapa"
   },
   "author": "Ricardo Palma",
   "source": "De las Tradiciones peruanas de Ricardo Palma (siglo XIX), de dominio público. Adaptación libre y resumida para Sinapse.",
@@ -15,7 +16,8 @@
   "emoji": "🦂",
   "summary": {
     "es": "Un vendedor honrado necesita un préstamo. Un fraile pobre lo ayuda de la forma más inesperada.",
-    "quz": "Honrado rantikuq mañakuyta munan. Huk pobre frailemi mana yuyasqa ñanpi yanapan."
+    "quz": "Honrado rantikuq mañakuyta munan. Huk pobre frailemi mana yuyasqa ñanpi yanapan.",
+    "ay": "Mä chiqap aljiri jaqix mayt'añ munäna. Mä pisi fraylex jan suyt'ata thakhimpiw yanapt'äna."
   },
   "paragraphs": {
     "es": [
@@ -31,6 +33,13 @@
       "Fray Gómezqa muyuriqninta qhawarqa. Celdanqa pobre karqa: manam qolqenchu karqa, huk puñuna, huk mesa, libros chayllam. Chay pachapi huk alacrán perqapi purisharqa. Fraileqa cuidadowan hap'irqa, papelpi qhawarqa, kicharqa, alacránqa qori, ch'aska rumiyuq joya tukusqa.",
       "«Kay joyata apay, empeñaruy», nirqa. «Ichaqa soqta killapi kutichipuwanki.» Jeromoqa joyata empeñarqa, honradowan llank'arqa, negociyonpas kutiripurqa.",
       "Plazo mana hunt'akuqtin, Jeromoqa joyata kutichirqa fray Gómezman, ancha agradecesqa. Fraileqa ventanapi churarqa, nirqa: «Diospa uywachanqa, ñanniykita puriy.» Joyaqa kutiripurqa alacrán, ch'inlla perqapi purirqa."
+    ],
+    "ay": [
+      "Wirreyinakan Limanx mä franciscano fray sutini fray Gómezaw jakäna, ukax wali suma chuymapampi ukat milagronakapampi uñt'ata, jaqinakax sapxi jupax jan jach'a jaqit uñt'ayasa luräna. Jichhakamas wali valiri yänak sapxi: “fray Gómezan alakranapjam valiriwa”.",
+      "Mä urux seldapar mä buhonero, Jeromo sutini mä aljiri sarnaqir jaqiw jutäna, wali llakisitaw. —Awki, nayax chiqap jaqiwa, ukampis chhaqhatawa. Phisqa patak duro munasta jaqita negocio khuyaptayañataki, ukat janiw khitis mayt'añ munkiti.",
+      "Fray Gómezax muyuntatwa uñch'ukïna. Seldapax pisi jakañawa: janiw qullqipäkänti, mä ikiña, mä mesa ukat yaqhep liwronakakiw utjäna. Ukapachaw mä alakran pirqan sarnaqäna. Fray Gómezax jan t'aqhisiyasaw katusïna, mä laphin q'ipt'äna, ukat jist'arasax alakranax mä quri ukat valiri qalanakat alajaruw tukuyatäna.",
+      "—Aka alaja apt'am ukat prindaru churam —sasaw säna—. Ukampis suxta phaxsin kutt'ayarakitamawa. Jeromox alaja prindaru churäna, chiqap tuqiw irnaqäna, ukat negociopax mayampiw ch'amanchasïna.",
+      "Pacha phuqhañ nayraqatawa, Jeromox alaja qhispiyäna ukat fray Gómezar kutt'ayäna, wali yuspagarasa. Fray ukax wintanaruw uchäna ukat säna: —Diosan jisk'a uywa, thakim sarantam. Ukat alajax mayampiw alakran tukuyäna, ukat pirqan thayt'ata sarxäna."
     ]
   },
   "audio": [
@@ -57,7 +66,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 80.672,
       "paragraphStartsSec": [
-        0.0,
+        0,
         16.992,
         33.456,
         53.336,
@@ -150,6 +159,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

@@ -2,7 +2,8 @@
   "id": "lago-titicaca",
   "title": {
     "es": "La leyenda del lago Titicaca",
-    "quz": "Titicaca qochapa willakuynin"
+    "quz": "Titicaca qochapa willakuynin",
+    "ay": "Titicaca qutan sarnaqäwipa"
   },
   "author": "Tradición aimara",
   "source": "Leyenda de la tradición oral aimara del altiplano. Adaptación libre para Sinapse.",
@@ -16,7 +17,8 @@
   "emoji": "🌊",
   "summary": {
     "es": "Un valle feliz desobedece a los Apus y las lágrimas del Sol forman el lago navegable más alto del mundo.",
-    "quz": "Kusisqa wayq'u Apukunata mana kasukuptin, Intipa wiqinmanta kay pachapi aswan hanaqpi puriy atiq qocha paqarin."
+    "quz": "Kusisqa wayq'u Apukunata mana kasukuptin, Intipa wiqinmanta kay pachapi aswan hanaqpi puriy atiq qocha paqarin.",
+    "ay": "Mä kusisiñ vallejj Apunakar jan istʼkän, Inti willkan jachʼanakapat Aymar Qullasuyun jachʼa qutapa luratäna, uka jachʼa quta alaxan markachañ lurañataki."
   },
   "paragraphs": {
     "es": [
@@ -34,6 +36,14 @@
       "Apukuna phiñakurqaku, pumakunata kacharqaku, paykunam orqokunamanta mana kasukuq runakunaman uraykamurqa. Chayta rikuspa, Inti, tawa chunka punchaw waqarqa. Wiqinkunam wayq'uta huntaykurqa hatun qocha kanankama.",
       "Huk qhari warmillam, mana kasukuspa, totora balsapi puririspa, qespirqaku. Yakuqa llamp'uyaqtin, pumakuna rumiman tukusqankuta rikurqaku.",
       "Chayrayku qochata Titiqaqa nisqa sutiyuqta sutichirqaku, ñawpa yuyaypi «rumi puma» ninanpaq. Kunan Titicaca qochaqa kay pachapi aswan hanaqpi puriy atiq qocha, aymara quechua runakunapaq willka kay."
+    ],
+    "ay": [
+      "Walja pachpachanakat nayrajj, jichhürunjja Titicaca quta uka chiqanjja mä wali yapuchaña valle utjäna. Ukanwa mä kusisiñ marka jakasïna, Apunakamp uñjata, jach'a qullunakan ajayunakapamp. Jupanakajj janiw wi'ayat jan ukajj llakit yatipkänti.",
+      "Apunakajj mä kamachikiw jupanakar churapxäna: janiw khitis qullu jach'a patar makhatañapäkänti, uka chiqanwa k'ucha nina nakhaskäna.",
+      "Ukhamäkchisa mä urutjja mä k'ari ajayuw jaqinak taypina iyaw-iyaw tukuyäna: —¿Kunatsa makhatañ jan atipapkta? Alaxpachanjja wali valorani kunas imatäñapawa. Yatiñ munasa, kamachañ munasa jaqinakajj qulluru makhatapxäna.",
+      "Apunakajj colerasipxänwa, pumanakaruw tinkusa jach'a patanakat jaytapxäna, jan istʼirinakaruw jaltapxäna. Ukûtjj Inti, willka, pusi tunka uru jachäna. Jachanakapajj vallejj phuqhachasa jach'a quta tukuyäna.",
+      "Mä chachawarmi tuqiki khuyapayasïna, jupanakajj jan jan ist'kasaw sarnaqapxäna, totora balsanakampiw uma patan sarapxäna. Umajj sumaptäyasajja, pumanakajj rumir tukuyaptataw uñjapxäna.",
+      "Ukatwa quta Titiqaqa satapxäna, nayra yatiñ arunakanjja “rumi puma” sañ muni. Jichhürunjja Titicaca qutajj alaxpachan jach'a qutapawa, aymara quechua markanakataki wali wila qutawa."
     ]
   },
   "audio": [
@@ -61,7 +71,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 82.512,
       "paragraphStartsSec": [
-        0.0,
+        0,
         14.56,
         22.692,
         39.216,
@@ -155,6 +165,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

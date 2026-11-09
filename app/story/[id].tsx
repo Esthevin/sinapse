@@ -21,6 +21,7 @@ import { useNarration } from '@/hooks/useNarration';
 import { LANGUAGES, languageName, t, type LanguageCode, pickLocalized } from '@/i18n/translations';
 import { hasSpanishVoice } from '@/services/speech';
 import { PremiumGate } from '@/components/PremiumGate';
+import { loadNovel } from '@/content/novelas';
 import { isFreeStory } from '@/content/plan';
 import { useAccount } from '@/state/AccountContext';
 import { useApp } from '@/state/AppContext';
@@ -339,6 +340,23 @@ function StoryPlayer({
             <Text style={styles.noticeText}>{t(lang, 'finishedBanner')}</Text>
           </Card>
         )}
+
+        {story.novel && (() => {
+          const chapters = loadNovel(story.novel.id);
+          const prev = chapters[story.novel.chapter - 2];
+          const next = chapters[story.novel.chapter];
+          const go = (id: string) => {
+            narration.pause();
+            router.replace({ pathname: '/story/[id]', params: { id } });
+          };
+          return (
+            <View style={{ marginTop: spacing.lg, gap: spacing.sm }}>
+              {next && <Button label={`Siguiente: ${next.title.es}`} onPress={() => go(next.id)} />}
+              {prev && <Button label="Capítulo anterior" variant="secondary" onPress={() => go(prev.id)} />}
+              <Button label="Ver todos los capítulos" variant="secondary" onPress={() => router.push({ pathname: '/novela/[id]', params: { id: story.novel!.id } })} />
+            </View>
+          );
+        })()}
 
         {story.quiz.length > 0 && (
         <Button
