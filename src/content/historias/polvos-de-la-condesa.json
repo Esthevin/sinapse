@@ -142,11 +142,9 @@
       "lang": "es",
       "narratorId": "librivox-evafolch",
       "voiceSource": "archivo",
-      "url": "https://archive.org/download/tradicionesperuanas_2101_librivox/tradicionesperuanas_02_palma_64kb.mp3",
+      "url": "site:polvos-de-la-condesa.es.mp3",
       "license": "Dominio público — LibriVox (https://librivox.org/tradiciones-peruanas-by-ricardo-palma/)",
-      "durationSec": 778,
-      "textStartSec": 23.4,
-      "textEndSec": 771.8
+      "durationSec": 745.6
     },
     {
       "lang": "ay",

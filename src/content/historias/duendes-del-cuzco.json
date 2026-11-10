@@ -190,11 +190,9 @@
       "lang": "es",
       "narratorId": "librivox-epachuko",
       "voiceSource": "archivo",
-      "url": "https://archive.org/download/tradicionesperuanas_2101_librivox/tradicionesperuanas_01_palma_64kb.mp3",
+      "url": "site:duendes-del-cuzco.es.mp3",
       "license": "Dominio público — LibriVox (https://librivox.org/tradiciones-peruanas-by-ricardo-palma/)",
-      "durationSec": 966,
-      "textStartSec": 18.0,
-      "textEndSec": 960.8
+      "durationSec": 939.6
     },
     {
       "lang": "ay",

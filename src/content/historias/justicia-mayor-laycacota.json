@@ -184,11 +184,9 @@
       "lang": "es",
       "narratorId": "librivox-rquintero",
       "voiceSource": "archivo",
-      "url": "https://archive.org/download/tradicionesperuanas_2101_librivox/tradicionesperuanas_03_palma_64kb.mp3",
+      "url": "site:justicia-mayor-laycacota.es.mp3",
       "license": "Dominio público — LibriVox (https://librivox.org/tradiciones-peruanas-by-ricardo-palma/)",
-      "durationSec": 804,
-      "textStartSec": 12.6,
-      "textEndSec": 795.4
+      "durationSec": 782.1
     },
     {
       "lang": "ay",

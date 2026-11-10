@@ -157,11 +157,9 @@
       "lang": "es",
       "narratorId": "librivox-elguti",
       "voiceSource": "archivo",
-      "url": "https://archive.org/download/tradicionesperuanas_2101_librivox/tradicionesperuanas_18_palma_64kb.mp3",
+      "url": "site:alma-de-fray-venancio.es.mp3",
       "license": "Dominio público — LibriVox (https://librivox.org/tradiciones-peruanas-by-ricardo-palma/)",
-      "durationSec": 508,
-      "textStartSec": 11.5,
-      "textEndSec": 501.6
+      "durationSec": 489.1
     },
     {
       "lang": "ay",

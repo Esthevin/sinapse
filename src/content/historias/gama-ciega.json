@@ -223,11 +223,9 @@
       "lang": "es",
       "narratorId": "librivox-mongope",
       "voiceSource": "archivo",
-      "url": "https://archive.org/download/cuentosdelaselva_1603_librivox/cuentosdelaselva_08_quiroga_64kb.mp3",
+      "url": "site:gama-ciega.es.mp3",
       "license": "Dominio público — LibriVox (https://librivox.org/cuentos-de-la-selva-para-los-ninos-by-horacio-quiroga/)",
-      "durationSec": 824,
-      "textStartSec": 16.5,
-      "textEndSec": 811.1
+      "durationSec": 794.1
     },
     {
       "lang": "ay",
