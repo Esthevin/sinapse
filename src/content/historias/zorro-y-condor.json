@@ -90,6 +90,24 @@
         66.56,
         78.66
       ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:zorro-y-condor.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 79.588,
+      "paragraphStartsSec": [
+        0.0,
+        12.884,
+        25.08,
+        31.72,
+        42.044,
+        50.636,
+        57.248,
+        67.108
+      ]
     }
   ],
   "glossary": [
