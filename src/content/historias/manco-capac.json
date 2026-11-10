@@ -78,6 +78,22 @@
         55.228,
         71.208
       ]
+    },
+    {
+      "lang": "ay",
+      "narratorId": "voz-mms-ay",
+      "voiceSource": "sintetica",
+      "url": "bundle:manco-capac.ay.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 112.7,
+      "paragraphStartsSec": [
+        0.0,
+        17.588,
+        33.208,
+        53.304,
+        73.452,
+        90.492
+      ]
     }
   ],
   "glossary": [

@@ -77,6 +77,22 @@
         66.328,
         78.668
       ]
+    },
+    {
+      "lang": "ay",
+      "narratorId": "voz-mms-ay",
+      "voiceSource": "sintetica",
+      "url": "bundle:hermanos-ayar.ay.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 110.284,
+      "paragraphStartsSec": [
+        0.0,
+        20.252,
+        39.964,
+        61.1,
+        77.08,
+        91.804
+      ]
     }
   ],
   "glossary": [
