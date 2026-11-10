@@ -54,8 +54,8 @@
      "url": "https://archive.org/download/donaperfecta_2501_librivox/donaperfecta_01_perezgaldos_64kb.mp3",
      "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público.",
      "durationSec": 314,
-     "textStartSec": 22,
-     "textEndSec": 306
+     "textStartSec": 22.0,
+     "textEndSec": 308.2
     }
    ]
   },
@@ -227,8 +227,8 @@
      "url": "https://archive.org/download/donaperfecta_2501_librivox/donaperfecta_03_perezgaldos_64kb.mp3",
      "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público.",
      "durationSec": 710,
-     "textStartSec": 22,
-     "textEndSec": 702
+     "textStartSec": 16.9,
+     "textEndSec": 703.7
     }
    ]
   },
@@ -441,8 +441,8 @@
      "url": "https://archive.org/download/donaperfecta_2501_librivox/donaperfecta_07_perezgaldos_64kb.mp3",
      "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público.",
      "durationSec": 579,
-     "textStartSec": 22,
-     "textEndSec": 571
+     "textStartSec": 17.3,
+     "textEndSec": 572.2
     }
    ]
   },
@@ -537,8 +537,8 @@
      "url": "https://archive.org/download/donaperfecta_2501_librivox/donaperfecta_08_perezgaldos_64kb.mp3",
      "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público.",
      "durationSec": 826,
-     "textStartSec": 22,
-     "textEndSec": 818
+     "textStartSec": 7.4,
+     "textEndSec": 820.0
     }
    ]
   },
@@ -1268,7 +1268,7 @@
      "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público.",
      "durationSec": 675,
      "textStartSec": 22,
-     "textEndSec": 667
+     "textEndSec": 668.7
     }
    ]
   },
@@ -1500,8 +1500,8 @@
      "url": "https://archive.org/download/donaperfecta_2501_librivox/donaperfecta_18_perezgaldos_64kb.mp3",
      "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público.",
      "durationSec": 965,
-     "textStartSec": 22,
-     "textEndSec": 957
+     "textStartSec": 15.3,
+     "textEndSec": 957.0
     }
    ]
   },
@@ -1950,8 +1950,8 @@
      "url": "https://archive.org/download/donaperfecta_2501_librivox/donaperfecta_23_perezgaldos_64kb.mp3",
      "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público.",
      "durationSec": 357,
-     "textStartSec": 22,
-     "textEndSec": 349
+     "textStartSec": 18.3,
+     "textEndSec": 351.3
     }
    ]
   },
@@ -2576,8 +2576,8 @@
      "url": "https://archive.org/download/donaperfecta_2501_librivox/donaperfecta_33_perezgaldos_64kb.mp3",
      "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público.",
      "durationSec": 39,
-     "textStartSec": 22,
-     "textEndSec": 31
+     "textStartSec": 18.2,
+     "textEndSec": 26.9
     }
    ]
   }

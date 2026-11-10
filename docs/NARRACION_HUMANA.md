@@ -77,3 +77,11 @@ Se puede **reducir** lo robótico, no eliminarlo: usar las voces neuronales de A
 vez de la del teléfono, ritmo algo más lento (`--ritmo -8%`), párrafos cortos, y elegir en Ajustes la
 mejor voz del teléfono. La app siempre etiqueta estas voces como sintéticas y las reemplaza solas en
 cuanto exista una voz humana.
+
+## Una sola voz para todos los cuentos y novelas (recreada a partir de LibriVox)
+
+Los cuentos sin grabación humana suenan a IA distinta cada uno. Para unificarlos con una voz parecida a la de los lectores de LibriVox:
+
+1. `python herramientas/radiodrama/chatterbox/extraer_referencias_librivox.py` corta 20 s de cada lector en `voces_candidatas/` (no se sube a git). Escucha y elige la que quieras como voz de Sinapse.
+2. Copia esa muestra a `voces_referencia/narrador.wav` y sigue `herramientas/radiodrama/chatterbox/narrar_cuentos.py` (Chatterbox, necesita GPU o paciencia en CPU).
+3. Las grabaciones de LibriVox son de dominio público, pero recrear la voz de una persona con IA es otra cosa: pídele permiso al lector (LibriVox permite escribirle desde su perfil), guarda su respuesta y publica el resultado como "voz recreada con IA, con autorización" (ver `docs/DERECHOS_Y_ETICA.md`).
