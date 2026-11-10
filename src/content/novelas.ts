@@ -1,4 +1,5 @@
 import catalogo from './novelas/catalogo.json';
+import type { LanguageCode } from '@/i18n/translations';
 import { NOVEL_LOADERS } from './novelas-cargadores';
 import type { AgeGroup, NarratorTrack, Region, Story } from './types';
 
@@ -9,14 +10,14 @@ import type { AgeGroup, NarratorTrack, Region, Story } from './types';
  */
 export interface NovelMeta {
   id: string;
-  title: { es: string };
+  title: { es: string } & Partial<Record<LanguageCode, string>>;
   author: string;
   year?: number;
   level: 'secundaria' | 'universidad';
   ages: AgeGroup[];
   region: Region;
   coverColor: string;
-  summary: { es: string };
+  summary: { es: string } & Partial<Record<LanguageCode, string>>;
   chapters: number;
   /** Minutos de audio de toda la novela. */
   minutes: number;
@@ -24,9 +25,11 @@ export interface NovelMeta {
 
 interface RawChapter {
   id: string;
-  title: { es: string };
-  paragraphs: { es: string[] };
+  title: { es: string } & Partial<Record<LanguageCode, string>>;
+  paragraphs: { es: string[] } & Partial<Record<LanguageCode, string[]>>;
   audio: NarratorTrack[];
+  /** Lenguas con texto traducido que aún es un borrador sin revisión de hablantes nativos. */
+  borrador?: LanguageCode[];
 }
 interface RawNovel extends Omit<NovelMeta, 'chapters' | 'minutes'> {
   source: string;
@@ -60,7 +63,8 @@ export function loadNovel(id: string): Story[] {
     ages: raw.ages,
     coverColor: raw.coverColor,
     summary: { es: c.paragraphs.es.find((p) => p.length > 80)?.slice(0, 150).trim() ?? raw.summary.es },
-    paragraphs: c.paragraphs,
+    paragraphs: c.paragraphs as Story['paragraphs'],
+    borrador: c.borrador,
     audio: c.audio,
     glossary: [],
     quiz: [],

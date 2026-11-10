@@ -138,6 +138,14 @@ export default function SettingsScreen() {
         <Chip label="Restablecer apariencia" onPress={() => updateSettings({ appearance: DEFAULT_APPEARANCE, fontScale: 1 })} />
       </View>
 
+      <SectionTitle>Sonidos de ambiente</SectionTitle>
+      <Text style={styles.note}>Viento, pasos, lluvia… suenan debajo de la voz. Si te tapan la narración, ponlos en «Suave» o apágalos con el botón «Sonidos» de cada historia.</Text>
+      <View style={[styles.row, { marginTop: spacing.sm }]}>
+        {(['suave', 'normal', 'fuerte'] as const).map((lv) => (
+          <Chip key={lv} label={lv === 'suave' ? 'Suave' : lv === 'normal' ? 'Normal' : 'Fuerte'} active={settings.ambienceLevel === lv} onPress={() => updateSettings({ ambienceLevel: lv })} />
+        ))}
+      </View>
+
       <SectionTitle>{t(lang, 'readingSpeed')}</SectionTitle>
       <View style={styles.row}>
         {SPEEDS.map((s) => (

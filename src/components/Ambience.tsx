@@ -1,6 +1,6 @@
 import { useAudioPlayer } from 'expo-audio';
 import { useEffect, useMemo, useRef } from 'react';
-import { BED_VOLUME, FX_VOLUME, SOUND_FILES, type Cue, type SoundId } from '@/content/ambience';
+import { AMBIENCE_FACTOR, BED_VOLUME, FX_VOLUME, SOUND_FILES, type AmbienceLevel, type Cue, type SoundId } from '@/content/ambience';
 
 /** Una capa de sonido en bucle: entra y sale con un desvanecido suave. */
 function Track({ id, active, volume, fast }: { id: SoundId; active: boolean; volume: number; fast?: boolean }) {
@@ -56,7 +56,8 @@ function Track({ id, active, volume, fast }: { id: SoundId; active: boolean; vol
  * Sonidos de ambiente durante la narración. Solo suenan mientras la narración está en marcha,
  * según el párrafo que se está leyendo (ver cuesFor en src/content/ambience.ts).
  */
-export function Ambience({ cues, index, playing, enabled }: { cues: Cue[]; index: number; playing: boolean; enabled: boolean }) {
+export function Ambience({ cues, index, playing, enabled, level = 'suave' }: { cues: Cue[]; index: number; playing: boolean; enabled: boolean; level?: AmbienceLevel }) {
+  const k = AMBIENCE_FACTOR[level];
   const used = useMemo(() => {
     const beds = new Set<SoundId>();
     const fx = new Set<SoundId>();
@@ -71,10 +72,10 @@ export function Ambience({ cues, index, playing, enabled }: { cues: Cue[]; index
   return (
     <>
       {used.beds.map((id) => (
-        <Track key={`bed-${id}`} id={id} volume={BED_VOLUME} active={on && cue?.bed === id} />
+        <Track key={`bed-${id}`} id={id} volume={Math.min(1, BED_VOLUME * k)} active={on && cue?.bed === id} />
       ))}
       {used.fx.map((id) => (
-        <Track key={`fx-${id}`} id={id} volume={FX_VOLUME} fast active={on && cue?.fx === id} />
+        <Track key={`fx-${id}`} id={id} volume={Math.min(1, FX_VOLUME * k)} fast active={on && cue?.fx === id} />
       ))}
     </>
   );

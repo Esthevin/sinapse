@@ -1,0 +1,294 @@
+{
+ "id": "dona-perfecta",
+ "title": "Doña Perfecta",
+ "author": "Benito Pérez Galdós",
+ "year": 1876,
+ "source": "Texto de dominio público de Wikisource en español (Doña Perfecta, Benito Pérez Galdós, 1876).",
+ "level": "secundaria",
+ "ages": [
+  "jovenes",
+  "adultos"
+ ],
+ "region": "sierra",
+ "coverColor": "#5A3A2A",
+ "summary": "Pepe Rey, un joven ingeniero liberal, llega a Orbajosa a casarse con su prima Rosario y choca con su tía, doña Perfecta, y con el fanatismo del pueblo. Una novela clásica sobre la intolerancia.",
+ "text": {
+  "kind": "wikisource",
+  "pages": {
+   "c1": "Doña Perfecta/I",
+   "c2": "Doña Perfecta/II",
+   "c3": "Doña Perfecta/III",
+   "c4": "Doña Perfecta/IV",
+   "c5": "Doña Perfecta/V",
+   "c6": "Doña Perfecta/VI",
+   "c7": "Doña Perfecta/VII",
+   "c8": "Doña Perfecta/VIII",
+   "c9": "Doña Perfecta/IX",
+   "c10": "Doña Perfecta/X",
+   "c11": "Doña Perfecta/XI",
+   "c12": "Doña Perfecta/XII",
+   "c13": "Doña Perfecta/XIII",
+   "c14": "Doña Perfecta/XIV",
+   "c15": "Doña Perfecta/XV",
+   "c16": "Doña Perfecta/XVI",
+   "c17": "Doña Perfecta/XVII",
+   "c18": "Doña Perfecta/XVIII",
+   "c19": "Doña Perfecta/XIX",
+   "c20": "Doña Perfecta/XX",
+   "c21": "Doña Perfecta/XXI",
+   "c22": "Doña Perfecta/XXII",
+   "c23": "Doña Perfecta/XXIII",
+   "c24": "Doña Perfecta/XXIV",
+   "c25": "Doña Perfecta/XXV",
+   "c26": "Doña Perfecta/XXVI",
+   "c27": "Doña Perfecta/XXVII",
+   "c28": "Doña Perfecta/XXVIII",
+   "c29": "Doña Perfecta/XXIX",
+   "c30": "Doña Perfecta/XXX",
+   "c31": "Doña Perfecta/XXXI",
+   "c32": "Doña Perfecta/XXXII",
+   "c33": "Doña Perfecta/XXXIII"
+  }
+ },
+ "audio": {
+  "archive": "donaperfecta_2501_librivox",
+  "narrator": {
+   "id": "librivox-meribau",
+   "name": "Meribau"
+  },
+  "license": "Grabación de dominio público de LibriVox (lectora o lector: Meribau). Texto de dominio público."
+ },
+ "chapters": [
+  {
+   "title": "Capítulo I: Villahorrenda!… ¡Cinco minutos!…",
+   "sections": [
+    "c1"
+   ],
+   "file": "donaperfecta_01_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo II: Un viaje por el corazón de España",
+   "sections": [
+    "c2"
+   ],
+   "file": "donaperfecta_02_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo III: Pepe Rey",
+   "sections": [
+    "c3"
+   ],
+   "file": "donaperfecta_03_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo IV: La llegada del primo",
+   "sections": [
+    "c4"
+   ],
+   "file": "donaperfecta_04_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo V: ¿Habrá desavenencia?",
+   "sections": [
+    "c5"
+   ],
+   "file": "donaperfecta_05_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo VI: Donde se ve que puede surgir desavenencia",
+   "sections": [
+    "c6"
+   ],
+   "file": "donaperfecta_06_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo VII: La desavenencia crece",
+   "sections": [
+    "c7"
+   ],
+   "file": "donaperfecta_07_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo VIII: A toda prisa",
+   "sections": [
+    "c8"
+   ],
+   "file": "donaperfecta_08_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo IX: La desavenencia sigue creciendo",
+   "sections": [
+    "c9"
+   ],
+   "file": "donaperfecta_09_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo X: La existencia de la discordia es evidente",
+   "sections": [
+    "c10"
+   ],
+   "file": "donaperfecta_10_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XI: La discordia crece",
+   "sections": [
+    "c11"
+   ],
+   "file": "donaperfecta_11_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XII: Aquí fue Troya",
+   "sections": [
+    "c12"
+   ],
+   "file": "donaperfecta_12_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XIII: Un casus belli",
+   "sections": [
+    "c13"
+   ],
+   "file": "donaperfecta_13_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XIV: La discordia sigue creciendo",
+   "sections": [
+    "c14"
+   ],
+   "file": "donaperfecta_14_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XV: Sigue creciendo, hasta que se declara la guerra",
+   "sections": [
+    "c15"
+   ],
+   "file": "donaperfecta_15_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XVI: Noche",
+   "sections": [
+    "c16"
+   ],
+   "file": "donaperfecta_16_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XVII: Luz a oscuras",
+   "sections": [
+    "c17"
+   ],
+   "file": "donaperfecta_17_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XVIII: Tropa",
+   "sections": [
+    "c18"
+   ],
+   "file": "donaperfecta_18_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XIX: Combate terrible. Estrategia",
+   "sections": [
+    "c19"
+   ],
+   "file": "donaperfecta_19_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XX: Rumores, temores",
+   "sections": [
+    "c20"
+   ],
+   "file": "donaperfecta_20_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXI: Desperta ferro",
+   "sections": [
+    "c21"
+   ],
+   "file": "donaperfecta_21_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXII: Desperta",
+   "sections": [
+    "c22"
+   ],
+   "file": "donaperfecta_22_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXIII: Misterio",
+   "sections": [
+    "c23"
+   ],
+   "file": "donaperfecta_23_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXIV: La confesión",
+   "sections": [
+    "c24"
+   ],
+   "file": "donaperfecta_24_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXV: Sucesos imprevistos",
+   "sections": [
+    "c25"
+   ],
+   "file": "donaperfecta_25_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXVI: María Remedios",
+   "sections": [
+    "c26"
+   ],
+   "file": "donaperfecta_26_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXVII: El tormento de un canónigo",
+   "sections": [
+    "c27"
+   ],
+   "file": "donaperfecta_27_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXVIII: De Pepe Rey a D. Juan Rey",
+   "sections": [
+    "c28"
+   ],
+   "file": "donaperfecta_28_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXIX: De Pepe Rey a Rosarito Polentinos",
+   "sections": [
+    "c29"
+   ],
+   "file": "donaperfecta_29_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXX: El ojeo",
+   "sections": [
+    "c30"
+   ],
+   "file": "donaperfecta_30_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXXI: Doña Perfecta",
+   "sections": [
+    "c31"
+   ],
+   "file": "donaperfecta_31_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Capítulo XXXII: Final: De D. Cayetano Polentinos a un su amigo de Madrid",
+   "sections": [
+    "c32"
+   ],
+   "file": "donaperfecta_32_perezgaldos_64kb.mp3"
+  },
+  {
+   "title": "Epílogo",
+   "sections": [
+    "c33"
+   ],
+   "file": "donaperfecta_33_perezgaldos_64kb.mp3"
+  }
+ ]
+}

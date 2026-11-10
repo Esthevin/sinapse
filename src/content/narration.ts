@@ -1,3 +1,4 @@
+import Constants from 'expo-constants';
 import type { NarrationSource } from '@/hooks/useNarration';
 import { fallbackChain, pickLocalized, type LanguageCode } from '@/i18n/translations';
 import type { Recording } from '@/state/AppContext';
@@ -51,8 +52,21 @@ export function setDownloaded(map: Record<string, string>) {
   downloaded = map;
 }
 
+/**
+ * "site:<archivo>": audios largos que se publican junto con la web (carpeta docs/audio → <sitio>/audio/).
+ * La dirección del sitio sale de la del catálogo (app.json → extra.catalogUrl).
+ */
+function siteUrl(file: string): string | null {
+  const catalog = (Constants.expoConfig?.extra as { catalogUrl?: string } | undefined)?.catalogUrl;
+  return catalog ? `${catalog.replace(/catalogo\/[^/]*$/, '')}audio/${file}` : null;
+}
+
 /** Resuelve "bundle:<archivo>" a un audio incluido en la app; null si aún no se generó. */
 function resolveUrl(url: string): { uri: string; asset?: number; remoteUrl?: string } | null {
+  if (url.startsWith('site:')) {
+    const full = siteUrl(url.slice('site:'.length));
+    return full ? { uri: downloaded[full] ?? full, remoteUrl: full } : null;
+  }
   if (!url.startsWith('bundle:')) return { uri: downloaded[url] ?? url, remoteUrl: /^https?:\/\//.test(url) ? url : undefined };
   const asset = BUNDLED_AUDIO[url.slice('bundle:'.length)];
   return asset === undefined ? null : { uri: url, asset };
@@ -167,13 +181,16 @@ export function resolveNarration(story: Story, lang: LanguageCode, recordings: R
     return toResolved(spanish, 'es', translated?.paragraphs ?? story.paragraphs.es, fallback, translated?.lang ?? 'es');
   }
 
+  // Sin audio: voz del teléfono. Si el texto está traducido (libros del usuario), se lee el texto traducido
+  // (la voz en castellano pronuncia el quechua y el aimara de forma aproximada, porque se escriben como suenan).
+  const translatedTts = fallback ? translatedParagraphs(story, lang) : null;
   return {
-    source: { kind: 'tts', paragraphs: story.paragraphs.es },
+    source: { kind: 'tts', paragraphs: translatedTts?.paragraphs ?? story.paragraphs.es },
     lang: 'es',
     voice: { kind: 'tts' },
     fallback,
-    textLang: 'es',
-    key: 'es:tts',
+    textLang: translatedTts?.lang ?? 'es',
+    key: `es:tts:${translatedTts?.lang ?? 'es'}`,
   };
 }
 

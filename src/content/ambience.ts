@@ -31,8 +31,12 @@ export const SOUND_FILES: Record<SoundId, number> = {
 };
 
 /** Volumen relativo de cada capa (la voz siempre va por encima). */
-export const BED_VOLUME = 0.38;
-export const FX_VOLUME = 0.5;
+export const BED_VOLUME = 0.16;
+export const FX_VOLUME = 0.24;
+
+/** Qué tan fuerte suenan los sonidos de ambiente frente a la voz (Ajustes → Sonidos de ambiente). */
+export type AmbienceLevel = 'suave' | 'normal' | 'fuerte';
+export const AMBIENCE_FACTOR: Record<AmbienceLevel, number> = { suave: 0.6, normal: 1, fuerte: 1.6 };
 
 /** Qué suena durante un párrafo: un fondo continuo (viento, lluvia…) y un efecto (pasos, aleteo). */
 export interface Cue {

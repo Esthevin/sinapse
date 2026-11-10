@@ -53,3 +53,11 @@ Todos los cuentos tienen texto en **castellano, quechua cusqueño y aimara**. Lo
 Los cuentos largos con voz humana en castellano (LibriVox) no tienen audio en quechua ni en aimara: la app muestra el texto traducido y resalta cada párrafo mientras suena la voz en castellano. Para voz sintética en esas lenguas: `python herramientas/voces/generar_mms.py quz` o `ay` (requiere Python con torch; los audios largos engordan el APK, por eso no se generaron todos).
 
 **Voces humanas en quechua y aimara**: se buscaron grabaciones libres en archive.org. Lo que existe son himnarios, lecturas de la Biblia y programas de radio con licencias que prohíben obras derivadas (CC BY-NC-ND) o que no son narraciones de estos cuentos; no se pueden usar. La vía es grabar con hablantes nativos (botón «Ponle tu voz» de cada historia) y publicarlas con `npm run audio:importar`.
+
+## Audio en quechua y aimara (noviembre 2026)
+Los 19 cuentos tienen **voz sintética (Meta MMS-TTS) en quechua cusqueño y en aimara**. Los audios cortos (de menos de 6 minutos) vienen dentro de la app; los largos están en `docs/audio/` y se publican con la web (la app los baja o los descarga con la url `site:<archivo>`). Son voces de máquina: se les nota. La voz humana en estas lenguas llegará con grabaciones de hablantes nativos (botón «Ponle tu voz»). Se generan con:
+```bash
+python herramientas/voces/generar_mms.py quz --hospedar 6     # o ay
+node scripts/generar-voces-peruanas.mjs --solo-mapa && npm run validar
+```
+Licencia de los modelos MMS: CC BY-NC (solo uso no comercial).

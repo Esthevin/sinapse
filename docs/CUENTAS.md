@@ -8,7 +8,7 @@ Sinapse funciona **sin cuenta** (como plan Normal). Con cuenta, una persona pued
 |---|---|---|
 | Historias | Casi todo el catálogo (15 de 19) | Todo, más 4 historias exclusivas |
 | Escuchar sin internet | Solo lo que viene dentro de la app | Descarga las narraciones |
-| PDF a audiolibro | 2 PDF al mes | Sin límite |
+| PDF o documento a audiolibro | 2 al mes | Sin límite, y traducción al quechua y aimara |
 
 Se configura en `src/content/plan.ts`: `PREMIUM_STORY_IDS` es la lista de historias exclusivas (las demás son gratis), y ahí también están el límite de PDF y la tabla que ve la gente.
 
@@ -63,3 +63,16 @@ Cuando vence un Premium, la app vuelve sola al plan Normal.
 ## Pruebas
 
 `supabase/schema.sql` se probó con PostgreSQL 16 simulando a una usuaria normal, a una administradora y a alguien sin sesión. La app y el panel se probaron contra un servidor falso con la misma forma que Supabase (registro, ingreso, solicitud, aprobación, borrado). **No se probó contra un proyecto real de Supabase** ni la descarga de archivos en un teléfono: haz una prueba con tu proyecto antes de abrir a más personas.
+
+## Traducir libros (Premium)
+
+Dentro de un libro que la persona creó desde un PDF o documento aparece «Quechua y aimara» con botones de traducir. Solo funciona con **Premium** y con internet: la app envía el texto a la función `traducir` de Supabase, que lo traduce con **Google Cloud Translation** (clave guardada como secreto del proyecto, nunca en la app) y devuelve un borrador.
+
+Para activarlo:
+1. En Google Cloud crea una clave de la API *Cloud Translation* (tiene una parte gratis al mes; revisa su precio).
+2. `supabase secrets set GOOGLE_TRANSLATE_KEY=<tu clave>` y `supabase functions deploy traducir` (con la CLI de Supabase; el código está en `supabase/functions/traducir/index.ts`).
+
+Sin la función publicada, el botón avisa que el servicio no está configurado. **No se probó con Google real** (solo con un servidor falso con la misma forma), así que prueba con un libro corto antes de abrirlo a más gente.
+
+## Descargas sin internet
+Con Premium, el botón «Descargar para escuchar sin internet» (cuentos y capítulos de novela con voz humana, y los audios largos en quechua y aimara) guarda el audio en el teléfono. En la biblioteca, el filtro **Descargadas** muestra lo que suena sin conexión, y en cada novela hay «Descargar los capítulos». Lo que ya viene dentro de la app suena siempre sin internet.

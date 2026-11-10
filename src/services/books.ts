@@ -22,6 +22,8 @@ export interface UserBook {
   createdAt: number;
   /** Libro o PDF del que salió (cuando un PDF trae varios cuentos). */
   collection?: string;
+  /** Traducciones automáticas (borrador) de los párrafos: quechua (qu) y aimara (ay). */
+  translations?: Partial<Record<'qu' | 'ay', string[]>>;
 }
 
 function bookToStory(b: UserBook): Story {
@@ -37,7 +39,8 @@ function bookToStory(b: UserBook): Story {
     ages: ['ninos', 'jovenes', 'adultos'],
     coverColor: '#2F4F5E',
     summary: { es: first.length > 150 ? `${first.slice(0, 147)}…` : first },
-    paragraphs: { es: b.paragraphs },
+    paragraphs: { es: b.paragraphs, ...(b.translations ?? {}) },
+    borrador: b.translations ? (Object.keys(b.translations) as ('qu' | 'ay')[]) : undefined,
     audio: [],
     glossary: [],
     quiz: [],
@@ -88,4 +91,14 @@ export async function deleteBook(id: string): Promise<void> {
   const rest = (await readAll()).filter((b) => b.id !== id);
   await AsyncStorage.setItem(KEY, JSON.stringify(rest));
   unregisterBook(id);
+}
+
+/** Guarda la traducción de un libro (quechua o aimara) y lo vuelve a registrar con ella. */
+export async function saveTranslation(id: string, lang: 'qu' | 'ay', paragraphs: string[]): Promise<void> {
+  const all = await readAll();
+  const book = all.find((b) => b.id === id);
+  if (!book || paragraphs.length !== book.paragraphs.length) throw new Error('El libro cambió: vuelve a intentarlo.');
+  book.translations = { ...(book.translations ?? {}), [lang]: paragraphs };
+  await AsyncStorage.setItem(KEY, JSON.stringify(all));
+  registerBook(bookToStory(book));
 }

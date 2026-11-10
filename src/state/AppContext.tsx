@@ -16,6 +16,8 @@ export interface Settings {
   teamTools: boolean;
   /** Sonidos de ambiente durante la narración (viento, pasos, lluvia…). */
   ambience: boolean;
+  /** Volumen de los sonidos de ambiente frente a la voz. */
+  ambienceLevel: 'suave' | 'normal' | 'fuerte';
   /** Voz del teléfono elegida para leer (null = la mejor disponible). */
   voiceId: string | null;
   /** Voz distinta para cada personaje cuando lee la voz del teléfono. */
@@ -60,7 +62,7 @@ interface PersistedState {
 const STORAGE_KEY = 'sinapse.state.v1';
 
 const INITIAL: PersistedState = {
-  settings: { lang: 'es', appearance: DEFAULT_APPEARANCE, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false, ambience: true, voiceId: null, multiVoice: true },
+  settings: { lang: 'es', appearance: DEFAULT_APPEARANCE, fontScale: 1, speechRate: 1, onboarded: false, teamTools: false, ambience: true, ambienceLevel: 'suave', voiceId: null, multiVoice: true },
   progress: {},
   quizzes: {},
   recordings: {},

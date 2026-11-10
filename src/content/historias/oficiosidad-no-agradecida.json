@@ -88,8 +88,62 @@
       "url": "https://archive.org/download/tradicionesperuanas_2101_librivox/tradicionesperuanas_17_palma_64kb.mp3",
       "license": "Dominio público — LibriVox (https://librivox.org/tradiciones-peruanas-by-ricardo-palma/)",
       "durationSec": 239,
-      "textStartSec": 18,
-      "textEndSec": 233
+      "textStartSec": 13.6,
+      "textEndSec": 231.9
+    },
+    {
+      "lang": "ay",
+      "narratorId": "voz-mms-ay",
+      "voiceSource": "sintetica",
+      "url": "bundle:oficiosidad-no-agradecida.ay.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 212.348,
+      "paragraphStartsSec": [
+        0.0,
+        33.092,
+        43.324,
+        52.1,
+        57.132,
+        63.284,
+        71.592,
+        84.576,
+        94.056,
+        98.144,
+        113.64,
+        136.624,
+        166.152,
+        180.816,
+        193.176,
+        198.144,
+        202.264
+      ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:oficiosidad-no-agradecida.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 168.652,
+      "paragraphStartsSec": [
+        0.0,
+        22.596,
+        29.484,
+        37.3,
+        41.916,
+        48.5,
+        56.632,
+        66.576,
+        74.632,
+        78.336,
+        89.688,
+        103.984,
+        128.728,
+        139.584,
+        151.896,
+        155.68,
+        160.28
+      ]
     }
   ],
   "glossary": [

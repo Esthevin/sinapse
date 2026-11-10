@@ -29,6 +29,7 @@ from transformers import AutoTokenizer, VitsModel
 ROOT = Path(__file__).resolve().parents[2]
 HISTORIAS = ROOT / "src" / "content" / "historias"
 AUDIO = ROOT / "assets" / "audio"
+DOCS_AUDIO = ROOT / "docs" / "audio"  # audios largos: se publican con la web (GitHub Pages) y la app los baja (url "site:<archivo>")
 NARRADORES = ROOT / "src" / "content" / "narradores.json"
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 
@@ -83,6 +84,8 @@ def main():
     ap.add_argument("lengua", choices=sorted(MODELOS))
     ap.add_argument("--historia", help="ids separados por coma")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--bitrate", default="32k", help="bitrate del MP3 (la voz MMS es de 16 kHz: 32k basta)")
+    ap.add_argument("--hospedar", type=int, default=0, metavar="MINUTOS", help="si el audio dura más de N minutos, se guarda en docs/audio (web) en vez de dentro de la app")
     a = ap.parse_args()
     modelo_hf, narrador_id, nombre = MODELOS[a.lengua]
     solo = set(a.historia.split(",")) if a.historia else None
@@ -120,14 +123,17 @@ def main():
         with tempfile.TemporaryDirectory() as tmp:
             wav = Path(tmp) / "x.wav"
             sf.write(wav, y, sr, subtype="PCM_16")
-            salida = AUDIO / f"{s['id']}.{a.lengua}.mp3"
-            subprocess.run([FFMPEG, "-nostdin", "-y", "-loglevel", "error", "-i", str(wav), "-codec:a", "libmp3lame", "-b:a", "64k", str(salida)], check=True)
+            largo = a.hospedar and len(y) / sr > a.hospedar * 60
+            destino = DOCS_AUDIO if largo else AUDIO
+            destino.mkdir(parents=True, exist_ok=True)
+            salida = destino / f"{s['id']}.{a.lengua}.mp3"
+            subprocess.run([FFMPEG, "-nostdin", "-y", "-loglevel", "error", "-i", str(wav), "-codec:a", "libmp3lame", "-ac", "1", "-b:a", a.bitrate, str(salida)], check=True)
         s["audio"] = [x for x in s["audio"] if not (x["lang"] == a.lengua and x["voiceSource"] == "sintetica")]
         s["audio"].append({
             "lang": a.lengua,
             "narratorId": narrador_id,
             "voiceSource": "sintetica",
-            "url": f"bundle:{salida.name}",
+            "url": f"{'site' if largo else 'bundle'}:{salida.name}",
             "license": f"Voz sintética Meta MMS-TTS ({modelo_hf}), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
             "durationSec": round(len(y) / sr, 3),
             "paragraphStartsSec": inicios,

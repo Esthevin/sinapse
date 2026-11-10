@@ -66,7 +66,22 @@ def texto_gutenberg(cfg):
 def texto_wikisource(cfg):
     pages = cfg["text"]["pages"]  # {clave: título de página}
     textos = obtener(list(pages.values()), cache=CACHE / f"wikisource_{cfg['id']}")
-    return {k: limpiar(textos[t]) for k, t in pages.items()}
+    secciones = {k: limpiar(textos[t]) for k, t in pages.items()}
+    # "split": {clave: expresión}: la página se parte en secciones <clave>-1, <clave>-2… cada vez que un párrafo
+    # coincide con la expresión (por ejemplo "^Capítulo [IVXLC]+$"); el título queda como primer párrafo.
+    for clave, patron in cfg["text"].get("split", {}).items():
+        actual, n, empezo = [], 0, False
+        for par in secciones[clave]:
+            if re.match(patron, par):
+                if actual:
+                    n += 1
+                    secciones[f"{clave}-{n}"] = actual
+                actual, empezo = [], True
+            if empezo:  # lo que hay antes del primer título (como «Primera Parte») no es un capítulo
+                actual.append(par)
+        if actual:
+            secciones[f"{clave}-{n + 1}"] = actual
+    return secciones
 
 
 def regenerar_indice():
@@ -82,6 +97,8 @@ def regenerar_indice():
         n = json.loads(f.read_text(encoding="utf-8"))
         ids.append(n["id"])
         horas = sum(c["audio"][0]["durationSec"] for c in n["chapters"] if c["audio"])
+        if not horas:  # sin grabación: se estima la lectura a unas 140 palabras por minuto
+            horas = sum(len(p.split()) for c in n["chapters"] for p in c["paragraphs"]["es"]) / 140 * 60
         metas.append({k: n[k] for k in ("id", "title", "author", "year", "level", "ages", "region", "coverColor", "summary")} | {"chapters": len(n["chapters"]), "minutes": round(horas / 60)})
     (carpeta / "catalogo.json").write_text(json.dumps(metas, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     lineas = "\n".join(f"  '{i}': () => require('./novelas/{i}.json')," for i in ids)
@@ -96,9 +113,26 @@ def main(ruta):
     cfg = json.loads(Path(ruta).read_text(encoding="utf-8"))
     secciones = texto_gutenberg(cfg) if cfg["text"]["kind"] == "gutenberg" else texto_wikisource(cfg)
 
-    meta = json.loads(http(f"https://archive.org/metadata/{cfg['audio']['archive']}"))
-    largos = {f["name"]: segundos(f.get("length")) for f in meta["files"] if f["name"].endswith("_64kb.mp3")}
+    # Una novela sin grabación (cfg["audio"] ausente) se lee con la voz del teléfono.
+    if "audio" in cfg:
+        meta = json.loads(http(f"https://archive.org/metadata/{cfg['audio']['archive']}"))
+        largos = {f["name"]: segundos(f.get("length")) for f in meta["files"] if f["name"].endswith("_64kb.mp3")}
+    else:
+        largos = {}
 
+    if cfg["chapters"] == "__auto__":
+        # Un capítulo por cada sección partida de las páginas con "split", en orden; «partes» da el nombre de cada parte.
+        auto = [{"title": "Proemio", "sections": ["proemio"]}] if "proemio" in secciones else []
+        for clave in cfg["text"]["split"]:
+            k = 1
+            while f"{clave}-{k}" in secciones:
+                titulo = secciones[f"{clave}-{k}"][0]
+                if len(secciones[f"{clave}-{k}"]) < 2:  # un título suelto (sin texto) no es un capítulo
+                    k += 1
+                    continue
+                auto.append({"title": f"{cfg['partes'][clave]} · {titulo}", "sections": [f"{clave}-{k}"]})
+                k += 1
+        cfg["chapters"] = auto
     capitulos = []
     for n, c in enumerate(cfg["chapters"], 1):
         paras = []
@@ -106,16 +140,16 @@ def main(ruta):
             if clave not in secciones or not secciones[clave]:
                 raise SystemExit(f"Falta el texto de la sección {clave} (capítulo {n})")
             paras += secciones[clave]
-        nombre = c["file"]
-        if nombre not in largos:
+        nombre = c.get("file")
+        if nombre and nombre not in largos:
             raise SystemExit(f"El audio {nombre} no está en archive.org/{cfg['audio']['archive']}")
-        dur = round(largos[nombre])
+        dur = round(largos[nombre]) if nombre else 0
         capitulos.append(
             {
                 "id": f"nov-{cfg['id']}-{n:02d}",
                 "title": {"es": c["title"]},
                 "paragraphs": {"es": paras},
-                "audio": [
+                "audio": [] if not nombre else [
                     {
                         "lang": "es",
                         "narratorId": cfg["audio"]["narrator"]["id"],
@@ -150,10 +184,10 @@ def main(ruta):
     out.write_text(json.dumps(novela, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     # Perfil del narrador (voz voluntaria de LibriVox) si aún no existe.
-    nar = cfg["audio"]["narrator"]
+    nar = cfg.get("audio", {}).get("narrator")
     ruta_n = ROOT / "src" / "content" / "narradores.json"
     lista = json.loads(ruta_n.read_text(encoding="utf-8"))
-    if not any(x["id"] == nar["id"] for x in lista):
+    if nar and not any(x["id"] == nar["id"] for x in lista):
         lista.append(
             {
                 "id": nar["id"],
@@ -170,7 +204,7 @@ def main(ruta):
 
     total = sum(len(c["paragraphs"]["es"]) for c in capitulos)
     chars = sum(len(p) for c in capitulos for p in c["paragraphs"]["es"])
-    horas = sum(c["audio"][0]["durationSec"] for c in capitulos) / 3600
+    horas = sum(c["audio"][0]["durationSec"] for c in capitulos if c["audio"]) / 3600
     print(f"{cfg['title']}: {len(capitulos)} capítulos, {total} párrafos, {chars:,} caracteres, {horas:.1f} h de audio -> {out.relative_to(ROOT)}")
 
 

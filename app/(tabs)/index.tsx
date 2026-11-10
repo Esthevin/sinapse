@@ -10,6 +10,7 @@ import { narratedLanguages } from '@/content/narration';
 import type { Region } from '@/content/types';
 import { LANGUAGES, t, pickLocalized } from '@/i18n/translations';
 import { useApp } from '@/state/AppContext';
+import { useDownloads } from '@/state/DownloadsContext';
 import { useThemed, type Theme } from '@/theme/theme';
 
 const REGIONS: Region[] = ['costa', 'sierra', 'selva'];
@@ -32,6 +33,9 @@ export default function LibraryScreen() {
   const [onlyHuman, setOnlyHuman] = useState(false);
   const [pickingLang, setPickingLang] = useState(false);
   const [novelsOnly, setNovelsOnly] = useState(false);
+  const [onlyDownloaded, setOnlyDownloaded] = useState(false);
+  const downloads = useDownloads();
+  const downloadedUrls = useMemo(() => new Set(downloads.items.map((d) => d.url)), [downloads.items]);
   const currentLang = LANGUAGES.find((l) => l.code === lang);
 
   const filtered = useMemo(() => {
@@ -39,10 +43,11 @@ export default function LibraryScreen() {
     return STORIES.filter((s) => {
       if (region && s.region !== region) return false;
       if (onlyHuman && !narratedLanguages(s, recordings[s.id]).length) return false;
+      if (onlyDownloaded && !s.audio.some((a) => downloadedUrls.has(a.url))) return false;
       if (q && !normalize(`${s.title.es} ${s.author} ${s.collection ?? ''} ${s.summary.es}`).includes(q)) return false;
       return true;
     });
-  }, [query, region, onlyHuman, recordings, catalogVersion]);
+  }, [query, region, onlyHuman, onlyDownloaded, downloadedUrls, recordings, catalogVersion]);
 
   const novels = useMemo(() => {
     const q = normalize(query.trim());
@@ -130,10 +135,11 @@ export default function LibraryScreen() {
         ))}
         <Chip label={t(lang, 'humanVoice')} active={onlyHuman} onPress={() => setOnlyHuman((v) => !v)} />
         <Chip label="Novelas" active={novelsOnly} onPress={() => setNovelsOnly((v) => !v)} />
+        {downloads.supported && <Chip label="Descargadas" active={onlyDownloaded} onPress={() => setOnlyDownloaded((v) => !v)} />}
       </View>
 
       <View style={{ marginTop: spacing.md }}>
-        <Button label="Convertir un PDF en audiolibro" variant="secondary" onPress={() => router.push('/pdf')} />
+        <Button label="Convertir un PDF o documento en audiolibro" variant="secondary" onPress={() => router.push('/pdf')} />
       </View>
 
       <Text style={styles.count}>{novelsOnly ? `Novelas (${novels.length})` : `${t(lang, 'allStories')} (${filtered.length})`}</Text>

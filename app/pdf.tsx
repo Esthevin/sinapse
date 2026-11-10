@@ -14,7 +14,8 @@ import { buildPdfHtml, type PdfMessage } from '@/services/pdfHtml';
 import { loadPdfJs } from '@/services/pdfSources';
 import { listSpanishVoices, voiceLabel } from '@/services/speech';
 import { deleteBook, prepareParagraphs, saveBook, wordCount } from '@/services/books';
-import { analyzePdf, previewOf, type Analysis, type Section } from '@/services/pdfAnalyze';
+import { analyzePdf, previewOf, type Analysis, type OutlineItem, type RawPage, type Section } from '@/services/pdfAnalyze';
+import { base64ToBytes, kindOf, parseDocument } from '@/services/docImport';
 import { useAccount } from '@/state/AccountContext';
 import { useApp } from '@/state/AppContext';
 import { canConvertPdf, pdfsUsedThisMonth, registerPdf } from '@/services/limits';
@@ -71,30 +72,36 @@ export default function PdfScreen() {
   const [job, setJob] = useState<{ html: string; base64: string; fileName: string } | null>(null);
   const [title, setTitle] = useState('');
 
+  /** Analiza el texto (de un PDF o de otro documento), separa los cuentos y muestra la vista previa. */
+  const finishAnalysis = (pages: RawPage[], outline: OutlineItem[], numPages: number, rawTitle: string, fileName: string) => {
+    const analysis = analyzePdf(pages, outline);
+    const readable = analysis.sections.reduce((n, sec) => n + sec.chars, 0);
+    if (readable < 80) {
+      setPhase({
+        name: 'error',
+        message: 'No encontramos texto en este archivo. Si es un PDF escaneado (fotos de páginas), todavía no podemos leerlo: hace falta reconocimiento de texto (OCR).',
+      });
+      return;
+    }
+    // El nombre del libro sale del archivo (los títulos internos de los PDF suelen ser basura).
+    const fromFile = fileName.replace(/\.[a-z0-9]+$/i, '').replace(/[_]+/g, ' ').trim();
+    setTitle(fromFile || rawTitle.trim() || 'Mi libro');
+    setPhase({ name: 'preview', analysis, pages: numPages, selected: Object.fromEntries(analysis.sections.map((sec) => [sec.id, sec.selected])) });
+  };
+
   const onMessage = useCallback(
     (m: PdfMessage) => {
       if (m.type === 'progress') {
         setPhase({ name: 'working', label: `Leyendo página ${m.page} de ${m.total}`, progress: m.page / m.total });
       } else if (m.type === 'done') {
         setJob(null);
-        const analysis = analyzePdf(m.pages, m.outline);
-        const readable = analysis.sections.reduce((n, sec) => n + sec.chars, 0);
-        if (readable < 80) {
-          setPhase({
-            name: 'error',
-            message: 'No encontramos texto en este PDF. Si es un escaneo (fotos de páginas), todavía no podemos leerlo: hace falta reconocimiento de texto (OCR).',
-          });
-          return;
-        }
-        // El nombre del libro sale del archivo (los títulos internos de los PDF suelen ser basura).
-        const fromFile = (job?.fileName ?? '').replace(/\.pdf$/i, '').replace(/[_]+/g, ' ').trim();
-        setTitle(fromFile || m.title.trim() || 'Mi libro');
-        setPhase({ name: 'preview', analysis, pages: m.numPages, selected: Object.fromEntries(analysis.sections.map((sec) => [sec.id, sec.selected])) });
+        finishAnalysis(m.pages, m.outline, m.numPages, m.title, job?.fileName ?? '');
       } else if (m.type === 'error') {
         setJob(null);
         setPhase({ name: 'error', message: ERRORS[m.code] ?? `No se pudo leer el PDF (${m.message}).` });
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [job?.fileName]
   );
 
@@ -116,11 +123,36 @@ export default function PdfScreen() {
     }
     setLimitHit(false);
     try {
-      const res = await DocumentPicker.getDocumentAsync({ type: 'application/pdf', copyToCacheDirectory: true });
+      const res = await DocumentPicker.getDocumentAsync({
+        type: [
+          'application/pdf',
+          'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+          'application/vnd.oasis.opendocument.text',
+          'application/msword',
+          'text/plain',
+          'text/markdown',
+        ],
+        copyToCacheDirectory: true,
+      });
       if (res.canceled || !res.assets?.[0]) return;
       const asset = res.assets[0];
       if (asset.size && asset.size > MAX_BYTES) {
         setPhase({ name: 'error', message: 'El PDF pesa más de 25 MB. Prueba con uno más liviano.' });
+        return;
+      }
+      const kind = kindOf(asset.name, asset.mimeType);
+      if (kind === 'doc') {
+        setPhase({ name: 'error', message: 'Los documentos .doc antiguos no se pueden leer. Ábrelo en Word o Google Docs y guárdalo como .docx o PDF.' });
+        return;
+      }
+      if (!kind) {
+        setPhase({ name: 'error', message: 'Ese tipo de archivo todavía no se puede leer. Usa PDF, Word (.docx), OpenDocument (.odt) o texto (.txt, .md).' });
+        return;
+      }
+      if (kind !== 'pdf') {
+        setPhase({ name: 'working', label: 'Leyendo el documento…', progress: 0.3 });
+        const doc = parseDocument(kind, base64ToBytes(await fileBase64(asset)), asset.name);
+        finishAnalysis(doc.pages, doc.outline, doc.numPages, doc.title, asset.name);
         return;
       }
       setPhase({ name: 'working', label: 'Preparando el lector…', progress: 0 });
@@ -180,7 +212,7 @@ export default function PdfScreen() {
       <Stack.Screen options={{ title: 'Audiolibro desde PDF' }} />
       {job && <PdfRunner html={job.html} base64={job.base64} onMessage={onMessage} />}
 
-      <Text style={styles.lead}>Sube un PDF con texto y Sinapse lo lee en voz alta, párrafo por párrafo, igual que las historias.</Text>
+      <Text style={styles.lead}>Sube un PDF o un documento de Word (.docx), OpenDocument (.odt) o texto (.txt, .md) y Sinapse lo lee en voz alta, párrafo por párrafo, igual que las historias.</Text>
 
       {(phase.name === 'idle' || phase.name === 'error') && (
         <>
@@ -200,11 +232,11 @@ export default function PdfScreen() {
               <Button label="Ver Premium" onPress={() => router.push('/premium')} style={{ marginTop: spacing.md }} />
             </Card>
           )}
-          <Button label="Elegir un PDF" onPress={pick} style={{ marginTop: spacing.lg }} />
+          <Button label="Elegir un PDF o documento" onPress={pick} style={{ marginTop: spacing.lg }} />
           <Card style={{ marginTop: spacing.lg }}>
             <Text style={styles.noteTitle}>Antes de empezar</Text>
             <Text style={styles.note}>
-              {'•'} Funciona con PDF de texto (libros, artículos, apuntes). Los escaneos como fotos aún no.{'\n'}
+              {'•'} Funciona con PDF de texto, Word (.docx), OpenDocument (.odt) y texto (.txt, .md): libros, artículos, apuntes. Los escaneos como fotos y los .doc antiguos aún no.{'\n'}
               {'•'} El archivo se lee dentro de tu dispositivo: no se sube a ningún servidor.{'\n'}
               {'•'} La lectura usa la voz en español del teléfono. Los libros largos se parten en partes de unos 20 minutos.{'\n'}
               {'•'} Usa solo documentos que tengas derecho a usar.
