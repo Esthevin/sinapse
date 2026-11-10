@@ -231,6 +231,71 @@ def fiesta():
     return sig + murmur
 
 
+def burbujeo():
+    """Burbujas de agua que hierve o brota: muchos 'bloop' cortos que suben de tono."""
+    r = rng(41)
+    sig = noise(40, 200, 1200) * 0.08
+    for t0 in r.random(70) * (DUR - 0.3):
+        f = 300 + r.random() * 900
+        sig += chirp(t0, 0.05 + r.random() * 0.06, f, f * (1.5 + r.random()), amp=0.25 + r.random() * 0.4)
+    return sig
+
+
+def trueno():
+    sig = np.zeros(N)
+    for t0, g in ((0.4, 1.0), (4.6, 0.7)):
+        n = int(3.2 * SR)
+        b = band(rng(int(t0 * 10)).standard_normal(n), 30, 260) * np.exp(-1.1 * np.arange(n) / SR)
+        crack = band(rng(int(t0 * 10) + 1).standard_normal(n), 800, 4000) * np.exp(-14 * np.arange(n) / SR) * 0.4
+        i = int(t0 * SR)
+        j = min(N, i + n)
+        sig[i:j] += ((b + crack) * g)[: j - i]
+    return sig
+
+
+def galope():
+    sig = np.zeros(N)
+    for k in range(9):
+        base = 0.2 + k * 1.05
+        for d, g in ((0, 1.0), (0.14, 0.8), (0.30, 0.9), (0.46, 0.7)):
+            t0 = base + d
+            if t0 < DUR - 0.2:
+                sig += burst(t0, 0.12, 120, 1400, int(t0 * 997), decay=34) * g
+                sig += chirp(t0, 0.06, 110, 60, amp=0.35 * g)
+    return sig
+
+
+def campanas():
+    sig = np.zeros(N)
+    for t0 in (0.3, 2.6, 4.9, 7.2):
+        n = int(2.3 * SR)
+        tt = np.arange(n) / SR
+        tone = sum(a * np.sin(2 * np.pi * f * tt) for f, a in ((392, 1.0), (784, 0.5), (1176, 0.3), (1568, 0.18))) * np.exp(-2.1 * tt)
+        i = int(t0 * SR)
+        j = min(N, i + n)
+        sig[i:j] += tone[: j - i] * 0.5
+    return sig
+
+
+def ranas():
+    r = rng(51)
+    sig = np.zeros(N)
+    for t0 in r.random(26) * (DUR - 0.5):
+        f = 180 + r.random() * 260
+        sig += chirp(t0, 0.16, f, f * 0.8, amp=0.4, vib=60, seed=int(t0 * 100))
+        sig += chirp(t0 + 0.2, 0.12, f * 1.05, f * 0.85, amp=0.3, vib=60, seed=int(t0 * 100) + 1)
+    return sig + noise(52, 3000, 6000) * 0.01
+
+
+def chapoteo():
+    r = rng(61)
+    sig = np.zeros(N)
+    for t0 in r.random(10) * (DUR - 0.8):
+        sig += burst(t0, 0.5, 200, 3000, int(t0 * 991), decay=9) * (0.5 + r.random() * 0.5)
+        sig += chirp(t0 + 0.05, 0.1, 400, 900, amp=0.15)
+    return sig
+
+
 SONIDOS = {
     "viento": (viento, 0.8),
     "lluvia": (lluvia, 0.8),
@@ -244,6 +309,12 @@ SONIDOS = {
     "golpes": (golpes, 0.9),
     "lechuza": (lechuza, 0.8),
     "fiesta": (fiesta, 0.8),
+    "burbujeo": (burbujeo, 0.8),
+    "trueno": (trueno, 0.9),
+    "galope": (galope, 0.85),
+    "campanas": (campanas, 0.7),
+    "ranas": (ranas, 0.7),
+    "chapoteo": (chapoteo, 0.8),
 }
 
 
@@ -264,7 +335,10 @@ def write_mp3(name, x):
 
 if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
+    solo = sys.argv[1:]  # python generar_sonidos.py burbujeo trueno  -> solo esos (no pisa los reales CC0)
     for name, (fn, peak) in SONIDOS.items():
+        if solo and name not in solo:
+            continue
         x = norm(loopify(fn()), peak)
         write_mp3(name, x)
         print(f"{name}.mp3  {len(x) / SR:.1f} s")

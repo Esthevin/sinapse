@@ -50,6 +50,7 @@ export default function StoryScreen() {
   const [viewLang, setViewLang] = useState<LanguageCode>(settings.lang);
   // Si el audio no carga (archivo que el teléfono no puede abrir), se lee con la voz del teléfono en vez de quedar cargando.
   const [failedKey, setFailedKey] = useState<string | null>(null);
+  const [retry, setRetry] = useState(0);
 
   useEffect(() => {
     if (story) openStory(story.id);
@@ -84,7 +85,8 @@ export default function StoryScreen() {
       <Stack.Screen options={{ title: pickLocalized(story.title, settings.lang) }} />
       {/* `key` reinicia el reproductor cuando cambia la fuente de voz. */}
       <StoryPlayer
-        key={resolved.key}
+        key={`${resolved.key}:${retry}`}
+        onRetry={() => setRetry((n) => n + 1)}
         story={story}
         resolved={resolved}
         viewLang={viewLang}
@@ -103,6 +105,7 @@ function StoryPlayer({
   setViewLang,
   audioFailed,
   onAudioFailed,
+  onRetry,
 }: {
   story: Story;
   resolved: ResolvedNarration;
@@ -110,6 +113,7 @@ function StoryPlayer({
   setViewLang: (l: LanguageCode) => void;
   audioFailed: boolean;
   onAudioFailed: () => void;
+  onRetry: () => void;
 }) {
   const { settings, progress, recordings, updateSettings, savePosition, addListening, markCompleted, booksChanged } = useApp();
   const { th, styles, colors, spacing } = useThemed(makeStyles);
@@ -142,12 +146,18 @@ function StoryPlayer({
   // Si el audio sigue "cargando" tras 12 segundos, no se va a abrir: pasar a la voz del teléfono.
   const failedRef = useRef(onAudioFailed);
   failedRef.current = onAudioFailed;
+  // Una voz humana (grabación de una persona) nunca se cambia sola por la voz del teléfono: si tarda, se avisa y se ofrece reintentar.
+  const humanVoice = resolved.source.kind === 'audio' && resolved.voice.kind === 'audio' && resolved.voice.source !== 'sintetica';
+  const [slowHuman, setSlowHuman] = useState(false);
   useEffect(() => {
-    if (!narration.loading) return;
-    // Un audio de internet que no carga en 8 s (sin conexión) pasa a la voz del teléfono; el que está en el teléfono, en 12 s.
-    const timer = setTimeout(() => failedRef.current(), isRemoteAudio(resolved.source) ? 8000 : 12000);
+    if (!narration.loading) {
+      setSlowHuman(false);
+      return;
+    }
+    const remote = isRemoteAudio(resolved.source);
+    const timer = setTimeout(() => (humanVoice ? setSlowHuman(true) : failedRef.current()), remote ? (humanVoice ? 20000 : 30000) : 12000);
     return () => clearTimeout(timer);
-  }, [narration.loading, resolved.source]);
+  }, [narration.loading, resolved.source, humanVoice]);
 
   const isTts = resolved.source.kind === 'tts';
   const paragraphs = resolved.source.paragraphs;
@@ -303,6 +313,14 @@ function StoryPlayer({
             onPress={() => router.push({ pathname: '/record/[id]', params: { id: story.id, lang: 'es' } })}
             style={{ marginTop: spacing.md }}
           />
+        )}
+
+        {slowHuman && narration.loading && (
+          <Card style={styles.notice}>
+            <Text style={styles.noticeText}>El audio está tardando en cargar. Revisa tu conexión (o descárgalo desde “…” para escucharlo sin internet).</Text>
+            <Button label="Reintentar" variant="secondary" onPress={onRetry} style={{ marginTop: spacing.sm }} />
+            <Button label="Leer con la voz del teléfono" variant="secondary" onPress={() => failedRef.current()} style={{ marginTop: spacing.sm }} />
+          </Card>
         )}
 
         {audioFailed && (

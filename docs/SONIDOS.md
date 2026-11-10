@@ -57,3 +57,7 @@ de una historia: `[{ "from": 0, "bed": null, "fx": null }]` (así está «Los po
   reutilización; guarda su licencia). Idealmente un bucle sin silencios al inicio y al final.
 - Para un sonido nuevo: agrega el archivo, su `SoundId` y su `require` en `ambience.ts` y las palabras
   que lo activan.
+
+## Efectos que solo suenan cuando el texto los menciona
+
+Ya no hay fondo continuo por defecto (antes la sierra tenía viento y la selva ruido de monte todo el cuento). Cada sonido suena solo mientras el texto lo nombra y se apaga unos párrafos después. Se agregaron `burbujeo` (hervir, burbujas, manantial), `trueno`, `galope` (caballo, jinete), `campanas`, `ranas` y `chapoteo`. Son sintéticos (`python herramientas/sonidos/generar_sonidos.py burbujeo trueno …` genera solo los que nombres, sin pisar las grabaciones CC0).

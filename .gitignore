@@ -37,3 +37,4 @@ produccion/
 .claude/settings.local.json
 herramientas/novelas/.cache/
 __pycache__/
+herramientas/radiodrama/chatterbox/voces_candidatas/

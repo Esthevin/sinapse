@@ -172,11 +172,9 @@
       "lang": "es",
       "narratorId": "librivox-charbeli-ramos-chavez",
       "voiceSource": "archivo",
-      "url": "https://archive.org/download/cuentosdelaselva_1603_librivox/cuentosdelaselva_03_quiroga_64kb.mp3",
+      "url": "site:medias-de-los-flamencos.es.mp3",
       "license": "Dominio público — LibriVox (https://librivox.org/cuentos-de-la-selva-para-los-ninos-by-horacio-quiroga/)",
-      "durationSec": 647,
-      "textStartSec": 25.8,
-      "textEndSec": 638.1
+      "durationSec": 610.2
     },
     {
       "lang": "ay",

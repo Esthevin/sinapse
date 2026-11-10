@@ -13,7 +13,13 @@ export type SoundId =
   | 'noche'
   | 'golpes'
   | 'lechuza'
-  | 'fiesta';
+  | 'fiesta'
+  | 'burbujeo'
+  | 'trueno'
+  | 'galope'
+  | 'campanas'
+  | 'ranas'
+  | 'chapoteo';
 
 export const SOUND_FILES: Record<SoundId, number> = {
   viento: require('../../assets/sonidos/viento.mp3'),
@@ -28,6 +34,12 @@ export const SOUND_FILES: Record<SoundId, number> = {
   golpes: require('../../assets/sonidos/golpes.mp3'),
   lechuza: require('../../assets/sonidos/lechuza.mp3'),
   fiesta: require('../../assets/sonidos/fiesta.mp3'),
+  burbujeo: require('../../assets/sonidos/burbujeo.mp3'),
+  trueno: require('../../assets/sonidos/trueno.mp3'),
+  galope: require('../../assets/sonidos/galope.mp3'),
+  campanas: require('../../assets/sonidos/campanas.mp3'),
+  ranas: require('../../assets/sonidos/ranas.mp3'),
+  chapoteo: require('../../assets/sonidos/chapoteo.mp3'),
 };
 
 /** Volumen relativo de cada capa (la voz siempre va por encima). */
@@ -53,18 +65,24 @@ export interface AmbienceOverride {
 }
 
 const BED_RULES: { id: SoundId; re: RegExp; hold: number }[] = [
-  { id: 'lluvia', re: /\b(llov|lluvia|tormenta|aguacero|diluvio|chaparron)/, hold: 5 },
-  { id: 'fuego', re: /\b(fuego|llamas|hoguera|fogata|incendi|ardiendo|ardia|arde)\b/, hold: 4 },
+  { id: 'lluvia', re: /\b(llov|lluvia|tormenta|aguacero|diluvio|chaparron)/, hold: 2 },
+  { id: 'fuego', re: /\b(fuego|llamas|hoguera|fogata|incendi|ardiendo|ardia|arde)\b/, hold: 2 },
   { id: 'fiesta', re: /\b(baile|bailar|bailaban|bailaron|fiesta|banquete|festej|celebr|musica|charango|zampona|quena)/, hold: 1 },
-  { id: 'olas', re: /\b(lago|mar|oceano|playa|balsa|balsas|olas|costa del)\b/, hold: 3 },
-  { id: 'rio', re: /\b(rio|rios|cocha|cochas|laguna|arroyo|quebrada|orilla|navegab|nadar)\b/, hold: 3 },
-  { id: 'noche', re: /\b(noche|luna|estrellas|oscuridad|anochec|medianoche|madrugada)/, hold: 6 },
-  { id: 'viento', re: /\b(viento|ventarr|brisa|puna|cumbre|cerro|cerros|montana|montanas|altiplano|nevado|condor)/, hold: 3 },
-  { id: 'selva', re: /\b(selva|monte|bosque|jungla|aguaje|arboles|amazon)/, hold: 3 },
+  { id: 'olas', re: /\b(lago|mar|oceano|playa|balsa|balsas|olas|costa del)\b/, hold: 2 },
+  { id: 'rio', re: /\b(rio|rios|cocha|cochas|laguna|arroyo|quebrada|orilla|navegab|nadar)\b/, hold: 2 },
+  { id: 'noche', re: /\b(noche|luna|estrellas|oscuridad|anochec|medianoche|madrugada)/, hold: 2 },
+  { id: 'viento', re: /\b(viento|ventarr|brisa|puna|cumbre|cerro|cerros|montana|montanas|altiplano|nevado|condor)/, hold: 2 },
+  { id: 'selva', re: /\b(selva|monte|bosque|jungla|aguaje|arboles|amazon)/, hold: 2 },
 ];
 const DAWN = /\b(amanec|amaneci|al dia siguiente|a la manana|salio el sol|mediodia)/;
 
 const FX_RULES: { id: SoundId; re: RegExp }[] = [
+  { id: 'trueno', re: /\b(trueno|truenos|relampag|rayo|rayos)\b/ },
+  { id: 'burbujeo', re: /\b(burbuj|hervi|hirvi|borbot|caldero|brotaba|manantial)/ },
+  { id: 'galope', re: /\b(galop|caballo|caballos|cabalgat|cabalgo|jinete|trote)/ },
+  { id: 'campanas', re: /\b(campana|campanas|campanario|repique|doblaron las)/ },
+  { id: 'ranas', re: /\b(ranas|sapos|croar|croaban|croac)/ },
+  { id: 'chapoteo', re: /\b(chapote|salpic|zambull|se tiro al agua|cayo al agua|nado)/ },
   { id: 'golpes', re: /\b(tan\s*-?\s*tan|toc\s*-?\s*toc|golpe|golpea|golpeab|golpeo|golpearon|llamar a la puerta|llamo a la puerta|tocaron la puerta)/ },
   { id: 'lechuza', re: /\b(lechuza|buho|tecolote|mochuelo)/ },
   { id: 'aleteo', re: /\b(volar|volaba|volaban|volo|volaron|vuela|vuelan|alas|aleteo|aleteaba|batio)/ },
@@ -77,7 +95,8 @@ const normalize = (s: string) =>
     .replace(/[̀-ͯ]/g, '')
     .toLowerCase();
 
-const DEFAULT_BED: Record<Region, SoundId | null> = { sierra: 'viento', selva: 'selva', costa: null };
+/** Sin fondo continuo por defecto: cada sonido suena solo mientras el texto lo menciona. */
+const DEFAULT_BED: Record<Region, SoundId | null> = { sierra: null, selva: null, costa: null };
 
 /**
  * Diseño sonoro automático: lee cada párrafo y elige el fondo y el efecto según las palabras
