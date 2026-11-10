@@ -101,6 +101,8 @@ export interface Story {
   source: string; // procedencia y licencia del texto
   /** Obra o colección a la que pertenece (ej. “Tradiciones peruanas”). */
   collection?: string;
+  /** Si es el capítulo de una novela: id de la novela, número de capítulo y total (ver src/content/novelas.ts). */
+  novel?: { id: string; chapter: number; total: number };
   /** true si el texto es el original del autor (no una adaptación de Sinapse). */
   original?: boolean;
   region: Region;

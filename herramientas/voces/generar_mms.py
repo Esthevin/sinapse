@@ -36,6 +36,8 @@ FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 MODELOS = {
     "quz": ("facebook/mms-tts-quz", "voz-mms-quz", "Quechua cusqueño"),
     "quy": ("facebook/mms-tts-quy", "voz-mms-quy", "Quechua ayacuchano"),
+    # Aimara central (ayr). Comprueba que el modelo exista en huggingface.co/facebook antes de la primera corrida.
+    "ay": ("facebook/mms-tts-ayr", "voz-mms-ay", "Aimara"),
 }
 PAUSA_FRASE = 0.30
 PAUSA_PARRAFO = 0.70

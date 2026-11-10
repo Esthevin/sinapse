@@ -2,7 +2,8 @@
   "id": "chullachaqui",
   "title": {
     "es": "El Chullachaqui, guardián del bosque",
-    "quz": "Chullachaqui, sach'ap waqaychaqnin"
+    "quz": "Chullachaqui, sach'ap waqaychaqnin",
+    "ay": "Chullachaqui, ch'amakan uñjiripa"
   },
   "author": "Tradición amazónica",
   "source": "Leyenda de la tradición oral de la Amazonía peruana. Adaptación libre para Sinapse.",
@@ -15,7 +16,8 @@
   "emoji": "🌳",
   "summary": {
     "es": "Un joven sale a buscar aguaje y alguien conocido lo llama desde el monte. ¿Será quien parece ser?",
-    "quz": "Huk waynaqa aguaje maskaq lluqsin, hinaspa riqsisqa runa sach'amanta waqyan. ¿Pichus kasqan hina?"
+    "quz": "Huk waynaqa aguaje maskaq lluqsin, hinaspa riqsisqa runa sach'amanta waqyan. ¿Pichus kasqan hina?",
+    "ay": "Mä wayn aguaje thaqhir sarasaw, uñt'at mä jaqix ch'amakat jupar jawsi. ¿Jupax kunjamsa uñacht'ayatäki ukham jaqïspati?"
   },
   "paragraphs": {
     "es": [
@@ -33,6 +35,14 @@
       "Huk punchaw Tito sutiyuq waynaqa aguaje rurukunata maskaq lluqsirqa. Hinaqtin primunta rikurqa, sach'a chawpimanta waqyaqta: «¡Hamuy, kaypi aswan kachkan!» Tito unaytam qatirqa, imallapas mana allinchu ñawinpi rikurqa: primunqa sapa kuti huk chakinta sach'akuna qhipanpi pakaq.",
       "Tito awichan nisqanta yuparqa: «Pipas monteypi waqyasunki chayqa, chakinta qhaway.» K'umu chakita rikuspa, cheqaqta yacharqa. Manaña purirqachu: ch'inlla, ancha samarqa, mayup uyarinta maskarqa.",
       "Mayuta qatispa, tutayaqtinña ayllunman chayarqa. Chaymanta pacha Titoqa sach'ata respetan: manam sapallanchu yaykun, maymanchus riyta willan, yuyaq lluqsiqllatam hap'in. Ninku Chullachaquiqa sach'ata waqaychaqta mana ima ruwanchu."
+    ],
+    "ay": [
+      "Loreto ukat Ucayali selvanxa, achilanakax siwapxiwa ch'amakax mä uñjiri utjatapa: Chullachaqui. Jupax mä jisk'a uñt'iriwa, ch'amak wali manqhan jakasi, lupuna sat jach'a quqanak jak'ana.",
+      "Sutipax Amazonía quechuat juti: chulla, ukax «jan chikäki» jan ukax «mä sapakiw» sañ muni, ukat chaki, ukax «kayu» sañ muni. Chullachaquix mä kayux jaqi jama ukat yaqhax thuruta, uywa jama.",
+      "Chullachaquix kunayman jaqiruw tukusi: mä amigo, mä jilata, mamapar jan ukax awkipar. Ukhamaw ch'amakan sapakiw saririnakar sallqjasi ukat sapa kuti juk'amp manqhar irpi, jupanakax chhaqhatäpxañapakamaw.",
+      "Mä urux Tito sutini mä waynux aguaje achunak thaqir sarawayäna. Mä ratuw jupax jila tawaqupar uñjäna, jupax quqa taypit jawsäna: —¡Jutam, akan juk'amp utji! Titox jupar mä juk'a pacha arkäna, kunatix mä jan wali uñjatayna: jila tawaqupax kayupat mä chhiqar ch'amak qhipäxan imäna.",
+      "Titox awichapan siwatapa amtasïna: «Khitis jumar ch'amakan jawski ukhaxa, kayunakap uñjam». Thuruta kayu uñjasax chiqap yatïna. Janiw sarañ nukhäkänti: jaljtawayasaw, wali samarasa ukat jawirin sarawip ist'asax chiqar thaqhäna.",
+      "Jawirar arkasaw, jayp'u pachanxa comunidadapar purïna. Uka urutpacha Titox ch'amakar respetasi: janipuniw sapakiw mantkiti, kawkirus saratap yatiyi, ukat munat kunakikiw apsusi. Siwapxiwa Chullachaquix selvar uñjir jaqiruw janiw ñanqhachkiti."
     ]
   },
   "audio": [
@@ -60,7 +70,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 94.504,
       "paragraphStartsSec": [
-        0.0,
+        0,
         12.912,
         28.14,
         40.604,
@@ -161,6 +171,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

@@ -1,7 +1,9 @@
 {
   "id": "tortuga-gigante",
   "title": {
-    "es": "La tortuga gigante"
+    "es": "La tortuga gigante",
+    "quz": "Hatun tortuga",
+    "ay": "Jach'a tortuga"
   },
   "author": "Horacio Quiroga",
   "collection": "Cuentos de la selva",
@@ -15,7 +17,9 @@
   "coverColor": "#4F8A3C",
   "emoji": "🐢",
   "summary": {
-    "es": "Un cazador enfermo salva a una tortuga herida en la selva. Cuando él cae enfermo, la tortuga emprende un viaje increíble para salvarlo."
+    "es": "Un cazador enfermo salva a una tortuga herida en la selva. Cuando él cae enfermo, la tortuga emprende un viaje increíble para salvarlo.",
+    "quz": "Unqusqa cazador sacha ukhupi k'irisqa tortugata qespichin. Payña unqusqa kaqtin, tortugaqa mana creenapaq ñanta puriykuspa paytaq qespichin.",
+    "ay": "Usutawa mä jaqix ch'uxña quqanakanxa mä usuchjata tortugaru qhispiyi. Jupax usutäxipanxa, tortugax jach'a sarnaqäwi luraspa jupar qhispiyañataki."
   },
   "paragraphs": {
     "es": [
@@ -64,6 +68,100 @@
       "Cuando el cazador supo cómo lo había salvado la tortuga, cómo había hecho un viaje de trescientas leguas para que tomara remedios, no quiso separarse más de ella. Y como él no podía tenerla en su casa, que era muy chica, el director del Zoológico se comprometió a tenerla en el jardín, y a cuidarla como si fuera su propia hija.",
       "Y así pasó. La tortuga, feliz y contenta con el cariño que le tienen, pasea por todo el jardín, y es la misma gran tortuga que vemos todos los días comiendo el pastito alrededor de las jaulas de los monos.",
       "El cazador la va a ver todas las tardes y ella conoce de lejos a su amigo, por los pasos. Pasan un par de horas juntos, y ella no quiere nunca que él se vaya sin que le dé antes una palmadita de cariño en el lomo."
+    ],
+    "quz": [
+      "Huk kuti huk runa Buenos Aires llaqtapi kawsarqa, ancha kusisqa, kallpayuq llank'aq runa kasqanrayku. Ichaqa huk punchaw unqurqa, hampiqkunataq nirqaku: kampuman rispallan hampikunman, nispa. Payqa mana riyta munarqachu, uchuy wawqechankuna kasqanrayku, paykunatam mikhuchiq; sapa punchaw aswan unqusqaña karqa. Hinaspa Zoológico nisqa wasip kamachiqnin amigon huk punchaw nirqa:",
+      "—Qanqa amigoyqa kanki, allin runa, llank'aq runapas. Chayrayku munani sachaman tiyaq risqaykita, hawa phuyu ukhupi achka ejercicio ruwanaykipaq, hampikunaykipaq. Qanqa escopetawan allinta tupachiqmi kanki; sacha animalkunata wañuchispa qarankunata apamuway, noqataq qolqeta ñawpaqmanta qosqayki, uchuy wawqechaykikuna allinta mikhunankupaq.",
+      "Unqusqa runaqa arí nirqa, hinaspa sachaman tiyaq rirqa, karuman, Misiones llaqtamantapas aswan karuman. Chaypiqa ancha q'uñi karqa, chaymi allinninpaq karqa.",
+      "Sach'a ukhupi sapallan kawsarqa, kikinmi mikhuyninta wayk'uq. Pisqukunata, sach'a animalkunatawan mikhurqa, escopetawan hap'ispa, chaymanta rurukunatapas. Sach'ap uranpi puñurqa, mana allin pacha kaqtintaq pichqa minutopi palmera raphikunawan huk ramadata ruwaq, chaypi tiyaspa, sigarro mich'aspa, kusisqallaña, wayrawan paraywan qhapariq sach'a ukhupi.",
+      "Animalkunap qarankunawan huk q'epita ruwarqa, hinaspa wasanpi apasharqa. Achka venenoyuq katarikunatapas kawsashaqta hap'irqa, huk hatun matipi apasharqa, chaypiqa kerosene lata hina hatun matikuna kan.",
+      "Runaqa kutimpuni allin color kasharqa, kallpayuq, mikhuy munaqpas. Huk punchaw ancha yarqhasqa, iskay punchawña mana ima hap'ispa, hatun qochap patanpi huk hatun uturunkuta rikurqa, tortugata mikhuyta munaspa; tortugata kantunwan sayachispa, ukhunman huk chakinta yaykuchispa, uñankunawan aychanta horqoshasqa. Runata rikuspa, uturunkuqa manchay qhaparispa huk phawaypi paymanta wichariqurqa.",
+      "Ichaqa cazadorqa allinta tupachiq kasqanrayku, iskay ñawinkunap chawpinman tupachirqa, umantataq p'akirqa. Chaymanta qarata horqorqa, ancha hatun, sapallan huk cuartop alfombranpaq valeq.",
+      "—Kunanqa —nirqa runa kikinman—, tortugata mikhusaq, ancha miski aychan.",
+      "Ichaqa tortugaman asuykuqtin rikurqa ñam k'irisqa kasqanta, umanqa kunkanmanta ichuqmi karqa, uman iskay kinsa aycha q'aytullapi warkusqa karqa.",
+      "Yarqhaymanta mana qhawaspa, runaqa wakcha tortugata llakipayarqa, soqawan ramadanman llawarqa, umantataq camisanmanta horqosqan telawan wataykurqa, huklla camisanllam karqa, mana trapunpas. Llawaspa apasqa, tortugaqa ancha hatun kasqanrayku: tiyanaman sayaq hina, runa hina llasaqtaq.",
+      "Tortugaqa huk k'uchuman samarqa, chaypiqa punchawkuna punchawkunata mana kuyukuspa qhipakurqa.",
+      "Runaqa sapa punchaw hampirqa, chaymanta makinwan wasanpi pisi pisi takarqa.",
+      "Tortugaqa tukuyninpi alliyarqa. Ichaqa chaymanta runa unqurqa. Rupha unquy hap'irqa, tukuy cuerponpas nanarqa.",
+      "Chaymanta manaña hatariyta atirqachu. Rupha unquyqa aswan aswan wicharqa, kunkanqa ch'akiymanta ruphasharqa. Runaqa hatun unquyniyuq kasqanta entenderqa, hinaspa sapallan kashaspapas hatun kunkawan rimarqa, ancha rupha kasqanrayku.",
+      "—Wañusaq —nirqa runa—. Sapallaymi kani, manaña hatarinichu, yakutapas pipas mana qowanchu. Kaypi yarqhaymanta ch'akiymantawan wañusaq.",
+      "Pisi tiempollamantam rupha aswan wicharqa, hinaspa yuyayninta chinkachirqa.",
+      "Ichaqa tortugaqa uyarirqa, cazador nisqantataq entenderqa. Hinaspa kayhinata yuyaykurqa:",
+      "—Runaqa ñawpaqpi mana mikhuwarqachu, ancha yarqhasqa kaspapas, hampiwarqataq. Noqapas kunan paytam hampisaq.",
+      "Chaymi qochaman rirqa, huk uchuy tortuga qarata maskarqa, hinaspa aqawan uchpawan allinta pichaspa yakuwan huntachirqa, hinaspa runaman upyachirqa, paytaq mantanpi mast'asqa ch'akiymanta wañushasharqa. Chaymanta pacha miski saphikunata, llamp'u yuyukunatapas maskarqa, runaman apaspa mikhunanpaq. Runaqa mikhurqa, pi mikhuyta qosqanta mana yachaspa, ruphawan delirio kasqanrayku, mana pitapas riqsirqachu.",
+      "Sapa paqarin tortugaqa sach'ata purirqa, aswan miski saphikunata maskaspa runaman qonanpaq, sach'akunaman wichayta mana atispataq llakikurqa, rurukunata apanampaq.",
+      "Cazadorqa chhaynata punchawkuna punchawkunata mikhurqa, pi mikhuyta qosqanta mana yachaspa, hinaspa huk punchaw yuyayninta kutichirqa. Tukuy lawman qhawarqa, hinaspa sapallan kasqanta rikurqa, chaypiqa paypas tortugapas animalmi karqa. Hinaspa huk kutimpas hatun kunkawan nirqa:",
+      "—Sach'a ukhupi sapallaymi kani, rupha unquy kutimunqa, kaypi wañusaq, Buenos Aires llaqtallapim hampikuna kan hampikunaypaq. Ichaqa manam hayk'aqpas riyta atiymanchu, kaypi wañusaq.",
+      "Hinallataqmi nisqanman hina, chay chisi rupha unquy kutimurqa, ñawpaqmantapas aswan sinchi, yuyayninta kutimpas chinkachirqa. Ichaqa kay kutipas tortugaqa uyarirqa, hinaspa nirqa:",
+      "—Kaypi sach'a ukhupi qhipakuqtinqa wañunqa, hampikuna mana kasqanrayku, Buenos Airesmanmi apanay.",
+      "Chayta nispa, llamp'u sinchi enredadera saphikunata kuchurqa, soga hina kaqkunata, hinaspa runata wasanman ancha cuidadowan chayachirqa, mana urmanampaq saphikunawan allinta watarqa. Escopetata, qarakunata, katarikuna matiwan allinta churanapaq achka kutita ruwaspa, tukuyninpi munasqanta tarirqa, cazadorta mana ñak'arichispa, hinaspa risqanta qallarirqa.",
+      "Tortugaqa chhaynata apasqa purirqa purirqa purirqa punchawpas tutapas. Sach'akunata, pampakunata chimpaspa, huk legua mast'asqa mayukunatapas wayt'aspa chimparqa, hinaspa mayuq t'impu pampakunatapas chimparqa, chaypi mana puchuspa p'ampasqa hina qhipakuq, kutimpuni wañuq runawan wasanpi. Pusaq icha chunka horas purispa samarqa, watakunata kicharqa, hinaspa runata ancha cuidadowan ch'aki ichu kaq pampaman mast'arqa.",
+      "Chaymanta yakuta miski saphikunatawan maskarqa, unqusqa runaman qorqa. Paypas mikhurqa, ancha sayk'usqa kasqanrayku, aswan puñuyta munaspapas.",
+      "Wakin kuti intipi purinan karqa; ñam ruphay pacha kasqanrayku, cazadorqa ancha rupha hap'iq, delirarqa, ch'akiymantataq wañusharqa. Sapa rato qhaparqa: ¡yaku! ¡yaku!, nispa. Sapa kutitaq tortugaqa upyachinan karqa.",
+      "Chhaynata purirqa punchawkuna punchawkunata, semanakuna semanakunata. Sapa kuti Buenos Aireswan aswan qayllaña kaqku, ichaqa sapa punchaw tortugaqa pisiyarqa, aswan pisi kallpayuqña kasharqa, mana ima nispapas. Wakin kuti ch'ipuspa, mana kallpayuq, mast'asqa qhipakurqa, runataq yuyayninta kuskallata kutichirqa. Hinaspa hatun kunkawan nirqa:",
+      "—Wañusaq, aswan aswan unqusqaña kani, Buenos Airesllapi hampikuyta atiymanchu. Ichaqa kaypi wañusaq, sach'a ukhupi sapallay.",
+      "Payqa mana imatapas qhawarispa, ramadapi kashan, nispa yuyarqa. Tortugataq hatarispa, kutimpas ñanninta qatirqa.",
+      "Ichaqa huk punchaw, huk ch'isiyaqtin, wakcha tortuga manaña atirqachu. Kallpanpa tukukuyninman chayarqa, manañam atirqachu. Huk semanamantaña mana mikhurqachu, aswan utqayta chayanankupaq. Manaña imapaqpas kallpayuqchu karqa.",
+      "Tuta tukuy tutayaqtin, karupi huk k'anchayta rikurqa, orqo patapi hanaq pachata k'anchaq, ichaqa mana yacharqachu imachus kasqanta. Aswan aswan pisiyarqa, ñawinkunata wisq'arqa cazadorwan wañunanpaq, llakikuspa yuyaspa mana qespichiyta atisqanta, paywan allin karqan runata.",
+      "Chaywanpas Buenos Airesñam karqa, paytaq mana yacharqachu. Chay hanaq pachapi rikusqan k'anchayqa llaqtap k'anchayninmi karqa, hinaspa wañuyta munarqa, hatun sonqo purisqanpa tukukuyninpiña.",
+      "Ichaqa llaqtamanta huk ukucha —Pérez ukuchacha hina karqa— iskaynin wañuq puriqkunata tarirqa.",
+      "—¡Ima tortugataq! —nirqa ukucha—. Manam hayk'aqpas rikurqanichu kayhina hatun tortugata. ¿Wasaykipi apashaqniykiqa imataq? ¿K'indi kanchu?",
+      "—Manam —kutichirqa llakisqa tortuga—. Runam.",
+      "—¿Maymantaq kay runawan rishanki? —nirqa mask'aq ukucha.",
+      "—Risaq... risaq... Buenos Airesmanmi riyta munarqani —kutichirqa wakcha tortuga ancha pisilla rimaspa, mana uyarinankama—. Ichaqa kaypi wañusaqku, mana hayk'aqpas chayanaypaq...",
+      "—¡Ay, upa, upa! —nirqa ukucha asispa—. ¡Manam hayk'aqpas rikurqanichu aswan upa tortugata! ¡Buenos Airesmanña chayasqanki! Chay rikusqayki k'anchay, Buenos Airesmi.",
+      "Chayta uyarispa, tortugaqa ancha hatun kallpata sintirqa, cazadorta qespichinanpaq tiempon kasqanrayku, hinaspa purita qallarirqa.",
+      "Hinaspa manaraq achikyaqtin, Jardín Zoológico nisqap kamachiqnin rikurqa huk tortugata, llusp'asqa, ancha ch'aki, wasanpi mast'asqa, enredadera saphikunawan watasqa mana urmanampaq, wañushaq runata apamushaqta. Kamachiqqa amigonta riqsirqa, kikinmi hampikunata maskaq phawarqa, chaywanmi cazadorqa utqayllapuni hampikurqa.",
+      "Cazador yacharqa tortuga imaynatas qespichisqanta, trescientas leguas purispa hampikunata upyananpaq, chaymi manaña paymanta t'aqakuyta munarqachu. Wasinqa ancha uchuy kasqanrayku mana tortugata tiyachiyta atiqtinmi, Zoológico kamachiq jardinninpi tiyachiyta, kikin ususin hina cuidayta chaskirqa.",
+      "Hinatam karqa. Tortugaqa kusisqa, munakuyninkuwan, tukuy jardinta purin, kikinmi chay hatun tortuga sapa punchaw rikusqanchis, monokunap jaulankunap muyuriqninpi ichuta mikhushaq.",
+      "Cazadorqa sapa chisi rikuq rin, paytaq karumantaraq amigonta riqsin, chakinpa ñawpaqninwan. Iskay hora hina kuska kanku, paytaq mana hayk'aqpas munanchu paymanta ripunanta, wasanman munakuywan huk palmadita mana qosqanku."
+    ],
+    "ay": [
+      "Mä kutixa mä jaqiw Buenos Aires markanxa jakäna, wali kusisitäna, jupax ch'amani ukat irnaqiri jaqïnwa. Ukampis mä urux usutaruw tuku, ukat qulliriranakax jupar siwa: «Pampar sarasakiw qullasimä», sasa. Jupax janiw sarañ munkänti, wawa jilatanakaw utjana, jupanakar manq'ayirïnwa; ukhamasti sapa uruw juk'ampi usutaruw tukuwayäna. Ukhakamaw mä amigopax, Zoológico uywa uta irpiri, mä urux sänwa:",
+      "—Jumax amigoxawa, ukat suma jaqi, irnaqiri jaqïtawa. Ukatwa nayax munta mönte ukar sarañamampi, mayninakampi ch'amachasiñamataki ukhamat qullasiñamataki. Jumax iskupita ch'iwiri wali yatiriwa, ukhamasti mönte uywanakar jiwayasma ukat ch'allanakap apanipxita, nayasti nayrakat qullqi churapxämawa, jilatanakamax suma manq'asipxañapataki.",
+      "Usutata jaqix iyaw sänwa, ukat mönte ukar sarawayi, wali jayaru, Misiones markat sipansa juk'ampi jayaru. Uka chiqanxa wali junt'u ukat ukax jupar askiwa.",
+      "Mönte ukanxa sapakiw jakäna, jupa pachpaw manq'a unxtayäna. Jamach'inaka ukat mönte uywanaka manq'äna, iskupitampiw jiwayäna, ukatsti miwanaka manq'äna. Quqa manqhanxa ihtäna, ukat jan wali pacha kunsa, phaxsi tunka phisqhamp wali pachanxa palmera laphinakampiw mä ramada luräna, ukanxa qunt'asisa tabaku tumpt'asisa jaktäna, wali kusisita, mönte ukax thayampi, jallumpi achuqt'asax.",
+      "Uywanakan ch'allanakap mä atuta tukuyäna ukat ch'umpapar apt'asïna. Ukhamarak walja ñanqha mäki ampara katuntasax jakäna ukat mä jach'a matiruw uchäna, ukanxa matinakax kerosene tarru ukhama jach'ätwa.",
+      "Jaqix wasitarak suma aljantaña ukat ch'amanïna, manq'a munasiñaps utjarakïna. Mä urux wali manq'a munäna, pä uruw janiw kunsa jiwayäna, ukhamat mä jach'a quta thiyaruw mä jach'a titi unjäna, jupax mä tortugar manq'añ munäna; tortugarux sayt'ayataw uchäna, mä lawuw ukan uchasax kayuparu ukat ichhurunakaparu aychap apsuñataki. Jaqiru uñjasax titix wali axsarayaw achuqt'i ukat mä phawat jupar jaquntawayäna.",
+      "Ukampis ch'iwiri jaqix wali suma iskupita luriri ukhamawa, pä nayra taypiru qhawqhäna ukat p'iqip p'akjäna. Ukatsti ch'allap apsüna, jach'äpachaw mä utan thuqhuñapatakisa.",
+      "—Jichhax —sänwa jaqix—, tortuga manq'äwa, wali sumaw aychapaxa.",
+      "Ukampis tortugar jak'achasaxa, jupax janchi usuchjataw uñjäna, p'iqipax mä jisk'a k'achu jaqut mä aycha ch'akhanakat ch'allxtañakama uñjasiwayäna.",
+      "Manq'a munasiñ utjkchisa, jaqix wali llaki tortugar uñjasax khuyapayasïna, mä chhuxwa chhuxwamp jupar jaquntasa ramadapar irpäna ukat p'iqip pichhaqäna, k'amisapat apsutä tela ch'ak ch'akanakampi, jupax mä sapa k'amisakiw utjäna ukat janiw mä isi utjkänti. Jupar jaquntasaw irpäna, tortugax wali jach'äna, mä siya ukhama jach'a ukat jaqi ukhama jathïna.",
+      "Tortugax mä k'uchur jak'ankiriw qhiparäna, ukanxa uruw uruw janiw sarnaqkänti.",
+      "Jaqix sapa uruw jupar qulläna, ukatsti amparampiw q'ipipar jisk'a lawutanakampi llamp'u jathüna.",
+      "Tortugax tukuyawa qhispiyäna. Ukampis jichhax jaqiw usutäna. Junt'u usu katuqäna ukat taqi janchipaw nuwasïna.",
+      "Ukatsti janiw jaktanxänti. Junt'u usux sapa kutiw jilxattäna, laka umamp ch'akhatawa ch'uxrt'äna. Jaqix wali usutätap amuyäna, ukat jach'a arumpiw parläna, sapakïkchisa, wali junt'u usutapata.",
+      "—Jiwañaw jutiwa —sänwa jaqix—. Sapakiw jikxatasta, janiw juk'ampi jaktañjamäkti, janipuniw khitis uma churkitu. Akanwa manq'a umamp jiwäma.",
+      "Jan juk'a pachatsti junt'u usux juk'ampi jilxattäna ukat amuyt'ayasiñ chhaqtäna.",
+      "Ukampis tortugax ist'asïna ukat ch'iwiri jaqix kunatï siskäna ukxa amuyäna. Ukat jupax amuyäna:",
+      "—Jaqix nayrakatxa janiw manq'kituti, wali manq'a munkchisa, ukat nayaruw qullitu. Nayax jichhax jupar qullä.",
+      "Ukatsti quta ukar sarawayi, mä jisk'a tortuga ch'allx thaqhäna, ukatsti aruma jawirampi ukat nina ch'ankhampiw suma jarkt'äna, umamp phuqhäna ukat qunt'ata ukat umampi ch'akhat jiwañkir jaqiru umt'ayäna, jupax k'ichipar ch'allt'ata ukhamarakïnwa. Ukatsti pachpa suma sapa ch'uxña ukat llamp'u sapa quqa thaqhasïna, jaqiru apt'asa manq'añapataki. Jaqix kunsa manq'äna, khitis manq'a churkäna ukxa janiw yatkänti, junt'u usumpiw lunthatäna ukat janiw khitirus uñt'känti.",
+      "Sapa alwaw tortugax mönte uksa thaqhäna, jaqir churañataki juk'ampi suma sapa ukanaka, ukat qhathunakar makhat apthapiñ muniri ukhamasa llakisïna, achunaka apañataki.",
+      "Cazador jaqix ukhamaw uruw uruw manq'äna, khitis manq'a churkäna ukxa janiw yatkänti, mä urusti yatiñap kutt'anitäna. Taqi chiqar uñch'ukïna ukat sapakiw jikxatasïna, ukanxa jupa tortugampiw utjäna, ukax mä uywawa. Ukat wasitarak jach'a arumpiw sänwa:",
+      "—Mönte ukanxa sapakiw jikxatasta, junt'u usux wasitaw jutani, akanwa jiwäma, Buenos Aires markankiw qullanaka utji. Ukampis janiw sarkäti, akanwa jiwäma.",
+      "Kunjamtï jupax sänxa ukhamarakiw junt'u usux uka urutpach wasitaw jutäna, nayra sipanxa juk'ampi ch'amampi, ukat wasitarak amuyt'ayasiñ chhaqtäna. Ukampis aka kutixa tortugax wasitaw ist'äna ukat sänwa:",
+      "—Mönte ukanxa qhiparaspaxa jiwaniwa, qullanaka jan utjatap laykuxa, ukhamasti Buenos Aires markar irpañax wakisiwa.",
+      "Ukham sasaxa, ch'ankha ukat ch'amani wila ch'umpanaka ch'iqt'äna, ukanakax mä lasu ukhama, ukat jaqiru suma lluqt'asa ch'ankhapar uchäna, janit liwintañapataki ch'ankhampi wut'äna. Walja yant'asaw iskupita, ch'allanaka ukat mäki matiru suma uchäna, ukat tukuyawa kunatï munkäna ukat jan cazador jaqiru mayjt'ayasa, ukhamat sarañ qalltäna.",
+      "Tortugax ukhamaw q'ipt'ata sarnaqäna, uruw arumaw sarnaqäna. Mönte, pampa chimpuntäna, mä legua ancho jawiranakaruw jawq'jasa chimpuntäna, ukat mä thuru uraqinakat pasäna, ukanxa jan juk'amp amuqt'asïna, jiwañar jak'achasir jaqimpi lomopanxa. Pakallqu jan ukax tunka phaxsi ura sarnaqasax saytäna, ch'ankha qhiwäna, ukat jaqiru wali sumaw ihtayäna, wali ch'aki ch'iwi utjki uka chiqana.",
+      "Ukatsti uma ukat llamp'u sapa thaqhir sarïna, ukat usutata jaqiru churäna. Jupasti manq'arakïnwa, ukampis wali qamaq'asïna ukat ihtañ munarakïnwa.",
+      "Mä qhawqha kutix inti ukanxa sarnaqañapänwa; uraqpachax anu pacha ukhamat cazador jaqix wali junt'u usutaw jach'a arumpi parläna ukat laka umamp ch'akhatawa jiwäna. Sapa kutiw «¡Uma! ¡Uma!» sasaw achuqt'äna. Ukat sapa kutiw tortugax jupar umt'ayañapänwa.",
+      "Ukhamaw uruw uruw, simanana qhipa simananaw sarnaqäna. Sapa kutiw Buenos Aires markar juk'ampi jak'achasipxäna, ukampis sapa uruw tortugax juk'ampi ch'amaruw tukuwayäna, jupax janiw jachasïnti. Mä qhawqha kutix jan ch'amanïna ukat siwa tukuyawa ihtasïna, jaqisti ayra amuyt'ayasïna. Ukat jach'a arumpiw sänwa:",
+      "—Jiwañaw jutiwa, sapa kutiw juk'ampi usutäxta, Buenos Aires markanki qullasiñ atipxäma. Ukampis akanwa jiwäma, sapa mönte ukanxa.",
+      "Jupax ramada ukanxa jakawäna sasaw amuyäna, janiw kunsa amuyirïnti. Tortugax ukhaw jaktäna ukat wasitarak thakhiru sarañ qalltäna.",
+      "Ukampis mä urux, jayp'u pachanxa, tortuga jan walt'äwiruw purïna. Ch'amap tukusïna, ukat janiw juk'ampi ch'amanïnti. Mä simana nayra manq'asäna janiw manq'känti, jaya jaya purinañataki. Janiw kunatakisa ch'amanïnti.",
+      "Arumax tukuyat purinxatasanxa, jayan mä khanamp uñjäna, patxanxa jakhuyatawa, ukat janiw khitis ukäkän yatkänti. Sapa kutiw juk'ampi ch'amachatäna, ukat nayranakap jist'arasaw cazador jaqimpi jiwañ munäna, llakisisa, jupar suma jaqir jan qhispiyañ atiñapat.",
+      "Ukampis Buenos Aires markaruw purxatäna, ukat jupax janiw yatkänti. Uka khana patxanxa uñjkäna ukax markan khanapänwa, ukat jupax jach'a sarnaqäwip tukuyañar jak'achasax jiwañ munäna.",
+      "Ukampis mä markachiri achaku —jan ukax Pérez achaku— uka pä jiwañ jak'ankir saririnakar jikxatäna.",
+      "—¡Kuna tortugasa! —sänwa achaku—. Janipuniw ukham jach'a tortuga uñjkayätti. ¿Uka q'ipimax kunasa? ¿Mä k'achu ukat laq'a?",
+      "—Janiwa —sasaw tortugax llakisisa jaysäna—. Mä jaqiwa.",
+      "—¿Ukat khaysaruw uka jaqimp saraskta? —sasaw yatiñ munir achaku jiskt'äna.",
+      "—Nayax... nayax... Buenos Aires markar saräjapxa —sasaw jaysäna tortugax wali jisk'a aruma, jan ist'añjama—. Ukampis akanwa jiwäpxäma, janipuniw purkäti...",
+      "—¡Ay, ch'ulla, ch'ulla! —sasaw achakux larusisa sänwa—. ¡Janipuniw juk'ampi ch'ulla tortuga uñjkayätti! ¡Buenos Aires markaruw purxtaxa! Uka khana uñjktaxa Buenos Aires markawa.",
+      "Ukham ist'asaxa tortugax wali jach'a ch'am amuyäna, cazador jaqir qhispiyañataki ukjakamaw pacha utjkäna, ukatsti sarañ qalltäna.",
+      "Ukat alwa pachanxa, Zoológico uywa uta irpiriw mä tortugar uñjäna, jawira laq'ampi ukat wali ch'akhaw, jupax lomopanxa mä jaqir apanïna, ch'ankhampi wut'ata jan liwintañapataki, jaqix jiwañar jak'achasïna. Irpirix amigopar uñt'asïna, ukat jupa pachpaw qullanaka thaqhir t'ijuyäna, ukanakampiw cazador jaqix jankhakiw qhispixäna.",
+      "Cazador jaqix kunjamas tortugax jupar qhispiyäna ukat kunjamas pusi pataka legua sarnaqäna qullanaka umañapataki, ukxa yatisaxa, janiw juk'ampi jupat jaytasiñ munkänti. Jupax jisk'a utapanxa jupar uñjkaspa janiw atkänti, ukatwa Zoológico irpiriw uywa utanxa uñjañar yäqäna, jupar pachpa phuchhapa ukhama uñjañataki.",
+      "Ukhamaw tukuwayi. Tortugax kusisita ukat phuqhat munasiñampi, taqpach uywa utanxa sarnaqi, ukat jupax sapa uruw uñjtanxa jach'a tortuga, kawkïr ch'ujñanakat muyuntat jaljta jak'anxa jiwaq'a manq'asi.",
+      "Cazador jaqix sapa jayp'uw jupar uñjir sarï, tortugasti jaya chiqat kayunakap ist'asaw amigopar uñt'i. Pä horaw mayacht'asipxi, ukat tortugax janipuniw munkiti jupax khuyapayasiñ mä lloqt'asiñ janïr lomopar churasax sarañapa."
     ]
   },
   "audio": [
@@ -168,5 +266,9 @@
       "answer": 1,
       "explanation": "Devuelve el bien que recibió y no se rinde en un viaje larguísimo."
     }
+  ],
+  "borrador": [
+    "quz",
+    "ay"
   ]
 }

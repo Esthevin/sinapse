@@ -2,7 +2,8 @@
   "id": "hermanos-ayar",
   "title": {
     "es": "Los hermanos Ayar",
-    "quz": "Ayar wawqe panakuna"
+    "quz": "Ayar wawqe panakuna",
+    "ay": "Ayar jilatanaka"
   },
   "author": "Tradición inca",
   "source": "Leyenda registrada por cronistas como Juan de Betanzos (1551) y Pedro Sarmiento de Gamboa (1572). Adaptación libre para Sinapse.",
@@ -15,7 +16,8 @@
   "emoji": "⛰️",
   "summary": {
     "es": "Cuatro hermanos y cuatro hermanas salen de un cerro en busca de tierra buena. Solo uno llegará al valle del Cusco.",
-    "quz": "Tawa wawqe tawa panakunawan orqomanta lluqsiyku, sumaq allpata maskaspa. Qusqu wayq'uman huklla chayanqa."
+    "quz": "Tawa wawqe tawa panakunawan orqomanta lluqsiyku, sumaq allpata maskaspa. Qusqu wayq'uman huklla chayanqa.",
+    "ay": "Pusi jilata ukat pusi kullaka mä urqut mistupxi, suma uraqi thaqhasa. Cusco qhirwar mä jilatakiw purini."
   },
   "paragraphs": {
     "es": [
@@ -33,6 +35,14 @@
       "Huk kuti ñanninta qatiqaku. Huanacauri orqopi Ayar Uchuqa rumiman tukurqa. Chaymanta pacha chay tiyana willka karqa: wak'a, runa respetota rikuchinanpaq rin.",
       "Aswan ñawpaqpi, Ayar Aucaqa raphrayuq tukuspa Qusqu wayq'uman phawarqa. Allpaman tiyaykuspa paypas rumiman tukurqa, chay tiyana wasin kanqa chaypa unanchan.",
       "Ayar Manco llapallan qhipakurqa, panankunawan wayq'uman chayarqa. Chaypi Qusqu llaqtata tiyachirqa, hinaspa Manco Qhapaq sutiyuq karqa. Chhaynallataqmi, kay willakuywan, Inkakunap kawsayninkuna qallarirqa."
+    ],
+    "ay": [
+      "Pacaritambo jak'anxa Tambo Tocco sat mä urqu utji, ukanx kimsa wintananiwa. Sawkasitaxa, chika wintanat pusi jilata ukat pusi kullaka mistupxäna: Ayarnakawa. Jupanakax qamañataki mä suma uraqi thaqhapxäna.",
+      "Jilatanakax Ayar Manco, Ayar Cachi, Ayar Uchu ukat Ayar Auca sutinïpxänwa. Ayar Cachix taqinit sipan juk'amp ch'amanïnwa: wich'inkhapampix qalanak jayar jaquntäna ukhamat urqunak p'akjäna ukat jawiranak jist'arayäna.",
+      "Jilatanakapax uka ch'amat axsarapxäna. Mä amuyt'anakampiw jupar mayipxäna ch'uqi mä wak'a yänaka armatanak thaqir cuevar kutiñapatakiw. Ayar Cachix mantkäna ukhaxa, punkux jach'a qalanakampiw cheqxatäna, ukat jupax wiñayatakiw ukan katjata qhiparäna.",
+      "Uka tantachäwix thakhip sarantatänwa. Huanacauri urqunxa Ayar Uchux qalar tukuwayäna. Uka urutpacha uka chiqax wak'awa: jaqinakax ukar respeto uñacht'añatakiw sarapxäna.",
+      "Qhipat, Ayar Aucax ch'ankhanak katuqäna ukat Cusco qhirwar ark'asïna. Uraqir purisinxa jupax qalar tukuwayarakïna, ukhamat uka chiqax utapäñap uñacht'ayasa.",
+      "Ayar Manco sapakiw qhiparäna, jupax kullakanakapamp chikaw qhirwar purïna. Ukanw Cusco markar utt'ayäna ukat Manco Cápac sutip katuqäna. Ukhamaw, uka sawkasitaxa, inkanakan sarnaqawipax qalltawayi."
     ]
   },
   "audio": [
@@ -60,7 +70,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 94.012,
       "paragraphStartsSec": [
-        0.0,
+        0,
         15.548,
         34.764,
         53.18,
@@ -164,6 +174,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

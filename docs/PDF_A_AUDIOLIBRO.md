@@ -123,3 +123,14 @@ En la app, los PDF propios del teléfono **no se traducen**: no hay un traductor
 ## Imágenes
 
 Cada cuento de un PDF recibe una **portada ilustrada a partir de su texto**: la app lee el título y los primeros párrafos, detecta el lugar (montaña, selva, mar, lago, ciudad, mina), si es de día o de noche y los personajes (zorro, cóndor, loro, tortuga, gente…), y dibuja la escena con las mismas piezas de las portadas del catálogo (`src/services/ilustracion/`). Ocurre en el teléfono, sin internet. Es una escena sencilla, no una ilustración pintada: para una portada propia basta dejar un PNG con el id de la historia en `assets/portadas/` y registrarlo en `src/content/portadas.ts`.
+
+## Los tres idiomas y mejores voces desde la herramienta del equipo
+
+```bash
+npm run pdf:audiolibro -- libro.pdf --todos --fuente "..." --idiomas qu,ay            # castellano + quechua + aimara
+npm run pdf:audiolibro -- libro.pdf --todos --fuente "..." --motor edge --idiomas qu,ay  # voces neuronales sin cuenta de Azure
+```
+
+- `--idiomas qu,ay` (o `--quechua` / `--aimara`): traduce cada cuento con Meta NLLB y crea su voz con Meta MMS-TTS. Son **borradores** que debe revisar una persona hablante.
+- `--motor edge`: usa las voces neuronales Camila y Alex (y las demás voces por personaje) con `edge-tts`, sin clave de Azure. No es un servicio oficial: sirve para probar; para publicar, Azure AI Speech. **No se probó aquí** (el entorno no tiene acceso a ese servicio).
+- Dentro de la app, el PDF se lee con la voz del teléfono (con una voz distinta por personaje) y **no se traduce**: no hay traductor de quechua o aimara que funcione sin internet.

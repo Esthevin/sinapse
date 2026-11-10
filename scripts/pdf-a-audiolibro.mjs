@@ -26,6 +26,7 @@
  *   --region sierra     costa | sierra | selva (por defecto sierra)
  *   --edades ninos,jovenes,adultos
  *   --voz camila|alex|auto   (auto alterna entre cuentos)
+ *   --motor edge|azure  voces neuronales: azure (por defecto, con clave) o edge (sin cuenta, `pip install edge-tts`, no oficial)
  *   --sin-reparto       todo con una sola voz (por defecto, cada personaje tiene la suya; ver docs/REPARTO_DE_VOCES.md)
  *   --reparto <dir>     usa los archivos <id>.json de esa carpeta (reparto corregido a mano) en vez del automático
  *   --quechua           además traduce los cuentos al quechua ayacuchano (borrador automático, Meta NLLB) y crea su voz
@@ -42,7 +43,7 @@ import { createRequire } from 'node:module';
 import { basename, dirname, join } from 'node:path';
 import readline from 'node:readline/promises';
 import { fileURLToPath } from 'node:url';
-import { loadEnvLocal, mp3DurationSec, synthesize, VOICE_POOL, VOICES } from './lib/azure.mjs';
+import { loadEnvLocal, mp3DurationSec, synthesize, synthesizeEdge, VOICE_POOL, VOICES } from './lib/azure.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const storiesDir = join(root, 'src', 'content', 'historias');
@@ -72,7 +73,8 @@ const CAST_ON = !flag('sin-reparto');
 const CAST_DIR = option('reparto');
 const DRY = flag('dry-run');
 const RATE = option('ritmo', '-6%');
-const PAUSE_MS = Number(option('pausa', '3100'));
+const ENGINE = option('motor', 'azure');
+const PAUSE_MS = Number(option('pausa', ENGINE === 'edge' ? '300' : '3100'));
 const VOICE_CHOICE = option('voz', 'auto');
 const REGION_STORY = option('region', 'sierra');
 const AGES = option('edades', 'ninos,jovenes,adultos').split(',').map((s) => s.trim());
@@ -197,7 +199,7 @@ if (!SIMULATED) {
     console.error('\n❌ Falta --fuente "…": di de dónde viene el texto y bajo qué derechos se usa (dominio público, licencia, permiso del autor).\n   Ver docs/DERECHOS_Y_ETICA.md. Sin eso no se publica.');
     process.exit(1);
   }
-  if (!KEY || !REGION) {
+  if (ENGINE !== 'edge' && (!KEY || !REGION)) {
     console.error('\n❌ Falta configurar AZURE_SPEECH_KEY y AZURE_SPEECH_REGION en .env.local (copia .env.example). Ver docs/VOCES.md.');
     process.exit(1);
   }
@@ -227,7 +229,7 @@ for (const [i, job] of jobs.entries()) {
     const segments = plan ? plan.cast.paragraphs[k] : null;
     const mp3 = SIMULATED
       ? silentMp3(Math.max(1.5, paragraph.split(/\s+/).length / 2.6))
-      : await synthesize({
+      : await (ENGINE === 'edge' ? synthesizeEdge : synthesize)({
           text: paragraph,
           voiceId: voice.id,
           parts: segments?.map((sg) => ({ text: sg.text, voiceId: plan.voices[sg.speaker]?.voice ?? voice.id, pitch: plan.voices[sg.speaker]?.pitch, rate: plan.voices[sg.speaker]?.rate })),
@@ -263,7 +265,7 @@ for (const [i, job] of jobs.entries()) {
         narratorId: voice.narratorId,
         voiceSource: 'sintetica',
         url: `bundle:${audioFile}`,
-        license: `Voces neuronales ${plan ? [...new Set([voice.id, ...Object.values(plan.voices).map((v) => v.voice)])].join(', ') : voice.id} de Microsoft Azure AI Speech, usadas según los términos del servicio. Voces genéricas: no imitan a ninguna persona.`,
+        license: `${ENGINE === 'edge' ? 'PROVISIONAL (edge-tts, no oficial; reemplazar por Azure antes de publicar). ' : ''}Voces neuronales ${plan ? [...new Set([voice.id, ...Object.values(plan.voices).map((v) => v.voice)])].join(', ') : voice.id} de Microsoft Azure AI Speech, usadas según los términos del servicio. Voces genéricas: no imitan a ninguna persona.`,
         durationSec: Number(t.toFixed(3)),
         paragraphStartsSec: starts,
       },
@@ -296,18 +298,30 @@ for (const id of created) {
 writeFileSync(indexFile, index);
 
 spawnSync(process.execPath, [join(root, 'scripts', 'generar-voces-peruanas.mjs'), '--solo-mapa'], { stdio: 'inherit' });
-// ---------- quechua (opcional) ----------
-if (flag('quechua')) {
+// ---------- otras lenguas (opcional): quechua y aimara ----------
+// --idiomas qu,ay (o --quechua / --aimara). Traducción automática (Meta NLLB) + voz sintética (Meta MMS-TTS): son BORRADORES.
+const wanted = new Set((option('idiomas', '') || '').split(',').map((x) => x.trim()).filter(Boolean));
+if (flag('quechua')) wanted.add('qu');
+if (flag('aimara')) wanted.add('ay');
+if (wanted.size) {
   const python = option('python', process.platform === 'win32' ? 'python' : 'python3');
   const ids = created.join(',');
-  const batch = join(root, 'produccion', 'traducciones', `pdf-${Date.now()}.json`);
   const run = (cmd, cmdArgs) => spawnSync(cmd, cmdArgs, { stdio: 'inherit', cwd: root }).status === 0;
-  console.log('\nQuechua ayacuchano (borrador automático; pídele a un hablante que lo revise):');
-  const ok =
-    run(python, [join('herramientas', 'traducciones', 'traducir_nllb.py'), 'quy', '--historia', ids, '--salida', batch]) &&
-    run(process.execPath, [join('scripts', 'aplicar-traducciones.mjs'), 'quy', batch]) &&
-    run(python, [join('herramientas', 'voces', 'generar_mms.py'), 'quy', '--historia', ids]);
-  if (!ok) console.error('⚠ El quechua no se completó (¿falta pip install torch transformers sentencepiece scipy soundfile numpy imageio-ffmpeg?). Los cuentos en castellano ya están listos.');
+  const LANGS = { qu: { code: 'quy', name: 'Quechua ayacuchano' }, ay: { code: 'ay', name: 'Aimara' } };
+  for (const l of wanted) {
+    const L = LANGS[l];
+    if (!L) {
+      console.error(`⚠ Idioma "${l}" no soportado en --idiomas (usa qu y/o ay).`);
+      continue;
+    }
+    const batch = join(root, 'produccion', 'traducciones', `pdf-${L.code}-${Date.now()}.json`);
+    console.log(`\n${L.name} (borrador automático; pídele a un hablante que lo revise):`);
+    const ok =
+      run(python, [join('herramientas', 'traducciones', 'traducir_nllb.py'), L.code, '--historia', ids, '--salida', batch]) &&
+      run(process.execPath, [join('scripts', 'aplicar-traducciones.mjs'), L.code, batch]) &&
+      run(python, [join('herramientas', 'voces', 'generar_mms.py'), L.code, '--historia', ids]);
+    if (!ok) console.error(`⚠ ${L.name} no se completó (¿falta pip install torch transformers sentencepiece scipy soundfile numpy imageio-ffmpeg?). Los cuentos en castellano ya están listos.`);
+  }
 }
 
 const check = spawnSync(process.execPath, [join(root, 'scripts', 'validar-contenido.mjs')], { encoding: 'utf8' });

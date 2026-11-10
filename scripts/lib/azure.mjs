@@ -2,9 +2,11 @@
  * Piezas compartidas para narrar con las voces neuronales peruanas de Azure
  * (es-PE-CamilaNeural y es-PE-AlexNeural). Ver docs/VOCES.md.
  */
-import { spawnSync } from 'node:child_process';
-import { existsSync, readFileSync } from 'node:fs';
+import { execFileSync, spawnSync } from 'node:child_process';
+import { existsSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+
 
 export const VOICES = {
   camila: { id: 'es-PE-CamilaNeural', narratorId: 'voz-camila-pe' },
@@ -124,4 +126,37 @@ export function mp3DurationSec(buf) {
     i += frameLength;
   }
   return seconds;
+}
+
+/**
+ * Alternativa SIN cuenta de Azure: las mismas voces neuronales con la librería `edge-tts` (pip install edge-tts).
+ * No es un servicio oficial: sirve para probar o producir con voces mucho mejores que las del teléfono; para publicar,
+ * conviene Azure AI Speech. Acepta las mismas `parts` que synthesize() y une los trozos en un solo MP3.
+ */
+export function synthesizeEdge({ text, voiceId, parts, rate = '-6%', python = process.platform === 'win32' ? 'python' : 'python3' }) {
+  const list = parts ?? [{ text, voiceId }];
+  const baseRate = Number.parseFloat(rate) / 100 || 0;
+  const buffers = [];
+  for (const [i, p] of list.entries()) {
+    const textFile = join(tmpdir(), `sinapse-edge-${process.pid}-${i}.txt`);
+    const outFile = join(tmpdir(), `sinapse-edge-${process.pid}-${i}.mp3`);
+    writeFileSync(textFile, p.text, 'utf8');
+    const r = Math.round(((1 + baseRate) * (p.rate ?? 1) - 1) * 100);
+    const hz = Math.round(((p.pitch ?? 1) - 1) * 50);
+    for (let attempt = 1; ; attempt++) {
+      try {
+        execFileSync(python, ['-m', 'edge_tts', '--voice', p.voiceId ?? voiceId, `--rate=${r >= 0 ? '+' : ''}${r}%`, `--pitch=${hz >= 0 ? '+' : ''}${hz}Hz`, '--file', textFile, '--write-media', outFile], { stdio: ['ignore', 'ignore', 'pipe'] });
+        break;
+      } catch (e) {
+        if (attempt >= 4) throw new Error(`edge-tts falló: ${String(e.stderr ?? e.message).slice(0, 300)} (¿pip install edge-tts?)`);
+      }
+    }
+    buffers.push(readFileSync(outFile));
+    for (const f of [textFile, outFile]) {
+      try {
+        unlinkSync(f);
+      } catch {}
+    }
+  }
+  return Buffer.concat(buffers);
 }

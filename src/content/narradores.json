@@ -131,5 +131,25 @@
     ],
     "region": "sierra",
     "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
+  },
+  {
+    "id": "librivox-tux",
+    "name": "Tux",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo.",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-miltonfmh",
+    "name": "MiltonFMH",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo.",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
   }
 ]

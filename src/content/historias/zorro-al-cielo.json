@@ -2,7 +2,8 @@
   "id": "zorro-al-cielo",
   "title": {
     "es": "El zorro que quiso ir al cielo",
-    "quz": "Hanaq pachaman riyta munaq atuq"
+    "quz": "Hanaq pachaman riyta munaq atuq",
+    "ay": "Alaxpachar sarañ munir qamaqi"
   },
   "author": "Cuento tradicional andino",
   "source": "Relato de la tradición oral quechua y aimara, con muchas versiones en los Andes. Adaptación libre para Sinapse.",
@@ -15,7 +16,8 @@
   "emoji": "🦊",
   "summary": {
     "es": "Un zorro curioso viaja al cielo en la espalda del cóndor, pero su orgullo le juega una mala pasada.",
-    "quz": "Yachayta munaq atuq kunturpa dorsanpi hanaq pachaman rin, ichaqa hatunchakuyninmi mana allinta ruwachin."
+    "quz": "Yachayta munaq atuq kunturpa dorsanpi hanaq pachaman rin, ichaqa hatunchakuyninmi mana allinta ruwachin.",
+    "ay": "Mä muspharkaña qamaqix kunturin lomopan alaxpacharu sarasi, ukampis jach'a chuymaxa jupar ñanqhacht'i."
   },
   "paragraphs": {
     "es": [
@@ -33,6 +35,14 @@
       "Tutayaqtin atuq kutiyta munarqa, ichaqa kuntur ñam rirqa. Chayqa atuq hatun waskhata awarqa, hinaspa mana utqayllapuni kay pachaman uraykurqa.",
       "Chawpi ñanpi loroskuna phawaspa pasarqaku. Atuq hatunchakuspa paykunata asikurqa, k'amirqa. Lorokunaqa phiñakuspa waskhata kuchurqaku hinaspa p'itirqa.",
       "Atuq urmarqa urmarqa, hatun rumiman takakuspa, hunt'a muhu wiksan p'akikurqa. Muhukuna tukuy lawman ch'ichurqa. Chaymanta pacha kay pachapi kinuwa, papa, sara wiñanku, ninku."
+    ],
+    "ay": [
+      "Punan alay chiqapanx Atuq sutini mä qamaqix jakäna, wali yatiñ munasir ukat juk'a jach'a chuymani. Mä urux kunturit ist'äna, alaxpachanx mä jach'a fiesta utjani, janipun tukuyir mikhuñanakampi sasa.",
+      "—¡Apthapita jumampi, amigo kunturi!—sasaw qamaqix mayïna—. Suma sarnaqañatwa arsta. Kunturix wasitat amuyäna, ukampis tukuyañapatxa uñt'ayäna. Qamaqix lomopar makhatäna ukat ch'ikhaw qinayanakat alay phaxsipxäna.",
+      "Alaxpacha fiestanxa, papa, quinua, ch'uxu ukat taqi kunayman color achunakaw utjäna. Qamaqix mikhusa mikhusa jan samarasaw mikhuwayäna, ukat yuspajarañ armasïna. Kunturix kuttañ munäna ukhaxa, qamaqix säna: —Jumax saram, nayax juk'ampi qhiparä.",
+      "Jayp'u tuqiruw qamaqix kuttañ munäna, ukampis kunturix sarxatayänwa. Ukatwa mä jach'a waska k'ankt'äna ukat mara tuqiruw lintiki saraqañ qalltäna.",
+      "Taypi thakhinxa mä loronaka phaxsisa pasäpxäna. Qamaqix jach'a chuymampi jupanakar larusïna ukat insultäna. Loronakax colerasisaw waskar ch'akhañapkamaw ch'ukupxäna.",
+      "Qamaqix tuqxatäna ukat tuqxatäna, ukat mä jach'a qalar t'axsarasax, phuyunakanak junt'ata purkiti. Phuyunakax taqi chiqaruw ch'iqt'äna. Siwa ukhatpacha uraqin quinua, papa ukat ch'uxu sartapxi."
     ]
   },
   "audio": [
@@ -60,7 +70,7 @@
       "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 87.352,
       "paragraphStartsSec": [
-        0.0,
+        0,
         13.776,
         31.768,
         50.612,
@@ -157,6 +167,7 @@
     }
   ],
   "borrador": [
-    "quz"
+    "quz",
+    "ay"
   ]
 }

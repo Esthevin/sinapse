@@ -1,7 +1,9 @@
 {
   "id": "alma-de-fray-venancio",
   "title": {
-    "es": "El alma de fray Venancio"
+    "es": "El alma de fray Venancio",
+    "quz": "Fray Venancio animan",
+    "ay": "Fray Venancio ajayupa"
   },
   "author": "Ricardo Palma",
   "collection": "Tradiciones peruanas",
@@ -15,7 +17,9 @@
   "coverColor": "#4A5D7A",
   "emoji": "👻",
   "summary": {
-    "es": "Un fraile ahorra en secreto para pintar la vida de su santo patrón y muere sin contárselo a nadie. ¿Devolverá el comerciante el dinero que guardaba?"
+    "es": "Un fraile ahorra en secreto para pintar la vida de su santo patrón y muere sin contárselo a nadie. ¿Devolverá el comerciante el dinero que guardaba?",
+    "quz": "Huk frayle pakallapi qolqe waqaychan, santo taytanpa kawsayninta pintachinanpaq, hinaspa pimanpas mana willaspa wañun. ¿Rantikuqchu waqaychasqan qolqeta kutichipunqa?",
+    "ay": "Mä fraylix amtasiñ santopan jakäwip ch'uyaña pintañataki jamasat qullqi imaräna, ukat janiw khitirus yatiyasa jiwäna. ¿Qhatu aljiriw imata qullqip kutt'ayani?"
   },
   "paragraphs": {
     "es": [
@@ -60,6 +64,92 @@
       "—Que no se moleste en venir fray Venancio—dijo tartamudeando—. Es posible que, con tanto asunto como tengo en esta cabeza, haya olvidado que me dió dinero. Sea ello lo que fuere, pues el propósito es cristiano y yo muy devoto de San Pedro Nolasco, mande su paternidad un criado por las seis talegas.",
       "La religiosidad de los limeños suplió con limosnas y donativos la suma que faltaba para el pago de pintores, y un año después, en la festividad del patrón, se estrenaban los lienzos que conocemos.",
       "Tal es la tradición que, en su infancia, oyó contar el que esto escribe a fray León Fajardo, respetabilísimo sacerdote y comendador de la Merced."
+    ],
+    "quz": [
+      "Ñawpaq pachapi, ñawpaq chawpi patapi, Lima llaqtapi manaña imamantapas rimarqakuchu, aswanqa huk Mercedario taytapa animanmanta, huk kay pachaman hamusqanmanta, mana yacharqanichu cochechu, barcochu icha chakillanwanchu, kay llaqtapi huk rantikuqta ancha mancharichinanpaq.",
+      "Chayqa ancha riqsisqa karqa, San Agustín animakunap purichiynin hina, San Franciscopi umachasqa runa hina, umayuq mana warmi mojja hina, Zavalap cochen hina, Gasparito animan hina, mana yachanichu mayqin callepi chukcha makin hina, San Pedro plazuelapi yana allqu hina, Concepción panteonpi viudita hina, Santa Catalinapi duendekuna hina, hinallataq awichanchiskuna willakusqanku hukkuna hina, paykunam mancharispa kanchakuna ukhupi k'uchukuyta ruwawarqaku.",
+      "Kunan allin sonqowan ñoqa ñawiriqniykunaman huk imata qoyta munaq kani, mana hukniraq pacha espirituta danzachiq, Noeq phisqa churinkunaq willakuyninta, Bran, Bren, Brin, Bron, Brun sutiyuq, machu warmikuna nisqanman hina, qoyta tiyakuptinpas. Ichaqa huk sumaq, devota sipas ñoqata mañakurqa kay willakuyta qillqapi churanaypaq, chaymi qhawariy, manam ima ñanchu kachkan chay promesamanta ayqenaypaq.",
+      "¡Ay, kanchakun! ¡Ay, rupharin llakipi kaq anima!",
+      "nisqa karqa San Marcelo parroquiapa sakristanninpa rimayninqa, purgatoryopi kaq santa animakunapaq limusna mañakuspa. Chaymanta huk asichiqmi kutichirqa, redondilla tukuchispa: allinmi kanchakuchun, noqaqa wasiyman rini.",
+      "Venancio taytawan Antolín taytawan ukhunmanta munakuqkuna karqaku, iskay wawqe hina, wawqekuna hina, munakuyta yachaqkunata, mana herencia centavo aswan pisi nispa ch'aqwanakuqkunata.",
+      "Huk punchawpi convento yaykurqaku, kuska noviciadota pasarqaku, kikin obispom paykunaman santa ordenkunata qorqa.",
+      "Karqaku, chhaynata nisaq, Damón Pithiaswan umanchasqa, Orestes Pílades chukchayuq.",
+      "Cheqaqtapuni manam hatun yachayniyuq frayle hina pasarqakuchu, manam sermonkunata ch'allarqakuchu, manam sindicato, procuración chayri allin capellanía chaskirqakuchu, manam rimaykunamanpas karqakuchu callepi escándalowan chayri capitulopi k'amiywan.",
+      "Mana haykapipas toro maqanakuyman rirqakuchu, manam pusaq tutamanta qhipaman llaqta ñankunata hábitonkuwan pichaspa tarisqachu karqaku. ¡Ya! ¡Noqa nini paykunaq reverenciankuna allin sonqo runakuna karqaku!",
+      "Iskay frayle pisi yuyayniyuq karqaku, mana ima jugoyuq, huch'uyllaña, k'acha kawsayniyuq; huk nisqa, iskay misa mikhuy fraylekuna, chaylla.",
+      "Ichaqa claustro santopipas manam hunt'asqa sonqo kanchu, manam kay pachamanta, aswan ascético kaspapas, fray Venanciopa hunt'asqa llakiy karqa.",
+      "Dominicokuna, agustinokuna, franciscanokuna, juandedianokuna, barbonkuna belethmitakunapas, ñawpaq claustronkupi santo taytankup kawsayninpa hatun ruwayninkunata hatunchakuywan rikuchirqaku, lyenzokunapi pintasqa, cheqaqta nisaq, pincelninkunap valorninwan mana munachikuq.",
+      "¡Ima p'enqay! Mercedariokunaqa claustronkuta mana adornarqakuchu San Pedro Nolasco kawsayninwan.",
+      "Chhaynata yuyaspa, allin frayleq animanpi huch'uy envidia karqa.",
+      "Kaymi fray Venanciota llakichirqa, hinaspa comunidadninpa respetonpaq ruwananpaq votota ruwarqa.",
+      "Antolín taytam, Venancio taytapaq mana secretoyuq kaq, mana ruwayta atikuq nirqa, lyenzokunataqa manam angelkuna pintankuchu, aswanqa runakuna, abad hina, takisqanmanta mikhuqkuna. Iskaynin frayle yupasqankuman hina, obrapaq pisimanta chunka waranqa duro munakurqa.",
+      "Venancio taytaqa manam sonqoyaqchu, compañeronman kutichirqa, iñiywan, takyasqa kayniwan mana atikuqkuna atikuqman tukunku, milagrokunapas ruwakunku, nispa. Chaymantam paykuna chay asuntomanta mana aswan rimarqakuchu.",
+      "Ichaqa taytachaqa pacienciawan realejokunata huñuyta qallarirqa, hinaspa sapa kuti conventopi killa qolqenmanta, regalokunamanta, misa limusnankunamanta, hukkunamantapas, soqta chunka sumaq qori onzakuna huñusqata rikuspa, ancha cuidadowan Botoneros portalman rispa don Marcos Guruceta rantikuqpa tiendanman yaykurqa. Paymi honrado kasqanrayku sumaq sutiyuq karqa, chayraykum achka runakunap qolqenta waqaychaq banquero karqa.",
+      "Chaymi depósito ruwakurqa mana huk papel t'iqtapas kaspa; rantikuqpa honorabilidadninqa, sapa punchaw mandamientota hunt'aq, hatun fiestakunapi comulgaq, hatun cofradiapa mayordomon kaq runapa, pipas recibota otaq huk comprobantetapas mañaqtin p'enqachikunmanmi karqa. ¡Ima patriarcal pachakuna! Kunan chay kikinta ruwaychis, hinaspa rikunkichis maymanchus yaku chayanqa.",
+      "Fray Venancio qosqan soqta waranqa pesoman chayasqaña karqa, huk tuta ancha rupha miserere colicopi hap'isqa kaqtin, chay unay pachakunapi ancha rikch'asqa unquy, hinaspa fray Antolín chayaqtin alter egonta sinqan wichq'asqa, wañuypi tarirqa. Chayrayku manam paykuna ukhupi ni mikhuy confidenciapas karqachu, hinaspa fray Venancio hoyoman rirqa.",
+      "Honrado rantikuq, killakuna killakuna pasaqtin mana pipas depósito mañaqtin rikuspa, chaywan munakuyta qallarirqa, kikinpa kaqnin hina qhawarqa. Ichaqa San Pedro Nolascoqa manam allinchu rikch'akurqa óleo cuadropi mana sumaq kayninta rikuchispa qhipakuyta. Hinaspa fray Venancio wañusqanmanta watakuna pasarqa.",
+      "Huk tuta Antolín taytaqa thaklla puñusharqa, hinaspa mancharisqa rikchariyta qallarirqa, chiri makita ñawpaqpi churakusqanta sientispa.",
+      "Cautivokunata Waqaychaq Virgen imagenpa uranpi chaqnasqa huk cerilloqa celdapi mana kallpa, pakasqa k'anchaykunata mast'arqa.",
+      "Puñuna uma kinrayninpi, vaqueta tiyanapi, fray Venancio tiyashasqa karqa.",
+      "—Ama mancharikuychu—nirqa rikuchikuq—. Diosmi ñoqaman licenciata qowarqa, huk asuntota yachachinaypaq. Paqarinta chawpi punchawpi Botoneros portalman riy, hinaspa don Marcos Guruceta soqta waranqa pesota mañaykuy, waqaychanaypaq qorqani, chaytaqmi santo taytanchis kawsayninta ñawpaq claustropi churanapaq.",
+      "Chaytam nispa, rikuyqa chinkarqa. Antolín taytaqa imaynachus kanan hina qhipakurqa. Ancha sasa kasqa wañusqa rimaqta uyariyqa.",
+      "Paqarinta mancharisqa frayleqa ordenpa comendadorninman asuykuspa willarqa, mosqoychu cheqaqchu, imachus pasasqanta.",
+      "—Manam imapas chinkanchu, wawqe—kutichirqa superior—, Gurucetawan rikuykuspa.",
+      "Cheqaqtapuni, chawpi punchaw kaqtin fray Antolín rantikuqpa mostradorninman chayarqa, hinaspa riqsisqa mañayta ruwarqa. Don Marcosqa phiñakuspa nirqa, loco frayle icha q'otuq kasqanta.",
+      "Pusasqa kaqqa llakisqa ripurqa; ichaqa conventonpa portería punkunman chayaqtin, huk frayle taripaq lluqsimurqa, paypim fray Venanciota riqsirqa.",
+      "—Allinmi, wawqe, ¿imaynataq rirqanki?",
+      "—Ancha mana allin, wawqe—kutichirqa tapusqa—. Guruceta ñoqata mosqoq, q'otuq nispa rimarqa.",
+      "—¿Arí? Chayqa pay kuti rispa niy, mana qolqeta kutichipuptin, ñoqa kikiy phisqa minutopi plataypaq risaq nispa.",
+      "Fray Antolínqa portalman kutimurqa, hinaspa don Marcos tienda punkuta yaykuqta rikuspa, nirqa:",
+      "—¿Kutimunkichu ñoqata sasachiq?",
+      "—Manam chhaynachu, señor Guruceta. Willaq hamuni, pisi ratupi fray Venancio kikin kaypi kanqa qanwan rimanapaq. Ñoqam ñawpaqta hamuni suyanaypaq.",
+      "Chay simikunata uyarispa, chhaynataq mana manchakuspa nisqanta rikuspa, Gurucetaqa mana riqsisqa llakiyta sintirqa, hinaspa ancha manchakurqa huk hukniraq pachamanta animawan tupananta.",
+      "—Fray Venancio ama hamunanpaq sasachikuchunchu—nirqa k'ak'allaspa—. Ichaqa kay umaypi achka asuntokunawan, qolqe qowasqanta qonqaruni. Imapas kachun, kay yuyayqa cristianom, ñoqapas San Pedro Nolasco devotom kani, taytachaykiq huk serviqninta kachamuchun soqta talegata apamunanpaq.",
+      "Limeñokunap devociónninmi limusnawan qoykunawan pintaqkunaman pagananpaq pisiq qolqeta hunt'arqa, hinaspa huk wata qhipanmanta patronpa fiestanpi, kunan riqsisqanchis lyenzokuna estrenakurqa.",
+      "Kayqa tradición, ñoqa qillqaqpa warmanpachapi fray León Fajardo, respetasqa sacerdote hinaspa Merced comendador, willaqtin uyarisqay."
+    ],
+    "ay": [
+      "Nayra pacha, nayra patak maranakanxa, Lima markanxa janiw mä jan ukax mä mercedario sacerdote ajayupat sipanxa parlkänti; jupax yaqha markat jutäna, janiw yattti ¿cochempi, barcompi jan ukax kayumpi?, ukat jupax aka uraqin mä qhatu aljirir wali axsarayañ munäna.",
+      "Ukax San Agustín markan ánimas procesiónjama, San Franciscon encapuchado, p'iqini jan q'ala warmi, Zavala coche, Gasparito ajayu, janiw yattti kuna kallin ñasa amparani, San Pedro plazuelan ch'ama anu, Concepción panteonan viudita, Santa Catalinan duendenaka, ukat yaqha jan chiqa sarnaqäwinakjamaw jach'a yatiyawinakäna, jila achachilanakax parlapxirïna, ukhamat jiwasax axsarañampi ukat ihtaña ukan ch'unt'asiñampi qhathasiñänwa.",
+      "Jichhax lecturanakar mä parlt'awi churañ munirïsa, ukanxa jan yaqha markan ajayunakax thuqt'asiñapataki, Noé wawanakapat parlañakamaw wakisispäna, jupanakax phisqhäpxäna ukat Bran, Bren, Brin, Bron, Brun sasaw sutichataw, jila achachilanakax ukhamaw sapxi. Ukampis mä imilla, wali k'acha ukat wali ch'ullqhi, aka yatiyawi qillqt'ayañataki mayitu, ukhamasti janiw jaytsuñax utjkiti.",
+      "¡Ay, nina nakhi! ¡Ay, nina nakhi, ch'amañanchañ ajayux!",
+      "sasaw San Marcelo parroquian sacristanix ánimas purgatorio ukar limosna mayiri, ukat sapa kutiw mä larusiri jaqix jaysäna, ukham tukuyasa: nakhasiñapa wali, nayax utaruw sarä.",
+      "Fray Venancio ukat fray Antolín wali munasiñampi munasipxäna, pä jilanaka ukhama, ukanakax herencian qhawqha qullqit jan chuyma nuwasipki.",
+      "Mä pachpa urunwa convento ukar mantapxäna, mayakiw noviciado ukan jakapxäna ukat pachpa obispow jupanakar sagrada órdenes churäna.",
+      "Jupanakax, ukhamäpxañapawa, Damón ukat Pithias tonsurado, Orestes ukat Pílades ch'ujllt'ata p'iqini jaqinakätwa.",
+      "Jupanakax janiw wali yatiri frayläpxänti, janiw jach'a sermonanak churapxänti, janirakiw jach'a cargonak jikxatapxänti, janirakiw k'ullak parlañar churapxänti kalle jach'a jan walt'awimpi jan ukax capítulo ukan jan walt'awimpi.",
+      "Janipuniw toros lidiaruw sarapkänti, janirakiw phaxsi pusi ura qhipat kalle thiyanakan isimpi jarisiñ jikxatataw uñjkänti. ¡Nayax siwa jupanakax wali suma jaqinakäpxänwa!",
+      "Jupanakax pä wali jisk'a amuyt'ani fraylänwa, janiw kunasa jach'a, jisk'a ukat wali jaya sarnaqäpxänti; ukhamawa, misa ukat olla frayläpxänwa, ukat jani juk'ampi.",
+      "Ukampis claustro ukanxa janiw mä ajayusa ch'amakirïkiti, ukat janiw uraqpachar jaqjama, jan ukasti wali ascético, fray Venancio mä sapa uru amuyt'äwinïna.",
+      "Dominicos, agustinos, franciscanos, juandedianos ukat betlemitas jupanakax nayrïr claustro ukanxa santo uywirinakapan jakäwip jach'a sarawinakap kusisitaw uñacht'ayapxäna, lienzo ukanakar pintatawa, ukanakax, chiqap sasaxa, janiw pincelanakapampi jach'añchatäkiti.",
+      "¡Kuna k'amiña! Mercedarionakax claustropar San Pedro Nolasco jakäwimpi janiw ch'iyar uñt'ayapxänti.",
+      "Ukham amuyt'asaxa, suma religiosojan ajayupanxa mä juk'a envidiaw utjäna.",
+      "Ukat uka fray Venancion ch'ama ch'aman sarnaqäna, ukat jupax comunidadapan jach'añchäwipataki lurañatakiw votó lurawayi.",
+      "Fray Antolínaxa, jupar fray Venancio janiw kuna jamasas utjkänti, uka amtaxa janiw phuqhatäkaspa sasaw amuyäna, lienzonakax janiw angelanakampi pintatäkiti, jan ukasti jaqinakampiwa, jupanakax kunatï qhathu manq'asipki ukjamawa. Panipacha frayl amuyuparjamax, uka luräwiraki juk'ampi tunka waranqa duro wakiskiritäna.",
+      "Fray Venancix janiw ch'amap chhaqtayänti, ukat masipar jaysäna iyawsäwi ukat ch'amanimpix jan lurañjam lurañ atipasiñawa, ukat milagronakaw phuqhasi sasa. Ukat jupanakat nayrakatxa janiw juk'ampi uka toqet parlapkänti.",
+      "Ukampis jisk'a padrex paciencianiw reales ch'uqiñ qalltäna, ukat sapa kutiw convento mesada, alboroque, misa limosnanaka ukat yaqha qullqinakat sixta onza quri ch'uyanakax apthapiñ atiskäna, wali amuytasa Botoneros portalaruw saräna ukat don Marcos Guruceta qhatu utaruw mantäna, jupax wali suma uñt'ata jaqiwa, ukat ukatwa walja jaqin qullqip imañ banquero jan ukax depositario ukäna.",
+      "Ukat uka imañax mä papel ch'ankhasa jan utjasaw lurasïna; mercaderix honorabilidadapax, sapa uru kamachi phuqir, jach'a fiestanakan comulgir ukat mä archicofradía mayordomo ukäxa, mä recibo jan ukax yaqha qhanachäwi mayjata ukhaxa k'amtatäspawa. ¡Kuna patriarcal pachanakasa! Jichhax pachpa lurasma, ukat kawkirus umax purkasmax uñjäta.",
+      "Fray Venancion churata sixta waranqa pesonakax apthapitäxänwa, mä arumax mä wali jach'a cólico miserere usuruw katuntatäna, uka usux ukham pachanakan walja ukhamäna, ukat fray Antolín jutkasaxa alter egopar lakanakap chhijllt'ata ukat jiwañar jak'achata jikxatäna. Ukhamasti janiw jupanakat taypin juk'a confidenciasa utjkänti, ukat fray Venancio hoyoruw sarawayi.",
+      "Suma qhatu aljirix, phaxsi phaxsi pasasa janiw khitis uka imata qullqir mayirïkänti uk uñjasax, uka qullqir munasiñ qalltäna ukat nayanakapjamaw uñjäna. Ukampis San Pedro Nolasco ukax janiw suma amuykänti, jupax pintatäpacha cuadro ukan jan uñacht'ayatäñapa. Ukat fray Venancio jiwatat walja maranakaw pasäna.",
+      "Mä arumax padre Antolinax suma ihtasïna, ukat mä chhuxwa amparax p'iqiparu uchatap amuyasax axsarasaw sartasïna.",
+      "Mä vela mä Virgen, Cautivos Uñjiri uñacht'ayata ukan, celdan jisk'a ukat jamasat qhananaka phalaraspänwa.",
+      "Ihtañ ukan p'iqipanxa, mä vaqueta ch'iwan qunt'ata fray Venancio ukäna.",
+      "—Jan axsarañäti —sänwa uka uñstiri—. Diosaw nayar permiso churitu, mä yäqañ uñtasiñataki. Qharürux chika uruw Botoneros portalaruw sarañama ukat don Marcos Guruceta ukar sixta waranqa peso mayiñama, nayax jupar imañataki churawayta, ukanakax nayrïr claustro ukar santo uywirisan jakäwip uchañataki wakichata.",
+      "Ukat uk sasaxa, uñacht'äwix chhaqtäna. Padre Antolinax wali muspharat qhiparäna. Mä jiwata parlt'ir ist'añax wali jach'a luräwiwa.",
+      "Alwax religioso axsarata orden comendadorapar jak'achasïna ukat kunatï pasäna, ihtayatpacha jan ukax chiqpacha, ukxa yatiyäna.",
+      "—Janiw kunsa chhaqtkiti, jilata —sänwa uka jilïr—, Gurucetar uñjkasti.",
+      "Chiqpachapuniw chika uruw fray Antolín qhatu aljirin mostradorapar purïna ukat uka mayitap mayïna. Don Marcosax tuqt'äna ukat jupar mä loco fraile jan ukax k'ari parlirïtap sänwa.",
+      "Llakisiñampi kutt'äna uka comisionado; ukampis convento portería ukar purisaxa, mä frailiw jupar uñt'asïna, jupar fray Venancio uñt'äna.",
+      "—Ukat jilata, ¿kunjamasa sarawayi?",
+      "—Wali jan walita, jilata —sasaw jaysäna jiskt'ata—. Guruceta nayar visionario ukat engañador sasaw sutichitu.",
+      "—¿Ukhamasti? Ukhamäxa jupar kuttanim ukat sim, jan ukhamäxa jupar pagañ munkchixa, nayarakiw phesqha minutunak pasatatxa qullqixataki saräma.",
+      "Fray Antolínax portalar kutt'äna, ukat don Marcosax jupar uñjasax tiendan punkut mantkir, sänwa:",
+      "—¿Wasitaw jumax nayar muspharayaña jutta?",
+      "—Janiwa, señor Guruceta. Jumar sañ jutta, jan juk'a pachanxa fray Venancio pachpaw jumamp parltañ jutani. Nayax nayrakat purinta jupar suyañataki.",
+      "Uka arunak ist'asax, ukat wali ch'amampi sasax, Guruceta mä jan uñt'at mayjt'äwi amuyäna, ukat chiqpachapuniw yaqha jakäwin ajayumpi jikisiñat axsarïna.",
+      "—Fray Venancio jan jutañapawa —sänwa jaranpt'asa—. Walja luräwinak p'iqin utjatapatxa, ukhamat qullqi churatap armasiwayxaspa. Kunjamasa ukax ukhamäkchi, amtax cristiano ukhamawa ukat nayax San Pedro Nolasco ukar wali iyawsirïtwa, jupan patrimarax mä uywirir sixta talega apanipxañapataki apayañapawa.",
+      "Lima markan jaqinakan religiosidadapax limosna ukat donativonakampiw pintornakar pagañataki jan phuqhata qullqir phuqhäna, ukat mä mara qhipat, patron fiestanxa, jichha uñt'tan lienzonakax uñacht'ayatäna.",
+      "Ukhamawa aka tradición, nayax jisk'a jakkasax fray León Fajardo, wali jach'añchata sacerdote ukat Merced comendador, jupat ist'ä, aka qillqirix."
     ]
   },
   "audio": [
@@ -161,5 +251,9 @@
       "answer": 1,
       "explanation": "La confianza es valiosa, pero un comprobante protege a ambas partes."
     }
+  ],
+  "borrador": [
+    "quz",
+    "ay"
   ]
 }

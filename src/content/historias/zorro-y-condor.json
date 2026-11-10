@@ -2,7 +2,9 @@
   "id": "zorro-y-condor",
   "revision": 1,
   "title": {
-    "es": "El zorro y el cóndor"
+    "es": "El zorro y el cóndor",
+    "quz": "Atuq Kunturwan",
+    "ay": "Qamaqi ukat kunturi"
   },
   "author": "Guion experimental de Sinapse",
   "collection": "Radiodrama piloto",
@@ -14,7 +16,9 @@
   ],
   "coverColor": "#D9622B",
   "summary": {
-    "es": "Un pequeño zorro sueña con volar. Un día, el gran cóndor baja a hablar con él y le dice algo que no esperaba."
+    "es": "Un pequeño zorro sueña con volar. Un día, el gran cóndor baja a hablar con él y le dice algo que no esperaba.",
+    "quz": "Huk huch'uy atuq phawayta muspan. Huk punchaw hatun kuntur uraykamuspa rimapayan, mana suyasqan simita nispa.",
+    "ay": "Mä jisk'a qamaqix phaxsiñ muspharäna. Mä urux jach'a kunturix jak'aru saraqi, ukat jupar jan suyasiña mä arunak sasi."
   },
   "paragraphs": {
     "es": [
@@ -26,6 +30,26 @@
       "¡Quiero volar como tú! Dime, amigo cóndor, ¿crees que algún día podría hacerlo?",
       "Los sueños pueden llevarnos muy lejos, pequeño amigo. Pero debes comprender que el cielo también tiene sus peligros.",
       "El zorro guardó silencio. Sus ojos brillaban de emoción. Todavía no sabía que aquella conversación sería el comienzo de una aventura."
+    ],
+    "quz": [
+      "Ancha ñawpaq pachapi, Antikunap orqonkunapi, huk huch'uy atuq tiyarqa, ancha sapaq muspayniyuq. Sapa tutamanta huk orqop kunkanman wicharqa, hanaq pachatapas qhawarqa.",
+      "Chaypi, puyukunapa hawanpi, huk hatun kuntur hatun raphrankunata kicharispa, wayq'ukunap hawanpi sapa munasqanpi phawarqa. Atuqtaq admirakuspa qhawarqa.",
+      "¡Ay! ¡Imayna sumaqchá phawayqa! ¡Tukuy orqokunata hawamanta qhawayta atiy!",
+      "Ichaqa chay punchaw, mana suyasqa imapas pasanankupaq karqa. Hatun kuntur uraykamuspa, atuq qayllanpi huk rumipi samarqa.",
+      "Allin p'unchaw, huch'uy atuq. Achka punchawkuna hanaq pachata qhawasqaykita rikurqani. ¿Imatataq maskanki?",
+      "¡Qan hina phawayta munani! Niway, kuntur amigoy, ¿huk punchaw ruwayta atiymanchu?",
+      "Muspaykunaqa karuman apawanchis, huch'uy amigoy. Ichaqa hanaq pachapas peligrokunayuq kasqanta entendinayki.",
+      "Atuqqa ch'inlla qhipakurqa. Ñawinkunam kusikuywan k'anchaykurqa. Manaraqmi yacharqachu chay rimanakuyqa huk wiñaypa willakuy qallariynin kananta."
+    ],
+    "ay": [
+      "Ñawpa pachax, Anti qullunaka taypinx, mä jisk'a qamaqix jakäna, jupax mä wali sapa muspharkaña muspharäna. Sapa alwa mä qullu patar makhatasax alaxpacharu uñch'ukïna.",
+      "Ukanxa, qinayanakat wali alaxpachanxa, mä jach'a kunturix jach'a ch'api ch'allxtayasax, jawiranakar jan ch'amanchata phaxsïna. Qamaqix jupar muspharasa uñch'ukïna.",
+      "¡Ah! ¡Kunja muspharkaña phaxsiñaxa! ¡Taqi qulluk alaxpachat uñch'ukiñax!",
+      "Ukampis uka urux, jan suyat kunas pasañapänwa. Jach'a kunturix saraqatäna ukat jak'ar mä qalar qunt'asïna.",
+      "Suma urunaka, jisk'a qamaqi. Walja uru alaxpacharu uñch'ukitam uñjtwa. ¿Kunsa thaqta?",
+      "¡Jumjam phaxsiñ muntwa! Sapxita, amigo kunturi, ¿mä urux phaxsiñ atipaspati?",
+      "Muyunakax jiwasaru jayaruw apanipxarakiraksma, jisk'a amigo. Ukampis amuyañamawa, alaxpachax ukhamarak jan walt'awinakanipuniwa.",
+      "Qamaqix amukïna. Nayranakapax kusisiñampi qhanayasïna. Janïr yatkänti, uka parlañax mä jach'a thakhinxa qalltañapätap."
     ]
   },
   "audio": [
@@ -36,10 +60,10 @@
       "url": "bundle:zorro-y-condor.es.mp3",
       "license": "Voces generadas con IA, Kokoro-82M (Apache-2.0). Guion experimental de Sinapse.",
       "durationSec": 65.1,
-      "textStartSec": 2.0,
+      "textStartSec": 2,
       "textEndSec": 62.2,
       "paragraphStartsSec": [
-        2.0,
+        2,
         12.75,
         22.225,
         27.475,
@@ -141,5 +165,9 @@
       "answer": 1,
       "explanation": "El cóndor reconoce que los sueños llevan lejos y a la vez advierte de los peligros: soñar y ser prudente van juntos."
     }
+  ],
+  "borrador": [
+    "quz",
+    "ay"
   ]
 }

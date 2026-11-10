@@ -1,7 +1,9 @@
 {
   "id": "oficiosidad-no-agradecida",
   "title": {
-    "es": "Oficiosidad no agradecida"
+    "es": "Oficiosidad no agradecida",
+    "quz": "Mana agradecisqa yanapay",
+    "ay": "Jan yuspagarata yanapt'a"
   },
   "author": "Ricardo Palma",
   "collection": "Tradiciones peruanas",
@@ -15,7 +17,9 @@
   "coverColor": "#7A3B3B",
   "emoji": "🎩",
   "summary": {
-    "es": "Un sacerdote tacaño anda con la ropa hecha jirones. El arzobispo de Lima encuentra una manera muy ingeniosa de vestirlo… con su propio dinero."
+    "es": "Un sacerdote tacaño anda con la ropa hecha jirones. El arzobispo de Lima encuentra una manera muy ingeniosa de vestirlo… con su propio dinero.",
+    "quz": "Huk sacerdote q'ala p'achan ch'ikllakuna hina purin. Limap arzobispon payta p'achachinanpaq ancha yuyayniyuq ñanta tarin... kikinpa qolqewan.",
+    "ay": "Mä jan churañ munir kurax ismu isimpiw sarnaqäna. Limana arsubispupax mä wali amuyt'asit thakhi jikxatäna jupar isthapiñataki... jupan kikpa qullqipampi."
   },
   "paragraphs": {
     "es": [
@@ -36,6 +40,44 @@
       "—Vengo a pedir a su ilustrísima una gracia.",
       "—Hable, padre, y será servido a pedir de boca.",
       "—Pues bien, ilustrísimo señor. Ruégole que no vuelva a tomarse el trabajo de vestirme."
+    ],
+    "quz": [
+      "Willakuykunaq nisqanman hina, arzobispo Loayza payqa bromista kasqanta rikuchinapaq, Lima llaqtapi huk ancha avaro clérigo karqa, sotanan, mantenyunpas, alzacuello sombrerompas ancha p'aqarasqa, wata watamanta qaparispa utqayta mosoqta mañakuq. Avarop arcanpi, supay tiyan, nispa ninku.",
+      "Ilustrísimo, clerokunata allinta p'achasqata rikuyta munaspa, huk punchaw waqyarqa, hinaspa nirqa:",
+      "—Padre Godoy, huk necesidadniyuqmi kani, munaymanmi huk barrita qolqeta mañaykuwanaykita.",
+      "Clérigoqa canonjía munaspa, mana ruyñispa kutichirqa:",
+      "—Chayqa, hinallataq ilustrísimoq munasqan aswanpas, qankunaq kamachisqaykiqa.",
+      "—Gracias. Kunanqa barrillawanmi kusisqa kani, Ribera mayordomoypaqtaq cheqaqta la tarde ripunqa.",
+      "Avaroqa ancha kusisqa ripurqa, señor Loayzaman serviciota ruwasqanrayku, hamuq pachapitaq, ganancia hina, aswan pisi canonjía magistralta rikuspa.",
+      "Pusaq punchaw qhipaman Riberaqa padre Godoypa wasinman kutimurqa, qhepanpi huk envoltorio apaspa, hinaspa nirqa:",
+      "—Ilustrísimo kachamuwan kay p'achakunawan.",
+      "Envoltorioqa huk chamalote seda sotanayuq karqa, huk Segovia paño mantenyuq, iskay zapatokuna qori hebillayuq, huk crin alzacuellowan, huk vicuña qara sombrerowan.",
+      "Padre Godoyqa kusikuywan phawarqa, musuq p'achakunata churakurqa, hinaspa arzobispoq palaciunman rirqa agradecenanpaq, payta anchata ayninakuq kaqpaq, yuyarqa chayqa mañasqanrayku prelado agradecidoq regalon kasqanta.",
+      "—Mana imatapas agradecewankichu, padre Godoy —nirqa arzobispo—. Mayordomoywan tupay, barrimanta pisiqaqta kutichisunaykipaq; qanqa p'achaykita mana cuidasqaykirayku, ichapas mana tiempoykiyuq kasqaykirayku chay frivolidadta yuyanaykipaq, noqam rantiykusqayki kikiyki qolqewan. Dioswan riy, noqaq bendicionniywan.",
+      "Padre phiñasqa ripurqa, Riberaman rirqa, paywan yupaykurqa, hinaspa chamalotewan pañowan ancha qolqe kasqanta tarirqa, mayordomoqa mana regateaspa pagasqanrayku.",
+      "Kaya p'unchawpi, yupayta yupaspa p'achapi iskay kinsa duro qhawachiyta atikunmanchus nispa convencekunanpaq, Godoyqa arzobispoman kutimurqa, hinaspa nirqa:",
+      "—Ilustrísimoman huk graciata mañaq hamuni.",
+      "—Rimay, padre, munasqaykiman hina servisqa kanki.",
+      "—Chhayna kaqtinqa, ilustrísimo señor. Ruwarikuyki amaña kutimpuy p'achachiyta llank'ayniykita hap'inaykita."
+    ],
+    "ay": [
+      "Qillqatanakaw sapxi, arsubispu Loayza ukax mä jisk'a mozón uñacht'äwinïtapa uñacht'ayañataki, Limanx mä kura utjäna, ukax wali pisi chuymani, jan kunsa churañ munir, sotanapa, manteopa, alzacuellopa ukat sumbrirupasti wali ñakhata, walja maranakaw jank'aki mayjt'ayañ mayipxäna. Sapa jakhsa jakhsawa ukhama, ñanqhax ukan jakäna, sasaw jaqinakax sapxi.",
+      "Jupan jach'a Ilustrísimapax, kuraka jaqinakap sumaki isthapt'ata uñjañ munasa, mä urux jupar jawsäna ukat säna:",
+      "—Awki Godoy, mä wakiyatax utjitu, ukat qullqi barra mä jisk'a apt'asiñamp munäyäta.",
+      "Kurax, mä canonjía munasa, jank'akiw jaysäna:",
+      "—Ukax, ukat jach'a ilustrísimax wakisir sapa kunax, jupan munañapawa.",
+      "—Yuspagara. Jichhapachax jisk'a barrakiw wakisi, ukat Ribera, mayordomojax, jichha jayp'u apiriniwa.",
+      "Jupax wali kusisitaw sarxäna, señor Loayzar mä yanapt'a churatap tuqi, ukat jutïrin, intereses tuqi, juk'ampi jan ukakiwa canonjía magistral uñjasa.",
+      "Pä semana qhipatx Riberax awki Godoyan utaruw kutinïna, mä k'ipi ch'amakat apt'ata apanisa, ukat säna:",
+      "—Jach'a ilustrísimat akanak apanijta.",
+      "K'ipix mä seda chamalote sotana, Segovia paño manteo, mä pares qurimanta hebilla zapato, mä crin alzacuello ukat vicuña lluqaran sumbriru apt'ataw utjäna.",
+      "Awki Godoyax kusisiñampiw jaltxäna, machaq isinak uchasïna, ukat arsubispo palaciuruw sarxäna yuspagarañataki, kunatix jupax wali jach'a chuymampiw yanapt'äna, kunatix jupax amuyäna ukax jupan mayt'ata yuspagarañataki regalo jan ukax jach'a chuymani jaqin yuspagarapxatapawa.",
+      "—Janiw kunas yuspagarañäkiti, awki Godoy —sasaw arsubispux säna. —Mayordomojampi uñjt'asim, barra sobrantapat kutt'ayañapataki; kunatix jumax isinakamat janiw uñjkätati, jumax janiw pachanïkätati ukham jan kunsa yänakat amuyañataki, nayax jumar jupan qullqimpiw alaxtha. Diosampi ukat bendicionajampi sarantam.",
+      "Kurax mutuyaw sarxäna, Riberar sarasaw jakhunak jakhthapïna, ukat chamalote ukat paño wali walja qullqi valiritap jikxatäna, kunatix mayordomox janiw regatiyasa pagkänti.",
+      "Mayampi uruw, ukat jakhunak ukat jakhunak lurasax isinakan pä jan ukax kimsa duro apt'asiñ yatiñatak, Godoyax arsubispuruw kutinïna ukat säna:",
+      "—Jach'a ilustrísimat mä khuyapayasiñ mayiriw jutta.",
+      "—Parlam, awki, ukat munatakiw luraräma.",
+      "—Walikiwa, ilustrísimo señor. Mayispawa janiw mayampi isimp isthapiñataki llakitam apthapiñamäti."
     ]
   },
   "audio": [
@@ -137,5 +179,9 @@
       "answer": 1,
       "explanation": "Godoy no presta por bondad sino por interés, y su avaricia queda en ridículo."
     }
+  ],
+  "borrador": [
+    "quz",
+    "ay"
   ]
 }
