@@ -117,6 +117,33 @@
         198.144,
         202.264
       ]
+    },
+    {
+      "lang": "quz",
+      "narratorId": "voz-mms-quz",
+      "voiceSource": "sintetica",
+      "url": "bundle:oficiosidad-no-agradecida.quz.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 168.652,
+      "paragraphStartsSec": [
+        0.0,
+        22.596,
+        29.484,
+        37.3,
+        41.916,
+        48.5,
+        56.632,
+        66.576,
+        74.632,
+        78.336,
+        89.688,
+        103.984,
+        128.728,
+        139.584,
+        151.896,
+        155.68,
+        160.28
+      ]
     }
   ],
   "glossary": [
