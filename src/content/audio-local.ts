@@ -5,10 +5,13 @@
  * Cada historia con `"url": "bundle:<archivo>"` se resuelve aquí.
  */
 export const BUNDLED_AUDIO: Record<string, number> = {
+  'alacran-fray-gomez.ay.mp3': require('../../assets/audio/alacran-fray-gomez.ay.mp3'),
   'alacran-fray-gomez.es.mp3': require('../../assets/audio/alacran-fray-gomez.es.mp3'),
   'alacran-fray-gomez.quz.mp3': require('../../assets/audio/alacran-fray-gomez.quz.mp3'),
+  'caballero-carmelo.ay.mp3': require('../../assets/audio/caballero-carmelo.ay.mp3'),
   'caballero-carmelo.es.mp3': require('../../assets/audio/caballero-carmelo.es.mp3'),
   'caballero-carmelo.quz.mp3': require('../../assets/audio/caballero-carmelo.quz.mp3'),
+  'chullachaqui.ay.mp3': require('../../assets/audio/chullachaqui.ay.mp3'),
   'chullachaqui.es.mp3': require('../../assets/audio/chullachaqui.es.mp3'),
   'chullachaqui.quz.mp3': require('../../assets/audio/chullachaqui.quz.mp3'),
   'hermanos-ayar.es.mp3': require('../../assets/audio/hermanos-ayar.es.mp3'),
@@ -19,6 +22,7 @@ export const BUNDLED_AUDIO: Record<string, number> = {
   'manco-capac.quz.mp3': require('../../assets/audio/manco-capac.quz.mp3'),
   'naylamp.es.mp3': require('../../assets/audio/naylamp.es.mp3'),
   'naylamp.quz.mp3': require('../../assets/audio/naylamp.quz.mp3'),
+  'yacumama.ay.mp3': require('../../assets/audio/yacumama.ay.mp3'),
   'yacumama.es.mp3': require('../../assets/audio/yacumama.es.mp3'),
   'yacumama.quz.mp3': require('../../assets/audio/yacumama.quz.mp3'),
   'zorro-al-cielo.es.mp3': require('../../assets/audio/zorro-al-cielo.es.mp3'),

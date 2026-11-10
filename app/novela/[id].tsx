@@ -1,11 +1,13 @@
 import { router, Stack, useLocalSearchParams } from 'expo-router';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Button, Cover, ProgressBar, Text } from '@/components/ui';
 import { getNarrator } from '@/content';
 import { getNovel, loadNovel, novelAsStory } from '@/content/novelas';
+import { useAccount } from '@/state/AccountContext';
 import { useApp } from '@/state/AppContext';
+import { useDownloads } from '@/state/DownloadsContext';
 import { useThemed, type Theme } from '@/theme/theme';
 
 /** Una novela: portada, resumen, quién la lee y la lista de capítulos con su avance. */
@@ -14,6 +16,9 @@ export default function NovelScreen() {
   const novel = getNovel(id);
   const chapters = useMemo(() => (novel ? loadNovel(novel.id) : []), [novel]);
   const { progress } = useApp();
+  const { plan } = useAccount();
+  const downloads = useDownloads();
+  const [batch, setBatch] = useState<{ done: number; total: number } | null>(null);
   const { styles, colors, spacing } = useThemed(makeStyles);
   const insets = useSafeAreaInsets();
 
@@ -29,6 +34,8 @@ export default function NovelScreen() {
   const next = chapters.find((c) => !progress[c.id]?.completed) ?? chapters[0];
   const started = chapters.some((c) => progress[c.id]?.lastOpened);
   const done = chapters.filter((c) => progress[c.id]?.completed).length;
+  const downloadedUrls = new Set(downloads.items.map((d) => d.url));
+  const pending = chapters.filter((c) => c.audio[0] && /^https?:/.test(c.audio[0].url) && !downloadedUrls.has(c.audio[0].url));
   const narrator = getNarrator(chapters[0]?.audio[0]?.narratorId ?? '');
 
   return (
@@ -44,6 +51,29 @@ export default function NovelScreen() {
         <Text style={styles.meta}>{`Voz: ${narrator.name} (voluntario/a de LibriVox, dominio público)`}</Text>
       )}
 
+      {downloads.supported && (
+        <Button
+          label={
+            batch
+              ? `Descargando capítulo ${Math.min(batch.done + 1, batch.total)} de ${batch.total}…`
+              : plan === 'premium'
+                ? `Descargar los ${pending.length ? pending.length : 'capítulos'} para escuchar sin internet`
+                : 'Descargar para escuchar sin internet (Premium)'
+          }
+          variant="secondary"
+          disabled={!!batch || (plan === 'premium' && pending.length === 0)}
+          onPress={async () => {
+            if (plan !== 'premium') return router.push('/premium');
+            setBatch({ done: 0, total: pending.length });
+            for (const [i, c] of pending.entries()) {
+              await downloads.download(c.audio[0].url, `${novel.title.es} · ${c.title.es}`);
+              setBatch({ done: i + 1, total: pending.length });
+            }
+            setBatch(null);
+          }}
+          style={{ marginTop: spacing.sm }}
+        />
+      )}
       {next && <Button label={started ? 'Continuar leyendo' : 'Empezar la novela'} onPress={() => open(next.id)} style={{ marginTop: spacing.md }} />}
       <Text style={styles.count}>{`Capítulos (${done} de ${chapters.length} terminados)`}</Text>
 
@@ -54,7 +84,7 @@ export default function NovelScreen() {
           <Pressable key={c.id} onPress={() => open(c.id)} accessibilityRole="button" accessibilityLabel={c.title.es} style={styles.row}>
             <View style={{ flex: 1 }}>
               <Text style={styles.rowTitle}>{c.title.es}</Text>
-              <Text style={styles.rowMeta}>{`${minutes} min${p?.completed ? ' · terminado' : ''}`}</Text>
+              <Text style={styles.rowMeta}>{`${minutes} min${p?.completed ? ' · terminado' : ''}${c.audio[0] && downloadedUrls.has(c.audio[0].url) ? ' · descargado' : ''}`}</Text>
               {p && !p.completed && p.paragraph > 0 ? (
                 <View style={{ marginTop: spacing.xs }}>
                   <ProgressBar value={p.paragraph / c.paragraphs.es.length} />

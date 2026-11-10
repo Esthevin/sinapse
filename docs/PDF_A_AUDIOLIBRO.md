@@ -134,3 +134,12 @@ npm run pdf:audiolibro -- libro.pdf --todos --fuente "..." --motor edge --idioma
 - `--idiomas qu,ay` (o `--quechua` / `--aimara`): traduce cada cuento con Meta NLLB y crea su voz con Meta MMS-TTS. Son **borradores** que debe revisar una persona hablante.
 - `--motor edge`: usa las voces neuronales Camila y Alex (y las demás voces por personaje) con `edge-tts`, sin clave de Azure. No es un servicio oficial: sirve para probar; para publicar, Azure AI Speech. **No se probó aquí** (el entorno no tiene acceso a ese servicio).
 - Dentro de la app, el PDF se lee con la voz del teléfono (con una voz distinta por personaje) y **no se traduce**: no hay traductor de quechua o aimara que funcione sin internet.
+
+## Documentos de Word, OpenDocument y texto
+Además de PDF, la app lee **Word (.docx)**, **OpenDocument (.odt)** y texto (**.txt**, **.md**). Los títulos del documento («Título 1», «Título 2», los `#` de Markdown) separan los cuentos. Los .doc antiguos (binarios) no se pueden leer: guárdalos como .docx.
+
+## Si el play no suena
+Android no lee de una vez textos de más de unos 4 000 caracteres (en los PDF hay párrafos así de largos): la app los parte en trozos por frases. Si la voz del teléfono falla, la pantalla avisa y sugiere revisar la voz en español instalada.
+
+## Quechua y aimara dentro de la app
+Con Premium e internet, cada libro tiene un botón para traducirlo al quechua y al aimara (borrador); ver `CUENTAS.md` → «Traducir libros». La voz del teléfono lee el texto traducido con pronunciación en castellano (ambas lenguas se escriben como suenan, así que se entiende de forma aproximada).

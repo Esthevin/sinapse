@@ -1,0 +1,32 @@
+{
+ "id": "aves-sin-nido",
+ "title": "Aves sin nido",
+ "author": "Clorinda Matto de Turner",
+ "year": 1889,
+ "source": "Texto de dominio público de Wikisource en español (Aves sin nido, Clorinda Matto de Turner, 1889).",
+ "level": "secundaria",
+ "ages": [
+  "jovenes",
+  "adultos"
+ ],
+ "region": "sierra",
+ "coverColor": "#7A4A2B",
+ "summary": "La primera novela indigenista del Perú: en el pueblo andino de Kíllac, un matrimonio limeño defiende a los indios de los abusos del cura, el gobernador y el juez, y paga las consecuencias. Una denuncia de la injusticia hecha con ternura.",
+ "text": {
+  "kind": "wikisource",
+  "pages": {
+   "proemio": "Aves sin nido (Matto de Turner)/Proemio",
+   "p1": "Aves sin nido (Matto de Turner)/Primera Parte",
+   "p2": "Aves sin nido (Matto de Turner)/Segunda Parte"
+  },
+  "split": {
+   "p1": "^Capítulo [IVXLC]+$",
+   "p2": "^Capítulo [IVXLC]+$"
+  }
+ },
+ "chapters": "__auto__",
+ "partes": {
+  "p1": "Primera parte",
+  "p2": "Segunda parte"
+ }
+}

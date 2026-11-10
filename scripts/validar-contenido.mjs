@@ -133,7 +133,10 @@ for (const file of files) {
         const audioFile = a.url.slice('bundle:'.length);
         if (!existsSync(join(audioDir, audioFile))) error(file, `${where}: falta el archivo assets/audio/${audioFile}`);
         else if (!bundleMap.includes(`'${audioFile}'`)) error(file, `${where}: ${audioFile} no está en src/content/audio-local.ts (ejecuta: npm run voces:generar -- --solo-mapa)`);
-      } else if (!/^https:\/\//.test(a.url ?? '')) error(file, `${where}.url debe ser https:// o bundle:<archivo>`);
+      } else if ((a.url ?? '').startsWith('site:')) {
+        const audioFile = a.url.slice('site:'.length);
+        if (!existsSync(join(root, 'docs', 'audio', audioFile))) error(file, `${where}: docs/audio/${audioFile} no existe`);
+      } else if (!/^https:\/\//.test(a.url ?? '')) error(file, `${where}.url debe ser https://, bundle:<archivo> o site:<archivo>`);
       if (a.paragraphStartsSec !== undefined) {
         const ps = a.paragraphStartsSec;
         const expected = (s.paragraphs?.[a.lang] ?? s.paragraphs?.es ?? []).length;

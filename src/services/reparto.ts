@@ -94,7 +94,9 @@ function looksNarration(sentence: string): boolean {
  * Parte un párrafo en trozos de narración y de diálogo.
  * Reconoce:  —Diálogo —dijo X— continuación.   «Diálogo»   “Diálogo”   "Diálogo"
  */
-export function splitDialogue(paragraph: string): Piece[] {
+export function splitDialogue(rawParagraph: string): Piece[] {
+  // Muchas ediciones escriben el diálogo con guion corto (-Hola -dijo él-): se trata como raya.
+  const paragraph = /^\s*-(?=\S)/.test(rawParagraph) ? rawParagraph.replace(/(^|\s)-(?=\S)/g, '$1—').replace(/(?<=\S)-(?=\s|$)/g, '—') : rawParagraph;
   const pieces: Piece[] = [];
   const push = (kind: Piece['kind'], text: string, cont = false) => {
     const t = collapse(text).replace(/^[.,;:\s]+/, '');

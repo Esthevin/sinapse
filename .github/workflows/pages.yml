@@ -37,6 +37,8 @@ jobs:
       - run: node scripts/parchar-web.mjs dist
       # El catálogo descargable se publica junto a la app (misma URL base).
       - run: cp -r docs/catalogo dist/catalogo
+      # Audios largos en quechua y aimara (url "site:"): se publican con la web y la app los baja o los descarga.
+      - run: if [ -d docs/audio ]; then cp -r docs/audio dist/audio; fi
       # Panel de administración de cuentas (https://<usuario>.github.io/sinapse/admin/). Solo entran cuentas con rol de administrador.
       - run: cp -r docs/admin dist/admin
       - name: Conectar el panel con el servidor de cuentas

@@ -1,8 +1,50 @@
 [
  {
+  "id": "aves-sin-nido",
+  "title": {
+   "es": "Aves sin nido"
+  },
+  "author": "Clorinda Matto de Turner",
+  "year": 1889,
+  "level": "secundaria",
+  "ages": [
+   "jovenes",
+   "adultos"
+  ],
+  "region": "sierra",
+  "coverColor": "#7A4A2B",
+  "summary": {
+   "es": "La primera novela indigenista del Perú: en el pueblo andino de Kíllac, un matrimonio limeño defiende a los indios de los abusos del cura, el gobernador y el juez, y paga las consecuencias. Una denuncia de la injusticia hecha con ternura."
+  },
+  "chapters": 52,
+  "minutes": 380
+ },
+ {
+  "id": "dona-perfecta",
+  "title": {
+   "es": "Doña Perfecta"
+  },
+  "author": "Benito Pérez Galdós",
+  "year": 1876,
+  "level": "secundaria",
+  "ages": [
+   "jovenes",
+   "adultos"
+  ],
+  "region": "sierra",
+  "coverColor": "#5A3A2A",
+  "summary": {
+   "es": "Pepe Rey, un joven ingeniero liberal, llega a Orbajosa a casarse con su prima Rosario y choca con su tía, doña Perfecta, y con el fanatismo del pueblo. Una novela clásica sobre la intolerancia."
+  },
+  "chapters": 33,
+  "minutes": 420
+ },
+ {
   "id": "lazarillo-de-tormes",
   "title": {
-   "es": "La vida de Lazarillo de Tormes"
+   "es": "La vida de Lazarillo de Tormes",
+   "quz": "Lazarillo de Tormes nisqapa kawsayninmanta willakuy",
+   "ay": "Lazarillo de Tormesan jakäwipa"
   },
   "author": "Anónimo (Burgos, 1554)",
   "year": 1554,
@@ -14,7 +56,9 @@
   "region": "costa",
   "coverColor": "#6B4A2B",
   "summary": {
-   "es": "El pícaro más famoso de la literatura española cuenta cómo sirvió a un ciego, a un clérigo, a un escudero y a otros amos, y cómo aprendió a sobrevivir con ingenio. Una novela corta que inauguró la novela picaresca."
+   "es": "El pícaro más famoso de la literatura española cuenta cómo sirvió a un ciego, a un clérigo, a un escudero y a otros amos, y cómo aprendió a sobrevivir con ingenio. Una novela corta que inauguró la novela picaresca.",
+   "quz": "Español literaturapi aswan sutiyuq pícaroqa willakun imaynatas huk ñawsata, huk clerigota, huk escuderota hinaspa wakin patronkunata sirwirqa, hinaspa yachayninwan kawsayta yacharqa. Pisi willakuy, chaymi picaresca novelata qallarirqa.",
+   "ay": "España markan jaqi llullut yatiñani (pícaro) jach'a sutini, kunjamsa mä juykhu jaqiru, mä clérigoru, mä escuderoru ukat yaqha patrunanakaru luqtäna, ukat kunjamsa yatiñampi jakasiñ yatiqäna, ukxa parli. Mä jisk'a novelawa, ukax pícaro novelanak qalltayäna."
   },
   "chapters": 5,
   "minutes": 117

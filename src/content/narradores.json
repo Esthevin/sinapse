@@ -151,5 +151,26 @@
       "es"
     ],
     "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "voz-mms-ay",
+    "name": "Voz sintética MMS (Aimara)",
+    "role": "voz_sintetica",
+    "bio": "Voz generada por inteligencia artificial (Meta MMS-TTS, facebook/mms-tts-ayr). No es una persona: es un borrador mientras se consiguen narradores nativos.",
+    "languages": [
+      "ay"
+    ],
+    "region": "sierra",
+    "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
+  },
+  {
+    "id": "librivox-meribau",
+    "name": "Meribau",
+    "role": "voluntario",
+    "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo.",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
   }
 ]

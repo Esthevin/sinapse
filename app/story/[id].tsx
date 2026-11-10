@@ -21,6 +21,7 @@ import { useNarration } from '@/hooks/useNarration';
 import { LANGUAGES, languageName, t, type LanguageCode, pickLocalized } from '@/i18n/translations';
 import { hasSpanishVoice } from '@/services/speech';
 import { PremiumGate } from '@/components/PremiumGate';
+import { TranslateBook } from '@/components/TranslateBook';
 import { loadNovel } from '@/content/novelas';
 import { isFreeStory } from '@/content/plan';
 import { useAccount } from '@/state/AccountContext';
@@ -143,9 +144,10 @@ function StoryPlayer({
   failedRef.current = onAudioFailed;
   useEffect(() => {
     if (!narration.loading) return;
-    const timer = setTimeout(() => failedRef.current(), 12000);
+    // Un audio de internet que no carga en 8 s (sin conexión) pasa a la voz del teléfono; el que está en el teléfono, en 12 s.
+    const timer = setTimeout(() => failedRef.current(), isRemoteAudio(resolved.source) ? 8000 : 12000);
     return () => clearTimeout(timer);
-  }, [narration.loading]);
+  }, [narration.loading, resolved.source]);
 
   const isTts = resolved.source.kind === 'tts';
   const paragraphs = resolved.source.paragraphs;
@@ -221,6 +223,8 @@ function StoryPlayer({
             </Text>
           </Card>
         )}
+
+        {isUserBook(story) && <TranslateBook story={story} />}
 
         {resolved.fallback && (
           <Card style={styles.notice}>
@@ -304,6 +308,12 @@ function StoryPlayer({
         {audioFailed && (
           <Card style={styles.notice}>
             <Text style={styles.noticeText}>No se pudo abrir el audio de esta narración en este teléfono. Se leerá con la voz del teléfono.</Text>
+          </Card>
+        )}
+
+        {narration.speechFailed && (
+          <Card style={styles.notice}>
+            <Text style={styles.noticeText}>La voz del teléfono no pudo leer este texto. Revisa en Ajustes del teléfono que tengas una voz en español instalada (Texto a voz) y elige otra en Ajustes de Sinapse → Voz para leer.</Text>
           </Card>
         )}
 
@@ -405,7 +415,7 @@ function StoryPlayer({
         )}
       </ScrollView>
 
-      <Ambience cues={cues} index={narration.index} playing={narration.playing} enabled={settings.ambience} />
+      <Ambience cues={cues} index={narration.index} playing={narration.playing} enabled={settings.ambience} level={settings.ambienceLevel} />
       {/* Controles fijos abajo */}
       <View style={[styles.controls, { paddingBottom: insets.bottom + spacing.sm }]}>
         <View style={styles.controlsInner}>

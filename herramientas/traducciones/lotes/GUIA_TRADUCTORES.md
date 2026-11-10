@@ -21,3 +21,18 @@ Se escribe un archivo JSON con esta forma (el mismo que lee `scripts/aplicar-tra
    - **Aimara (ay, Aymar aru, variedad del Perú/Puno)**: vocales a i u (y largas ä ï ü); consonantes con q, qh, q', ch', ph, th, kh; sufijos habituales (-xa, -ru, -ta, -sa, -wa, -ña, -nï, -iri, -ki, -pacha, -jama, -ankiri).
 7. Es un BORRADOR para que lo revise una persona hablante: cuando dudes de una palabra, elige la opción más sencilla y común, sin adornos.
 8. Escribe el archivo con la herramienta Write y comprueba con un script corto (node o python) que el JSON es válido y que cada cuento tiene exactamente los mismos párrafos que el castellano.
+
+## Novelas (capítulos)
+Las novelas están en `src/content/novelas/<id>.json` (lista `chapters`, cada capítulo con `title.es` y `paragraphs.es`).
+El archivo de traducción de una novela tiene esta forma (el que lee `scripts/aplicar-traduccion-novela.mjs`):
+
+```json
+{
+  "_nota": "BORRADOR automático ...",
+  "<id-novela>": {
+    "title": "...", "summary": "...",
+    "chapters": { "1": { "title": "...", "paragraphs": ["...", "..."] }, "2": { ... } }
+  }
+}
+```
+Las claves de `chapters` son los números de capítulo (desde 1) que te tocan; cada capítulo debe tener **exactamente los mismos párrafos** que el castellano. El castellano del siglo XVI o XIX se traduce a una lengua sencilla y moderna: conserva el sentido, no el estilo.

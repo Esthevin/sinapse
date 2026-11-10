@@ -27,6 +27,7 @@ export const PLAN_TABLE: { feature: string; normal: string; premium: string }[] 
   { feature: 'Historias', normal: 'Casi todo el catálogo', premium: `Todo, más ${PREMIUM_STORY_IDS.length} historias exclusivas` },
   { feature: 'Escuchar sin internet', normal: 'Solo lo incluido en la app', premium: 'Descarga las narraciones' },
   { feature: 'PDF a audiolibro', normal: `${FREE_PDFS_PER_MONTH} PDF al mes`, premium: 'Sin límite' },
-  { feature: 'Quechua, sonidos y voces por personaje', normal: 'Sí', premium: 'Sí' },
+  { feature: 'Tus libros en quechua y aimara', normal: 'No', premium: 'Traducción automática (borrador)' },
+  { feature: 'Quechua, aimara, sonidos y voces por personaje', normal: 'Sí', premium: 'Sí' },
   { feature: 'Preguntas y avance', normal: 'Sí', premium: 'Sí' },
 ];
