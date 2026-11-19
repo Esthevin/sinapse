@@ -167,7 +167,15 @@ export default function LibraryScreen() {
         <Button label={student ? 'Escuchar mi PDF o documento' : 'Convertir un PDF o documento en audiolibro'} variant="secondary" onPress={() => router.push('/pdf')} />
       </View>
 
-      <Text style={styles.count}>{showNovels ? `Novelas (${novels.length})` : `${t(lang, 'allStories')} (${filtered.length})`}</Text>
+      <Text style={styles.count}>
+        {showNovels
+          ? `Novelas (${novels.length})`
+          : student && vista === 'secundaria'
+            ? `Para secundaria (${filtered.length})`
+            : student && vista === 'descargadas'
+              ? `Descargadas (${filtered.length})`
+              : `${t(lang, 'allStories')} (${filtered.length})`}
+      </Text>
     </View>
   );
 
