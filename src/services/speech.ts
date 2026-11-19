@@ -14,11 +14,25 @@ let cached: Promise<string | null> | null = null;
 
 const norm = (lang: string) => lang.toLowerCase().replace('_', '-');
 
-/** Voces en español que ofrece el dispositivo (para elegirla en Ajustes). */
+/** Primero la calidad (las "Enhanced" y las "en línea" de Android suenan mucho más naturales), luego el acento. */
+function rank(voices: Speech.Voice[]): Speech.Voice[] {
+  const accentRank = (v: Speech.Voice) => {
+    const i = PREFERRED.indexOf(norm(v.language));
+    return i === -1 ? PREFERRED.length : i;
+  };
+  const qualityRank = (v: Speech.Voice) => (v.quality === Speech.VoiceQuality.Enhanced ? 0 : 1);
+  const onlineRank = (v: Speech.Voice) => (/network|natural|neural|online/i.test(`${v.identifier} ${v.name ?? ''}`) ? 0 : 1);
+  return [...voices].sort((a, b) => qualityRank(a) - qualityRank(b) || onlineRank(a) - onlineRank(b) || accentRank(a) - accentRank(b));
+}
+
+/** Voces en español que ofrece el dispositivo, de la que suena más natural a la que menos. */
 export async function listSpanishVoices(): Promise<Speech.Voice[]> {
   const voices = await Speech.getAvailableVoicesAsync().catch(() => []);
-  return voices.filter((v) => norm(v.language).startsWith('es'));
+  return rank(voices.filter((v) => norm(v.language).startsWith('es')));
 }
+
+/** Cuántas voces se muestran de entrada: las mejores. El resto queda en «Más voces». */
+export const VOCES_DESTACADAS = 3;
 
 const REGION_NAME: Record<string, string> = {
   'es-pe': 'Perú',
@@ -36,8 +50,9 @@ export function voiceLabel(v: Speech.Voice, index: number): string {
   const region = REGION_NAME[norm(v.language)] ?? v.language;
   const online = /network/i.test(v.identifier) || /network/i.test(v.name ?? '');
   const hq = v.quality === Speech.VoiceQuality.Enhanced;
-  const readable = v.name && !/^[a-z]{2,3}[-_][a-z0-9-]+$/i.test(v.name) ? v.name : `Voz ${index + 1}`;
-  return `${readable} · ${region}${online ? ' · en línea' : ''}${hq ? ' · alta calidad' : ''}`;
+  void online;
+  void hq;
+  return `Voz ${index + 1} (${region})`;
 }
 
 /**
@@ -55,17 +70,7 @@ export function getSpanishVoice(preferred?: string | null): Promise<string | nul
         if (!voices.length) cached = null;
         const spanish = voices.filter((v) => norm(v.language).startsWith('es'));
         if (!spanish.length) return null;
-        // Primero la calidad (las voces "Enhanced" suenan mucho menos robóticas),
-        // luego el acento: peruano, latinoamericano, y por último el de España.
-        const accentRank = (v: Speech.Voice) => {
-          const i = PREFERRED.indexOf(norm(v.language));
-          return i === -1 ? PREFERRED.length : i;
-        };
-        const qualityRank = (v: Speech.Voice) => (v.quality === Speech.VoiceQuality.Enhanced ? 0 : 1);
-        // Las voces "en línea" de Android (network) suenan bastante mejor que las locales.
-        const onlineRank = (v: Speech.Voice) => (/network/i.test(v.identifier) ? 0 : 1);
-        spanish.sort((a, b) => qualityRank(a) - qualityRank(b) || onlineRank(a) - onlineRank(b) || accentRank(a) - accentRank(b));
-        return spanish[0].identifier;
+        return rank(spanish)[0].identifier;
       })
       .catch(() => null);
   }

@@ -11,13 +11,16 @@ import { Platform } from 'react-native';
  *  - biblioteca: cuadrícula o lista
  * y el tamaño de la letra (A- … A++) es un ajuste aparte.
  */
-export type PaletteId = 'calido' | 'papel' | 'noche' | 'contraste';
+export type PaletteId = 'aula' | 'calido' | 'papel' | 'noche' | 'contraste';
+/** Para quién está pensada la interfaz: estudiantes de secundaria (sobria) o niños (juguetona). */
+export type EntornoId = 'estudiante' | 'ninos';
 export type AccentId = 'aji' | 'selva' | 'lago' | 'sol' | 'vino' | 'turquesa' | 'lima' | 'amarillo';
 export type FontId = 'sans' | 'serif';
 export type StyleId = 'jugueton' | 'limpio';
 export type LibraryId = 'cuadricula' | 'lista';
 
 export interface Appearance {
+  entorno: EntornoId;
   palette: PaletteId;
   /** null = el acento propio de la paleta. */
   accent: AccentId | null;
@@ -26,8 +29,18 @@ export interface Appearance {
   library: LibraryId;
 }
 
-/** Lo que ve quien abre la app por primera vez: el diseño juguetón. */
-export const DEFAULT_APPEARANCE: Appearance = { palette: 'calido', accent: null, font: 'sans', style: 'jugueton', library: 'cuadricula' };
+/**
+ * Dos entornos listos para usar; cada uno es un conjunto de opciones de apariencia.
+ *  - Estudiante (secundaria): paleta «Aula», líneas finas, biblioteca en lista, lectura con serifa.
+ *  - Niños: paleta cálida, bordes gruesos, cuadrícula con ilustraciones y letra grande.
+ */
+export const ENTORNOS: Record<EntornoId, Appearance> = {
+  estudiante: { entorno: 'estudiante', palette: 'aula', accent: null, font: 'sans', style: 'limpio', library: 'lista' },
+  ninos: { entorno: 'ninos', palette: 'calido', accent: null, font: 'sans', style: 'jugueton', library: 'cuadricula' },
+};
+
+/** Lo que ve quien abre la app por primera vez: el entorno de estudiante. */
+export const DEFAULT_APPEARANCE: Appearance = ENTORNOS.estudiante;
 
 export interface Palette {
   primary: string; // color de marca / texto de énfasis
@@ -62,7 +75,7 @@ export interface Theme {
   spacing: { xs: number; sm: number; md: number; lg: number; xl: number };
   radius: { sm: number; md: number; lg: number; pill: number };
   fontSize: { caption: number; body: number; subtitle: number; title: number; display: number };
-  font: { body: string | undefined; heading: string | undefined };
+  font: { body: string | undefined; heading: string | undefined; reading: string | undefined };
   /** Escala un tamaño de letra según el tamaño elegido en Ajustes. */
   fs: (size: number) => number;
   /** Grosor de borde de tarjetas y botones. */
@@ -73,12 +86,43 @@ export interface Theme {
   playful: boolean;
   /** Biblioteca en cuadrícula (si no, lista). */
   grid: boolean;
+  /** Entorno de estudiante de secundaria: interfaz sobria, menos filtros, lectura con serifa. */
+  student: boolean;
 }
 
 const SERIF = Platform.select({ ios: 'Georgia', android: 'serif', default: 'Georgia, "Times New Roman", serif' });
 const SANS = Platform.select({ ios: undefined, android: undefined, default: '"Helvetica Neue", Arial, sans-serif' });
 
 export const PALETTES: Record<PaletteId, Palette & { dark: boolean; accentId: AccentId }> = {
+  // Aula: tiza fría, tinta azul oscura, acento petróleo y el amarillo de un resaltador para el párrafo que suena.
+  aula: {
+    dark: false,
+    accentId: 'turquesa',
+    primary: '#15242B',
+    accent: '#1D6A73',
+    accentSoft: '#D8E9EA',
+    onAccent: '#FFFFFF',
+    onPrimary: '#F1F4F2',
+    background: '#F1F4F2',
+    surface: '#E3EAE8',
+    card: '#FFFFFF',
+    text: '#15242B',
+    textMuted: '#56656C',
+    border: '#15242B',
+    hairline: '#D3DCDA',
+    success: '#2E7A55',
+    successSoft: '#D6EBDF',
+    danger: '#B3412F',
+    dangerSoft: '#F4DAD4',
+    highlight: '#FBE7A1',
+    highlightBar: '#1D6A73',
+    region: {
+      costa: { bg: '#2C5866', fg: '#EAF1F2' },
+      sierra: { bg: '#7A5A2E', fg: '#F5EEE2' },
+      selva: { bg: '#2D5B45', fg: '#E7F0EA' },
+    },
+    level: { literal: '#2C5866', inferencial: '#7A5A2E', critico: '#B3412F' },
+  },
   calido: {
     dark: false,
     accentId: 'aji',
@@ -207,7 +251,7 @@ export const ACCENTS: Record<AccentId, { label: string; color: string; on: strin
 /** Los que se ofrecen en Ajustes (lima y amarillo son los de las paletas oscuras). */
 export const ACCENT_CHOICES: AccentId[] = ['aji', 'selva', 'lago', 'sol', 'vino', 'turquesa', 'lima', 'amarillo'];
 
-export const PALETTE_LABELS: Record<PaletteId, string> = { calido: 'Cálido', papel: 'Papel', noche: 'Noche', contraste: 'Contraste alto' };
+export const PALETTE_LABELS: Record<PaletteId, string> = { aula: 'Aula', calido: 'Cálido', papel: 'Papel', noche: 'Noche', contraste: 'Contraste alto' };
 
 /** Mezcla dos colores #RRGGBB (t=0 → a, t=1 → b). */
 function mix(a: string, b: string, t: number): string {
@@ -221,7 +265,10 @@ function mix(a: string, b: string, t: number): string {
 /** Vuelve a un valor válido cualquier apariencia guardada (versiones antiguas, datos dañados). */
 export function sanitizeAppearance(raw: Partial<Appearance> | null | undefined): Appearance {
   const a = raw ?? {};
+  // Apariencias guardadas antes de los entornos: la juguetona era la de niños.
+  const entorno: EntornoId = a.entorno === 'ninos' || a.entorno === 'estudiante' ? a.entorno : a.style === 'jugueton' || !a.style ? 'ninos' : 'estudiante';
   return {
+    entorno,
     palette: a.palette && a.palette in PALETTES ? a.palette : DEFAULT_APPEARANCE.palette,
     accent: a.accent && a.accent in ACCENTS ? a.accent : null,
     font: a.font === 'serif' || a.font === 'sans' ? a.font : DEFAULT_APPEARANCE.font,
@@ -253,11 +300,12 @@ export function buildTheme(appearance: Appearance, fs: (size: number) => number)
     spacing: { xs: 4, sm: 8, md: 16, lg: 24, xl: 32 },
     radius: playful ? { sm: 14, md: 22, lg: 32, pill: 999 } : { sm: 4, md: 8, lg: 14, pill: 999 },
     fontSize: playful ? { caption: 16, body: 20, subtitle: 24, title: 32, display: 40 } : { caption: 14, body: 17, subtitle: 20, title: 26, display: 34 },
-    font: { body: font, heading: font },
+    font: { body: font, heading: font, reading: appearance.entorno === 'estudiante' ? SERIF : font },
     fs,
     stroke: playful ? 3 : 1,
     shadowOffset: playful ? 4 : 0,
     playful,
     grid: appearance.library === 'cuadricula',
+    student: appearance.entorno === 'estudiante',
   };
 }

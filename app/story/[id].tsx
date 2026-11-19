@@ -229,7 +229,7 @@ function StoryPlayer({
         {(story.borrador ?? []).some((l) => l === resolved.textLang || l === resolved.lang) && (
           <Card style={styles.notice}>
             <Text style={styles.noticeText}>
-              Borrador: el texto en {languageName(resolved.textLang)} es una traducción automática y la voz es sintética (IA). Aún no la revisó un hablante nativo y puede tener errores. Ayúdanos a mejorarla.
+              Borrador: el texto en {languageName(resolved.textLang)} es una traducción automática. Aún no la revisó un hablante nativo y puede tener errores. Ayúdanos a mejorarla.
             </Text>
           </Card>
         )}
@@ -509,7 +509,7 @@ const makeStyles = ({ playful, colors, spacing, radius, fontSize, font, stroke, 
     paragraphActive: { backgroundColor: colors.highlight, borderLeftWidth: 4, borderLeftColor: colors.highlightBar },
     paragraphText: {
       color: colors.text,
-      fontFamily: font.body,
+      fontFamily: font.reading,
       fontSize: fs(playful ? fontSize.body + 4 : fontSize.body + 2),
       lineHeight: fs(playful ? 34 : 31),
     },
