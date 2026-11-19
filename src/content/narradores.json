@@ -172,5 +172,25 @@
       "es"
     ],
     "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-kendalrigans",
+    "name": "KendalRigans",
+    "bio": "Voz voluntaria de LibriVox que leyó «El Caballero Carmelo y otros cuentos» de Abraham Valdelomar.",
+    "role": "voluntario",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-mario-pineda",
+    "name": "Mario Pineda",
+    "bio": "Voz voluntaria de LibriVox que leyó varias «Tradiciones peruanas» de Ricardo Palma.",
+    "role": "voluntario",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
   }
 ]

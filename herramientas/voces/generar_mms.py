@@ -35,13 +35,22 @@ FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 
 # lengua de Sinapse -> (modelo de Hugging Face, id del perfil de narrador)
 MODELOS = {
+    # Quechua general (sureño): textos traducidos con NLLB (variedad ayacuchana), leídos con el modelo quy.
+    "qu": ("facebook/mms-tts-quy", "voz-mms-qu", "quechua"),
     "quz": ("facebook/mms-tts-quz", "voz-mms-quz", "Quechua cusqueño"),
     "quy": ("facebook/mms-tts-quy", "voz-mms-quy", "Quechua ayacuchano"),
     # Aimara central (ayr). Comprueba que el modelo exista en huggingface.co/facebook antes de la primera corrida.
     "ay": ("facebook/mms-tts-ayr", "voz-mms-ay", "Aimara"),
 }
-PAUSA_FRASE = 0.30
-PAUSA_PARRAFO = 0.70
+PAUSA_FRASE = 0.35
+PAUSA_PARRAFO = 0.80
+# Nombre con que la app presenta cada voz (sin «sintética»: el crédito y la licencia quedan en "credit").
+NOMBRES = {"qu": "Kusi", "quz": "Sumaq", "quy": "Kusi", "ay": "Wayra"}
+# Ajustes para una lectura menos mecánica: algo más lenta y con más variación de entonación.
+VELOCIDAD = 0.92
+VARIACION = 0.72
+# Limpia graves y agudos, e iguala el volumen al de las grabaciones humanas.
+FILTRO = "highpass=f=70,lowpass=f=7600,loudnorm=I=-18:TP=-2:LRA=9"
 
 
 def limpiar(texto: str) -> str:
@@ -69,9 +78,9 @@ def asegurar_narrador(id_, lengua, nombre, modelo_hf):
         return
     lista.append({
         "id": id_,
-        "name": f"Voz sintética MMS ({nombre})",
+        "name": NOMBRES.get(lengua, nombre),
         "role": "voz_sintetica",
-        "bio": f"Voz generada por inteligencia artificial (Meta MMS-TTS, {modelo_hf}). No es una persona: es un borrador mientras se consiguen narradores nativos.",
+        "bio": f"Voz de Sinapse para leer en {nombre}.",
         "languages": [lengua],
         "region": "sierra",
         "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador.",
@@ -94,6 +103,8 @@ def main():
     torch.manual_seed(0)
     tok = AutoTokenizer.from_pretrained(modelo_hf)
     modelo = VitsModel.from_pretrained(modelo_hf).eval()
+    modelo.speaking_rate = VELOCIDAD
+    modelo.noise_scale = VARIACION
     sr = modelo.config.sampling_rate
     asegurar_narrador(narrador_id, a.lengua, nombre, modelo_hf)
     AUDIO.mkdir(parents=True, exist_ok=True)
@@ -127,7 +138,7 @@ def main():
             destino = DOCS_AUDIO if largo else AUDIO
             destino.mkdir(parents=True, exist_ok=True)
             salida = destino / f"{s['id']}.{a.lengua}.mp3"
-            subprocess.run([FFMPEG, "-nostdin", "-y", "-loglevel", "error", "-i", str(wav), "-codec:a", "libmp3lame", "-ac", "1", "-b:a", a.bitrate, str(salida)], check=True)
+            subprocess.run([FFMPEG, "-nostdin", "-y", "-loglevel", "error", "-i", str(wav), "-af", FILTRO, "-ar", "22050", "-codec:a", "libmp3lame", "-ac", "1", "-b:a", a.bitrate, str(salida)], check=True)
         s["audio"] = [x for x in s["audio"] if not (x["lang"] == a.lengua and x["voiceSource"] == "sintetica")]
         s["audio"].append({
             "lang": a.lengua,

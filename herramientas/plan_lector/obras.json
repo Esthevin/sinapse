@@ -1,0 +1,154 @@
+{
+  "el-caballero-carmelo": {
+    "title": "El Caballero Carmelo",
+    "author": "Abraham Valdelomar",
+    "collection": "El Caballero Carmelo y otros cuentos",
+    "region": "costa",
+    "coverColor": "#8A3B1E",
+    "narrator": "librivox-kendalrigans",
+    "librivox": "https://librivox.org/el-caballero-carmelo-y-otros-cuentos-by-abraham-valdelomar-pinto/",
+    "summary": "En San Andrés, junto a Pisco, el padre trae a casa un gallo de pelea: el Caballero Carmelo. Los niños lo quieren como a uno más de la familia, hasta el día en que debe pelear contra el Ajiseco.",
+    "glossary": [
+      {"word": "Gallo de pelea", "meaning": "Gallo criado para competir en peleas, una costumbre antigua en la costa del Perú."},
+      {"word": "Ajiseco", "meaning": "Gallo de color rojizo, como el ají seco. Es el rival de Carmelo."},
+      {"word": "Paladín", "meaning": "Caballero valiente que defiende una causa. El narrador llama así al gallo."},
+      {"word": "Caucato", "meaning": "Valle cercano a Pisco, en Ica."}
+    ],
+    "quiz": [
+      {"level": "literal", "question": "¿Quién trae al Caballero Carmelo a la casa?", "options": ["Un vecino de Pisco", "El padre del narrador", "El dueño del Ajiseco", "La madre del narrador"], "answer": 1, "explanation": "El cuento empieza con la llegada del padre a caballo, que trae el gallo como regalo."},
+      {"level": "literal", "question": "¿Contra quién pelea Carmelo?", "options": ["Contra el Ajiseco", "Contra un gallo de Lima", "Contra el perro de la casa", "Contra un cóndor"], "answer": 0, "explanation": "La pelea decisiva es contra el Ajiseco, un gallo joven y fuerte."},
+      {"level": "inferencial", "question": "¿Por qué la muerte de Carmelo duele tanto a la familia?", "options": ["Porque perdieron dinero en la apuesta", "Porque lo sentían como un miembro de la familia y un héroe de su niñez", "Porque el gallo era muy caro", "Porque el padre se enfermó"], "answer": 1, "explanation": "El narrador lo recuerda como 'aquel amigo tan querido de nuestra niñez': el vínculo era afectivo, no económico."},
+      {"level": "critico", "question": "El narrador cuenta la historia ya adulto. ¿Qué efecto tiene eso en el relato?", "options": ["Lo vuelve un informe técnico sobre gallos", "Mezcla la mirada del niño con la nostalgia del adulto que recuerda", "Hace que el final sea alegre", "Ninguno: es igual que contarlo en presente"], "answer": 1, "explanation": "Es un relato de memoria: el adulto evoca su infancia en Pisco con ternura y tristeza."}
+    ]
+  },
+  "vuelo-de-los-condores": {
+    "title": "El vuelo de los cóndores",
+    "author": "Abraham Valdelomar",
+    "collection": "El Caballero Carmelo y otros cuentos",
+    "region": "costa",
+    "coverColor": "#2C5866",
+    "narrator": "librivox-kendalrigans",
+    "librivox": "https://librivox.org/el-caballero-carmelo-y-otros-cuentos-by-abraham-valdelomar-pinto/",
+    "summary": "Un niño de Pisco se queda en la calle viendo llegar un circo. Entre el oso, el payaso y la amazona del caballo blanco, una niña artista de mirada triste se le queda en la memoria.",
+    "glossary": [
+      {"word": "Circo", "meaning": "Espectáculo ambulante con acróbatas, payasos y animales, que viajaba de pueblo en pueblo."},
+      {"word": "Convite", "meaning": "Desfile por las calles con que el circo anunciaba su función."},
+      {"word": "Vapor", "meaning": "Barco movido por una máquina de vapor."},
+      {"word": "Crepúsculo", "meaning": "Luz del atardecer, cuando el sol ya se ha puesto."}
+    ],
+    "quiz": [
+      {"level": "literal", "question": "¿Qué llega al pueblo y cambia el día del narrador?", "options": ["Un circo", "Un tren de soldados", "Una feria de libros", "Un nuevo maestro"], "answer": 0, "explanation": "El niño se demora en la calle por la llegada del circo, con su banda, el oso y los artistas."},
+      {"level": "literal", "question": "¿Cómo reacciona la madre cuando el niño vuelve tarde?", "options": ["Lo castiga sin hablarle", "Le dice que hizo mal y llora, y él termina besándole las manos", "Lo felicita", "No se da cuenta"], "answer": 1, "explanation": "La madre le dice que hizo muy mal; ambos lloran y el niño, sollozando, le besa las manos."},
+      {"level": "inferencial", "question": "¿Qué sentimiento queda en el niño al final, cuando el barco se aleja?", "options": ["Alivio", "Tristeza y nostalgia por la niña que se va", "Enojo con el circo", "Miedo al mar"], "answer": 1, "explanation": "Desde la terraza ve perderse el vapor 'que manchaba con su cabellera de humo el cielo sangriento del crepúsculo'."},
+      {"level": "critico", "question": "¿Por qué crees que el autor describe tanto el paisaje del puerto?", "options": ["Para alargar el cuento", "Porque el paisaje acompaña las emociones del niño y le da al recuerdo su tono", "Porque es un texto de geografía", "Para enseñar a navegar"], "answer": 1, "explanation": "En Valdelomar el paisaje de Pisco no es decorado: expresa la ternura y la melancolía del recuerdo."}
+    ]
+  },
+  "ojos-de-judas": {
+    "title": "Los ojos de Judas",
+    "author": "Abraham Valdelomar",
+    "collection": "El Caballero Carmelo y otros cuentos",
+    "region": "costa",
+    "coverColor": "#3D3552",
+    "narrator": "librivox-kendalrigans",
+    "librivox": "https://librivox.org/el-caballero-carmelo-y-otros-cuentos-by-abraham-valdelomar-pinto/",
+    "summary": "En el puerto de Pisco, un niño que recoge conchas en la playa conoce a una misteriosa mujer vestida de blanco. Se acerca la Semana Santa y el pueblo prepara la quema de Judas.",
+    "glossary": [
+      {"word": "Quema de Judas", "meaning": "Costumbre de Semana Santa: se arma un muñeco que representa a Judas, el traidor de Jesús, y se le prende fuego."},
+      {"word": "Muelle", "meaning": "Construcción a la orilla del mar donde atracan los barcos."},
+      {"word": "Yuyos", "meaning": "Algas marinas que el mar deja en la orilla."},
+      {"word": "Sopor", "meaning": "Sueño pesado, adormecimiento."}
+    ],
+    "quiz": [
+      {"level": "literal", "question": "¿Dónde ocurre la historia?", "options": ["En Lima", "En el puerto de Pisco", "En Cusco", "En la selva"], "answer": 1, "explanation": "'El puerto de Pisco aparece en mis recuerdos como una mansísima aldea', dice el inicio."},
+      {"level": "literal", "question": "¿Qué costumbre prepara el pueblo?", "options": ["Una procesión de barcos", "La quema de Judas el sábado por la noche", "Un concurso de pesca", "La fiesta de la cosecha"], "answer": 1, "explanation": "Los marineros y cargadores van a quemar a Judas, 'porque Judas es muy malo'."},
+      {"level": "inferencial", "question": "¿Por qué los ojos del Judas impresionan tanto al niño al final?", "options": ["Porque eran de vidrio bonito", "Porque los asocia a la traición y a la tragedia de la mujer que conoció", "Porque le recordaban a su padre", "Porque brillaban como el sol"], "answer": 1, "explanation": "Los describe 'rojos y sangrientos, acusadores, siniestros': para él cargan la tristeza de lo que vio."},
+      {"level": "critico", "question": "El cuento termina con 'Ocultábase la luna...'. ¿Qué logra ese final?", "options": ["Explica todo lo que pasó", "Deja un final abierto y melancólico, con el silencio de la noche", "Anuncia una continuación", "Cambia de tema"], "answer": 1, "explanation": "El final no explica: cierra con una imagen que deja al lector con el misterio y la pena."}
+    ]
+  },
+  "hebaristo": {
+    "title": "Hebaristo, el sauce que murió de amor",
+    "author": "Abraham Valdelomar",
+    "collection": "El Caballero Carmelo y otros cuentos",
+    "region": "costa",
+    "coverColor": "#3E5B3A",
+    "narrator": "librivox-kendalrigans",
+    "librivox": "https://librivox.org/el-caballero-carmelo-y-otros-cuentos-by-abraham-valdelomar-pinto/",
+    "summary": "En un pueblo de la costa viven dos solitarios con vidas paralelas: un sauce llamado Hebaristo y el boticario Evaristo Mazuelos, que pasó su vida esperando el amor de la hija del juez.",
+    "glossary": [
+      {"word": "Sauce", "meaning": "Árbol de ramas largas que crece junto al agua."},
+      {"word": "Boticario", "meaning": "Persona que prepara y vende medicinas; hoy diríamos farmacéutico."},
+      {"word": "Acequia", "meaning": "Canal pequeño por donde corre el agua para regar."},
+      {"word": "Ripio", "meaning": "Palabra que se pone en un verso solo para completar la rima o la medida."}
+    ],
+    "quiz": [
+      {"level": "literal", "question": "¿Quiénes son los dos personajes cuyas vidas se parecen?", "options": ["Un sauce llamado Hebaristo y el boticario Evaristo Mazuelos", "Dos hermanos pescadores", "El alcalde y el juez", "Dos gallos de pelea"], "answer": 0, "explanation": "El cuento compara al sauce con el boticario: los dos son huérfanos, solitarios y esperan el amor."},
+      {"level": "literal", "question": "¿A quién amó en silencio el boticario?", "options": ["A la hija del juez", "A la esposa del alcalde", "A una actriz de circo", "A su prima"], "answer": 0, "explanation": "'La hija del juez había sido el único amor del farmacéutico'."},
+      {"level": "inferencial", "question": "En el final, el alcalde quiere dejar 'duro roble' en su discurso aunque el ataúd era de sauce. ¿Qué muestra eso?", "options": ["Que sabía mucho de maderas", "Que le importaba más lucirse con su discurso que la verdad", "Que el sauce y el roble son iguales", "Que estaba muy triste"], "answer": 1, "explanation": "Prefiere no 'perder' una frase que le quedó bien: es una crítica irónica a la vanidad de los notables del pueblo."},
+      {"level": "critico", "question": "¿Por qué el autor le da a un árbol sentimientos humanos?", "options": ["Por error", "Para que el lector sienta la soledad y la espera desde otro ángulo, y la historia del sauce ilumine la del boticario", "Porque es un cuento infantil", "Para enseñar botánica"], "answer": 1, "explanation": "La personificación crea un paralelo poético entre el árbol y el hombre."}
+    ]
+  },
+  "amor-de-madre": {
+    "title": "Amor de madre",
+    "author": "Ricardo Palma",
+    "collection": "Tradiciones peruanas",
+    "region": "costa",
+    "coverColor": "#6B2D3A",
+    "narrator": "librivox-mario-pineda",
+    "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+    "summary": "Lima, a fines del siglo XVII. Evangelina Zamora, joven y rica, se casa con un capitán que esconde la pasión por el juego. Cuando él comete un crimen, ella hará un sacrificio que solo revelará a sus hijos al morir.",
+    "glossary": [
+      {"word": "Virrey", "meaning": "Autoridad que gobernaba el Perú en nombre del rey de España."},
+      {"word": "Brazo de plata", "meaning": "Apodo del virrey conde de la Monclova, que perdió un brazo en batalla y usaba uno de plata."},
+      {"word": "Desquite", "meaning": "Intento de recuperar lo perdido en el juego volviendo a apostar."},
+      {"word": "Cadalso", "meaning": "Tablado donde se ejecutaba a los condenados."}
+    ],
+    "quiz": [
+      {"level": "literal", "question": "¿Qué vicio arruina a don Fernando, el esposo de Evangelina?", "options": ["La bebida", "El juego", "La pereza", "La envidia"], "answer": 1, "explanation": "'La pasión del juego estaba solo adormecida en el alma del capitán' y lo lleva a perder la hacienda de su familia."},
+      {"level": "literal", "question": "¿Qué objeto de Evangelina apuesta Fernando?", "options": ["Su collar", "Su anillo", "Su casa", "Su caballo"], "answer": 1, "explanation": "Sin nada más que jugar, 'se acordó del espléndido anillo de su esposa'."},
+      {"level": "inferencial", "question": "¿Por qué Evangelina sacrifica su honra ante la sociedad?", "options": ["Por venganza contra su marido", "Para que sus hijos no fueran llamados 'los hijos del ajusticiado'", "Para casarse con el virrey", "Por dinero"], "answer": 1, "explanation": "Lo dice al morir: perdió su honra 'porque no os llamasen un día los hijos del ajusticiado'."},
+      {"level": "critico", "question": "Palma llama a esta tradición 'Amor de madre'. ¿Estás de acuerdo con que ese sea el centro de la historia? ¿Por qué?", "options": ["No, el centro es el juego", "Sí: la decisión de Evangelina se explica por proteger el futuro de sus hijos, aun a costa de su nombre", "No, el centro es el virrey", "No tiene un centro"], "answer": 1, "explanation": "El título orienta la lectura: el sacrificio de la madre es lo que da sentido al relato."}
+    ]
+  },
+  "a-la-carcel-todo-cristo": {
+    "title": "¡A la cárcel todo Cristo!",
+    "author": "Ricardo Palma",
+    "collection": "Tradiciones peruanas",
+    "region": "costa",
+    "coverColor": "#33424F",
+    "narrator": "librivox-mario-pineda",
+    "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+    "summary": "Ambrosio O'Higgins llegó a Lima como un humilde vendedor ambulante irlandés y volvió como virrey. Para acabar con el desorden nocturno, dio una orden tajante… que terminó alcanzándolo a él mismo.",
+    "glossary": [
+      {"word": "Buhonero o mercachifle", "meaning": "Vendedor ambulante de cosas pequeñas: cintas, agujas, dedales."},
+      {"word": "Encapados", "meaning": "Agentes que vigilaban de noche las calles de Lima, como una policía de la época."},
+      {"word": "Marqués de Osorno", "meaning": "Título que el rey dio a O'Higgins por recuperar la ciudad de Osorno, en Chile."},
+      {"word": "Calabozo", "meaning": "Celda de una cárcel."}
+    ],
+    "quiz": [
+      {"level": "literal", "question": "¿A qué se dedicaba Ambrosio O'Higgins cuando llegó a Lima?", "options": ["Era soldado", "Era vendedor ambulante (buhonero)", "Era médico", "Era sacerdote"], "answer": 1, "explanation": "Recorría las calles de Lima como 'buhonero o mercachifle', vendiendo cintas, agujas y dedales."},
+      {"level": "literal", "question": "¿Qué cargo llegó a tener en el Perú?", "options": ["Alcalde de Lima", "Virrey del Perú", "Obispo", "Capitán de barco"], "answer": 1, "explanation": "Tras su carrera en Chile fue nombrado marqués de Osorno y luego virrey del Perú."},
+      {"level": "inferencial", "question": "¿Qué ironía hay en el título y el final de la tradición?", "options": ["Que nadie obedeció la orden", "Que el propio virrey terminó pasando la noche en el calabozo por la orden que él dio", "Que la cárcel estaba vacía", "Que los encapados eran ladrones"], "answer": 1, "explanation": "Pasó la noche en la cárcel de la Pescadería 'como cualquier pelagatos'."},
+      {"level": "critico", "question": "¿Qué piensas de un gobernante que acepta cumplir su propia ley?", "options": ["Que es débil", "Que da ejemplo: la ley vale para todos, también para quien la dicta", "Que debió castigar a los encapados", "Que la ley no importa"], "answer": 1, "explanation": "La tradición muestra con humor la idea de igualdad ante la ley."}
+    ]
+  },
+  "paco-yunque": {
+    "title": "Paco Yunque",
+    "author": "César Vallejo",
+    "collection": "Cuentos",
+    "region": "sierra",
+    "coverColor": "#4A4038",
+    "narrator": null,
+    "summary": "Es el primer día de colegio de Paco Yunque. Pero en el aula también está Humberto Grieve, hijo del patrón de su madre, que lo trata como su sirviente. Un cuento sobre la injusticia que empieza en la escuela.",
+    "glossary": [
+      {"word": "Patrón", "meaning": "Dueño o jefe para quien trabaja alguien. La madre de Paco trabaja para la familia Grieve."},
+      {"word": "Desenvuelto", "meaning": "Que actúa con soltura y confianza."},
+      {"word": "Abuso", "meaning": "Usar el poder o la ventaja para dañar o humillar a otro."}
+    ],
+    "quiz": [
+      {"level": "literal", "question": "¿Por qué Humberto Grieve trata a Paco como si fuera suyo?", "options": ["Porque son primos", "Porque la madre de Paco trabaja para la familia de Humberto", "Porque Paco le debe dinero", "Porque el profesor lo ordenó"], "answer": 1, "explanation": "Humberto es hijo del patrón: por eso cree que Paco debe obedecerle también en el colegio."},
+      {"level": "literal", "question": "¿Qué compañero defiende a Paco?", "options": ["Fariña", "Grieve", "El director", "Nadie"], "answer": 0, "explanation": "Paco Fariña enfrenta a Humberto y dice que Paco Yunque puede jugar con quien quiera."},
+      {"level": "inferencial", "question": "¿Por qué Paco llora al final?", "options": ["Porque perdió su lápiz", "Porque Humberto presentó como suyo el trabajo de Paco y el profesor lo premió", "Porque extrañaba a su madre", "Porque se cayó en el patio"], "answer": 1, "explanation": "Grieve se apropia de la hoja de Paco y recibe el elogio; Paco no puede reclamar."},
+      {"level": "critico", "question": "¿Qué crítica social hace Vallejo a través de la escuela?", "options": ["Que los niños no deben estudiar", "Que la desigualdad de la sociedad se reproduce en el aula, incluso con la complicidad de los adultos", "Que los profesores son siempre justos", "Ninguna, es solo un cuento"], "answer": 1, "explanation": "El profesor favorece a Grieve: el cuento muestra cómo el poder económico pesa también en la escuela."}
+    ]
+  }
+}
