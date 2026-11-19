@@ -171,6 +171,47 @@
         821.468,
         834.778
       ]
+    },
+    {
+      "lang": "ay",
+      "narratorId": "voz-mms-ay",
+      "voiceSource": "sintetica",
+      "url": "site:a-la-carcel-todo-cristo.ay.mp3",
+      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 817.18,
+      "paragraphStartsSec": [
+        0.0,
+        21.966,
+        74.154,
+        107.128,
+        158.08,
+        187.11,
+        235.554,
+        265.372,
+        280.65,
+        319.204,
+        334.128,
+        366.666,
+        409.99,
+        435.022,
+        479.394,
+        538.884,
+        555.07,
+        571.274,
+        584.214,
+        619.486,
+        662.342,
+        690.37,
+        705.404,
+        723.188,
+        735.472,
+        739.964,
+        743.624,
+        752.546,
+        755.152,
+        767.414,
+        787.938
+      ]
     }
   ],
   "glossary": [
