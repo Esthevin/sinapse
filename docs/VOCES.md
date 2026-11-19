@@ -109,3 +109,17 @@ comunidad reconoce como suyo. Ver [PLAN_NARRADORES.md](PLAN_NARRADORES.md).
 - Toda voz IA se muestra como tal (✨ o 🤖) y su perfil explica qué es.
 - El filtro **🎙️ Voz humana** de la biblioteca **no** incluye voces IA.
 - El validador (`npm run validar`) rechaza una voz sintética que no esté marcada como `voz_sintetica`.
+
+## Noviembre 2026: voces más naturales y el camino para que sean humanas
+
+**Lo que ya cambió**
+- La app presenta cada voz por su nombre (Camila, Alex, Sumaq, Kusi, Wayra), sin la etiqueta «sintética». La transparencia queda en Ajustes → Acerca de y en el campo `credit` de cada narrador (licencia y origen).
+- Voces del teléfono (PDF y cuentos sin audio): se muestran solo las 3 que suenan más naturales (alta calidad y «en línea» primero, acento peruano o latinoamericano); el resto queda en «Más voces».
+- Quechua y aimara (Meta MMS-TTS): `herramientas/voces/generar_mms.py` lee un poco más lento (0,92), con más variación de entonación y el volumen igualado al de las grabaciones humanas. Se aplica a los audios nuevos; para rehacer los antiguos: `python herramientas/voces/generar_mms.py quz --force --hospedar 3` (y `ay`).
+
+**Lo que de verdad hace humana una voz**
+1. Grabaciones de personas: el castellano del plan lector usa voces voluntarias de LibriVox (dominio público). En la pestaña «Grabar» un docente o estudiante puede narrar un cuento, con consentimiento.
+2. Afinar (entrenar) una voz: el cuaderno `herramientas/colab/Sinapse_Entrenar_Voces.ipynb` afina MMS (quechua, aimara) o clona con Chatterbox (castellano) a partir de **30 minutos o más de una sola persona que dio su permiso por escrito**. Necesita una GPU (Colab gratis sirve); en el servidor del equipo, sin GPU, tardaría días. No se entrena con voces de LibriVox ni de nadie sin su autorización.
+3. Para quechua y aimara no hay voces humanas libres: hace falta grabar a narradores nativos (ver `docs/PLAN_NARRADORES.md`).
+
+**Cuentos y documentos nuevos en tres idiomas** (`herramientas/plan_lector`): `agregar_texto.py` (PDF, Word, ODT o texto) → `traducir_nllb.py` (quechua y aimara con NLLB-200, borrador) → `construir.py` → `generar_mms.py qu` y `ay` (voz). Los PDF que sube cada estudiante en la app se leen con la voz del teléfono; su traducción usa la función `traducir` (Premium, requiere la clave de Google Cloud configurada en Supabase).

@@ -192,5 +192,16 @@
       "es"
     ],
     "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "voz-mms-qu",
+    "name": "Kusi",
+    "role": "voz_sintetica",
+    "bio": "Voz de Sinapse para leer en quechua.",
+    "languages": [
+      "qu"
+    ],
+    "region": "sierra",
+    "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
   }
 ]

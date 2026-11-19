@@ -19,12 +19,10 @@ MAPA = ROOT / "src" / "content" / "imagenes-mapa.ts"
 
 # imagen -> historias o novelas que la usan
 ASIGNACION = {
-    "palma": ["polvos-de-la-condesa", "duendes-del-cuzco", "alma-de-fray-venancio", "amor-de-madre"],
-    "palma-biblioteca": ["justicia-mayor-laycacota", "oficiosidad-no-agradecida", "alacran-fray-gomez", "a-la-carcel-todo-cristo"],
-    "valdelomar": ["el-caballero-carmelo", "caballero-carmelo"],
-    "valdelomar-joven": ["vuelo-de-los-condores"],
-    "valdelomar-barranco": ["ojos-de-judas"],
-    "valdelomar-roma": ["hebaristo"],
+    "palma": ["polvos-de-la-condesa", "duendes-del-cuzco", "alma-de-fray-venancio", "amor-de-madre",
+              "justicia-mayor-laycacota", "oficiosidad-no-agradecida", "alacran-fray-gomez", "a-la-carcel-todo-cristo"],
+    "valdelomar": ["el-caballero-carmelo", "caballero-carmelo", "hebaristo"],
+    "valdelomar-joven": ["vuelo-de-los-condores", "ojos-de-judas"],
     "vallejo": ["paco-yunque"],
     "quiroga": ["tortuga-gigante", "loro-pelado"],
     "quiroga-1897": ["medias-de-los-flamencos", "gama-ciega"],
