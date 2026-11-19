@@ -28,6 +28,12 @@ import hebaristoObra from './historias/hebaristo.json';
 import amorDeMadreObra from './historias/amor-de-madre.json';
 import aLaCarcelTodoCristoObra from './historias/a-la-carcel-todo-cristo.json';
 import pacoYunqueObra from './historias/paco-yunque.json';
+import racimoDeHorcaObra from './historias/racimo-de-horca.json';
+import lucasElSacrilegoObra from './historias/lucas-el-sacrilego.json';
+import elResucitadoObra from './historias/el-resucitado.json';
+import nadieSeMuereObra from './historias/nadie-se-muere.json';
+import aNadarPecesObra from './historias/a-nadar-peces.json';
+import conversionDeUnLibertinoObra from './historias/conversion-de-un-libertino.json';
 
 /**
  * Catálogo incluido en la app (funciona sin internet).
@@ -43,6 +49,12 @@ export const STORIES: Story[] = [
   amorDeMadreObra,
   aLaCarcelTodoCristoObra,
   pacoYunqueObra,
+  racimoDeHorcaObra,
+  lucasElSacrilegoObra,
+  elResucitadoObra,
+  nadieSeMuereObra,
+  aNadarPecesObra,
+  conversionDeUnLibertinoObra,
   // Con voz humana (grabaciones de dominio público de LibriVox) y texto original
   tortugaGigante,
   loroPelado,

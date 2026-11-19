@@ -2,7 +2,9 @@
   "id": "hebaristo",
   "revision": 1,
   "title": {
-    "es": "Hebaristo, el sauce que murió de amor"
+    "es": "Hebaristo, el sauce que murió de amor",
+    "qu": "Hebaristo, munakuymanta wañusqa salsa",
+    "ay": "Hebaristo, munasiña layku jiwki uka sauce"
   },
   "author": "Abraham Valdelomar",
   "source": "Texto original de Abraham Valdelomar, de dominio público, según Wikisource en español. Grabación de dominio público de LibriVox.",
@@ -15,7 +17,9 @@
   ],
   "coverColor": "#3E5B3A",
   "summary": {
-    "es": "En un pueblo de la costa viven dos solitarios con vidas paralelas: un sauce llamado Hebaristo y el boticario Evaristo Mazuelos, que pasó su vida esperando el amor de la hija del juez."
+    "es": "En un pueblo de la costa viven dos solitarios con vidas paralelas: un sauce llamado Hebaristo y el boticario Evaristo Mazuelos, que pasó su vida esperando el amor de la hija del juez.",
+    "qu": "Huk qucha llaqtapi iskay sapallan runakuna kawsanku, paykunaqa iskaylla kawsakunku: Hebaristo sutiyoq salsa, Evaristo Mazuelos sutiyoq farmacian, payqa juezpa churinpa munayninta suyaspa kawsarqan.",
+    "ay": "Mä quta thiyankir markana, pä sapakiw jakapxi, jupanakax payar uñtasit jakapxiwa: Hebaristo sat mä salsa, Evaristo Mazuelos sat mä boterista, jupax juez ukan phuchhapan munasiñap suyt'asisaw jakasiwayi."
   },
   "paragraphs": {
     "es": [
@@ -180,51 +184,67 @@
   "quiz": [
     {
       "level": "literal",
-      "question": "¿Quiénes son los dos personajes cuyas vidas se parecen?",
+      "question": "¿Qué tienen en común el sauce Hebaristo y el boticario Evaristo Mazuelos?",
       "options": [
-        "Un sauce llamado Hebaristo y el boticario Evaristo Mazuelos",
-        "Dos hermanos pescadores",
-        "El alcalde y el juez",
-        "Dos gallos de pelea"
+        "Los dos nacieron en Lima",
+        "Los dos son huérfanos, solitarios y pasan la vida esperando un amor",
+        "Los dos son ricos",
+        "Los dos fueron soldados"
       ],
-      "answer": 0,
-      "explanation": "El cuento compara al sauce con el boticario: los dos son huérfanos, solitarios y esperan el amor."
-    },
-    {
-      "level": "literal",
-      "question": "¿A quién amó en silencio el boticario?",
-      "options": [
-        "A la hija del juez",
-        "A la esposa del alcalde",
-        "A una actriz de circo",
-        "A su prima"
-      ],
-      "answer": 0,
-      "explanation": "'La hija del juez había sido el único amor del farmacéutico'."
+      "answer": 1,
+      "explanation": "El cuento construye vidas paralelas: igual nombre, igual soledad, igual espera."
     },
     {
       "level": "inferencial",
-      "question": "En el final, el alcalde quiere dejar 'duro roble' en su discurso aunque el ataúd era de sauce. ¿Qué muestra eso?",
+      "question": "El narrador analiza con humor los defectos de los versos de Mazuelos ('ripio sentimental'). ¿Qué efecto tiene ese comentario?",
       "options": [
-        "Que sabía mucho de maderas",
-        "Que le importaba más lucirse con su discurso que la verdad",
-        "Que el sauce y el roble son iguales",
-        "Que estaba muy triste"
+        "Hace que admiremos su poesía",
+        "Mezcla ternura e ironía: nos burlamos un poco del personaje, pero también nos da pena su espera",
+        "Muestra que Mazuelos era un gran poeta",
+        "No tiene ningún efecto"
       ],
       "answer": 1,
-      "explanation": "Prefiere no 'perder' una frase que le quedó bien: es una crítica irónica a la vanidad de los notables del pueblo."
+      "explanation": "Valdelomar combina humor y melancolía: el ripio 'que la están esperando' resume su vida entera."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Qué ironía hay en que el ataúd del boticario se haga con la madera del sauce?",
+      "options": [
+        "Ninguna, es casualidad",
+        "Los dos solitarios terminan juntos: el árbol 'acompaña' al hombre cuya vida se parecía a la suya",
+        "Que el sauce era muy caro",
+        "Que el alcalde lo ordenó por odio"
+      ],
+      "answer": 1,
+      "explanation": "El paralelo se cierra en el final: árbol y hombre comparten el destino."
     },
     {
       "level": "critico",
-      "question": "¿Por qué el autor le da a un árbol sentimientos humanos?",
+      "question": "El alcalde no quiere cambiar 'duro roble' por 'sauce' en su discurso. ¿Qué critica el autor con esa escena?",
       "options": [
-        "Por error",
-        "Para que el lector sienta la soledad y la espera desde otro ángulo, y la historia del sauce ilumine la del boticario",
-        "Porque es un cuento infantil",
-        "Para enseñar botánica"
+        "La pobreza del pueblo",
+        "La vanidad y la hipocresía de los notables: importa lucirse, no la verdad ni el muerto",
+        "La falta de árboles",
+        "El trabajo de los carpinteros"
       ],
       "answer": 1,
-      "explanation": "La personificación crea un paralelo poético entre el árbol y el hombre."
+      "explanation": "Prefiere no perder una frase bonita aunque sea falsa: es una sátira de la retórica vacía."
+    },
+    {
+      "level": "critico",
+      "question": "¿Por qué el autor da a un árbol nombre y sentimientos humanos?",
+      "options": [
+        "Porque es un cuento para niños",
+        "La personificación permite contar la soledad desde otro ángulo y hace que la historia del hombre se vea con más claridad",
+        "Para enseñar botánica",
+        "Por error"
+      ],
+      "answer": 1,
+      "explanation": "El sauce funciona como espejo poético del boticario."
     }
+  ],
+  "reflexion": [
+    "Mazuelos pasó veinte años 'esperando'. ¿Esperar es una virtud o puede ser una forma de no vivir? Da tu opinión con un ejemplo.",
+    "El alcalde prefiere una frase bonita a la verdad. ¿Dónde ves hoy discursos así (en la política, en redes sociales, en la publicidad)?"
   ]
 }

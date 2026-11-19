@@ -26,6 +26,7 @@ def duracion(ruta):
 
 def main():
     obras = json.loads((AQUI / "obras.json").read_text(encoding="utf-8"))
+    cuest = json.loads((AQUI / "cuestionarios.json").read_text(encoding="utf-8")) if (AQUI / "cuestionarios.json").exists() else {}
     for id_, o in obras.items():
         t = AQUI / "textos"
         es = json.loads((t / f"{id_}.es.json").read_text(encoding="utf-8"))
@@ -69,7 +70,8 @@ def main():
             **({"borrador": borrador} if borrador else {}),
             "audio": audio,
             "glossary": o["glossary"],
-            "quiz": o["quiz"],
+            "quiz": cuest.get(id_, {}).get("quiz", o["quiz"]),
+            **({"reflexion": cuest[id_]["reflexion"]} if cuest.get(id_, {}).get("reflexion") else {}),
         }
         destino.write_text(json.dumps(s, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"{id_}: {len(es)} párrafos · traducciones {borrador or 'ninguna'} · audios {[a['lang'] for a in audio]}")

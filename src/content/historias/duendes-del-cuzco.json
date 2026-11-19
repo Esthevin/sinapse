@@ -348,67 +348,72 @@
   "quiz": [
     {
       "level": "literal",
-      "question": "¿Qué prohibió el almirante a los vecinos?",
+      "question": "¿Qué hizo el sacerdote después de ser golpeado por orden del almirante?",
       "options": [
-        "Pasar por su calle",
-        "Sacar agua de la fuente de su casa",
-        "Ir a la Catedral",
-        "Hablar con el virrey"
+        "Lo denunció ante el virrey",
+        "Dejó un memorial ante la imagen de Cristo en la catedral pidiendo 'la justicia de Dios'",
+        "Se vengó con sus propias manos",
+        "Se fue del Cusco"
       ],
       "answer": 1,
-      "explanation": "Ordenó apalear a quien entrara a sacar agua de la fuente de su patio."
-    },
-    {
-      "level": "literal",
-      "question": "¿Qué hizo el sacerdote después de ser golpeado?",
-      "options": [
-        "Se fue del Cusco",
-        "Denunció al almirante ante el virrey",
-        "Dejó un memorial pidiendo justicia ante la imagen de Cristo en la Catedral",
-        "Se vengó con sus propias manos"
-      ],
-      "answer": 2,
-      "explanation": "Pidió “la justicia de Dios, persuadido que no había de lograrla de los hombres”."
+      "explanation": "Pidió justicia divina, 'persuadido que no había de lograrla de los hombres'."
     },
     {
       "level": "inferencial",
-      "question": "Según el texto, ¿por qué las autoridades no castigaron al almirante?",
+      "question": "¿Por qué el sacerdote no confiaba en la justicia de los hombres?",
       "options": [
-        "Porque no hubo testigos",
-        "Porque era muy poderoso y no se atrevían",
-        "Porque el sacerdote lo perdonó",
-        "Porque el almirante se fue a España"
+        "Porque no conocía las leyes",
+        "Porque el almirante era tan poderoso que las autoridades no se atrevían contra él",
+        "Porque era extranjero",
+        "Porque el juez era su enemigo"
       ],
       "answer": 1,
-      "explanation": "Dice que las autoridades “no se atrevían a declararse abiertamente contra el magnate”."
+      "explanation": "El texto dice que las autoridades no se atrevían a declararse contra el magnate."
     },
     {
       "level": "inferencial",
-      "question": "¿Por qué la justicia cerró el caso de la muerte del almirante?",
+      "question": "¿Por qué se archivó el caso de la muerte del almirante?",
       "options": [
-        "Porque encontraron al culpable",
-        "Porque los testigos culparon a los duendes y no se podía juzgar a duendes",
-        "Porque el virrey lo ordenó desde el principio",
-        "Porque el almirante seguía vivo"
+        "Porque se encontró al culpable",
+        "Porque los testigos dijeron haber visto duendes, y 'no pudiendo proceder contra los duendes', no hubo juicio",
+        "Porque el almirante seguía vivo",
+        "Porque el virrey lo ordenó sin razón"
       ],
       "answer": 1,
-      "explanation": "Dos vecinas dijeron haber visto duendes; “no pudiendo proceder contra los duendes”, se archivó."
+      "explanation": "La explicación sobrenatural permite cerrar un caso incómodo."
     },
     {
       "level": "critico",
-      "question": "El virrey dice que el mundo andaría mejor si los duendes hicieran justicia. ¿Qué opinas?",
+      "question": "Palma deja entrever que la muerte del almirante pudo ser obra de personas reales. ¿Qué efecto tiene esa ambigüedad?",
       "options": [
-        "Tiene razón: hay que castigar por mano propia",
-        "Es una idea peligrosa: la justicia debe ser igual para todos y por medios legales",
-        "Los duendes existen y son buenos jueces",
-        "No importa quién haga justicia"
+        "Ninguno",
+        "Hace pensar en una justicia popular que se disfraza de leyenda cuando las instituciones fallan",
+        "Prueba que los duendes existen",
+        "Muestra que el almirante era inocente"
       ],
       "answer": 1,
-      "explanation": "El relato critica que los poderosos queden impunes, pero la respuesta no es la venganza sino una justicia que funcione para todos."
+      "explanation": "La leyenda puede ocultar una venganza que nadie quiere investigar."
+    },
+    {
+      "level": "critico",
+      "question": "El virrey poeta dice que el mundo andaría mejor si los duendes hicieran justicia. ¿Estás de acuerdo?",
+      "options": [
+        "Sí, la venganza es justa",
+        "Es una idea peligrosa: denuncia la impunidad de los poderosos, pero la respuesta debe ser una justicia igual para todos, no la venganza",
+        "No importa",
+        "Sí, porque los duendes no se equivocan"
+      ],
+      "answer": 1,
+      "explanation": "El relato critica la impunidad, pero abre el debate sobre los límites de la justicia por mano propia."
     }
   ],
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "reflexion": [
+    "¿Por qué crees que las comunidades inventan explicaciones sobrenaturales para hechos que no pueden o no quieren investigar?",
+    "¿Existe hoy la impunidad de los poderosos? ¿Qué caminos legales tiene un ciudadano para pedir justicia?"
+  ],
+  "revision": 2
 }

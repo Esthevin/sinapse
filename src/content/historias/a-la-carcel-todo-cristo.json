@@ -2,7 +2,9 @@
   "id": "a-la-carcel-todo-cristo",
   "revision": 1,
   "title": {
-    "es": "¡A la cárcel todo Cristo!"
+    "es": "¡A la cárcel todo Cristo!",
+    "qu": "¡Jach'a carcelman tukuy Cristo!",
+    "ay": "¡Jach'achatäpan!"
   },
   "author": "Ricardo Palma",
   "source": "Texto original de Ricardo Palma, de dominio público, según Wikisource en español. Grabación de dominio público de LibriVox.",
@@ -15,7 +17,9 @@
   ],
   "coverColor": "#33424F",
   "summary": {
-    "es": "Ambrosio O'Higgins llegó a Lima como un humilde vendedor ambulante irlandés y volvió como virrey. Para acabar con el desorden nocturno, dio una orden tajante… que terminó alcanzándolo a él mismo."
+    "es": "Ambrosio O'Higgins llegó a Lima como un humilde vendedor ambulante irlandés y volvió como virrey. Para acabar con el desorden nocturno, dio una orden tajante… que terminó alcanzándolo a él mismo.",
+    "qu": "Ambrosio O'Higginsqa Lima llaqtaman chayarqan llumpay llamp'u irlandés vendedor, chaymi kutimurqan Viceroy. Chaypi, chay tutapi mana allin kajta chinkachinanpaj, payqa atiyniyoj kamachiyta churarqa, chay kamachiyqa, pay kikinman tukorqa.",
+    "ay": "Ambrosio O'Higgins jupax Lima markaruw purïna mä jisk'a irlandiar aljiriwa, ukat jupax virgen reyïkaspas ukhamaw kutt'anïna. Arumankir jan walt'añanak tukjañatakiw mä jach'a kamachi apäna, uka kamachisti jupa pachparuw purïna."
   },
   "paragraphs": {
     "es": [
@@ -235,51 +239,67 @@
   "quiz": [
     {
       "level": "literal",
-      "question": "¿A qué se dedicaba Ambrosio O'Higgins cuando llegó a Lima?",
+      "question": "¿Cuál fue la trayectoria de Ambrosio O'Higgins?",
       "options": [
-        "Era soldado",
-        "Era vendedor ambulante (buhonero)",
-        "Era médico",
-        "Era sacerdote"
+        "Nació noble en Lima y fue siempre militar",
+        "De buhonero irlandés en Lima pasó a ingeniero en Chile, marqués de Osorno y virrey del Perú",
+        "Fue un obispo que llegó a virrey",
+        "Fue un pirata indultado"
       ],
       "answer": 1,
-      "explanation": "Recorría las calles de Lima como 'buhonero o mercachifle', vendiendo cintas, agujas y dedales."
-    },
-    {
-      "level": "literal",
-      "question": "¿Qué cargo llegó a tener en el Perú?",
-      "options": [
-        "Alcalde de Lima",
-        "Virrey del Perú",
-        "Obispo",
-        "Capitán de barco"
-      ],
-      "answer": 1,
-      "explanation": "Tras su carrera en Chile fue nombrado marqués de Osorno y luego virrey del Perú."
+      "explanation": "Palma subraya el contraste entre su origen humilde y el cargo más alto del virreinato."
     },
     {
       "level": "inferencial",
-      "question": "¿Qué ironía hay en el título y el final de la tradición?",
+      "question": "¿Por qué el virrey ordena llevar a la cárcel a cualquiera que ande por la calle de noche?",
       "options": [
-        "Que nadie obedeció la orden",
-        "Que el propio virrey terminó pasando la noche en el calabozo por la orden que él dio",
-        "Que la cárcel estaba vacía",
-        "Que los encapados eran ladrones"
+        "Para cobrar multas",
+        "Para acabar con los desórdenes nocturnos de Lima, que las autoridades no lograban controlar",
+        "Porque odiaba a los limeños",
+        "Para llenar el ejército"
       ],
       "answer": 1,
-      "explanation": "Pasó la noche en la cárcel de la Pescadería 'como cualquier pelagatos'."
+      "explanation": "Los encapados no podían extirpar el mal, y él dio una orden tajante."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Qué ironía cierra la tradición?",
+      "options": [
+        "Que nadie obedeció la orden",
+        "Que el propio virrey, saliendo de noche embozado, termina en el calabozo por la orden que él mismo dio",
+        "Que los encapados eran ladrones",
+        "Que la cárcel estaba vacía"
+      ],
+      "answer": 1,
+      "explanation": "Pasa la noche en la cárcel de la Pescadería 'como cualquier pelagatos'."
     },
     {
       "level": "critico",
-      "question": "¿Qué piensas de un gobernante que acepta cumplir su propia ley?",
+      "question": "¿Qué idea sobre la ley y el poder deja la anécdota?",
       "options": [
-        "Que es débil",
-        "Que da ejemplo: la ley vale para todos, también para quien la dicta",
-        "Que debió castigar a los encapados",
-        "Que la ley no importa"
+        "Que los gobernantes deben estar por encima de la ley",
+        "Que una ley justa vale para todos, también para quien la dicta",
+        "Que las leyes nocturnas no sirven",
+        "Que el pueblo no debe obedecer"
       ],
       "answer": 1,
-      "explanation": "La tradición muestra con humor la idea de igualdad ante la ley."
+      "explanation": "Con humor, la tradición muestra la igualdad ante la ley."
+    },
+    {
+      "level": "critico",
+      "question": "Palma mezcla datos históricos (fechas, censos, obras públicas) con una anécdota graciosa. ¿Para qué sirve esa mezcla?",
+      "options": [
+        "Para confundir al lector",
+        "Para que la historia del Perú se lea con gusto: la anécdota atrapa y los datos dan contexto",
+        "Porque no sabía escribir novelas",
+        "Para llenar páginas"
+      ],
+      "answer": 1,
+      "explanation": "Es el método de las Tradiciones: historia y ficción se dan la mano."
     }
+  ],
+  "reflexion": [
+    "Una orden dura puede resolver un problema y, a la vez, afectar a inocentes. ¿Conoces normas actuales con ese dilema (toques de queda, controles)? ¿Qué piensas?",
+    "O'Higgins pasó de vendedor ambulante a virrey. ¿Qué dice esa historia sobre las oportunidades en la Colonia y hoy?"
   ]
 }

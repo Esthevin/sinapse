@@ -203,5 +203,25 @@
     ],
     "region": "sierra",
     "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
+  },
+  {
+    "id": "librivox-yoyo",
+    "name": "Yoyo",
+    "bio": "Voz voluntaria de LibriVox que leyó «Tradiciones peruanas» de Ricardo Palma.",
+    "role": "voluntario",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-joseasaez",
+    "name": "José Adrián Sáez Peñalver",
+    "bio": "Voz voluntaria de LibriVox que leyó «Tradiciones peruanas» de Ricardo Palma.",
+    "role": "voluntario",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
   }
 ]
