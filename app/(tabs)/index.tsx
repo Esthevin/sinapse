@@ -62,7 +62,7 @@ export default function LibraryScreen() {
       if (onlyDownloaded && !s.audio.some((a) => downloadedUrls.has(a.url))) return false;
       if (q && !normalize(`${s.title.es} ${s.author} ${s.collection ?? ''} ${s.summary.es}`).includes(q)) return false;
       return true;
-    });
+    }).sort((a, b) => (student ? 0 : Number(isSecundaria(a)) - Number(isSecundaria(b)))); // niños: primero sus cuentos
   }, [query, region, onlyHuman, onlyDownloaded, downloadedUrls, recordings, catalogVersion, student, vista]);
 
   const novels = useMemo(() => {
