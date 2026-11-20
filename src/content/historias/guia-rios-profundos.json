@@ -2,7 +2,9 @@
   "id": "guia-rios-profundos",
   "revision": 4,
   "title": {
-    "es": "Guía de lectura: Los ríos profundos"
+    "es": "Guía de lectura: Los ríos profundos",
+    "qu": "Qelqakunata ñawiriy: Ch'iñi mayukuna",
+    "ay": "Qillqatanak ullart'añataki: Jach'a jawiranaka"
   },
   "author": "José María Arguedas (guía de Sinapse)",
   "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor.",
@@ -15,7 +17,9 @@
   ],
   "coverColor": "#2F4A5A",
   "summary": {
-    "es": "Guía para leer la novela más conocida de Arguedas (1958): Ernesto, un adolescente que creció entre indígenas, vive internado en un colegio religioso de Abancay. Un zumbayllu, un motín de chicheras y una peste. Contexto, personajes y preguntas."
+    "es": "Guía para leer la novela más conocida de Arguedas (1958): Ernesto, un adolescente que creció entre indígenas, vive internado en un colegio religioso de Abancay. Un zumbayllu, un motín de chicheras y una peste. Contexto, personajes y preguntas.",
+    "qu": "Arguedas nisqan willakuyta ñawiriypaq yuyaychay (1958): Ernesto, huk wayna runa, ayllu ayllukunapi wiñarqan, Abancay llaqtapi huk escuela religiosopi internado kaspa. Chaypiqa huk q'illu, huk q'illu, huk p'unchaypas. Qhapaq qillqasqan, personajkuna, tapuykuna.",
+    "ay": "Arguedas jaqin wali uñt'at qillqatanakap ullart'añataki uñakipirjama (1958): Ernesto, mä waynaw indígena jaqinak taypin jiltawayxi, Abancay markan mä escuela religiosa ukan internado jakaskaraki. Mä ch'axwaña, mä ch'axwaña, mä jach'a usu. Kunaymana, kunaymana, jiskt'anaka."
   },
   "paragraphs": {
     "es": [
@@ -29,9 +33,58 @@
       "Temas: el choque entre dos mundos, el andino y el criollo, que Ernesto lleva dentro; la violencia del colegio y de las haciendas; la rebeldía de las chicheras; y la música, los huaynos, los ríos y los trompos como refugio y fuerza.",
       "Clave para leer: los capítulos no avanzan solo por la acción, también por la memoria y por los cantos. Cuando aparezca un huayno o una palabra en quechua, detente: Arguedas los usa para que sientas lo que Ernesto siente. Puedes comparar a Ernesto con el niño de El caballero Carmelo, que también recuerda su niñez, pero en la costa.",
       "Esta guía no reemplaza la obra: no copia su texto, que tiene derechos de autor. Léela completa en la biblioteca de tu colegio, en una biblioteca pública o en una edición autorizada."
+    ],
+    "qu": [
+      "Deep rivers sutiyuq qillqaqaqa 1958 watapi lluqsirqan, José María Arguedaspa aswan hatun ruwasqanmi. Payqa achka kawsayninwanmi qillqasqa: Ernesto nisqaqa huk wayna runa, indigenas ukhupi wiñarqan, taytanwan Andes qullupi purichkan, huk lawmanpas, llaqtamanta llaqtamanmi purichkan.",
+      "Cusco llaqtapi qillqasqa. Ernestoqa, taytanwan rikukunku uj qhari qhariwan. Paytaqa sutichakunku Viejo. Ernestoqa llaqtaman puriy, hinaspan hatun rumikuna ruwasqa Inca pirqapa ñawpaqenman tiyarirqan. Chay rumikunataqa rikunki, mayman jina k'anchakunanta. Kay pachapi kaqkunata qawachinapaq, kay pachapi kaqkunapa kawsayninqa, tukuy libromanmi rikukun.",
+      "Chaymantapas taytaqa, Ernestota Abancaypi huk escuela religiosopi wasicharqan, chaypim tata Director kamachiq. Yachay wasiqa mana allinchu, ch'axwanku, wayk'aqkunawan wayk'aqkunawan, Ernesto mana entiendeq ch'axwanku. Payqa taytanmantapas, uywasqan ayllunmantapas.",
+      "Yachachikuqkunapa taytanmi kaykun: Antero, yachay wasiman huk zumbayllu apakun, huk trompeta, q'uchukuspa q'uchukuspa, Ernestopaqqa imaymana mágicota q'uchukun; Palacios, yachay wasimanta uj wayna, paymi ñak'arichin; hinallataq wakin internos, paykunaqa q'uchukunku otaq tiempota uyarispa jark'akunku. Chay patiopiqa huk warmipas kawsanmi, chay warmiqa, OPA Marcelina sutinmi. Chaypiqa, chay lugarpa sajra ruwasqanta rikuchin.",
+      "Huk p'unchawmi ripunku. Abancay llaqtapi q'uñiqkuna, q'uñiqkunapas, mikhuyta allichaykuq warmikunapas, ñut'uta saqerpanku, chaymantataq uywakunapaq saqerkanku. Liderqa, señorita Felipa, jayuta jap'iykuspa mask'aqkunapa, colonospa chawpinpi. Ernestoqa chay sipasta qatipakun, chaymi kusikun: ñawpaq kutimi pisi kallpa runakunawan atiyniyoq runakunawan maqanakuyta rikun.",
+      "Tata Diospa llaqtanmi chay llajtamanta willakun, chay llajtamanta llank'aqkunatapas kasukuyta mañakun. Ernestoqa rikurqanmi indios runakunata Diospaq mañakuspa waqaychananta. Chayna kaptinqa, paymi llakikun, chaymi llakikun, imaraykuchus paypas escuelata, wakin tayta-mamakunata munasqanrayku.",
+      "Qhepamanqa Abancay llaqtaman tifus usuyqa chayamun. Chhaynapin chay llajtamanta llajtasqakuna, llajtaman ayqekunku, maypichus paykunata jark'anankupaq. Yachay wasiqa wisq'akun, Ernestoqa sapallanmi familianpa wasinman ripun. Riman chayaruptinqa, chay willakuyqa tukukun.",
+      "Tematakuna: iskay mundukunapa, Andino y criollo nisqapa, Ernestoqa ukhupi churasqan; escuelapi, uywakunapi, chaykunaq rikch'aq kaynin; ch'aqwasqa warmikunapa riqsichisqan; hinallataq musicakuna, huaynakuna, yakuykuna, trompaskuna, ch'aqwasqa kaynin.",
+      "Yachanapaqqa, capitulokunaqa mana ñoqalla ruwasqanwanchu aswanpas yuyarisqanwan, takikunawanpas. Qhichwa simipi huk huayno nitaq huk simita rikuspaykiqa, sayay: Arguedasqa chay simikunata Ernesto imayna tarikusqanta qawachinapaqmi. Ernestoqa Carmelo caballeropa wamranmi, paypas wawakunamanta yuyarikun, ichaqa inti raymipi.",
+      "Kay kamachiyqa manan chay ruwasqataqa kutichinchu: mana qillqasqanta copiaqchu, chaymi copyrightniyuq. Yachay wasiykipi, libropi otaq autoridata chaskisqan libropi ñawiriy."
+    ],
+    "ay": [
+      "\"Los ríos profundos\" ukax 1958 maranw uñt'ayasi, ukatx José María Arguedas jupan jach'a luratanakap uñt'atawa. Jupax walja jakañaniwa: Ernesto, jupax mä waynat uñt'atawa, jupax indígena jaqinak taypin jilsuwayxi, jupax awkipampiw Andes qullu tuqinakan sarnaqi, jupax mä jisk'a markan irnaqiri abogadowa.",
+      "Uka qillqatax Cusco markanwa qalltasi. Ernestox awkipampiw mä qamir wila masipar tumpt'apxi, juparusti \"Awkir jaqi\" sapxiwa. Ernesto jilatajj jach'a qalanakat lurat mä pirqaruw sayt'asi. Uka qalanakax jakaskir uñjasi, jawirar uñtata. Uka uñtasïwisti, taqi kunanakatix jakaski ukanakawa, taqi qillqatankiwa.",
+      "Ukat tatax Ernesto wawapar Abancay markan mä yatiqañ utan imantawayi, tata irpiripa. Yatiqañ utanakax wali ch'amaniw uñjasi: ch'axwañanaka, jisk'a yatiqir wawanakan ch'axwañanakapa, ukhamarak kuna ch'axwañanakatix Ernestox jan amuyt'ki ukanakasa. Jupasti awkiparusa, jupar uywasir indígena jaqinakatsa walpun llakisi.",
+      "Yatiqirinakap taypinx jan armkay jilayanakaw utji: Antero, jupax yatiqañ utar mä zumbayllu apani, mä trompa thuqt'asisaw thuqt'i, ukatx Ernestoatakix mä muspharkañ luräwiw utji; Palacios, mä sierra waynaw yatiqañatak t'aqhisiski; ukatx yaqha internautasakiw larusipxi, jan ukax ch'amañchasipkaraki. Uka uta anqäxanx wali amuyun aynacht'at mä warmiw jakaraki, opa Marcelina, juparusti yaqhip irpirinakaw ñanqhachapxi. Uka uñacht'äwix wali qhuruwa.",
+      "Mä urux mä ch'axwañax sartasi. Abancay markan chich'i warminakaxa, chicha ukat manq'a aljir warminakaxa, sartasipxakiwa, jayuxa, kunati jupanakax jakasiñatak munapki ukata, uywa uywa uywañatakiwa imasipki. Jilïr irpirisa, Felipa reina, jayu aptasinxa, jan kunan jaqinakaru, colonos ukaruw jaljayi. Ernesto jilatajj wali llaktʼataw uñjasïna, nayrïr kutiw pisi chʼamaninakar wali chʼamaninakar saykatir uñjäna.",
+      "Tata Irpirix yapunak apnaqir jaqinakarux ist'añatakiw iwxt'i. Ernestox indio jaqinakarux Diosan sutipxaruw jachayani, jupanakan t'aqhisiyat sarnaqasipkañapataki. Ukax wali llakisiyiwa, wali mayjt'ayarakiwa, jupax yatiqañ utarusa, yaqhip awkinakasarus munaraki.",
+      "Qhipax tifus usux Abancay markaruw puri. Jan kunan jakasiri yapuchirinakax, jach'a markarux tantacht'ataw jutapxi, mä misa mayipxi jupanakar jark'aqasiñapataki. Yatiqañ utax jist'antaskiwa, ukatx Ernestox sapakiw wila masipan utapar sarxi. Jawira khurkatar makhatawayxasinx, uka novelax niyaw tukusxi.",
+      "Kunanakatix aruskipt'aski ukanaka: pä akapachan ch'axwañapax, andino, criollo ukanaka, ukanakarakiw Ernestox apaski; yatiqañ utanakana, yapunakana ch'axwañasa; ch'axwañanakana, ch'axwañanakana; ukhamarak jaylliña, huayninaka, jawiranaka, trompetanaka imantasiñataki.",
+      "Yatiyañatakix wali wakiskiriwa: qilqatanakax janiw luräwinakampik sarantapkiti, jan ukasti amtanakampi, q'uchunakampikiw sarantapxi. Kunapachatï qhichwa arux huayno arux uñstani, ukhax sayt'asim: Arguedas jilatax uka arunakampiw kunjamtï Ernesto jilatax ukjam amuyki uk amuyt'añ munaraki. Ernesto jilatarux Carmelo sat chachan wawapampiw uñch'ukisiñama, jupax wawapätapsa amtasirakïnwa, ukampis quta thiyankaskänwa.",
+      "Aka ch'amañchäwix janiw kuna ch'amañchäwinakatsa jark'aqkiti: janiw kuna qillqatanakatsa copiañ munkiti, uka qillqatanakax copyright ukankiwa. Yatiqañ utanakaman qillqatanak ullart'am, jan ukax mä qillqatanak ullart'am."
     ]
   },
-  "audio": [],
+  "borrador": [
+    "qu",
+    "ay"
+  ],
+  "audio": [
+    {
+      "lang": "qu",
+      "narratorId": "voz-mms-qu",
+      "voiceSource": "sintetica",
+      "url": "site:guia-rios-profundos.qu.mp3",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 292.284,
+      "paragraphStartsSec": [
+        0.0,
+        27.546,
+        62.542,
+        87.432,
+        126.94,
+        163.09,
+        191.26,
+        218.404,
+        241.738,
+        274.882
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Zumbayllu",

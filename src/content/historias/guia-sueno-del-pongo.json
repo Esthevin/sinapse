@@ -2,7 +2,9 @@
   "id": "guia-sueno-del-pongo",
   "revision": 4,
   "title": {
-    "es": "Guía de lectura: El sueño del pongo"
+    "es": "Guía de lectura: El sueño del pongo",
+    "qu": "Leer Guía: Pongapa saminchasqan",
+    "ay": "Qillqatanak ullart'añataki: Ponzo samk'a"
   },
   "author": "José María Arguedas (guía de Sinapse)",
   "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor.",
@@ -15,7 +17,9 @@
   ],
   "coverColor": "#5A4632",
   "summary": {
-    "es": "Guía para leer el relato que Arguedas recogió de la tradición oral quechua (1965): un siervo humillado por su patrón le cuenta un sueño en el que, ante San Francisco, los papeles se invierten. Contexto, temas y preguntas."
+    "es": "Guía para leer el relato que Arguedas recogió de la tradición oral quechua (1965): un siervo humillado por su patrón le cuenta un sueño en el que, ante San Francisco, los papeles se invierten. Contexto, temas y preguntas.",
+    "qu": "Arguedas sutiyuq runaqa quchua simimanta willakuyta ñawirichirqan (1965): kamachiqninmi patronninmanta huchachisqa kasqa, chaymi San Francisco llaqtapi qillqasqa qillqasqanpi willarqa. Qhapaq qillqasqa, tema, tapuykuna.",
+    "ay": "Arguedas jupax Quechua arur uñt'ayiriwa (1965): mä uywatax patronapat p'inqachat uñjasi, jupax mä samka samkaski ukan San Francisco nayraqatanx papelanakas mayt'at uñjasi. Kunaymana, kunanakasa, jiskt'anaka."
   },
   "paragraphs": {
     "es": [
@@ -29,9 +33,58 @@
       "Clave para leer: observa el contraste entre el silencio del pongo durante casi todo el relato y la fuerza de sus palabras al final. Pregúntate por qué el patrón lo deja hablar, y qué cambia cuando el sueño da su último giro.",
       "Este relato se lee mucho en secundaria junto con Paco Yunque, de César Vallejo, que está completo en Sinapse. Los dos muestran cómo la desigualdad entre patrones y siervos llega hasta la vida diaria: el aula en un caso, la casa de hacienda en el otro.",
       "Esta guía no reemplaza la obra: no copia su texto, que tiene derechos de autor. Léela completa en la biblioteca de tu colegio, en una biblioteca pública o en una edición autorizada."
+    ],
+    "qu": [
+      "Sonjo del pongo nisqaqa José María Arguedas qillqasqan huk qhichwa simipi, castellano simipi, 1965 watapi. Paymi willarqa mana ima ruwasqantapas: Lima llaqtapi huk comunero runamanta uyarispanmi kutichirqa. Chayqa Andina nacionpi runasmanta willakuy.",
+      "Un pongo (Pondo) nisqaqa huk ayllullakunmi karqan, chaymi chay huñunakuykunapi llank'anankupaq obligasqa karqa. Chay servicioqa Perú suyupi 1969 watakama karqa. Chayna kaptinqa, kay willakuyqa chiqap mana chanin kanamantami parlan.",
+      "Chaypiqa juk pisi kallpa, pisi kallpa runam kachkan, chaymi paypa llank'ayninman chayamunqa. Paytaqa patronqa ñawpaq p'unchaymantapacha q'ipirqan. Payqa waj uywasninpa ñawpaqenpi p'enqachin, qhari jina, qhari jina, mana uj runa jina qhawan. Pongaqa k'umuypi kasukun.",
+      "Huk p'unchawmi, qhichwa simiqa rimayta mañakurqa. Paymi patronman willarqa maypichus paykunaqa wañupurqanku, chaypim paykunaqa q'ala ch'ullaña karqanku Santo Franciscopa ñawpaqenpi. Paymi tukuy sonqonkuta rikurqan.",
+      "San Franciscoqa sumaq angelninta kamachirqa misk'iwan patrónta ch'akichinanpaq. Huk qhari angelqa, qhari qhariwan, qharikunata q'ip'ichinanpaq nin. Runasimiqa kusisqa uyarin, chaymi yuyanku kay pachapi kaqnin kasqanta.",
+      "Ichaqa mana chayllachu chay samk'aqa tukukunqa. San Franciscoqa qhepaman kamachisqanta repararqani. Paykunaqa sapa ujninkuta k'anchanankupaq. Chaywanpas, pisipaq sirvienteqa patrónman tukuy pisipaqniykita kutirichin, mana rimayta qallarispan.",
+      "Ñawpaq suyukunapiqa: atiyniyoq kananmanta, mana rimayta atiyniyoq runakunaq chaninchasqanmanta, kay pachapi mana allin ruwaykunamantapas, chaymi runakunapa ima piensasqankuman hina. Pongaqa mana ch'aqwaykuspachu phiñakunqa, aswanqa huk willakuyta willaspanmi phiñakunqa.",
+      "Qhichwa simita ñawinapaq: Qawasqanchikman hinaqa, qhawarichiwanchikmi rimasqanpi imapas hap'ikusqanta. ¿Imanasqataq patrónqa rimayta saqen? ¿Imatam iñiyniyoq kasqanmantapas tapukuychik?",
+      "Kay willakuyqa sinapse nisqapi tukuy imapi kachkan, César Vallejo qillqasqan Paco Yunquewan. Paykunaqa qawachinku imaynatam patrónkuna, sirvientokuna ima mana derechopi kasqankuta sapa p'unchaypi. maypichus huñunakuy wasipi kashan.",
+      "Kay kamachiyqa manan chay ruwasqataqa kutichinchu: mana qillqasqanta copiaqchu, chaymi copyrightniyuq. Yachay wasiykipi, libropi otaq autoridata chaskisqan libropi ñawiriy."
+    ],
+    "ay": [
+      "\"El sueño del pongo\" ukax José María Arguedas jupan 1965 maran uñt'ayata mä jisk'a sarnaqäwiwa, qhichwa ukat castellano arut uñt'ayata. Jupaw saspa: janiw jupax uka arunak llukxatkiti, Lima markan mä comunero jaqit ist'asinwa wasitat qillqt'i. Ukax Andina markan arupaw ist'asi.",
+      "Pondo sat jaqix mä indígenawa, jupax maykipuniw hacienda utan irnaqäna, patronasti uka markan jakir jaqinakarux kunanaktix maykäna ukanak phuqhañataki. Uka servicio ukax Perú markanx 1969 maran reforma agraria ukar puriñkamax utjaskänwa. Ukhamasti, uka qhanañchäwix chiqpach jan walinakaruw qhanañchi.",
+      "Akasti mä jisk'a, pisi ch'aman, jan kunan jaqiwa. Irpiristi, nayrïr urutpach jupat larusïna. Uywatanakap nayraqatan jisk'ar tukuyi, ukatsti mä anunakar uñtataw sarnaqani, jan wali jaqirjamaw uñjani. Uka putux ist'iwa, ukampis janiw ist'kiti.",
+      "Mä arumasti, uka pututux arst'añatak permiso mayïna. Ukat irpirirux sapxiwa, jupax mä samka samkasïna, uka samkasinsti panpachaniw jiwatäsipkäna, jan isinïpkarakïna, San Francisco jach'a awkixan nayraqatapan, jupax sapa maynin chuymap uñjarakïna.",
+      "Uka samkanjja, San Franciscojj mä suma angelaruw mä misk'i churäna. Maynïr angelasti, jan wali chuymanïnwa, ukatsti uka q'añu t'unarux q'añu t'ant'ampiw llawuntäna. Ukatwa patronajj wali kusisitaw istʼi: \"Imuyasiñaw akapachan utjki uk qhanañchi\" sasa.",
+      "Ukampis uka samkax janiw tukuskiti. Nayax amuyta, San Franciscox qhipa iwxa arunak churäna, paypachanix maynit maynikam k'umipxañapataki. wiñayataki. Uka uñtasïwimpixa, jisk'achjat uywatax taqi jisk'achañampiw patronar kutt'ayi, jan arsusisa.",
+      "Kunjamatsa: ch'aman kankañ jan apnaqañasa; jan arsusirjamäpki ukan dignidadapasa; ukatx chiqa kankañax janiw akapachar purkiti, ukampirus jaqinakan amuyunakapas amuyt'aspawa. Ponux janiw ch'axwañampi sayt'kiti, jan ukasti mä sarnaqäwi parlirikiw sayt'asi.",
+      "Lekt'añatakis wali wakiskiriwa: Kunjämtix ist'añatakis k'uchikïskän uk sum uñakipapxam, kunanaktix q'uchupki uksa, kunanaktix q'uchupki uksa. Amuyt'asipxam, kunatsa patronax parlañ munki ukata, kunanakatix qhipa kuti samkaski ukata.",
+      "Aka yatiqawix walja yatiqañ utanakan liyt'atawa Paco Yunque, César Vallejo, jupax Sinapse uksanx phuqhatakiwa. Uka paniniw uñacht'ayistu kunjams jan walinakax uywirinakarusa, uywatanakarusa sapürur puri: mä yatiqañ utana, mayïr yatiqañ utana.",
+      "Aka ch'amañchäwix janiw kuna ch'amañchäwinakatsa jark'aqkiti: janiw kuna qillqatanakatsa copiañ munkiti, uka qillqatanakax copyright ukankiwa. Yatiqañ utanakaman qillqatanak ullart'am, jan ukax mä qillqatanak ullart'am."
     ]
   },
-  "audio": [],
+  "borrador": [
+    "qu",
+    "ay"
+  ],
+  "audio": [
+    {
+      "lang": "qu",
+      "narratorId": "voz-mms-qu",
+      "voiceSource": "sintetica",
+      "url": "site:guia-sueno-del-pongo.qu.mp3",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 221.82,
+      "paragraphStartsSec": [
+        0.0,
+        24.168,
+        45.554,
+        71.322,
+        92.82,
+        114.51,
+        139.062,
+        164.576,
+        183.16,
+        205.106
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Pongo",

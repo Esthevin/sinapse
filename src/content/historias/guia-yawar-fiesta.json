@@ -2,7 +2,9 @@
   "id": "guia-yawar-fiesta",
   "revision": 4,
   "title": {
-    "es": "Guía de lectura: Yawar Fiesta"
+    "es": "Guía de lectura: Yawar Fiesta",
+    "qu": "Bibliata ñawiriy: Yawar Fiesta",
+    "ay": "Qillqatanak ullart'añataki: Yawar Fiesta"
   },
   "author": "José María Arguedas (guía de Sinapse)",
   "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor.",
@@ -15,7 +17,9 @@
   ],
   "coverColor": "#7A2E1F",
   "summary": {
-    "es": "Guía para leer la primera novela de Arguedas (1941): en Puquio, los comuneros defienden su corrida de toros a la manera andina, el yawar punchay, contra la orden de prohibirla. Contexto, personajes, temas y preguntas."
+    "es": "Guía para leer la primera novela de Arguedas (1941): en Puquio, los comuneros defienden su corrida de toros a la manera andina, el yawar punchay, contra la orden de prohibirla. Contexto, personajes, temas y preguntas.",
+    "qu": "Guía para leer la primera novela de Arguedas (1941): Puquio llaqtapi, comunerosqa antilla simipi toros rinanta defiendenku, Yawar punchay, kamachiyta jark'aspa. Qhapaq qillqasqa, personajes, temas, tapukuykuna.",
+    "ay": "Guía para leer la primera novela de Arguedas (1941): Puquio markanxa, comuneros ukanakax andenanakan sarnaqawiparjamaw toros jalapxañatak arxatasipxi, Yawar punchay, jark'aqatäñ arunakar jan jaysapxañapataki. Kunatix utjki, kunanakatix utjki ukanaka, jiskt'äwinaka, yatichäwinaka."
   },
   "paragraphs": {
     "es": [
@@ -31,9 +35,64 @@
       "Temas: la defensa de la cultura propia frente a una ley que la desprecia; el despojo de tierras; la fuerza del trabajo comunal; y la mirada de los de afuera, que llaman «salvaje» a lo que no entienden. Arguedas no idealiza la violencia de la corrida, pero muestra que para los comuneros prohibirla es otra forma de quitarles lo suyo.",
       "Clave para leer: fíjate en cómo cambia el castellano cuando hablan los comuneros. Arguedas lo mezcla con palabras y giros del quechua para que el lector sienta el idioma de los Andes. Fíjate también en quién decide sobre la fiesta y quién la vive.",
       "Esta guía no reemplaza la obra: no copia su texto, que tiene derechos de autor. Léela completa en la biblioteca de tu colegio, en una biblioteca pública o en una edición autorizada."
+    ],
+    "qu": [
+      "Yawar Fiesta nisqaqa José María Arguedaspa ñawpa pukllanmi. Kay libroqa 1941 watapi lloqsimurqa. Qhichwa simipi, castellano simipi ima qillqasqa. Yawar nisqaqa yawar nisqata munan. Chayraykun sutiyqa \"Rupay fiesta\" nisqata leewan.",
+      "Arguedas sutiyuq runaqa 1911 watapi paqarisqa Andahuaylas llaqtapi, Apurímac suyupi. Taytanqa wañuporqa, payqa sullkʼaj kachkaspanmi, mama llaqtanpi llankʼajkunawan kuska kawsarqa. Chaypim payqa castellano rimaqmanta ñawpaqta quechua simita yachakurqa. Chayraykun Andes llaqtamanta qillqaspanqa, mana manchaymanta qhawarinchu, aswanqa kay pachamanta willan.",
+      "Chay willakuyqa Puquio llaqtapi, Ayacucho llaqtapi, Lucanas llaqtapi. Chay llaqtaqa tawa distritukunam kachkan: Pichk'achuri, K'ayau, Chaupi, K'ollana. Llaktapiqa, sapa uj runaqa jatunpaq qhawasqa, autoridadniyoj kasqanrayku. Chaypi, punapi, comunero runakuna kawsanku, chaykunaq ayllu-ayllu rikch'aqkunapa makinpi ch'usaq ch'usaqninku, chaykunatataq qillqasqan Mismis suticharqanku.",
+      "Sapa wata, 28 ñiqin ayamarq'a killapi fiestapi, Puquio llaqtaqa huk runata ruwakun. Chaypiqa manam professional torerochu kanku: comunerosqa plazanman yaykunku torerowan puñunkuwan, valorolla, wakin kutipis dinamitawan. Chayqa mana allinchu, wañusqakunapas kanman, chaymi llaqtanqa chay fiestapi piensan.",
+      "Chay watapim gobiernopa kamachikuynin hamurqa: indi barbaro runata jark'ananpaq, chay runata ispañol runata man churananpaq, Lima llaqtamanta apasqa torerowan. Kay kamachiyqa, subprefecto kamachiqninmi. Wakin allin vecinosninmi payta yanaparqa. Lima llaqtapi kawsasqan puquyan waynu runakuna, chaypim paykunaqa yachachikurqaku.",
+      "Commons nisqaqa multimidya kapuyninkunayuqmi kay hawa: K'ayau llaqtayuq aylluqa Misitu llaqtamanmi apamun, K'oñani suyupi kawsasqan willakuq, legendario toro, pipas mana atiyta atinchu. Payta hap'ispayqa, tukuy runakunawan allin ruwasqa kanchis. Llapan llaqtanqa llank'an, puñun, wañuyta rispa llaqtaman apananpaq.",
+      "Commons nisqaqa multimidya kapuyninkunayuqmi kay hawa: Puquio llaqtamanta qucha pampaman rirqan. Arguedasqa chay willakuytaqa rikch'aqkunapaqmi, chaymi rikuchin hatun llaqtakunapa atiyniyoq kasqankuta, chaymi atiyniyoq runakunaqa pisi kallpaykuchkanku.",
+      "Qhepamanqa torero contratadoqa mana atipanchu Andina torosninta, chaymi comunerosqa p'ampaman yaykunku. Chay fiestaqa, paypa munasqanman hina, yawarwanmi kanqa. Autoridakunaqa mana atinchu hap'iyta.",
+      "Kaykunatam qatipakunchik: ayllukunapa comunerosninku, varayok'ninkuwan, otaq autoridadninkuwan, subprefectoninku, Estadota representanku, mistisninku, nitaq qollqeykunapas, Misitu llaqtayuq runaptinku, hinaspa Lima llaqtapi puquyanku, chaykunaq yachakuqkunapas, fiestata cambiananku munanku.",
+      "Tematakuna: kikinpa culturaninta defiendenqa, mana respetasqan kamachikuyninkumanta; allpapi t'aqasqa kaykunamanta; ¡Qhapaq llaqtayoq llank'aqkunapa atiynin, mana entiendenankunata \"salvaje\" nispa sutichasqanku runakunaqa! Arguedasqa manan runapa ñakarinantachu idealizarqa, aswanpas rikuchin comunero runakunapaq jark'anankupaqqa huk waylla kananta aparinankupaqmi.",
+      "Qawasqanchikman hinaqa, qhawariy castellano simipi parlaqkunaqa imayna cambiananta. Arguedasqa qhichwa simipi rimaykunawan q'ichwachin, chaymi lectorqa Andes suyupi simita entiendenqa. Qhawariychejtaj, pichus fiestapi kajta ajllasqanta, ¿pitaj chay fiestapi tiyakonantapis?",
+      "Kay kamachiyqa manan chay ruwasqataqa kutichinchu: mana qillqasqanta copiaqchu, chaymi copyrightniyuq. Yachay wasiykipi, libropi otaq autoridata chaskisqan libropi ñawiriy."
+    ],
+    "ay": [
+      "Yawar Fiesta ukax José María Arguedas jupan nayrïr qillqatawa. Ukax 1941 maranw uñt'ayasïna. Uka sutipax Quechua ukat castellano arux chhaqtayatawa: yawar ukax wila sañ muni, ukat sutipax fiesta de sangre sas ullart'arakispa.",
+      "Arguedas jupax 1911 maran Andahuaylas, Apurímac markan yurïna. Taykapasti wali jisk'aw jiwxäna, ukat jupax taykapan yapupan indígena irnaqirinak taypin jakäna. Ukanx qhichwa arux castellano arut nayraruw yatiqäna. Ukatpï Andes qullunakxat qillqasktaxa, janiw anqäxat uñch'ukiskiti, jan ukasti, uka manqhatpach uñt'at uraqiruw uñt'i.",
+      "Uka novelax Puquio markanwa, Lucanas markanwa, Ayacucho markanwa. Aka markaxa pusi jisk'a markanakawa: Pichk'achuri, K'ayau, Chaupi, K'ollana. Sapa jisk'a markanxa wali jach'a jach'a tukutapampi, munañanïñanakapampiwa utji. Alaxpachana, pinu uraqinxa, comuneros ukanakaw jakapxi, jupanakax uraqinakapsa, chhuxllanakapsa q'al apt'asipxi qamir marka masinakaparu, jupanakarusti mistis satwa.",
+      "Sapa mara, 28 uru julio phaxsit amtasiñ urux, Puquio markax antillanakjam mä marat sarnaqi. Janiw torero profesional utjkiti: comuneros ukanakax torero ukar mantapxi punkunakapampi, ch'amanimpi, yaqhip pachax dinamitampiw. Ukax jan walt'añanakanwa, jiwatanakas ukankapxaspawa, markachirinakatakix ukax fiesta amtañawikïskiwa.",
+      "Uka maranx gobiernox mä arsüwiw apayäna: india barbara marat jark'aqañataki, ukatx a española marat mä torero Lima markat apaniñataki. Subprefectox uka kamachi phuqhapxañapawa. Yaqhip uñt'at markachirinakax yanapt'apxarakiwa. Lima markan jakasir puquino waynanakaw ukanx yatiqañ jikxatapxi, ukhamatwa markachirinakax nayrar sarantapxi.",
+      "Comuneros ukanakax janiw jaysapkiti. K'ayau markankirinakax Misitu sat mä jach'a urqu vacaw uka phunchhäwi wakichapxi. Uka urqu vacax K'oñani qullu patan jakiriwa, janiw khitis jupar atipt'irix utjkiti. Jupar katjañaw mä tantachasïwi luräwixa. Taqpach markachirinakax irnaqapxiwa, ukatx q'ipinakaruw makhatapxi, ukatx jakañapsa apt'asipxi markar puriñataki.",
+      "Uka novelax yaqha irnaqaw uñacht'ayi: comuneros ukanakax mä jach'a thakhi Pucyo markat quta thiyaruw mä juk'a pachaw lurapxi, janiw Estadox yanapt'kiti. Arguedas jupax uka uñacht'äwix markanakan ch'amanïtap uñacht'ayi, uksti wali ch'aman jaqinakax jisk'achapxiwa.",
+      "Qhipa urunakanx torero contratadox janiw toreros andinos ukarux atipt'aykiti, ukat comuneros jupanakax plazar mantapxi. Uka fiestax pachpa thakhiparakiwa, wilarakiwa. Irpirinakax janiw jark'añjamäpkiti.",
+      "Khitinakasa, tamanakas uñch'ukisipki ukanakaxa: ayllus comuneros ukanaka, varayok'anakampi, jan ukax jilïr irpirinakapamp kuna; subprefecto, Estado ukatakiriru; mistis jan ukax qamir markachirinakaru, Misitu ukana, ukhamarak Lima markan puquiano yatiqirinakaru, jupanakax phunchhäwix anqa tuqitpach mayjt'ayañ munapxi.",
+      "Kunatix arst'asi: cultura masipan jark'aqañapa, jan wali kamachinak nayraqatana, uraqinak q'al aparata, irnaqäwin ch'amanïtapa, jan amuyt'asir jaqin uñch'ukipata. Arguedas ukax janiw ch'axwañ jan walt'añanak uñstaykiti, ukampirus comuneros ukanakatakix jark'aqañax jupanakan yänakap apaqañatakix yaqha thakhïtap uñacht'ayi.",
+      "Lekt'añatak aski: comunero jaqinakaxa castellano aruxa kunjams mayjt'ayasipxi uk uñakipapxam. Arguedas ukax Quechua arun arunakamp mayt'asi, ukhamat ullart'ir jaqix Andes qullunakan arup amuyasiñapataki. Uñtapxam, khitinakas uka fiesta lurañ amtapki, khitinakas ukankapki ukanaksa.",
+      "Aka ch'amañchäwix janiw kuna ch'amañchäwinakatsa jark'aqkiti: janiw kuna qillqatanakatsa copiañ munkiti, uka qillqatanakax copyright ukankiwa. Yatiqañ utanakaman qillqatanak ullart'am, jan ukax mä qillqatanak ullart'am."
     ]
   },
-  "audio": [],
+  "borrador": [
+    "qu",
+    "ay"
+  ],
+  "audio": [
+    {
+      "lang": "qu",
+      "narratorId": "voz-mms-qu",
+      "voiceSource": "sintetica",
+      "url": "site:guia-yawar-fiesta.qu.mp3",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 331.708,
+      "paragraphStartsSec": [
+        0.0,
+        26.722,
+        60.106,
+        93.632,
+        121.272,
+        150.782,
+        180.198,
+        205.456,
+        224.81,
+        252.198,
+        289.608,
+        314.402
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Yawar",

@@ -2,7 +2,9 @@
   "id": "guia-ciudad-y-los-perros",
   "revision": 4,
   "title": {
-    "es": "Guía de lectura: La ciudad y los perros"
+    "es": "Guía de lectura: La ciudad y los perros",
+    "qu": "Qelqakunata leey: Llaqtawan qharikunatapas",
+    "ay": "Qillqatanak ullart'añataki: Markampi, anunakampi"
   },
   "author": "Mario Vargas Llosa (guía de Sinapse)",
   "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor.",
@@ -15,7 +17,9 @@
   ],
   "coverColor": "#3A3F2E",
   "summary": {
-    "es": "Guía para leer la novela con la que Vargas Llosa se hizo famoso (1963): en el Colegio Militar Leoncio Prado de Lima, el robo de un examen y la muerte de un cadete destapan un mundo de violencia y silencio. Contexto, personajes y preguntas."
+    "es": "Guía para leer la novela con la que Vargas Llosa se hizo famoso (1963): en el Colegio Militar Leoncio Prado de Lima, el robo de un examen y la muerte de un cadete destapan un mundo de violencia y silencio. Contexto, personajes y preguntas.",
+    "qu": "Guía para leer la novela con la que Vargas Llosa se hizo famoso (1963): Colegio Militar Leoncio Prado de Lima nisqapi, huk examenpi suwaykuspa, huk cadete wañukusqanpi, ch'axwan hinaspa suchuypi huk mundo rikurirqan. Qhapaq qillqasqan, personajkuna, tapuykuna.",
+    "ay": "Guía para leer la novela con la que Vargas Llosa se hizo famoso (1963): Colegio Militar Leoncio Prado de Lima ukanxa, mä yant'a lunthatasisa mä cadetex jiwayataynawa, ukanx ch'axwañampi, amukt'añampiw utjawayi. Kunaymana, kunaymana, jiskt'anaka."
   },
   "paragraphs": {
     "es": [
@@ -30,9 +34,61 @@
       "Temas: la violencia como forma de hacerse hombre; el silencio cómplice; la corrupción de una institución que prefiere su imagen a la verdad; y las diferencias de clase y de origen que el colegio mezcla, pero no borra.",
       "Clave para leer: es una novela para lectores de los últimos años de secundaria, con escenas de violencia y lenguaje fuerte. Puedes leerla junto con El vencedor y Paco Yunque, de César Vallejo, que están completos en Sinapse: también muestran la violencia entre escolares y cómo los adultos la miran o la tapan.",
       "Esta guía no reemplaza la obra: no copia su texto, que tiene derechos de autor. Léela completa en la biblioteca de tu colegio, en una biblioteca pública o en una edición autorizada."
+    ],
+    "qu": [
+      "Llaqtawan uywakunaqa, 1936 watapi Arequipa llaqtapi paqarisqan Mario Vargas Llosa qillqasqan ñawpaq pukllaqmi, 2010 watapi Premio Nobel de Literatura chaskisqan, 2025 watapi wañusqa. 1963 watapimi llankayka, payka España llaktapi premiota chaskirka. Leóncio Prado Yachay Sunturninpi, chay libropa ejemplokunatam rupirqaku, chaymi qawachirqa imachus chaypi pasakurqanta. Vargas Llosaqa chaypi estudiarqa.",
+      "Callao llaqtapi Leoncio Prado Militar Colegio nisqapi, chaypim Perú suyupi tukuy clase social-manta, tukuy region-manta kaqkunapas estudiakunku. Ñawpaq wata kaqkunaqa \"perros\" nispa sutichasqa kanku. Llaqtaqa Lima, allpamanta, chaymanmi wikendokunapi rinku.",
+      "Yachay wasipi, huk grupo de cadetes nisqakunaqa Círculo nisqawan tantanakunku. Jaguarqa, aswan atiyniyoq hinaspa manchakuqmi. Yachay wasipiqa, mana pipas juchachakunchu.",
+      "Chaypiqa, \"Circulo\" nisqapi huk cadeteqa, Cava, chimía examenmanta tapukuyninkunata aparqa. Paykunataq mana hukllapi rikuspanku, mana hukllapi rikuspanku, oficialkunaqa mana kutipuqtinku castiganku. Ricardo Arana, llapa runakuna payta p'enqaykusqankurayku Esclavo ninku, Teresa sutiyoq sipasta rikunanpaq. Chayraykun Cava-ta denunciashanku. Cavaqa ch'aqwachisqa kashan.",
+      "Chaymantan, Aranaqa huk campopi huk ejercicio militar ruwakuspan, p'anqanpi huk p'ampallawan wañuchisqa wañusqa. Oficialesqa ninku accidente kasqanmanta. Alberto Fernández sutiyuq runaqa, Aranapa amistadninmi karqan. Payqa, Jaguarpa wañuchisqanmantaqa, Cavawan phuñunanpaq kasqanta entiendeqmi, chaymi Gamboa tenientepa ñawpaqenpi juch'uyta qallaykun.",
+      "Gamboaqa kamachiykunata kasukuq, cheqaq oficialmi, chaymi yachayta munarqa. Ichaqa escuelaqa manam ni imamantapas willakunchu. Albertoqa, maypichus qhelqasqan willakuykunata qillqarqa, chaywantaj ch'aqwachisqa kanqa, chaymantataj Albertoqa juchachasqanta quch'unqa. Chay casonqa accidente jina tukukun. Gamboaqa, cheqapta willasqanrayku, chay sierra ukhupi uj distinto lugarman apasqa kashan.",
+      "Qhepaman Jaguarqa Gamboawan willarqa Arana wañusqanta. Gamboañataqmi nin: \"Pipas manaraqmi uyariyta munankuchu\", nispa. Yachachikuqkunaqa, escuelata q'umachaspa, llaqtaman kutinku, sapa kuti kawsasqankunawan.",
+      "Kaykunatam qatiqninchik: Jaguar, ch'uya atiyniyoq kasqanta qawachin, chaymi ch'uya atiyniyoq kasqanta qawachin; Poeta, chaymi iskayrayashanmi cheqapta willaspan salvasqa kananpaq; Esclav, chaymi lliwmanta aswan ñak'arichisqa kasqan; y teniente Gamboa, chaymi creeq huchallikusqan kamachiypi chaninchasqanpi. Chay willakuyqa tiempowan kutimuq, willakuymanta kutimuq. Wakin kutipiqa mana yachankichu pipas parlanantaqa, chay sasachakuyqa leeypi huk kaqmi.",
+      "Tematakuna: violencia runa kananpaq; silencio compañero; Imaynatapas mana allinpaq qhawanankupaqqa, ¿imaynatan ruwasunman? Yachay wasikunapi, yachay wasikunapipas qhichwa simipi, clasepi, origenpi ima mana kikinchasqankuta, ichaqa manan chinkachinchu.",
+      "Bibliata ñawiriypaqqa allinmi: escuela p'unchawmanta ñawiriqkunapaq qillqasqanmi, chay qillqasqanpi rikch'aqkunapas rikch'aq rimaykunapas. Kay willakuytaqa leeshanki César Vallejopa \"El vencedor\" nisqa qillqasqanwan, Paco Yunque qillqasqanwanpas, Sinapse nisqa qillqasqanpi junt'akun.",
+      "Kay kamachiyqa manan chay ruwasqataqa kutichinchu: mana qillqasqanta copiaqchu, chaymi copyrightniyuq. Yachay wasiykipi, libropi otaq autoridata chaskisqan libropi ñawiriy."
+    ],
+    "ay": [
+      "Ciudad y los perros ukax Mario Vargas Llosa jupan nayrïr qillqatawa, jupax 1936 maran Arequipa markan yurïna, 2010 maran Literatura Nobel churatänwa, 2025 maran jiwxarakïna. 1963 maranw uñt'ayasiwayi, ukatx España markanx kunayman ch'uxñanakaruw katuqi. Colegio Leoncio Prado ukanx uka qillqatax ninampiw phichhantata, kunanakatix uka qillqatan utjki ukanak uñacht'ayatapata. Vargas Llosa jilatax ukan yatïna.",
+      "Uka novelax Colegio Militar Leoncio Prado, Callao markanwa lurasi, ukanx Perú markana taqi clases sociales ukat regiones ukankirinakaw yatiqapxi. Nayrïr maran yatiqirinakarux \"ch'akhanakaw\" sapxi: bautismo katuqapxi, ukatx jilïr jaqinakan jan wali luratanakap uñjapxaraki. Lima markax markawa, anqa uraqiru, ukanakarakiw semananakax sarapxaraki.",
+      "Uka yatiqañ utanxa, mä tama cadetes ukanakaw Círculo sat tamax lurasi, uka tamax jupa pachpaw jark'aqasi, ukhamarak ñanqhachäwinakat phuqsusi. Jaguar sat jach'a jach'a axsarkañ animalaw apnaqaski. Yatiqañ utanxa, janiw khitirus juchañchañjamäkiti.",
+      "Mä Cadete Círculo, Cava, jupax mä examen de química satat jiskt'anak lunthataski. Jan khitinsa arsusitap laykusti, jan walt'añanakar puriñkamaw jawq'japxaraki. Ricardo Arana, khitirutix Esclav satäki ukarux taqiniw jisk'achapxaraki, jupax Teresa sat mä tawaqur uñjañ muni. Ukatwa Cava-n irkatapxañapatak arsüna. Cavax jaqunukutaw uñjasxi.",
+      "Ukat mä juk'a pachatsti, mä ejercicio militar ukan Aranax p'iqipan p'iqinchataw jiwxi. Irpirinakax mä jan walt'añaruw puripxi. Alberto Fernández, juparux Poeta sapxiwa qillqatanaka qillqt'atapata, uñt'at masinakapar aljatapata, jupax Arana jaqin jila masipawa. Jupaw amuyasi, Jaguar sat jaqix Cava sat chacharuw jiwayatayna, ukat jupax Gamboa sat Teniente nayraqatan juchañchi.",
+      "Gamboa jaqix wali aski irpirirakiwa, kamachinakar iyawsirakiwa, ukat yatxatañ amtaraki. Ukampis yatiqañ utanakax janiw kuna jan walt'añanaksa munapkiti. Jilïr irpirinakapax Alberto jilatarux jisk'a jisk'a qillqatanakapampiw wayt'apxi, ukat jupax jan juchanïkaspa ukhamaw chhaqtawayxi. Akax mä jan walt'añar uñtatawa. Gamboa, chiqpachapunïskatap laykux, mä jayankir qullu pataruw apatäxi.",
+      "Qhipürusti, Jaguar jaqix Gamboarux Aranax jupar jiwayatap arsüna. Gamboa jilatax jayp'üxiwa, janiw khitis uka chiqa arunak ist'añ munkiti. Yatiqañ tukuyxapxan ukkhasti, sapa mayniw markapar kuttanxi, kunanakampitix jakapkän ukanakampi.",
+      "Akïr uñch'ukiñanix: Jaguar, jupax ch'amampi phuqsusiñ kamachiwa; Poeta, jupax janiw chiqa arsuñ munkiti ukat qhispitäñ munkiti; Esclav, jupax taqinin wila masipawa; ukatx Gamboa teniente, jupax mä instituciónx chiqapar uñjatap iyawskiriwa. Uka qillqatax pacharuw purintani, ukatw parlirjam sarantaski. Yaqhip kutix janiw khitisa parli uk yatktanti: uka ch'axwañax ullart'añawa.",
+      "Temas: ch'axwañax jaqjam tukuñawa; amukt'añax yanapiripawa; jan wali uñjäwinakat sipansa, jan wali luräwinakat sipansa. yatiqañ utanakatsa, yaqha markanakatsa mayj mayjtanakatsa.",
+      "Qillqañatakix wali wakiskiriwa: mä jach'a yatiqañ utan qhipa maranakat ullart'irinakatak qillqatawa, ukanx ch'axwañampi, wali ch'aman arunakampiw qillqt'atawa. El vencedor ukat Paco Yunque, César Vallejo, ukanakarjamaw ullart'arakisma. Sinapse ukanx uñachayapxarakiwa: yatiqañ utanakan ch'axwañanakap uñacht'ayapxaraki, ukatx kunjams jach'a wawanakax uñch'ukipxi, jan ukax ch'axwañanakap uñacht'ayapxaraki.",
+      "Aka ch'amañchäwix janiw kuna ch'amañchäwinakatsa jark'aqkiti: janiw kuna qillqatanakatsa copiañ munkiti, uka qillqatanakax copyright ukankiwa. Yatiqañ utanakaman qillqatanak ullart'am, jan ukax mä qillqatanak ullart'am."
     ]
   },
-  "audio": [],
+  "borrador": [
+    "qu",
+    "ay"
+  ],
+  "audio": [
+    {
+      "lang": "qu",
+      "narratorId": "voz-mms-qu",
+      "voiceSource": "sintetica",
+      "url": "site:guia-ciudad-y-los-perros.qu.mp3",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 315.718,
+      "paragraphStartsSec": [
+        0.0,
+        35.56,
+        61.166,
+        78.296,
+        115.242,
+        147.458,
+        182.248,
+        203.406,
+        245.312,
+        270.022,
+        298.972
+      ]
+    }
+  ],
   "glossary": [
     {
       "word": "Cadete",
