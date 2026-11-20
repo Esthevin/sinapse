@@ -72,7 +72,7 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 221.82,
       "paragraphStartsSec": [
-        0.0,
+        0,
         24.168,
         45.554,
         71.322,
@@ -92,7 +92,7 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 251.062,
       "paragraphStartsSec": [
-        0.0,
+        0,
         30.134,
         57.568,
         81.4,
@@ -102,6 +102,26 @@
         182.824,
         206.018,
         230.476
+      ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-ximena-hd",
+      "voiceSource": "sintetica",
+      "url": "bundle:guia-sueno-del-pongo.es.mp3",
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 180.96,
+      "paragraphStartsSec": [
+        0,
+        17.952,
+        39.072,
+        61.248,
+        77.136,
+        96.096,
+        116.448,
+        134.232,
+        149.208,
+        167.448
       ]
     }
   ],

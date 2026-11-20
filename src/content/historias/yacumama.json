@@ -44,21 +44,6 @@
   },
   "audio": [
     {
-      "lang": "es",
-      "narratorId": "voz-camila-pe",
-      "voiceSource": "sintetica",
-      "url": "bundle:yacumama.es.mp3",
-      "license": "Voz neuronal es-PE-CamilaNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
-      "durationSec": 70.344,
-      "paragraphStartsSec": [
-        0,
-        14.76,
-        27.024,
-        38.952,
-        56.592
-      ]
-    },
-    {
       "lang": "quz",
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
@@ -81,11 +66,26 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 103.396,
       "paragraphStartsSec": [
-        0.0,
+        0,
         21.132,
         38.768,
         56.564,
         83.908
+      ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-ximena-hd",
+      "voiceSource": "sintetica",
+      "url": "bundle:yacumama.es.mp3",
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 85.68,
+      "paragraphStartsSec": [
+        0,
+        18.96,
+        34.008,
+        48,
+        68.52
       ]
     }
   ],

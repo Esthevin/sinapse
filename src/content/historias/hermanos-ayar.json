@@ -47,22 +47,6 @@
   },
   "audio": [
     {
-      "lang": "es",
-      "narratorId": "voz-alex-pe",
-      "voiceSource": "sintetica",
-      "url": "bundle:hermanos-ayar.es.mp3",
-      "license": "Voz neuronal es-PE-AlexNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
-      "durationSec": 95.232,
-      "paragraphStartsSec": [
-        0,
-        17.304,
-        32.808,
-        51.48,
-        66.408,
-        79.44
-      ]
-    },
-    {
       "lang": "quz",
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
@@ -86,12 +70,28 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 110.284,
       "paragraphStartsSec": [
-        0.0,
+        0,
         20.252,
         39.964,
         61.1,
         77.08,
         91.804
+      ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-ximena-hd",
+      "voiceSource": "sintetica",
+      "url": "bundle:hermanos-ayar.es.mp3",
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 89.904,
+      "paragraphStartsSec": [
+        0,
+        16.632,
+        31.536,
+        48.552,
+        62.928,
+        74.976
       ]
     }
   ],

@@ -72,7 +72,7 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 292.284,
       "paragraphStartsSec": [
-        0.0,
+        0,
         27.546,
         62.542,
         87.432,
@@ -92,7 +92,7 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 318.518,
       "paragraphStartsSec": [
-        0.0,
+        0,
         28.12,
         60.474,
         91.858,
@@ -102,6 +102,26 @@
         230.032,
         258.614,
         297.948
+      ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-ximena-hd",
+      "voiceSource": "sintetica",
+      "url": "bundle:guia-rios-profundos.es.mp3",
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 228.864,
+      "paragraphStartsSec": [
+        0,
+        20.88,
+        46.392,
+        68.28,
+        102.096,
+        131.064,
+        149.184,
+        170.808,
+        189.6,
+        215.016
       ]
     }
   ],
