@@ -87,6 +87,27 @@
         270.022,
         298.972
       ]
+    },
+    {
+      "lang": "ay",
+      "narratorId": "voz-mms-ay",
+      "voiceSource": "sintetica",
+      "url": "site:guia-ciudad-y-los-perros.ay.mp3",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 332.586,
+      "paragraphStartsSec": [
+        0.0,
+        36.04,
+        68.732,
+        92.15,
+        126.572,
+        161.588,
+        198.458,
+        221.268,
+        258.996,
+        275.61,
+        311.728
+      ]
     }
   ],
   "glossary": [

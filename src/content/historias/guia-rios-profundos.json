@@ -83,6 +83,26 @@
         241.738,
         274.882
       ]
+    },
+    {
+      "lang": "ay",
+      "narratorId": "voz-mms-ay",
+      "voiceSource": "sintetica",
+      "url": "site:guia-rios-profundos.ay.mp3",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 318.518,
+      "paragraphStartsSec": [
+        0.0,
+        28.12,
+        60.474,
+        91.858,
+        134.598,
+        175.678,
+        201.208,
+        230.032,
+        258.614,
+        297.948
+      ]
     }
   ],
   "glossary": [

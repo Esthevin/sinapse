@@ -91,6 +91,28 @@
         289.608,
         314.402
       ]
+    },
+    {
+      "lang": "ay",
+      "narratorId": "voz-mms-ay",
+      "voiceSource": "sintetica",
+      "url": "site:guia-yawar-fiesta.ay.mp3",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 345.778,
+      "paragraphStartsSec": [
+        0.0,
+        22.424,
+        51.632,
+        89.334,
+        120.942,
+        154.644,
+        190.986,
+        214.74,
+        234.078,
+        265.222,
+        295.696,
+        325.256
+      ]
     }
   ],
   "glossary": [

@@ -103,36 +103,6 @@
       "durationSec": 784.9
     },
     {
-      "lang": "ay",
-      "narratorId": "voz-mms-ay",
-      "voiceSource": "sintetica",
-      "url": "site:hebaristo.ay.mp3",
-      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
-      "durationSec": 960.252,
-      "paragraphStartsSec": [
-        0.0,
-        138.102,
-        197.806,
-        276.66,
-        365.896,
-        376.262,
-        397.63,
-        438.432,
-        491.19,
-        656.38,
-        677.16,
-        719.63,
-        773.666,
-        834.66,
-        881.396,
-        892.658,
-        902.506,
-        909.0,
-        925.202,
-        953.966
-      ]
-    },
-    {
       "lang": "qu",
       "narratorId": "voz-mms-qu",
       "voiceSource": "sintetica",
@@ -160,6 +130,36 @@
         816.52,
         827.508,
         848.186
+      ]
+    },
+    {
+      "lang": "ay",
+      "narratorId": "voz-mms-ay",
+      "voiceSource": "sintetica",
+      "url": "site:hebaristo.ay.mp3",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "durationSec": 873.032,
+      "paragraphStartsSec": [
+        0.0,
+        137.03,
+        195.838,
+        273.972,
+        367.562,
+        377.208,
+        398.336,
+        439.794,
+        491.318,
+        590.132,
+        611.28,
+        654.854,
+        708.138,
+        753.206,
+        800.198,
+        811.204,
+        820.956,
+        827.338,
+        843.748,
+        866.378
       ]
     }
   ],
