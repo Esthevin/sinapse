@@ -1246,5 +1246,617 @@
    "La tortuga devuelve el bien que recibió con un esfuerzo enorme. ¿La gratitud es una obligación o una elección?",
    "Quiroga hace que un animal sea más leal que muchas personas. ¿Qué crees que quería decir sobre los seres humanos?"
   ]
+ },
+ "guia-yawar-fiesta": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Qué ordena el gobierno sobre la corrida de Puquio?",
+    "options": [
+     "Hacerla dos veces al año",
+     "Prohibir la corrida a la manera andina y hacer una corrida «a la española» con torero profesional",
+     "Cobrar entrada a los comuneros",
+     "Trasladarla a Lima"
+    ],
+    "answer": 1,
+    "explanation": "La orden declara bárbara la corrida de los comuneros y trae un torero para reemplazarla."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué traer al Misitu es tan importante para el ayllu de K'ayau?",
+    "options": [
+     "Porque es un toro manso y fácil",
+     "Porque capturar al toro salvaje de la puna es una hazaña colectiva que demuestra el valor y el orgullo del ayllu",
+     "Porque el subprefecto se lo pidió",
+     "Porque así ganarán dinero"
+    ],
+    "answer": 1,
+    "explanation": "El Misitu es casi una leyenda: llevarlo a la plaza es una forma de afirmar la fuerza de la comunidad."
+   },
+   {
+    "level": "inferencial",
+    "question": "Los estudiantes puquianos de Lima apoyan la prohibición. ¿Qué muestra eso?",
+    "options": [
+     "Que odian a su pueblo",
+     "Que hasta los hijos del pueblo, educados afuera, pueden mirar su propia cultura con los ojos de quienes la desprecian",
+     "Que el gobierno les pagó",
+     "Que no conocen Puquio"
+    ],
+    "answer": 1,
+    "explanation": "Quieren que su pueblo «progrese», pero aceptan una idea de progreso que borra la cultura de los comuneros."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué crítica hace la novela cuando el Estado decide sobre una fiesta que no es suya?",
+    "options": [
+     "Que las leyes siempre tienen razón",
+     "Que imponer costumbres desde el poder, sin escuchar a la comunidad, es otra forma de dominio, como el despojo de sus tierras",
+     "Que las fiestas no importan",
+     "Que los comuneros deben irse a Lima"
+    ],
+    "answer": 1,
+    "explanation": "La prohibición se suma al despojo: los poderosos deciden qué es civilizado y qué no."
+   },
+   {
+    "level": "critico",
+    "question": "La corrida andina es violenta y puede causar muertes. ¿Cuál es una lectura justa de la novela?",
+    "options": [
+     "Arguedas aplaude que haya muertos",
+     "La novela no oculta la violencia, pero pregunta quién tiene derecho a decidir sobre la cultura de un pueblo",
+     "La novela dice que hay que prohibir todas las fiestas",
+     "La violencia no aparece"
+    ],
+    "answer": 1,
+    "explanation": "Una lectura crítica reconoce las dos cosas: el riesgo de la fiesta y el desprecio con que se la prohíbe."
+   }
+  ],
+  "reflexion": [
+   "¿Hay en tu comunidad una costumbre que gente de afuera critica sin conocerla? ¿Quién debería decidir si cambia?",
+   "¿Se puede defender una tradición y, al mismo tiempo, querer que sea menos peligrosa? ¿Cómo lo harías?"
+  ]
+ },
+ "guia-sueno-del-pongo": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Cómo llegó este relato a Arguedas?",
+    "options": [
+     "Lo inventó de niño",
+     "Lo escuchó de un comunero y lo reescribió en quechua y castellano",
+     "Lo tradujo del inglés",
+     "Lo encontró en un libro de la colonia"
+    ],
+    "answer": 1,
+    "explanation": "Es un cuento de la tradición oral quechua que Arguedas recogió y reescribió."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué el patrón escucha contento la primera parte del sueño?",
+    "options": [
+     "Porque ama al pongo",
+     "Porque cree que el sueño confirma que él merece lo dulce y el pongo lo sucio, como en la vida",
+     "Porque no entiende el quechua",
+     "Porque está dormido"
+    ],
+    "answer": 1,
+    "explanation": "La miel y el excremento parecen repetir la jerarquía de la hacienda."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué logra la última orden de San Francisco en el sueño?",
+    "options": [
+     "Que el pongo pida perdón",
+     "Que los dos queden unidos por la humillación: el patrón tendrá que lamer al pongo por toda la eternidad",
+     "Que el patrón vaya al cielo solo",
+     "Nada, el sueño se olvida"
+    ],
+    "answer": 1,
+    "explanation": "El giro final invierte el poder: el que humillaba queda humillado."
+   },
+   {
+    "level": "critico",
+    "question": "¿Por qué se dice que el pongo se rebela «con palabras»?",
+    "options": [
+     "Porque grita insultos",
+     "Porque, sin violencia y sin que el patrón pueda castigarlo por un sueño, le devuelve la humillación contando una historia",
+     "Porque escribe una carta al gobierno",
+     "Porque se va de la hacienda"
+    ],
+    "answer": 1,
+    "explanation": "La imaginación y el relato son su arma: dice lo que no podría decir de otra forma."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué relación tiene el relato con la historia del Perú?",
+    "options": [
+     "Ninguna, es fantasía",
+     "Denuncia un sistema de servidumbre real en las haciendas andinas, que duró hasta la reforma agraria",
+     "Habla de la conquista española",
+     "Trata sobre la vida en Lima"
+    ],
+    "answer": 1,
+    "explanation": "El pongueaje fue real: el cuento convierte esa injusticia en una historia que se recuerda."
+   }
+  ],
+  "reflexion": [
+   "¿Has visto en tu entorno a alguien que humilla a otro porque tiene más poder? ¿Qué puede hacer quien observa?",
+   "El pongo usa un sueño para decir la verdad. ¿Qué formas tienen hoy las personas sin poder para hacerse escuchar?"
+  ]
+ },
+ "guia-rios-profundos": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Por qué se rebelan las chicheras de Abancay?",
+    "options": [
+     "Porque cerraron el colegio",
+     "Porque la sal que necesitan se guarda para el ganado de las haciendas",
+     "Porque subió el precio de la chicha",
+     "Porque llegó la peste"
+    ],
+    "answer": 1,
+    "explanation": "Doña Felipa encabeza el motín y reparte la sal entre los pobres y los colonos."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué significa para Ernesto el muro inca del Cusco?",
+    "options": [
+     "Nada, solo son piedras",
+     "Siente que las piedras están vivas: es su manera andina de mirar el mundo, donde las cosas tienen vida",
+     "Un lugar para jugar",
+     "La casa del Viejo"
+    ],
+    "answer": 1,
+    "explanation": "Desde el comienzo la novela muestra que Ernesto percibe el mundo como lo aprendió de los indígenas."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué el zumbayllu es tan importante para Ernesto?",
+    "options": [
+     "Porque es caro",
+     "Porque su zumbido lo consuela y lo conecta con el mundo andino que extraña, en medio de la dureza del colegio",
+     "Porque se lo regaló el Padre Director",
+     "Porque gana apuestas con él"
+    ],
+    "answer": 1,
+    "explanation": "El trompo es un refugio: para Ernesto tiene algo de mágico y de música."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué crítica hace la novela con el sermón del Padre Director a los colonos?",
+    "options": [
+     "Que la religión siempre libera",
+     "Que el poder puede usar la fe para que los oprimidos acepten su servidumbre",
+     "Que los colonos son malos",
+     "Que el colegio es perfecto"
+    ],
+    "answer": 1,
+    "explanation": "Ernesto ve que el sermón hace llorar a los colonos para que sigan obedeciendo, y eso lo hiere."
+   },
+   {
+    "level": "critico",
+    "question": "Ernesto está entre dos mundos. ¿Qué tensión vive?",
+    "options": [
+     "Entre la costa y la selva",
+     "Entre el mundo andino que lo crió y el mundo de los blancos y mestizos del colegio, sin pertenecer del todo a ninguno",
+     "Entre dos colegios",
+     "Entre su padre y su madre"
+    ],
+    "answer": 1,
+    "explanation": "Esa división es el centro de la novela y de la experiencia del propio Arguedas."
+   }
+  ],
+  "reflexion": [
+   "¿Hay algún objeto, canción o lugar que te dé fuerza cuando estás lejos de casa, como el zumbayllu a Ernesto?",
+   "¿Qué harías si vieras abusar de alguien en tu colegio, como pasa con la opa Marcelina? ¿Qué impide a veces intervenir?"
+  ]
+ },
+ "guia-ciudad-y-los-perros": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Por qué Ricardo Arana, el Esclavo, denuncia el robo del examen?",
+    "options": [
+     "Porque odiaba la química",
+     "Porque el castigo colectivo le impedía salir a ver a Teresa",
+     "Porque el Jaguar se lo pidió",
+     "Porque quería ser oficial"
+    ],
+    "answer": 1,
+    "explanation": "Sin salida por el castigo, Arana rompe la regla de no acusar para poder salir."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué Alberto, el Poeta, retira su acusación contra el Jaguar?",
+    "options": [
+     "Porque descubre que es inocente",
+     "Porque los superiores lo presionan con las novelitas que escribió y teme que lo expulsen",
+     "Porque Gamboa se lo ordena",
+     "Porque el Jaguar lo amenaza en público"
+    ],
+    "answer": 1,
+    "explanation": "El colegio usa una falta de Alberto para comprar su silencio."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué le pasa al teniente Gamboa por insistir en investigar?",
+    "options": [
+     "Lo ascienden",
+     "Lo trasladan a un puesto lejano: la institución castiga al que busca la verdad",
+     "Lo nombran director",
+     "Nada"
+    ],
+    "answer": 1,
+    "explanation": "Gamboa cree en el reglamento, pero el colegio prefiere evitar el escándalo."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué critica la novela con el cierre del caso como «accidente»?",
+    "options": [
+     "Que los accidentes son comunes",
+     "Que una institución puede preferir su prestigio a la justicia, y que el silencio de todos permite la violencia",
+     "Que los cadetes son todos culpables",
+     "Que la escuela militar es perfecta"
+    ],
+    "answer": 1,
+    "explanation": "La verdad existe, pero nadie con poder quiere oírla."
+   },
+   {
+    "level": "critico",
+    "question": "Al final el Jaguar confiesa, y Gamboa responde que ya es tarde. ¿Qué sentido tiene?",
+    "options": [
+     "Que la confesión arregla todo",
+     "Que, cuando el sistema ya decidió callar, la verdad llega tarde y no cambia nada: la justicia depende de instituciones dispuestas a escucharla",
+     "Que Gamboa no le cree",
+     "Que el Jaguar miente"
+    ],
+    "answer": 1,
+    "explanation": "El final amargo muestra el precio del silencio institucional."
+   }
+  ],
+  "reflexion": [
+   "En el colegio de la novela la regla es «no acusar». ¿Cuándo callar protege a un grupo y cuándo protege al abusador?",
+   "¿Conoces una situación en que una institución, una escuela o una empresa, prefirió ocultar un problema antes que resolverlo? ¿Qué consecuencias tuvo?"
+  ]
+ },
+ "el-vencedor": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Quiénes se enfrentan y en qué se diferencian?",
+    "options": [
+     "Dos hermanos de la misma familia",
+     "Juncos, descalzo y pobremente vestido, y Cancio, hijo de buena familia con zapatos nuevos",
+     "El narrador y Leonidas",
+     "Dos profesores"
+    ],
+    "answer": 1,
+    "explanation": "Vallejo describe con cuidado la ropa y los pies de cada uno: la pelea es también entre dos clases sociales."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué el narrador se pasa al bando de Juncos en plena pelea?",
+    "options": [
+     "Porque Juncos le pagó",
+     "Porque al verlo golpeado, en harapos y con los pies desnudos, siente compasión y le duele el corazón",
+     "Porque Cancio lo insultó",
+     "Porque quería ganar la apuesta"
+    ],
+    "answer": 1,
+    "explanation": "Primero simpatiza con Cancio, pero la imagen del niño pobre castigado lo hace cambiar."
+   },
+   {
+    "level": "inferencial",
+    "question": "Juncos gana, pero al final está solo y llorando. ¿Por qué?",
+    "options": [
+     "Porque le duele la oreja",
+     "Porque nadie celebra su triunfo: todos rodean al vencido y él siente vergüenza de haber golpeado a Cancio",
+     "Porque perdió su sombrero",
+     "Porque lo castigó el profesor"
+    ],
+    "answer": 1,
+    "explanation": "El título es irónico: el vencedor no gana nada y queda apartado."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué papel cumplen los demás niños durante la pelea?",
+    "options": [
+     "Intentan detenerla desde el principio",
+     "Gritan, apuestan como en una pelea de gallos y convierten el dolor ajeno en espectáculo",
+     "Llaman a los padres",
+     "No están presentes"
+    ],
+    "answer": 1,
+    "explanation": "El cuento critica al público que alienta la violencia y después se compadece."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué sugiere el gesto final de Leonidas, que arregla el sombrero y el pelo de Juncos?",
+    "options": [
+     "Que se burla de él",
+     "Que la ternura y el cuidado del otro son posibles aun después de la violencia, y que el vencedor también es una víctima",
+     "Que quiere pelear con él",
+     "Que es su hermano"
+    ],
+    "answer": 1,
+    "explanation": "Vallejo cierra con un acto de compasión hacia el que nadie mira."
+   }
+  ],
+  "reflexion": [
+   "¿Alguna vez viste una pelea en el colegio en que los demás alentaban en vez de detenerla? ¿Qué se podía hacer?",
+   "¿Por qué crees que nadie celebra a Juncos? ¿Qué dice eso sobre ganar a golpes?"
+  ]
+ },
+ "los-caynas": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Qué descubre el narrador al volver a Cayna?",
+    "options": [
+     "Que su familia se mudó a Lima",
+     "Que su padre, su familia y todo el pueblo se creen monos y viven como tales",
+     "Que el pueblo fue destruido por un terremoto",
+     "Que Urquizo se curó"
+    ],
+    "answer": 1,
+    "explanation": "La locura de la familia Urquizo se ha extendido a todo el pueblo."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué dice el padre cuando el narrador grita que todos son hombres?",
+    "options": [
+     "Que tiene razón",
+     "«¡Pobre! Se cree hombre. Está loco...»",
+     "Que se vaya del pueblo",
+     "Nada, no lo oye"
+    ],
+    "answer": 1,
+    "explanation": "Para los del pueblo, el loco es quien no comparte su creencia."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué revela el final, cuando aparece el enfermero?",
+    "options": [
+     "Que el narrador es médico",
+     "Que quien contaba la historia está internado en un asilo: no sabemos si el pueblo estaba loco o si lo está él",
+     "Que todo fue un sueño del padre",
+     "Que Cayna no existe"
+    ],
+    "answer": 1,
+    "explanation": "El giro final pone en duda todo lo que el lector creyó."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué es importante la escena en que Urquizo, el loco, le pregunta al narrador «¿Está usted loco?»",
+    "options": [
+     "Porque es un chiste",
+     "Porque anticipa el tema del cuento: cada uno cree estar cuerdo y ve loco al otro",
+     "Porque Urquizo es su padre",
+     "Porque el narrador lo golpeó a propósito"
+    ],
+    "answer": 1,
+    "explanation": "Desde ahí el narrador empieza a pensar que la razón depende del punto de vista."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué pregunta plantea el cuento sobre la «normalidad»?",
+    "options": [
+     "Que los monos son superiores",
+     "Si lo normal es solo lo que cree la mayoría: el que piensa distinto puede ser tratado como loco",
+     "Que no hay que estudiar en Lima",
+     "Ninguna, es solo terror"
+    ],
+    "answer": 1,
+    "explanation": "Vallejo convierte una historia de terror en una pregunta sobre la razón y la mayoría."
+   }
+  ],
+  "reflexion": [
+   "¿Te ha pasado que un grupo piense algo y tú, por pensar distinto, quedes como el «raro»? ¿Quién tenía razón?",
+   "El narrador vuelve tras muchos años fuera y no reconoce su pueblo. ¿Qué se siente volver a un lugar que cambió?"
+  ]
+ },
+ "chaymanta-huaynuy": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Por qué Ñausa Soncco es «el hombre maldito del Sol»?",
+    "options": [
+     "Porque mató a un Inca",
+     "Porque, por amor, robó objetos sagrados del templo del Sol para su amada",
+     "Porque no quiso trabajar",
+     "Porque nació ciego"
+    ],
+    "answer": 1,
+    "explanation": "Para conquistar a su amada roba al Sol, y ese sacrilegio trae su castigo."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué ocurre con la amada cuando él le muestra lo robado?",
+    "options": [
+     "Acepta casarse",
+     "Huye espantada, «¡Has robado al Sol!», y al escapar cae al río",
+     "Lo denuncia al Inca",
+     "Se queda con el oro"
+    ],
+    "answer": 1,
+    "explanation": "Ella no acepta el sacrilegio; en la huida resbala y cae al río."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué Ñausa pide a los pastores que se alejen «a un tiro de honda»?",
+    "options": [
+     "Porque tiene una enfermedad",
+     "Porque se cree maldito y no quiere que su culpa los alcance, ni siquiera por el aire o la nube que los cubra",
+     "Porque no le gustan los pastores",
+     "Porque quiere estar solo para comer"
+    ],
+    "answer": 1,
+    "explanation": "Su maldición es tan grande que teme contagiarla."
+   },
+   {
+    "level": "critico",
+    "question": "Valdelomar escribe esta leyenda inca en un castellano muy adornado. ¿Qué busca con eso?",
+    "options": [
+     "Que sea difícil a propósito",
+     "Dar al pasado incaico la grandeza de una epopeya, como si fuera un mito antiguo",
+     "Burlarse de los incas",
+     "Imitar el habla de Lima"
+    ],
+    "answer": 1,
+    "explanation": "El estilo solemne convierte la historia en leyenda; es típico del modernismo."
+   },
+   {
+    "level": "critico",
+    "question": "Compara a Ñausa con un personaje de tragedia. ¿Qué tienen en común?",
+    "options": [
+     "Nada",
+     "Un error movido por la pasión que desafía a los dioses y termina en un castigo que ya no se puede reparar",
+     "Que ambos son reyes",
+     "Que terminan felices"
+    ],
+    "answer": 1,
+    "explanation": "Como en la tragedia, la falta y el castigo son inseparables."
+   }
+  ],
+  "reflexion": [
+   "¿Hasta dónde se puede llegar por amor? ¿Hay límites que no se deberían cruzar?",
+   "Esta leyenda es inventada por Valdelomar, pero usa dioses y lugares incas. ¿Qué diferencia hay entre una leyenda de autor y un mito de un pueblo?"
+  ]
+ },
+ "los-hermanos-ayar": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Cómo sabrá Ayar Manco dónde fundar la ciudad?",
+    "options": [
+     "Por un sueño de Mama Ojllo",
+     "Donde se hunda el báculo de oro que le dio su padre el Sol",
+     "Donde encuentre un río",
+     "Donde lo decida el pueblo"
+    ],
+    "answer": 1,
+    "explanation": "El Sol le dice que, donde el báculo se hunda en la tierra, allí debe fundar."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué representa cada hermano Ayar según el cuento?",
+    "options": [
+     "Cuatro regiones del Perú",
+     "Distintas cualidades: Manco la prudencia, Uchu la contemplación, Auca la estrategia y Cachi la fuerza impulsiva",
+     "Cuatro dioses",
+     "Cuatro edades del Inca"
+    ],
+    "answer": 1,
+    "explanation": "Valdelomar describe a cada uno con una virtud y un carácter distintos."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué los hermanos deciden apartar a Ayar Cachi?",
+    "options": [
+     "Porque estaba enfermo",
+     "Porque su fuerza y su violencia, útiles en la guerra, también dañan y ponen en peligro al pueblo que buscan fundar",
+     "Porque se enamoró",
+     "Porque quería volver a casa"
+    ],
+    "answer": 1,
+    "explanation": "Lo mandan con un pretexto a Pacaritambo, con Tampu Cachay, que lo encierra en la cueva para librarse de él."
+   },
+   {
+    "level": "critico",
+    "question": "Ayar Manco da de beber a una cautiva en vez de matarla. ¿Qué contraste plantea el cuento?",
+    "options": [
+     "Entre la costa y la sierra",
+     "Entre conquistar con la fuerza, como Cachi, y ganarse a los pueblos con generosidad, como Manco",
+     "Entre el día y la noche",
+     "Ninguno"
+    ],
+    "answer": 1,
+    "explanation": "La leyenda presenta dos maneras de fundar un imperio."
+   },
+   {
+    "level": "critico",
+    "question": "Los fundadores dicen que conquistarán «con amor o con sangre». ¿Cómo lees esa frase hoy?",
+    "options": [
+     "Como un consejo para la vida diaria",
+     "Como la idea, común en los relatos de fundación, de que un imperio nace también de la violencia contra otros pueblos",
+     "Como una canción de amor",
+     "Como una broma"
+    ],
+    "answer": 1,
+    "explanation": "Una lectura crítica nota que la gloria del origen esconde a los pueblos sometidos."
+   }
+  ],
+  "reflexion": [
+   "¿Conoces otra versión de la fundación del Cusco (Manco Cápac y Mama Ocllo en el lago Titicaca)? ¿En qué se parecen y en qué no?",
+   "¿Es justo lo que los hermanos hacen con Ayar Cachi? ¿Qué harías con alguien muy valioso pero peligroso para el grupo?"
+  ]
+ },
+ "el-camino-hacia-el-sol": {
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Qué noticia hace que el pueblo abandone su ciudad?",
+    "options": [
+     "Una sequía",
+     "Que los extranjeros destruyeron la ciudad sagrada y el Inca ha muerto",
+     "Que el Sol se apagó",
+     "Que llegó un nuevo curaca"
+    ],
+    "answer": 1,
+    "explanation": "El chasqui trae la noticia de la conquista; los amautas dicen que se ha cumplido el oráculo."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué encuentran al final del camino?",
+    "options": [
+     "El palacio del Sol",
+     "El mar, una «laguna sin orillas» que no pueden cruzar",
+     "Una ciudad nueva",
+     "A los extranjeros"
+    ],
+    "answer": 1,
+    "explanation": "Creían que el Sol dormía en esa gran laguna; al llegar, no hay forma de seguir."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué el pueblo decide enterrarse en la arena?",
+    "options": [
+     "Para esconderse del calor",
+     "Porque se sienten abandonados por el Sol y prefieren morir juntos y en paz antes que caer en manos de los conquistadores",
+     "Para buscar agua",
+     "Por orden de los extranjeros"
+    ],
+    "answer": 1,
+    "explanation": "Los sabios concluyen que el Sol los ha abandonado y eligen la muerte como último refugio."
+   },
+   {
+    "level": "critico",
+    "question": "Sumaj queda vivo y solo después de enterrar a Inquill. ¿Qué representa?",
+    "options": [
+     "Al ganador de la historia",
+     "Al último de un mundo que se acaba: ya nadie lo escuchará, porque su pueblo y su cultura han desaparecido",
+     "A un conquistador",
+     "A un traidor"
+    ],
+    "answer": 1,
+    "explanation": "El cuento lo llama «el último quechua»: es el fin de una civilización."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué visión de la conquista transmite Valdelomar con este cuento?",
+    "options": [
+     "Una aventura alegre",
+     "Una catástrofe vivida desde los vencidos, con dolor y fe, no desde los conquistadores",
+     "Una historia de comercio",
+     "No habla de la conquista"
+    ],
+    "answer": 1,
+    "explanation": "La leyenda imagina cómo vivió un pueblo andino el fin de su mundo."
+   }
+  ],
+  "reflexion": [
+   "¿Desde qué punto de vista te enseñaron la conquista en el colegio? ¿Qué cambia al contarla desde los vencidos?",
+   "Hoy también hay pueblos que dejan su tierra por guerras o pobreza. ¿Qué buscan y qué pierden?"
+  ]
  }
 }

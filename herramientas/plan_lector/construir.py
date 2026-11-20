@@ -58,10 +58,10 @@ def main():
             "revision": previo.get("revision", 1),
             "title": {"es": o["title"], **meta.get("title", {})},
             "author": o["author"],
-            "source": f"Texto original de {o['author']}, de dominio público, según Wikisource en español."
-            + (" Grabación de dominio público de LibriVox." if o.get("narrator") else ""),
+            "source": o.get("source") or (f"Texto original de {o['author']}, de dominio público, según Wikisource en español."
+            + (" Grabación de dominio público de LibriVox." if o.get("narrator") else "")),
             "collection": o["collection"],
-            "original": True,
+            "original": o.get("original", True),
             "region": o["region"],
             "ages": ["jovenes", "adultos"],
             "coverColor": o["coverColor"],

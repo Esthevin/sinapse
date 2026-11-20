@@ -40,6 +40,26 @@
   "minutes": 420
  },
  {
+  "id": "el-tungsteno",
+  "title": {
+   "es": "El tungsteno"
+  },
+  "author": "César Vallejo",
+  "year": 1931,
+  "level": "secundaria",
+  "ages": [
+   "jovenes",
+   "adultos"
+  ],
+  "region": "sierra",
+  "coverColor": "#4A4A44",
+  "summary": {
+   "es": "Una empresa norteamericana llega a Quivilca, en la sierra del Cusco, a explotar las minas de tungsteno. Los indios soras pierden sus tierras, los peones son reclutados a la fuerza y las autoridades sirven a los gringos. La novela social de Vallejo sobre la explotación minera y el despertar de la conciencia."
+  },
+  "chapters": 11,
+  "minutes": 236
+ },
+ {
   "id": "lazarillo-de-tormes",
   "title": {
    "es": "La vida de Lazarillo de Tormes",
@@ -81,6 +101,6 @@
    "es": "La novela romántica más famosa de América Latina: el amor entre Efraín y su prima María en el valle del Cauca, entre haciendas, ríos y montes, y las separaciones que lo ponen a prueba."
   },
   "chapters": 30,
-  "minutes": 736
+  "minutes": 749
  }
 ]

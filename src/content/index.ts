@@ -28,6 +28,15 @@ import hebaristoObra from './historias/hebaristo.json';
 import amorDeMadreObra from './historias/amor-de-madre.json';
 import aLaCarcelTodoCristoObra from './historias/a-la-carcel-todo-cristo.json';
 import pacoYunqueObra from './historias/paco-yunque.json';
+import guiaYawarFiestaObra from './historias/guia-yawar-fiesta.json';
+import guiaSuenoDelPongoObra from './historias/guia-sueno-del-pongo.json';
+import guiaRiosProfundosObra from './historias/guia-rios-profundos.json';
+import guiaCiudadYLosPerrosObra from './historias/guia-ciudad-y-los-perros.json';
+import elVencedorObra from './historias/el-vencedor.json';
+import losCaynasObra from './historias/los-caynas.json';
+import chaymantaHuaynuyObra from './historias/chaymanta-huaynuy.json';
+import losHermanosAyarObra from './historias/los-hermanos-ayar.json';
+import elCaminoHaciaElSolObra from './historias/el-camino-hacia-el-sol.json';
 import racimoDeHorcaObra from './historias/racimo-de-horca.json';
 import lucasElSacrilegoObra from './historias/lucas-el-sacrilego.json';
 import elResucitadoObra from './historias/el-resucitado.json';
@@ -49,6 +58,15 @@ export const STORIES: Story[] = [
   amorDeMadreObra,
   aLaCarcelTodoCristoObra,
   pacoYunqueObra,
+  guiaYawarFiestaObra,
+  guiaSuenoDelPongoObra,
+  guiaRiosProfundosObra,
+  guiaCiudadYLosPerrosObra,
+  elVencedorObra,
+  losCaynasObra,
+  chaymantaHuaynuyObra,
+  losHermanosAyarObra,
+  elCaminoHaciaElSolObra,
   racimoDeHorcaObra,
   lucasElSacrilegoObra,
   elResucitadoObra,

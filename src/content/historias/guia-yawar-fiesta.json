@@ -1,0 +1,121 @@
+{
+  "id": "guia-yawar-fiesta",
+  "revision": 1,
+  "title": {
+    "es": "Guía de lectura: Yawar Fiesta"
+  },
+  "author": "José María Arguedas (guía de Sinapse)",
+  "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor.",
+  "collection": "Guías de lectura",
+  "original": false,
+  "region": "sierra",
+  "ages": [
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#7A2E1F",
+  "summary": {
+    "es": "Guía para leer la primera novela de Arguedas (1941): en Puquio, los comuneros defienden su corrida de toros a la manera andina, el yawar punchay, contra la orden de prohibirla. Contexto, personajes, temas y preguntas."
+  },
+  "paragraphs": {
+    "es": [
+      "Yawar Fiesta es la primera novela de José María Arguedas. Se publicó en 1941. Su título mezcla el quechua y el castellano: yawar quiere decir sangre, así que el título se puede leer como «fiesta de sangre».",
+      "Arguedas nació en Andahuaylas, Apurímac, en 1911. Su madre murió cuando él era muy pequeño y pasó parte de su niñez entre los trabajadores indígenas de la hacienda de su madrastra. Allí aprendió el quechua antes que el castellano. Por eso, cuando escribe sobre los Andes, no mira desde afuera: cuenta un mundo que conoció por dentro.",
+      "La novela ocurre en Puquio, un pueblo de Lucanas, en Ayacucho. El pueblo está dividido en cuatro barrios o ayllus: Pichk'achuri, K'ayau, Chaupi y K'ollana. Cada ayllu tiene su orgullo y sus autoridades. Arriba, en la puna, viven los comuneros que han perdido tierras y pastos a manos de los vecinos ricos, a quienes la novela llama mistis.",
+      "Todos los años, para las fiestas patrias del 28 de julio, Puquio celebra una corrida a la manera andina. No hay un torero profesional: los comuneros entran a la plaza a enfrentar al toro con sus ponchos, con valor y, a veces, con dinamita. Es peligrosa y puede haber muertos, y para el pueblo eso forma parte del sentido de la fiesta.",
+      "Ese año llega una orden del gobierno: prohibir la corrida «india» por bárbara y reemplazarla por una corrida «a la española», con un torero traído de Lima. El subprefecto debe hacerla cumplir. Algunos vecinos notables lo apoyan. Un grupo de jóvenes puquianos que vive en Lima y se ha educado allí también, porque cree que así su pueblo progresa.",
+      "Los comuneros no aceptan. El ayllu de K'ayau decide traer para la fiesta al Misitu, un toro salvaje y casi legendario que vive en las alturas de K'oñani y al que nadie ha podido dominar. Atraparlo es una hazaña colectiva. Toda la comunidad trabaja, sube a la puna y arriesga la vida para llevarlo al pueblo.",
+      "La novela también muestra otro trabajo colectivo: los comuneros construyen una carretera de Puquio a la costa en muy poco tiempo, sin ayuda del Estado. Arguedas usa ese episodio para mostrar la fuerza y la organización de las comunidades, que los poderosos suelen despreciar.",
+      "Al final, el torero contratado no logra dominar a los toros andinos y los comuneros entran a la plaza como siempre. La fiesta ocurre a su manera, con sangre. Las autoridades no pueden detenerla.",
+      "Personajes y grupos para seguir: los comuneros de los ayllus, con sus varayok' o autoridades tradicionales; el subprefecto, que representa al Estado; los mistis o vecinos ricos, como el hacendado dueño del Misitu; y los estudiantes puquianos de Lima, que quieren cambiar la fiesta desde afuera.",
+      "Temas: la defensa de la cultura propia frente a una ley que la desprecia; el despojo de tierras; la fuerza del trabajo comunal; y la mirada de los de afuera, que llaman «salvaje» a lo que no entienden. Arguedas no idealiza la violencia de la corrida, pero muestra que para los comuneros prohibirla es otra forma de quitarles lo suyo.",
+      "Clave para leer: fíjate en cómo cambia el castellano cuando hablan los comuneros. Arguedas lo mezcla con palabras y giros del quechua para que el lector sienta el idioma de los Andes. Fíjate también en quién decide sobre la fiesta y quién la vive.",
+      "Esta guía no reemplaza la obra: no copia su texto, que tiene derechos de autor. Léela completa en la biblioteca de tu colegio, en una biblioteca pública o en una edición autorizada."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Yawar",
+      "meaning": "Sangre, en quechua. Yawar punchay es «día de sangre», como llaman los comuneros a su corrida."
+    },
+    {
+      "word": "Ayllu",
+      "meaning": "Comunidad o barrio unido por parentesco y trabajo común. Puquio tiene cuatro."
+    },
+    {
+      "word": "Misti",
+      "meaning": "Así llaman en los Andes al vecino blanco o mestizo con poder, muchas veces dueño de tierras."
+    },
+    {
+      "word": "Subprefecto",
+      "meaning": "Autoridad que representa al gobierno en una provincia."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Qué ordena el gobierno sobre la corrida de Puquio?",
+      "options": [
+        "Hacerla dos veces al año",
+        "Prohibir la corrida a la manera andina y hacer una corrida «a la española» con torero profesional",
+        "Cobrar entrada a los comuneros",
+        "Trasladarla a Lima"
+      ],
+      "answer": 1,
+      "explanation": "La orden declara bárbara la corrida de los comuneros y trae un torero para reemplazarla."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué traer al Misitu es tan importante para el ayllu de K'ayau?",
+      "options": [
+        "Porque es un toro manso y fácil",
+        "Porque capturar al toro salvaje de la puna es una hazaña colectiva que demuestra el valor y el orgullo del ayllu",
+        "Porque el subprefecto se lo pidió",
+        "Porque así ganarán dinero"
+      ],
+      "answer": 1,
+      "explanation": "El Misitu es casi una leyenda: llevarlo a la plaza es una forma de afirmar la fuerza de la comunidad."
+    },
+    {
+      "level": "inferencial",
+      "question": "Los estudiantes puquianos de Lima apoyan la prohibición. ¿Qué muestra eso?",
+      "options": [
+        "Que odian a su pueblo",
+        "Que hasta los hijos del pueblo, educados afuera, pueden mirar su propia cultura con los ojos de quienes la desprecian",
+        "Que el gobierno les pagó",
+        "Que no conocen Puquio"
+      ],
+      "answer": 1,
+      "explanation": "Quieren que su pueblo «progrese», pero aceptan una idea de progreso que borra la cultura de los comuneros."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué crítica hace la novela cuando el Estado decide sobre una fiesta que no es suya?",
+      "options": [
+        "Que las leyes siempre tienen razón",
+        "Que imponer costumbres desde el poder, sin escuchar a la comunidad, es otra forma de dominio, como el despojo de sus tierras",
+        "Que las fiestas no importan",
+        "Que los comuneros deben irse a Lima"
+      ],
+      "answer": 1,
+      "explanation": "La prohibición se suma al despojo: los poderosos deciden qué es civilizado y qué no."
+    },
+    {
+      "level": "critico",
+      "question": "La corrida andina es violenta y puede causar muertes. ¿Cuál es una lectura justa de la novela?",
+      "options": [
+        "Arguedas aplaude que haya muertos",
+        "La novela no oculta la violencia, pero pregunta quién tiene derecho a decidir sobre la cultura de un pueblo",
+        "La novela dice que hay que prohibir todas las fiestas",
+        "La violencia no aparece"
+      ],
+      "answer": 1,
+      "explanation": "Una lectura crítica reconoce las dos cosas: el riesgo de la fiesta y el desprecio con que se la prohíbe."
+    }
+  ],
+  "reflexion": [
+    "¿Hay en tu comunidad una costumbre que gente de afuera critica sin conocerla? ¿Quién debería decidir si cambia?",
+    "¿Se puede defender una tradición y, al mismo tiempo, querer que sea menos peligrosa? ¿Cómo lo harías?"
+  ]
+}
