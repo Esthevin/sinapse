@@ -103,6 +103,26 @@
         206.018,
         230.476
       ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-piper-es",
+      "voiceSource": "sintetica",
+      "url": "site:guia-sueno-del-pongo.es.mp3",
+      "license": "Creada con Piper (voz es_MX «claude», licencia Apache 2.0).",
+      "durationSec": 169.47,
+      "paragraphStartsSec": [
+        0.0,
+        17.651,
+        36.95,
+        57.363,
+        72.808,
+        89.681,
+        107.575,
+        122.985,
+        137.896,
+        155.035
+      ]
     }
   ],
   "glossary": [

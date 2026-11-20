@@ -223,5 +223,15 @@
       "es"
     ],
     "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "voz-piper-es",
+    "name": "Luz",
+    "role": "voz_sintetica",
+    "bio": "Voz de Sinapse para leer en castellano las historias que aún no tienen narrador.",
+    "languages": [
+      "es"
+    ],
+    "credit": "Creada con Piper (voz es_MX «claude», licencia Apache 2.0). Se reemplaza por una voz humana en cuanto haya narrador."
   }
 ]
