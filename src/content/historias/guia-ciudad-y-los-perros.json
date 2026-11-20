@@ -108,6 +108,27 @@
         275.61,
         311.728
       ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-piper-es",
+      "voiceSource": "sintetica",
+      "url": "site:guia-ciudad-y-los-perros.es.mp3",
+      "license": "Creada con Piper (voz es_MX «claude», licencia Apache 2.0).",
+      "durationSec": 223.912,
+      "paragraphStartsSec": [
+        0.0,
+        25.522,
+        46.691,
+        63.563,
+        85.997,
+        109.963,
+        133.245,
+        148.481,
+        173.515,
+        188.635,
+        209.223
+      ]
     }
   ],
   "glossary": [

@@ -113,6 +113,28 @@
         295.696,
         325.256
       ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-piper-es",
+      "voiceSource": "sintetica",
+      "url": "site:guia-yawar-fiesta.es.mp3",
+      "license": "Creada con Piper (voz es_MX «claude», licencia Apache 2.0).",
+      "durationSec": 235.456,
+      "paragraphStartsSec": [
+        0.0,
+        15.48,
+        38.947,
+        63.668,
+        86.218,
+        109.952,
+        133.117,
+        150.872,
+        164.181,
+        184.281,
+        205.368,
+        220.882
+      ]
     }
   ],
   "glossary": [

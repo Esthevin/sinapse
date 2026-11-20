@@ -103,6 +103,26 @@
         258.614,
         297.948
       ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-piper-es",
+      "voiceSource": "sintetica",
+      "url": "site:guia-rios-profundos.es.mp3",
+      "license": "Creada con Piper (voz es_MX «claude», licencia Apache 2.0).",
+      "durationSec": 208.433,
+      "paragraphStartsSec": [
+        0.0,
+        19.45,
+        42.79,
+        63.145,
+        92.812,
+        117.464,
+        134.557,
+        153.914,
+        171.89,
+        194.01
+      ]
     }
   ],
   "glossary": [
