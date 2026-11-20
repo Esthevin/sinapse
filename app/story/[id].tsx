@@ -241,12 +241,14 @@ function StoryPlayer({
             <Text style={styles.noticeText}>
               {t(lang, 'noNarrationYet', { lang: languageName(viewLang) })} {t(lang, 'listeningInSpanish')}
             </Text>
+            {settings.teamTools && (
             <Button
               label={t(lang, 'recordThisStory', { lang: languageName(viewLang) })}
               variant="secondary"
               onPress={() => router.push({ pathname: '/record/[id]', params: { id: story.id, lang: viewLang } })}
               style={{ marginTop: spacing.sm }}
             />
+            )}
           </Card>
         )}
 
@@ -306,7 +308,7 @@ function StoryPlayer({
           </Card>
         )}
 
-        {(isTts || (voice.kind === 'audio' && voice.source === 'sintetica')) && (
+        {settings.teamTools && (isTts || (voice.kind === 'audio' && voice.source === 'sintetica')) && (
           <Button
             label="Ponle tu voz: grabar esta historia"
             variant="secondary"
