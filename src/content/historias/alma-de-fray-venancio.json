@@ -293,67 +293,72 @@
   "quiz": [
     {
       "level": "literal",
-      "question": "¿Para qué ahorraba fray Venancio?",
+      "question": "¿Por qué Guruceta no tenía ningún papel que probara el depósito de fray Venancio?",
       "options": [
-        "Para viajar a España",
-        "Para pagar cuadros con la vida de San Pedro Nolasco",
-        "Para ayudar a los pobres",
-        "Para construir una iglesia"
+        "Porque lo perdió",
+        "Porque el fraile depositaba el dinero con confianza, sin pedir recibo",
+        "Porque se quemó",
+        "Porque el notario se lo llevó"
       ],
       "answer": 1,
-      "explanation": "Quería que el claustro de los mercedarios luciera la vida de su santo patrón, como los de otras órdenes."
-    },
-    {
-      "level": "literal",
-      "question": "¿A quién le confiaba fray Venancio su dinero?",
-      "options": [
-        "A fray Antolín",
-        "Al comendador",
-        "Al comerciante don Marcos Guruceta",
-        "A un banco"
-      ],
-      "answer": 2,
-      "explanation": "Lo depositaba en la tienda de Guruceta, en el portal de Botoneros, sin pedir recibo."
+      "explanation": "El depósito se hizo 'sin que mediase una tira de papel'."
     },
     {
       "level": "inferencial",
-      "question": "¿Por qué Guruceta llegó a ver el dinero como “cosa propia”?",
+      "question": "¿Por qué Guruceta llegó a considerar el dinero 'cosa propia'?",
       "options": [
-        "Porque fray Venancio se lo regaló",
-        "Porque nadie lo reclamaba y no había ningún papel que lo probara",
-        "Porque lo había ganado trabajando",
-        "Porque el convento se lo pidió"
+        "Porque se lo regalaron",
+        "Porque nadie lo reclamaba y nada lo probaba: la ocasión despertó su codicia",
+        "Porque lo ganó trabajando",
+        "Porque el convento quebró"
       ],
       "answer": 1,
-      "explanation": "Pasaron meses sin que nadie lo reclamara, y el depósito se había hecho “sin que mediase una tira de papel”."
+      "explanation": "La falta de testigos y de papeles lo tentó."
     },
     {
       "level": "inferencial",
-      "question": "¿Por qué Guruceta terminó devolviendo los seis mil pesos?",
+      "question": "¿Qué estrategia usa fray Antolín para que Guruceta devuelva el dinero?",
       "options": [
-        "Porque encontró un recibo",
-        "Por miedo a encontrarse con el alma del difunto",
-        "Porque el juez se lo ordenó",
-        "Porque se hizo fraile"
+        "Lo denuncia al virrey",
+        "Aprovecha su miedo supersticioso: le hace creer que el alma de fray Venancio vendrá en persona",
+        "Le ofrece un negocio",
+        "Le pide ayuda al obispo"
       ],
       "answer": 1,
-      "explanation": "Cuando fray Antolín le dijo que fray Venancio vendría en persona, “temió tener que habérselas con un alma de la otra vida”."
+      "explanation": "El temor a 'un alma del otro mundo' logra lo que la ley no podía."
     },
     {
       "level": "critico",
-      "question": "Palma comenta: “Haga usted hoy lo propio, y verá dónde le llega el agua”. ¿Qué consejo nos deja?",
+      "question": "¿Es correcto que fray Antolín use el miedo para lograr un fin justo?",
       "options": [
-        "Que no hay que confiar en nadie",
-        "Que en los acuerdos de dinero conviene dejar constancia por escrito",
-        "Que hay que guardar el dinero en casa",
-        "Que los comerciantes son todos deshonestos"
+        "Siempre está bien",
+        "Es discutible: recupera lo justo, pero con un engaño; el texto invita a pensar en los medios y los fines",
+        "Nunca está bien",
+        "No importa"
       ],
       "answer": 1,
-      "explanation": "La confianza es valiosa, pero un comprobante protege a ambas partes."
+      "explanation": "Pregunta sobre ética de los medios."
+    },
+    {
+      "level": "critico",
+      "question": "Palma comenta: 'Haga usted hoy lo propio, y verá dónde le llega el agua'. ¿Qué crítica hace a su propia época?",
+      "options": [
+        "Que la gente era más honrada",
+        "Que en su tiempo la confianza ya no bastaba: hacía falta respaldo escrito, porque la honradez se había vuelto escasa",
+        "Que el agua era cara",
+        "Que los frailes eran ricos"
+      ],
+      "answer": 1,
+      "explanation": "Compara con nostalgia irónica dos épocas."
     }
   ],
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "reflexion": [
+    "¿Qué haces cuando alguien te confía algo y nadie más lo sabe? ¿Por qué la honradez importa más cuando nadie mira?",
+    "Hoy usamos contratos, recibos y transferencias. ¿La confianza ya no sirve? ¿Qué equilibrio propones?"
+  ],
+  "revision": 2
 }

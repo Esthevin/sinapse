@@ -20,6 +20,29 @@ import mediasDeLosFlamencos from './historias/medias-de-los-flamencos.json';
 import oficiosidadNoAgradecida from './historias/oficiosidad-no-agradecida.json';
 import polvosDeLaCondesa from './historias/polvos-de-la-condesa.json';
 import tortugaGigante from './historias/tortuga-gigante.json';
+// Plan lector de secundaria (Populibros Caslit / Minedu): textos originales de dominio público
+import elCaballeroCarmeloObra from './historias/el-caballero-carmelo.json';
+import vueloDeLosCondoresObra from './historias/vuelo-de-los-condores.json';
+import ojosDeJudasObra from './historias/ojos-de-judas.json';
+import hebaristoObra from './historias/hebaristo.json';
+import amorDeMadreObra from './historias/amor-de-madre.json';
+import aLaCarcelTodoCristoObra from './historias/a-la-carcel-todo-cristo.json';
+import pacoYunqueObra from './historias/paco-yunque.json';
+import guiaYawarFiestaObra from './historias/guia-yawar-fiesta.json';
+import guiaSuenoDelPongoObra from './historias/guia-sueno-del-pongo.json';
+import guiaRiosProfundosObra from './historias/guia-rios-profundos.json';
+import guiaCiudadYLosPerrosObra from './historias/guia-ciudad-y-los-perros.json';
+import elVencedorObra from './historias/el-vencedor.json';
+import losCaynasObra from './historias/los-caynas.json';
+import chaymantaHuaynuyObra from './historias/chaymanta-huaynuy.json';
+import losHermanosAyarObra from './historias/los-hermanos-ayar.json';
+import elCaminoHaciaElSolObra from './historias/el-camino-hacia-el-sol.json';
+import racimoDeHorcaObra from './historias/racimo-de-horca.json';
+import lucasElSacrilegoObra from './historias/lucas-el-sacrilego.json';
+import elResucitadoObra from './historias/el-resucitado.json';
+import nadieSeMuereObra from './historias/nadie-se-muere.json';
+import aNadarPecesObra from './historias/a-nadar-peces.json';
+import conversionDeUnLibertinoObra from './historias/conversion-de-un-libertino.json';
 
 /**
  * Catálogo incluido en la app (funciona sin internet).
@@ -27,6 +50,29 @@ import tortugaGigante from './historias/tortuga-gigante.json';
  * y correr `npm run validar`. Ver docs/GUIA_CONTENIDO.md.
  */
 export const STORIES: Story[] = [
+  // Plan lector de secundaria: obras completas con voz humana de LibriVox (Paco Yunque, con la voz del teléfono)
+  elCaballeroCarmeloObra,
+  vueloDeLosCondoresObra,
+  ojosDeJudasObra,
+  hebaristoObra,
+  amorDeMadreObra,
+  aLaCarcelTodoCristoObra,
+  pacoYunqueObra,
+  guiaYawarFiestaObra,
+  guiaSuenoDelPongoObra,
+  guiaRiosProfundosObra,
+  guiaCiudadYLosPerrosObra,
+  elVencedorObra,
+  losCaynasObra,
+  chaymantaHuaynuyObra,
+  losHermanosAyarObra,
+  elCaminoHaciaElSolObra,
+  racimoDeHorcaObra,
+  lucasElSacrilegoObra,
+  elResucitadoObra,
+  nadieSeMuereObra,
+  aNadarPecesObra,
+  conversionDeUnLibertinoObra,
   // Con voz humana (grabaciones de dominio público de LibriVox) y texto original
   tortugaGigante,
   loroPelado,

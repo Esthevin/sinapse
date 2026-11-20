@@ -121,4 +121,6 @@ export interface Story {
   ambience?: AmbienceOverride[];
   glossary: GlossaryEntry[];
   quiz: QuizQuestion[];
+  /** Preguntas abiertas «Para pensar» (sin respuesta única), que se muestran al terminar el cuestionario. */
+  reflexion?: string[];
 }

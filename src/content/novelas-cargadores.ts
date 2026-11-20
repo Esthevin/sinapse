@@ -5,6 +5,7 @@
 export const NOVEL_LOADERS: Record<string, () => unknown> = {
   'aves-sin-nido': () => require('./novelas/aves-sin-nido.json'),
   'dona-perfecta': () => require('./novelas/dona-perfecta.json'),
+  'el-tungsteno': () => require('./novelas/el-tungsteno.json'),
   'lazarillo-de-tormes': () => require('./novelas/lazarillo-de-tormes.json'),
   'maria': () => require('./novelas/maria.json'),
 };

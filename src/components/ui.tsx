@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import { PORTADAS } from '@/content/portadas';
+import { imagenReal } from '@/content/imagenes';
 import type { Story } from '@/content/types';
 import { sceneFor } from '@/services/ilustracion';
 import { useApp } from '@/state/AppContext';
@@ -316,7 +317,10 @@ export function Cover({ story, size, title }: { story: Story; size: number; titl
   const th = useTheme();
   const { bg, fg } = th.colors.region[story.region];
   const ninos = th.playful;
-  const art = PORTADAS[story.id];
+  // Imagen real de dominio público (retrato del autor, edición original, dibujo de época).
+  // Se usa en el entorno de estudiante y cuando la historia no tiene portada dibujada.
+  const real = imagenReal(story.id, story.novel?.id);
+  const art = real !== undefined && (th.student || PORTADAS[story.id] === undefined) ? real : PORTADAS[story.id];
   // Sin portada pintada (historia de un PDF o del catálogo descargable): escena dibujada a partir del texto.
   const scene = useMemo(() => {
     if (art !== undefined) return null;

@@ -268,63 +268,63 @@
   "quiz": [
     {
       "level": "literal",
-      "question": "¿Quién estaba gravemente enferma en el palacio?",
+      "question": "¿De dónde vino el conocimiento de la quina según la tradición?",
       "options": [
-        "La hija del médico",
-        "Doña Francisca, la esposa del virrey",
-        "Una monja del convento",
-        "La reina de España"
+        "De un médico de Madrid",
+        "De Pedro de Leyva, un indígena de Loja, que se curó bebiendo agua de un remanso rodeado de quinas",
+        "De los jesuitas de Roma",
+        "De un libro árabe"
       ],
       "answer": 1,
-      "explanation": "La virreina doña Francisca tenía la fiebre terciana y el médico decía que no había esperanza."
-    },
-    {
-      "level": "literal",
-      "question": "¿Quién descubrió primero que el agua con quina curaba la fiebre?",
-      "options": [
-        "El médico Juan de Vega",
-        "El propio virrey",
-        "Pedro de Leyva, un indígena de Loja",
-        "El científico Linneo"
-      ],
-      "answer": 2,
-      "explanation": "Pedro de Leyva bebió agua de un remanso rodeado de árboles de quina y se curó; luego lo probó con otros enfermos."
+      "explanation": "El saber nace de la experiencia de un indígena; luego otros lo difunden."
     },
     {
       "level": "inferencial",
-      "question": "¿Por qué durante un tiempo la medicina se llamó “polvos de los jesuitas”?",
+      "question": "¿Por qué la medicina terminó llamándose 'polvos de la condesa' y no 'polvos de Pedro de Leyva'?",
       "options": [
-        "Porque los jesuitas la inventaron en Europa",
-        "Porque los jesuitas guardaron el secreto y curaban con ella",
+        "Porque la condesa la descubrió",
+        "Porque la fama quedó en manos de la virreina y de los jesuitas, mientras el saber indígena quedó en segundo plano",
+        "Porque Pedro de Leyva no quiso",
+        "Por error de imprenta"
+      ],
+      "answer": 1,
+      "explanation": "La historia muestra cómo el prestigio se atribuye a los poderosos."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué durante un tiempo se la llamó 'polvos de los jesuitas'?",
+      "options": [
+        "Porque ellos la inventaron",
+        "Porque guardaron el secreto algunos años y los enfermos acudían a ellos",
         "Porque era muy cara",
-        "Porque solo servía para los sacerdotes"
+        "Porque solo curaba a sacerdotes"
       ],
       "answer": 1,
-      "explanation": "El texto dice que los jesuitas guardaron el secreto por algunos años y a ellos acudían los enfermos."
-    },
-    {
-      "level": "inferencial",
-      "question": "Palma dice que el jesuita hizo “mayor servicio que el fraile que inventó la pólvora”. ¿Qué quiere decir?",
-      "options": [
-        "Que la pólvora fue un gran invento",
-        "Que curar enfermedades vale más que inventar armas",
-        "Que los frailes no sabían de ciencia",
-        "Que la quina explotaba como la pólvora"
-      ],
-      "answer": 1,
-      "explanation": "Compara un descubrimiento que salva vidas con uno que sirve para la guerra."
+      "explanation": "Controlar el secreto les dio fama y poder."
     },
     {
       "level": "critico",
-      "question": "En Salamanca algunos decían que la quina funcionaba por un “pacto con el diablo”. ¿Qué nos enseña esto?",
+      "question": "En Salamanca se dijo que la quina funcionaba por 'pacto con el diablo'. ¿Qué revela esa reacción?",
       "options": [
+        "Que tenían razón",
+        "Que el prejuicio y el miedo a lo desconocido pueden frenar un conocimiento útil, sobre todo si viene de otro pueblo",
         "Que la quina era peligrosa",
-        "Que el miedo a lo desconocido puede frenar descubrimientos útiles",
-        "Que los médicos de antes tenían razón",
-        "Que no hay que tomar medicinas"
+        "Que los médicos eran sabios"
       ],
       "answer": 1,
-      "explanation": "Los prejuicios hicieron rechazar un remedio eficaz que venía del saber andino."
+      "explanation": "Rechazaron un remedio eficaz por venir del saber andino."
+    },
+    {
+      "level": "critico",
+      "question": "La quina aparece en el escudo nacional del Perú. ¿Qué conexión puedes hacer con esta tradición?",
+      "options": [
+        "Ninguna",
+        "El escudo reconoce la riqueza natural del país, y la tradición recuerda que ese saber fue primero de los pueblos andinos",
+        "Que el escudo es español",
+        "Que la quina es de Europa"
+      ],
+      "answer": 1,
+      "explanation": "Une un símbolo nacional con la historia del conocimiento indígena."
     }
   ],
   "ambience": [
@@ -334,9 +334,13 @@
       "fx": null
     }
   ],
-  "revision": 2,
+  "revision": 3,
   "borrador": [
     "quz",
     "ay"
+  ],
+  "reflexion": [
+    "Hoy se discute quién se beneficia de las plantas medicinales de la Amazonía y los Andes (patentes, empresas). ¿Qué tiene que ver con esta tradición?",
+    "¿Conoces un remedio tradicional de tu familia o tu región? ¿Cómo se podría investigar si funciona sin despreciar ese saber?"
   ]
 }

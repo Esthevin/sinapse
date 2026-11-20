@@ -344,67 +344,72 @@
   "quiz": [
     {
       "level": "literal",
-      "question": "¿Qué le entregó la anciana a José Salcedo como dote de Carmen?",
+      "question": "¿Qué recibe José Salcedo como dote al casarse con Carmen?",
       "options": [
-        "Un rebaño de llamas",
-        "Una mina de plata",
-        "Una casa en Lima",
-        "Tierras en el Cusco"
+        "Una hacienda",
+        "Una mina de plata que la familia indígena guardaba en secreto",
+        "Un cargo público",
+        "Joyas incas"
       ],
       "answer": 1,
-      "explanation": "Tres días después de la boda lo llevó a una bocamina y le dijo: “Aquí tienes la dote de tu esposa”."
-    },
-    {
-      "level": "literal",
-      "question": "¿Qué hicieron los parientes de Carmen después de la muerte de Salcedo?",
-      "options": [
-        "Vendieron la mina",
-        "Se fueron a España",
-        "Inundaron y taparon la mina",
-        "Se la regalaron al virrey"
-      ],
-      "answer": 2,
-      "explanation": "La mina “dio en agua” y su entrada fue cubierta con peñas: nadie volvió a encontrarla."
+      "explanation": "'Aquí tienes la dote de tu esposa', le dice la anciana frente a la bocamina."
     },
     {
       "level": "inferencial",
-      "question": "¿Qué quiere decir Palma con “No se dirá que no mataban lujosamente”?",
+      "question": "¿Por qué la familia de Carmen inunda y tapa la mina tras la muerte de Salcedo?",
       "options": [
-        "Que vestían ropa muy fina",
-        "Que usaban balas de plata, un metal valiosísimo, como si fuera plomo",
-        "Que tenían muchos soldados",
-        "Que pagaban bien a sus tropas"
+        "Porque se acabó la plata",
+        "Para que la riqueza no cayera en manos de quienes causaron la muerte de Salcedo",
+        "Por orden del virrey",
+        "Por un terremoto"
       ],
       "answer": 1,
-      "explanation": "Les faltó plomo y fundieron balas de plata: así de rica era la mina."
+      "explanation": "Prefieren perder la mina antes que entregarla a la codicia de los poderosos."
     },
     {
       "level": "inferencial",
-      "question": "¿Por qué el virrey no aceptó la barra de plata diaria que le ofrecía Salcedo?",
+      "question": "¿Qué quiere decir Palma con 'No se dirá que no mataban lujosamente'?",
       "options": [
-        "Porque no le interesaba la plata",
-        "Porque le aconsejaron que ganaría más ejecutándolo y quedándose con sus bienes",
-        "Porque el rey se lo prohibió",
-        "Porque Salcedo no tenía tanta plata"
+        "Que las armas eran de oro",
+        "Que, a falta de plomo, fundían balas de plata: tal era la riqueza de la mina",
+        "Que vestían ropa fina en la guerra",
+        "Que pagaban a soldados"
       ],
       "answer": 1,
-      "explanation": "Los consejeros le hicieron ver que confiscando sus bienes obtendría más."
+      "explanation": "Es humor amargo: hasta la violencia se hacía con plata."
     },
     {
       "level": "critico",
-      "question": "Carmen dice: “Mis riquezas han traído mi desdicha”. ¿Qué opinas?",
+      "question": "El virrey rechaza la barra de plata diaria y prefiere ejecutar a Salcedo y confiscar sus bienes. ¿Qué muestra eso del poder colonial?",
       "options": [
-        "Que es mejor no trabajar",
-        "Que la codicia de otros puede volver peligrosa la riqueza",
-        "Que las minas siempre traen mala suerte",
-        "Que Carmen exageraba"
+        "Que era honrado",
+        "Que la autoridad podía usar la justicia como instrumento de codicia",
+        "Que la plata no le interesaba",
+        "Que Salcedo era culpable de todo"
       ],
       "answer": 1,
-      "explanation": "No fue la plata en sí, sino la ambición de los poderosos lo que llevó a la tragedia."
+      "explanation": "Los consejeros le hacen ver que ganaría más confiscando."
+    },
+    {
+      "level": "critico",
+      "question": "Carmen dice: 'Mis riquezas han traído mi desdicha'. ¿Cómo se relaciona con la historia minera del Perú?",
+      "options": [
+        "No se relaciona",
+        "Plantea una pregunta vigente: ¿quién se beneficia de la riqueza de la tierra y quién paga sus costos?",
+        "Dice que la minería siempre es buena",
+        "Habla solo de joyas"
+      ],
+      "answer": 1,
+      "explanation": "La tradición conecta con debates actuales sobre minería y comunidades."
     }
   ],
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "reflexion": [
+    "La familia de Carmen prefiere destruir la mina antes que entregarla. ¿Fue una buena decisión? ¿Qué harías tú?",
+    "¿Qué conflictos conoces hoy entre comunidades y proyectos mineros? ¿Qué tienen en común con esta tradición?"
+  ],
+  "revision": 2
 }

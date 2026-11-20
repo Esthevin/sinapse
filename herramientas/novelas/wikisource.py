@@ -19,7 +19,7 @@ API = "https://es.wikisource.org/w/api.php"
 UA = "SinapseBot/1.0 (https://github.com/Esthevin/sinapse; app educativa; contacto en el repositorio)"
 
 
-def _get(params, intentos=6):
+def _get(params, intentos=10):
     url = API + "?" + urllib.parse.urlencode(params)
     espera = 4
     for n in range(intentos):

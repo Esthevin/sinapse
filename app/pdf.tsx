@@ -12,7 +12,7 @@ import { confirmAction } from '@/utils/confirm';
 import { Button, Card, Chip, Glyph, ProgressBar, Text } from '@/components/ui';
 import { buildPdfHtml, type PdfMessage } from '@/services/pdfHtml';
 import { loadPdfJs } from '@/services/pdfSources';
-import { listSpanishVoices, voiceLabel } from '@/services/speech';
+import { VOCES_DESTACADAS, listSpanishVoices, voiceLabel } from '@/services/speech';
 import { deleteBook, prepareParagraphs, saveBook, wordCount } from '@/services/books';
 import { analyzePdf, previewOf, type Analysis, type OutlineItem, type RawPage, type Section } from '@/services/pdfAnalyze';
 import { base64ToBytes, kindOf, parseDocument } from '@/services/docImport';
@@ -59,6 +59,7 @@ export default function PdfScreen() {
     pdfsUsedThisMonth().then(setUsed);
   }, [catalogVersion, limitHit]);
   const [voices, setVoices] = useState<Speech.Voice[]>([]);
+  const [verTodas, setVerTodas] = useState(false);
   useEffect(() => {
     listSpanishVoices().then(setVoices);
   }, []);
@@ -249,7 +250,7 @@ export default function PdfScreen() {
             <Chip label="Una voz por personaje" active={settings.multiVoice} onPress={() => updateSettings({ multiVoice: !settings.multiVoice })} />
             <Chip label="Automática" active={settings.voiceId === null} onPress={() => { updateSettings({ voiceId: null }); tryVoice(null); }} />
           </View>
-          {voices.map((v, i) => {
+          {voices.slice(0, verTodas ? voices.length : VOCES_DESTACADAS).map((v, i) => {
             const on = settings.voiceId === v.identifier;
             return (
               <Pressable
@@ -267,6 +268,9 @@ export default function PdfScreen() {
               </Pressable>
             );
           })}
+          {voices.length > VOCES_DESTACADAS && (
+            <Chip label={verTodas ? 'Menos voces' : `Más voces (${voices.length - VOCES_DESTACADAS})`} active={verTodas} onPress={() => setVerTodas((v) => !v)} />
+          )}
 
           {myBooks.length > 0 && (
             <>

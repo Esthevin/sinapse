@@ -93,7 +93,7 @@
     "id": "voz-camila-pe",
     "name": "Camila",
     "role": "voz_sintetica",
-    "bio": "Voz neuronal femenina con acento peruano (es-PE-CamilaNeural) de Microsoft Azure. Es una voz generada por inteligencia artificial: no pertenece ni imita a ninguna persona real.",
+    "bio": "Voz de Sinapse con acento peruano, para los cuentos que aún no tienen narrador humano.",
     "languages": [
       "es"
     ],
@@ -104,7 +104,7 @@
     "id": "voz-alex-pe",
     "name": "Alex",
     "role": "voz_sintetica",
-    "bio": "Voz neuronal masculina con acento peruano (es-PE-AlexNeural) de Microsoft Azure. Es una voz generada por inteligencia artificial: no pertenece ni imita a ninguna persona real.",
+    "bio": "Voz de Sinapse con acento peruano, para los cuentos que aún no tienen narrador humano.",
     "languages": [
       "es"
     ],
@@ -113,9 +113,9 @@
   },
   {
     "id": "kokoro-voces-sinteticas",
-    "name": "Voces sintéticas (Kokoro)",
+    "name": "Elenco del radiodrama",
     "role": "voz_sintetica",
-    "bio": "Narrador, zorro y cóndor con voces de inteligencia artificial (Kokoro-82M: ef_dora, em_alex y em_santa). No son personas reales y no imitan a nadie.",
+    "bio": "Las voces del narrador, el zorro y el cóndor en este radiodrama de Sinapse.",
     "languages": [
       "es"
     ],
@@ -123,9 +123,9 @@
   },
   {
     "id": "voz-mms-quz",
-    "name": "Voz sintética MMS (Quechua cusqueño)",
+    "name": "Sumaq",
     "role": "voz_sintetica",
-    "bio": "Voz generada por inteligencia artificial (Meta MMS-TTS, facebook/mms-tts-quz). No es una persona: es un borrador mientras se consiguen narradores nativos.",
+    "bio": "Voz de Sinapse para leer en quechua cusqueño.",
     "languages": [
       "quz"
     ],
@@ -154,9 +154,9 @@
   },
   {
     "id": "voz-mms-ay",
-    "name": "Voz sintética MMS (Aimara)",
+    "name": "Wayra",
     "role": "voz_sintetica",
-    "bio": "Voz generada por inteligencia artificial (Meta MMS-TTS, facebook/mms-tts-ayr). No es una persona: es un borrador mientras se consiguen narradores nativos.",
+    "bio": "Voz de Sinapse para leer en aimara.",
     "languages": [
       "ay"
     ],
@@ -168,6 +168,57 @@
     "name": "Meribau",
     "role": "voluntario",
     "bio": "Voz voluntaria de LibriVox, proyecto que graba libros de dominio público con voluntarios de todo el mundo.",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-kendalrigans",
+    "name": "KendalRigans",
+    "bio": "Voz voluntaria de LibriVox que leyó «El Caballero Carmelo y otros cuentos» de Abraham Valdelomar.",
+    "role": "voluntario",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-mario-pineda",
+    "name": "Mario Pineda",
+    "bio": "Voz voluntaria de LibriVox que leyó varias «Tradiciones peruanas» de Ricardo Palma.",
+    "role": "voluntario",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "voz-mms-qu",
+    "name": "Kusi",
+    "role": "voz_sintetica",
+    "bio": "Voz de Sinapse para leer en quechua.",
+    "languages": [
+      "qu"
+    ],
+    "region": "sierra",
+    "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
+  },
+  {
+    "id": "librivox-yoyo",
+    "name": "Yoyo",
+    "bio": "Voz voluntaria de LibriVox que leyó «Tradiciones peruanas» de Ricardo Palma.",
+    "role": "voluntario",
+    "languages": [
+      "es"
+    ],
+    "credit": "Grabación de dominio público donada a LibriVox (librivox.org)."
+  },
+  {
+    "id": "librivox-joseasaez",
+    "name": "José Adrián Sáez Peñalver",
+    "bio": "Voz voluntaria de LibriVox que leyó «Tradiciones peruanas» de Ricardo Palma.",
+    "role": "voluntario",
     "languages": [
       "es"
     ],

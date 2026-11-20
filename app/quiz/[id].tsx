@@ -99,6 +99,16 @@ export default function QuizScreen() {
           })}
         </Card>
 
+        {story.reflexion && story.reflexion.length > 0 && (
+          <Card style={{ marginTop: spacing.lg }}>
+            <Text style={styles.levelName}>Para pensar</Text>
+            <Text style={styles.levelHelp}>No hay una sola respuesta correcta. Piénsalo, escríbelo o conversa con tu grupo, y defiende tu idea con algo del texto.</Text>
+            {story.reflexion.map((r, i) => (
+              <Text key={i} style={[styles.resultMsg, { textAlign: 'left', marginTop: spacing.sm }]}>{`${i + 1}. ${r}`}</Text>
+            ))}
+          </Card>
+        )}
+
         <View style={{ gap: spacing.sm, marginTop: spacing.lg }}>
           {pct < 1 && <Button label={t(lang, 'tryAgain')} onPress={restart} />}
           <Button

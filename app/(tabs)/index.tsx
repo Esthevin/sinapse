@@ -16,6 +16,12 @@ import { useThemed, type Theme } from '@/theme/theme';
 const REGIONS: Region[] = ['costa', 'sierra', 'selva'];
 const MAX_WIDTH = 760;
 
+/** Obras para secundaria: textos originales y extensos, no pensados solo para niños. */
+export const isSecundaria = (s: { ages: string[]; paragraphs: { es: string[] } }) =>
+  !s.ages.includes('ninos') && s.paragraphs.es.join(' ').split(/\s+/).length >= 400;
+
+type Vista = 'secundaria' | 'todos' | 'novelas' | 'descargadas';
+
 /** Quita tildes y mayúsculas para buscar sin importar cómo se escriba. */
 const normalize = (s: string) =>
   s
@@ -34,6 +40,10 @@ export default function LibraryScreen() {
   const [pickingLang, setPickingLang] = useState(false);
   const [novelsOnly, setNovelsOnly] = useState(false);
   const [onlyDownloaded, setOnlyDownloaded] = useState(false);
+  // Entorno de estudiante: una sola fila de pestañas en vez de varios filtros combinables.
+  const [vista, setVista] = useState<Vista>('secundaria');
+  const student = th.student;
+  const showNovels = student ? vista === 'novelas' : novelsOnly;
   const downloads = useDownloads();
   const downloadedUrls = useMemo(() => new Set(downloads.items.map((d) => d.url)), [downloads.items]);
   const currentLang = LANGUAGES.find((l) => l.code === lang);
@@ -41,13 +51,19 @@ export default function LibraryScreen() {
   const filtered = useMemo(() => {
     const q = normalize(query.trim());
     return STORIES.filter((s) => {
+      if (student) {
+        if (vista === 'secundaria' && !isSecundaria(s)) return false;
+        if (vista === 'descargadas' && !s.audio.some((a) => downloadedUrls.has(a.url))) return false;
+        if (q && !normalize(`${s.title.es} ${s.author} ${s.collection ?? ''} ${s.summary.es}`).includes(q)) return false;
+        return true;
+      }
       if (region && s.region !== region) return false;
       if (onlyHuman && !narratedLanguages(s, recordings[s.id]).length) return false;
       if (onlyDownloaded && !s.audio.some((a) => downloadedUrls.has(a.url))) return false;
       if (q && !normalize(`${s.title.es} ${s.author} ${s.collection ?? ''} ${s.summary.es}`).includes(q)) return false;
       return true;
-    });
-  }, [query, region, onlyHuman, onlyDownloaded, downloadedUrls, recordings, catalogVersion]);
+    }).sort((a, b) => (student ? 0 : Number(isSecundaria(a)) - Number(isSecundaria(b)))); // niños: primero sus cuentos
+  }, [query, region, onlyHuman, onlyDownloaded, downloadedUrls, recordings, catalogVersion, student, vista]);
 
   const novels = useMemo(() => {
     const q = normalize(query.trim());
@@ -96,8 +112,8 @@ export default function LibraryScreen() {
         </Card>
       )}
 
-      <Text style={styles.hello}>{t(lang, 'hello')}</Text>
-      <Text style={styles.tagline}>{t(lang, 'appTagline')}</Text>
+      <Text style={styles.hello}>{student ? 'Biblioteca' : t(lang, 'hello')}</Text>
+      <Text style={styles.tagline}>{student ? 'Escucha y lee obras peruanas completas, con preguntas para comprobar lo que entendiste.' : t(lang, 'appTagline')}</Text>
 
       {resume && (
         <Pressable onPress={openResume} accessibilityRole="button" accessibilityLabel={`${t(lang, 'continueListening')}: ${resume.title.es}`}>
@@ -128,6 +144,14 @@ export default function LibraryScreen() {
         returnKeyType="search"
       />
 
+      {student ? (
+        <View style={styles.chips} accessibilityRole="tablist">
+          <Chip label="Para secundaria" active={vista === 'secundaria'} onPress={() => setVista('secundaria')} />
+          <Chip label="Todos los cuentos" active={vista === 'todos'} onPress={() => setVista('todos')} />
+          <Chip label="Novelas" active={vista === 'novelas'} onPress={() => setVista('novelas')} />
+          {downloads.supported && <Chip label="Descargadas" active={vista === 'descargadas'} onPress={() => setVista('descargadas')} />}
+        </View>
+      ) : (
       <View style={styles.chips}>
         <Chip label={t(lang, 'all')} active={region === null} onPress={() => setRegion(null)} />
         {REGIONS.map((r) => (
@@ -137,16 +161,25 @@ export default function LibraryScreen() {
         <Chip label="Novelas" active={novelsOnly} onPress={() => setNovelsOnly((v) => !v)} />
         {downloads.supported && <Chip label="Descargadas" active={onlyDownloaded} onPress={() => setOnlyDownloaded((v) => !v)} />}
       </View>
+      )}
 
       <View style={{ marginTop: spacing.md }}>
-        <Button label="Convertir un PDF o documento en audiolibro" variant="secondary" onPress={() => router.push('/pdf')} />
+        <Button label={student ? 'Escuchar mi PDF o documento' : 'Convertir un PDF o documento en audiolibro'} variant="secondary" onPress={() => router.push('/pdf')} />
       </View>
 
-      <Text style={styles.count}>{novelsOnly ? `Novelas (${novels.length})` : `${t(lang, 'allStories')} (${filtered.length})`}</Text>
+      <Text style={styles.count}>
+        {showNovels
+          ? `Novelas (${novels.length})`
+          : student && vista === 'secundaria'
+            ? `Para secundaria (${filtered.length})`
+            : student && vista === 'descargadas'
+              ? `Descargadas (${filtered.length})`
+              : `${t(lang, 'allStories')} (${filtered.length})`}
+      </Text>
     </View>
   );
 
-  if (novelsOnly) {
+  if (showNovels) {
     return (
       <FlatList
         key="novelas"

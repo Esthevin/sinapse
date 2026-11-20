@@ -1,0 +1,119 @@
+{
+  "id": "guia-rios-profundos",
+  "revision": 1,
+  "title": {
+    "es": "Guía de lectura: Los ríos profundos"
+  },
+  "author": "José María Arguedas (guía de Sinapse)",
+  "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor.",
+  "collection": "Guías de lectura",
+  "original": false,
+  "region": "sierra",
+  "ages": [
+    "jovenes",
+    "adultos"
+  ],
+  "coverColor": "#2F4A5A",
+  "summary": {
+    "es": "Guía para leer la novela más conocida de Arguedas (1958): Ernesto, un adolescente que creció entre indígenas, vive internado en un colegio religioso de Abancay. Un zumbayllu, un motín de chicheras y una peste. Contexto, personajes y preguntas."
+  },
+  "paragraphs": {
+    "es": [
+      "Los ríos profundos se publicó en 1958 y es considerada la obra mayor de José María Arguedas. Tiene mucho de su propia vida: el narrador, Ernesto, es un adolescente que creció entre indígenas y viaja por los Andes con su padre, un abogado que va de pueblo en pueblo.",
+      "La novela empieza en el Cusco. Ernesto y su padre visitan a un pariente rico y avaro, al que llaman el Viejo. Ernesto camina por la ciudad y se detiene ante un muro inca de piedras enormes. Siente que las piedras están vivas y que se mueven como un río. Esa manera de mirar el mundo, donde las cosas tienen vida, recorre todo el libro.",
+      "Después el padre deja a Ernesto internado en un colegio religioso de Abancay, dirigido por el Padre Director. El colegio es un mundo duro: hay peleas, abusos entre los alumnos mayores y menores, y una violencia que Ernesto no entiende. Él extraña a su padre y a los indígenas que lo criaron.",
+      "Entre los compañeros hay personajes inolvidables: Antero, que trae al colegio un zumbayllu, un trompo que zumba al bailar y que para Ernesto tiene algo mágico; Palacios, un muchacho de la sierra que sufre para aprender; y otros internos que se burlan o protegen según el momento. En el patio también vive una mujer con discapacidad mental, la opa Marcelina, de quien abusan algunos internos mayores. Ese episodio muestra la crueldad del lugar.",
+      "Un día estalla un motín. Las chicheras de Abancay, mujeres que venden chicha y comida, se rebelan porque la sal, que necesitan para vivir, se la están guardando para el ganado de las haciendas. La líder, doña Felipa, toma la sal y la reparte entre los pobres y los colonos. Ernesto la sigue y se emociona: por primera vez ve a los débiles enfrentar a los poderosos.",
+      "El Padre Director predica a los colonos de las haciendas y les pide obediencia. Ernesto lo ve hacer llorar a los indígenas en nombre de Dios para que sigan aceptando su servidumbre. Eso le duele y lo confunde, porque también quiere al colegio y a algunos de los padres.",
+      "Al final llega la peste del tifus a Abancay. Los colonos de las haciendas, que viven en la miseria, bajan en masa a la ciudad para pedir una misa que los proteja. El colegio cierra y Ernesto se va, solo, hacia la hacienda de su pariente. Cruza el río y la novela termina con su partida.",
+      "Temas: el choque entre dos mundos, el andino y el criollo, que Ernesto lleva dentro; la violencia del colegio y de las haciendas; la rebeldía de las chicheras; y la música, los huaynos, los ríos y los trompos como refugio y fuerza.",
+      "Clave para leer: los capítulos no avanzan solo por la acción, también por la memoria y por los cantos. Cuando aparezca un huayno o una palabra en quechua, detente: Arguedas los usa para que sientas lo que Ernesto siente. Puedes comparar a Ernesto con el niño de El caballero Carmelo, que también recuerda su niñez, pero en la costa.",
+      "Esta guía no reemplaza la obra: no copia su texto, que tiene derechos de autor. Léela completa en la biblioteca de tu colegio, en una biblioteca pública o en una edición autorizada."
+    ]
+  },
+  "audio": [],
+  "glossary": [
+    {
+      "word": "Zumbayllu",
+      "meaning": "Trompo que zumba al girar. En la novela es casi un objeto mágico que une a Ernesto con su mundo."
+    },
+    {
+      "word": "Chichera",
+      "meaning": "Mujer que prepara y vende chicha y comida en las chicherías."
+    },
+    {
+      "word": "Colono",
+      "meaning": "Indígena que vive en la hacienda y trabaja para el hacendado a cambio de un pedazo de tierra."
+    },
+    {
+      "word": "Huayno",
+      "meaning": "Música y baile tradicional de los Andes."
+    }
+  ],
+  "quiz": [
+    {
+      "level": "literal",
+      "question": "¿Por qué se rebelan las chicheras de Abancay?",
+      "options": [
+        "Porque cerraron el colegio",
+        "Porque la sal que necesitan se guarda para el ganado de las haciendas",
+        "Porque subió el precio de la chicha",
+        "Porque llegó la peste"
+      ],
+      "answer": 1,
+      "explanation": "Doña Felipa encabeza el motín y reparte la sal entre los pobres y los colonos."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Qué significa para Ernesto el muro inca del Cusco?",
+      "options": [
+        "Nada, solo son piedras",
+        "Siente que las piedras están vivas: es su manera andina de mirar el mundo, donde las cosas tienen vida",
+        "Un lugar para jugar",
+        "La casa del Viejo"
+      ],
+      "answer": 1,
+      "explanation": "Desde el comienzo la novela muestra que Ernesto percibe el mundo como lo aprendió de los indígenas."
+    },
+    {
+      "level": "inferencial",
+      "question": "¿Por qué el zumbayllu es tan importante para Ernesto?",
+      "options": [
+        "Porque es caro",
+        "Porque su zumbido lo consuela y lo conecta con el mundo andino que extraña, en medio de la dureza del colegio",
+        "Porque se lo regaló el Padre Director",
+        "Porque gana apuestas con él"
+      ],
+      "answer": 1,
+      "explanation": "El trompo es un refugio: para Ernesto tiene algo de mágico y de música."
+    },
+    {
+      "level": "critico",
+      "question": "¿Qué crítica hace la novela con el sermón del Padre Director a los colonos?",
+      "options": [
+        "Que la religión siempre libera",
+        "Que el poder puede usar la fe para que los oprimidos acepten su servidumbre",
+        "Que los colonos son malos",
+        "Que el colegio es perfecto"
+      ],
+      "answer": 1,
+      "explanation": "Ernesto ve que el sermón hace llorar a los colonos para que sigan obedeciendo, y eso lo hiere."
+    },
+    {
+      "level": "critico",
+      "question": "Ernesto está entre dos mundos. ¿Qué tensión vive?",
+      "options": [
+        "Entre la costa y la selva",
+        "Entre el mundo andino que lo crió y el mundo de los blancos y mestizos del colegio, sin pertenecer del todo a ninguno",
+        "Entre dos colegios",
+        "Entre su padre y su madre"
+      ],
+      "answer": 1,
+      "explanation": "Esa división es el centro de la novela y de la experiencia del propio Arguedas."
+    }
+  ],
+  "reflexion": [
+    "¿Hay algún objeto, canción o lugar que te dé fuerza cuando estás lejos de casa, como el zumbayllu a Ernesto?",
+    "¿Qué harías si vieras abusar de alguien en tu colegio, como pasa con la opa Marcelina? ¿Qué impide a veces intervenir?"
+  ]
+}

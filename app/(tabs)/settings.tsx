@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { LanguagePicker } from '@/components/LanguagePicker';
 import { Button, Card, Chip, Glyph, SectionTitle, Text } from '@/components/ui';
-import { listSpanishVoices, voiceLabel } from '@/services/speech';
+import { VOCES_DESTACADAS, listSpanishVoices, voiceLabel } from '@/services/speech';
 import { t } from '@/i18n/translations';
 import { useAccount } from '@/state/AccountContext';
 import { useApp } from '@/state/AppContext';
 import { router } from 'expo-router';
-import { ACCENTS, ACCENT_CHOICES, DEFAULT_APPEARANCE, PALETTES, PALETTE_LABELS, useThemed, type Appearance, type PaletteId, type Theme } from '@/theme/theme';
+import { ACCENTS, ACCENT_CHOICES, DEFAULT_APPEARANCE, ENTORNOS, PALETTES, PALETTE_LABELS, useThemed, type Appearance, type PaletteId, type Theme } from '@/theme/theme';
 import { confirmAction } from '@/utils/confirm';
 
 const PALETTE_IDS: PaletteId[] = ['calido', 'papel', 'noche', 'contraste'];
@@ -29,6 +29,7 @@ export default function SettingsScreen() {
   const [checking, setChecking] = useState(false);
   const [catalogMsg, setCatalogMsg] = useState('');
   const [voices, setVoices] = useState<Speech.Voice[]>([]);
+  const [verTodas, setVerTodas] = useState(false);
   useEffect(() => {
     listSpanishVoices().then(setVoices);
   }, []);
@@ -59,6 +60,12 @@ export default function SettingsScreen() {
           {plan !== 'premium' && <Button label="Ver Premium" onPress={() => router.push('/premium')} />}
         </View>
       </Card>
+
+      <SectionTitle>Entorno</SectionTitle>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm }}>
+        <Chip label="Estudiante (secundaria)" active={settings.appearance.entorno === 'estudiante'} onPress={() => updateSettings({ appearance: ENTORNOS.estudiante })} />
+        <Chip label="Niños" active={settings.appearance.entorno === 'ninos'} onPress={() => updateSettings({ appearance: ENTORNOS.ninos })} />
+      </View>
 
       <SectionTitle>Apariencia</SectionTitle>
       <Text style={styles.note}>Elige colores, letra y formas a tu gusto. Los cambios se ven al instante.</Text>
@@ -135,7 +142,7 @@ export default function SettingsScreen() {
       </View>
       <Text style={styles.preview}>Había una vez, en lo alto de la puna…</Text>
       <View style={[styles.row, { marginTop: spacing.md }]}>
-        <Chip label="Restablecer apariencia" onPress={() => updateSettings({ appearance: DEFAULT_APPEARANCE, fontScale: 1 })} />
+        <Chip label="Restablecer apariencia" onPress={() => updateSettings({ appearance: ENTORNOS[settings.appearance.entorno] ?? DEFAULT_APPEARANCE, fontScale: 1 })} />
       </View>
 
       <SectionTitle>Sonidos de ambiente</SectionTitle>
@@ -161,7 +168,7 @@ export default function SettingsScreen() {
         <Chip label="Una voz por personaje" active={settings.multiVoice} onPress={() => updateSettings({ multiVoice: !settings.multiVoice })} />
         <Chip label="Automática" active={settings.voiceId === null} onPress={() => { updateSettings({ voiceId: null }); tryVoice(null); }} />
       </View>
-      {voices.map((v, i) => {
+      {voices.slice(0, verTodas ? voices.length : VOCES_DESTACADAS).map((v, i) => {
         const on = settings.voiceId === v.identifier;
         return (
           <Pressable
@@ -179,6 +186,9 @@ export default function SettingsScreen() {
           </Pressable>
         );
       })}
+      {voices.length > VOCES_DESTACADAS && (
+        <Chip label={verTodas ? 'Menos voces' : `Más voces (${voices.length - VOCES_DESTACADAS})`} active={verTodas} onPress={() => setVerTodas((v) => !v)} />
+      )}
       <Card style={{ marginTop: spacing.md }}>
         <Text style={styles.note}>
           Para una voz más natural:{'\n'}

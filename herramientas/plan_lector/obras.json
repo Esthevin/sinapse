@@ -1,0 +1,1474 @@
+{
+ "el-caballero-carmelo": {
+  "title": "El Caballero Carmelo",
+  "author": "Abraham Valdelomar",
+  "collection": "El Caballero Carmelo y otros cuentos",
+  "region": "costa",
+  "coverColor": "#8A3B1E",
+  "narrator": "librivox-kendalrigans",
+  "librivox": "https://librivox.org/el-caballero-carmelo-y-otros-cuentos-by-abraham-valdelomar-pinto/",
+  "summary": "En San Andrés, junto a Pisco, el padre trae a casa un gallo de pelea: el Caballero Carmelo. Los niños lo quieren como a uno más de la familia, hasta el día en que debe pelear contra el Ajiseco.",
+  "glossary": [
+   {
+    "word": "Gallo de pelea",
+    "meaning": "Gallo criado para competir en peleas, una costumbre antigua en la costa del Perú."
+   },
+   {
+    "word": "Ajiseco",
+    "meaning": "Gallo de color rojizo, como el ají seco. Es el rival de Carmelo."
+   },
+   {
+    "word": "Paladín",
+    "meaning": "Caballero valiente que defiende una causa. El narrador llama así al gallo."
+   },
+   {
+    "word": "Caucato",
+    "meaning": "Valle cercano a Pisco, en Ica."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Quién trae al Caballero Carmelo a la casa?",
+    "options": [
+     "Un vecino de Pisco",
+     "El padre del narrador",
+     "El dueño del Ajiseco",
+     "La madre del narrador"
+    ],
+    "answer": 1,
+    "explanation": "El cuento empieza con la llegada del padre a caballo, que trae el gallo como regalo."
+   },
+   {
+    "level": "literal",
+    "question": "¿Contra quién pelea Carmelo?",
+    "options": [
+     "Contra el Ajiseco",
+     "Contra un gallo de Lima",
+     "Contra el perro de la casa",
+     "Contra un cóndor"
+    ],
+    "answer": 0,
+    "explanation": "La pelea decisiva es contra el Ajiseco, un gallo joven y fuerte."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué la muerte de Carmelo duele tanto a la familia?",
+    "options": [
+     "Porque perdieron dinero en la apuesta",
+     "Porque lo sentían como un miembro de la familia y un héroe de su niñez",
+     "Porque el gallo era muy caro",
+     "Porque el padre se enfermó"
+    ],
+    "answer": 1,
+    "explanation": "El narrador lo recuerda como 'aquel amigo tan querido de nuestra niñez': el vínculo era afectivo, no económico."
+   },
+   {
+    "level": "critico",
+    "question": "El narrador cuenta la historia ya adulto. ¿Qué efecto tiene eso en el relato?",
+    "options": [
+     "Lo vuelve un informe técnico sobre gallos",
+     "Mezcla la mirada del niño con la nostalgia del adulto que recuerda",
+     "Hace que el final sea alegre",
+     "Ninguno: es igual que contarlo en presente"
+    ],
+    "answer": 1,
+    "explanation": "Es un relato de memoria: el adulto evoca su infancia en Pisco con ternura y tristeza."
+   }
+  ]
+ },
+ "vuelo-de-los-condores": {
+  "title": "El vuelo de los cóndores",
+  "author": "Abraham Valdelomar",
+  "collection": "El Caballero Carmelo y otros cuentos",
+  "region": "costa",
+  "coverColor": "#2C5866",
+  "narrator": "librivox-kendalrigans",
+  "librivox": "https://librivox.org/el-caballero-carmelo-y-otros-cuentos-by-abraham-valdelomar-pinto/",
+  "summary": "Un niño de Pisco se queda en la calle viendo llegar un circo. Entre el oso, el payaso y la amazona del caballo blanco, una niña artista de mirada triste se le queda en la memoria.",
+  "glossary": [
+   {
+    "word": "Circo",
+    "meaning": "Espectáculo ambulante con acróbatas, payasos y animales, que viajaba de pueblo en pueblo."
+   },
+   {
+    "word": "Convite",
+    "meaning": "Desfile por las calles con que el circo anunciaba su función."
+   },
+   {
+    "word": "Vapor",
+    "meaning": "Barco movido por una máquina de vapor."
+   },
+   {
+    "word": "Crepúsculo",
+    "meaning": "Luz del atardecer, cuando el sol ya se ha puesto."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Qué llega al pueblo y cambia el día del narrador?",
+    "options": [
+     "Un circo",
+     "Un tren de soldados",
+     "Una feria de libros",
+     "Un nuevo maestro"
+    ],
+    "answer": 0,
+    "explanation": "El niño se demora en la calle por la llegada del circo, con su banda, el oso y los artistas."
+   },
+   {
+    "level": "literal",
+    "question": "¿Cómo reacciona la madre cuando el niño vuelve tarde?",
+    "options": [
+     "Lo castiga sin hablarle",
+     "Le dice que hizo mal y llora, y él termina besándole las manos",
+     "Lo felicita",
+     "No se da cuenta"
+    ],
+    "answer": 1,
+    "explanation": "La madre le dice que hizo muy mal; ambos lloran y el niño, sollozando, le besa las manos."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué sentimiento queda en el niño al final, cuando el barco se aleja?",
+    "options": [
+     "Alivio",
+     "Tristeza y nostalgia por la niña que se va",
+     "Enojo con el circo",
+     "Miedo al mar"
+    ],
+    "answer": 1,
+    "explanation": "Desde la terraza ve perderse el vapor 'que manchaba con su cabellera de humo el cielo sangriento del crepúsculo'."
+   },
+   {
+    "level": "critico",
+    "question": "¿Por qué crees que el autor describe tanto el paisaje del puerto?",
+    "options": [
+     "Para alargar el cuento",
+     "Porque el paisaje acompaña las emociones del niño y le da al recuerdo su tono",
+     "Porque es un texto de geografía",
+     "Para enseñar a navegar"
+    ],
+    "answer": 1,
+    "explanation": "En Valdelomar el paisaje de Pisco no es decorado: expresa la ternura y la melancolía del recuerdo."
+   }
+  ]
+ },
+ "ojos-de-judas": {
+  "title": "Los ojos de Judas",
+  "author": "Abraham Valdelomar",
+  "collection": "El Caballero Carmelo y otros cuentos",
+  "region": "costa",
+  "coverColor": "#3D3552",
+  "narrator": "librivox-kendalrigans",
+  "librivox": "https://librivox.org/el-caballero-carmelo-y-otros-cuentos-by-abraham-valdelomar-pinto/",
+  "summary": "En el puerto de Pisco, un niño que recoge conchas en la playa conoce a una misteriosa mujer vestida de blanco. Se acerca la Semana Santa y el pueblo prepara la quema de Judas.",
+  "glossary": [
+   {
+    "word": "Quema de Judas",
+    "meaning": "Costumbre de Semana Santa: se arma un muñeco que representa a Judas, el traidor de Jesús, y se le prende fuego."
+   },
+   {
+    "word": "Muelle",
+    "meaning": "Construcción a la orilla del mar donde atracan los barcos."
+   },
+   {
+    "word": "Yuyos",
+    "meaning": "Algas marinas que el mar deja en la orilla."
+   },
+   {
+    "word": "Sopor",
+    "meaning": "Sueño pesado, adormecimiento."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Dónde ocurre la historia?",
+    "options": [
+     "En Lima",
+     "En el puerto de Pisco",
+     "En Cusco",
+     "En la selva"
+    ],
+    "answer": 1,
+    "explanation": "'El puerto de Pisco aparece en mis recuerdos como una mansísima aldea', dice el inicio."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué costumbre prepara el pueblo?",
+    "options": [
+     "Una procesión de barcos",
+     "La quema de Judas el sábado por la noche",
+     "Un concurso de pesca",
+     "La fiesta de la cosecha"
+    ],
+    "answer": 1,
+    "explanation": "Los marineros y cargadores van a quemar a Judas, 'porque Judas es muy malo'."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué los ojos del Judas impresionan tanto al niño al final?",
+    "options": [
+     "Porque eran de vidrio bonito",
+     "Porque los asocia a la traición y a la tragedia de la mujer que conoció",
+     "Porque le recordaban a su padre",
+     "Porque brillaban como el sol"
+    ],
+    "answer": 1,
+    "explanation": "Los describe 'rojos y sangrientos, acusadores, siniestros': para él cargan la tristeza de lo que vio."
+   },
+   {
+    "level": "critico",
+    "question": "El cuento termina con 'Ocultábase la luna...'. ¿Qué logra ese final?",
+    "options": [
+     "Explica todo lo que pasó",
+     "Deja un final abierto y melancólico, con el silencio de la noche",
+     "Anuncia una continuación",
+     "Cambia de tema"
+    ],
+    "answer": 1,
+    "explanation": "El final no explica: cierra con una imagen que deja al lector con el misterio y la pena."
+   }
+  ]
+ },
+ "hebaristo": {
+  "title": "Hebaristo, el sauce que murió de amor",
+  "author": "Abraham Valdelomar",
+  "collection": "El Caballero Carmelo y otros cuentos",
+  "region": "costa",
+  "coverColor": "#3E5B3A",
+  "narrator": "librivox-kendalrigans",
+  "librivox": "https://librivox.org/el-caballero-carmelo-y-otros-cuentos-by-abraham-valdelomar-pinto/",
+  "summary": "En un pueblo de la costa viven dos solitarios con vidas paralelas: un sauce llamado Hebaristo y el boticario Evaristo Mazuelos, que pasó su vida esperando el amor de la hija del juez.",
+  "glossary": [
+   {
+    "word": "Sauce",
+    "meaning": "Árbol de ramas largas que crece junto al agua."
+   },
+   {
+    "word": "Boticario",
+    "meaning": "Persona que prepara y vende medicinas; hoy diríamos farmacéutico."
+   },
+   {
+    "word": "Acequia",
+    "meaning": "Canal pequeño por donde corre el agua para regar."
+   },
+   {
+    "word": "Ripio",
+    "meaning": "Palabra que se pone en un verso solo para completar la rima o la medida."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Quiénes son los dos personajes cuyas vidas se parecen?",
+    "options": [
+     "Un sauce llamado Hebaristo y el boticario Evaristo Mazuelos",
+     "Dos hermanos pescadores",
+     "El alcalde y el juez",
+     "Dos gallos de pelea"
+    ],
+    "answer": 0,
+    "explanation": "El cuento compara al sauce con el boticario: los dos son huérfanos, solitarios y esperan el amor."
+   },
+   {
+    "level": "literal",
+    "question": "¿A quién amó en silencio el boticario?",
+    "options": [
+     "A la hija del juez",
+     "A la esposa del alcalde",
+     "A una actriz de circo",
+     "A su prima"
+    ],
+    "answer": 0,
+    "explanation": "'La hija del juez había sido el único amor del farmacéutico'."
+   },
+   {
+    "level": "inferencial",
+    "question": "En el final, el alcalde quiere dejar 'duro roble' en su discurso aunque el ataúd era de sauce. ¿Qué muestra eso?",
+    "options": [
+     "Que sabía mucho de maderas",
+     "Que le importaba más lucirse con su discurso que la verdad",
+     "Que el sauce y el roble son iguales",
+     "Que estaba muy triste"
+    ],
+    "answer": 1,
+    "explanation": "Prefiere no 'perder' una frase que le quedó bien: es una crítica irónica a la vanidad de los notables del pueblo."
+   },
+   {
+    "level": "critico",
+    "question": "¿Por qué el autor le da a un árbol sentimientos humanos?",
+    "options": [
+     "Por error",
+     "Para que el lector sienta la soledad y la espera desde otro ángulo, y la historia del sauce ilumine la del boticario",
+     "Porque es un cuento infantil",
+     "Para enseñar botánica"
+    ],
+    "answer": 1,
+    "explanation": "La personificación crea un paralelo poético entre el árbol y el hombre."
+   }
+  ]
+ },
+ "amor-de-madre": {
+  "title": "Amor de madre",
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "region": "costa",
+  "coverColor": "#6B2D3A",
+  "narrator": "librivox-mario-pineda",
+  "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+  "summary": "Lima, a fines del siglo XVII. Evangelina Zamora, joven y rica, se casa con un capitán que esconde la pasión por el juego. Cuando él comete un crimen, ella hará un sacrificio que solo revelará a sus hijos al morir.",
+  "glossary": [
+   {
+    "word": "Virrey",
+    "meaning": "Autoridad que gobernaba el Perú en nombre del rey de España."
+   },
+   {
+    "word": "Brazo de plata",
+    "meaning": "Apodo del virrey conde de la Monclova, que perdió un brazo en batalla y usaba uno de plata."
+   },
+   {
+    "word": "Desquite",
+    "meaning": "Intento de recuperar lo perdido en el juego volviendo a apostar."
+   },
+   {
+    "word": "Cadalso",
+    "meaning": "Tablado donde se ejecutaba a los condenados."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Qué vicio arruina a don Fernando, el esposo de Evangelina?",
+    "options": [
+     "La bebida",
+     "El juego",
+     "La pereza",
+     "La envidia"
+    ],
+    "answer": 1,
+    "explanation": "'La pasión del juego estaba solo adormecida en el alma del capitán' y lo lleva a perder la hacienda de su familia."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué objeto de Evangelina apuesta Fernando?",
+    "options": [
+     "Su collar",
+     "Su anillo",
+     "Su casa",
+     "Su caballo"
+    ],
+    "answer": 1,
+    "explanation": "Sin nada más que jugar, 'se acordó del espléndido anillo de su esposa'."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué Evangelina sacrifica su honra ante la sociedad?",
+    "options": [
+     "Por venganza contra su marido",
+     "Para que sus hijos no fueran llamados 'los hijos del ajusticiado'",
+     "Para casarse con el virrey",
+     "Por dinero"
+    ],
+    "answer": 1,
+    "explanation": "Lo dice al morir: perdió su honra 'porque no os llamasen un día los hijos del ajusticiado'."
+   },
+   {
+    "level": "critico",
+    "question": "Palma llama a esta tradición 'Amor de madre'. ¿Estás de acuerdo con que ese sea el centro de la historia? ¿Por qué?",
+    "options": [
+     "No, el centro es el juego",
+     "Sí: la decisión de Evangelina se explica por proteger el futuro de sus hijos, aun a costa de su nombre",
+     "No, el centro es el virrey",
+     "No tiene un centro"
+    ],
+    "answer": 1,
+    "explanation": "El título orienta la lectura: el sacrificio de la madre es lo que da sentido al relato."
+   }
+  ]
+ },
+ "a-la-carcel-todo-cristo": {
+  "title": "¡A la cárcel todo Cristo!",
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "region": "costa",
+  "coverColor": "#33424F",
+  "narrator": "librivox-mario-pineda",
+  "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+  "summary": "Ambrosio O'Higgins llegó a Lima como un humilde vendedor ambulante irlandés y volvió como virrey. Para acabar con el desorden nocturno, dio una orden tajante… que terminó alcanzándolo a él mismo.",
+  "glossary": [
+   {
+    "word": "Buhonero o mercachifle",
+    "meaning": "Vendedor ambulante de cosas pequeñas: cintas, agujas, dedales."
+   },
+   {
+    "word": "Encapados",
+    "meaning": "Agentes que vigilaban de noche las calles de Lima, como una policía de la época."
+   },
+   {
+    "word": "Marqués de Osorno",
+    "meaning": "Título que el rey dio a O'Higgins por recuperar la ciudad de Osorno, en Chile."
+   },
+   {
+    "word": "Calabozo",
+    "meaning": "Celda de una cárcel."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿A qué se dedicaba Ambrosio O'Higgins cuando llegó a Lima?",
+    "options": [
+     "Era soldado",
+     "Era vendedor ambulante (buhonero)",
+     "Era médico",
+     "Era sacerdote"
+    ],
+    "answer": 1,
+    "explanation": "Recorría las calles de Lima como 'buhonero o mercachifle', vendiendo cintas, agujas y dedales."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué cargo llegó a tener en el Perú?",
+    "options": [
+     "Alcalde de Lima",
+     "Virrey del Perú",
+     "Obispo",
+     "Capitán de barco"
+    ],
+    "answer": 1,
+    "explanation": "Tras su carrera en Chile fue nombrado marqués de Osorno y luego virrey del Perú."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué ironía hay en el título y el final de la tradición?",
+    "options": [
+     "Que nadie obedeció la orden",
+     "Que el propio virrey terminó pasando la noche en el calabozo por la orden que él dio",
+     "Que la cárcel estaba vacía",
+     "Que los encapados eran ladrones"
+    ],
+    "answer": 1,
+    "explanation": "Pasó la noche en la cárcel de la Pescadería 'como cualquier pelagatos'."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué piensas de un gobernante que acepta cumplir su propia ley?",
+    "options": [
+     "Que es débil",
+     "Que da ejemplo: la ley vale para todos, también para quien la dicta",
+     "Que debió castigar a los encapados",
+     "Que la ley no importa"
+    ],
+    "answer": 1,
+    "explanation": "La tradición muestra con humor la idea de igualdad ante la ley."
+   }
+  ]
+ },
+ "paco-yunque": {
+  "title": "Paco Yunque",
+  "author": "César Vallejo",
+  "collection": "Cuentos",
+  "region": "sierra",
+  "coverColor": "#4A4038",
+  "narrator": null,
+  "summary": "Es el primer día de colegio de Paco Yunque. Pero en el aula también está Humberto Grieve, hijo del patrón de su madre, que lo trata como su sirviente. Un cuento sobre la injusticia que empieza en la escuela.",
+  "glossary": [
+   {
+    "word": "Patrón",
+    "meaning": "Dueño o jefe para quien trabaja alguien. La madre de Paco trabaja para la familia Grieve."
+   },
+   {
+    "word": "Desenvuelto",
+    "meaning": "Que actúa con soltura y confianza."
+   },
+   {
+    "word": "Abuso",
+    "meaning": "Usar el poder o la ventaja para dañar o humillar a otro."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Por qué Humberto Grieve trata a Paco como si fuera suyo?",
+    "options": [
+     "Porque son primos",
+     "Porque la madre de Paco trabaja para la familia de Humberto",
+     "Porque Paco le debe dinero",
+     "Porque el profesor lo ordenó"
+    ],
+    "answer": 1,
+    "explanation": "Humberto es hijo del patrón: por eso cree que Paco debe obedecerle también en el colegio."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué compañero defiende a Paco?",
+    "options": [
+     "Fariña",
+     "Grieve",
+     "El director",
+     "Nadie"
+    ],
+    "answer": 0,
+    "explanation": "Paco Fariña enfrenta a Humberto y dice que Paco Yunque puede jugar con quien quiera."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué Paco llora al final?",
+    "options": [
+     "Porque perdió su lápiz",
+     "Porque Humberto presentó como suyo el trabajo de Paco y el profesor lo premió",
+     "Porque extrañaba a su madre",
+     "Porque se cayó en el patio"
+    ],
+    "answer": 1,
+    "explanation": "Grieve se apropia de la hoja de Paco y recibe el elogio; Paco no puede reclamar."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué crítica social hace Vallejo a través de la escuela?",
+    "options": [
+     "Que los niños no deben estudiar",
+     "Que la desigualdad de la sociedad se reproduce en el aula, incluso con la complicidad de los adultos",
+     "Que los profesores son siempre justos",
+     "Ninguna, es solo un cuento"
+    ],
+    "answer": 1,
+    "explanation": "El profesor favorece a Grieve: el cuento muestra cómo el poder económico pesa también en la escuela."
+   }
+  ]
+ },
+ "racimo-de-horca": {
+  "title": "Racimo de horca",
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "region": "costa",
+  "coverColor": "#3B2F2A",
+  "narrator": "librivox-rquintero",
+  "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+  "summary": "Lima colonial. Un prófugo de presidio acecha al virrey en el templo para matarlo. Palma cuenta la persecución y el castigo con su humor más negro.",
+  "glossary": [
+   {
+    "word": "Alcalde del crimen",
+    "meaning": "Juez encargado de los delitos en la Lima colonial."
+   },
+   {
+    "word": "Presidio",
+    "meaning": "Cárcel o fortaleza donde se cumplían penas largas."
+   },
+   {
+    "word": "Horca",
+    "meaning": "Estructura para ejecutar a los condenados colgándolos."
+   }
+  ],
+  "quiz": []
+ },
+ "lucas-el-sacrilego": {
+  "title": "Lucas el sacrílego",
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "region": "costa",
+  "coverColor": "#5A4A1E",
+  "narrator": "librivox-yoyo",
+  "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+  "summary": "Una noche de 1743 alguien entra por una claraboya al templo de San Agustín y roba el sol de oro de la custodia. El ladrón propondrá una reparación insólita.",
+  "glossary": [
+   {
+    "word": "Sacrílego",
+    "meaning": "Que profana algo sagrado."
+   },
+   {
+    "word": "Custodia",
+    "meaning": "Pieza de oro y joyas donde se expone la hostia en la iglesia."
+   },
+   {
+    "word": "Claraboya",
+    "meaning": "Ventana en el techo o en lo alto de un muro."
+   }
+  ],
+  "quiz": []
+ },
+ "el-resucitado": {
+  "title": "El resucitado",
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "region": "costa",
+  "coverColor": "#2F4A4A",
+  "narrator": "librivox-kendalrigans",
+  "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+  "summary": "Un español solitario, desahuciado en un hospital de Lima, confía sus monedas de oro al ecónomo para su entierro. Pero la muerte no siempre es definitiva…",
+  "glossary": [
+   {
+    "word": "Ecónomo",
+    "meaning": "Encargado de administrar los gastos de una institución."
+   },
+   {
+    "word": "Mortaja",
+    "meaning": "Tela con que se envuelve al difunto."
+   },
+   {
+    "word": "Peluconas",
+    "meaning": "Monedas de oro antiguas con la imagen del rey de peluca."
+   }
+  ],
+  "quiz": []
+ },
+ "nadie-se-muere": {
+  "title": "Nadie se muere hasta que Dios quiere",
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "region": "costa",
+  "coverColor": "#4B3A55",
+  "narrator": "librivox-kendalrigans",
+  "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+  "summary": "Román, un platero arruinado por los derroches de su esposa, decide acabar con su vida. Pero el destino le tiene preparada una sorpresa en la alameda.",
+  "glossary": [
+   {
+    "word": "Platero",
+    "meaning": "Artesano que trabaja la plata."
+   },
+   {
+    "word": "Manirrota",
+    "meaning": "Persona que gasta sin medida."
+   },
+   {
+    "word": "Pasquín",
+    "meaning": "Escrito anónimo y burlón que se pegaba en lugares públicos."
+   }
+  ],
+  "quiz": []
+ },
+ "a-nadar-peces": {
+  "title": "¡A nadar, peces!",
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "region": "costa",
+  "coverColor": "#24485C",
+  "narrator": "librivox-evafolch",
+  "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+  "summary": "Un fraile juandediano que guarda dinero en secreto conoce a un joven que promete triplicárselo con una botica. Así nació un dicho limeño.",
+  "glossary": [
+   {
+    "word": "Juandedianos",
+    "meaning": "Frailes de la orden de San Juan de Dios, que atendían hospitales."
+   },
+   {
+    "word": "Botica",
+    "meaning": "Farmacia antigua."
+   },
+   {
+    "word": "Simple",
+    "meaning": "Hierba medicinal; también, persona ingenua."
+   }
+  ],
+  "quiz": []
+ },
+ "conversion-de-un-libertino": {
+  "title": "Conversión de un libertino",
+  "author": "Ricardo Palma",
+  "collection": "Tradiciones peruanas",
+  "region": "costa",
+  "coverColor": "#4A2E2E",
+  "narrator": "librivox-joseasaez",
+  "librivox": "https://librivox.org/tradiciones-peruanas-by-ricardo-palma/",
+  "summary": "Lima, 1746. Juan de Andueza baila y bebe en una jarana cuando la tierra empieza a temblar. Esa noche cambiará su vida.",
+  "glossary": [
+   {
+    "word": "Libertino",
+    "meaning": "Persona que vive entregada a los placeres sin freno moral."
+   },
+   {
+    "word": "Jarana",
+    "meaning": "Fiesta popular con música y baile."
+   },
+   {
+    "word": "Mozamala",
+    "meaning": "Baile popular limeño, antecedente de la marinera."
+   }
+  ],
+  "quiz": []
+ },
+ "guia-yawar-fiesta": {
+  "title": "Guía de lectura: Yawar Fiesta",
+  "author": "José María Arguedas (guía de Sinapse)",
+  "collection": "Guías de lectura",
+  "region": "sierra",
+  "coverColor": "#7A2E1F",
+  "narrator": null,
+  "summary": "Guía para leer la primera novela de Arguedas (1941): en Puquio, los comuneros defienden su corrida de toros a la manera andina, el yawar punchay, contra la orden de prohibirla. Contexto, personajes, temas y preguntas.",
+  "glossary": [
+   {
+    "word": "Yawar",
+    "meaning": "Sangre, en quechua. Yawar punchay es «día de sangre», como llaman los comuneros a su corrida."
+   },
+   {
+    "word": "Ayllu",
+    "meaning": "Comunidad o barrio unido por parentesco y trabajo común. Puquio tiene cuatro."
+   },
+   {
+    "word": "Misti",
+    "meaning": "Así llaman en los Andes al vecino blanco o mestizo con poder, muchas veces dueño de tierras."
+   },
+   {
+    "word": "Subprefecto",
+    "meaning": "Autoridad que representa al gobierno en una provincia."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Qué ordena el gobierno sobre la corrida de Puquio?",
+    "options": [
+     "Hacerla dos veces al año",
+     "Prohibir la corrida a la manera andina y hacer una corrida «a la española» con torero profesional",
+     "Cobrar entrada a los comuneros",
+     "Trasladarla a Lima"
+    ],
+    "answer": 1,
+    "explanation": "La orden declara bárbara la corrida de los comuneros y trae un torero para reemplazarla."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué traer al Misitu es tan importante para el ayllu de K'ayau?",
+    "options": [
+     "Porque es un toro manso y fácil",
+     "Porque capturar al toro salvaje de la puna es una hazaña colectiva que demuestra el valor y el orgullo del ayllu",
+     "Porque el subprefecto se lo pidió",
+     "Porque así ganarán dinero"
+    ],
+    "answer": 1,
+    "explanation": "El Misitu es casi una leyenda: llevarlo a la plaza es una forma de afirmar la fuerza de la comunidad."
+   },
+   {
+    "level": "inferencial",
+    "question": "Los estudiantes puquianos de Lima apoyan la prohibición. ¿Qué muestra eso?",
+    "options": [
+     "Que odian a su pueblo",
+     "Que hasta los hijos del pueblo, educados afuera, pueden mirar su propia cultura con los ojos de quienes la desprecian",
+     "Que el gobierno les pagó",
+     "Que no conocen Puquio"
+    ],
+    "answer": 1,
+    "explanation": "Quieren que su pueblo «progrese», pero aceptan una idea de progreso que borra la cultura de los comuneros."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué crítica hace la novela cuando el Estado decide sobre una fiesta que no es suya?",
+    "options": [
+     "Que las leyes siempre tienen razón",
+     "Que imponer costumbres desde el poder, sin escuchar a la comunidad, es otra forma de dominio, como el despojo de sus tierras",
+     "Que las fiestas no importan",
+     "Que los comuneros deben irse a Lima"
+    ],
+    "answer": 1,
+    "explanation": "La prohibición se suma al despojo: los poderosos deciden qué es civilizado y qué no."
+   },
+   {
+    "level": "critico",
+    "question": "La corrida andina es violenta y puede causar muertes. ¿Cuál es una lectura justa de la novela?",
+    "options": [
+     "Arguedas aplaude que haya muertos",
+     "La novela no oculta la violencia, pero pregunta quién tiene derecho a decidir sobre la cultura de un pueblo",
+     "La novela dice que hay que prohibir todas las fiestas",
+     "La violencia no aparece"
+    ],
+    "answer": 1,
+    "explanation": "Una lectura crítica reconoce las dos cosas: el riesgo de la fiesta y el desprecio con que se la prohíbe."
+   }
+  ],
+  "original": false,
+  "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor."
+ },
+ "guia-sueno-del-pongo": {
+  "title": "Guía de lectura: El sueño del pongo",
+  "author": "José María Arguedas (guía de Sinapse)",
+  "collection": "Guías de lectura",
+  "region": "sierra",
+  "coverColor": "#5A4632",
+  "narrator": null,
+  "summary": "Guía para leer el relato que Arguedas recogió de la tradición oral quechua (1965): un siervo humillado por su patrón le cuenta un sueño en el que, ante San Francisco, los papeles se invierten. Contexto, temas y preguntas.",
+  "glossary": [
+   {
+    "word": "Pongo",
+    "meaning": "Indígena obligado a servir sin pago en la casa del hacendado, por turnos. Existió hasta 1969."
+   },
+   {
+    "word": "Hacienda",
+    "meaning": "Gran propiedad agrícola cuyo dueño, el hacendado, tenía poder sobre los colonos que vivían en ella."
+   },
+   {
+    "word": "Vizcacha",
+    "meaning": "Roedor de los Andes, parecido a un conejo. El patrón obliga al pongo a imitarla para burlarse de él."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Cómo llegó este relato a Arguedas?",
+    "options": [
+     "Lo inventó de niño",
+     "Lo escuchó de un comunero y lo reescribió en quechua y castellano",
+     "Lo tradujo del inglés",
+     "Lo encontró en un libro de la colonia"
+    ],
+    "answer": 1,
+    "explanation": "Es un cuento de la tradición oral quechua que Arguedas recogió y reescribió."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué el patrón escucha contento la primera parte del sueño?",
+    "options": [
+     "Porque ama al pongo",
+     "Porque cree que el sueño confirma que él merece lo dulce y el pongo lo sucio, como en la vida",
+     "Porque no entiende el quechua",
+     "Porque está dormido"
+    ],
+    "answer": 1,
+    "explanation": "La miel y el excremento parecen repetir la jerarquía de la hacienda."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué logra la última orden de San Francisco en el sueño?",
+    "options": [
+     "Que el pongo pida perdón",
+     "Que los dos queden unidos por la humillación: el patrón tendrá que lamer al pongo por toda la eternidad",
+     "Que el patrón vaya al cielo solo",
+     "Nada, el sueño se olvida"
+    ],
+    "answer": 1,
+    "explanation": "El giro final invierte el poder: el que humillaba queda humillado."
+   },
+   {
+    "level": "critico",
+    "question": "¿Por qué se dice que el pongo se rebela «con palabras»?",
+    "options": [
+     "Porque grita insultos",
+     "Porque, sin violencia y sin que el patrón pueda castigarlo por un sueño, le devuelve la humillación contando una historia",
+     "Porque escribe una carta al gobierno",
+     "Porque se va de la hacienda"
+    ],
+    "answer": 1,
+    "explanation": "La imaginación y el relato son su arma: dice lo que no podría decir de otra forma."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué relación tiene el relato con la historia del Perú?",
+    "options": [
+     "Ninguna, es fantasía",
+     "Denuncia un sistema de servidumbre real en las haciendas andinas, que duró hasta la reforma agraria",
+     "Habla de la conquista española",
+     "Trata sobre la vida en Lima"
+    ],
+    "answer": 1,
+    "explanation": "El pongueaje fue real: el cuento convierte esa injusticia en una historia que se recuerda."
+   }
+  ],
+  "original": false,
+  "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor."
+ },
+ "guia-rios-profundos": {
+  "title": "Guía de lectura: Los ríos profundos",
+  "author": "José María Arguedas (guía de Sinapse)",
+  "collection": "Guías de lectura",
+  "region": "sierra",
+  "coverColor": "#2F4A5A",
+  "narrator": null,
+  "summary": "Guía para leer la novela más conocida de Arguedas (1958): Ernesto, un adolescente que creció entre indígenas, vive internado en un colegio religioso de Abancay. Un zumbayllu, un motín de chicheras y una peste. Contexto, personajes y preguntas.",
+  "glossary": [
+   {
+    "word": "Zumbayllu",
+    "meaning": "Trompo que zumba al girar. En la novela es casi un objeto mágico que une a Ernesto con su mundo."
+   },
+   {
+    "word": "Chichera",
+    "meaning": "Mujer que prepara y vende chicha y comida en las chicherías."
+   },
+   {
+    "word": "Colono",
+    "meaning": "Indígena que vive en la hacienda y trabaja para el hacendado a cambio de un pedazo de tierra."
+   },
+   {
+    "word": "Huayno",
+    "meaning": "Música y baile tradicional de los Andes."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Por qué se rebelan las chicheras de Abancay?",
+    "options": [
+     "Porque cerraron el colegio",
+     "Porque la sal que necesitan se guarda para el ganado de las haciendas",
+     "Porque subió el precio de la chicha",
+     "Porque llegó la peste"
+    ],
+    "answer": 1,
+    "explanation": "Doña Felipa encabeza el motín y reparte la sal entre los pobres y los colonos."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué significa para Ernesto el muro inca del Cusco?",
+    "options": [
+     "Nada, solo son piedras",
+     "Siente que las piedras están vivas: es su manera andina de mirar el mundo, donde las cosas tienen vida",
+     "Un lugar para jugar",
+     "La casa del Viejo"
+    ],
+    "answer": 1,
+    "explanation": "Desde el comienzo la novela muestra que Ernesto percibe el mundo como lo aprendió de los indígenas."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué el zumbayllu es tan importante para Ernesto?",
+    "options": [
+     "Porque es caro",
+     "Porque su zumbido lo consuela y lo conecta con el mundo andino que extraña, en medio de la dureza del colegio",
+     "Porque se lo regaló el Padre Director",
+     "Porque gana apuestas con él"
+    ],
+    "answer": 1,
+    "explanation": "El trompo es un refugio: para Ernesto tiene algo de mágico y de música."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué crítica hace la novela con el sermón del Padre Director a los colonos?",
+    "options": [
+     "Que la religión siempre libera",
+     "Que el poder puede usar la fe para que los oprimidos acepten su servidumbre",
+     "Que los colonos son malos",
+     "Que el colegio es perfecto"
+    ],
+    "answer": 1,
+    "explanation": "Ernesto ve que el sermón hace llorar a los colonos para que sigan obedeciendo, y eso lo hiere."
+   },
+   {
+    "level": "critico",
+    "question": "Ernesto está entre dos mundos. ¿Qué tensión vive?",
+    "options": [
+     "Entre la costa y la selva",
+     "Entre el mundo andino que lo crió y el mundo de los blancos y mestizos del colegio, sin pertenecer del todo a ninguno",
+     "Entre dos colegios",
+     "Entre su padre y su madre"
+    ],
+    "answer": 1,
+    "explanation": "Esa división es el centro de la novela y de la experiencia del propio Arguedas."
+   }
+  ],
+  "original": false,
+  "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor."
+ },
+ "guia-ciudad-y-los-perros": {
+  "title": "Guía de lectura: La ciudad y los perros",
+  "author": "Mario Vargas Llosa (guía de Sinapse)",
+  "collection": "Guías de lectura",
+  "region": "costa",
+  "coverColor": "#3A3F2E",
+  "narrator": null,
+  "summary": "Guía para leer la novela con la que Vargas Llosa se hizo famoso (1963): en el Colegio Militar Leoncio Prado de Lima, el robo de un examen y la muerte de un cadete destapan un mundo de violencia y silencio. Contexto, personajes y preguntas.",
+  "glossary": [
+   {
+    "word": "Cadete",
+    "meaning": "Alumno de un colegio o escuela militar."
+   },
+   {
+    "word": "Perro",
+    "meaning": "En la novela, así llaman a los cadetes de primer año, que sufren los abusos de los mayores."
+   },
+   {
+    "word": "Encubrir",
+    "meaning": "Ocultar un delito o una falta para que no se sepa ni se castigue."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Por qué Ricardo Arana, el Esclavo, denuncia el robo del examen?",
+    "options": [
+     "Porque odiaba la química",
+     "Porque el castigo colectivo le impedía salir a ver a Teresa",
+     "Porque el Jaguar se lo pidió",
+     "Porque quería ser oficial"
+    ],
+    "answer": 1,
+    "explanation": "Sin salida por el castigo, Arana rompe la regla de no acusar para poder salir."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué Alberto, el Poeta, retira su acusación contra el Jaguar?",
+    "options": [
+     "Porque descubre que es inocente",
+     "Porque los superiores lo presionan con las novelitas que escribió y teme que lo expulsen",
+     "Porque Gamboa se lo ordena",
+     "Porque el Jaguar lo amenaza en público"
+    ],
+    "answer": 1,
+    "explanation": "El colegio usa una falta de Alberto para comprar su silencio."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué le pasa al teniente Gamboa por insistir en investigar?",
+    "options": [
+     "Lo ascienden",
+     "Lo trasladan a un puesto lejano: la institución castiga al que busca la verdad",
+     "Lo nombran director",
+     "Nada"
+    ],
+    "answer": 1,
+    "explanation": "Gamboa cree en el reglamento, pero el colegio prefiere evitar el escándalo."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué critica la novela con el cierre del caso como «accidente»?",
+    "options": [
+     "Que los accidentes son comunes",
+     "Que una institución puede preferir su prestigio a la justicia, y que el silencio de todos permite la violencia",
+     "Que los cadetes son todos culpables",
+     "Que la escuela militar es perfecta"
+    ],
+    "answer": 1,
+    "explanation": "La verdad existe, pero nadie con poder quiere oírla."
+   },
+   {
+    "level": "critico",
+    "question": "Al final el Jaguar confiesa, y Gamboa responde que ya es tarde. ¿Qué sentido tiene?",
+    "options": [
+     "Que la confesión arregla todo",
+     "Que, cuando el sistema ya decidió callar, la verdad llega tarde y no cambia nada: la justicia depende de instituciones dispuestas a escucharla",
+     "Que Gamboa no le cree",
+     "Que el Jaguar miente"
+    ],
+    "answer": 1,
+    "explanation": "El final amargo muestra el precio del silencio institucional."
+   }
+  ],
+  "original": false,
+  "source": "Guía de lectura escrita por el equipo de Sinapse. No reproduce el texto de la obra, que tiene derechos de autor."
+ },
+ "el-vencedor": {
+  "title": "El vencedor",
+  "author": "César Vallejo",
+  "collection": "Cuentos",
+  "region": "sierra",
+  "coverColor": "#5B4A3A",
+  "summary": "A la salida de la escuela, dos niños se pelean ante todos sus compañeros: Juncos, descalzo y pobre, y Cancio, hijo de buena familia. El narrador cambia de bando en plena pelea. Un cuento breve sobre la violencia y la compasión.",
+  "glossary": [
+   {
+    "word": "Contrincante",
+    "meaning": "Persona que compite o pelea contra otra."
+   },
+   {
+    "word": "Granuja",
+    "meaning": "Muchacho pobre y callejero; a veces se dice con cariño."
+   },
+   {
+    "word": "Bayeta",
+    "meaning": "Tela de lana gruesa y sencilla, usada por la gente pobre del campo."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Quiénes se enfrentan y en qué se diferencian?",
+    "options": [
+     "Dos hermanos de la misma familia",
+     "Juncos, descalzo y pobremente vestido, y Cancio, hijo de buena familia con zapatos nuevos",
+     "El narrador y Leonidas",
+     "Dos profesores"
+    ],
+    "answer": 1,
+    "explanation": "Vallejo describe con cuidado la ropa y los pies de cada uno: la pelea es también entre dos clases sociales."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué el narrador se pasa al bando de Juncos en plena pelea?",
+    "options": [
+     "Porque Juncos le pagó",
+     "Porque al verlo golpeado, en harapos y con los pies desnudos, siente compasión y le duele el corazón",
+     "Porque Cancio lo insultó",
+     "Porque quería ganar la apuesta"
+    ],
+    "answer": 1,
+    "explanation": "Primero simpatiza con Cancio, pero la imagen del niño pobre castigado lo hace cambiar."
+   },
+   {
+    "level": "inferencial",
+    "question": "Juncos gana, pero al final está solo y llorando. ¿Por qué?",
+    "options": [
+     "Porque le duele la oreja",
+     "Porque nadie celebra su triunfo: todos rodean al vencido y él siente vergüenza de haber golpeado a Cancio",
+     "Porque perdió su sombrero",
+     "Porque lo castigó el profesor"
+    ],
+    "answer": 1,
+    "explanation": "El título es irónico: el vencedor no gana nada y queda apartado."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué papel cumplen los demás niños durante la pelea?",
+    "options": [
+     "Intentan detenerla desde el principio",
+     "Gritan, apuestan como en una pelea de gallos y convierten el dolor ajeno en espectáculo",
+     "Llaman a los padres",
+     "No están presentes"
+    ],
+    "answer": 1,
+    "explanation": "El cuento critica al público que alienta la violencia y después se compadece."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué sugiere el gesto final de Leonidas, que arregla el sombrero y el pelo de Juncos?",
+    "options": [
+     "Que se burla de él",
+     "Que la ternura y el cuidado del otro son posibles aun después de la violencia, y que el vencedor también es una víctima",
+     "Que quiere pelear con él",
+     "Que es su hermano"
+    ],
+    "answer": 1,
+    "explanation": "Vallejo cierra con un acto de compasión hacia el que nadie mira."
+   }
+  ],
+  "narrator": null
+ },
+ "los-caynas": {
+  "title": "Los caynas",
+  "author": "César Vallejo",
+  "collection": "Escalas (1923)",
+  "region": "sierra",
+  "coverColor": "#3E4A3A",
+  "summary": "Un hombre vuelve a Cayna, su pueblo de la sierra, después de años en Lima, y descubre que su padre y todo el pueblo se creen monos. Cuando intenta hacerlos recordar que son hombres, lo llaman loco. Un cuento extraño y perturbador sobre la razón y la locura.",
+  "glossary": [
+   {
+    "word": "Alienado",
+    "meaning": "Persona que ha perdido la razón; enfermo mental, en el lenguaje antiguo."
+   },
+   {
+    "word": "Antropoide",
+    "meaning": "Parecido al ser humano; se dice de los monos grandes, como el gorila."
+   },
+   {
+    "word": "Asilo",
+    "meaning": "Aquí, hospital donde se internaba a los enfermos mentales."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Qué descubre el narrador al volver a Cayna?",
+    "options": [
+     "Que su familia se mudó a Lima",
+     "Que su padre, su familia y todo el pueblo se creen monos y viven como tales",
+     "Que el pueblo fue destruido por un terremoto",
+     "Que Urquizo se curó"
+    ],
+    "answer": 1,
+    "explanation": "La locura de la familia Urquizo se ha extendido a todo el pueblo."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué dice el padre cuando el narrador grita que todos son hombres?",
+    "options": [
+     "Que tiene razón",
+     "«¡Pobre! Se cree hombre. Está loco...»",
+     "Que se vaya del pueblo",
+     "Nada, no lo oye"
+    ],
+    "answer": 1,
+    "explanation": "Para los del pueblo, el loco es quien no comparte su creencia."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué revela el final, cuando aparece el enfermero?",
+    "options": [
+     "Que el narrador es médico",
+     "Que quien contaba la historia está internado en un asilo: no sabemos si el pueblo estaba loco o si lo está él",
+     "Que todo fue un sueño del padre",
+     "Que Cayna no existe"
+    ],
+    "answer": 1,
+    "explanation": "El giro final pone en duda todo lo que el lector creyó."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué es importante la escena en que Urquizo, el loco, le pregunta al narrador «¿Está usted loco?»",
+    "options": [
+     "Porque es un chiste",
+     "Porque anticipa el tema del cuento: cada uno cree estar cuerdo y ve loco al otro",
+     "Porque Urquizo es su padre",
+     "Porque el narrador lo golpeó a propósito"
+    ],
+    "answer": 1,
+    "explanation": "Desde ahí el narrador empieza a pensar que la razón depende del punto de vista."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué pregunta plantea el cuento sobre la «normalidad»?",
+    "options": [
+     "Que los monos son superiores",
+     "Si lo normal es solo lo que cree la mayoría: el que piensa distinto puede ser tratado como loco",
+     "Que no hay que estudiar en Lima",
+     "Ninguna, es solo terror"
+    ],
+    "answer": 1,
+    "explanation": "Vallejo convierte una historia de terror en una pregunta sobre la razón y la mayoría."
+   }
+  ],
+  "narrator": null
+ },
+ "chaymanta-huaynuy": {
+  "title": "Chaymanta Huayñuy (Más allá de la muerte)",
+  "author": "Abraham Valdelomar",
+  "collection": "Los hijos del Sol (1921)",
+  "region": "sierra",
+  "coverColor": "#6A4B2A",
+  "summary": "En el camino del Inca, unos pastores encuentran a Ñausa Soncco, un ciego maldito por el Sol. Él les cuenta cómo, por amor, robó en el templo del Sol y lo perdió todo. Una leyenda de Los hijos del Sol sobre el amor, la culpa y los dioses.",
+  "glossary": [
+   {
+    "word": "Chaymanta huayñuy",
+    "meaning": "Expresión quechua que Valdelomar traduce como «más allá de la muerte»."
+   },
+   {
+    "word": "Coricancha",
+    "meaning": "El gran templo del Sol en el Cusco, cubierto de oro."
+   },
+   {
+    "word": "Supay",
+    "meaning": "En la tradición andina, espíritu del mundo de abajo; los cronistas lo asociaron con el demonio."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Por qué Ñausa Soncco es «el hombre maldito del Sol»?",
+    "options": [
+     "Porque mató a un Inca",
+     "Porque, por amor, robó objetos sagrados del templo del Sol para su amada",
+     "Porque no quiso trabajar",
+     "Porque nació ciego"
+    ],
+    "answer": 1,
+    "explanation": "Para conquistar a su amada roba al Sol, y ese sacrilegio trae su castigo."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué ocurre con la amada cuando él le muestra lo robado?",
+    "options": [
+     "Acepta casarse",
+     "Huye espantada, «¡Has robado al Sol!», y al escapar cae al río",
+     "Lo denuncia al Inca",
+     "Se queda con el oro"
+    ],
+    "answer": 1,
+    "explanation": "Ella no acepta el sacrilegio; en la huida resbala y cae al río."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué Ñausa pide a los pastores que se alejen «a un tiro de honda»?",
+    "options": [
+     "Porque tiene una enfermedad",
+     "Porque se cree maldito y no quiere que su culpa los alcance, ni siquiera por el aire o la nube que los cubra",
+     "Porque no le gustan los pastores",
+     "Porque quiere estar solo para comer"
+    ],
+    "answer": 1,
+    "explanation": "Su maldición es tan grande que teme contagiarla."
+   },
+   {
+    "level": "critico",
+    "question": "Valdelomar escribe esta leyenda inca en un castellano muy adornado. ¿Qué busca con eso?",
+    "options": [
+     "Que sea difícil a propósito",
+     "Dar al pasado incaico la grandeza de una epopeya, como si fuera un mito antiguo",
+     "Burlarse de los incas",
+     "Imitar el habla de Lima"
+    ],
+    "answer": 1,
+    "explanation": "El estilo solemne convierte la historia en leyenda; es típico del modernismo."
+   },
+   {
+    "level": "critico",
+    "question": "Compara a Ñausa con un personaje de tragedia. ¿Qué tienen en común?",
+    "options": [
+     "Nada",
+     "Un error movido por la pasión que desafía a los dioses y termina en un castigo que ya no se puede reparar",
+     "Que ambos son reyes",
+     "Que terminan felices"
+    ],
+    "answer": 1,
+    "explanation": "Como en la tragedia, la falta y el castigo son inseparables."
+   }
+  ],
+  "narrator": null
+ },
+ "los-hermanos-ayar": {
+  "title": "Los hermanos Ayar",
+  "author": "Abraham Valdelomar",
+  "collection": "Los hijos del Sol (1921)",
+  "region": "sierra",
+  "coverColor": "#8A6A2A",
+  "summary": "El sumo sacerdote le cuenta a su sobrino, el joven príncipe Quespi-Titu, cómo los cuatro hermanos Ayar y sus mujeres salieron de Pacaritambo, guiados por el Sol, a fundar el Cusco. Ayar Cachi, el más fuerte y violento, es apartado por sus propios hermanos. La leyenda del origen de los incas, contada por Valdelomar.",
+  "glossary": [
+   {
+    "word": "Amauta",
+    "meaning": "Sabio y maestro en el imperio de los incas."
+   },
+   {
+    "word": "Pacaritambo",
+    "meaning": "Lugar de origen de los Ayar según la leyenda: el cerro de las tres ventanas."
+   },
+   {
+    "word": "Indi",
+    "meaning": "Aquí, el ave sagrada que lleva Manco; en quechua, inti es el Sol."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Cómo sabrá Ayar Manco dónde fundar la ciudad?",
+    "options": [
+     "Por un sueño de Mama Ojllo",
+     "Donde se hunda el báculo de oro que le dio su padre el Sol",
+     "Donde encuentre un río",
+     "Donde lo decida el pueblo"
+    ],
+    "answer": 1,
+    "explanation": "El Sol le dice que, donde el báculo se hunda en la tierra, allí debe fundar."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Qué representa cada hermano Ayar según el cuento?",
+    "options": [
+     "Cuatro regiones del Perú",
+     "Distintas cualidades: Manco la prudencia, Uchu la contemplación, Auca la estrategia y Cachi la fuerza impulsiva",
+     "Cuatro dioses",
+     "Cuatro edades del Inca"
+    ],
+    "answer": 1,
+    "explanation": "Valdelomar describe a cada uno con una virtud y un carácter distintos."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué los hermanos deciden apartar a Ayar Cachi?",
+    "options": [
+     "Porque estaba enfermo",
+     "Porque su fuerza y su violencia, útiles en la guerra, también dañan y ponen en peligro al pueblo que buscan fundar",
+     "Porque se enamoró",
+     "Porque quería volver a casa"
+    ],
+    "answer": 1,
+    "explanation": "Lo mandan con un pretexto a Pacaritambo, con Tampu Cachay, que lo encierra en la cueva para librarse de él."
+   },
+   {
+    "level": "critico",
+    "question": "Ayar Manco da de beber a una cautiva en vez de matarla. ¿Qué contraste plantea el cuento?",
+    "options": [
+     "Entre la costa y la sierra",
+     "Entre conquistar con la fuerza, como Cachi, y ganarse a los pueblos con generosidad, como Manco",
+     "Entre el día y la noche",
+     "Ninguno"
+    ],
+    "answer": 1,
+    "explanation": "La leyenda presenta dos maneras de fundar un imperio."
+   },
+   {
+    "level": "critico",
+    "question": "Los fundadores dicen que conquistarán «con amor o con sangre». ¿Cómo lees esa frase hoy?",
+    "options": [
+     "Como un consejo para la vida diaria",
+     "Como la idea, común en los relatos de fundación, de que un imperio nace también de la violencia contra otros pueblos",
+     "Como una canción de amor",
+     "Como una broma"
+    ],
+    "answer": 1,
+    "explanation": "Una lectura crítica nota que la gloria del origen esconde a los pueblos sometidos."
+   }
+  ],
+  "narrator": null
+ },
+ "el-camino-hacia-el-sol": {
+  "title": "El camino hacia el sol",
+  "author": "Abraham Valdelomar",
+  "collection": "Los hijos del Sol (1921)",
+  "region": "costa",
+  "coverColor": "#A65A2A",
+  "summary": "Llega la noticia: los extranjeros han tomado el Cusco y el Inca ha muerto. Un pueblo entero, con el joven Sumaj y su amada Inquill, emprende un éxodo en busca del Sol, hasta llegar al mar. Una leyenda triste sobre el fin de un mundo.",
+  "glossary": [
+   {
+    "word": "Éxodo",
+    "meaning": "Salida de un pueblo entero de su tierra, en busca de otro lugar."
+   },
+   {
+    "word": "Curaca",
+    "meaning": "Jefe de un pueblo o de un ayllu en tiempos de los incas."
+   },
+   {
+    "word": "Mitimaes",
+    "meaning": "Grupos que el Inca trasladaba de una región a otra para poblarla o vigilarla."
+   }
+  ],
+  "quiz": [
+   {
+    "level": "literal",
+    "question": "¿Qué noticia hace que el pueblo abandone su ciudad?",
+    "options": [
+     "Una sequía",
+     "Que los extranjeros destruyeron la ciudad sagrada y el Inca ha muerto",
+     "Que el Sol se apagó",
+     "Que llegó un nuevo curaca"
+    ],
+    "answer": 1,
+    "explanation": "El chasqui trae la noticia de la conquista; los amautas dicen que se ha cumplido el oráculo."
+   },
+   {
+    "level": "literal",
+    "question": "¿Qué encuentran al final del camino?",
+    "options": [
+     "El palacio del Sol",
+     "El mar, una «laguna sin orillas» que no pueden cruzar",
+     "Una ciudad nueva",
+     "A los extranjeros"
+    ],
+    "answer": 1,
+    "explanation": "Creían que el Sol dormía en esa gran laguna; al llegar, no hay forma de seguir."
+   },
+   {
+    "level": "inferencial",
+    "question": "¿Por qué el pueblo decide enterrarse en la arena?",
+    "options": [
+     "Para esconderse del calor",
+     "Porque se sienten abandonados por el Sol y prefieren morir juntos y en paz antes que caer en manos de los conquistadores",
+     "Para buscar agua",
+     "Por orden de los extranjeros"
+    ],
+    "answer": 1,
+    "explanation": "Los sabios concluyen que el Sol los ha abandonado y eligen la muerte como último refugio."
+   },
+   {
+    "level": "critico",
+    "question": "Sumaj queda vivo y solo después de enterrar a Inquill. ¿Qué representa?",
+    "options": [
+     "Al ganador de la historia",
+     "Al último de un mundo que se acaba: ya nadie lo escuchará, porque su pueblo y su cultura han desaparecido",
+     "A un conquistador",
+     "A un traidor"
+    ],
+    "answer": 1,
+    "explanation": "El cuento lo llama «el último quechua»: es el fin de una civilización."
+   },
+   {
+    "level": "critico",
+    "question": "¿Qué visión de la conquista transmite Valdelomar con este cuento?",
+    "options": [
+     "Una aventura alegre",
+     "Una catástrofe vivida desde los vencidos, con dolor y fe, no desde los conquistadores",
+     "Una historia de comercio",
+     "No habla de la conquista"
+    ],
+    "answer": 1,
+    "explanation": "La leyenda imagina cómo vivió un pueblo andino el fin de su mundo."
+   }
+  ],
+  "narrator": null
+ }
+}

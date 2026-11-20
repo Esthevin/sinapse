@@ -175,65 +175,70 @@
       "level": "literal",
       "question": "¿Qué le pidió el arzobispo al padre Godoy?",
       "options": [
-        "Que celebrara una misa",
+        "Que se fuera de Lima",
         "Que le prestara una barrita de plata",
-        "Que cambiara de parroquia",
-        "Que le regalara su sombrero"
+        "Que predicara en la catedral",
+        "Que comprara ropa para los pobres"
       ],
       "answer": 1,
-      "explanation": "“Tengo una necesidad y querría que me prestase una barrita de plata”."
-    },
-    {
-      "level": "literal",
-      "question": "¿Qué recibió Godoy ocho días después?",
-      "options": [
-        "La barrita de plata",
-        "Una canonjía",
-        "Ropa nueva: sotana, manteo, zapatos y sombrero",
-        "Una carta de agradecimiento"
-      ],
-      "answer": 2,
-      "explanation": "El mayordomo le llevó un envoltorio con ropa nueva y fina."
+      "explanation": "'Tengo una necesidad y querría que me prestase una barrita de plata'."
     },
     {
       "level": "inferencial",
-      "question": "¿Por qué Godoy aceptó prestar la plata sin dudar?",
+      "question": "¿Por qué Godoy prestó la plata tan rápido, si era tan tacaño?",
       "options": [
-        "Porque era muy generoso",
-        "Porque esperaba que el arzobispo lo premiara con una canonjía",
-        "Porque tenía miedo",
-        "Porque no sabía cuánto valía"
+        "Por bondad",
+        "Porque esperaba que el arzobispo lo recompensara con una canonjía",
+        "Porque lo obligaron",
+        "Porque le sobraba dinero"
       ],
       "answer": 1,
-      "explanation": "El texto dice que aspiraba a una canonjía y veía en el préstamo un futuro premio."
+      "explanation": "Su generosidad era interesada: aspiraba a un ascenso."
     },
     {
       "level": "inferencial",
-      "question": "¿Con qué dinero se compró la ropa nueva?",
+      "question": "¿Qué lección le da el arzobispo sin decírsela directamente?",
       "options": [
-        "Con dinero del arzobispo",
-        "Con limosnas",
-        "Con el dinero de la barrita de plata de Godoy",
-        "Con dinero del mayordomo"
+        "Que no debe prestar dinero",
+        "Que debía vestirse con decoro y que su avaricia era ridícula: lo viste con su propio dinero",
+        "Que debía dejar el sacerdocio",
+        "Que el arzobispo era pobre"
       ],
-      "answer": 2,
-      "explanation": "“Yo me he encargado de comprárselo con su propio dinero”, le dice el arzobispo."
+      "answer": 1,
+      "explanation": "La ironía está en que el 'regalo' lo pagó Godoy."
     },
     {
       "level": "critico",
-      "question": "¿Qué critica Palma con humor en esta tradición?",
+      "question": "Godoy pide al final que el arzobispo no vuelva a 'tomarse el trabajo de vestirlo'. ¿Qué revela esa respuesta?",
       "options": [
-        "Que la ropa nueva es cara",
-        "La tacañería y hacer favores esperando un premio",
-        "Que los arzobispos mandan mucho",
-        "Que no hay que prestar dinero"
+        "Que aprendió la lección",
+        "Que lo único que le duele es el dinero gastado: su avaricia sigue intacta, y ahí está el humor",
+        "Que estaba agradecido",
+        "Que quería más ropa"
       ],
       "answer": 1,
-      "explanation": "Godoy no presta por bondad sino por interés, y su avaricia queda en ridículo."
+      "explanation": "El título lo resume: 'oficiosidad no agradecida'."
+    },
+    {
+      "level": "critico",
+      "question": "¿Por qué Palma elige el humor para criticar a un sacerdote?",
+      "options": [
+        "Porque odiaba a la Iglesia",
+        "Porque la burla ligera le permite criticar un vicio sin sermones, y el lector lo recuerda mejor",
+        "Por casualidad",
+        "Porque era una orden del virrey"
+      ],
+      "answer": 1,
+      "explanation": "La sátira es el arma preferida de Palma."
     }
   ],
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "reflexion": [
+    "¿Has hecho alguna vez un favor esperando algo a cambio? ¿Sigue siendo un favor?",
+    "El arzobispo corrige a Godoy con ingenio en lugar de castigarlo. ¿Es una buena forma de corregir a alguien? ¿Cuándo no lo sería?"
+  ],
+  "revision": 2
 }
