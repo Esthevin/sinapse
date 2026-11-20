@@ -23,15 +23,15 @@ ASIGNACION = {
               "justicia-mayor-laycacota", "oficiosidad-no-agradecida", "alacran-fray-gomez", "a-la-carcel-todo-cristo"],
     "valdelomar": ["el-caballero-carmelo", "caballero-carmelo", "hebaristo"],
     "valdelomar-joven": ["vuelo-de-los-condores", "ojos-de-judas"],
-    "vallejo": ["paco-yunque"],
+    "vallejo": ["paco-yunque", "el-vencedor", "los-caynas"],
     "quiroga": ["tortuga-gigante", "loro-pelado"],
     "quiroga-1897": ["medias-de-los-flamencos", "gama-ciega"],
     "matto": ["aves-sin-nido"],
     "lazarillo": ["lazarillo-de-tormes"],
     "isaacs": ["maria"],
     "galdos": ["dona-perfecta"],
-    "poma-manco": ["manco-capac"],
-    "inca-manco": ["hermanos-ayar"],
+    "poma-manco": ["manco-capac", "los-hermanos-ayar"],
+    "inca-manco": ["hermanos-ayar", "el-camino-hacia-el-sol", "chaymanta-huaynuy"],
     "titicaca": ["lago-titicaca"],
 }
 

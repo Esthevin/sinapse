@@ -193,7 +193,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "site:justicia-mayor-laycacota.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 1020.6,
       "paragraphStartsSec": [
         0.0,
@@ -253,7 +253,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "site:justicia-mayor-laycacota.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 815.504,
       "paragraphStartsSec": [
         0.0,
@@ -346,10 +346,10 @@
       "level": "literal",
       "question": "¿Qué recibe José Salcedo como dote al casarse con Carmen?",
       "options": [
-        "Una hacienda",
-        "Una mina de plata que la familia indígena guardaba en secreto",
-        "Un cargo público",
-        "Joyas incas"
+        "Una hacienda de vid en el valle",
+        "Una mina de plata escondida",
+        "Un cargo de corregidor en Puno",
+        "Un cofre con joyas de los incas"
       ],
       "answer": 1,
       "explanation": "'Aquí tienes la dote de tu esposa', le dice la anciana frente a la bocamina."
@@ -358,10 +358,10 @@
       "level": "inferencial",
       "question": "¿Por qué la familia de Carmen inunda y tapa la mina tras la muerte de Salcedo?",
       "options": [
-        "Porque se acabó la plata",
+        "Porque la mina ya no tenía plata y no querían que nadie lo supiera",
         "Para que la riqueza no cayera en manos de quienes causaron la muerte de Salcedo",
-        "Por orden del virrey",
-        "Por un terremoto"
+        "Porque el virrey les ordenó cerrarla para evitar más rebeliones",
+        "Porque un terremoto la dañó y era peligroso seguir trabajando"
       ],
       "answer": 1,
       "explanation": "Prefieren perder la mina antes que entregarla a la codicia de los poderosos."
@@ -370,10 +370,10 @@
       "level": "inferencial",
       "question": "¿Qué quiere decir Palma con 'No se dirá que no mataban lujosamente'?",
       "options": [
-        "Que las armas eran de oro",
+        "Que los soldados usaban espadas de oro adornadas con piedras preciosas",
         "Que, a falta de plomo, fundían balas de plata: tal era la riqueza de la mina",
-        "Que vestían ropa fina en la guerra",
-        "Que pagaban a soldados"
+        "Que los mineros vestían ropa fina incluso en medio de la guerra",
+        "Que Salcedo pagaba muy bien a sus soldados para que lo defendieran"
       ],
       "answer": 1,
       "explanation": "Es humor amargo: hasta la violencia se hacía con plata."
@@ -382,10 +382,10 @@
       "level": "critico",
       "question": "El virrey rechaza la barra de plata diaria y prefiere ejecutar a Salcedo y confiscar sus bienes. ¿Qué muestra eso del poder colonial?",
       "options": [
-        "Que era honrado",
+        "Que el virrey era honrado y no se dejaba comprar por ningún minero",
         "Que la autoridad podía usar la justicia como instrumento de codicia",
-        "Que la plata no le interesaba",
-        "Que Salcedo era culpable de todo"
+        "Que a la Corona no le interesaba la plata, sino el orden en Puno",
+        "Que Salcedo era culpable de todo y merecía el castigo que recibió"
       ],
       "answer": 1,
       "explanation": "Los consejeros le hacen ver que ganaría más confiscando."
@@ -394,10 +394,10 @@
       "level": "critico",
       "question": "Carmen dice: 'Mis riquezas han traído mi desdicha'. ¿Cómo se relaciona con la historia minera del Perú?",
       "options": [
-        "No se relaciona",
-        "Plantea una pregunta vigente: ¿quién se beneficia de la riqueza de la tierra y quién paga sus costos?",
-        "Dice que la minería siempre es buena",
-        "Habla solo de joyas"
+        "Dice que la minería siempre trae riqueza y bienestar para todos",
+        "Pregunta quién gana con la riqueza de la tierra y quién paga",
+        "No se relaciona: habla solo de una mujer que perdió sus joyas",
+        "Explica que la plata del Perú se acabó en la colonia"
       ],
       "answer": 1,
       "explanation": "La tradición conecta con debates actuales sobre minería y comunidades."
@@ -411,5 +411,5 @@
     "La familia de Carmen prefiere destruir la mina antes que entregarla. ¿Fue una buena decisión? ¿Qué harías tú?",
     "¿Qué conflictos conoces hoy entre comunidades y proyectos mineros? ¿Qué tienen en común con esta tradición?"
   ],
-  "revision": 2
+  "revision": 5
 }

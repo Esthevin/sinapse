@@ -151,7 +151,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "site:polvos-de-la-condesa.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 773.692,
       "paragraphStartsSec": [
         0.0,
@@ -197,7 +197,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "site:polvos-de-la-condesa.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 622.028,
       "paragraphStartsSec": [
         0.0,
@@ -270,10 +270,10 @@
       "level": "literal",
       "question": "¿De dónde vino el conocimiento de la quina según la tradición?",
       "options": [
-        "De un médico de Madrid",
-        "De Pedro de Leyva, un indígena de Loja, que se curó bebiendo agua de un remanso rodeado de quinas",
-        "De los jesuitas de Roma",
-        "De un libro árabe"
+        "De un médico de Madrid que la estudió en los jardines del rey",
+        "De Pedro de Leyva, un indígena de Loja que se curó con ella",
+        "De los jesuitas de Roma, que la trajeron de sus misiones en Asia",
+        "De un libro árabe de medicina traducido en Sevilla"
       ],
       "answer": 1,
       "explanation": "El saber nace de la experiencia de un indígena; luego otros lo difunden."
@@ -282,10 +282,10 @@
       "level": "inferencial",
       "question": "¿Por qué la medicina terminó llamándose 'polvos de la condesa' y no 'polvos de Pedro de Leyva'?",
       "options": [
-        "Porque la condesa la descubrió",
-        "Porque la fama quedó en manos de la virreina y de los jesuitas, mientras el saber indígena quedó en segundo plano",
-        "Porque Pedro de Leyva no quiso",
-        "Por error de imprenta"
+        "Porque la condesa la descubrió ella misma en un viaje a Loja",
+        "Porque la fama se la llevó la virreina y no el saber indígena",
+        "Porque Pedro de Leyva pidió que no usaran su nombre",
+        "Por un error de imprenta en el primer libro que la describió"
       ],
       "answer": 1,
       "explanation": "La historia muestra cómo el prestigio se atribuye a los poderosos."
@@ -294,10 +294,10 @@
       "level": "inferencial",
       "question": "¿Por qué durante un tiempo se la llamó 'polvos de los jesuitas'?",
       "options": [
-        "Porque ellos la inventaron",
-        "Porque guardaron el secreto algunos años y los enfermos acudían a ellos",
-        "Porque era muy cara",
-        "Porque solo curaba a sacerdotes"
+        "Porque ellos la inventaron en sus laboratorios de Lima",
+        "Porque guardaron el secreto y los enfermos acudían a ellos",
+        "Porque era tan cara que solo ellos podían comprarla",
+        "Porque solo curaba a los sacerdotes y no a los demás"
       ],
       "answer": 1,
       "explanation": "Controlar el secreto les dio fama y poder."
@@ -306,10 +306,10 @@
       "level": "critico",
       "question": "En Salamanca se dijo que la quina funcionaba por 'pacto con el diablo'. ¿Qué revela esa reacción?",
       "options": [
-        "Que tenían razón",
-        "Que el prejuicio y el miedo a lo desconocido pueden frenar un conocimiento útil, sobre todo si viene de otro pueblo",
-        "Que la quina era peligrosa",
-        "Que los médicos eran sabios"
+        "Que los médicos de Salamanca tenían razón y la quina era peligrosa",
+        "Que el prejuicio puede frenar un saber útil de otro pueblo",
+        "Que la quina causaba más daño que la fiebre que intentaba curar",
+        "Que la Iglesia prohibía todas las medicinas que venían de América"
       ],
       "answer": 1,
       "explanation": "Rechazaron un remedio eficaz por venir del saber andino."
@@ -318,10 +318,10 @@
       "level": "critico",
       "question": "La quina aparece en el escudo nacional del Perú. ¿Qué conexión puedes hacer con esta tradición?",
       "options": [
-        "Ninguna",
-        "El escudo reconoce la riqueza natural del país, y la tradición recuerda que ese saber fue primero de los pueblos andinos",
-        "Que el escudo es español",
-        "Que la quina es de Europa"
+        "Ninguna: el árbol del escudo no tiene relación con la quina",
+        "Que esa riqueza natural fue primero un saber de los pueblos andinos",
+        "Que el escudo es de origen español y por eso recuerda a la condesa",
+        "Que la quina llegó al Perú desde Europa y por eso es símbolo"
       ],
       "answer": 1,
       "explanation": "Une un símbolo nacional con la historia del conocimiento indígena."
@@ -334,7 +334,7 @@
       "fx": null
     }
   ],
-  "revision": 3,
+  "revision": 6,
   "borrador": [
     "quz",
     "ay"

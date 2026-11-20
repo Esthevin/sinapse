@@ -166,7 +166,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "site:alma-de-fray-venancio.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 709.484,
       "paragraphStartsSec": [
         0.0,
@@ -217,7 +217,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "site:alma-de-fray-venancio.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 578.148,
       "paragraphStartsSec": [
         0.0,
@@ -295,10 +295,10 @@
       "level": "literal",
       "question": "¿Por qué Guruceta no tenía ningún papel que probara el depósito de fray Venancio?",
       "options": [
-        "Porque lo perdió",
+        "Porque el recibo se quemó en el incendio del convento poco antes de su muerte",
         "Porque el fraile depositaba el dinero con confianza, sin pedir recibo",
-        "Porque se quemó",
-        "Porque el notario se lo llevó"
+        "Porque Guruceta lo escondió y después negó haberlo firmado ante el notario",
+        "Porque los papeles quedaron en España, donde vivía la familia del fraile"
       ],
       "answer": 1,
       "explanation": "El depósito se hizo 'sin que mediase una tira de papel'."
@@ -307,10 +307,10 @@
       "level": "inferencial",
       "question": "¿Por qué Guruceta llegó a considerar el dinero 'cosa propia'?",
       "options": [
-        "Porque se lo regalaron",
+        "Porque el fraile se lo había regalado en secreto antes de morir sin testigos",
         "Porque nadie lo reclamaba y nada lo probaba: la ocasión despertó su codicia",
-        "Porque lo ganó trabajando",
-        "Porque el convento quebró"
+        "Porque el convento le debía dinero y él lo tomó como pago de esa deuda",
+        "Porque la ley de la época daba al depositario lo que nadie reclamaba en un año"
       ],
       "answer": 1,
       "explanation": "La falta de testigos y de papeles lo tentó."
@@ -319,10 +319,10 @@
       "level": "inferencial",
       "question": "¿Qué estrategia usa fray Antolín para que Guruceta devuelva el dinero?",
       "options": [
-        "Lo denuncia al virrey",
+        "Lo amenaza con denunciarlo ante el virrey y la Audiencia si no paga pronto",
         "Aprovecha su miedo supersticioso: le hace creer que el alma de fray Venancio vendrá en persona",
-        "Le ofrece un negocio",
-        "Le pide ayuda al obispo"
+        "Le ofrece la mitad del dinero si reconoce el depósito ante un escribano",
+        "Le pide al obispo que lo excomulgue públicamente hasta que devuelva todo"
       ],
       "answer": 1,
       "explanation": "El temor a 'un alma del otro mundo' logra lo que la ley no podía."
@@ -331,10 +331,10 @@
       "level": "critico",
       "question": "¿Es correcto que fray Antolín use el miedo para lograr un fin justo?",
       "options": [
-        "Siempre está bien",
-        "Es discutible: recupera lo justo, pero con un engaño; el texto invita a pensar en los medios y los fines",
-        "Nunca está bien",
-        "No importa"
+        "Sí, sin ninguna duda: cualquier medio vale cuando el fin es justo y honrado",
+        "Es discutible: recupera lo justo, pero usando un engaño",
+        "No, porque un fraile jamás debe mentir, ni siquiera para reparar una injusticia",
+        "No importa, porque al final el dinero no llegó a manos del convento"
       ],
       "answer": 1,
       "explanation": "Pregunta sobre ética de los medios."
@@ -343,10 +343,10 @@
       "level": "critico",
       "question": "Palma comenta: 'Haga usted hoy lo propio, y verá dónde le llega el agua'. ¿Qué crítica hace a su propia época?",
       "options": [
-        "Que la gente era más honrada",
-        "Que en su tiempo la confianza ya no bastaba: hacía falta respaldo escrito, porque la honradez se había vuelto escasa",
-        "Que el agua era cara",
-        "Que los frailes eran ricos"
+        "Que en su tiempo la gente era más confiada y por eso los bancos no hacían falta",
+        "Que en su tiempo la honradez escaseaba y la palabra ya no bastaba sin un papel",
+        "Que el agua de Lima se había vuelto escasa y cara por culpa de los comerciantes",
+        "Que los frailes de su época eran más ricos que los de la colonia y menos honrados"
       ],
       "answer": 1,
       "explanation": "Compara con nostalgia irónica dos épocas."
@@ -360,5 +360,5 @@
     "¿Qué haces cuando alguien te confía algo y nadie más lo sabe? ¿Por qué la honradez importa más cuando nadie mira?",
     "Hoy usamos contratos, recibos y transferencias. ¿La confianza ya no sirve? ¿Qué equilibrio propones?"
   ],
-  "revision": 2
+  "revision": 5
 }

@@ -67,7 +67,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "bundle:chullachaqui.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 94.504,
       "paragraphStartsSec": [
         0,
@@ -83,7 +83,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "bundle:chullachaqui.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 126.132,
       "paragraphStartsSec": [
         0.0,
@@ -143,8 +143,8 @@
       "options": [
         "Imitando el canto de las aves",
         "Tomando la forma de personas conocidas",
-        "Escondiendo los caminos",
-        "Apagando el sol"
+        "Borrando los caminos del monte",
+        "Llamando con voz de niño"
       ],
       "answer": 1,
       "explanation": "Puede tomar la forma de un amigo, un hermano o los padres."
@@ -177,10 +177,10 @@
       "level": "critico",
       "question": "¿Qué consejo práctico deja la historia para quien entra al bosque?",
       "options": [
-        "Entrar de noche para no ser visto",
-        "Ir solo para no hacer ruido",
+        "Entrar de noche, cuando el monte duerme",
+        "Ir solo y en silencio para no despertarlo",
         "No ir solo, avisar a dónde vas y respetar el bosque",
-        "Llevar mucha comida"
+        "Llevar comida para dejarle una ofrenda"
       ],
       "answer": 2,
       "explanation": "Es lo que Tito aprendió y lo que la leyenda enseña a quienes viven cerca del bosque."
@@ -189,5 +189,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }

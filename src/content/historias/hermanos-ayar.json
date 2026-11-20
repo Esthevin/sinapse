@@ -67,7 +67,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "bundle:hermanos-ayar.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 94.012,
       "paragraphStartsSec": [
         0,
@@ -83,7 +83,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "bundle:hermanos-ayar.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 110.284,
       "paragraphStartsSec": [
         0.0,
@@ -132,10 +132,10 @@
       "level": "literal",
       "question": "¿De dónde salieron los hermanos Ayar?",
       "options": [
-        "De la ventana central del cerro Tambo Tocco",
-        "Del lago Titicaca",
-        "Del mar",
-        "De un río"
+        "De la ventana central de Tambo Tocco",
+        "De una isla del lago Titicaca",
+        "De una cueva junto al mar",
+        "Del nacimiento de un río"
       ],
       "answer": 0,
       "explanation": "El texto dice que salieron de la ventana del centro del cerro Tambo Tocco."
@@ -180,10 +180,10 @@
       "level": "critico",
       "question": "¿Qué enseñanza puede dejar lo que le pasó a Ayar Cachi?",
       "options": [
-        "Que ser fuerte siempre es malo",
-        "Que las cuevas son peligrosas",
-        "Que el miedo puede llevarnos a tratar injustamente a los demás",
-        "Que hay que olvidar las cosas sagradas"
+        "Que ser fuerte siempre es peligroso",
+        "Que las cuevas guardan tesoros",
+        "Que el miedo nos hace injustos con otros",
+        "Que hay que obedecer al hermano mayor"
       ],
       "answer": 2,
       "explanation": "Ayar Cachi no había hecho daño a sus hermanos: lo encerraron por miedo. Podemos reflexionar si eso fue justo."
@@ -192,5 +192,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }

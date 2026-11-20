@@ -1,5 +1,5 @@
 import { router, useLocalSearchParams } from 'expo-router';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { starsFor } from '@/components/StoryCard';
@@ -23,9 +23,11 @@ export default function QuizScreen() {
   const [selected, setSelected] = useState<number | null>(null);
   const [answers, setAnswers] = useState<boolean[]>([]);
   const [done, setDone] = useState(false);
+  // Las opciones se barajan cada vez que se abre el cuestionario: la correcta no queda siempre en el mismo lugar.
+  const [semilla] = useState(() => Math.floor(Math.random() * 2 ** 31));
+  const questions = useMemo(() => (story?.quiz ?? []).map((qq, k) => barajar(qq, semilla + k * 7919)), [story, semilla]);
 
   if (!story) return null;
-  const questions = story.quiz;
   const q = questions[current];
 
   const choose = (i: number) => {
@@ -244,3 +246,18 @@ const makeStyles = ({ playful, colors, spacing, radius, fontSize, font, stroke, 
     levelScore: { fontWeight: '700', fontSize: fs(fontSize.body), color: colors.text },
     levelHelp: { color: colors.textMuted, marginBottom: spacing.xs, fontSize: fs(13) },
   });
+
+/** Baraja las opciones de una pregunta (Fisher-Yates con una semilla) y mueve el índice de la respuesta. */
+function barajar<Q extends { options: string[]; answer: number }>(q: Q, semilla: number): Q {
+  let s = semilla >>> 0 || 1;
+  const azar = () => {
+    s = (Math.imul(s, 1103515245) + 12345) >>> 0;
+    return s / 2 ** 32;
+  };
+  const orden = q.options.map((_, i) => i);
+  for (let i = orden.length - 1; i > 0; i--) {
+    const j = Math.floor(azar() * (i + 1));
+    [orden[i], orden[j]] = [orden[j], orden[i]];
+  }
+  return { ...q, options: orden.map((i) => q.options[i]), answer: orden.indexOf(q.answer) };
+}

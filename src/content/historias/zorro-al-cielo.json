@@ -67,7 +67,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "bundle:zorro-al-cielo.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 87.352,
       "paragraphStartsSec": [
         0,
@@ -83,7 +83,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "bundle:zorro-al-cielo.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 110.592,
       "paragraphStartsSec": [
         0.0,
@@ -151,7 +151,7 @@
       "options": [
         "Bailó toda la noche",
         "Ayudó a cocinar",
-        "Comió sin parar y no agradeció",
+        "Comió sin agradecer",
         "Se durmió temprano"
       ],
       "answer": 2,
@@ -161,9 +161,9 @@
       "level": "inferencial",
       "question": "¿Por qué los loros rompieron la soga?",
       "options": [
-        "Porque tenían hambre",
-        "Porque el zorro se burló de ellos y los insultó",
-        "Por accidente",
+        "Porque tenían mucha hambre",
+        "Porque el zorro los insultó",
+        "Se rompió por accidente",
         "Porque el cóndor se lo pidió"
       ],
       "answer": 1,
@@ -174,7 +174,7 @@
       "question": "¿Qué enseñanza nos deja este cuento?",
       "options": [
         "Que no hay que ir a las fiestas",
-        "Que el orgullo y la falta de gratitud traen problemas",
+        "Que el orgullo trae problemas",
         "Que los cóndores no son buenos amigos",
         "Que es mejor no comer quinua"
       ],
@@ -185,5 +185,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }

@@ -181,7 +181,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "site:medias-de-los-flamencos.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 765.476,
       "paragraphStartsSec": [
         0.0,
@@ -237,7 +237,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "site:medias-de-los-flamencos.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 645.78,
       "paragraphStartsSec": [
         0.0,
@@ -341,7 +341,7 @@
       "question": "¿Por qué la lechuza les dijo que no dejaran de bailar ni un momento?",
       "options": [
         "Porque el baile terminaba pronto",
-        "Para que las víboras no pudieran ver de qué estaban hechas las medias",
+        "Para que no vieran de qué eran las medias",
         "Para que no les diera frío",
         "Porque así lo pedía la música"
       ],
@@ -364,8 +364,8 @@
       "level": "critico",
       "question": "¿Qué nos enseña este cuento?",
       "options": [
-        "Que bailar es peligroso",
-        "Que la envidia y querer aparentar pueden traer malas consecuencias",
+        "Que bailar mucho cansa las patas",
+        "Que la envidia y aparentar salen caro",
         "Que las lechuzas son malas",
         "Que hay que comprar ropa cara"
       ],
@@ -381,5 +381,5 @@
     "Los flamencos quieren parecer lo que no son para destacar en el baile. ¿Pasa algo parecido hoy en las redes sociales?",
     "El tatú y la lechuza se burlan de los flamencos. ¿Quién es más responsable de lo que les pasa: los que engañan o los que se dejan engañar por envidia?"
   ],
-  "revision": 2
+  "revision": 5
 }

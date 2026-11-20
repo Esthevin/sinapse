@@ -232,7 +232,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "site:gama-ciega.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 942.512,
       "paragraphStartsSec": [
         0.0,
@@ -305,7 +305,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "site:gama-ciega.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 819.14,
       "paragraphStartsSec": [
         0.0,
@@ -404,10 +404,10 @@
       "level": "literal",
       "question": "¿Qué le hacía repetir la madre a la gamita cada mañana?",
       "options": [
-        "Una canción de cuna",
-        "La “oración de los venados”: reglas para cuidarse",
+        "Una canción para dormir",
+        "La oración de los venados",
         "Los nombres de los árboles",
-        "El camino al pueblo"
+        "El camino hacia el río"
       ],
       "answer": 1,
       "explanation": "Oler las hojas, mirar el río antes de beber, oler el viento y revisar los yuyos."
@@ -416,10 +416,10 @@
       "level": "literal",
       "question": "¿Qué llevó la gama al cazador como “recomendación”?",
       "options": [
-        "Una carta escrita",
-        "Plumas de garza",
-        "Una cabeza seca de víbora que le dio el oso hormiguero",
-        "Un tubo con miel"
+        "Una carta del oso hormiguero",
+        "Un panal lleno de miel",
+        "Una cabeza seca de víbora",
+        "Unas plumas de garza"
       ],
       "answer": 2,
       "explanation": "El oso hormiguero le dijo: “Muéstrele esto. No se precisa más”."
@@ -429,9 +429,9 @@
       "question": "¿Por qué la gamita quedó ciega?",
       "options": [
         "Porque comió hojas venenosas",
-        "Porque no hizo caso a su madre y golpeó un nido de avispas",
+        "Porque golpeó un nido de avispas",
         "Porque la mordió una víbora",
-        "Porque miró el sol"
+        "Porque miró fijo al sol"
       ],
       "answer": 1,
       "explanation": "Creyó que su mamá exageraba; las avispas le picaron los ojos."
@@ -453,9 +453,9 @@
       "question": "¿Qué aprendemos de la gamita al final del cuento?",
       "options": [
         "Que la miel es peligrosa",
-        "Que hay que escuchar los consejos y ser agradecidos",
-        "Que los cazadores son malos",
-        "Que no hay que salir de casa"
+        "Que hay que escuchar consejos",
+        "Que no hay que salir del monte",
+        "Que los cazadores son malos"
       ],
       "answer": 1,
       "explanation": "Aprende por las malas a escuchar a su madre, y busca la forma de agradecer al cazador."
@@ -469,5 +469,5 @@
     "La gama madre le enseña reglas para cuidarse, pero la gamita no le cree hasta que es tarde. ¿Por qué cuesta tanto aprender de la experiencia de otros?",
     "El cazador cura a la gamita aunque caza venados. ¿Puede alguien ser 'malo' y 'bueno' a la vez? ¿Qué dice eso de juzgar a las personas?"
   ],
-  "revision": 2
+  "revision": 5
 }

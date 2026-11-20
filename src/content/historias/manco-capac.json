@@ -68,7 +68,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "bundle:manco-capac.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 88.568,
       "paragraphStartsSec": [
         0,
@@ -84,7 +84,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "bundle:manco-capac.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 112.7,
       "paragraphStartsSec": [
         0.0,
@@ -159,9 +159,9 @@
       "question": "¿Para qué servía la vara de oro?",
       "options": [
         "Para venderla y comprar comida",
-        "Para defenderse de los animales",
-        "Para saber dónde la tierra era buena para fundar la ciudad",
-        "Para medir la altura de las montañas"
+        "Para defenderse de los pumas",
+        "Para hallar tierra buena donde fundar",
+        "Para medir la altura de los cerros"
       ],
       "answer": 2,
       "explanation": "Donde la vara se hundiera por completo, la tierra era suave y fértil: buena para vivir y sembrar."
@@ -170,10 +170,10 @@
       "level": "critico",
       "question": "¿Qué mensaje transmite esta leyenda?",
       "options": [
-        "Que es mejor vivir solo",
-        "Que el trabajo compartido y el conocimiento ayudan a un pueblo a crecer",
-        "Que el oro es lo más importante",
-        "Que no hay que viajar lejos de casa"
+        "Que es mejor vivir solo y sin jefes",
+        "Que el trabajo compartido hace crecer",
+        "Que el oro es lo más valioso",
+        "Que no hay que alejarse de casa"
       ],
       "answer": 1,
       "explanation": "Al final, gracias a lo que enseñaron y al trabajo de todos, nace un pueblo grande y organizado."
@@ -182,5 +182,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }
