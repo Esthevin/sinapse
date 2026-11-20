@@ -37,6 +37,7 @@ export const BUNDLED_AUDIO: Record<string, number> = {
   'naylamp.quz.mp3': require('../../assets/audio/naylamp.quz.mp3'),
   'oficiosidad-no-agradecida.ay.mp3': require('../../assets/audio/oficiosidad-no-agradecida.ay.mp3'),
   'oficiosidad-no-agradecida.quz.mp3': require('../../assets/audio/oficiosidad-no-agradecida.quz.mp3'),
+  'paco-yunque.es.mp3': require('../../assets/audio/paco-yunque.es.mp3'),
   'yacumama.ay.mp3': require('../../assets/audio/yacumama.ay.mp3'),
   'yacumama.es.mp3': require('../../assets/audio/yacumama.es.mp3'),
   'yacumama.quz.mp3': require('../../assets/audio/yacumama.quz.mp3'),
