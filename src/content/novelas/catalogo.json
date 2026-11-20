@@ -42,7 +42,9 @@
  {
   "id": "el-tungsteno",
   "title": {
-   "es": "El tungsteno"
+   "es": "El tungsteno",
+   "qu": "Tungsteno",
+   "ay": "Tungsteno q'apisiña"
   },
   "author": "César Vallejo",
   "year": 1931,
@@ -54,7 +56,9 @@
   "region": "sierra",
   "coverColor": "#4A4A44",
   "summary": {
-   "es": "Una empresa norteamericana llega a Quivilca, en la sierra del Cusco, a explotar las minas de tungsteno. Los indios soras pierden sus tierras, los peones son reclutados a la fuerza y las autoridades sirven a los gringos. La novela social de Vallejo sobre la explotación minera y el despertar de la conciencia."
+   "es": "Una empresa norteamericana llega a Quivilca, en la sierra del Cusco, a explotar las minas de tungsteno. Los indios soras pierden sus tierras, los peones son reclutados a la fuerza y las autoridades sirven a los gringos. La novela social de Vallejo sobre la explotación minera y el despertar de la conciencia.",
+   "qu": "Huk norteamericano empresa Quivilca llaqtaman chayamun, Cusco qullupi, tungsteno minasmanta. Indios hermanasqa chakinkunata chinkachinku, llank'aqkunatapas kallpanchakunku, hinaspapas gobiernokunaqa gringos-kunata servichinku. Vallejo llaqtayuq social novela, minería de explotación nisqamanta, concienciamanta kawsarimuymanta.",
+   "ay": "Mä empresa norteamericanaw Quivilca markar purini, Cusco qullu tuqinxa, tungsteno minanak q'al tukjañataki. Indios sorras ukanakax uraqinakap apt'asipxi, irnaqirinakax ch'amampi katuntatäpxiwa, marka apnaqirinakasti gringos ukanakarux yanapt'apxi. Vallejo markan markampix irnaqäwinakapata, ch'amañcht'awinakampit uñt'ayatawa."
   },
   "chapters": 11,
   "minutes": 236
