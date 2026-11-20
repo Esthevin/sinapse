@@ -106,22 +106,22 @@
     },
     {
       "lang": "es",
-      "narratorId": "voz-camila-pe",
+      "narratorId": "voz-ximena-hd",
       "voiceSource": "sintetica",
       "url": "bundle:guia-sueno-del-pongo.es.mp3",
-      "license": "Voz neuronal es-PE-CamilaNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
-      "durationSec": 160.92,
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 180.96,
       "paragraphStartsSec": [
         0,
-        16.512,
-        35.28,
-        55.752,
-        69.744,
-        86.304,
-        103.56,
-        118.632,
-        132.432,
-        148.272
+        17.952,
+        39.072,
+        61.248,
+        77.136,
+        96.096,
+        116.448,
+        134.232,
+        149.208,
+        167.448
       ]
     }
   ],

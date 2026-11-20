@@ -78,7 +78,7 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 331.708,
       "paragraphStartsSec": [
-        0.0,
+        0,
         26.722,
         60.106,
         93.632,
@@ -100,7 +100,7 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 345.778,
       "paragraphStartsSec": [
-        0.0,
+        0,
         22.424,
         51.632,
         89.334,
@@ -116,24 +116,24 @@
     },
     {
       "lang": "es",
-      "narratorId": "voz-piper-es",
+      "narratorId": "voz-ximena-hd",
       "voiceSource": "sintetica",
-      "url": "site:guia-yawar-fiesta.es.mp3",
-      "license": "Creada con Piper (voz es_MX «claude», licencia Apache 2.0).",
-      "durationSec": 235.456,
+      "url": "bundle:guia-yawar-fiesta.es.mp3",
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 257.928,
       "paragraphStartsSec": [
-        0.0,
-        15.48,
-        38.947,
-        63.668,
-        86.218,
-        109.952,
-        133.117,
-        150.872,
-        164.181,
-        184.281,
-        205.368,
-        220.882
+        0,
+        16.848,
+        42.816,
+        71.592,
+        97.752,
+        123.96,
+        147.456,
+        166.344,
+        181.944,
+        203.76,
+        227.904,
+        244.296
       ]
     }
   ],

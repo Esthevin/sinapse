@@ -75,7 +75,7 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 315.718,
       "paragraphStartsSec": [
-        0.0,
+        0,
         35.56,
         61.166,
         78.296,
@@ -96,7 +96,7 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 332.586,
       "paragraphStartsSec": [
-        0.0,
+        0,
         36.04,
         68.732,
         92.15,
@@ -111,23 +111,23 @@
     },
     {
       "lang": "es",
-      "narratorId": "voz-piper-es",
+      "narratorId": "voz-ximena-hd",
       "voiceSource": "sintetica",
-      "url": "site:guia-ciudad-y-los-perros.es.mp3",
-      "license": "Creada con Piper (voz es_MX «claude», licencia Apache 2.0).",
-      "durationSec": 223.912,
+      "url": "bundle:guia-ciudad-y-los-perros.es.mp3",
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 246.504,
       "paragraphStartsSec": [
-        0.0,
-        25.522,
-        46.691,
-        63.563,
-        85.997,
-        109.963,
-        133.245,
-        148.481,
-        173.515,
-        188.635,
-        209.223
+        0,
+        27.888,
+        52.296,
+        70.296,
+        97.248,
+        123.072,
+        150.264,
+        166.224,
+        194.88,
+        211.056,
+        232.8
       ]
     }
   ],
