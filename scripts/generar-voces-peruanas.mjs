@@ -58,6 +58,8 @@ const option = (n, d) => {
 const VOICES = {
   camila: { id: 'es-PE-CamilaNeural', narratorId: 'voz-camila-pe' },
   alex: { id: 'es-PE-AlexNeural', narratorId: 'voz-alex-pe' },
+  // Voz HD (más natural: respira y entona mejor). Acento de España; no hay voz HD peruana.
+  ximena: { id: 'es-ES-Ximena:DragonHDLatestNeural', narratorId: 'voz-ximena-hd' },
 };
 const DRY_RUN = flag('dry-run');
 const FORCE = flag('force');
@@ -75,9 +77,17 @@ const xml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, 
 
 // ---------- Azure ----------
 async function synthesize(text, voiceId) {
+  const hd = voiceId.includes('DragonHD');
+  // Pausas explícitas en comas y puntos: la voz respeta la puntuación como un narrador.
+  const body = hd
+    ? xml(text)
+        .replace(/([,;:])\s+/g, '$1 <break time="250ms"/> ')
+        .replace(/([.!?…»])\s+/g, '$1 <break time="600ms"/> ')
+    : xml(text);
+  const params = hd ? ' parameters="temperature=1.0"' : ''; // más variación de entonación
   const ssml =
-    `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="es-PE">` +
-    `<voice name="${voiceId}"><prosody rate="${RATE}">${xml(text)}</prosody><break time="600ms"/></voice></speak>`;
+    `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="${hd ? 'es-ES' : 'es-PE'}">` +
+    `<voice name="${voiceId}"${params}><prosody rate="${RATE}">${body}</prosody><break time="600ms"/></voice></speak>`;
   for (let attempt = 1; ; attempt++) {
     const res = await fetch(`https://${REGION}.tts.speech.microsoft.com/cognitiveservices/v1`, {
       method: 'POST',
