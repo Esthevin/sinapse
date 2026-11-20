@@ -1,6 +1,6 @@
 {
   "id": "lucas-el-sacrilego",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Lucas el sacrílego",
     "qu": "Lucas sacrilego",
@@ -252,10 +252,10 @@
       "level": "literal",
       "question": "¿Qué robó Lucas y de dónde?",
       "options": [
-        "Dinero del palacio del virrey",
-        "El sol de oro y piedras preciosas de la custodia del templo de San Agustín",
-        "Un cuadro de la catedral",
-        "La corona de una virgen de Cusco"
+        "El tesoro guardado en el palacio del virrey",
+        "El sol de oro de la custodia de San Agustín",
+        "Un cuadro de oro de la catedral de Lima",
+        "La corona de plata de una virgen del Cusco"
       ],
       "answer": 1,
       "explanation": "Desapareció 'el sol de oro, evaluado en más de cuarenta mil pesos', con perlas, rubíes y esmeraldas."
@@ -264,10 +264,10 @@
       "level": "inferencial",
       "question": "¿Por qué Lucas pide cuatro meses antes de su ejecución?",
       "options": [
-        "Para escapar",
+        "Para preparar su fuga con ayuda de un carcelero sobornado",
         "Para fabricar una custodia mejor que la que destruyó, como reparación",
-        "Para despedirse de su familia",
-        "Para escribir sus memorias"
+        "Para despedirse de su familia, que vivía lejos de Lima",
+        "Para escribir sus memorias y confesar sus otros robos"
       ],
       "answer": 1,
       "explanation": "Era un orfebre hábil: ofrece su talento para reparar el daño, y lo cumple."
@@ -276,10 +276,10 @@
       "level": "inferencial",
       "question": "¿Qué ironía tiene el final: 'en vez de achicharrarlo como a sacrílego, se le ahorcó muy pulcramente como a ladrón'?",
       "options": [
-        "Que lo liberaron",
+        "Que el virrey lo perdonó y lo dejó libre por su arrepentimiento",
         "Que el 'perdón' solo cambió la forma de morir: Palma se burla de esa clemencia",
-        "Que lo quemaron igual",
-        "Que el virrey lo adoptó"
+        "Que igual lo quemaron, aunque el virrey había prometido lo contrario",
+        "Que nadie asistió a la ejecución porque era día de fiesta"
       ],
       "answer": 1,
       "explanation": "La 'merced' es apenas una muerte menos cruel: el adverbio 'pulcramente' subraya la ironía."
@@ -288,10 +288,10 @@
       "level": "critico",
       "question": "Lucas se arrepiente y repara su falta, pero igual lo ejecutan. ¿Qué piensas de ese desenlace?",
       "options": [
-        "Es justo, el robo no se perdona",
+        "Es justo: un robo al templo nunca puede perdonarse, haga lo que haga",
         "Abre un debate: ¿el arrepentimiento y la reparación deberían cambiar el castigo?",
-        "No importa",
-        "Debió quedar libre sin más"
+        "No importa: lo único que vale es que la custodia volvió a la iglesia",
+        "Debió quedar libre, porque la custodia nueva valía más que la robada"
       ],
       "answer": 1,
       "explanation": "Es una pregunta sobre justicia restaurativa frente a castigo."
@@ -300,10 +300,10 @@
       "level": "critico",
       "question": "El narrador interpela al lector ('Yo no sé, lector, si alguna ocasión te has encontrado de noche en un vasto templo…'). ¿Para qué?",
       "options": [
-        "Para aburrirlo",
-        "Para meterlo en la escena y crear suspenso, como si contara la historia en voz alta",
-        "Para pedirle dinero",
-        "Para cambiar de tema"
+        "Para darle una lección moral directa sobre el robo",
+        "Para meterlo en la escena y crear suspenso",
+        "Para cambiar de tema y hablar de su propia vida",
+        "Para explicar cómo se construían los templos de Lima"
       ],
       "answer": 1,
       "explanation": "Es un rasgo del estilo conversado de Palma: el lector se siente dentro de la historia."

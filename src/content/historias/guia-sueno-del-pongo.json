@@ -1,6 +1,6 @@
 {
   "id": "guia-sueno-del-pongo",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Guía de lectura: El sueño del pongo"
   },
@@ -51,10 +51,10 @@
       "level": "literal",
       "question": "¿Cómo llegó este relato a Arguedas?",
       "options": [
-        "Lo inventó de niño",
+        "Lo inventó de niño, cuando vivía en la hacienda de su madrastra",
         "Lo escuchó de un comunero y lo reescribió en quechua y castellano",
-        "Lo tradujo del inglés",
-        "Lo encontró en un libro de la colonia"
+        "Lo copió de una crónica colonial que encontró en una biblioteca de Lima",
+        "Lo tradujo de una versión en inglés publicada por un antropólogo"
       ],
       "answer": 1,
       "explanation": "Es un cuento de la tradición oral quechua que Arguedas recogió y reescribió."
@@ -63,10 +63,10 @@
       "level": "inferencial",
       "question": "¿Por qué el patrón escucha contento la primera parte del sueño?",
       "options": [
-        "Porque ama al pongo",
-        "Porque cree que el sueño confirma que él merece lo dulce y el pongo lo sucio, como en la vida",
-        "Porque no entiende el quechua",
-        "Porque está dormido"
+        "Porque el sueño le anuncia que va a vivir muchos años más",
+        "Porque cree que el sueño confirma que él merece lo mejor",
+        "Porque no entiende bien el quechua y cree que el pongo lo elogia",
+        "Porque piensa que el pongo por fin aprendió a respetarlo"
       ],
       "answer": 1,
       "explanation": "La miel y el excremento parecen repetir la jerarquía de la hacienda."
@@ -75,10 +75,10 @@
       "level": "inferencial",
       "question": "¿Qué logra la última orden de San Francisco en el sueño?",
       "options": [
-        "Que el pongo pida perdón",
-        "Que los dos queden unidos por la humillación: el patrón tendrá que lamer al pongo por toda la eternidad",
-        "Que el patrón vaya al cielo solo",
-        "Nada, el sueño se olvida"
+        "Que el pongo pide perdón al patrón y los dos se reconcilian",
+        "Que el patrón quede humillado, lamiendo al pongo para siempre",
+        "Que el patrón va al cielo y el pongo queda condenado para siempre",
+        "Que San Francisco castiga a los dos por igual y los separa"
       ],
       "answer": 1,
       "explanation": "El giro final invierte el poder: el que humillaba queda humillado."
@@ -87,10 +87,10 @@
       "level": "critico",
       "question": "¿Por qué se dice que el pongo se rebela «con palabras»?",
       "options": [
-        "Porque grita insultos",
-        "Porque, sin violencia y sin que el patrón pueda castigarlo por un sueño, le devuelve la humillación contando una historia",
-        "Porque escribe una carta al gobierno",
-        "Porque se va de la hacienda"
+        "Porque al final grita insultos al patrón delante de los otros sirvientes",
+        "Porque, sin violencia, le devuelve la humillación contando un sueño",
+        "Porque escribe una carta al gobierno denunciando los abusos",
+        "Porque convence a los demás colonos de dejar de servir en la hacienda"
       ],
       "answer": 1,
       "explanation": "La imaginación y el relato son su arma: dice lo que no podría decir de otra forma."
@@ -99,10 +99,10 @@
       "level": "critico",
       "question": "¿Qué relación tiene el relato con la historia del Perú?",
       "options": [
-        "Ninguna, es fantasía",
-        "Denuncia un sistema de servidumbre real en las haciendas andinas, que duró hasta la reforma agraria",
-        "Habla de la conquista española",
-        "Trata sobre la vida en Lima"
+        "Ninguna: es una fantasía sin relación con la vida real",
+        "Denuncia la servidumbre real que hubo en las haciendas andinas",
+        "Cuenta la conquista española desde el punto de vista de un inca",
+        "Describe la vida de los obreros en las fábricas de Lima"
       ],
       "answer": 1,
       "explanation": "El pongueaje fue real: el cuento convierte esa injusticia en una historia que se recuerda."

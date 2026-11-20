@@ -1,6 +1,6 @@
 {
   "id": "vuelo-de-los-condores",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "El vuelo de los cóndores",
     "qu": "Condorkunaq lloqsimunqanku",
@@ -536,10 +536,10 @@
       "level": "literal",
       "question": "¿Qué decisión del niño pone en marcha la historia?",
       "options": [
-        "Escaparse del colegio para unirse al circo",
+        "Escaparse del colegio para unirse al circo como aprendiz",
         "Quedarse en la calle mirando la llegada del circo y volver tarde a casa",
-        "Robar dinero para la entrada",
-        "Viajar en el vapor"
+        "Tomar dinero de la casa para comprar la entrada al circo",
+        "Subir al vapor sin permiso para conocer a los artistas"
       ],
       "answer": 1,
       "explanation": "'Aquel día demoré en la calle y no sabía qué decir al volver a casa': su demora y la culpa abren el relato."
@@ -548,10 +548,10 @@
       "level": "inferencial",
       "question": "¿Por qué la reacción de la madre conmueve más al niño que un castigo?",
       "options": [
-        "Porque no le importaba",
+        "Porque la madre lo castigó con dureza y él se sintió injustamente tratado",
         "Porque al verla llorar entiende el daño que causó, y la culpa lo quiebra",
-        "Porque le regaló dinero",
-        "Porque lo felicitó"
+        "Porque la madre le regaló dinero para el circo y él se avergonzó",
+        "Porque la madre lo felicitó por su valentía delante de todos"
       ],
       "answer": 1,
       "explanation": "Ella le habla con dolor, no con gritos; él, que se había contenido, termina sollozando y besándole las manos."
@@ -560,10 +560,10 @@
       "level": "inferencial",
       "question": "Al dormirse, todo el circo se le borra al niño 'quedando sólo la imagen de la desconocida niña con su triste y dulce mirada'. ¿Qué revela ese detalle?",
       "options": [
-        "Que el circo le pareció aburrido",
-        "Que lo que más lo impresionó no fue el espectáculo sino una persona: nace un afecto que dará sentido a la despedida",
-        "Que la niña era la dueña del circo",
-        "Que quería ser payaso"
+        "Que el circo le pareció aburrido y prefirió pensar en otra cosa",
+        "Que más que el espectáculo lo marcó una persona",
+        "Que la niña era la dueña del circo y por eso la recordaba",
+        "Que quería ser trapecista como ella cuando fuera grande"
       ],
       "answer": 1,
       "explanation": "Entre el oso, el payaso y la amazona, lo que queda es la mirada de la niña: el cuento pasa del asombro al afecto."
@@ -573,9 +573,9 @@
       "question": "El circo aparece lleno de color, pero la niña tiene una 'triste y dulce mirada'. ¿Qué contraste propone el autor?",
       "options": [
         "Entre el brillo del espectáculo y la vida difícil de quienes lo hacen",
-        "Entre ricos y pobres de Pisco",
-        "Entre el mar y la tierra",
-        "Ninguno, todo es alegre"
+        "Entre los ricos y los pobres de Pisco que van a ver la función",
+        "Entre el mar y la tierra, entre el vapor y el pueblo",
+        "Ninguno: todo en el circo es alegre, incluso la niña"
       ],
       "answer": 0,
       "explanation": "Detrás de la función hay niños que trabajan y viajan sin descanso: la mirada triste deja ver ese lado oculto."
@@ -584,10 +584,10 @@
       "level": "critico",
       "question": "El cuento termina con el vapor alejándose en el crepúsculo. ¿Por qué es un final eficaz?",
       "options": [
-        "Porque explica qué fue de la niña",
-        "Porque convierte la despedida en una imagen: el humo y el cielo 'sangriento' expresan la pena sin decirla",
-        "Porque anuncia que volverán a verse",
-        "Porque es gracioso"
+        "Porque explica con detalle qué fue de la niña después de irse",
+        "Porque la imagen expresa la pena sin decirla",
+        "Porque anuncia que el circo volverá a Pisco el próximo año",
+        "Porque termina con una broma que alivia la tristeza del niño"
       ],
       "answer": 1,
       "explanation": "Valdelomar cierra con paisaje: la emoción se transmite por la imagen, no por una explicación."

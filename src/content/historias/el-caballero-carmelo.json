@@ -1,6 +1,6 @@
 {
   "id": "el-caballero-carmelo",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "El Caballero Carmelo",
     "qu": "Caballero Carmelo",
@@ -397,9 +397,9 @@
       "question": "¿En qué fecha se realiza la pelea entre Carmelo y el Ajiseco, y por qué esa fecha importa en el relato?",
       "options": [
         "El 28 de julio, día de fiesta patria: la pelea es parte de la celebración del pueblo",
-        "En Navidad, porque es un regalo para los niños",
-        "Un día cualquiera, porque el padre necesitaba dinero",
-        "En Semana Santa, como castigo al gallo"
+        "En Navidad: el padre lo presenta como regalo para alegrar a los niños",
+        "Un día cualquiera de invierno: el padre necesitaba dinero y apostó",
+        "En Semana Santa: la pelea es parte de la procesión del pueblo de Pisco"
       ],
       "answer": 0,
       "explanation": "La pelea ocurre en las fiestas patrias: el combate del gallo se vive como un acontecimiento de todo el pueblo, no solo de la familia."
@@ -408,10 +408,10 @@
       "level": "inferencial",
       "question": "El narrador llama a Carmelo 'paladín' y 'caballero'. ¿Qué logra con ese lenguaje?",
       "options": [
-        "Burlarse del gallo",
-        "Convertir al animal en un héroe noble, como los de las novelas de caballería, y engrandecer su recuerdo",
-        "Explicar la raza del gallo",
-        "Mostrar que el padre era un noble español"
+        "Burlarse con ironía del gallo, que en realidad era viejo y débil",
+        "Convertir al gallo en un héroe noble, como de novela de caballería",
+        "Mostrar que la familia descendía de nobles españoles con escudo",
+        "Explicar la raza del gallo, traído de España por un caballero"
       ],
       "answer": 1,
       "explanation": "El vocabulario caballeresco eleva al gallo a héroe: así lo vivieron los niños y así lo recuerda el adulto."
@@ -420,10 +420,10 @@
       "level": "inferencial",
       "question": "Carmelo gana la pelea, pero muere después. ¿Qué sentido tiene ese desenlace?",
       "options": [
-        "Que el triunfo no valió nada",
-        "Que la victoria se paga cara: el héroe cumple con su honor, pero la familia pierde a un ser querido",
-        "Que el Ajiseco hizo trampa",
-        "Que los gallos viejos no deben pelear nunca"
+        "Que el triunfo no valió nada, porque el Ajiseco había hecho trampa",
+        "Que la victoria se paga cara: la familia pierde a un ser querido",
+        "Que los gallos viejos no deben pelear nunca, como dice la madre",
+        "Que el padre se arrepiente y prohíbe las peleas para siempre"
       ],
       "answer": 1,
       "explanation": "El final mezcla gloria y pérdida: la victoria no consuela a los niños, que lloran a su amigo."
@@ -432,10 +432,10 @@
       "level": "critico",
       "question": "El cuento está narrado por un adulto que recuerda su infancia en Pisco. ¿Qué efecto tiene en lo que leemos?",
       "options": [
-        "Nos da datos objetivos sobre las peleas de gallos",
-        "La mirada del niño y la nostalgia del adulto se mezclan: el pasado aparece idealizado y lleno de ternura",
-        "Hace que el cuento sea imparcial",
-        "No tiene ningún efecto"
+        "Nos da datos objetivos y exactos sobre la vida y las costumbres de Pisco",
+        "Se mezclan la mirada del niño y la nostalgia del adulto",
+        "Hace que el relato sea imparcial: el adulto corrige lo que el niño creía",
+        "Muestra que el narrador se avergüenza de su infancia y la juzga con dureza"
       ],
       "answer": 1,
       "explanation": "Es un relato de memoria: el tono melancólico viene de quien mira atrás y sabe que ese mundo ya no existe."
@@ -444,10 +444,10 @@
       "level": "critico",
       "question": "Hoy muchas personas critican las peleas de gallos. ¿Cuál es la lectura más justa del cuento?",
       "options": [
-        "El cuento defiende las peleas de gallos y hay que rechazarlo",
-        "Se puede valorar el cuento por lo que dice de la familia, la infancia y la pérdida, y a la vez discutir la costumbre que muestra",
-        "Hay que leerlo solo como un texto sobre animales",
-        "La costumbre no aparece en el cuento"
+        "El cuento defiende las peleas de gallos, así que no debería leerse en clase",
+        "Se puede valorar lo que dice de la familia y la pérdida, y discutir la costumbre",
+        "El cuento es solo sobre animales y no dice nada de la familia ni del pueblo",
+        "La costumbre no importa en el cuento, porque Carmelo nunca llega a pelear"
       ],
       "answer": 1,
       "explanation": "Leer críticamente es poder apreciar una obra de su época y, al mismo tiempo, discutir sus valores con la mirada de hoy."

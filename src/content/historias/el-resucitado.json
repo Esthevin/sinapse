@@ -1,6 +1,6 @@
 {
   "id": "el-resucitado",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "El resucitado",
     "qu": "kawsarimusqakuna",
@@ -207,10 +207,10 @@
       "level": "literal",
       "question": "¿Qué le encarga el enfermo español al ecónomo Gil Paz antes de 'morir'?",
       "options": [
-        "Que avise a su familia en España",
+        "Que envíe su dinero a su familia en España, a la que no veía hacía años",
         "Que use su dinero para un entierro digno y misas, porque no tenía deudos",
-        "Que le compre una casa",
-        "Que lo lleve de vuelta a España"
+        "Que reparta todo entre los enfermos pobres del hospital de San Andrés",
+        "Que compre una capilla en el convento para que lo entierren allí"
       ],
       "answer": 1,
       "explanation": "Le confía sus peluconas (monedas de oro) para su entierro; era 'un pobre expósito' sin familia."
@@ -219,10 +219,10 @@
       "level": "inferencial",
       "question": "¿Qué hizo Gil Paz con el dinero y cómo lo sabemos?",
       "options": [
-        "Lo gastó en el entierro",
+        "Lo gastó en el entierro y las misas, como el enfermo le había pedido",
         "Se lo quedó por avaricia: el 'resucitado' le reclama '¿Dónde está mi mortaja?'",
-        "Lo repartió a los pobres",
-        "Lo devolvió al virrey"
+        "Lo repartió entre los pobres y el resucitado se lo reclama igual",
+        "Lo entregó al virrey, que lo guardó en las cajas reales sin decir nada"
       ],
       "answer": 1,
       "explanation": "La pregunta del resucitado y el narrador ('su sacrílega avaricia') lo dejan claro."
@@ -231,10 +231,10 @@
       "level": "inferencial",
       "question": "¿Cuál es el castigo de Gil Paz?",
       "options": [
-        "La cárcel",
-        "Pierde la razón: el espanto (o la conciencia) lo enloquece",
-        "La horca",
-        "El destierro"
+        "La cárcel por robo",
+        "Se vuelve loco",
+        "La horca en la plaza",
+        "El destierro a Valdivia"
       ],
       "answer": 1,
       "explanation": "'Su sacrílega avaricia tuvo la locura por castigo'."
@@ -243,10 +243,10 @@
       "level": "critico",
       "question": "Palma describe que los muertos se enterraban en corralones y bóvedas 'con no poco peligro de la salubridad pública'. ¿Qué crítica hace?",
       "options": [
-        "Ninguna",
-        "Critica las condiciones sanitarias de la Lima colonial, donde un error así (enterrar a un vivo) era posible",
-        "Elogia los hospitales",
-        "Critica a los médicos españoles"
+        "Elogia los cementerios de su tiempo, mucho mejores que los de la colonia",
+        "Critica la sanidad de la Lima colonial, donde podía enterrarse a un vivo",
+        "Critica a los médicos españoles, que no sabían curar a los enfermos",
+        "Se burla de la superstición de quienes temían a los muertos"
       ],
       "answer": 1,
       "explanation": "La anécdota sirve para mostrar el descuido de la salud pública."
@@ -255,10 +255,10 @@
       "level": "critico",
       "question": "El español, ya curado, reparte su dinero en limosnas y se hace lego. ¿Qué contraste construye el relato?",
       "options": [
-        "Entre dos médicos",
+        "Entre la medicina española y la medicina tradicional de Lima",
         "Entre la avaricia de Gil Paz y la generosidad de quien vuelve de la muerte",
-        "Entre España y el Perú",
-        "Entre dos virreyes"
+        "Entre la riqueza de los nobles y la pobreza de los enfermos",
+        "Entre la justicia del virrey y la justicia de la Iglesia"
       ],
       "answer": 1,
       "explanation": "Los dos personajes son opuestos: uno pierde todo por avaro, el otro gana paz al dar."

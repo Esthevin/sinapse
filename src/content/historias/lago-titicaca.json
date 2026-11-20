@@ -135,9 +135,9 @@
       "level": "literal",
       "question": "¿Qué prohibieron los Apus?",
       "options": [
-        "Pescar en el río",
+        "Pescar en el río sagrado",
         "Subir a la cumbre del fuego sagrado",
-        "Cultivar el valle",
+        "Cultivar el valle del norte",
         "Hablar con los pumas"
       ],
       "answer": 1,
@@ -159,10 +159,10 @@
       "level": "inferencial",
       "question": "¿Por qué se salvó la pareja de la balsa?",
       "options": [
-        "Porque sabía nadar",
-        "Porque no había desobedecido a los Apus",
-        "Porque era muy fuerte",
-        "Porque vivía lejos"
+        "Porque sabía nadar muy bien",
+        "Porque había obedecido a los Apus",
+        "Porque era la más fuerte",
+        "Porque vivía lejos del valle"
       ],
       "answer": 1,
       "explanation": "El texto dice que se salvó la pareja que no había desobedecido."
@@ -183,5 +183,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }

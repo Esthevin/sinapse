@@ -118,9 +118,9 @@
       "question": "¿Cómo llegó Naylamp a Lambayeque?",
       "options": [
         "Caminando desde la sierra",
-        "En una flota de balsas por el mar",
-        "Volando",
-        "Por un río"
+        "En balsas por el mar",
+        "Bajando por el río",
+        "Cruzando el desierto"
       ],
       "answer": 1,
       "explanation": "Llegó por el mar al frente de una gran flota de balsas."
@@ -141,9 +141,9 @@
       "level": "inferencial",
       "question": "¿Por qué los servidores dijeron que Naylamp había volado?",
       "options": [
-        "Porque lo vieron volar",
-        "Para que el pueblo no perdiera la esperanza",
-        "Porque querían engañar a Ceterni",
+        "Porque de verdad lo vieron volar",
+        "Para no perder la esperanza",
+        "Para engañar a su hijo Cium",
         "Porque Naylamp tenía alas"
       ],
       "answer": 1,
@@ -153,9 +153,9 @@
       "level": "critico",
       "question": "¿Por qué crees que estas leyendas se siguen contando hoy?",
       "options": [
-        "Porque son obligatorias en el colegio",
-        "Porque ayudan a conservar la historia y la identidad de un pueblo",
-        "Porque son todas verdaderas",
+        "Porque son obligatorias en clase",
+        "Porque conservan la identidad de un pueblo",
+        "Porque todo lo que cuentan es cierto",
         "Porque no hay otras historias"
       ],
       "answer": 1,
@@ -165,5 +165,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }

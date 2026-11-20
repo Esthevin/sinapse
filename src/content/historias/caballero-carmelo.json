@@ -159,9 +159,9 @@
       "question": "Según el cuento, ¿qué podemos pensar sobre las peleas de gallos?",
       "options": [
         "Que son una diversión sin consecuencias",
-        "Que causan sufrimiento incluso a un animal muy querido",
-        "Que los gallos viejos siempre ganan",
-        "Que hay que hacerlas más seguido"
+        "Que hacen sufrir hasta a un animal querido",
+        "Que los gallos viejos pelean mejor",
+        "Que el gallo ganador siempre se salva"
       ],
       "answer": 1,
       "explanation": "Carmelo gana, pero muere por las heridas. El cuento invita a pensar en el costo de esas peleas."
@@ -170,5 +170,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }

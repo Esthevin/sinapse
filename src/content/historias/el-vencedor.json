@@ -1,6 +1,6 @@
 {
   "id": "el-vencedor",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "El vencedor"
   },
@@ -89,10 +89,10 @@
       "level": "literal",
       "question": "¿Quiénes se enfrentan y en qué se diferencian?",
       "options": [
-        "Dos hermanos de la misma familia",
+        "Dos hermanos que se pelean por un sombrero de lana delante de todos",
         "Juncos, descalzo y pobremente vestido, y Cancio, hijo de buena familia con zapatos nuevos",
-        "El narrador y Leonidas",
-        "Dos profesores"
+        "El narrador y Leonidas, que discuten por quién llegó primero al cerro",
+        "Dos alumnos ricos que compiten por ser el mejor de la clase"
       ],
       "answer": 1,
       "explanation": "Vallejo describe con cuidado la ropa y los pies de cada uno: la pelea es también entre dos clases sociales."
@@ -101,10 +101,10 @@
       "level": "inferencial",
       "question": "¿Por qué el narrador se pasa al bando de Juncos en plena pelea?",
       "options": [
-        "Porque Juncos le pagó",
-        "Porque al verlo golpeado, en harapos y con los pies desnudos, siente compasión y le duele el corazón",
-        "Porque Cancio lo insultó",
-        "Porque quería ganar la apuesta"
+        "Porque Cancio lo insultó cuando intentó separarlos al empezar la pelea",
+        "Porque al verlo golpeado y en harapos siente compasión por él",
+        "Porque había apostado por Juncos y quería ganar la apuesta",
+        "Porque Leonidas se lo pidió y no quería quedar mal con su amigo"
       ],
       "answer": 1,
       "explanation": "Primero simpatiza con Cancio, pero la imagen del niño pobre castigado lo hace cambiar."
@@ -113,10 +113,10 @@
       "level": "inferencial",
       "question": "Juncos gana, pero al final está solo y llorando. ¿Por qué?",
       "options": [
-        "Porque le duele la oreja",
-        "Porque nadie celebra su triunfo: todos rodean al vencido y él siente vergüenza de haber golpeado a Cancio",
-        "Porque perdió su sombrero",
-        "Porque lo castigó el profesor"
+        "Porque el profesor lo castigó delante de todos por haber peleado",
+        "Porque nadie celebra su triunfo y siente vergüenza de lo que hizo",
+        "Porque perdió su sombrero en la pelea y no tenía otro para ir a casa",
+        "Porque le dolía mucho la oreja y nadie quiso ayudarlo a curarse"
       ],
       "answer": 1,
       "explanation": "El título es irónico: el vencedor no gana nada y queda apartado."
@@ -125,10 +125,10 @@
       "level": "critico",
       "question": "¿Qué papel cumplen los demás niños durante la pelea?",
       "options": [
-        "Intentan detenerla desde el principio",
-        "Gritan, apuestan como en una pelea de gallos y convierten el dolor ajeno en espectáculo",
-        "Llaman a los padres",
-        "No están presentes"
+        "Intentan separarlos desde el principio y avisan al profesor",
+        "Gritan y apuestan, y convierten el dolor ajeno en espectáculo",
+        "Se van a sus casas sin mirar, porque no les interesa la pelea",
+        "Defienden todos a Juncos porque es el más pobre del grupo"
       ],
       "answer": 1,
       "explanation": "El cuento critica al público que alienta la violencia y después se compadece."
@@ -137,10 +137,10 @@
       "level": "critico",
       "question": "¿Qué sugiere el gesto final de Leonidas, que arregla el sombrero y el pelo de Juncos?",
       "options": [
-        "Que se burla de él",
-        "Que la ternura y el cuidado del otro son posibles aun después de la violencia, y que el vencedor también es una víctima",
-        "Que quiere pelear con él",
-        "Que es su hermano"
+        "Que Leonidas se burla de Juncos por haber llorado delante de todos",
+        "Que la ternura es posible después de la violencia: el vencedor también sufre",
+        "Que Leonidas quiere pelear con Juncos para vengar a su amigo Cancio",
+        "Que Juncos y Leonidas son hermanos y por eso se preocupa por él"
       ],
       "answer": 1,
       "explanation": "Vallejo cierra con un acto de compasión hacia el que nadie mira."

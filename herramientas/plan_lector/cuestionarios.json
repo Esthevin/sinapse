@@ -6,9 +6,9 @@
     "question": "¿En qué fecha se realiza la pelea entre Carmelo y el Ajiseco, y por qué esa fecha importa en el relato?",
     "options": [
      "El 28 de julio, día de fiesta patria: la pelea es parte de la celebración del pueblo",
-     "En Navidad, porque es un regalo para los niños",
-     "Un día cualquiera, porque el padre necesitaba dinero",
-     "En Semana Santa, como castigo al gallo"
+     "En Navidad: el padre lo presenta como regalo para alegrar a los niños",
+     "Un día cualquiera de invierno: el padre necesitaba dinero y apostó",
+     "En Semana Santa: la pelea es parte de la procesión del pueblo de Pisco"
     ],
     "answer": 0,
     "explanation": "La pelea ocurre en las fiestas patrias: el combate del gallo se vive como un acontecimiento de todo el pueblo, no solo de la familia."
@@ -17,10 +17,10 @@
     "level": "inferencial",
     "question": "El narrador llama a Carmelo 'paladín' y 'caballero'. ¿Qué logra con ese lenguaje?",
     "options": [
-     "Burlarse del gallo",
-     "Convertir al animal en un héroe noble, como los de las novelas de caballería, y engrandecer su recuerdo",
-     "Explicar la raza del gallo",
-     "Mostrar que el padre era un noble español"
+     "Burlarse con ironía del gallo, que en realidad era viejo y débil",
+     "Convertir al gallo en un héroe noble, como de novela de caballería",
+     "Mostrar que la familia descendía de nobles españoles con escudo",
+     "Explicar la raza del gallo, traído de España por un caballero"
     ],
     "answer": 1,
     "explanation": "El vocabulario caballeresco eleva al gallo a héroe: así lo vivieron los niños y así lo recuerda el adulto."
@@ -29,10 +29,10 @@
     "level": "inferencial",
     "question": "Carmelo gana la pelea, pero muere después. ¿Qué sentido tiene ese desenlace?",
     "options": [
-     "Que el triunfo no valió nada",
-     "Que la victoria se paga cara: el héroe cumple con su honor, pero la familia pierde a un ser querido",
-     "Que el Ajiseco hizo trampa",
-     "Que los gallos viejos no deben pelear nunca"
+     "Que el triunfo no valió nada, porque el Ajiseco había hecho trampa",
+     "Que la victoria se paga cara: la familia pierde a un ser querido",
+     "Que los gallos viejos no deben pelear nunca, como dice la madre",
+     "Que el padre se arrepiente y prohíbe las peleas para siempre"
     ],
     "answer": 1,
     "explanation": "El final mezcla gloria y pérdida: la victoria no consuela a los niños, que lloran a su amigo."
@@ -41,10 +41,10 @@
     "level": "critico",
     "question": "El cuento está narrado por un adulto que recuerda su infancia en Pisco. ¿Qué efecto tiene en lo que leemos?",
     "options": [
-     "Nos da datos objetivos sobre las peleas de gallos",
-     "La mirada del niño y la nostalgia del adulto se mezclan: el pasado aparece idealizado y lleno de ternura",
-     "Hace que el cuento sea imparcial",
-     "No tiene ningún efecto"
+     "Nos da datos objetivos y exactos sobre la vida y las costumbres de Pisco",
+     "Se mezclan la mirada del niño y la nostalgia del adulto",
+     "Hace que el relato sea imparcial: el adulto corrige lo que el niño creía",
+     "Muestra que el narrador se avergüenza de su infancia y la juzga con dureza"
     ],
     "answer": 1,
     "explanation": "Es un relato de memoria: el tono melancólico viene de quien mira atrás y sabe que ese mundo ya no existe."
@@ -53,10 +53,10 @@
     "level": "critico",
     "question": "Hoy muchas personas critican las peleas de gallos. ¿Cuál es la lectura más justa del cuento?",
     "options": [
-     "El cuento defiende las peleas de gallos y hay que rechazarlo",
-     "Se puede valorar el cuento por lo que dice de la familia, la infancia y la pérdida, y a la vez discutir la costumbre que muestra",
-     "Hay que leerlo solo como un texto sobre animales",
-     "La costumbre no aparece en el cuento"
+     "El cuento defiende las peleas de gallos, así que no debería leerse en clase",
+     "Se puede valorar lo que dice de la familia y la pérdida, y discutir la costumbre",
+     "El cuento es solo sobre animales y no dice nada de la familia ni del pueblo",
+     "La costumbre no importa en el cuento, porque Carmelo nunca llega a pelear"
     ],
     "answer": 1,
     "explanation": "Leer críticamente es poder apreciar una obra de su época y, al mismo tiempo, discutir sus valores con la mirada de hoy."
@@ -73,10 +73,10 @@
     "level": "literal",
     "question": "¿Qué decisión del niño pone en marcha la historia?",
     "options": [
-     "Escaparse del colegio para unirse al circo",
+     "Escaparse del colegio para unirse al circo como aprendiz",
      "Quedarse en la calle mirando la llegada del circo y volver tarde a casa",
-     "Robar dinero para la entrada",
-     "Viajar en el vapor"
+     "Tomar dinero de la casa para comprar la entrada al circo",
+     "Subir al vapor sin permiso para conocer a los artistas"
     ],
     "answer": 1,
     "explanation": "'Aquel día demoré en la calle y no sabía qué decir al volver a casa': su demora y la culpa abren el relato."
@@ -85,10 +85,10 @@
     "level": "inferencial",
     "question": "¿Por qué la reacción de la madre conmueve más al niño que un castigo?",
     "options": [
-     "Porque no le importaba",
+     "Porque la madre lo castigó con dureza y él se sintió injustamente tratado",
      "Porque al verla llorar entiende el daño que causó, y la culpa lo quiebra",
-     "Porque le regaló dinero",
-     "Porque lo felicitó"
+     "Porque la madre le regaló dinero para el circo y él se avergonzó",
+     "Porque la madre lo felicitó por su valentía delante de todos"
     ],
     "answer": 1,
     "explanation": "Ella le habla con dolor, no con gritos; él, que se había contenido, termina sollozando y besándole las manos."
@@ -97,10 +97,10 @@
     "level": "inferencial",
     "question": "Al dormirse, todo el circo se le borra al niño 'quedando sólo la imagen de la desconocida niña con su triste y dulce mirada'. ¿Qué revela ese detalle?",
     "options": [
-     "Que el circo le pareció aburrido",
-     "Que lo que más lo impresionó no fue el espectáculo sino una persona: nace un afecto que dará sentido a la despedida",
-     "Que la niña era la dueña del circo",
-     "Que quería ser payaso"
+     "Que el circo le pareció aburrido y prefirió pensar en otra cosa",
+     "Que más que el espectáculo lo marcó una persona",
+     "Que la niña era la dueña del circo y por eso la recordaba",
+     "Que quería ser trapecista como ella cuando fuera grande"
     ],
     "answer": 1,
     "explanation": "Entre el oso, el payaso y la amazona, lo que queda es la mirada de la niña: el cuento pasa del asombro al afecto."
@@ -110,9 +110,9 @@
     "question": "El circo aparece lleno de color, pero la niña tiene una 'triste y dulce mirada'. ¿Qué contraste propone el autor?",
     "options": [
      "Entre el brillo del espectáculo y la vida difícil de quienes lo hacen",
-     "Entre ricos y pobres de Pisco",
-     "Entre el mar y la tierra",
-     "Ninguno, todo es alegre"
+     "Entre los ricos y los pobres de Pisco que van a ver la función",
+     "Entre el mar y la tierra, entre el vapor y el pueblo",
+     "Ninguno: todo en el circo es alegre, incluso la niña"
     ],
     "answer": 0,
     "explanation": "Detrás de la función hay niños que trabajan y viajan sin descanso: la mirada triste deja ver ese lado oculto."
@@ -121,10 +121,10 @@
     "level": "critico",
     "question": "El cuento termina con el vapor alejándose en el crepúsculo. ¿Por qué es un final eficaz?",
     "options": [
-     "Porque explica qué fue de la niña",
-     "Porque convierte la despedida en una imagen: el humo y el cielo 'sangriento' expresan la pena sin decirla",
-     "Porque anuncia que volverán a verse",
-     "Porque es gracioso"
+     "Porque explica con detalle qué fue de la niña después de irse",
+     "Porque la imagen expresa la pena sin decirla",
+     "Porque anuncia que el circo volverá a Pisco el próximo año",
+     "Porque termina con una broma que alivia la tristeza del niño"
     ],
     "answer": 1,
     "explanation": "Valdelomar cierra con paisaje: la emoción se transmite por la imagen, no por una explicación."
@@ -141,10 +141,10 @@
     "level": "literal",
     "question": "¿Quién es el personaje que el niño conoce en la playa y por qué le llama la atención?",
     "options": [
-     "Un pescador viejo que le enseña a nadar",
+     "Un pescador viejo que le enseña a nadar en la bahía de Pisco",
      "Una mujer desconocida vestida de blanco, triste y misteriosa",
-     "Un marinero extranjero",
-     "Su maestra de escuela"
+     "Un marinero extranjero que le cuenta historias de otros puertos",
+     "Su maestra de escuela, que pasea sola por la orilla cada tarde"
     ],
     "answer": 1,
     "explanation": "En sus caminatas por la orilla aparece una desconocida que despierta su simpatía y su curiosidad."
@@ -153,10 +153,10 @@
     "level": "inferencial",
     "question": "En el cuento se oye la exclamación '¡Qué horrible traición!'. ¿Cómo se relaciona el tema de la traición con la fiesta del pueblo?",
     "options": [
-     "No tiene relación",
-     "Judas es el símbolo de la traición: el muñeco que van a quemar refleja el dolor de la mujer",
-     "La exclamación anuncia un robo",
-     "La frase es sobre un robo en la escuela"
+     "No tiene relación: la exclamación anuncia un robo en el pueblo",
+     "El Judas simboliza la traición que ha herido a la mujer",
+     "Judas es el apodo del esposo de la mujer, que la había abandonado",
+     "La frase la dice el padre del niño al enterarse de una deuda"
     ],
     "answer": 1,
     "explanation": "El tema de la traición une la historia personal de la mujer con el ritual de quemar a Judas."
@@ -165,10 +165,10 @@
     "level": "inferencial",
     "question": "¿Por qué los ojos del Judas le parecen al niño 'rojos y sangrientos, acusadores, siniestros'?",
     "options": [
-     "Porque estaban mal pintados",
-     "Porque el niño proyecta en el muñeco la tragedia que acaba de vivir y lo siente culpable",
-     "Porque eran de fuego",
-     "Porque su padre se lo dijo"
+     "Porque estaban mal pintados y la luz de las velas los hacía brillar",
+     "Porque el niño proyecta en el muñeco la tragedia que acaba de ver",
+     "Porque eran de fuego: los habían hecho con carbones encendidos",
+     "Porque su padre le había dicho que el Judas veía a los malos"
     ],
     "answer": 1,
     "explanation": "Los ojos del muñeco cargan el miedo y la pena del niño: el objeto refleja su estado de ánimo."
@@ -177,10 +177,10 @@
     "level": "critico",
     "question": "El autor no explica del todo qué le pasó a la mujer. ¿Para qué sirve esa ambigüedad?",
     "options": [
-     "Es un error del autor",
-     "Obliga al lector a reconstruir los hechos desde lo que el niño entendió, y mantiene el misterio y la tristeza",
-     "Para que el cuento sea más corto",
-     "Para que no haya final"
+     "Es un descuido del autor, que no terminó de escribir el cuento",
+     "Obliga al lector a reconstruir los hechos desde lo que vio el niño",
+     "Sirve para que el cuento sea más corto y se lea en una sola tarde",
+     "Sirve para ocultar que la mujer era en realidad la madre del niño"
     ],
     "answer": 1,
     "explanation": "Todo se ve con los ojos de un niño, que no entiende todo: el lector completa lo que falta."
@@ -189,10 +189,10 @@
     "level": "critico",
     "question": "Compara este cuento con 'El Caballero Carmelo'. ¿Qué tienen en común?",
     "options": [
-     "Los dos ocurren en Lima",
-     "Los dos son recuerdos de infancia en Pisco donde la inocencia del niño choca con una pérdida",
-     "Los dos son leyendas incas",
-     "Los dos tienen final feliz"
+     "Los dos ocurren en Lima y cuentan fiestas religiosas de la ciudad",
+     "Son recuerdos de infancia en Pisco marcados por una pérdida",
+     "Los dos son leyendas incas que el autor escuchó de niño",
+     "Los dos tienen un final feliz en el que el niño recupera lo perdido"
     ],
     "answer": 1,
     "explanation": "Valdelomar escribe desde la memoria: paisaje marino, familia y un primer encuentro con el dolor."
@@ -209,10 +209,10 @@
     "level": "literal",
     "question": "¿Qué tienen en común el sauce Hebaristo y el boticario Evaristo Mazuelos?",
     "options": [
-     "Los dos nacieron en Lima",
+     "Los dos nacieron en Lima y llegaron jóvenes a Pisco",
      "Los dos son huérfanos, solitarios y pasan la vida esperando un amor",
-     "Los dos son ricos",
-     "Los dos fueron soldados"
+     "Los dos son ricos y no saben qué hacer con su fortuna",
+     "Los dos fueron plantados por el alcalde junto a la plaza"
     ],
     "answer": 1,
     "explanation": "El cuento construye vidas paralelas: igual nombre, igual soledad, igual espera."
@@ -221,10 +221,10 @@
     "level": "inferencial",
     "question": "El narrador analiza con humor los defectos de los versos de Mazuelos ('ripio sentimental'). ¿Qué efecto tiene ese comentario?",
     "options": [
-     "Hace que admiremos su poesía",
+     "Hace que admiremos su poesía, que el narrador considera la mejor del pueblo",
      "Mezcla ternura e ironía: nos burlamos un poco del personaje, pero también nos da pena su espera",
-     "Muestra que Mazuelos era un gran poeta",
-     "No tiene ningún efecto"
+     "Muestra que Mazuelos era un poeta famoso al que el pueblo no comprendía",
+     "Nos hace despreciar al personaje, que solo merece burla y no compasión"
     ],
     "answer": 1,
     "explanation": "Valdelomar combina humor y melancolía: el ripio 'que la están esperando' resume su vida entera."
@@ -233,10 +233,10 @@
     "level": "inferencial",
     "question": "¿Qué ironía hay en que el ataúd del boticario se haga con la madera del sauce?",
     "options": [
-     "Ninguna, es casualidad",
+     "Ninguna: es una casualidad, porque era la única madera que había en el pueblo",
      "Los dos solitarios terminan juntos: el árbol 'acompaña' al hombre cuya vida se parecía a la suya",
-     "Que el sauce era muy caro",
-     "Que el alcalde lo ordenó por odio"
+     "Que el sauce era muy caro y la familia del boticario no podía pagarlo",
+     "Que el alcalde lo ordenó por odio, para humillar al boticario muerto"
     ],
     "answer": 1,
     "explanation": "El paralelo se cierra en el final: árbol y hombre comparten el destino."
@@ -245,10 +245,10 @@
     "level": "critico",
     "question": "El alcalde no quiere cambiar 'duro roble' por 'sauce' en su discurso. ¿Qué critica el autor con esa escena?",
     "options": [
-     "La pobreza del pueblo",
-     "La vanidad y la hipocresía de los notables: importa lucirse, no la verdad ni el muerto",
-     "La falta de árboles",
-     "El trabajo de los carpinteros"
+     "La pobreza del pueblo, que no puede pagar un ataúd de roble",
+     "La vanidad de los notables, a quienes solo importa lucirse",
+     "La ignorancia del carpintero, que no sabe distinguir las maderas",
+     "La tristeza del alcalde, que era el mejor amigo del boticario"
     ],
     "answer": 1,
     "explanation": "Prefiere no perder una frase bonita aunque sea falsa: es una sátira de la retórica vacía."
@@ -257,10 +257,10 @@
     "level": "critico",
     "question": "¿Por qué el autor da a un árbol nombre y sentimientos humanos?",
     "options": [
-     "Porque es un cuento para niños",
-     "La personificación permite contar la soledad desde otro ángulo y hace que la historia del hombre se vea con más claridad",
-     "Para enseñar botánica",
-     "Por error"
+     "Porque es un cuento para niños y los árboles que hablan les gustan",
+     "Para contar la soledad del hombre a través de la del árbol",
+     "Para enseñar botánica y explicar cómo crecen los sauces junto al río",
+     "Porque en la región se creía que los sauces tenían alma de verdad"
     ],
     "answer": 1,
     "explanation": "El sauce funciona como espejo poético del boticario."
@@ -278,7 +278,7 @@
     "question": "¿Qué vicio de don Fernando desencadena la tragedia?",
     "options": [
      "La bebida",
-     "El juego de azar",
+     "El juego",
      "La avaricia",
      "Los celos"
     ],
@@ -289,10 +289,10 @@
     "level": "inferencial",
     "question": "¿Qué hace Evangelina para salvar a su esposo de la ejecución?",
     "options": [
-     "Paga una gran suma al virrey",
-     "Declara una falsa relación con el muerto, para que el crimen parezca un acto de honor y no un asesinato",
-     "Huye con sus hijos",
-     "Mata al juez"
+     "Vende sus joyas y paga al juez para que declare inocente a su marido",
+     "Finge una relación con el muerto para que parezca un crimen de honor",
+     "Se presenta ante el virrey y confiesa ser ella quien cometió el crimen",
+     "Busca testigos que juren que el muerto atacó primero a don Fernando"
     ],
     "answer": 1,
     "explanation": "Su 'revelación' (y detalles como el anillo y el lugar del cadáver) hacen que el virrey suspenda la sentencia."
@@ -301,10 +301,10 @@
     "level": "inferencial",
     "question": "¿Por qué Fernando enloquece al escuchar la declaración de su esposa?",
     "options": [
-     "Porque descubre que es verdad",
-     "Porque comprende el sacrificio de Evangelina: ella entrega su honra para salvarlo, y él no lo soporta",
-     "Porque lo condenan igual",
-     "Porque perdió más dinero"
+     "Porque cree que la declaración es verdad y se siente engañado por su esposa",
+     "Porque entiende que ella sacrificó su honra para salvarlo",
+     "Porque, a pesar de la declaración, el juez lo condena igual a la horca",
+     "Porque la familia del muerto jura vengarse de él y de sus hijos"
     ],
     "answer": 1,
     "explanation": "La carcajada espantosa muestra el choque entre su culpa y el sacrificio de ella."
@@ -313,10 +313,10 @@
     "level": "critico",
     "question": "En la sociedad colonial, la 'honra' de una mujer valía muchísimo. ¿Qué muestra el relato sobre esa época?",
     "options": [
-     "Que las mujeres tenían los mismos derechos",
+     "Que la honra importaba poco y las mujeres podían decidir sobre su vida libremente",
      "Que la mujer cargaba con el juicio social: Evangelina pierde su nombre para salvar el de sus hijos",
-     "Que nadie se interesaba por la honra",
-     "Que los hombres eran juzgados con más dureza"
+     "Que los hombres eran juzgados con más dureza que las mujeres por la sociedad",
+     "Que la justicia colonial castigaba igual a ricos y pobres, sin excepciones"
     ],
     "answer": 1,
     "explanation": "El sacrificio solo se entiende en un mundo donde la honra femenina era un valor público."
@@ -325,10 +325,10 @@
     "level": "critico",
     "question": "¿El título 'Amor de madre' describe bien el centro del relato?",
     "options": [
-     "No, el centro es el juego",
-     "Sí: la decisión de Evangelina se explica por proteger el futuro de sus hijos, aunque ella pague con su nombre",
-     "No, el centro es el virrey",
-     "No, el centro es la mina"
+     "No: el centro es el juego de don Fernando y cómo arruina a toda la familia",
+     "Sí: Evangelina sacrifica su nombre para proteger a sus hijos",
+     "No: el centro es la justicia del virrey, que perdona a un noble por su rango",
+     "Sí: la historia muestra cómo una madre castiga a su esposo por amor a sus hijos"
     ],
     "answer": 1,
     "explanation": "Lo revela al morir: 'perdí mi honra, porque no os llamasen un día los hijos del ajusticiado'."
@@ -345,10 +345,10 @@
     "level": "literal",
     "question": "¿Cuál fue la trayectoria de Ambrosio O'Higgins?",
     "options": [
-     "Nació noble en Lima y fue siempre militar",
+     "Nació en una familia noble de Lima, fue oidor de la Audiencia y luego virrey del Perú",
      "De buhonero irlandés en Lima pasó a ingeniero en Chile, marqués de Osorno y virrey del Perú",
-     "Fue un obispo que llegó a virrey",
-     "Fue un pirata indultado"
+     "Llegó como capitán de la armada española y gobernó Chile antes de volver a España",
+     "Fue comerciante en Cádiz, compró el título de marqués y el rey lo nombró virrey"
     ],
     "answer": 1,
     "explanation": "Palma subraya el contraste entre su origen humilde y el cargo más alto del virreinato."
@@ -357,10 +357,10 @@
     "level": "inferencial",
     "question": "¿Por qué el virrey ordena llevar a la cárcel a cualquiera que ande por la calle de noche?",
     "options": [
-     "Para cobrar multas",
+     "Para reunir hombres para el ejército, que necesitaba soldados para la guerra con Chile",
      "Para acabar con los desórdenes nocturnos de Lima, que las autoridades no lograban controlar",
-     "Porque odiaba a los limeños",
-     "Para llenar el ejército"
+     "Para cobrar multas y llenar las cajas reales, que estaban vacías tras el terremoto",
+     "Para castigar a los criollos que conspiraban de noche contra el gobierno español"
     ],
     "answer": 1,
     "explanation": "Los encapados no podían extirpar el mal, y él dio una orden tajante."
@@ -369,10 +369,10 @@
     "level": "inferencial",
     "question": "¿Qué ironía cierra la tradición?",
     "options": [
-     "Que nadie obedeció la orden",
+     "Que la orden no se cumplió nunca, porque los alguaciles temían a los nobles de Lima",
      "Que el propio virrey, saliendo de noche embozado, termina en el calabozo por la orden que él mismo dio",
-     "Que los encapados eran ladrones",
-     "Que la cárcel estaba vacía"
+     "Que los presos de esa noche resultaron ser los mismos alguaciles encargados de vigilar",
+     "Que el virrey tuvo que liberar a todos porque en la cárcel ya no cabía nadie más"
     ],
     "answer": 1,
     "explanation": "Pasa la noche en la cárcel de la Pescadería 'como cualquier pelagatos'."
@@ -393,10 +393,10 @@
     "level": "critico",
     "question": "Palma mezcla datos históricos (fechas, censos, obras públicas) con una anécdota graciosa. ¿Para qué sirve esa mezcla?",
     "options": [
-     "Para confundir al lector",
+     "Para mostrar que la historia oficial es falsa y que solo la anécdota dice la verdad",
      "Para que la historia del Perú se lea con gusto: la anécdota atrapa y los datos dan contexto",
-     "Porque no sabía escribir novelas",
-     "Para llenar páginas"
+     "Para que el libro sirva como manual de fechas, con algo de humor para descansar",
+     "Para criticar a los historiadores de su época, que escribían sin datos ni fuentes"
     ],
     "answer": 1,
     "explanation": "Es el método de las Tradiciones: historia y ficción se dan la mano."
@@ -413,10 +413,10 @@
     "level": "literal",
     "question": "¿Quién es el padre de Humberto Grieve y por qué importa en el cuento?",
     "options": [
-     "Un profesor del colegio",
-     "Un inglés gerente de los ferrocarriles y alcalde del pueblo, patrón de la familia Yunque",
-     "Un campesino vecino",
-     "El director del colegio"
+     "Un profesor del colegio que exige que su hijo tenga el mejor sitio",
+     "Un gerente inglés, alcalde y patrón de la familia Yunque",
+     "Un campesino vecino de los Yunque que trabaja la misma chacra",
+     "El director del colegio, que recibe a Paco el primer día"
     ],
     "answer": 1,
     "explanation": "Su poder económico y político explica por qué Humberto se cree dueño de Paco y por qué el profesor lo protege."
@@ -425,10 +425,10 @@
     "level": "inferencial",
     "question": "¿Por qué el profesor no castiga a Humberto aunque llega tarde y miente?",
     "options": [
-     "Porque no se dio cuenta",
-     "Porque Humberto es hijo del hombre más poderoso del pueblo, y el profesor no se atreve",
-     "Porque Humberto era el mejor alumno de verdad",
-     "Porque los demás alumnos mintieron"
+     "Porque no se dio cuenta de que Humberto llegó tarde",
+     "Porque Humberto es hijo del hombre más poderoso del pueblo",
+     "Porque Humberto era de verdad el mejor alumno de la clase",
+     "Porque los demás alumnos mintieron para protegerlo"
     ],
     "answer": 1,
     "explanation": "Todos los alumnos dicen que llegó tarde, pero el profesor lo deja pasar: el poder pesa más que la verdad."
@@ -437,10 +437,10 @@
     "level": "inferencial",
     "question": "¿Por qué Paco Yunque casi no habla durante todo el cuento?",
     "options": [
-     "Porque no sabe castellano",
-     "Porque es tímido, es su primer día y ha aprendido que no puede contradecir al hijo del patrón",
-     "Porque está enfermo",
-     "Porque no le interesa el colegio"
+     "Porque no habla castellano, solo quechua, y no entiende al profesor",
+     "Porque aprendió que no puede contradecir al hijo del patrón",
+     "Porque está enfermo desde que salió de su casa esa mañana",
+     "Porque no le interesa el colegio y quiere volver a trabajar"
     ],
     "answer": 1,
     "explanation": "Su silencio muestra la desigualdad: viene del campo, su madre trabaja para los Grieve y él obedece."
@@ -449,10 +449,10 @@
     "level": "critico",
     "question": "Al final, Grieve se presenta como autor del ejercicio de Paco y es premiado. ¿Qué crítica hace Vallejo?",
     "options": [
-     "Que los niños no deben hacer tareas",
-     "Que la escuela reproduce la injusticia social: el mérito del pobre termina en manos del poderoso",
-     "Que el profesor es muy exigente",
-     "Ninguna, es un malentendido"
+     "Que los niños no deberían tener tareas en su primer día de clases",
+     "Que la escuela repite la injusticia: el poderoso se queda con el mérito",
+     "Que el profesor es muy exigente y nadie puede cumplir sus ejercicios",
+     "Ninguna: es un malentendido que se aclara al día siguiente"
     ],
     "answer": 1,
     "explanation": "El 'Cuadro de Honor' premia el abuso: la institución que debería ser justa se pone del lado del poder."
@@ -461,10 +461,10 @@
     "level": "critico",
     "question": "¿Qué papel cumple Paco Fariña?",
     "options": [
-     "Es el villano del cuento",
-     "Representa la solidaridad y la rebeldía frente al abuso, aunque no logra cambiar el resultado",
-     "Es el profesor",
-     "Es el padre de Paco Yunque"
+     "Es el villano: se burla de Paco Yunque igual que Humberto",
+     "Representa la solidaridad frente al abuso, aunque no gane",
+     "Es el profesor, que intenta poner orden sin conseguirlo",
+     "Es el hermano mayor de Paco Yunque, que lo cuida en el colegio"
     ],
     "answer": 1,
     "explanation": "Fariña defiende a Yunque y enfrenta a Grieve: muestra que se puede actuar distinto, aunque el sistema lo frene."
@@ -481,10 +481,10 @@
     "level": "literal",
     "question": "¿Quién era Juan de Villegas y qué pretendía?",
     "options": [
-     "Un fraile que quería confesar al virrey",
-     "Un prófugo de presidio que acechaba al virrey en el templo para asesinarlo",
-     "Un alcalde que perseguía ladrones",
-     "Un comerciante vizcaíno"
+     "Un fraile que quería confesar al virrey en secreto",
+     "Un prófugo que acechaba al virrey para asesinarlo",
+     "Un alcalde que perseguía ladrones dentro del templo",
+     "Un comerciante vizcaíno que pedía justicia al virrey"
     ],
     "answer": 1,
     "explanation": "'Prófugo de presidio… no cesó de acechar en el templo al virrey, buscando ocasión propicia para asesinarle'."
@@ -493,10 +493,10 @@
     "level": "inferencial",
     "question": "¿Qué juego de palabras hay en el título 'Racimo de horca'?",
     "options": [
-     "Ninguno",
-     "El ahorcado colgando se compara con un racimo de uvas: una imagen macabra dicha con humor",
-     "Es el nombre de una fruta de Lima",
-     "Es el apodo del virrey"
+     "Ninguno: es el nombre de una fruta que se vendía en Lima",
+     "El ahorcado se compara con un racimo de uvas colgando",
+     "Es el apodo del virrey, famoso por mandar ahorcar a muchos",
+     "Es el nombre de la calle donde estaba la horca de la ciudad"
     ],
     "answer": 1,
     "explanation": "'El cuerpo de Villegas se balanceaba como un racimo en la horca': Palma mezcla lo trágico con lo cómico."
@@ -505,10 +505,10 @@
     "level": "inferencial",
     "question": "El alcalde dice que el bellaco 'había de acabar muy alto' y el alguacil responde que 'ese palo es de poca altura'. ¿Qué tienen en común ambas frases?",
     "options": [
-     "Hablan de la estatura de Villegas",
-     "Juegan con el doble sentido de 'alto': llegar lejos en la vida y terminar colgado en la horca",
-     "Elogian a Villegas",
-     "Critican al virrey"
+     "Las dos hablan de la estatura de Villegas, que era muy alto",
+     "Juegan con 'alto': llegar lejos y terminar en la horca",
+     "Las dos elogian a Villegas por haber llegado lejos en la vida",
+     "Las dos critican al virrey por mandar a la horca a un inocente"
     ],
     "answer": 1,
     "explanation": "El humor negro de Palma está en el doble sentido."
@@ -517,10 +517,10 @@
     "level": "critico",
     "question": "Palma usa refranes como 'Al capón que se hace gallo, descañonarlo'. ¿Qué función cumplen en su escritura?",
     "options": [
-     "Rellenar el texto",
-     "Dan sabor popular y comentan los hechos con la sabiduría (y la ironía) de la gente común",
-     "Explican palabras difíciles",
-     "Son errores de imprenta"
+     "Sirven para rellenar el texto cuando no hay datos históricos",
+     "Dan sabor popular y comentan los hechos con ironía",
+     "Explican el significado de las palabras difíciles del relato",
+     "Muestran que Palma desconfiaba de la sabiduría popular"
     ],
     "answer": 1,
     "explanation": "Los refranes son la voz criolla del narrador: opinan sobre la historia con gracia."
@@ -529,10 +529,10 @@
     "level": "critico",
     "question": "La justicia colonial ejecuta a Villegas en ocho días. ¿Qué piensas de una justicia tan rápida?",
     "options": [
-     "Siempre es mejor",
-     "Puede castigar al culpable, pero sin garantías también puede castigar a inocentes: la rapidez no asegura justicia",
-     "No importa la rapidez",
-     "La justicia nunca debe castigar"
+     "Siempre es mejor: una justicia rápida evita más delitos",
+     "Sin garantías también puede castigar a un inocente",
+     "La rapidez no importa, solo que el castigo sea ejemplar",
+     "La justicia nunca debe castigar, solo corregir"
     ],
     "answer": 1,
     "explanation": "Pregunta abierta para valorar el debido proceso, comparando con la época del relato."
@@ -549,10 +549,10 @@
     "level": "literal",
     "question": "¿Qué robó Lucas y de dónde?",
     "options": [
-     "Dinero del palacio del virrey",
-     "El sol de oro y piedras preciosas de la custodia del templo de San Agustín",
-     "Un cuadro de la catedral",
-     "La corona de una virgen de Cusco"
+     "El tesoro guardado en el palacio del virrey",
+     "El sol de oro de la custodia de San Agustín",
+     "Un cuadro de oro de la catedral de Lima",
+     "La corona de plata de una virgen del Cusco"
     ],
     "answer": 1,
     "explanation": "Desapareció 'el sol de oro, evaluado en más de cuarenta mil pesos', con perlas, rubíes y esmeraldas."
@@ -561,10 +561,10 @@
     "level": "inferencial",
     "question": "¿Por qué Lucas pide cuatro meses antes de su ejecución?",
     "options": [
-     "Para escapar",
+     "Para preparar su fuga con ayuda de un carcelero sobornado",
      "Para fabricar una custodia mejor que la que destruyó, como reparación",
-     "Para despedirse de su familia",
-     "Para escribir sus memorias"
+     "Para despedirse de su familia, que vivía lejos de Lima",
+     "Para escribir sus memorias y confesar sus otros robos"
     ],
     "answer": 1,
     "explanation": "Era un orfebre hábil: ofrece su talento para reparar el daño, y lo cumple."
@@ -573,10 +573,10 @@
     "level": "inferencial",
     "question": "¿Qué ironía tiene el final: 'en vez de achicharrarlo como a sacrílego, se le ahorcó muy pulcramente como a ladrón'?",
     "options": [
-     "Que lo liberaron",
+     "Que el virrey lo perdonó y lo dejó libre por su arrepentimiento",
      "Que el 'perdón' solo cambió la forma de morir: Palma se burla de esa clemencia",
-     "Que lo quemaron igual",
-     "Que el virrey lo adoptó"
+     "Que igual lo quemaron, aunque el virrey había prometido lo contrario",
+     "Que nadie asistió a la ejecución porque era día de fiesta"
     ],
     "answer": 1,
     "explanation": "La 'merced' es apenas una muerte menos cruel: el adverbio 'pulcramente' subraya la ironía."
@@ -585,10 +585,10 @@
     "level": "critico",
     "question": "Lucas se arrepiente y repara su falta, pero igual lo ejecutan. ¿Qué piensas de ese desenlace?",
     "options": [
-     "Es justo, el robo no se perdona",
+     "Es justo: un robo al templo nunca puede perdonarse, haga lo que haga",
      "Abre un debate: ¿el arrepentimiento y la reparación deberían cambiar el castigo?",
-     "No importa",
-     "Debió quedar libre sin más"
+     "No importa: lo único que vale es que la custodia volvió a la iglesia",
+     "Debió quedar libre, porque la custodia nueva valía más que la robada"
     ],
     "answer": 1,
     "explanation": "Es una pregunta sobre justicia restaurativa frente a castigo."
@@ -597,10 +597,10 @@
     "level": "critico",
     "question": "El narrador interpela al lector ('Yo no sé, lector, si alguna ocasión te has encontrado de noche en un vasto templo…'). ¿Para qué?",
     "options": [
-     "Para aburrirlo",
-     "Para meterlo en la escena y crear suspenso, como si contara la historia en voz alta",
-     "Para pedirle dinero",
-     "Para cambiar de tema"
+     "Para darle una lección moral directa sobre el robo",
+     "Para meterlo en la escena y crear suspenso",
+     "Para cambiar de tema y hablar de su propia vida",
+     "Para explicar cómo se construían los templos de Lima"
     ],
     "answer": 1,
     "explanation": "Es un rasgo del estilo conversado de Palma: el lector se siente dentro de la historia."
@@ -617,10 +617,10 @@
     "level": "literal",
     "question": "¿Qué le encarga el enfermo español al ecónomo Gil Paz antes de 'morir'?",
     "options": [
-     "Que avise a su familia en España",
+     "Que envíe su dinero a su familia en España, a la que no veía hacía años",
      "Que use su dinero para un entierro digno y misas, porque no tenía deudos",
-     "Que le compre una casa",
-     "Que lo lleve de vuelta a España"
+     "Que reparta todo entre los enfermos pobres del hospital de San Andrés",
+     "Que compre una capilla en el convento para que lo entierren allí"
     ],
     "answer": 1,
     "explanation": "Le confía sus peluconas (monedas de oro) para su entierro; era 'un pobre expósito' sin familia."
@@ -629,10 +629,10 @@
     "level": "inferencial",
     "question": "¿Qué hizo Gil Paz con el dinero y cómo lo sabemos?",
     "options": [
-     "Lo gastó en el entierro",
+     "Lo gastó en el entierro y las misas, como el enfermo le había pedido",
      "Se lo quedó por avaricia: el 'resucitado' le reclama '¿Dónde está mi mortaja?'",
-     "Lo repartió a los pobres",
-     "Lo devolvió al virrey"
+     "Lo repartió entre los pobres y el resucitado se lo reclama igual",
+     "Lo entregó al virrey, que lo guardó en las cajas reales sin decir nada"
     ],
     "answer": 1,
     "explanation": "La pregunta del resucitado y el narrador ('su sacrílega avaricia') lo dejan claro."
@@ -641,10 +641,10 @@
     "level": "inferencial",
     "question": "¿Cuál es el castigo de Gil Paz?",
     "options": [
-     "La cárcel",
-     "Pierde la razón: el espanto (o la conciencia) lo enloquece",
-     "La horca",
-     "El destierro"
+     "La cárcel por robo",
+     "Se vuelve loco",
+     "La horca en la plaza",
+     "El destierro a Valdivia"
     ],
     "answer": 1,
     "explanation": "'Su sacrílega avaricia tuvo la locura por castigo'."
@@ -653,10 +653,10 @@
     "level": "critico",
     "question": "Palma describe que los muertos se enterraban en corralones y bóvedas 'con no poco peligro de la salubridad pública'. ¿Qué crítica hace?",
     "options": [
-     "Ninguna",
-     "Critica las condiciones sanitarias de la Lima colonial, donde un error así (enterrar a un vivo) era posible",
-     "Elogia los hospitales",
-     "Critica a los médicos españoles"
+     "Elogia los cementerios de su tiempo, mucho mejores que los de la colonia",
+     "Critica la sanidad de la Lima colonial, donde podía enterrarse a un vivo",
+     "Critica a los médicos españoles, que no sabían curar a los enfermos",
+     "Se burla de la superstición de quienes temían a los muertos"
     ],
     "answer": 1,
     "explanation": "La anécdota sirve para mostrar el descuido de la salud pública."
@@ -665,10 +665,10 @@
     "level": "critico",
     "question": "El español, ya curado, reparte su dinero en limosnas y se hace lego. ¿Qué contraste construye el relato?",
     "options": [
-     "Entre dos médicos",
+     "Entre la medicina española y la medicina tradicional de Lima",
      "Entre la avaricia de Gil Paz y la generosidad de quien vuelve de la muerte",
-     "Entre España y el Perú",
-     "Entre dos virreyes"
+     "Entre la riqueza de los nobles y la pobreza de los enfermos",
+     "Entre la justicia del virrey y la justicia de la Iglesia"
     ],
     "answer": 1,
     "explanation": "Los dos personajes son opuestos: uno pierde todo por avaro, el otro gana paz al dar."
@@ -685,10 +685,10 @@
     "level": "literal",
     "question": "¿Por qué Román, el platero, decide ahorcarse?",
     "options": [
-     "Por una deuda de juego",
-     "Por la vida insoportable con su esposa, derrochadora y regañona, que lo dejó en la ruina",
-     "Porque lo acusaron de robo",
-     "Por amor no correspondido"
+     "Por una gran deuda de juego que no podía pagar a sus acreedores",
+     "Por la vida insoportable con su esposa, que lo dejó en la ruina",
+     "Porque lo acusaron de robar plata del taller y temía la cárcel",
+     "Por un amor no correspondido con una vecina de la calle de Plateros"
     ],
     "answer": 1,
     "explanation": "Su mujer, 'amiga del boato, manirrota, terca y regañona', convirtió su casa en un infierno."
@@ -697,10 +697,10 @@
     "level": "inferencial",
     "question": "¿Qué sentido tiene el título 'Nadie se muere hasta que Dios quiere'?",
     "options": [
-     "Que Román era inmortal",
-     "Que el plan de morir de Román se frustra por un giro inesperado del destino: encuentra el tesoro de Ovillitos",
-     "Que los médicos lo salvaron",
-     "Que su esposa lo detuvo"
+     "Que Román no podía morir, porque Dios le había prometido larga vida",
+     "Que su plan de morir se frustra al encontrar el tesoro de Ovillitos",
+     "Que los médicos lo salvaron justo a tiempo después de ahorcarse",
+     "Que su esposa llegó a tiempo y cortó la soga para detenerlo"
     ],
     "answer": 1,
     "explanation": "Buscando árbol para ahorcarse, termina hallando el dinero escondido del mendigo."
@@ -709,10 +709,10 @@
     "level": "inferencial",
     "question": "¿Qué critica Palma a través de Ovillitos, el mendigo que escondía su dinero?",
     "options": [
-     "La pobreza",
-     "La avaricia inútil: el dinero guardado 'criando moho' no sirve, y él enferma al perderlo",
-     "La generosidad",
-     "El trabajo"
+     "La pobreza de los mendigos de Lima, que nadie ayudaba",
+     "La avaricia inútil del dinero que se esconde sin usarlo",
+     "La generosidad mal entendida de quienes dan limosna",
+     "La costumbre de trabajar sin descanso para hacerse rico"
     ],
     "answer": 1,
     "explanation": "'El dinero no es monje cartujo que gusta de estar guardado… es un libertino que se desvive por andar de mano en mano'."
@@ -721,10 +721,10 @@
     "level": "critico",
     "question": "Román se enriquece con dinero ajeno y, al morir, deja misas para el alma de Ovillitos. ¿Cómo valoras esa conducta?",
     "options": [
-     "Es totalmente justa",
-     "Es ambigua: reconoce su deuda moral, pero nunca devolvió el dinero; Palma deja que el lector juzgue",
-     "Es un robo sin importancia",
-     "Es un acto heroico"
+     "Es totalmente justa: el dinero no tenía dueño y las misas lo compensan",
+     "Es ambigua: reconoce su deuda, pero nunca devolvió el dinero",
+     "Es un robo sin importancia, porque Ovillitos ya no necesitaba la plata",
+     "Es un acto heroico: salva su vida y además honra al mendigo"
     ],
     "answer": 1,
     "explanation": "El humor del relato no cierra el problema moral: invita a pensarlo."
@@ -733,10 +733,10 @@
     "level": "critico",
     "question": "Los 'diez mandamientos' de la esposa y el refrán del fraile reflejan ideas de su época sobre el matrimonio. ¿Cómo leerlos hoy?",
     "options": [
-     "Como consejos válidos",
-     "Como humor de una época con prejuicios: se pueden reconocer y discutir sin repetirlos",
-     "No hay que leerlos",
-     "Como ley"
+     "Como consejos para un buen matrimonio, válidos todavía hoy",
+     "Como humor de una época con prejuicios, que hoy se discute",
+     "Como una ley de la época que todos los matrimonios debían cumplir",
+     "No hay que leerlos: son una parte del texto que sobra"
     ],
     "answer": 1,
     "explanation": "Leer críticamente incluye notar los prejuicios de un texto antiguo."
@@ -753,10 +753,10 @@
     "level": "literal",
     "question": "¿Qué le promete el joven al padre Carapulcra a cambio de su dinero?",
     "options": [
-     "Rezar por él",
+     "Pagarle el doble en un año con lo que ganara comerciando telas en el Callao",
      "Triplicarlo en menos de un año poniendo una botica",
-     "Comprarle un convento",
-     "Llevarlo a España"
+     "Devolvérselo con intereses apenas cobrara la herencia de un tío en España",
+     "Comprarle una celda nueva en el convento con las ganancias de una pulpería"
     ],
     "answer": 1,
     "explanation": "Jura que 'antes de un año' le triplicará los realejos que tiene 'criando moho'."
@@ -766,9 +766,9 @@
     "question": "El padre se lamenta: 'Con cuatro simples me dijo que se ponía una botica… Él la puso con solo un simple… ¡y ese fui yo!'. ¿Cuál es el juego de palabras?",
     "options": [
      "'Simple' significa remedio y también persona ingenua: el engañado fue el propio padre",
-     "'Simple' es una moneda antigua",
-     "'Simple' es un tipo de pez",
-     "No hay juego de palabras"
+     "'Simple' es una moneda pequeña: el joven puso la botica casi sin dinero",
+     "'Simple' es el nombre del ayudante del padre, que le prestó el resto del dinero",
+     "'Simple' quiere decir fácil: poner una botica era más sencillo de lo que creía"
     ],
     "answer": 0,
     "explanation": "En boticas, un 'simple' era una hierba medicinal; el padre se reconoce como el 'simple' (tonto) del negocio."
@@ -777,10 +777,10 @@
     "level": "inferencial",
     "question": "¿Por qué el padre había guardado dinero en secreto?",
     "options": [
-     "Porque se lo pidió el virrey",
+     "Porque era el tesorero del convento y el dinero pertenecía a la comunidad",
      "Porque, aunque su orden exigía pobreza, había ahorrado a escondidas",
-     "Porque era tesorero oficial",
-     "Porque lo ganó en la lotería"
+     "Porque lo heredó de su familia antes de entrar a la orden y nadie lo sabía",
+     "Porque lo había ganado vendiendo remedios a los vecinos con permiso del prior"
     ],
     "answer": 1,
     "explanation": "El lego 'no era tan pobre de solemnidad como las reglas de su instituto lo exigían'."
@@ -789,10 +789,10 @@
     "level": "critico",
     "question": "¿Qué critica Palma con esta tradición?",
     "options": [
-     "A los médicos",
+     "La ignorancia de los boticarios, que vendían remedios sin saber de medicina",
      "La codicia y la credulidad: quien quiere ganar fácil cae ante el estafador",
-     "A los pescadores",
-     "Al ferrocarril"
+     "La pobreza de los frailes, que tenían que pedir prestado para sobrevivir",
+     "La dureza de los padres con los jóvenes que querían empezar un negocio"
     ],
     "answer": 1,
     "explanation": "La avaricia del padre lo vuelve presa fácil de la promesa de ganancia rápida."
@@ -801,10 +801,10 @@
     "level": "critico",
     "question": "La tradición explica el origen de una expresión popular. ¿Por qué Palma se interesa tanto por el origen de frases y refranes?",
     "options": [
-     "Por casualidad",
-     "Porque las palabras guardan la memoria de una comunidad: contar su origen es contar la historia del pueblo",
-     "Para enseñar inglés",
-     "Para alargar el texto"
+     "Porque quería demostrar que los refranes populares suelen ser falsos y crueles",
+     "Porque las palabras guardan la memoria del pueblo y su historia",
+     "Porque los refranes eran la única fuente histórica que tenía sobre la colonia",
+     "Porque buscaba reemplazar las frases populares por expresiones más cultas"
     ],
     "answer": 1,
     "explanation": "Muchas tradiciones nacen de un dicho: la lengua es un archivo de la historia."
@@ -821,10 +821,10 @@
     "level": "literal",
     "question": "¿Qué acontecimiento interrumpe la fiesta de Juan de Andueza?",
     "options": [
-     "Una inundación",
+     "Una gran inundación del Rímac",
      "El gran terremoto que destruyó Lima",
-     "La llegada del virrey",
-     "Un incendio en el puerto"
+     "La llegada del nuevo virrey",
+     "Un incendio en el puerto del Callao"
     ],
     "answer": 1,
     "explanation": "El terremoto de la noche dejó en Lima cuatro mil muertos de setenta mil habitantes."
@@ -833,10 +833,10 @@
     "level": "inferencial",
     "question": "¿Qué muestra que Andueza y sus amigos, al principio, no tomaron en serio la catástrofe?",
     "options": [
-     "Que ayudaron a los heridos",
+     "Que siguieron bailando durante el temblor sin darse cuenta de nada",
      "Que, pasado el temblor, volvieron a meterse en el chiribitil a seguir el fandango",
-     "Que huyeron al campo",
-     "Que rezaron toda la noche"
+     "Que se burlaron de los vecinos que salían a rezar a la calle",
+     "Que salieron a robar en las casas abandonadas por el terremoto"
     ],
     "answer": 1,
     "explanation": "'Sin cuidarse de averiguar lo ocurrido en la población, volvió aquella gentuza… a continuar el fandango'."
@@ -845,10 +845,10 @@
     "level": "inferencial",
     "question": "¿Cómo termina la vida de Andueza?",
     "options": [
-     "Muere en el terremoto",
+     "Muere poco después, aplastado por un muro en una réplica del terremoto",
      "Cambia por completo, se hace lego de la Merced y muere 'en olor de santidad'",
-     "Huye a España",
-     "Sigue de fiesta"
+     "Huye a España avergonzado y nunca más vuelve a saberse de él en Lima",
+     "Se arrepiente un tiempo, pero vuelve a las fiestas y muere en la pobreza"
     ],
     "answer": 1,
     "explanation": "La conversión es total: del libertino al religioso ejemplar."
@@ -857,10 +857,10 @@
     "level": "critico",
     "question": "¿Por qué una catástrofe puede cambiar la vida de una persona, según el relato?",
     "options": [
-     "Porque trae dinero",
-     "Porque enfrenta a la persona con la muerte y la fragilidad de la vida, y la obliga a pensar en lo que hace",
-     "Porque lo obliga la ley",
-     "No puede cambiarla"
+     "Porque después de una catástrofe la ley obliga a todos a cambiar de costumbres",
+     "Porque lo enfrenta con la muerte y lo obliga a mirar su vida",
+     "Porque la gente pierde sus bienes y tiene que buscar trabajo en otro lugar",
+     "Porque el miedo dura para siempre y nadie vuelve a ser como antes"
     ],
     "answer": 1,
     "explanation": "El miedo ante la muerte provoca el examen de conciencia."
@@ -869,10 +869,10 @@
     "level": "critico",
     "question": "Palma incluye coplas y nombres de bailes populares (la mozamala). ¿Qué aporta eso?",
     "options": [
-     "Nada",
+     "Explica por qué ocurrió el terremoto según las creencias de la época",
      "Retrata la cultura popular limeña de la época, con su música y su humor",
-     "Confunde al lector",
-     "Explica el terremoto"
+     "Muestra que Andueza era músico y por eso organizaba tantas fiestas",
+     "Sirve para criticar los bailes, que la Iglesia había prohibido en Lima"
     ],
     "answer": 1,
     "explanation": "Las tradiciones son también un archivo de costumbres, cantos y bailes."
@@ -889,10 +889,10 @@
     "level": "literal",
     "question": "¿De dónde vino el conocimiento de la quina según la tradición?",
     "options": [
-     "De un médico de Madrid",
-     "De Pedro de Leyva, un indígena de Loja, que se curó bebiendo agua de un remanso rodeado de quinas",
-     "De los jesuitas de Roma",
-     "De un libro árabe"
+     "De un médico de Madrid que la estudió en los jardines del rey",
+     "De Pedro de Leyva, un indígena de Loja que se curó con ella",
+     "De los jesuitas de Roma, que la trajeron de sus misiones en Asia",
+     "De un libro árabe de medicina traducido en Sevilla"
     ],
     "answer": 1,
     "explanation": "El saber nace de la experiencia de un indígena; luego otros lo difunden."
@@ -901,10 +901,10 @@
     "level": "inferencial",
     "question": "¿Por qué la medicina terminó llamándose 'polvos de la condesa' y no 'polvos de Pedro de Leyva'?",
     "options": [
-     "Porque la condesa la descubrió",
-     "Porque la fama quedó en manos de la virreina y de los jesuitas, mientras el saber indígena quedó en segundo plano",
-     "Porque Pedro de Leyva no quiso",
-     "Por error de imprenta"
+     "Porque la condesa la descubrió ella misma en un viaje a Loja",
+     "Porque la fama se la llevó la virreina y no el saber indígena",
+     "Porque Pedro de Leyva pidió que no usaran su nombre",
+     "Por un error de imprenta en el primer libro que la describió"
     ],
     "answer": 1,
     "explanation": "La historia muestra cómo el prestigio se atribuye a los poderosos."
@@ -913,10 +913,10 @@
     "level": "inferencial",
     "question": "¿Por qué durante un tiempo se la llamó 'polvos de los jesuitas'?",
     "options": [
-     "Porque ellos la inventaron",
-     "Porque guardaron el secreto algunos años y los enfermos acudían a ellos",
-     "Porque era muy cara",
-     "Porque solo curaba a sacerdotes"
+     "Porque ellos la inventaron en sus laboratorios de Lima",
+     "Porque guardaron el secreto y los enfermos acudían a ellos",
+     "Porque era tan cara que solo ellos podían comprarla",
+     "Porque solo curaba a los sacerdotes y no a los demás"
     ],
     "answer": 1,
     "explanation": "Controlar el secreto les dio fama y poder."
@@ -925,10 +925,10 @@
     "level": "critico",
     "question": "En Salamanca se dijo que la quina funcionaba por 'pacto con el diablo'. ¿Qué revela esa reacción?",
     "options": [
-     "Que tenían razón",
-     "Que el prejuicio y el miedo a lo desconocido pueden frenar un conocimiento útil, sobre todo si viene de otro pueblo",
-     "Que la quina era peligrosa",
-     "Que los médicos eran sabios"
+     "Que los médicos de Salamanca tenían razón y la quina era peligrosa",
+     "Que el prejuicio puede frenar un saber útil de otro pueblo",
+     "Que la quina causaba más daño que la fiebre que intentaba curar",
+     "Que la Iglesia prohibía todas las medicinas que venían de América"
     ],
     "answer": 1,
     "explanation": "Rechazaron un remedio eficaz por venir del saber andino."
@@ -937,10 +937,10 @@
     "level": "critico",
     "question": "La quina aparece en el escudo nacional del Perú. ¿Qué conexión puedes hacer con esta tradición?",
     "options": [
-     "Ninguna",
-     "El escudo reconoce la riqueza natural del país, y la tradición recuerda que ese saber fue primero de los pueblos andinos",
-     "Que el escudo es español",
-     "Que la quina es de Europa"
+     "Ninguna: el árbol del escudo no tiene relación con la quina",
+     "Que esa riqueza natural fue primero un saber de los pueblos andinos",
+     "Que el escudo es de origen español y por eso recuerda a la condesa",
+     "Que la quina llegó al Perú desde Europa y por eso es símbolo"
     ],
     "answer": 1,
     "explanation": "Une un símbolo nacional con la historia del conocimiento indígena."
@@ -957,10 +957,10 @@
     "level": "literal",
     "question": "¿Qué hizo el sacerdote después de ser golpeado por orden del almirante?",
     "options": [
-     "Lo denunció ante el virrey",
+     "Lo denunció ante el virrey en Lima y esperó la sentencia de la Audiencia",
      "Dejó un memorial ante la imagen de Cristo en la catedral pidiendo 'la justicia de Dios'",
-     "Se vengó con sus propias manos",
-     "Se fue del Cusco"
+     "Reunió a sus feligreses para castigar al almirante con sus propias manos",
+     "Abandonó el Cusco y escribió al rey de España contando lo sucedido"
     ],
     "answer": 1,
     "explanation": "Pidió justicia divina, 'persuadido que no había de lograrla de los hombres'."
@@ -969,10 +969,10 @@
     "level": "inferencial",
     "question": "¿Por qué el sacerdote no confiaba en la justicia de los hombres?",
     "options": [
-     "Porque no conocía las leyes",
+     "Porque había sido castigado antes por la justicia y nadie le creería",
      "Porque el almirante era tan poderoso que las autoridades no se atrevían contra él",
-     "Porque era extranjero",
-     "Porque el juez era su enemigo"
+     "Porque el juez del Cusco era pariente suyo y no quería comprometerlo",
+     "Porque era forastero y no conocía las leyes de la ciudad ni a sus jueces"
     ],
     "answer": 1,
     "explanation": "El texto dice que las autoridades no se atrevían a declararse contra el magnate."
@@ -981,10 +981,10 @@
     "level": "inferencial",
     "question": "¿Por qué se archivó el caso de la muerte del almirante?",
     "options": [
-     "Porque se encontró al culpable",
-     "Porque los testigos dijeron haber visto duendes, y 'no pudiendo proceder contra los duendes', no hubo juicio",
-     "Porque el almirante seguía vivo",
-     "Porque el virrey lo ordenó sin razón"
+     "Porque el almirante seguía vivo y negó todo lo ocurrido ante el juez",
+     "Porque los testigos culparon a los duendes y no se pudo juzgarlos",
+     "Porque se encontró al culpable y este confesó antes del juicio",
+     "Porque el virrey perdonó a los culpables por ser nobles del Cusco"
     ],
     "answer": 1,
     "explanation": "La explicación sobrenatural permite cerrar un caso incómodo."
@@ -993,10 +993,10 @@
     "level": "critico",
     "question": "Palma deja entrever que la muerte del almirante pudo ser obra de personas reales. ¿Qué efecto tiene esa ambigüedad?",
     "options": [
-     "Ninguno",
+     "Prueba que los duendes existían de verdad, como creía la gente del Cusco",
      "Hace pensar en una justicia popular que se disfraza de leyenda cuando las instituciones fallan",
-     "Prueba que los duendes existen",
-     "Muestra que el almirante era inocente"
+     "Muestra que el almirante era inocente y que lo calumniaron después de muerto",
+     "Ninguno: Palma solo repite la leyenda sin poner nada en duda"
     ],
     "answer": 1,
     "explanation": "La leyenda puede ocultar una venganza que nadie quiere investigar."
@@ -1005,10 +1005,10 @@
     "level": "critico",
     "question": "El virrey poeta dice que el mundo andaría mejor si los duendes hicieran justicia. ¿Estás de acuerdo?",
     "options": [
-     "Sí, la venganza es justa",
-     "Es una idea peligrosa: denuncia la impunidad de los poderosos, pero la respuesta debe ser una justicia igual para todos, no la venganza",
-     "No importa",
-     "Sí, porque los duendes no se equivocan"
+     "Sí, porque cuando la justicia falla, la venganza del pueblo es la única salida",
+     "Es peligrosa: denuncia la impunidad, pero la salida es una justicia igual para todos",
+     "Sí, porque los duendes no se equivocan y castigan solo a los culpables",
+     "No importa, porque es solo una frase graciosa y no dice nada sobre la justicia"
     ],
     "answer": 1,
     "explanation": "El relato critica la impunidad, pero abre el debate sobre los límites de la justicia por mano propia."
@@ -1025,10 +1025,10 @@
     "level": "literal",
     "question": "¿Qué recibe José Salcedo como dote al casarse con Carmen?",
     "options": [
-     "Una hacienda",
-     "Una mina de plata que la familia indígena guardaba en secreto",
-     "Un cargo público",
-     "Joyas incas"
+     "Una hacienda de vid en el valle",
+     "Una mina de plata escondida",
+     "Un cargo de corregidor en Puno",
+     "Un cofre con joyas de los incas"
     ],
     "answer": 1,
     "explanation": "'Aquí tienes la dote de tu esposa', le dice la anciana frente a la bocamina."
@@ -1037,10 +1037,10 @@
     "level": "inferencial",
     "question": "¿Por qué la familia de Carmen inunda y tapa la mina tras la muerte de Salcedo?",
     "options": [
-     "Porque se acabó la plata",
+     "Porque la mina ya no tenía plata y no querían que nadie lo supiera",
      "Para que la riqueza no cayera en manos de quienes causaron la muerte de Salcedo",
-     "Por orden del virrey",
-     "Por un terremoto"
+     "Porque el virrey les ordenó cerrarla para evitar más rebeliones",
+     "Porque un terremoto la dañó y era peligroso seguir trabajando"
     ],
     "answer": 1,
     "explanation": "Prefieren perder la mina antes que entregarla a la codicia de los poderosos."
@@ -1049,10 +1049,10 @@
     "level": "inferencial",
     "question": "¿Qué quiere decir Palma con 'No se dirá que no mataban lujosamente'?",
     "options": [
-     "Que las armas eran de oro",
+     "Que los soldados usaban espadas de oro adornadas con piedras preciosas",
      "Que, a falta de plomo, fundían balas de plata: tal era la riqueza de la mina",
-     "Que vestían ropa fina en la guerra",
-     "Que pagaban a soldados"
+     "Que los mineros vestían ropa fina incluso en medio de la guerra",
+     "Que Salcedo pagaba muy bien a sus soldados para que lo defendieran"
     ],
     "answer": 1,
     "explanation": "Es humor amargo: hasta la violencia se hacía con plata."
@@ -1061,10 +1061,10 @@
     "level": "critico",
     "question": "El virrey rechaza la barra de plata diaria y prefiere ejecutar a Salcedo y confiscar sus bienes. ¿Qué muestra eso del poder colonial?",
     "options": [
-     "Que era honrado",
+     "Que el virrey era honrado y no se dejaba comprar por ningún minero",
      "Que la autoridad podía usar la justicia como instrumento de codicia",
-     "Que la plata no le interesaba",
-     "Que Salcedo era culpable de todo"
+     "Que a la Corona no le interesaba la plata, sino el orden en Puno",
+     "Que Salcedo era culpable de todo y merecía el castigo que recibió"
     ],
     "answer": 1,
     "explanation": "Los consejeros le hacen ver que ganaría más confiscando."
@@ -1073,10 +1073,10 @@
     "level": "critico",
     "question": "Carmen dice: 'Mis riquezas han traído mi desdicha'. ¿Cómo se relaciona con la historia minera del Perú?",
     "options": [
-     "No se relaciona",
-     "Plantea una pregunta vigente: ¿quién se beneficia de la riqueza de la tierra y quién paga sus costos?",
-     "Dice que la minería siempre es buena",
-     "Habla solo de joyas"
+     "Dice que la minería siempre trae riqueza y bienestar para todos",
+     "Pregunta quién gana con la riqueza de la tierra y quién paga",
+     "No se relaciona: habla solo de una mujer que perdió sus joyas",
+     "Explica que la plata del Perú se acabó en la colonia"
     ],
     "answer": 1,
     "explanation": "La tradición conecta con debates actuales sobre minería y comunidades."
@@ -1093,10 +1093,10 @@
     "level": "literal",
     "question": "¿Por qué Guruceta no tenía ningún papel que probara el depósito de fray Venancio?",
     "options": [
-     "Porque lo perdió",
+     "Porque el recibo se quemó en el incendio del convento poco antes de su muerte",
      "Porque el fraile depositaba el dinero con confianza, sin pedir recibo",
-     "Porque se quemó",
-     "Porque el notario se lo llevó"
+     "Porque Guruceta lo escondió y después negó haberlo firmado ante el notario",
+     "Porque los papeles quedaron en España, donde vivía la familia del fraile"
     ],
     "answer": 1,
     "explanation": "El depósito se hizo 'sin que mediase una tira de papel'."
@@ -1105,10 +1105,10 @@
     "level": "inferencial",
     "question": "¿Por qué Guruceta llegó a considerar el dinero 'cosa propia'?",
     "options": [
-     "Porque se lo regalaron",
+     "Porque el fraile se lo había regalado en secreto antes de morir sin testigos",
      "Porque nadie lo reclamaba y nada lo probaba: la ocasión despertó su codicia",
-     "Porque lo ganó trabajando",
-     "Porque el convento quebró"
+     "Porque el convento le debía dinero y él lo tomó como pago de esa deuda",
+     "Porque la ley de la época daba al depositario lo que nadie reclamaba en un año"
     ],
     "answer": 1,
     "explanation": "La falta de testigos y de papeles lo tentó."
@@ -1117,10 +1117,10 @@
     "level": "inferencial",
     "question": "¿Qué estrategia usa fray Antolín para que Guruceta devuelva el dinero?",
     "options": [
-     "Lo denuncia al virrey",
+     "Lo amenaza con denunciarlo ante el virrey y la Audiencia si no paga pronto",
      "Aprovecha su miedo supersticioso: le hace creer que el alma de fray Venancio vendrá en persona",
-     "Le ofrece un negocio",
-     "Le pide ayuda al obispo"
+     "Le ofrece la mitad del dinero si reconoce el depósito ante un escribano",
+     "Le pide al obispo que lo excomulgue públicamente hasta que devuelva todo"
     ],
     "answer": 1,
     "explanation": "El temor a 'un alma del otro mundo' logra lo que la ley no podía."
@@ -1129,10 +1129,10 @@
     "level": "critico",
     "question": "¿Es correcto que fray Antolín use el miedo para lograr un fin justo?",
     "options": [
-     "Siempre está bien",
-     "Es discutible: recupera lo justo, pero con un engaño; el texto invita a pensar en los medios y los fines",
-     "Nunca está bien",
-     "No importa"
+     "Sí, sin ninguna duda: cualquier medio vale cuando el fin es justo y honrado",
+     "Es discutible: recupera lo justo, pero usando un engaño",
+     "No, porque un fraile jamás debe mentir, ni siquiera para reparar una injusticia",
+     "No importa, porque al final el dinero no llegó a manos del convento"
     ],
     "answer": 1,
     "explanation": "Pregunta sobre ética de los medios."
@@ -1141,10 +1141,10 @@
     "level": "critico",
     "question": "Palma comenta: 'Haga usted hoy lo propio, y verá dónde le llega el agua'. ¿Qué crítica hace a su propia época?",
     "options": [
-     "Que la gente era más honrada",
-     "Que en su tiempo la confianza ya no bastaba: hacía falta respaldo escrito, porque la honradez se había vuelto escasa",
-     "Que el agua era cara",
-     "Que los frailes eran ricos"
+     "Que en su tiempo la gente era más confiada y por eso los bancos no hacían falta",
+     "Que en su tiempo la honradez escaseaba y la palabra ya no bastaba sin un papel",
+     "Que el agua de Lima se había vuelto escasa y cara por culpa de los comerciantes",
+     "Que los frailes de su época eran más ricos que los de la colonia y menos honrados"
     ],
     "answer": 1,
     "explanation": "Compara con nostalgia irónica dos épocas."
@@ -1173,10 +1173,10 @@
     "level": "inferencial",
     "question": "¿Por qué Godoy prestó la plata tan rápido, si era tan tacaño?",
     "options": [
-     "Por bondad",
+     "Por bondad y respeto al arzobispo, que era su amigo de la infancia",
      "Porque esperaba que el arzobispo lo recompensara con una canonjía",
-     "Porque lo obligaron",
-     "Porque le sobraba dinero"
+     "Porque el arzobispo lo obligó amenazándolo con quitarle su parroquia",
+     "Porque le sobraba el dinero y no sabía en qué gastarlo"
     ],
     "answer": 1,
     "explanation": "Su generosidad era interesada: aspiraba a un ascenso."
@@ -1185,10 +1185,10 @@
     "level": "inferencial",
     "question": "¿Qué lección le da el arzobispo sin decírsela directamente?",
     "options": [
-     "Que no debe prestar dinero",
-     "Que debía vestirse con decoro y que su avaricia era ridícula: lo viste con su propio dinero",
-     "Que debía dejar el sacerdocio",
-     "Que el arzobispo era pobre"
+     "Que nunca debe prestar dinero a nadie, ni siquiera a sus superiores",
+     "Que su avaricia era ridícula: lo viste con su propio dinero",
+     "Que debía dejar el sacerdocio y dedicarse al comercio",
+     "Que el arzobispo era pobre y necesitaba su ayuda de verdad"
     ],
     "answer": 1,
     "explanation": "La ironía está en que el 'regalo' lo pagó Godoy."
@@ -1197,10 +1197,10 @@
     "level": "critico",
     "question": "Godoy pide al final que el arzobispo no vuelva a 'tomarse el trabajo de vestirlo'. ¿Qué revela esa respuesta?",
     "options": [
-     "Que aprendió la lección",
-     "Que lo único que le duele es el dinero gastado: su avaricia sigue intacta, y ahí está el humor",
-     "Que estaba agradecido",
-     "Que quería más ropa"
+     "Que por fin aprendió la lección y se avergüenza de su avaricia",
+     "Que solo le duele el dinero gastado: sigue siendo avaro",
+     "Que estaba muy agradecido y no quería abusar de la generosidad",
+     "Que quería más ropa, pero de mejor calidad"
     ],
     "answer": 1,
     "explanation": "El título lo resume: 'oficiosidad no agradecida'."
@@ -1209,10 +1209,10 @@
     "level": "critico",
     "question": "¿Por qué Palma elige el humor para criticar a un sacerdote?",
     "options": [
-     "Porque odiaba a la Iglesia",
-     "Porque la burla ligera le permite criticar un vicio sin sermones, y el lector lo recuerda mejor",
-     "Por casualidad",
-     "Porque era una orden del virrey"
+     "Porque odiaba a la Iglesia y quería que todos se rieran de ella",
+     "Porque la burla critica el vicio sin sermones y se recuerda",
+     "Porque el virrey le pidió que no escribiera críticas serias",
+     "Porque el humor era la única forma de publicar en su época"
     ],
     "answer": 1,
     "explanation": "La sátira es el arma preferida de Palma."
@@ -1253,10 +1253,10 @@
     "level": "literal",
     "question": "¿Qué ordena el gobierno sobre la corrida de Puquio?",
     "options": [
-     "Hacerla dos veces al año",
-     "Prohibir la corrida a la manera andina y hacer una corrida «a la española» con torero profesional",
-     "Cobrar entrada a los comuneros",
-     "Trasladarla a Lima"
+     "Hacer la corrida dos veces al año para atraer visitantes de Lima",
+     "Prohibir la corrida andina y traer un torero «a la española»",
+     "Cobrar entrada a los comuneros y repartir lo recaudado entre los mistis",
+     "Trasladar la fiesta a la capital del departamento para controlarla"
     ],
     "answer": 1,
     "explanation": "La orden declara bárbara la corrida de los comuneros y trae un torero para reemplazarla."
@@ -1265,10 +1265,10 @@
     "level": "inferencial",
     "question": "¿Por qué traer al Misitu es tan importante para el ayllu de K'ayau?",
     "options": [
-     "Porque es un toro manso y fácil",
-     "Porque capturar al toro salvaje de la puna es una hazaña colectiva que demuestra el valor y el orgullo del ayllu",
-     "Porque el subprefecto se lo pidió",
-     "Porque así ganarán dinero"
+     "Porque el subprefecto les prometió tierras si lo traían a la plaza",
+     "Porque capturar al toro salvaje es una hazaña colectiva que da orgullo al ayllu",
+     "Porque es un toro manso que no pondrá en peligro a los comuneros",
+     "Porque venderán su carne después de la fiesta para pagar la carretera"
     ],
     "answer": 1,
     "explanation": "El Misitu es casi una leyenda: llevarlo a la plaza es una forma de afirmar la fuerza de la comunidad."
@@ -1277,10 +1277,10 @@
     "level": "inferencial",
     "question": "Los estudiantes puquianos de Lima apoyan la prohibición. ¿Qué muestra eso?",
     "options": [
-     "Que odian a su pueblo",
-     "Que hasta los hijos del pueblo, educados afuera, pueden mirar su propia cultura con los ojos de quienes la desprecian",
-     "Que el gobierno les pagó",
-     "Que no conocen Puquio"
+     "Que odian a su pueblo y quieren que los comuneros se vayan a la costa",
+     "Que hasta los hijos del pueblo pueden mirar su cultura con desprecio ajeno",
+     "Que el gobierno les pagó para convencer a los ayllus de obedecer",
+     "Que nunca vivieron en Puquio y no saben nada de la fiesta"
     ],
     "answer": 1,
     "explanation": "Quieren que su pueblo «progrese», pero aceptan una idea de progreso que borra la cultura de los comuneros."
@@ -1289,10 +1289,10 @@
     "level": "critico",
     "question": "¿Qué crítica hace la novela cuando el Estado decide sobre una fiesta que no es suya?",
     "options": [
-     "Que las leyes siempre tienen razón",
-     "Que imponer costumbres desde el poder, sin escuchar a la comunidad, es otra forma de dominio, como el despojo de sus tierras",
-     "Que las fiestas no importan",
-     "Que los comuneros deben irse a Lima"
+     "Que las leyes del Estado siempre tienen razón frente a las costumbres",
+     "Que imponer costumbres desde el poder es otra forma de dominio, como el despojo",
+     "Que las fiestas no son importantes y no vale la pena defenderlas",
+     "Que los comuneros deberían irse a Lima para tener más derechos"
     ],
     "answer": 1,
     "explanation": "La prohibición se suma al despojo: los poderosos deciden qué es civilizado y qué no."
@@ -1301,10 +1301,10 @@
     "level": "critico",
     "question": "La corrida andina es violenta y puede causar muertes. ¿Cuál es una lectura justa de la novela?",
     "options": [
-     "Arguedas aplaude que haya muertos",
-     "La novela no oculta la violencia, pero pregunta quién tiene derecho a decidir sobre la cultura de un pueblo",
-     "La novela dice que hay que prohibir todas las fiestas",
-     "La violencia no aparece"
+     "Arguedas celebra que haya muertos, porque así la fiesta es más auténtica",
+     "No oculta la violencia, pero pregunta quién decide sobre una cultura",
+     "La novela pide prohibir todas las fiestas andinas por ser peligrosas",
+     "La violencia no aparece: la corrida es solo un baile con ponchos"
     ],
     "answer": 1,
     "explanation": "Una lectura crítica reconoce las dos cosas: el riesgo de la fiesta y el desprecio con que se la prohíbe."
@@ -1321,10 +1321,10 @@
     "level": "literal",
     "question": "¿Cómo llegó este relato a Arguedas?",
     "options": [
-     "Lo inventó de niño",
+     "Lo inventó de niño, cuando vivía en la hacienda de su madrastra",
      "Lo escuchó de un comunero y lo reescribió en quechua y castellano",
-     "Lo tradujo del inglés",
-     "Lo encontró en un libro de la colonia"
+     "Lo copió de una crónica colonial que encontró en una biblioteca de Lima",
+     "Lo tradujo de una versión en inglés publicada por un antropólogo"
     ],
     "answer": 1,
     "explanation": "Es un cuento de la tradición oral quechua que Arguedas recogió y reescribió."
@@ -1333,10 +1333,10 @@
     "level": "inferencial",
     "question": "¿Por qué el patrón escucha contento la primera parte del sueño?",
     "options": [
-     "Porque ama al pongo",
-     "Porque cree que el sueño confirma que él merece lo dulce y el pongo lo sucio, como en la vida",
-     "Porque no entiende el quechua",
-     "Porque está dormido"
+     "Porque el sueño le anuncia que va a vivir muchos años más",
+     "Porque cree que el sueño confirma que él merece lo mejor",
+     "Porque no entiende bien el quechua y cree que el pongo lo elogia",
+     "Porque piensa que el pongo por fin aprendió a respetarlo"
     ],
     "answer": 1,
     "explanation": "La miel y el excremento parecen repetir la jerarquía de la hacienda."
@@ -1345,10 +1345,10 @@
     "level": "inferencial",
     "question": "¿Qué logra la última orden de San Francisco en el sueño?",
     "options": [
-     "Que el pongo pida perdón",
-     "Que los dos queden unidos por la humillación: el patrón tendrá que lamer al pongo por toda la eternidad",
-     "Que el patrón vaya al cielo solo",
-     "Nada, el sueño se olvida"
+     "Que el pongo pide perdón al patrón y los dos se reconcilian",
+     "Que el patrón quede humillado, lamiendo al pongo para siempre",
+     "Que el patrón va al cielo y el pongo queda condenado para siempre",
+     "Que San Francisco castiga a los dos por igual y los separa"
     ],
     "answer": 1,
     "explanation": "El giro final invierte el poder: el que humillaba queda humillado."
@@ -1357,10 +1357,10 @@
     "level": "critico",
     "question": "¿Por qué se dice que el pongo se rebela «con palabras»?",
     "options": [
-     "Porque grita insultos",
-     "Porque, sin violencia y sin que el patrón pueda castigarlo por un sueño, le devuelve la humillación contando una historia",
-     "Porque escribe una carta al gobierno",
-     "Porque se va de la hacienda"
+     "Porque al final grita insultos al patrón delante de los otros sirvientes",
+     "Porque, sin violencia, le devuelve la humillación contando un sueño",
+     "Porque escribe una carta al gobierno denunciando los abusos",
+     "Porque convence a los demás colonos de dejar de servir en la hacienda"
     ],
     "answer": 1,
     "explanation": "La imaginación y el relato son su arma: dice lo que no podría decir de otra forma."
@@ -1369,10 +1369,10 @@
     "level": "critico",
     "question": "¿Qué relación tiene el relato con la historia del Perú?",
     "options": [
-     "Ninguna, es fantasía",
-     "Denuncia un sistema de servidumbre real en las haciendas andinas, que duró hasta la reforma agraria",
-     "Habla de la conquista española",
-     "Trata sobre la vida en Lima"
+     "Ninguna: es una fantasía sin relación con la vida real",
+     "Denuncia la servidumbre real que hubo en las haciendas andinas",
+     "Cuenta la conquista española desde el punto de vista de un inca",
+     "Describe la vida de los obreros en las fábricas de Lima"
     ],
     "answer": 1,
     "explanation": "El pongueaje fue real: el cuento convierte esa injusticia en una historia que se recuerda."
@@ -1389,10 +1389,10 @@
     "level": "literal",
     "question": "¿Por qué se rebelan las chicheras de Abancay?",
     "options": [
-     "Porque cerraron el colegio",
+     "Porque el colegio les prohibió vender chicha cerca de los internos",
      "Porque la sal que necesitan se guarda para el ganado de las haciendas",
-     "Porque subió el precio de la chicha",
-     "Porque llegó la peste"
+     "Porque subió el precio de la chicha y el gobierno les cobra más impuestos",
+     "Porque llegó la peste y la ciudad cerró los mercados y las chicherías"
     ],
     "answer": 1,
     "explanation": "Doña Felipa encabeza el motín y reparte la sal entre los pobres y los colonos."
@@ -1401,10 +1401,10 @@
     "level": "inferencial",
     "question": "¿Qué significa para Ernesto el muro inca del Cusco?",
     "options": [
-     "Nada, solo son piedras",
-     "Siente que las piedras están vivas: es su manera andina de mirar el mundo, donde las cosas tienen vida",
-     "Un lugar para jugar",
-     "La casa del Viejo"
+     "Una prueba del poder de los españoles, que construyeron sobre las ruinas incas",
+     "Siente que las piedras están vivas, como le enseñó el mundo andino",
+     "Un recuerdo triste del Viejo, el pariente avaro que vivía junto al muro",
+     "Una curiosidad de turista: le admira el tamaño, pero no siente nada especial"
     ],
     "answer": 1,
     "explanation": "Desde el comienzo la novela muestra que Ernesto percibe el mundo como lo aprendió de los indígenas."
@@ -1413,10 +1413,10 @@
     "level": "inferencial",
     "question": "¿Por qué el zumbayllu es tan importante para Ernesto?",
     "options": [
-     "Porque es caro",
-     "Porque su zumbido lo consuela y lo conecta con el mundo andino que extraña, en medio de la dureza del colegio",
-     "Porque se lo regaló el Padre Director",
-     "Porque gana apuestas con él"
+     "Porque es un regalo del Padre Director y lo hace sentirse protegido",
+     "Porque su zumbido lo consuela y lo une al mundo andino que extraña",
+     "Porque con él gana todas las apuestas y los mayores lo respetan",
+     "Porque era de su padre y es lo único que le queda de él"
     ],
     "answer": 1,
     "explanation": "El trompo es un refugio: para Ernesto tiene algo de mágico y de música."
@@ -1425,10 +1425,10 @@
     "level": "critico",
     "question": "¿Qué crítica hace la novela con el sermón del Padre Director a los colonos?",
     "options": [
-     "Que la religión siempre libera",
+     "Que la fe siempre libera a los pobres y los ayuda a rebelarse",
      "Que el poder puede usar la fe para que los oprimidos acepten su servidumbre",
-     "Que los colonos son malos",
-     "Que el colegio es perfecto"
+     "Que los colonos eran perezosos y el Padre Director los corrige con razón",
+     "Que la Iglesia era la única institución que defendía a los indígenas"
     ],
     "answer": 1,
     "explanation": "Ernesto ve que el sermón hace llorar a los colonos para que sigan obedeciendo, y eso lo hiere."
@@ -1437,10 +1437,10 @@
     "level": "critico",
     "question": "Ernesto está entre dos mundos. ¿Qué tensión vive?",
     "options": [
-     "Entre la costa y la selva",
-     "Entre el mundo andino que lo crió y el mundo de los blancos y mestizos del colegio, sin pertenecer del todo a ninguno",
-     "Entre dos colegios",
-     "Entre su padre y su madre"
+     "Entre la costa y la selva, donde vivió de niño con su padre",
+     "Entre el mundo andino que lo crió y el del colegio de mestizos",
+     "Entre dos colegios, porque quiere cambiarse al del Cusco",
+     "Entre su padre y su madre, que vivían separados en dos ciudades"
     ],
     "answer": 1,
     "explanation": "Esa división es el centro de la novela y de la experiencia del propio Arguedas."
@@ -1457,10 +1457,10 @@
     "level": "literal",
     "question": "¿Por qué Ricardo Arana, el Esclavo, denuncia el robo del examen?",
     "options": [
-     "Porque odiaba la química",
+     "Porque el Jaguar lo obligó para culpar a Cava, con quien se había peleado",
      "Porque el castigo colectivo le impedía salir a ver a Teresa",
-     "Porque el Jaguar se lo pidió",
-     "Porque quería ser oficial"
+     "Porque quería ganarse la confianza de los oficiales y llegar a brigadier",
+     "Porque Alberto, su amigo, le aconsejó decir la verdad al teniente"
     ],
     "answer": 1,
     "explanation": "Sin salida por el castigo, Arana rompe la regla de no acusar para poder salir."
@@ -1469,10 +1469,10 @@
     "level": "inferencial",
     "question": "¿Por qué Alberto, el Poeta, retira su acusación contra el Jaguar?",
     "options": [
-     "Porque descubre que es inocente",
+     "Porque descubre que el Jaguar estaba lejos de Arana en el momento del disparo",
      "Porque los superiores lo presionan con las novelitas que escribió y teme que lo expulsen",
-     "Porque Gamboa se lo ordena",
-     "Porque el Jaguar lo amenaza en público"
+     "Porque el teniente Gamboa le dice que no tiene pruebas suficientes",
+     "Porque el Jaguar lo amenaza delante de toda la sección"
     ],
     "answer": 1,
     "explanation": "El colegio usa una falta de Alberto para comprar su silencio."
@@ -1481,10 +1481,10 @@
     "level": "inferencial",
     "question": "¿Qué le pasa al teniente Gamboa por insistir en investigar?",
     "options": [
-     "Lo ascienden",
+     "Lo ascienden por su disciplina y lo nombran jefe de los cadetes de quinto",
      "Lo trasladan a un puesto lejano: la institución castiga al que busca la verdad",
-     "Lo nombran director",
-     "Nada"
+     "Lo obligan a pedir disculpas al coronel, pero sigue en el colegio",
+     "Nada: el caso se cierra y él continúa en su puesto como si no pasara nada"
     ],
     "answer": 1,
     "explanation": "Gamboa cree en el reglamento, pero el colegio prefiere evitar el escándalo."
@@ -1493,10 +1493,10 @@
     "level": "critico",
     "question": "¿Qué critica la novela con el cierre del caso como «accidente»?",
     "options": [
-     "Que los accidentes son comunes",
-     "Que una institución puede preferir su prestigio a la justicia, y que el silencio de todos permite la violencia",
-     "Que los cadetes son todos culpables",
-     "Que la escuela militar es perfecta"
+     "Que los accidentes en los ejercicios militares son inevitables y nadie es culpable",
+     "Que una institución puede preferir su prestigio a la justicia",
+     "Que los cadetes son todos igual de culpables y merecen ser expulsados",
+     "Que la disciplina militar es la mejor forma de evitar la violencia"
     ],
     "answer": 1,
     "explanation": "La verdad existe, pero nadie con poder quiere oírla."
@@ -1505,10 +1505,10 @@
     "level": "critico",
     "question": "Al final el Jaguar confiesa, y Gamboa responde que ya es tarde. ¿Qué sentido tiene?",
     "options": [
-     "Que la confesión arregla todo",
-     "Que, cuando el sistema ya decidió callar, la verdad llega tarde y no cambia nada: la justicia depende de instituciones dispuestas a escucharla",
-     "Que Gamboa no le cree",
-     "Que el Jaguar miente"
+     "Que la confesión del Jaguar lo arregla todo y el caso se vuelve a abrir",
+     "Que la verdad llega tarde: el sistema ya decidió callar y no la quiere oír",
+     "Que Gamboa no le cree al Jaguar, porque sabe que miente para hacerse el héroe",
+     "Que el Jaguar se arrepiente y Gamboa lo perdona en nombre del colegio"
     ],
     "answer": 1,
     "explanation": "El final amargo muestra el precio del silencio institucional."
@@ -1525,10 +1525,10 @@
     "level": "literal",
     "question": "¿Quiénes se enfrentan y en qué se diferencian?",
     "options": [
-     "Dos hermanos de la misma familia",
+     "Dos hermanos que se pelean por un sombrero de lana delante de todos",
      "Juncos, descalzo y pobremente vestido, y Cancio, hijo de buena familia con zapatos nuevos",
-     "El narrador y Leonidas",
-     "Dos profesores"
+     "El narrador y Leonidas, que discuten por quién llegó primero al cerro",
+     "Dos alumnos ricos que compiten por ser el mejor de la clase"
     ],
     "answer": 1,
     "explanation": "Vallejo describe con cuidado la ropa y los pies de cada uno: la pelea es también entre dos clases sociales."
@@ -1537,10 +1537,10 @@
     "level": "inferencial",
     "question": "¿Por qué el narrador se pasa al bando de Juncos en plena pelea?",
     "options": [
-     "Porque Juncos le pagó",
-     "Porque al verlo golpeado, en harapos y con los pies desnudos, siente compasión y le duele el corazón",
-     "Porque Cancio lo insultó",
-     "Porque quería ganar la apuesta"
+     "Porque Cancio lo insultó cuando intentó separarlos al empezar la pelea",
+     "Porque al verlo golpeado y en harapos siente compasión por él",
+     "Porque había apostado por Juncos y quería ganar la apuesta",
+     "Porque Leonidas se lo pidió y no quería quedar mal con su amigo"
     ],
     "answer": 1,
     "explanation": "Primero simpatiza con Cancio, pero la imagen del niño pobre castigado lo hace cambiar."
@@ -1549,10 +1549,10 @@
     "level": "inferencial",
     "question": "Juncos gana, pero al final está solo y llorando. ¿Por qué?",
     "options": [
-     "Porque le duele la oreja",
-     "Porque nadie celebra su triunfo: todos rodean al vencido y él siente vergüenza de haber golpeado a Cancio",
-     "Porque perdió su sombrero",
-     "Porque lo castigó el profesor"
+     "Porque el profesor lo castigó delante de todos por haber peleado",
+     "Porque nadie celebra su triunfo y siente vergüenza de lo que hizo",
+     "Porque perdió su sombrero en la pelea y no tenía otro para ir a casa",
+     "Porque le dolía mucho la oreja y nadie quiso ayudarlo a curarse"
     ],
     "answer": 1,
     "explanation": "El título es irónico: el vencedor no gana nada y queda apartado."
@@ -1561,10 +1561,10 @@
     "level": "critico",
     "question": "¿Qué papel cumplen los demás niños durante la pelea?",
     "options": [
-     "Intentan detenerla desde el principio",
-     "Gritan, apuestan como en una pelea de gallos y convierten el dolor ajeno en espectáculo",
-     "Llaman a los padres",
-     "No están presentes"
+     "Intentan separarlos desde el principio y avisan al profesor",
+     "Gritan y apuestan, y convierten el dolor ajeno en espectáculo",
+     "Se van a sus casas sin mirar, porque no les interesa la pelea",
+     "Defienden todos a Juncos porque es el más pobre del grupo"
     ],
     "answer": 1,
     "explanation": "El cuento critica al público que alienta la violencia y después se compadece."
@@ -1573,10 +1573,10 @@
     "level": "critico",
     "question": "¿Qué sugiere el gesto final de Leonidas, que arregla el sombrero y el pelo de Juncos?",
     "options": [
-     "Que se burla de él",
-     "Que la ternura y el cuidado del otro son posibles aun después de la violencia, y que el vencedor también es una víctima",
-     "Que quiere pelear con él",
-     "Que es su hermano"
+     "Que Leonidas se burla de Juncos por haber llorado delante de todos",
+     "Que la ternura es posible después de la violencia: el vencedor también sufre",
+     "Que Leonidas quiere pelear con Juncos para vengar a su amigo Cancio",
+     "Que Juncos y Leonidas son hermanos y por eso se preocupa por él"
     ],
     "answer": 1,
     "explanation": "Vallejo cierra con un acto de compasión hacia el que nadie mira."
@@ -1593,10 +1593,10 @@
     "level": "literal",
     "question": "¿Qué descubre el narrador al volver a Cayna?",
     "options": [
-     "Que su familia se mudó a Lima",
+     "Que su familia se mudó a Lima y la casa quedó abandonada hace años",
      "Que su padre, su familia y todo el pueblo se creen monos y viven como tales",
-     "Que el pueblo fue destruido por un terremoto",
-     "Que Urquizo se curó"
+     "Que un terremoto destruyó el pueblo y los sobrevivientes viven en el monte",
+     "Que Urquizo se curó y ahora cuida a los enfermos del pueblo"
     ],
     "answer": 1,
     "explanation": "La locura de la familia Urquizo se ha extendido a todo el pueblo."
@@ -1605,10 +1605,10 @@
     "level": "literal",
     "question": "¿Qué dice el padre cuando el narrador grita que todos son hombres?",
     "options": [
-     "Que tiene razón",
+     "«¡Hijo mío! Por fin volviste a casa...»",
      "«¡Pobre! Se cree hombre. Está loco...»",
-     "Que se vaya del pueblo",
-     "Nada, no lo oye"
+     "«Vete de aquí, este ya no es tu pueblo...»",
+     "«Vuelve mañana, hoy no te reconozco...»"
     ],
     "answer": 1,
     "explanation": "Para los del pueblo, el loco es quien no comparte su creencia."
@@ -1617,10 +1617,10 @@
     "level": "inferencial",
     "question": "¿Qué revela el final, cuando aparece el enfermero?",
     "options": [
-     "Que el narrador es médico",
-     "Que quien contaba la historia está internado en un asilo: no sabemos si el pueblo estaba loco o si lo está él",
-     "Que todo fue un sueño del padre",
-     "Que Cayna no existe"
+     "Que el narrador es el médico del asilo y estudia el caso de Urquizo",
+     "Que el narrador está en un asilo: quizá el loco era él",
+     "Que todo fue un sueño del padre, que despierta en su casa de Cayna",
+     "Que el pueblo existe, pero el narrador nunca llegó a visitarlo"
     ],
     "answer": 1,
     "explanation": "El giro final pone en duda todo lo que el lector creyó."
@@ -1629,10 +1629,10 @@
     "level": "inferencial",
     "question": "¿Por qué es importante la escena en que Urquizo, el loco, le pregunta al narrador «¿Está usted loco?»",
     "options": [
-     "Porque es un chiste",
+     "Porque muestra que Urquizo es en realidad el padre del narrador",
      "Porque anticipa el tema del cuento: cada uno cree estar cuerdo y ve loco al otro",
-     "Porque Urquizo es su padre",
-     "Porque el narrador lo golpeó a propósito"
+     "Porque prueba que el narrador golpeó a Urquizo a propósito",
+     "Porque es el único momento cómico en un cuento de terror"
     ],
     "answer": 1,
     "explanation": "Desde ahí el narrador empieza a pensar que la razón depende del punto de vista."
@@ -1641,10 +1641,10 @@
     "level": "critico",
     "question": "¿Qué pregunta plantea el cuento sobre la «normalidad»?",
     "options": [
-     "Que los monos son superiores",
-     "Si lo normal es solo lo que cree la mayoría: el que piensa distinto puede ser tratado como loco",
-     "Que no hay que estudiar en Lima",
-     "Ninguna, es solo terror"
+     "Que los animales son más felices que los hombres de la ciudad",
+     "Si lo normal es solo lo que cree la mayoría del grupo",
+     "Que estudiar en Lima aleja a los jóvenes de su pueblo y su familia",
+     "Que la locura se contagia y hay que encerrar a los enfermos"
     ],
     "answer": 1,
     "explanation": "Vallejo convierte una historia de terror en una pregunta sobre la razón y la mayoría."
@@ -1661,10 +1661,10 @@
     "level": "literal",
     "question": "¿Por qué Ñausa Soncco es «el hombre maldito del Sol»?",
     "options": [
-     "Porque mató a un Inca",
+     "Porque, por celos, mató a un guerrero del Inca que pretendía a su amada",
      "Porque, por amor, robó objetos sagrados del templo del Sol para su amada",
-     "Porque no quiso trabajar",
-     "Porque nació ciego"
+     "Porque se negó a entregar su rebaño para la fiesta del Raymi en el Cusco",
+     "Porque miró de frente al Sol durante una ceremonia, lo que estaba prohibido"
     ],
     "answer": 1,
     "explanation": "Para conquistar a su amada roba al Sol, y ese sacrilegio trae su castigo."
@@ -1673,10 +1673,10 @@
     "level": "literal",
     "question": "¿Qué ocurre con la amada cuando él le muestra lo robado?",
     "options": [
-     "Acepta casarse",
+     "Acepta el regalo y huyen juntos por el gran camino del reino hacia Quito",
      "Huye espantada, «¡Has robado al Sol!», y al escapar cae al río",
-     "Lo denuncia al Inca",
-     "Se queda con el oro"
+     "Lo denuncia ante los sacerdotes del templo y él es castigado en público",
+     "Le pide que devuelva todo al templo y lo espera junto al maizal del río"
     ],
     "answer": 1,
     "explanation": "Ella no acepta el sacrilegio; en la huida resbala y cae al río."
@@ -1685,10 +1685,10 @@
     "level": "inferencial",
     "question": "¿Por qué Ñausa pide a los pastores que se alejen «a un tiro de honda»?",
     "options": [
-     "Porque tiene una enfermedad",
-     "Porque se cree maldito y no quiere que su culpa los alcance, ni siquiera por el aire o la nube que los cubra",
-     "Porque no le gustan los pastores",
-     "Porque quiere estar solo para comer"
+     "Porque tiene una enfermedad contagiosa que le dejó ciego desde la juventud",
+     "Porque se cree maldito y teme que su culpa los alcance",
+     "Porque teme que los pastores le roben la comida que le dejan en el camino",
+     "Porque las leyes del Inca prohibían a los pastores hablar con los ciegos"
     ],
     "answer": 1,
     "explanation": "Su maldición es tan grande que teme contagiarla."
@@ -1697,10 +1697,10 @@
     "level": "critico",
     "question": "Valdelomar escribe esta leyenda inca en un castellano muy adornado. ¿Qué busca con eso?",
     "options": [
-     "Que sea difícil a propósito",
+     "Imitar la forma en que hablaban los incas, para que el cuento suene auténtico",
      "Dar al pasado incaico la grandeza de una epopeya, como si fuera un mito antiguo",
-     "Burlarse de los incas",
-     "Imitar el habla de Lima"
+     "Dificultar la lectura para que solo la entiendan los lectores más cultos",
+     "Burlarse con ironía de los relatos solemnes sobre el pasado de los incas"
     ],
     "answer": 1,
     "explanation": "El estilo solemne convierte la historia en leyenda; es típico del modernismo."
@@ -1709,10 +1709,10 @@
     "level": "critico",
     "question": "Compara a Ñausa con un personaje de tragedia. ¿Qué tienen en común?",
     "options": [
-     "Nada",
-     "Un error movido por la pasión que desafía a los dioses y termina en un castigo que ya no se puede reparar",
-     "Que ambos son reyes",
-     "Que terminan felices"
+     "Que ambos son reyes que pierden su reino por desobedecer a su pueblo",
+     "Una falta por pasión que desafía a los dioses y no tiene reparación",
+     "Que ambos son inocentes castigados por un error que cometió otra persona",
+     "Que ambos terminan perdonados por los dioses después de arrepentirse"
     ],
     "answer": 1,
     "explanation": "Como en la tragedia, la falta y el castigo son inseparables."
@@ -1729,10 +1729,10 @@
     "level": "literal",
     "question": "¿Cómo sabrá Ayar Manco dónde fundar la ciudad?",
     "options": [
-     "Por un sueño de Mama Ojllo",
+     "Donde Mama Ojllo tenga un sueño en el que aparezca el Sol",
      "Donde se hunda el báculo de oro que le dio su padre el Sol",
-     "Donde encuentre un río",
-     "Donde lo decida el pueblo"
+     "Donde encuentren un río que no se seque en todo el año",
+     "Donde el pueblo de Pacaritambo decida quedarse a vivir"
     ],
     "answer": 1,
     "explanation": "El Sol le dice que, donde el báculo se hunda en la tierra, allí debe fundar."
@@ -1741,10 +1741,10 @@
     "level": "inferencial",
     "question": "¿Qué representa cada hermano Ayar según el cuento?",
     "options": [
-     "Cuatro regiones del Perú",
-     "Distintas cualidades: Manco la prudencia, Uchu la contemplación, Auca la estrategia y Cachi la fuerza impulsiva",
-     "Cuatro dioses",
-     "Cuatro edades del Inca"
+     "Las cuatro regiones del imperio: Chinchaysuyo, Antisuyo, Collasuyo y Contisuyo",
+     "Distintas cualidades: prudencia, contemplación, estrategia y fuerza",
+     "Cuatro dioses de la naturaleza: el Sol, la Luna, el rayo y la tierra",
+     "Cuatro edades del ser humano, desde la niñez hasta la vejez"
     ],
     "answer": 1,
     "explanation": "Valdelomar describe a cada uno con una virtud y un carácter distintos."
@@ -1753,10 +1753,10 @@
     "level": "inferencial",
     "question": "¿Por qué los hermanos deciden apartar a Ayar Cachi?",
     "options": [
-     "Porque estaba enfermo",
-     "Porque su fuerza y su violencia, útiles en la guerra, también dañan y ponen en peligro al pueblo que buscan fundar",
-     "Porque se enamoró",
-     "Porque quería volver a casa"
+     "Porque estaba enfermo y retrasaba la marcha de todo el pueblo",
+     "Porque su violencia, útil en la guerra, pone en peligro al pueblo que fundan",
+     "Porque se enamoró de la hija del jefe vencido y quiso quedarse con ella",
+     "Porque quería volver a Pacaritambo y abandonar la búsqueda"
     ],
     "answer": 1,
     "explanation": "Lo mandan con un pretexto a Pacaritambo, con Tampu Cachay, que lo encierra en la cueva para librarse de él."
@@ -1765,10 +1765,10 @@
     "level": "critico",
     "question": "Ayar Manco da de beber a una cautiva en vez de matarla. ¿Qué contraste plantea el cuento?",
     "options": [
-     "Entre la costa y la sierra",
-     "Entre conquistar con la fuerza, como Cachi, y ganarse a los pueblos con generosidad, como Manco",
-     "Entre el día y la noche",
-     "Ninguno"
+     "Entre los pueblos de la costa y los pueblos de la sierra",
+     "Entre conquistar por la fuerza y ganarse a los pueblos",
+     "Entre los hombres, que pelean, y las mujeres, que obedecen",
+     "Entre los dioses antiguos del sapo y el nuevo dios del Sol"
     ],
     "answer": 1,
     "explanation": "La leyenda presenta dos maneras de fundar un imperio."
@@ -1777,10 +1777,10 @@
     "level": "critico",
     "question": "Los fundadores dicen que conquistarán «con amor o con sangre». ¿Cómo lees esa frase hoy?",
     "options": [
-     "Como un consejo para la vida diaria",
-     "Como la idea, común en los relatos de fundación, de que un imperio nace también de la violencia contra otros pueblos",
-     "Como una canción de amor",
-     "Como una broma"
+     "Como un consejo para la vida diaria: hay que lograr lo que uno quiere",
+     "Como la idea de que un imperio nace también de la violencia",
+     "Como una prueba de que los incas nunca usaron la guerra para crecer",
+     "Como una exageración del sacerdote, que no cree en la leyenda"
     ],
     "answer": 1,
     "explanation": "Una lectura crítica nota que la gloria del origen esconde a los pueblos sometidos."
@@ -1797,10 +1797,10 @@
     "level": "literal",
     "question": "¿Qué noticia hace que el pueblo abandone su ciudad?",
     "options": [
-     "Una sequía",
+     "Que una sequía secó los campos y el curaca ordena buscar tierras nuevas",
      "Que los extranjeros destruyeron la ciudad sagrada y el Inca ha muerto",
-     "Que el Sol se apagó",
-     "Que llegó un nuevo curaca"
+     "Que el Inca los llama al Cusco para la gran fiesta del Inti Raymi",
+     "Que una peste mata a los ancianos y los sacerdotes mandan huir al mar"
     ],
     "answer": 1,
     "explanation": "El chasqui trae la noticia de la conquista; los amautas dicen que se ha cumplido el oráculo."
@@ -1809,10 +1809,10 @@
     "level": "literal",
     "question": "¿Qué encuentran al final del camino?",
     "options": [
-     "El palacio del Sol",
+     "El palacio del Sol, donde los esperan los sacerdotes de Pachacámac",
      "El mar, una «laguna sin orillas» que no pueden cruzar",
-     "Una ciudad nueva",
-     "A los extranjeros"
+     "Un valle fértil donde fundan una ciudad nueva junto a un gran río",
+     "El ejército de los extranjeros, que les cierra el paso en la costa"
     ],
     "answer": 1,
     "explanation": "Creían que el Sol dormía en esa gran laguna; al llegar, no hay forma de seguir."
@@ -1821,10 +1821,10 @@
     "level": "inferencial",
     "question": "¿Por qué el pueblo decide enterrarse en la arena?",
     "options": [
-     "Para esconderse del calor",
-     "Porque se sienten abandonados por el Sol y prefieren morir juntos y en paz antes que caer en manos de los conquistadores",
-     "Para buscar agua",
-     "Por orden de los extranjeros"
+     "Porque así lo ordenan los extranjeros, que los capturan en la playa",
+     "Porque se sienten abandonados por el Sol y prefieren morir juntos y en paz",
+     "Para protegerse del sol y del hambre mientras esperan las balsas",
+     "Porque es la costumbre funeraria de su pueblo para los ancianos"
     ],
     "answer": 1,
     "explanation": "Los sabios concluyen que el Sol los ha abandonado y eligen la muerte como último refugio."
@@ -1833,10 +1833,10 @@
     "level": "critico",
     "question": "Sumaj queda vivo y solo después de enterrar a Inquill. ¿Qué representa?",
     "options": [
-     "Al ganador de la historia",
-     "Al último de un mundo que se acaba: ya nadie lo escuchará, porque su pueblo y su cultura han desaparecido",
-     "A un conquistador",
-     "A un traidor"
+     "Al único que se salva y regresa a la ciudad para empezar de nuevo",
+     "Al último sobreviviente de un mundo que se acaba",
+     "Al traidor que guió a los extranjeros por el camino del Inca",
+     "Al nuevo curaca, que deberá gobernar a los sobrevivientes"
     ],
     "answer": 1,
     "explanation": "El cuento lo llama «el último quechua»: es el fin de una civilización."
@@ -1845,10 +1845,10 @@
     "level": "critico",
     "question": "¿Qué visión de la conquista transmite Valdelomar con este cuento?",
     "options": [
-     "Una aventura alegre",
+     "Una aventura heroica contada desde los conquistadores y sus barcos",
      "Una catástrofe vivida desde los vencidos, con dolor y fe, no desde los conquistadores",
-     "Una historia de comercio",
-     "No habla de la conquista"
+     "Un cambio necesario que trajo progreso y nuevas creencias a los Andes",
+     "Una historia de comercio entre pueblos de la costa y de la sierra"
     ],
     "answer": 1,
     "explanation": "La leyenda imagina cómo vivió un pueblo andino el fin de su mundo."

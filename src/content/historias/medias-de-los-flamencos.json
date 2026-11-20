@@ -341,7 +341,7 @@
       "question": "¿Por qué la lechuza les dijo que no dejaran de bailar ni un momento?",
       "options": [
         "Porque el baile terminaba pronto",
-        "Para que las víboras no pudieran ver de qué estaban hechas las medias",
+        "Para que no vieran de qué eran las medias",
         "Para que no les diera frío",
         "Porque así lo pedía la música"
       ],
@@ -364,8 +364,8 @@
       "level": "critico",
       "question": "¿Qué nos enseña este cuento?",
       "options": [
-        "Que bailar es peligroso",
-        "Que la envidia y querer aparentar pueden traer malas consecuencias",
+        "Que bailar mucho cansa las patas",
+        "Que la envidia y aparentar salen caro",
         "Que las lechuzas son malas",
         "Que hay que comprar ropa cara"
       ],
@@ -381,5 +381,5 @@
     "Los flamencos quieren parecer lo que no son para destacar en el baile. ¿Pasa algo parecido hoy en las redes sociales?",
     "El tatú y la lechuza se burlan de los flamencos. ¿Quién es más responsable de lo que les pasa: los que engañan o los que se dejan engañar por envidia?"
   ],
-  "revision": 2
+  "revision": 5
 }

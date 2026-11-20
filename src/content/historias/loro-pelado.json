@@ -402,10 +402,10 @@
       "level": "literal",
       "question": "¿Qué le encantaba a Pedrito por las tardes?",
       "options": [
-        "Bañarse en el río",
+        "Bañarse en el río con los otros loros",
         "Comer pan mojado en té con leche",
-        "Perseguir a las gallinas",
-        "Dormir en el eucalipto"
+        "Perseguir a las gallinas del patio",
+        "Dormir en la rama del eucalipto"
       ],
       "answer": 1,
       "explanation": "“Tenía locura por el té con leche”."
@@ -414,10 +414,10 @@
       "level": "literal",
       "question": "¿Qué le hizo el tigre a Pedrito la primera vez?",
       "options": [
-        "Se lo comió",
-        "Le arrancó las plumas del lomo y la cola",
-        "Lo encerró en una cueva",
-        "Le rompió un ala"
+        "Le rompió un ala de un zarpazo",
+        "Le arrancó las plumas del lomo",
+        "Lo encerró en una cueva oscura",
+        "Le quitó la voz con un susto"
       ],
       "answer": 1,
       "explanation": "No alcanzó a matarlo, pero no le dejó “una sola pluma en la cola”."
@@ -427,8 +427,8 @@
       "question": "¿Por qué el tigre decía que era sordo?",
       "options": [
         "Porque de verdad no oía bien",
-        "Para que el loro se acercara y poder atraparlo",
-        "Para burlarse del loro",
+        "Para que el loro se acercara",
+        "Para burlarse de los loros",
         "Porque el loro hablaba muy bajo"
       ],
       "answer": 1,
@@ -438,10 +438,10 @@
       "level": "inferencial",
       "question": "¿Por qué Pedrito se escondió tanto tiempo en el hueco del eucalipto?",
       "options": [
-        "Porque estaba enfermo",
+        "Porque estaba enfermo y con fiebre",
         "Porque le daba vergüenza verse sin plumas",
-        "Porque el tigre lo buscaba",
-        "Porque la familia lo castigó"
+        "Porque el tigre lo esperaba abajo",
+        "Porque la familia lo había castigado"
       ],
       "answer": 1,
       "explanation": "Sentía “mucha vergüenza de verse pelado como un ratón”."
@@ -450,10 +450,10 @@
       "level": "critico",
       "question": "¿Cómo usó Pedrito su capacidad de hablar al final del cuento?",
       "options": [
-        "Para insultar al tigre",
-        "Con astucia: mezcló avisos en su charla para guiar al hombre",
+        "Para insultar al tigre desde lejos",
+        "Para guiar al hombre con avisos",
         "Para pedir ayuda a los otros loros",
-        "No volvió a hablar nunca"
+        "Para contar a todos lo que le pasó"
       ],
       "answer": 1,
       "explanation": "Entre “¡rica papa!” y “¡té con leche!” gritaba “¡está al pie de este árbol!” y “¡cuidado, va a saltar!”."
@@ -467,5 +467,5 @@
     "Pedrito se esconde por vergüenza de verse sin plumas. ¿Qué cosas nos hacen sentir vergüenza y cómo se supera?",
     "Al final Pedrito usa la palabra con astucia para ayudar al hombre. ¿En qué situaciones saber hablar puede protegerte o proteger a otros?"
   ],
-  "revision": 2
+  "revision": 5
 }

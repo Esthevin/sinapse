@@ -1,6 +1,6 @@
 {
   "id": "los-caynas",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Los caynas"
   },
@@ -106,10 +106,10 @@
       "level": "literal",
       "question": "¿Qué descubre el narrador al volver a Cayna?",
       "options": [
-        "Que su familia se mudó a Lima",
+        "Que su familia se mudó a Lima y la casa quedó abandonada hace años",
         "Que su padre, su familia y todo el pueblo se creen monos y viven como tales",
-        "Que el pueblo fue destruido por un terremoto",
-        "Que Urquizo se curó"
+        "Que un terremoto destruyó el pueblo y los sobrevivientes viven en el monte",
+        "Que Urquizo se curó y ahora cuida a los enfermos del pueblo"
       ],
       "answer": 1,
       "explanation": "La locura de la familia Urquizo se ha extendido a todo el pueblo."
@@ -118,10 +118,10 @@
       "level": "literal",
       "question": "¿Qué dice el padre cuando el narrador grita que todos son hombres?",
       "options": [
-        "Que tiene razón",
+        "«¡Hijo mío! Por fin volviste a casa...»",
         "«¡Pobre! Se cree hombre. Está loco...»",
-        "Que se vaya del pueblo",
-        "Nada, no lo oye"
+        "«Vete de aquí, este ya no es tu pueblo...»",
+        "«Vuelve mañana, hoy no te reconozco...»"
       ],
       "answer": 1,
       "explanation": "Para los del pueblo, el loco es quien no comparte su creencia."
@@ -130,10 +130,10 @@
       "level": "inferencial",
       "question": "¿Qué revela el final, cuando aparece el enfermero?",
       "options": [
-        "Que el narrador es médico",
-        "Que quien contaba la historia está internado en un asilo: no sabemos si el pueblo estaba loco o si lo está él",
-        "Que todo fue un sueño del padre",
-        "Que Cayna no existe"
+        "Que el narrador es el médico del asilo y estudia el caso de Urquizo",
+        "Que el narrador está en un asilo: quizá el loco era él",
+        "Que todo fue un sueño del padre, que despierta en su casa de Cayna",
+        "Que el pueblo existe, pero el narrador nunca llegó a visitarlo"
       ],
       "answer": 1,
       "explanation": "El giro final pone en duda todo lo que el lector creyó."
@@ -142,10 +142,10 @@
       "level": "inferencial",
       "question": "¿Por qué es importante la escena en que Urquizo, el loco, le pregunta al narrador «¿Está usted loco?»",
       "options": [
-        "Porque es un chiste",
+        "Porque muestra que Urquizo es en realidad el padre del narrador",
         "Porque anticipa el tema del cuento: cada uno cree estar cuerdo y ve loco al otro",
-        "Porque Urquizo es su padre",
-        "Porque el narrador lo golpeó a propósito"
+        "Porque prueba que el narrador golpeó a Urquizo a propósito",
+        "Porque es el único momento cómico en un cuento de terror"
       ],
       "answer": 1,
       "explanation": "Desde ahí el narrador empieza a pensar que la razón depende del punto de vista."
@@ -154,10 +154,10 @@
       "level": "critico",
       "question": "¿Qué pregunta plantea el cuento sobre la «normalidad»?",
       "options": [
-        "Que los monos son superiores",
-        "Si lo normal es solo lo que cree la mayoría: el que piensa distinto puede ser tratado como loco",
-        "Que no hay que estudiar en Lima",
-        "Ninguna, es solo terror"
+        "Que los animales son más felices que los hombres de la ciudad",
+        "Si lo normal es solo lo que cree la mayoría del grupo",
+        "Que estudiar en Lima aleja a los jóvenes de su pueblo y su familia",
+        "Que la locura se contagia y hay que encerrar a los enfermos"
       ],
       "answer": 1,
       "explanation": "Vallejo convierte una historia de terror en una pregunta sobre la razón y la mayoría."

@@ -116,10 +116,10 @@
       "level": "literal",
       "question": "¿Cuánto dinero necesitaba Jeromo?",
       "options": [
-        "Cien duros",
+        "Cincuenta duros",
         "Quinientos duros",
         "Mil duros",
-        "Diez duros"
+        "Doscientos duros"
       ],
       "answer": 1,
       "explanation": "Jeromo pidió quinientos duros para salvar su negocio."
@@ -176,5 +176,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }

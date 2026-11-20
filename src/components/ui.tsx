@@ -317,10 +317,11 @@ export function Cover({ story, size, title }: { story: Story; size: number; titl
   const th = useTheme();
   const { bg, fg } = th.colors.region[story.region];
   const ninos = th.playful;
-  // Imagen real de dominio público (retrato del autor, edición original, dibujo de época).
-  // Se usa en el entorno de estudiante y cuando la historia no tiene portada dibujada.
+  // Imagen real de dominio público (retrato del autor, edición original, dibujo de época): siempre primero.
+  // Las portadas ilustradas (generadas) solo se usan en el entorno de niños y cuando no hay imagen real;
+  // en el de estudiante, sin imagen real queda la portada geométrica o la escena dibujada a partir del texto.
   const real = imagenReal(story.id, story.novel?.id);
-  const art = real !== undefined && (th.student || PORTADAS[story.id] === undefined) ? real : PORTADAS[story.id];
+  const art = real ?? (th.student ? undefined : PORTADAS[story.id]);
   // Sin portada pintada (historia de un PDF o del catálogo descargable): escena dibujada a partir del texto.
   const scene = useMemo(() => {
     if (art !== undefined) return null;

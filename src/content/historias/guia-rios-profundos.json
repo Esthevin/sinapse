@@ -1,6 +1,6 @@
 {
   "id": "guia-rios-profundos",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Guía de lectura: Los ríos profundos"
   },
@@ -55,10 +55,10 @@
       "level": "literal",
       "question": "¿Por qué se rebelan las chicheras de Abancay?",
       "options": [
-        "Porque cerraron el colegio",
+        "Porque el colegio les prohibió vender chicha cerca de los internos",
         "Porque la sal que necesitan se guarda para el ganado de las haciendas",
-        "Porque subió el precio de la chicha",
-        "Porque llegó la peste"
+        "Porque subió el precio de la chicha y el gobierno les cobra más impuestos",
+        "Porque llegó la peste y la ciudad cerró los mercados y las chicherías"
       ],
       "answer": 1,
       "explanation": "Doña Felipa encabeza el motín y reparte la sal entre los pobres y los colonos."
@@ -67,10 +67,10 @@
       "level": "inferencial",
       "question": "¿Qué significa para Ernesto el muro inca del Cusco?",
       "options": [
-        "Nada, solo son piedras",
-        "Siente que las piedras están vivas: es su manera andina de mirar el mundo, donde las cosas tienen vida",
-        "Un lugar para jugar",
-        "La casa del Viejo"
+        "Una prueba del poder de los españoles, que construyeron sobre las ruinas incas",
+        "Siente que las piedras están vivas, como le enseñó el mundo andino",
+        "Un recuerdo triste del Viejo, el pariente avaro que vivía junto al muro",
+        "Una curiosidad de turista: le admira el tamaño, pero no siente nada especial"
       ],
       "answer": 1,
       "explanation": "Desde el comienzo la novela muestra que Ernesto percibe el mundo como lo aprendió de los indígenas."
@@ -79,10 +79,10 @@
       "level": "inferencial",
       "question": "¿Por qué el zumbayllu es tan importante para Ernesto?",
       "options": [
-        "Porque es caro",
-        "Porque su zumbido lo consuela y lo conecta con el mundo andino que extraña, en medio de la dureza del colegio",
-        "Porque se lo regaló el Padre Director",
-        "Porque gana apuestas con él"
+        "Porque es un regalo del Padre Director y lo hace sentirse protegido",
+        "Porque su zumbido lo consuela y lo une al mundo andino que extraña",
+        "Porque con él gana todas las apuestas y los mayores lo respetan",
+        "Porque era de su padre y es lo único que le queda de él"
       ],
       "answer": 1,
       "explanation": "El trompo es un refugio: para Ernesto tiene algo de mágico y de música."
@@ -91,10 +91,10 @@
       "level": "critico",
       "question": "¿Qué crítica hace la novela con el sermón del Padre Director a los colonos?",
       "options": [
-        "Que la religión siempre libera",
+        "Que la fe siempre libera a los pobres y los ayuda a rebelarse",
         "Que el poder puede usar la fe para que los oprimidos acepten su servidumbre",
-        "Que los colonos son malos",
-        "Que el colegio es perfecto"
+        "Que los colonos eran perezosos y el Padre Director los corrige con razón",
+        "Que la Iglesia era la única institución que defendía a los indígenas"
       ],
       "answer": 1,
       "explanation": "Ernesto ve que el sermón hace llorar a los colonos para que sigan obedeciendo, y eso lo hiere."
@@ -103,10 +103,10 @@
       "level": "critico",
       "question": "Ernesto está entre dos mundos. ¿Qué tensión vive?",
       "options": [
-        "Entre la costa y la selva",
-        "Entre el mundo andino que lo crió y el mundo de los blancos y mestizos del colegio, sin pertenecer del todo a ninguno",
-        "Entre dos colegios",
-        "Entre su padre y su madre"
+        "Entre la costa y la selva, donde vivió de niño con su padre",
+        "Entre el mundo andino que lo crió y el del colegio de mestizos",
+        "Entre dos colegios, porque quiere cambiarse al del Cusco",
+        "Entre su padre y su madre, que vivían separados en dos ciudades"
       ],
       "answer": 1,
       "explanation": "Esa división es el centro de la novela y de la experiencia del propio Arguedas."

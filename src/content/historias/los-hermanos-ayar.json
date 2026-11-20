@@ -1,6 +1,6 @@
 {
   "id": "los-hermanos-ayar",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Los hermanos Ayar"
   },
@@ -131,10 +131,10 @@
       "level": "literal",
       "question": "¿Cómo sabrá Ayar Manco dónde fundar la ciudad?",
       "options": [
-        "Por un sueño de Mama Ojllo",
+        "Donde Mama Ojllo tenga un sueño en el que aparezca el Sol",
         "Donde se hunda el báculo de oro que le dio su padre el Sol",
-        "Donde encuentre un río",
-        "Donde lo decida el pueblo"
+        "Donde encuentren un río que no se seque en todo el año",
+        "Donde el pueblo de Pacaritambo decida quedarse a vivir"
       ],
       "answer": 1,
       "explanation": "El Sol le dice que, donde el báculo se hunda en la tierra, allí debe fundar."
@@ -143,10 +143,10 @@
       "level": "inferencial",
       "question": "¿Qué representa cada hermano Ayar según el cuento?",
       "options": [
-        "Cuatro regiones del Perú",
-        "Distintas cualidades: Manco la prudencia, Uchu la contemplación, Auca la estrategia y Cachi la fuerza impulsiva",
-        "Cuatro dioses",
-        "Cuatro edades del Inca"
+        "Las cuatro regiones del imperio: Chinchaysuyo, Antisuyo, Collasuyo y Contisuyo",
+        "Distintas cualidades: prudencia, contemplación, estrategia y fuerza",
+        "Cuatro dioses de la naturaleza: el Sol, la Luna, el rayo y la tierra",
+        "Cuatro edades del ser humano, desde la niñez hasta la vejez"
       ],
       "answer": 1,
       "explanation": "Valdelomar describe a cada uno con una virtud y un carácter distintos."
@@ -155,10 +155,10 @@
       "level": "inferencial",
       "question": "¿Por qué los hermanos deciden apartar a Ayar Cachi?",
       "options": [
-        "Porque estaba enfermo",
-        "Porque su fuerza y su violencia, útiles en la guerra, también dañan y ponen en peligro al pueblo que buscan fundar",
-        "Porque se enamoró",
-        "Porque quería volver a casa"
+        "Porque estaba enfermo y retrasaba la marcha de todo el pueblo",
+        "Porque su violencia, útil en la guerra, pone en peligro al pueblo que fundan",
+        "Porque se enamoró de la hija del jefe vencido y quiso quedarse con ella",
+        "Porque quería volver a Pacaritambo y abandonar la búsqueda"
       ],
       "answer": 1,
       "explanation": "Lo mandan con un pretexto a Pacaritambo, con Tampu Cachay, que lo encierra en la cueva para librarse de él."
@@ -167,10 +167,10 @@
       "level": "critico",
       "question": "Ayar Manco da de beber a una cautiva en vez de matarla. ¿Qué contraste plantea el cuento?",
       "options": [
-        "Entre la costa y la sierra",
-        "Entre conquistar con la fuerza, como Cachi, y ganarse a los pueblos con generosidad, como Manco",
-        "Entre el día y la noche",
-        "Ninguno"
+        "Entre los pueblos de la costa y los pueblos de la sierra",
+        "Entre conquistar por la fuerza y ganarse a los pueblos",
+        "Entre los hombres, que pelean, y las mujeres, que obedecen",
+        "Entre los dioses antiguos del sapo y el nuevo dios del Sol"
       ],
       "answer": 1,
       "explanation": "La leyenda presenta dos maneras de fundar un imperio."
@@ -179,10 +179,10 @@
       "level": "critico",
       "question": "Los fundadores dicen que conquistarán «con amor o con sangre». ¿Cómo lees esa frase hoy?",
       "options": [
-        "Como un consejo para la vida diaria",
-        "Como la idea, común en los relatos de fundación, de que un imperio nace también de la violencia contra otros pueblos",
-        "Como una canción de amor",
-        "Como una broma"
+        "Como un consejo para la vida diaria: hay que lograr lo que uno quiere",
+        "Como la idea de que un imperio nace también de la violencia",
+        "Como una prueba de que los incas nunca usaron la guerra para crecer",
+        "Como una exageración del sacerdote, que no cree en la leyenda"
       ],
       "answer": 1,
       "explanation": "Una lectura crítica nota que la gloria del origen esconde a los pueblos sometidos."

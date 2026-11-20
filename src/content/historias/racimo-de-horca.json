@@ -1,6 +1,6 @@
 {
   "id": "racimo-de-horca",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Racimo de horca",
     "qu": "Ch'aqllakuna",
@@ -342,10 +342,10 @@
       "level": "literal",
       "question": "¿Quién era Juan de Villegas y qué pretendía?",
       "options": [
-        "Un fraile que quería confesar al virrey",
-        "Un prófugo de presidio que acechaba al virrey en el templo para asesinarlo",
-        "Un alcalde que perseguía ladrones",
-        "Un comerciante vizcaíno"
+        "Un fraile que quería confesar al virrey en secreto",
+        "Un prófugo que acechaba al virrey para asesinarlo",
+        "Un alcalde que perseguía ladrones dentro del templo",
+        "Un comerciante vizcaíno que pedía justicia al virrey"
       ],
       "answer": 1,
       "explanation": "'Prófugo de presidio… no cesó de acechar en el templo al virrey, buscando ocasión propicia para asesinarle'."
@@ -354,10 +354,10 @@
       "level": "inferencial",
       "question": "¿Qué juego de palabras hay en el título 'Racimo de horca'?",
       "options": [
-        "Ninguno",
-        "El ahorcado colgando se compara con un racimo de uvas: una imagen macabra dicha con humor",
-        "Es el nombre de una fruta de Lima",
-        "Es el apodo del virrey"
+        "Ninguno: es el nombre de una fruta que se vendía en Lima",
+        "El ahorcado se compara con un racimo de uvas colgando",
+        "Es el apodo del virrey, famoso por mandar ahorcar a muchos",
+        "Es el nombre de la calle donde estaba la horca de la ciudad"
       ],
       "answer": 1,
       "explanation": "'El cuerpo de Villegas se balanceaba como un racimo en la horca': Palma mezcla lo trágico con lo cómico."
@@ -366,10 +366,10 @@
       "level": "inferencial",
       "question": "El alcalde dice que el bellaco 'había de acabar muy alto' y el alguacil responde que 'ese palo es de poca altura'. ¿Qué tienen en común ambas frases?",
       "options": [
-        "Hablan de la estatura de Villegas",
-        "Juegan con el doble sentido de 'alto': llegar lejos en la vida y terminar colgado en la horca",
-        "Elogian a Villegas",
-        "Critican al virrey"
+        "Las dos hablan de la estatura de Villegas, que era muy alto",
+        "Juegan con 'alto': llegar lejos y terminar en la horca",
+        "Las dos elogian a Villegas por haber llegado lejos en la vida",
+        "Las dos critican al virrey por mandar a la horca a un inocente"
       ],
       "answer": 1,
       "explanation": "El humor negro de Palma está en el doble sentido."
@@ -378,10 +378,10 @@
       "level": "critico",
       "question": "Palma usa refranes como 'Al capón que se hace gallo, descañonarlo'. ¿Qué función cumplen en su escritura?",
       "options": [
-        "Rellenar el texto",
-        "Dan sabor popular y comentan los hechos con la sabiduría (y la ironía) de la gente común",
-        "Explican palabras difíciles",
-        "Son errores de imprenta"
+        "Sirven para rellenar el texto cuando no hay datos históricos",
+        "Dan sabor popular y comentan los hechos con ironía",
+        "Explican el significado de las palabras difíciles del relato",
+        "Muestran que Palma desconfiaba de la sabiduría popular"
       ],
       "answer": 1,
       "explanation": "Los refranes son la voz criolla del narrador: opinan sobre la historia con gracia."
@@ -390,10 +390,10 @@
       "level": "critico",
       "question": "La justicia colonial ejecuta a Villegas en ocho días. ¿Qué piensas de una justicia tan rápida?",
       "options": [
-        "Siempre es mejor",
-        "Puede castigar al culpable, pero sin garantías también puede castigar a inocentes: la rapidez no asegura justicia",
-        "No importa la rapidez",
-        "La justicia nunca debe castigar"
+        "Siempre es mejor: una justicia rápida evita más delitos",
+        "Sin garantías también puede castigar a un inocente",
+        "La rapidez no importa, solo que el castigo sea ejemplar",
+        "La justicia nunca debe castigar, solo corregir"
       ],
       "answer": 1,
       "explanation": "Pregunta abierta para valorar el debido proceso, comparando con la época del relato."

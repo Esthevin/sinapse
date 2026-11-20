@@ -330,8 +330,8 @@
       "level": "literal",
       "question": "¿Qué hizo el hombre con la tortuga herida?",
       "options": [
-        "Se la comió",
-        "La vendió al zoológico",
+        "Se la comió porque tenía hambre",
+        "La vendió en el pueblo",
         "La curó, aunque tenía mucha hambre",
         "La dejó en la laguna"
       ],
@@ -354,10 +354,10 @@
       "level": "inferencial",
       "question": "¿Qué era la luz que vio la tortuga cuando ya no podía más?",
       "options": [
-        "Un incendio",
-        "La luna",
+        "El fuego de un incendio",
+        "El reflejo de la luna",
         "El resplandor de Buenos Aires",
-        "Una luciérnaga"
+        "Una nube de luciérnagas"
       ],
       "answer": 2,
       "explanation": "Ya había llegado, pero no lo sabía hasta que el ratón se lo dijo."
@@ -383,5 +383,5 @@
     "La tortuga devuelve el bien que recibió con un esfuerzo enorme. ¿La gratitud es una obligación o una elección?",
     "Quiroga hace que un animal sea más leal que muchas personas. ¿Qué crees que quería decir sobre los seres humanos?"
   ],
-  "revision": 2
+  "revision": 5
 }

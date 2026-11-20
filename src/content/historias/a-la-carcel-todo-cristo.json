@@ -1,6 +1,6 @@
 {
   "id": "a-la-carcel-todo-cristo",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "¡A la cárcel todo Cristo!",
     "qu": "¡Jach'a carcelman tukuy Cristo!",
@@ -241,10 +241,10 @@
       "level": "literal",
       "question": "¿Cuál fue la trayectoria de Ambrosio O'Higgins?",
       "options": [
-        "Nació noble en Lima y fue siempre militar",
+        "Nació en una familia noble de Lima, fue oidor de la Audiencia y luego virrey del Perú",
         "De buhonero irlandés en Lima pasó a ingeniero en Chile, marqués de Osorno y virrey del Perú",
-        "Fue un obispo que llegó a virrey",
-        "Fue un pirata indultado"
+        "Llegó como capitán de la armada española y gobernó Chile antes de volver a España",
+        "Fue comerciante en Cádiz, compró el título de marqués y el rey lo nombró virrey"
       ],
       "answer": 1,
       "explanation": "Palma subraya el contraste entre su origen humilde y el cargo más alto del virreinato."
@@ -253,10 +253,10 @@
       "level": "inferencial",
       "question": "¿Por qué el virrey ordena llevar a la cárcel a cualquiera que ande por la calle de noche?",
       "options": [
-        "Para cobrar multas",
+        "Para reunir hombres para el ejército, que necesitaba soldados para la guerra con Chile",
         "Para acabar con los desórdenes nocturnos de Lima, que las autoridades no lograban controlar",
-        "Porque odiaba a los limeños",
-        "Para llenar el ejército"
+        "Para cobrar multas y llenar las cajas reales, que estaban vacías tras el terremoto",
+        "Para castigar a los criollos que conspiraban de noche contra el gobierno español"
       ],
       "answer": 1,
       "explanation": "Los encapados no podían extirpar el mal, y él dio una orden tajante."
@@ -265,10 +265,10 @@
       "level": "inferencial",
       "question": "¿Qué ironía cierra la tradición?",
       "options": [
-        "Que nadie obedeció la orden",
+        "Que la orden no se cumplió nunca, porque los alguaciles temían a los nobles de Lima",
         "Que el propio virrey, saliendo de noche embozado, termina en el calabozo por la orden que él mismo dio",
-        "Que los encapados eran ladrones",
-        "Que la cárcel estaba vacía"
+        "Que los presos de esa noche resultaron ser los mismos alguaciles encargados de vigilar",
+        "Que el virrey tuvo que liberar a todos porque en la cárcel ya no cabía nadie más"
       ],
       "answer": 1,
       "explanation": "Pasa la noche en la cárcel de la Pescadería 'como cualquier pelagatos'."
@@ -289,10 +289,10 @@
       "level": "critico",
       "question": "Palma mezcla datos históricos (fechas, censos, obras públicas) con una anécdota graciosa. ¿Para qué sirve esa mezcla?",
       "options": [
-        "Para confundir al lector",
+        "Para mostrar que la historia oficial es falsa y que solo la anécdota dice la verdad",
         "Para que la historia del Perú se lea con gusto: la anécdota atrapa y los datos dan contexto",
-        "Porque no sabía escribir novelas",
-        "Para llenar páginas"
+        "Para que el libro sirva como manual de fechas, con algo de humor para descansar",
+        "Para criticar a los historiadores de su época, que escribían sin datos ni fuentes"
       ],
       "answer": 1,
       "explanation": "Es el método de las Tradiciones: historia y ficción se dan la mano."

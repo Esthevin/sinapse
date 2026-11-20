@@ -1,6 +1,6 @@
 {
   "id": "paco-yunque",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Paco Yunque",
     "qu": "Paco Yunque",
@@ -1449,10 +1449,10 @@
       "level": "literal",
       "question": "¿Quién es el padre de Humberto Grieve y por qué importa en el cuento?",
       "options": [
-        "Un profesor del colegio",
-        "Un inglés gerente de los ferrocarriles y alcalde del pueblo, patrón de la familia Yunque",
-        "Un campesino vecino",
-        "El director del colegio"
+        "Un profesor del colegio que exige que su hijo tenga el mejor sitio",
+        "Un gerente inglés, alcalde y patrón de la familia Yunque",
+        "Un campesino vecino de los Yunque que trabaja la misma chacra",
+        "El director del colegio, que recibe a Paco el primer día"
       ],
       "answer": 1,
       "explanation": "Su poder económico y político explica por qué Humberto se cree dueño de Paco y por qué el profesor lo protege."
@@ -1461,10 +1461,10 @@
       "level": "inferencial",
       "question": "¿Por qué el profesor no castiga a Humberto aunque llega tarde y miente?",
       "options": [
-        "Porque no se dio cuenta",
-        "Porque Humberto es hijo del hombre más poderoso del pueblo, y el profesor no se atreve",
-        "Porque Humberto era el mejor alumno de verdad",
-        "Porque los demás alumnos mintieron"
+        "Porque no se dio cuenta de que Humberto llegó tarde",
+        "Porque Humberto es hijo del hombre más poderoso del pueblo",
+        "Porque Humberto era de verdad el mejor alumno de la clase",
+        "Porque los demás alumnos mintieron para protegerlo"
       ],
       "answer": 1,
       "explanation": "Todos los alumnos dicen que llegó tarde, pero el profesor lo deja pasar: el poder pesa más que la verdad."
@@ -1473,10 +1473,10 @@
       "level": "inferencial",
       "question": "¿Por qué Paco Yunque casi no habla durante todo el cuento?",
       "options": [
-        "Porque no sabe castellano",
-        "Porque es tímido, es su primer día y ha aprendido que no puede contradecir al hijo del patrón",
-        "Porque está enfermo",
-        "Porque no le interesa el colegio"
+        "Porque no habla castellano, solo quechua, y no entiende al profesor",
+        "Porque aprendió que no puede contradecir al hijo del patrón",
+        "Porque está enfermo desde que salió de su casa esa mañana",
+        "Porque no le interesa el colegio y quiere volver a trabajar"
       ],
       "answer": 1,
       "explanation": "Su silencio muestra la desigualdad: viene del campo, su madre trabaja para los Grieve y él obedece."
@@ -1485,10 +1485,10 @@
       "level": "critico",
       "question": "Al final, Grieve se presenta como autor del ejercicio de Paco y es premiado. ¿Qué crítica hace Vallejo?",
       "options": [
-        "Que los niños no deben hacer tareas",
-        "Que la escuela reproduce la injusticia social: el mérito del pobre termina en manos del poderoso",
-        "Que el profesor es muy exigente",
-        "Ninguna, es un malentendido"
+        "Que los niños no deberían tener tareas en su primer día de clases",
+        "Que la escuela repite la injusticia: el poderoso se queda con el mérito",
+        "Que el profesor es muy exigente y nadie puede cumplir sus ejercicios",
+        "Ninguna: es un malentendido que se aclara al día siguiente"
       ],
       "answer": 1,
       "explanation": "El 'Cuadro de Honor' premia el abuso: la institución que debería ser justa se pone del lado del poder."
@@ -1497,10 +1497,10 @@
       "level": "critico",
       "question": "¿Qué papel cumple Paco Fariña?",
       "options": [
-        "Es el villano del cuento",
-        "Representa la solidaridad y la rebeldía frente al abuso, aunque no logra cambiar el resultado",
-        "Es el profesor",
-        "Es el padre de Paco Yunque"
+        "Es el villano: se burla de Paco Yunque igual que Humberto",
+        "Representa la solidaridad frente al abuso, aunque no gane",
+        "Es el profesor, que intenta poner orden sin conseguirlo",
+        "Es el hermano mayor de Paco Yunque, que lo cuida en el colegio"
       ],
       "answer": 1,
       "explanation": "Fariña defiende a Yunque y enfrenta a Grieve: muestra que se puede actuar distinto, aunque el sistema lo frene."

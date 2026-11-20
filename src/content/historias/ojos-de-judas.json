@@ -1,6 +1,6 @@
 {
   "id": "ojos-de-judas",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Los ojos de Judas",
     "qu": "Judaspa ñawisnin",
@@ -651,10 +651,10 @@
       "level": "literal",
       "question": "¿Quién es el personaje que el niño conoce en la playa y por qué le llama la atención?",
       "options": [
-        "Un pescador viejo que le enseña a nadar",
+        "Un pescador viejo que le enseña a nadar en la bahía de Pisco",
         "Una mujer desconocida vestida de blanco, triste y misteriosa",
-        "Un marinero extranjero",
-        "Su maestra de escuela"
+        "Un marinero extranjero que le cuenta historias de otros puertos",
+        "Su maestra de escuela, que pasea sola por la orilla cada tarde"
       ],
       "answer": 1,
       "explanation": "En sus caminatas por la orilla aparece una desconocida que despierta su simpatía y su curiosidad."
@@ -663,10 +663,10 @@
       "level": "inferencial",
       "question": "En el cuento se oye la exclamación '¡Qué horrible traición!'. ¿Cómo se relaciona el tema de la traición con la fiesta del pueblo?",
       "options": [
-        "No tiene relación",
-        "Judas es el símbolo de la traición: el muñeco que van a quemar refleja el dolor de la mujer",
-        "La exclamación anuncia un robo",
-        "La frase es sobre un robo en la escuela"
+        "No tiene relación: la exclamación anuncia un robo en el pueblo",
+        "El Judas simboliza la traición que ha herido a la mujer",
+        "Judas es el apodo del esposo de la mujer, que la había abandonado",
+        "La frase la dice el padre del niño al enterarse de una deuda"
       ],
       "answer": 1,
       "explanation": "El tema de la traición une la historia personal de la mujer con el ritual de quemar a Judas."
@@ -675,10 +675,10 @@
       "level": "inferencial",
       "question": "¿Por qué los ojos del Judas le parecen al niño 'rojos y sangrientos, acusadores, siniestros'?",
       "options": [
-        "Porque estaban mal pintados",
-        "Porque el niño proyecta en el muñeco la tragedia que acaba de vivir y lo siente culpable",
-        "Porque eran de fuego",
-        "Porque su padre se lo dijo"
+        "Porque estaban mal pintados y la luz de las velas los hacía brillar",
+        "Porque el niño proyecta en el muñeco la tragedia que acaba de ver",
+        "Porque eran de fuego: los habían hecho con carbones encendidos",
+        "Porque su padre le había dicho que el Judas veía a los malos"
       ],
       "answer": 1,
       "explanation": "Los ojos del muñeco cargan el miedo y la pena del niño: el objeto refleja su estado de ánimo."
@@ -687,10 +687,10 @@
       "level": "critico",
       "question": "El autor no explica del todo qué le pasó a la mujer. ¿Para qué sirve esa ambigüedad?",
       "options": [
-        "Es un error del autor",
-        "Obliga al lector a reconstruir los hechos desde lo que el niño entendió, y mantiene el misterio y la tristeza",
-        "Para que el cuento sea más corto",
-        "Para que no haya final"
+        "Es un descuido del autor, que no terminó de escribir el cuento",
+        "Obliga al lector a reconstruir los hechos desde lo que vio el niño",
+        "Sirve para que el cuento sea más corto y se lea en una sola tarde",
+        "Sirve para ocultar que la mujer era en realidad la madre del niño"
       ],
       "answer": 1,
       "explanation": "Todo se ve con los ojos de un niño, que no entiende todo: el lector completa lo que falta."
@@ -699,10 +699,10 @@
       "level": "critico",
       "question": "Compara este cuento con 'El Caballero Carmelo'. ¿Qué tienen en común?",
       "options": [
-        "Los dos ocurren en Lima",
-        "Los dos son recuerdos de infancia en Pisco donde la inocencia del niño choca con una pérdida",
-        "Los dos son leyendas incas",
-        "Los dos tienen final feliz"
+        "Los dos ocurren en Lima y cuentan fiestas religiosas de la ciudad",
+        "Son recuerdos de infancia en Pisco marcados por una pérdida",
+        "Los dos son leyendas incas que el autor escuchó de niño",
+        "Los dos tienen un final feliz en el que el niño recupera lo perdido"
       ],
       "answer": 1,
       "explanation": "Valdelomar escribe desde la memoria: paisaje marino, familia y un primer encuentro con el dolor."

@@ -187,10 +187,10 @@
       "level": "inferencial",
       "question": "¿Por qué Godoy prestó la plata tan rápido, si era tan tacaño?",
       "options": [
-        "Por bondad",
+        "Por bondad y respeto al arzobispo, que era su amigo de la infancia",
         "Porque esperaba que el arzobispo lo recompensara con una canonjía",
-        "Porque lo obligaron",
-        "Porque le sobraba dinero"
+        "Porque el arzobispo lo obligó amenazándolo con quitarle su parroquia",
+        "Porque le sobraba el dinero y no sabía en qué gastarlo"
       ],
       "answer": 1,
       "explanation": "Su generosidad era interesada: aspiraba a un ascenso."
@@ -199,10 +199,10 @@
       "level": "inferencial",
       "question": "¿Qué lección le da el arzobispo sin decírsela directamente?",
       "options": [
-        "Que no debe prestar dinero",
-        "Que debía vestirse con decoro y que su avaricia era ridícula: lo viste con su propio dinero",
-        "Que debía dejar el sacerdocio",
-        "Que el arzobispo era pobre"
+        "Que nunca debe prestar dinero a nadie, ni siquiera a sus superiores",
+        "Que su avaricia era ridícula: lo viste con su propio dinero",
+        "Que debía dejar el sacerdocio y dedicarse al comercio",
+        "Que el arzobispo era pobre y necesitaba su ayuda de verdad"
       ],
       "answer": 1,
       "explanation": "La ironía está en que el 'regalo' lo pagó Godoy."
@@ -211,10 +211,10 @@
       "level": "critico",
       "question": "Godoy pide al final que el arzobispo no vuelva a 'tomarse el trabajo de vestirlo'. ¿Qué revela esa respuesta?",
       "options": [
-        "Que aprendió la lección",
-        "Que lo único que le duele es el dinero gastado: su avaricia sigue intacta, y ahí está el humor",
-        "Que estaba agradecido",
-        "Que quería más ropa"
+        "Que por fin aprendió la lección y se avergüenza de su avaricia",
+        "Que solo le duele el dinero gastado: sigue siendo avaro",
+        "Que estaba muy agradecido y no quería abusar de la generosidad",
+        "Que quería más ropa, pero de mejor calidad"
       ],
       "answer": 1,
       "explanation": "El título lo resume: 'oficiosidad no agradecida'."
@@ -223,10 +223,10 @@
       "level": "critico",
       "question": "¿Por qué Palma elige el humor para criticar a un sacerdote?",
       "options": [
-        "Porque odiaba a la Iglesia",
-        "Porque la burla ligera le permite criticar un vicio sin sermones, y el lector lo recuerda mejor",
-        "Por casualidad",
-        "Porque era una orden del virrey"
+        "Porque odiaba a la Iglesia y quería que todos se rieran de ella",
+        "Porque la burla critica el vicio sin sermones y se recuerda",
+        "Porque el virrey le pidió que no escribiera críticas serias",
+        "Porque el humor era la única forma de publicar en su época"
       ],
       "answer": 1,
       "explanation": "La sátira es el arma preferida de Palma."
@@ -240,5 +240,5 @@
     "¿Has hecho alguna vez un favor esperando algo a cambio? ¿Sigue siendo un favor?",
     "El arzobispo corrige a Godoy con ingenio en lugar de castigarlo. ¿Es una buena forma de corregir a alguien? ¿Cuándo no lo sería?"
   ],
-  "revision": 2
+  "revision": 5
 }

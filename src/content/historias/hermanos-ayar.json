@@ -132,10 +132,10 @@
       "level": "literal",
       "question": "¿De dónde salieron los hermanos Ayar?",
       "options": [
-        "De la ventana central del cerro Tambo Tocco",
-        "Del lago Titicaca",
-        "Del mar",
-        "De un río"
+        "De la ventana central de Tambo Tocco",
+        "De una isla del lago Titicaca",
+        "De una cueva junto al mar",
+        "Del nacimiento de un río"
       ],
       "answer": 0,
       "explanation": "El texto dice que salieron de la ventana del centro del cerro Tambo Tocco."
@@ -180,10 +180,10 @@
       "level": "critico",
       "question": "¿Qué enseñanza puede dejar lo que le pasó a Ayar Cachi?",
       "options": [
-        "Que ser fuerte siempre es malo",
-        "Que las cuevas son peligrosas",
-        "Que el miedo puede llevarnos a tratar injustamente a los demás",
-        "Que hay que olvidar las cosas sagradas"
+        "Que ser fuerte siempre es peligroso",
+        "Que las cuevas guardan tesoros",
+        "Que el miedo nos hace injustos con otros",
+        "Que hay que obedecer al hermano mayor"
       ],
       "answer": 2,
       "explanation": "Ayar Cachi no había hecho daño a sus hermanos: lo encerraron por miedo. Podemos reflexionar si eso fue justo."
@@ -192,5 +192,6 @@
   "borrador": [
     "quz",
     "ay"
-  ]
+  ],
+  "revision": 4
 }

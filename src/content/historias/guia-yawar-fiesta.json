@@ -1,6 +1,6 @@
 {
   "id": "guia-yawar-fiesta",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Guía de lectura: Yawar Fiesta"
   },
@@ -57,10 +57,10 @@
       "level": "literal",
       "question": "¿Qué ordena el gobierno sobre la corrida de Puquio?",
       "options": [
-        "Hacerla dos veces al año",
-        "Prohibir la corrida a la manera andina y hacer una corrida «a la española» con torero profesional",
-        "Cobrar entrada a los comuneros",
-        "Trasladarla a Lima"
+        "Hacer la corrida dos veces al año para atraer visitantes de Lima",
+        "Prohibir la corrida andina y traer un torero «a la española»",
+        "Cobrar entrada a los comuneros y repartir lo recaudado entre los mistis",
+        "Trasladar la fiesta a la capital del departamento para controlarla"
       ],
       "answer": 1,
       "explanation": "La orden declara bárbara la corrida de los comuneros y trae un torero para reemplazarla."
@@ -69,10 +69,10 @@
       "level": "inferencial",
       "question": "¿Por qué traer al Misitu es tan importante para el ayllu de K'ayau?",
       "options": [
-        "Porque es un toro manso y fácil",
-        "Porque capturar al toro salvaje de la puna es una hazaña colectiva que demuestra el valor y el orgullo del ayllu",
-        "Porque el subprefecto se lo pidió",
-        "Porque así ganarán dinero"
+        "Porque el subprefecto les prometió tierras si lo traían a la plaza",
+        "Porque capturar al toro salvaje es una hazaña colectiva que da orgullo al ayllu",
+        "Porque es un toro manso que no pondrá en peligro a los comuneros",
+        "Porque venderán su carne después de la fiesta para pagar la carretera"
       ],
       "answer": 1,
       "explanation": "El Misitu es casi una leyenda: llevarlo a la plaza es una forma de afirmar la fuerza de la comunidad."
@@ -81,10 +81,10 @@
       "level": "inferencial",
       "question": "Los estudiantes puquianos de Lima apoyan la prohibición. ¿Qué muestra eso?",
       "options": [
-        "Que odian a su pueblo",
-        "Que hasta los hijos del pueblo, educados afuera, pueden mirar su propia cultura con los ojos de quienes la desprecian",
-        "Que el gobierno les pagó",
-        "Que no conocen Puquio"
+        "Que odian a su pueblo y quieren que los comuneros se vayan a la costa",
+        "Que hasta los hijos del pueblo pueden mirar su cultura con desprecio ajeno",
+        "Que el gobierno les pagó para convencer a los ayllus de obedecer",
+        "Que nunca vivieron en Puquio y no saben nada de la fiesta"
       ],
       "answer": 1,
       "explanation": "Quieren que su pueblo «progrese», pero aceptan una idea de progreso que borra la cultura de los comuneros."
@@ -93,10 +93,10 @@
       "level": "critico",
       "question": "¿Qué crítica hace la novela cuando el Estado decide sobre una fiesta que no es suya?",
       "options": [
-        "Que las leyes siempre tienen razón",
-        "Que imponer costumbres desde el poder, sin escuchar a la comunidad, es otra forma de dominio, como el despojo de sus tierras",
-        "Que las fiestas no importan",
-        "Que los comuneros deben irse a Lima"
+        "Que las leyes del Estado siempre tienen razón frente a las costumbres",
+        "Que imponer costumbres desde el poder es otra forma de dominio, como el despojo",
+        "Que las fiestas no son importantes y no vale la pena defenderlas",
+        "Que los comuneros deberían irse a Lima para tener más derechos"
       ],
       "answer": 1,
       "explanation": "La prohibición se suma al despojo: los poderosos deciden qué es civilizado y qué no."
@@ -105,10 +105,10 @@
       "level": "critico",
       "question": "La corrida andina es violenta y puede causar muertes. ¿Cuál es una lectura justa de la novela?",
       "options": [
-        "Arguedas aplaude que haya muertos",
-        "La novela no oculta la violencia, pero pregunta quién tiene derecho a decidir sobre la cultura de un pueblo",
-        "La novela dice que hay que prohibir todas las fiestas",
-        "La violencia no aparece"
+        "Arguedas celebra que haya muertos, porque así la fiesta es más auténtica",
+        "No oculta la violencia, pero pregunta quién decide sobre una cultura",
+        "La novela pide prohibir todas las fiestas andinas por ser peligrosas",
+        "La violencia no aparece: la corrida es solo un baile con ponchos"
       ],
       "answer": 1,
       "explanation": "Una lectura crítica reconoce las dos cosas: el riesgo de la fiesta y el desprecio con que se la prohíbe."

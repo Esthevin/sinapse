@@ -1,6 +1,6 @@
 {
   "id": "hebaristo",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Hebaristo, el sauce que murió de amor",
     "qu": "Hebaristo, munakuymanta wañusqa salsa",
@@ -186,10 +186,10 @@
       "level": "literal",
       "question": "¿Qué tienen en común el sauce Hebaristo y el boticario Evaristo Mazuelos?",
       "options": [
-        "Los dos nacieron en Lima",
+        "Los dos nacieron en Lima y llegaron jóvenes a Pisco",
         "Los dos son huérfanos, solitarios y pasan la vida esperando un amor",
-        "Los dos son ricos",
-        "Los dos fueron soldados"
+        "Los dos son ricos y no saben qué hacer con su fortuna",
+        "Los dos fueron plantados por el alcalde junto a la plaza"
       ],
       "answer": 1,
       "explanation": "El cuento construye vidas paralelas: igual nombre, igual soledad, igual espera."
@@ -198,10 +198,10 @@
       "level": "inferencial",
       "question": "El narrador analiza con humor los defectos de los versos de Mazuelos ('ripio sentimental'). ¿Qué efecto tiene ese comentario?",
       "options": [
-        "Hace que admiremos su poesía",
+        "Hace que admiremos su poesía, que el narrador considera la mejor del pueblo",
         "Mezcla ternura e ironía: nos burlamos un poco del personaje, pero también nos da pena su espera",
-        "Muestra que Mazuelos era un gran poeta",
-        "No tiene ningún efecto"
+        "Muestra que Mazuelos era un poeta famoso al que el pueblo no comprendía",
+        "Nos hace despreciar al personaje, que solo merece burla y no compasión"
       ],
       "answer": 1,
       "explanation": "Valdelomar combina humor y melancolía: el ripio 'que la están esperando' resume su vida entera."
@@ -210,10 +210,10 @@
       "level": "inferencial",
       "question": "¿Qué ironía hay en que el ataúd del boticario se haga con la madera del sauce?",
       "options": [
-        "Ninguna, es casualidad",
+        "Ninguna: es una casualidad, porque era la única madera que había en el pueblo",
         "Los dos solitarios terminan juntos: el árbol 'acompaña' al hombre cuya vida se parecía a la suya",
-        "Que el sauce era muy caro",
-        "Que el alcalde lo ordenó por odio"
+        "Que el sauce era muy caro y la familia del boticario no podía pagarlo",
+        "Que el alcalde lo ordenó por odio, para humillar al boticario muerto"
       ],
       "answer": 1,
       "explanation": "El paralelo se cierra en el final: árbol y hombre comparten el destino."
@@ -222,10 +222,10 @@
       "level": "critico",
       "question": "El alcalde no quiere cambiar 'duro roble' por 'sauce' en su discurso. ¿Qué critica el autor con esa escena?",
       "options": [
-        "La pobreza del pueblo",
-        "La vanidad y la hipocresía de los notables: importa lucirse, no la verdad ni el muerto",
-        "La falta de árboles",
-        "El trabajo de los carpinteros"
+        "La pobreza del pueblo, que no puede pagar un ataúd de roble",
+        "La vanidad de los notables, a quienes solo importa lucirse",
+        "La ignorancia del carpintero, que no sabe distinguir las maderas",
+        "La tristeza del alcalde, que era el mejor amigo del boticario"
       ],
       "answer": 1,
       "explanation": "Prefiere no perder una frase bonita aunque sea falsa: es una sátira de la retórica vacía."
@@ -234,10 +234,10 @@
       "level": "critico",
       "question": "¿Por qué el autor da a un árbol nombre y sentimientos humanos?",
       "options": [
-        "Porque es un cuento para niños",
-        "La personificación permite contar la soledad desde otro ángulo y hace que la historia del hombre se vea con más claridad",
-        "Para enseñar botánica",
-        "Por error"
+        "Porque es un cuento para niños y los árboles que hablan les gustan",
+        "Para contar la soledad del hombre a través de la del árbol",
+        "Para enseñar botánica y explicar cómo crecen los sauces junto al río",
+        "Porque en la región se creía que los sauces tenían alma de verdad"
       ],
       "answer": 1,
       "explanation": "El sauce funciona como espejo poético del boticario."

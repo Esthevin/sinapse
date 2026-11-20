@@ -1,6 +1,6 @@
 {
   "id": "chaymanta-huaynuy",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Chaymanta Huayñuy (Más allá de la muerte)"
   },
@@ -79,10 +79,10 @@
       "level": "literal",
       "question": "¿Por qué Ñausa Soncco es «el hombre maldito del Sol»?",
       "options": [
-        "Porque mató a un Inca",
+        "Porque, por celos, mató a un guerrero del Inca que pretendía a su amada",
         "Porque, por amor, robó objetos sagrados del templo del Sol para su amada",
-        "Porque no quiso trabajar",
-        "Porque nació ciego"
+        "Porque se negó a entregar su rebaño para la fiesta del Raymi en el Cusco",
+        "Porque miró de frente al Sol durante una ceremonia, lo que estaba prohibido"
       ],
       "answer": 1,
       "explanation": "Para conquistar a su amada roba al Sol, y ese sacrilegio trae su castigo."
@@ -91,10 +91,10 @@
       "level": "literal",
       "question": "¿Qué ocurre con la amada cuando él le muestra lo robado?",
       "options": [
-        "Acepta casarse",
+        "Acepta el regalo y huyen juntos por el gran camino del reino hacia Quito",
         "Huye espantada, «¡Has robado al Sol!», y al escapar cae al río",
-        "Lo denuncia al Inca",
-        "Se queda con el oro"
+        "Lo denuncia ante los sacerdotes del templo y él es castigado en público",
+        "Le pide que devuelva todo al templo y lo espera junto al maizal del río"
       ],
       "answer": 1,
       "explanation": "Ella no acepta el sacrilegio; en la huida resbala y cae al río."
@@ -103,10 +103,10 @@
       "level": "inferencial",
       "question": "¿Por qué Ñausa pide a los pastores que se alejen «a un tiro de honda»?",
       "options": [
-        "Porque tiene una enfermedad",
-        "Porque se cree maldito y no quiere que su culpa los alcance, ni siquiera por el aire o la nube que los cubra",
-        "Porque no le gustan los pastores",
-        "Porque quiere estar solo para comer"
+        "Porque tiene una enfermedad contagiosa que le dejó ciego desde la juventud",
+        "Porque se cree maldito y teme que su culpa los alcance",
+        "Porque teme que los pastores le roben la comida que le dejan en el camino",
+        "Porque las leyes del Inca prohibían a los pastores hablar con los ciegos"
       ],
       "answer": 1,
       "explanation": "Su maldición es tan grande que teme contagiarla."
@@ -115,10 +115,10 @@
       "level": "critico",
       "question": "Valdelomar escribe esta leyenda inca en un castellano muy adornado. ¿Qué busca con eso?",
       "options": [
-        "Que sea difícil a propósito",
+        "Imitar la forma en que hablaban los incas, para que el cuento suene auténtico",
         "Dar al pasado incaico la grandeza de una epopeya, como si fuera un mito antiguo",
-        "Burlarse de los incas",
-        "Imitar el habla de Lima"
+        "Dificultar la lectura para que solo la entiendan los lectores más cultos",
+        "Burlarse con ironía de los relatos solemnes sobre el pasado de los incas"
       ],
       "answer": 1,
       "explanation": "El estilo solemne convierte la historia en leyenda; es típico del modernismo."
@@ -127,10 +127,10 @@
       "level": "critico",
       "question": "Compara a Ñausa con un personaje de tragedia. ¿Qué tienen en común?",
       "options": [
-        "Nada",
-        "Un error movido por la pasión que desafía a los dioses y termina en un castigo que ya no se puede reparar",
-        "Que ambos son reyes",
-        "Que terminan felices"
+        "Que ambos son reyes que pierden su reino por desobedecer a su pueblo",
+        "Una falta por pasión que desafía a los dioses y no tiene reparación",
+        "Que ambos son inocentes castigados por un error que cometió otra persona",
+        "Que ambos terminan perdonados por los dioses después de arrepentirse"
       ],
       "answer": 1,
       "explanation": "Como en la tragedia, la falta y el castigo son inseparables."

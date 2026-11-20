@@ -1,6 +1,6 @@
 {
   "id": "a-nadar-peces",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "¡A nadar, peces!",
     "qu": "¡Notaychis, challwakuna!",
@@ -237,10 +237,10 @@
       "level": "literal",
       "question": "¿Qué le promete el joven al padre Carapulcra a cambio de su dinero?",
       "options": [
-        "Rezar por él",
+        "Pagarle el doble en un año con lo que ganara comerciando telas en el Callao",
         "Triplicarlo en menos de un año poniendo una botica",
-        "Comprarle un convento",
-        "Llevarlo a España"
+        "Devolvérselo con intereses apenas cobrara la herencia de un tío en España",
+        "Comprarle una celda nueva en el convento con las ganancias de una pulpería"
       ],
       "answer": 1,
       "explanation": "Jura que 'antes de un año' le triplicará los realejos que tiene 'criando moho'."
@@ -250,9 +250,9 @@
       "question": "El padre se lamenta: 'Con cuatro simples me dijo que se ponía una botica… Él la puso con solo un simple… ¡y ese fui yo!'. ¿Cuál es el juego de palabras?",
       "options": [
         "'Simple' significa remedio y también persona ingenua: el engañado fue el propio padre",
-        "'Simple' es una moneda antigua",
-        "'Simple' es un tipo de pez",
-        "No hay juego de palabras"
+        "'Simple' es una moneda pequeña: el joven puso la botica casi sin dinero",
+        "'Simple' es el nombre del ayudante del padre, que le prestó el resto del dinero",
+        "'Simple' quiere decir fácil: poner una botica era más sencillo de lo que creía"
       ],
       "answer": 0,
       "explanation": "En boticas, un 'simple' era una hierba medicinal; el padre se reconoce como el 'simple' (tonto) del negocio."
@@ -261,10 +261,10 @@
       "level": "inferencial",
       "question": "¿Por qué el padre había guardado dinero en secreto?",
       "options": [
-        "Porque se lo pidió el virrey",
+        "Porque era el tesorero del convento y el dinero pertenecía a la comunidad",
         "Porque, aunque su orden exigía pobreza, había ahorrado a escondidas",
-        "Porque era tesorero oficial",
-        "Porque lo ganó en la lotería"
+        "Porque lo heredó de su familia antes de entrar a la orden y nadie lo sabía",
+        "Porque lo había ganado vendiendo remedios a los vecinos con permiso del prior"
       ],
       "answer": 1,
       "explanation": "El lego 'no era tan pobre de solemnidad como las reglas de su instituto lo exigían'."
@@ -273,10 +273,10 @@
       "level": "critico",
       "question": "¿Qué critica Palma con esta tradición?",
       "options": [
-        "A los médicos",
+        "La ignorancia de los boticarios, que vendían remedios sin saber de medicina",
         "La codicia y la credulidad: quien quiere ganar fácil cae ante el estafador",
-        "A los pescadores",
-        "Al ferrocarril"
+        "La pobreza de los frailes, que tenían que pedir prestado para sobrevivir",
+        "La dureza de los padres con los jóvenes que querían empezar un negocio"
       ],
       "answer": 1,
       "explanation": "La avaricia del padre lo vuelve presa fácil de la promesa de ganancia rápida."
@@ -285,10 +285,10 @@
       "level": "critico",
       "question": "La tradición explica el origen de una expresión popular. ¿Por qué Palma se interesa tanto por el origen de frases y refranes?",
       "options": [
-        "Por casualidad",
-        "Porque las palabras guardan la memoria de una comunidad: contar su origen es contar la historia del pueblo",
-        "Para enseñar inglés",
-        "Para alargar el texto"
+        "Porque quería demostrar que los refranes populares suelen ser falsos y crueles",
+        "Porque las palabras guardan la memoria del pueblo y su historia",
+        "Porque los refranes eran la única fuente histórica que tenía sobre la colonia",
+        "Porque buscaba reemplazar las frases populares por expresiones más cultas"
       ],
       "answer": 1,
       "explanation": "Muchas tradiciones nacen de un dicho: la lengua es un archivo de la historia."

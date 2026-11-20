@@ -1,6 +1,6 @@
 {
   "id": "zorro-y-condor",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "El zorro y el cóndor",
     "quz": "Atuq Kunturwan",
@@ -181,10 +181,10 @@
       "level": "inferencial",
       "question": "¿Por qué el cóndor dice que «el cielo también tiene sus peligros»?",
       "options": [
-        "Para asustar al zorro sin razón",
-        "Porque quiere cuidar al zorro y que sea prudente",
+        "Para asustarlo sin ninguna razón",
+        "Porque quiere que sea prudente",
         "Porque no quiere compartir el cielo",
-        "Porque ya se cayó muchas veces"
+        "Porque él ya se cayó muchas veces"
       ],
       "answer": 1,
       "explanation": "El cóndor habla con cariño («pequeño amigo»): no le quita el sueño, le pide que piense en los riesgos."

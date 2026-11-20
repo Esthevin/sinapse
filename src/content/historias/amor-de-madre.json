@@ -1,6 +1,6 @@
 {
   "id": "amor-de-madre",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Amor de madre",
     "qu": "Taytanchik munakusqan",
@@ -252,7 +252,7 @@
       "question": "¿Qué vicio de don Fernando desencadena la tragedia?",
       "options": [
         "La bebida",
-        "El juego de azar",
+        "El juego",
         "La avaricia",
         "Los celos"
       ],
@@ -263,10 +263,10 @@
       "level": "inferencial",
       "question": "¿Qué hace Evangelina para salvar a su esposo de la ejecución?",
       "options": [
-        "Paga una gran suma al virrey",
-        "Declara una falsa relación con el muerto, para que el crimen parezca un acto de honor y no un asesinato",
-        "Huye con sus hijos",
-        "Mata al juez"
+        "Vende sus joyas y paga al juez para que declare inocente a su marido",
+        "Finge una relación con el muerto para que parezca un crimen de honor",
+        "Se presenta ante el virrey y confiesa ser ella quien cometió el crimen",
+        "Busca testigos que juren que el muerto atacó primero a don Fernando"
       ],
       "answer": 1,
       "explanation": "Su 'revelación' (y detalles como el anillo y el lugar del cadáver) hacen que el virrey suspenda la sentencia."
@@ -275,10 +275,10 @@
       "level": "inferencial",
       "question": "¿Por qué Fernando enloquece al escuchar la declaración de su esposa?",
       "options": [
-        "Porque descubre que es verdad",
-        "Porque comprende el sacrificio de Evangelina: ella entrega su honra para salvarlo, y él no lo soporta",
-        "Porque lo condenan igual",
-        "Porque perdió más dinero"
+        "Porque cree que la declaración es verdad y se siente engañado por su esposa",
+        "Porque entiende que ella sacrificó su honra para salvarlo",
+        "Porque, a pesar de la declaración, el juez lo condena igual a la horca",
+        "Porque la familia del muerto jura vengarse de él y de sus hijos"
       ],
       "answer": 1,
       "explanation": "La carcajada espantosa muestra el choque entre su culpa y el sacrificio de ella."
@@ -287,10 +287,10 @@
       "level": "critico",
       "question": "En la sociedad colonial, la 'honra' de una mujer valía muchísimo. ¿Qué muestra el relato sobre esa época?",
       "options": [
-        "Que las mujeres tenían los mismos derechos",
+        "Que la honra importaba poco y las mujeres podían decidir sobre su vida libremente",
         "Que la mujer cargaba con el juicio social: Evangelina pierde su nombre para salvar el de sus hijos",
-        "Que nadie se interesaba por la honra",
-        "Que los hombres eran juzgados con más dureza"
+        "Que los hombres eran juzgados con más dureza que las mujeres por la sociedad",
+        "Que la justicia colonial castigaba igual a ricos y pobres, sin excepciones"
       ],
       "answer": 1,
       "explanation": "El sacrificio solo se entiende en un mundo donde la honra femenina era un valor público."
@@ -299,10 +299,10 @@
       "level": "critico",
       "question": "¿El título 'Amor de madre' describe bien el centro del relato?",
       "options": [
-        "No, el centro es el juego",
-        "Sí: la decisión de Evangelina se explica por proteger el futuro de sus hijos, aunque ella pague con su nombre",
-        "No, el centro es el virrey",
-        "No, el centro es la mina"
+        "No: el centro es el juego de don Fernando y cómo arruina a toda la familia",
+        "Sí: Evangelina sacrifica su nombre para proteger a sus hijos",
+        "No: el centro es la justicia del virrey, que perdona a un noble por su rango",
+        "Sí: la historia muestra cómo una madre castiga a su esposo por amor a sus hijos"
       ],
       "answer": 1,
       "explanation": "Lo revela al morir: 'perdí mi honra, porque no os llamasen un día los hijos del ajusticiado'."

@@ -1,6 +1,6 @@
 {
   "id": "el-camino-hacia-el-sol",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "El camino hacia el sol"
   },
@@ -109,10 +109,10 @@
       "level": "literal",
       "question": "¿Qué noticia hace que el pueblo abandone su ciudad?",
       "options": [
-        "Una sequía",
+        "Que una sequía secó los campos y el curaca ordena buscar tierras nuevas",
         "Que los extranjeros destruyeron la ciudad sagrada y el Inca ha muerto",
-        "Que el Sol se apagó",
-        "Que llegó un nuevo curaca"
+        "Que el Inca los llama al Cusco para la gran fiesta del Inti Raymi",
+        "Que una peste mata a los ancianos y los sacerdotes mandan huir al mar"
       ],
       "answer": 1,
       "explanation": "El chasqui trae la noticia de la conquista; los amautas dicen que se ha cumplido el oráculo."
@@ -121,10 +121,10 @@
       "level": "literal",
       "question": "¿Qué encuentran al final del camino?",
       "options": [
-        "El palacio del Sol",
+        "El palacio del Sol, donde los esperan los sacerdotes de Pachacámac",
         "El mar, una «laguna sin orillas» que no pueden cruzar",
-        "Una ciudad nueva",
-        "A los extranjeros"
+        "Un valle fértil donde fundan una ciudad nueva junto a un gran río",
+        "El ejército de los extranjeros, que les cierra el paso en la costa"
       ],
       "answer": 1,
       "explanation": "Creían que el Sol dormía en esa gran laguna; al llegar, no hay forma de seguir."
@@ -133,10 +133,10 @@
       "level": "inferencial",
       "question": "¿Por qué el pueblo decide enterrarse en la arena?",
       "options": [
-        "Para esconderse del calor",
-        "Porque se sienten abandonados por el Sol y prefieren morir juntos y en paz antes que caer en manos de los conquistadores",
-        "Para buscar agua",
-        "Por orden de los extranjeros"
+        "Porque así lo ordenan los extranjeros, que los capturan en la playa",
+        "Porque se sienten abandonados por el Sol y prefieren morir juntos y en paz",
+        "Para protegerse del sol y del hambre mientras esperan las balsas",
+        "Porque es la costumbre funeraria de su pueblo para los ancianos"
       ],
       "answer": 1,
       "explanation": "Los sabios concluyen que el Sol los ha abandonado y eligen la muerte como último refugio."
@@ -145,10 +145,10 @@
       "level": "critico",
       "question": "Sumaj queda vivo y solo después de enterrar a Inquill. ¿Qué representa?",
       "options": [
-        "Al ganador de la historia",
-        "Al último de un mundo que se acaba: ya nadie lo escuchará, porque su pueblo y su cultura han desaparecido",
-        "A un conquistador",
-        "A un traidor"
+        "Al único que se salva y regresa a la ciudad para empezar de nuevo",
+        "Al último sobreviviente de un mundo que se acaba",
+        "Al traidor que guió a los extranjeros por el camino del Inca",
+        "Al nuevo curaca, que deberá gobernar a los sobrevivientes"
       ],
       "answer": 1,
       "explanation": "El cuento lo llama «el último quechua»: es el fin de una civilización."
@@ -157,10 +157,10 @@
       "level": "critico",
       "question": "¿Qué visión de la conquista transmite Valdelomar con este cuento?",
       "options": [
-        "Una aventura alegre",
+        "Una aventura heroica contada desde los conquistadores y sus barcos",
         "Una catástrofe vivida desde los vencidos, con dolor y fe, no desde los conquistadores",
-        "Una historia de comercio",
-        "No habla de la conquista"
+        "Un cambio necesario que trajo progreso y nuevas creencias a los Andes",
+        "Una historia de comercio entre pueblos de la costa y de la sierra"
       ],
       "answer": 1,
       "explanation": "La leyenda imagina cómo vivió un pueblo andino el fin de su mundo."

@@ -1,6 +1,6 @@
 {
   "id": "conversion-de-un-libertino",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Conversión de un libertino",
     "qu": "Limpya runapa kutimuynin",
@@ -222,10 +222,10 @@
       "level": "literal",
       "question": "¿Qué acontecimiento interrumpe la fiesta de Juan de Andueza?",
       "options": [
-        "Una inundación",
+        "Una gran inundación del Rímac",
         "El gran terremoto que destruyó Lima",
-        "La llegada del virrey",
-        "Un incendio en el puerto"
+        "La llegada del nuevo virrey",
+        "Un incendio en el puerto del Callao"
       ],
       "answer": 1,
       "explanation": "El terremoto de la noche dejó en Lima cuatro mil muertos de setenta mil habitantes."
@@ -234,10 +234,10 @@
       "level": "inferencial",
       "question": "¿Qué muestra que Andueza y sus amigos, al principio, no tomaron en serio la catástrofe?",
       "options": [
-        "Que ayudaron a los heridos",
+        "Que siguieron bailando durante el temblor sin darse cuenta de nada",
         "Que, pasado el temblor, volvieron a meterse en el chiribitil a seguir el fandango",
-        "Que huyeron al campo",
-        "Que rezaron toda la noche"
+        "Que se burlaron de los vecinos que salían a rezar a la calle",
+        "Que salieron a robar en las casas abandonadas por el terremoto"
       ],
       "answer": 1,
       "explanation": "'Sin cuidarse de averiguar lo ocurrido en la población, volvió aquella gentuza… a continuar el fandango'."
@@ -246,10 +246,10 @@
       "level": "inferencial",
       "question": "¿Cómo termina la vida de Andueza?",
       "options": [
-        "Muere en el terremoto",
+        "Muere poco después, aplastado por un muro en una réplica del terremoto",
         "Cambia por completo, se hace lego de la Merced y muere 'en olor de santidad'",
-        "Huye a España",
-        "Sigue de fiesta"
+        "Huye a España avergonzado y nunca más vuelve a saberse de él en Lima",
+        "Se arrepiente un tiempo, pero vuelve a las fiestas y muere en la pobreza"
       ],
       "answer": 1,
       "explanation": "La conversión es total: del libertino al religioso ejemplar."
@@ -258,10 +258,10 @@
       "level": "critico",
       "question": "¿Por qué una catástrofe puede cambiar la vida de una persona, según el relato?",
       "options": [
-        "Porque trae dinero",
-        "Porque enfrenta a la persona con la muerte y la fragilidad de la vida, y la obliga a pensar en lo que hace",
-        "Porque lo obliga la ley",
-        "No puede cambiarla"
+        "Porque después de una catástrofe la ley obliga a todos a cambiar de costumbres",
+        "Porque lo enfrenta con la muerte y lo obliga a mirar su vida",
+        "Porque la gente pierde sus bienes y tiene que buscar trabajo en otro lugar",
+        "Porque el miedo dura para siempre y nadie vuelve a ser como antes"
       ],
       "answer": 1,
       "explanation": "El miedo ante la muerte provoca el examen de conciencia."
@@ -270,10 +270,10 @@
       "level": "critico",
       "question": "Palma incluye coplas y nombres de bailes populares (la mozamala). ¿Qué aporta eso?",
       "options": [
-        "Nada",
+        "Explica por qué ocurrió el terremoto según las creencias de la época",
         "Retrata la cultura popular limeña de la época, con su música y su humor",
-        "Confunde al lector",
-        "Explica el terremoto"
+        "Muestra que Andueza era músico y por eso organizaba tantas fiestas",
+        "Sirve para criticar los bailes, que la Iglesia había prohibido en Lima"
       ],
       "answer": 1,
       "explanation": "Las tradiciones son también un archivo de costumbres, cantos y bailes."

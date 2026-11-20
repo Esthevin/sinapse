@@ -1,6 +1,6 @@
 {
   "id": "nadie-se-muere",
-  "revision": 1,
+  "revision": 4,
   "title": {
     "es": "Nadie se muere hasta que Dios quiere",
     "qu": "Dios munasqanman hinaqa manan pipas wañunchu",
@@ -352,10 +352,10 @@
       "level": "literal",
       "question": "¿Por qué Román, el platero, decide ahorcarse?",
       "options": [
-        "Por una deuda de juego",
-        "Por la vida insoportable con su esposa, derrochadora y regañona, que lo dejó en la ruina",
-        "Porque lo acusaron de robo",
-        "Por amor no correspondido"
+        "Por una gran deuda de juego que no podía pagar a sus acreedores",
+        "Por la vida insoportable con su esposa, que lo dejó en la ruina",
+        "Porque lo acusaron de robar plata del taller y temía la cárcel",
+        "Por un amor no correspondido con una vecina de la calle de Plateros"
       ],
       "answer": 1,
       "explanation": "Su mujer, 'amiga del boato, manirrota, terca y regañona', convirtió su casa en un infierno."
@@ -364,10 +364,10 @@
       "level": "inferencial",
       "question": "¿Qué sentido tiene el título 'Nadie se muere hasta que Dios quiere'?",
       "options": [
-        "Que Román era inmortal",
-        "Que el plan de morir de Román se frustra por un giro inesperado del destino: encuentra el tesoro de Ovillitos",
-        "Que los médicos lo salvaron",
-        "Que su esposa lo detuvo"
+        "Que Román no podía morir, porque Dios le había prometido larga vida",
+        "Que su plan de morir se frustra al encontrar el tesoro de Ovillitos",
+        "Que los médicos lo salvaron justo a tiempo después de ahorcarse",
+        "Que su esposa llegó a tiempo y cortó la soga para detenerlo"
       ],
       "answer": 1,
       "explanation": "Buscando árbol para ahorcarse, termina hallando el dinero escondido del mendigo."
@@ -376,10 +376,10 @@
       "level": "inferencial",
       "question": "¿Qué critica Palma a través de Ovillitos, el mendigo que escondía su dinero?",
       "options": [
-        "La pobreza",
-        "La avaricia inútil: el dinero guardado 'criando moho' no sirve, y él enferma al perderlo",
-        "La generosidad",
-        "El trabajo"
+        "La pobreza de los mendigos de Lima, que nadie ayudaba",
+        "La avaricia inútil del dinero que se esconde sin usarlo",
+        "La generosidad mal entendida de quienes dan limosna",
+        "La costumbre de trabajar sin descanso para hacerse rico"
       ],
       "answer": 1,
       "explanation": "'El dinero no es monje cartujo que gusta de estar guardado… es un libertino que se desvive por andar de mano en mano'."
@@ -388,10 +388,10 @@
       "level": "critico",
       "question": "Román se enriquece con dinero ajeno y, al morir, deja misas para el alma de Ovillitos. ¿Cómo valoras esa conducta?",
       "options": [
-        "Es totalmente justa",
-        "Es ambigua: reconoce su deuda moral, pero nunca devolvió el dinero; Palma deja que el lector juzgue",
-        "Es un robo sin importancia",
-        "Es un acto heroico"
+        "Es totalmente justa: el dinero no tenía dueño y las misas lo compensan",
+        "Es ambigua: reconoce su deuda, pero nunca devolvió el dinero",
+        "Es un robo sin importancia, porque Ovillitos ya no necesitaba la plata",
+        "Es un acto heroico: salva su vida y además honra al mendigo"
       ],
       "answer": 1,
       "explanation": "El humor del relato no cierra el problema moral: invita a pensarlo."
@@ -400,10 +400,10 @@
       "level": "critico",
       "question": "Los 'diez mandamientos' de la esposa y el refrán del fraile reflejan ideas de su época sobre el matrimonio. ¿Cómo leerlos hoy?",
       "options": [
-        "Como consejos válidos",
-        "Como humor de una época con prejuicios: se pueden reconocer y discutir sin repetirlos",
-        "No hay que leerlos",
-        "Como ley"
+        "Como consejos para un buen matrimonio, válidos todavía hoy",
+        "Como humor de una época con prejuicios, que hoy se discute",
+        "Como una ley de la época que todos los matrimonios debían cumplir",
+        "No hay que leerlos: son una parte del texto que sobra"
       ],
       "answer": 1,
       "explanation": "Leer críticamente incluye notar los prejuicios de un texto antiguo."
