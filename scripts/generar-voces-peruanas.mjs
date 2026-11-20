@@ -264,7 +264,7 @@ async function main() {
 }
 
 function pickVoice(i) {
-  if (VOICE_CHOICE === 'camila' || VOICE_CHOICE === 'alex') return VOICES[VOICE_CHOICE];
+  if (VOICES[VOICE_CHOICE]) return VOICES[VOICE_CHOICE];
   return i % 2 === 0 ? VOICES.camila : VOICES.alex; // alternar para dar variedad
 }
 
