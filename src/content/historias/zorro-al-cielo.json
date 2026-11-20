@@ -47,22 +47,6 @@
   },
   "audio": [
     {
-      "lang": "es",
-      "narratorId": "voz-alex-pe",
-      "voiceSource": "sintetica",
-      "url": "bundle:zorro-al-cielo.es.mp3",
-      "license": "Voz neuronal es-PE-AlexNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
-      "durationSec": 94.944,
-      "paragraphStartsSec": [
-        0,
-        14.16,
-        31.368,
-        50.472,
-        62.592,
-        77.256
-      ]
-    },
-    {
       "lang": "quz",
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
@@ -86,12 +70,28 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 110.592,
       "paragraphStartsSec": [
-        0.0,
+        0,
         18.404,
         39.296,
         62.556,
         76.256,
         91.728
+      ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-ximena-hd",
+      "voiceSource": "sintetica",
+      "url": "bundle:zorro-al-cielo.es.mp3",
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 91.608,
+      "paragraphStartsSec": [
+        0,
+        13.656,
+        30.456,
+        49.824,
+        60.456,
+        74.904
       ]
     }
   ],

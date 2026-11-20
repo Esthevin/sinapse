@@ -44,21 +44,6 @@
   },
   "audio": [
     {
-      "lang": "es",
-      "narratorId": "voz-camila-pe",
-      "voiceSource": "sintetica",
-      "url": "bundle:alacran-fray-gomez.es.mp3",
-      "license": "Voz neuronal es-PE-CamilaNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
-      "durationSec": 79.128,
-      "paragraphStartsSec": [
-        0,
-        15.264,
-        29.976,
-        50.784,
-        62.016
-      ]
-    },
-    {
       "lang": "quz",
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
@@ -81,11 +66,26 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 116.848,
       "paragraphStartsSec": [
-        0.0,
+        0,
         24.864,
         46.08,
         75.544,
         93.476
+      ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-ximena-hd",
+      "voiceSource": "sintetica",
+      "url": "bundle:alacran-fray-gomez.es.mp3",
+      "license": "Voz neuronal es-ES-Ximena:DragonHDLatestNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 95.04,
+      "paragraphStartsSec": [
+        0,
+        18.744,
+        36.576,
+        62.352,
+        74.88
       ]
     }
   ],
