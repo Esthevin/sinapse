@@ -140,7 +140,7 @@
       "narratorId": "voz-mms-qu",
       "voiceSource": "sintetica",
       "url": "site:a-la-carcel-todo-cristo.qu.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 858.052,
       "paragraphStartsSec": [
         0.0,
@@ -181,7 +181,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "site:a-la-carcel-todo-cristo.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 817.18,
       "paragraphStartsSec": [
         0.0,

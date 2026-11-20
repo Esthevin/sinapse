@@ -98,7 +98,7 @@
       "es"
     ],
     "region": "costa",
-    "credit": "Voz sintética de Microsoft Azure AI Speech. Se reemplaza por una voz humana en cuanto haya narrador."
+    "credit": "Creada con Microsoft Azure AI Speech. Se reemplaza por una voz humana en cuanto haya narrador."
   },
   {
     "id": "voz-alex-pe",
@@ -109,7 +109,7 @@
       "es"
     ],
     "region": "costa",
-    "credit": "Voz sintética de Microsoft Azure AI Speech. Se reemplaza por una voz humana en cuanto haya narrador."
+    "credit": "Creada con Microsoft Azure AI Speech. Se reemplaza por una voz humana en cuanto haya narrador."
   },
   {
     "id": "kokoro-voces-sinteticas",
@@ -130,7 +130,7 @@
       "quz"
     ],
     "region": "sierra",
-    "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
+    "credit": "Creada con Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
   },
   {
     "id": "librivox-tux",
@@ -161,7 +161,7 @@
       "ay"
     ],
     "region": "sierra",
-    "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
+    "credit": "Creada con Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
   },
   {
     "id": "librivox-meribau",
@@ -202,7 +202,7 @@
       "qu"
     ],
     "region": "sierra",
-    "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
+    "credit": "Creada con Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador."
   },
   {
     "id": "librivox-yoyo",

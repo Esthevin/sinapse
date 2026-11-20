@@ -76,44 +76,22 @@ def tramos(caps):
 
 def traducir(secs):
     sys.argv = sys.argv[:1]
-    import torch
-    from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
-    from traducir_nllb import CODIGOS, MODELO, oraciones
+    from traducir_nllb import CODIGOS, Traductor, danado, oraciones  # mismo control de bucles que los cuentos
 
-    torch.set_num_threads(4)
-    tok = AutoTokenizer.from_pretrained(MODELO, src_lang="spa_Latn")
-    mod = AutoModelForSeq2SeqLM.from_pretrained(MODELO).eval()
+    tr = Traductor()
     TRAD.mkdir(exist_ok=True)
-
-    @torch.inference_mode()
-    def lote(frases, destino):
-        res = []
-        for i in range(0, len(frases), 8):
-            x = tok(frases[i:i + 8], return_tensors="pt", padding=True, truncation=True, max_length=256)
-            y = mod.generate(**x, forced_bos_token_id=tok.convert_tokens_to_ids(destino),
-                             max_new_tokens=min(400, int(x["input_ids"].shape[1] * 2.2) + 10), num_beams=2)
-            res += tok.batch_decode(y, skip_special_tokens=True)
-        return res
-
     for lang, code in CODIGOS.items():
         for n, s in enumerate(secs, 1):
             f = TRAD / f"{ID}-{n:02d}.{lang}.json"
-            if f.exists():
+            if f.exists() and not any(danado(a, b) for a, b in zip(json.loads(f.read_text(encoding="utf-8"))["paragraphs"], s["es"])):
                 continue
-            frases, idx = [], []
-            for i, p in enumerate(s["es"]):
-                o = oraciones(p)
-                frases += o
-                idx += [i] * len(o)
-            out = [""] * len(s["es"])
-            for i, tr in zip(idx, lote(frases, code)):
-                out[i] = (out[i] + " " + tr).strip()
-            titulo = lote([s["title"]], code)[0]
+            out = tr.parrafos(s["es"], code)
+            titulo = tr.frases([s["title"]], code)[0]
             f.write_text(json.dumps({"title": titulo, "paragraphs": out}, ensure_ascii=False, indent=0), encoding="utf-8")
-            print(ID, n, lang, len(frases), "oraciones", flush=True)
+            print(ID, n, lang, len(out), "párrafos", flush=True)
         fm = TRAD / f"{ID}.meta.{lang}.json"
         if not fm.exists():
-            fm.write_text(json.dumps({"title": lote(["El tungsteno"], code)[0], "summary": " ".join(lote(oraciones(RESUMEN), code))}, ensure_ascii=False), encoding="utf-8")
+            fm.write_text(json.dumps({"title": tr.frases(["El tungsteno"], code)[0], "summary": " ".join(tr.frases(oraciones(RESUMEN), code))}, ensure_ascii=False), encoding="utf-8")
 
 
 RESUMEN = ("Una empresa norteamericana llega a Quivilca, en la sierra del Cusco, a explotar las minas de tungsteno. "

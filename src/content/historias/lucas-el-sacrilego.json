@@ -149,7 +149,7 @@
       "narratorId": "voz-mms-qu",
       "voiceSource": "sintetica",
       "url": "site:lucas-el-sacrilego.qu.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quy), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 1141.478,
       "paragraphStartsSec": [
         0.0,
@@ -193,7 +193,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "site:lucas-el-sacrilego.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 1005.112,
       "paragraphStartsSec": [
         0.0,

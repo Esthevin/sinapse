@@ -83,7 +83,7 @@ def asegurar_narrador(id_, lengua, nombre, modelo_hf):
         "bio": f"Voz de Sinapse para leer en {nombre}.",
         "languages": [lengua],
         "region": "sierra",
-        "credit": "Voz sintética de Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador.",
+        "credit": "Creada con Meta MMS-TTS (CC BY-NC 4.0, uso no comercial). Borrador pendiente de revisión por hablantes nativos; se reemplaza por una voz humana en cuanto haya narrador.",
     })
     NARRADORES.write_text(json.dumps(lista, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
@@ -145,7 +145,7 @@ def main():
             "narratorId": narrador_id,
             "voiceSource": "sintetica",
             "url": f"{'site' if largo else 'bundle'}:{salida.name}",
-            "license": f"Voz sintética Meta MMS-TTS ({modelo_hf}), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+            "license": f"Creada con Meta MMS-TTS ({modelo_hf}), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
             "durationSec": round(len(y) / sr, 3),
             "paragraphStartsSec": inicios,
         })

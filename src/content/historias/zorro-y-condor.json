@@ -78,7 +78,7 @@
       "narratorId": "voz-mms-ay",
       "voiceSource": "sintetica",
       "url": "bundle:zorro-y-condor.ay.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 90.1,
       "paragraphStartsSec": [
         0.0,
@@ -96,7 +96,7 @@
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
       "url": "bundle:zorro-y-condor.quz.mp3",
-      "license": "Voz sintética Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
+      "license": "Creada con Meta MMS-TTS (facebook/mms-tts-quz), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 79.588,
       "paragraphStartsSec": [
         0.0,
