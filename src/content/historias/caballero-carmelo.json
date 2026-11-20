@@ -47,22 +47,6 @@
   },
   "audio": [
     {
-      "lang": "es",
-      "narratorId": "voz-alex-pe",
-      "voiceSource": "sintetica",
-      "url": "bundle:caballero-carmelo.es.mp3",
-      "license": "Voz neuronal es-PE-AlexNeural generada con edge-tts (servicio de lectura de Microsoft Edge, no oficial). Voz genérica sintética: no imita a ninguna persona. PROVISIONAL: reemplazar por Azure AI Speech antes de publicar.",
-      "durationSec": 100.392,
-      "paragraphStartsSec": [
-        0,
-        17.304,
-        32.208,
-        51.528,
-        67.464,
-        83.256
-      ]
-    },
-    {
       "lang": "quz",
       "narratorId": "voz-mms-quz",
       "voiceSource": "sintetica",
@@ -86,12 +70,28 @@
       "license": "Creada con Meta MMS-TTS (facebook/mms-tts-ayr), licencia CC BY-NC 4.0: solo uso no comercial. Borrador: texto y voz sin revisión de hablantes nativos.",
       "durationSec": 111.608,
       "paragraphStartsSec": [
-        0.0,
+        0,
         20.652,
         38.648,
         58.004,
         75.236,
         91.124
+      ]
+    },
+    {
+      "lang": "es",
+      "narratorId": "voz-alex-pe",
+      "voiceSource": "sintetica",
+      "url": "bundle:caballero-carmelo.es.mp3",
+      "license": "Voz neuronal es-PE-AlexNeural de Microsoft Azure AI Speech, usada según los términos del servicio. Voz genérica: no imita a ninguna persona.",
+      "durationSec": 103.992,
+      "paragraphStartsSec": [
+        0,
+        17.904,
+        33.408,
+        53.328,
+        69.864,
+        86.256
       ]
     }
   ],
